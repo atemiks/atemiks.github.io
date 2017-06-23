@@ -1,0 +1,12 @@
+[0331/181932.728:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: Идет закрытие канала. (0xE8)
+[0403/211426.770:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: Идет закрытие канала. (0xE8)
+[0404/173350.531:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: Идет закрытие канала. (0xE8)
+[0405/210714.316:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: Идет закрытие канала. (0xE8)
+[0418/143750.181:ERROR:process_reader_win.cc(142)] SuspendThread: Отказано в доступе. (0x5)
+[0418/143750.266:ERROR:exception_snapshot_win.cc(87)] thread ID 4720 not found in process
+[0418/143750.266:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0418/143750.266:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: Попытка доступа к процессу, выполняющему процедуру завершения.  (0xc000010a)
+[0418/144347.644:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: Попытка доступа к процессу, выполняющему процедуру завершения.  (0xc000010a)
+[0418/144347.647:ERROR:process_reader_win.cc(142)] SuspendThread: Отказано в доступе. (0x5)
+[0418/144347.647:ERROR:exception_snapshot_win.cc(87)] thread ID 3768 not found in process
+[0418/144347.647:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed

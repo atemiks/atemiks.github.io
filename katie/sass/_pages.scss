@@ -1,0 +1,440 @@
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.content {
+  	flex: 1 0 auto;
+}
+.footer {
+  	flex: 0 0 auto;
+}
+
+.section-header {
+	overflow: hidden;
+	margin: 20px 0 10px;
+	text-align: center;
+	.section-title {
+		line-height: 1;
+		word-spacing: 20px;
+	}
+}
+
+.container {
+	@media screen and (max-width: 991px) {
+		width: 100% !important;
+	}
+}
+
+
+
+.product-price {
+	font-size: 20px;
+	font-weight: 700;
+	ins {
+		display: block;
+		font-family: $base-font;
+		text-decoration: none;
+	}
+}
+.product-card-sale {
+	.product-price {
+		ins {
+			color: $warning;
+		}
+	}
+}
+
+.product-colors {
+	@extend .reset-list;
+	cursor: default;
+	li {
+		display: inline-block;
+		width: 19px;
+		height: 19px;
+		border: 2px solid transparent;
+		&.color-yellow {
+			background: #f2e239;
+		}
+		&.color-pink {
+			background: #fd8c70;
+		}
+
+		&.active {
+			border-color: #4d4d4d;
+		}
+	}
+}
+
+.labels-list {
+	@extend .reset-list;
+	li {
+		margin: 0 0 8px;
+	}
+}
+.label {
+	display: inline-block;
+	min-width: 52px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	text-transform: capitalize;
+	line-height: 31px;
+	&.label-info {
+		background: $info;
+	}
+	&.label-warning {
+		background: $warning;
+	}
+}
+
+.product-card {
+	position: relative;
+	width: 100%;
+	max-width: 250px;
+	margin: auto;
+	background: #fff;
+	.product-link {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border: none !important;
+	}
+
+	.product-header	{
+		position: relative;
+		.product-thumbnail {
+			.product-img {
+				position: absolute;
+				/* top: 0; */
+				left: 0;
+				right: 0;
+				bottom: 0;
+				max-width: 100%;
+				max-height: 100%;
+				margin: auto;
+			}
+		}
+	}
+	.product-body {
+		padding: 9px 20px 12px;
+		border-top: 1px solid $light-gray;
+		.product-title {
+			@extend .transition;
+			margin: 0 0 5px;
+			font-family: $base-font;
+			font-size: 15px;
+			font-weight: 400;
+			word-spacing: 0;
+			/* a {
+				border: none;
+				color: inherit;
+				&:hover {
+					color: $dark-info;
+				}
+			} */
+		}
+	}
+
+	.labels-list {
+		position: absolute;
+		z-index: 1;
+		top: 15px;
+		left: -13px;
+	}
+
+
+
+	.slider-product {
+		.slide-item {
+			height: 270px;
+			/* border: 20px solid transparent; */
+			/* border-bottom: none; */
+		}
+	}
+
+	.slider-product-colors {
+		position: absolute;
+		z-index: 2;
+		right: 15px;
+		bottom: 15px;
+		.slick-track {
+			width: 100% !important;
+			transform: translate3d(0, 0px, 0px) !important;
+			text-align: right;
+		}
+		.slide-item {
+			cursor: pointer;
+			float: none;
+			display: inline-block;
+			width: 21px;
+			height: 21px;
+			margin: 0 0 0 4px;
+			border: 1px solid transparent;
+			&.slick-current {
+				border: 1px solid #4d4d4d;
+			}
+		}
+	}
+
+	.product-price {
+		font-size: 16px;
+	}
+
+	.product-color {
+		width: 19px;
+		height: 19px;
+		&.product-color-active {
+			border-color: #4d4d4d;
+		}
+
+		&.product-color-yellow {
+			background-color: #f2e239;
+		}
+		&.product-color-pink {
+			background-color: #fd8c70;
+		}
+	}
+
+	&:hover {
+		.product-title {
+			color: $dark-info;
+		}
+	}
+}
+
+
+
+.breadcrumb {
+	@extend .reset-list;
+	margin: 30px 0 10px;
+	@media screen and (max-width: 991px) {
+		margin: 30px 0 -7px;
+	}
+
+	li {
+		position: relative;
+		display: inline-block;
+		padding: 0 4px 0 0;
+		line-height: 1;
+		a {
+			border-width: 2px;
+			border-color: transparent;
+			color: $dark-info;
+			&:hover {
+				border-color: $dark-info;
+			}
+		}
+
+		&:after {
+			content: ">";
+			display: inline-block;
+			margin: 0 0 0 6px;
+			color: #5f5f5e;
+		}
+		&:first-child {
+			padding-left: 0;
+			/* @media screen and (max-width: 749px) {
+				padding-left: 15px;
+			} */
+		}
+
+		&.active {
+			color: #5f5f5e;
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
+
+.pagination {
+	@extend .reset-list;
+	clear: both;
+	cursor: default;
+	padding: 30px 0;
+	text-align: center;
+	li {
+		display: inline-block;
+		vertical-align: middle;
+
+		a {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			border: 2px solid transparent;
+			border-radius: 50%;
+			color: $default;
+			text-align: center;
+			line-height: 28px;
+			vertical-align: middle;
+		}
+
+		i {
+			display: inline-block;
+			position: relative;
+			top: 4px;
+			font-size: 20px;
+		}
+
+		&.active {
+			font-weight: 700;
+		}
+
+		&.previous,
+		&.next,
+		&:hover {
+			a {
+				border-color: $danger;
+			}
+		}
+
+		&.previous,
+		&.next {
+			@media screen and (max-width: 749px) {
+				font-size: 0;
+			}
+			a {
+				width: 	initial;
+				border-radius: 30px;
+				font-weight: 600;
+				color: $danger;
+				@media screen and (max-width: 749px) {
+					padding: 0 14px !important;
+				}
+				&:hover {
+					color: #fff;
+					background-color: $danger;
+				}
+			}
+
+		}
+		&.previous {
+			margin: 0 20px 0 0;
+			@media screen and (max-width: 749px) {
+				margin: 0 10px 0 0;
+			}
+
+			a {
+				padding: 0 20px 0 14px;
+			}
+			i {
+				margin: 0 4px 0 0;
+			}
+		}
+		&.next {
+			margin: 0 0 0 20px;
+			@media screen and (max-width: 749px) {
+				margin: 0 0 0 10px;
+			}
+
+			a {
+				padding: 0 14px 0 20px;
+			}
+			i {
+				margin: 0 0 0 4px;
+			}
+		}
+	}
+}
+
+
+.nav-tabs {
+	border-bottom: 1px solid $gray;
+	> li {
+		text-align: center;
+	 	> a {
+	 		border-radius: 0;
+			margin: 0 0 -1px;
+			border: none;
+			border-bottom: 5px solid transparent;
+			padding: 12px 15px 12px;
+	 		background: transparent;
+	 		font-size: 16px;
+	 		font-weight: 500;
+	 		color: $default;
+	 		line-height: 1;
+	 	}
+		&.active > a, 
+	 	&.active > a:hover, 
+	 	&.active > a:focus {
+	 		margin: 0;
+	 		border: none;
+ 			border-bottom: 5px solid $info;
+ 			background: transparent;
+ 			font-weight: 700;
+ 			color: $default;
+	 	}
+	}
+}
+.tab-content {
+	margin: 0 0 10px;
+	padding: 18px 0;
+	line-height: 1.15;
+	@media screen and (max-width: 991px) {
+		margin: 0 0 -10px;
+	}
+	
+	p {
+		margin: 0 0 11px;
+	}
+}
+
+
+
+.slick-slider {
+	outline: none;
+	* {
+		outline: none;
+	}
+}
+.slick-arrow {
+	z-index: 1;
+	width: 40px;
+	height: 40px;
+	background-color: $warning !important;
+	border-radius: 3px;
+	&:hover {
+		background-color: saturate($warning, 20%) !important;
+	}
+	
+	&:before {
+		display: none;
+	}
+
+	&.slick-prev {
+		left: 0;
+	}
+	&.slick-next {
+		right: 0;
+	}
+}
+.slick-dots {
+	display: none;
+	li {
+		width: 14px;
+		height: 14px;
+		margin: 0 4px;
+		button {
+			width: inherit;
+			height: inherit;
+			border-radius: 50%;
+			background: #fff;
+		}
+
+		&.slick-active {
+			button {
+				background: $warning;
+			}
+		}
+	}
+}
