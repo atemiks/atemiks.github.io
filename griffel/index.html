@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>GRIFFEL</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modalCallbackLabel">Обратный звонок</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-callback" >
+                            <div class="form-group">
+                                <label for="userName">Ваше имя</label>
+                                <input type="text" id="userName" required >
+                            </div>
+                            <div class="form-group">
+                                <label for="userPhone">Ваш телефон</label>
+                                <input type="tel" id="userPhone" required >
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" >Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="content">
+                <header class="header-box">
+                    <div class="header-statusbar">
+                        <div class="container">
+                            <div class="row">
+                                <div class="header-statusbar-inner col-sm-12">
+                                    <ul class="social-list">
+                                        <li><a href="#link"><i class="icon-vk" ></i></a></li>
+                                        <li><a href="#link"><i class="icon-facebook" ></i></a></li>
+                                        <li><a href="#link"><i class="icon-odnoklassniki" ></i></a></li>
+                                        <li><a href="#link"><i class="icon-instagram" ></i></a></li>
+                                    </ul>
+
+                                    <div class="address-box">
+                                        <p><i class="icon-map-marker" ></i> Киев, улица Василия Яна, 3/5</p>
+                                    </div>
+
+                                    <div class="contact-box">
+                                        <i class="icon-phone" ></i>
+                                        <ul class="contact-list">
+                                            <li><a href="tel:(044) 227-25-56">(044) 227-25-56</a></li>
+                                            <li><a href="tel:(067) 504-28-60">(067) 504-28-60</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="order-callback">
+                                        <a href="#link" class="btn btn-xs btn-white"  data-toggle="modal" data-target="#modalCallback" >ЗАКАЗАТЬ ЗВОНОК</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="header-content-inner col-sm-12">
+                                    <div class="header-logo">
+                                        <a class="logo-link" href="index.html">
+                                            <img class="logo-img" src="img/logo.png" alt="GRIFFEL">
+                                            <p class="logo-caption">ЦЕНТР ШИРОКОФОРМАТНОЙ ПЕЧАТИ</p>
+                                        </a>
+                                    </div>
+                                    
+                                    <nav class="header-menu-wrap">
+                                        <ul class="header-menu">  
+                                            <li class="active" ><a href="#link">О КОМПАНИИ</a></li>
+                                            <li><a href="#link">ПЕЧАТЬ</a></li>
+                                            <li><a href="#link">УСЛУГИ</a></li>
+                                            <li><a href="#link">ПРАЙС-ЛИСТ</a></li>
+                                            <li><a href="#link">ОТЗЫВЫ</a></li>
+                                            <li><a href="#link">БЛОГ</a></li>
+                                            <li><a href="#link">КОНТАКТЫ</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <div id="burger">
+                                        <button>
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <main>
+                    <section class="section-hero overlay" style="background-image: url(img/hero-bg.png)">
+                        <div class="overlay-inner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1 text-center">
+                                        <h1 class="hero-title">ЦЕНТР ШИРОКОФОРМАТНОЙ ПЕЧАТИ</h1>
+                                        <div class="hero-description">
+                                            <p>ВСЕ ВИДЫ ШИРОКОФОРМАТНОЙ ПЕЧАТИ В РЕКЛАМНО-ПРОИЗВОДСТВЕННОЙ КОМПАНИИ «ALL-PRINT»</p>
+                                        </div>
+                                        <a href="#link" class="hero-btn">ЗАКАЗАТЬ УСЛУГУ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-categories section-dark">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-sm-12">
+                                    <p class="section-subtitle">У нас вы можете заказать все и сразу…</p>
+                                    <h2 class="section-title">Мы делаем полный цикл работ</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <ul class="categories-list">
+                                    <li class="categories-item col-md-3">
+                                        <div class="categories-card">
+                                            <div class="categories-icon-wrap">
+                                                <div class="categories-icon"></div>
+                                            </div>
+                                            <h6 class="categories-title"><a href="#link">Разработка дизайна</a></h6>
+                                            <div class="categories-description">
+                                                <p>Рекламный дизайн — наша стихия. Дизайнер воплотит вашу идею в готовые макеты.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="categories-item col-md-3">
+                                        <div class="categories-card">
+                                            <div class="categories-icon-wrap">
+                                                <div class="categories-icon"></div>
+                                            </div>
+                                            <h6 class="categories-title"><a href="#link">Все виды печати</a></h6>
+                                            <div class="categories-description">
+                                                <p>Предоставим качественную широкоформатную печать на собственном оборудовании</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="categories-item col-md-3">
+                                        <div class="categories-card">
+                                            <div class="categories-icon-wrap">
+                                                <div class="categories-icon"></div>
+                                            </div>
+                                            <h6 class="categories-title"><a href="#link">Постпечатная обработка</a></h6>
+                                            <div class="categories-description">
+                                                <p>Клиенты, которые воспользовались услугами печати, могут заказать и постпечатную обработку.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="categories-item col-md-3">
+                                        <div class="categories-card">
+                                            <div class="categories-icon-wrap">
+                                                <div class="categories-icon"></div>
+                                            </div>
+                                            <h6 class="categories-title"><a href="#link">Оклейка и монтаж</a></h6>
+                                            <div class="categories-description">
+                                                <p>Нанесем рекламу на транспорт, оклеим витрины, смонитруем баннера и ситилайты и многое другое</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-services" style="background-image: url('img/services-bg.png')" >
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="slider-services">
+                                        <div class="slide-item">
+                                            <div class="services-card">
+                                                <div class="services-card-inner">
+                                                    <h3 class="services-title"><a href="#link">Печать на БАННЕРЕ</a></h3>
+                                                    <p class="services-price">
+                                                        Цена <br> от <b>80</b> грн/м<sup>2</sup>
+                                                    </p>
+                                                    <a href="#link" class="btn" >ПОДРОБНЕЕ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="slide-item">
+                                            <div class="services-card">
+                                                <div class="services-card-inner">
+                                                    <h3 class="services-title"><a href="#link">Печать на БАННЕРЕ</a></h3>
+                                                    <p class="services-price">
+                                                        Цена <br> от <b>105</b> грн/м<sup>2</sup>
+                                                    </p>
+                                                    <a href="#link" class="btn" >ПОДРОБНЕЕ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="slide-item">
+                                            <div class="services-card">
+                                                <div class="services-card-inner">
+                                                    <h3 class="services-title"><a href="#link">Печать на БАННЕРЕ</a></h3>
+                                                    <p class="services-price">
+                                                        Цена <br> от <b>105</b> грн/м<sup>2</sup>
+                                                    </p>
+                                                    <a href="#link" class="btn" >ПОДРОБНЕЕ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="slide-item">
+                                            <div class="services-card">
+                                                <div class="services-card-inner">
+                                                    <h3 class="services-title"><a href="#link">УФ-ПЕЧАТЬ</a></h3>
+                                                    <p class="services-price">
+                                                        Цена <br> от <b>275</b> грн/м<sup>2</sup>
+                                                    </p>
+                                                    <a href="#link" class="btn" >ПОДРОБНЕЕ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="slide-item">
+                                            <div class="services-card">
+                                                <div class="services-card-inner">
+                                                    <h3 class="services-title"><a href="#link">Печать на ПЛЕНКЕ</a></h3>
+                                                    <p class="services-price">
+                                                        Цена <br> от <b>105</b> грн/м<sup>2</sup>
+                                                    </p>
+                                                    <a href="#link" class="btn" >ПОДРОБНЕЕ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <a href="#link" class="btn btn-lg" >СМОТРЕТЬ ПРАЙС-ЛИСТ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-stock overlay" style="background-image: url('img/stock-bg.png')" >
+                        <div class="overlay-inner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="section-header col-sm-12">
+                                        <p class="section-subtitle">Наши клиенты — наши друзья</p>
+                                        <h2 class="section-title">СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ И АКЦИИ</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <ul class="stock-list">
+                                        <li class="stock-item col-xs-12 col-sm-4">
+                                            <div class="stock-card">
+                                                <div class="stock-icon"><img src="img/icons/icon-gift.png" alt=""></div>
+                                                <h4 class="stock-title">РЕКЛАМНЫЙ ДИЗАЙН ОТ 50 ГРН</h4>
+                                                <div class="stock-description">
+                                                    <p>Станьте нашим постоянным клиентом и получайте выгодные цены на услуги дизайна!</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="stock-item col-xs-12 col-sm-4">
+                                            <div class="stock-card">
+                                                <div class="stock-icon"><img src="img/icons/icon-clock.png" alt=""></div>
+                                                <h4 class="stock-title">НАПЕЧАТАЕМ В ДЕНЬ ЗАКАЗА</h4>
+                                                <div class="stock-description">
+                                                    <p>Пришлите нам макет до 11:00 – получите готовый заказ до конца рабочего дня</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="stock-item col-xs-12 col-sm-4">
+                                            <div class="stock-card">
+                                                <div class="stock-icon"><img src="img/icons/icon-lorry.png" alt=""></div>
+                                                <h4 class="stock-title">НАПЕЧАТАЕМ В ДЕНЬ ЗАКАЗА</h4>
+                                                <div class="stock-description">
+                                                    <p>Пришлите нам макет до 11:00 – получите готовый заказ до конца рабочего дня</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+
+            <div class="footer">
+                <div class="footer-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="footer-block">
+                                    <h4 class="block-title">Рекламный дизайн</h4>
+
+                                    <ul class="footer-menu">
+                                        <li><a href="#link">Дизайн полиграфии</a></li>
+                                        <li><a href="#link">Дизайн наружной рекламы</a></li>
+                                        <li><a href="#link">Разработка логотипа</a></li>
+                                        <li><a href="#link">Разработка Brand-Book</a></li>
+                                        <li><a href="#link">Дизайн рекламы на транспорте</a></li>
+                                        <li><a href="#link">Дизайн сувенирной продукции</a></li>
+                                        <li><a href="#link">Создание презентаций</a></li>
+                                        <li><a href="#link">Оформление интерьерной рекламы</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4">
+                                <div class="footer-block">
+                                    <h4 class="block-title">Услуги печати</h4>
+
+                                    <ul class="footer-menu">
+                                        <li><a href="#link">Печать на пленке Oracal</a></li>
+                                        <li><a href="#link">УФ-печать на стекле, ПВХ, пластике</a></li>
+                                        <li><a href="#link">Печать плакатов, афиш и ситилайтов</a></li>
+                                        <li><a href="#link">Печать на баннере</a></li>
+                                        <li><a href="#link">Печать билбордов</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4">
+                                <div class="footer-block">
+                                    <h4 class="block-title">Рекламные услуги</h4>
+
+                                    <ul class="footer-menu">
+                                        <li><a href="#link">Изготовление вывесок</a></li>
+                                        <li><a href="#link">Монтаж баннера и ситилайтов</a></li>
+                                        <li><a href="#link">Монтаж и оклейка витрин</a></li>
+                                        <li><a href="#link">Нанесение рекламы на транспорт</a></li>
+                                        <li><a href="#link">Постпечатная обработка</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-statusbar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <div class="copyright-box">
+                                    <p>&copy; 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

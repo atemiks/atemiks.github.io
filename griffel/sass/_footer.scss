@@ -1,0 +1,51 @@
+.footer {
+	.footer-inner {
+		padding: 95px 0 25px;
+		@media screen and (max-width: 991px) {
+			padding: 20px 0 25px;
+		}
+	}
+}
+
+.footer-block {
+	margin: 25px 0;
+	.block-title {
+		margin: 0 0 35px;
+		color: $primary;
+		@media screen and (max-width: 640px) {
+			margin: 0 0 15px;
+		}
+	}
+}
+
+.footer-menu {
+	@extend .reset-list;
+	li {
+		position: relative;
+		margin: 0 0 7px;
+		padding: 0 0 0 25px;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 5px;
+			left: 0;
+			width: 11px;
+			height: 11px;
+			background: url('../img/icons/icon-hexagon.png') no-repeat 0 0;
+			background-size: contain;
+		}
+		a {
+			font-size: 18px;
+			font-weight: 300;
+		}
+	}
+}
+
+
+.copyright-box {
+	padding: 30px 0;
+	p {
+		margin: 0;
+		font-size: 18px;
+	}
+}
