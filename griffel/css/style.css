@@ -5,6 +5,12 @@
   padding: 0;
   list-style: none; }
 
+.transition, a, button,
+.btn {
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease; }
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -2269,10 +2275,7 @@ p {
   margin: 0; }
 
 a {
-  color: #0087d5;
-  -webkit-transition: color 300ms ease;
-  -o-transition: color 300ms ease;
-  transition: color 300ms ease; }
+  color: #0087d5; }
   a:hover {
     text-decoration: none; }
 
@@ -2382,6 +2385,10 @@ button,
   .container {
     width: 1270px; } }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-sm-6:nth-child(3n+3) {
+    clear: both; } }
+
 .overlay {
   position: relative; }
   .overlay:before {
@@ -2451,9 +2458,13 @@ article {
   .slick-slider * {
     outline: none; }
 
+@media screen and (max-width: 1024px) {
+  .slick-list {
+    margin: 0 20px; } }
+
 @media screen and (max-width: 640px) {
   .slick-list {
-    padding: 0 10px; } }
+    margin: 0 10px; } }
 
 .slick-arrow {
   z-index: 1;
@@ -2468,7 +2479,7 @@ article {
 
 .slick-prev {
   left: -35px; }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     .slick-prev {
       left: 0; } }
   .slick-prev:before {
@@ -2476,7 +2487,7 @@ article {
 
 .slick-next {
   right: -35px; }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     .slick-next {
       right: 0; } }
   .slick-next:before {
@@ -2856,22 +2867,30 @@ div#burger:hover button span:after {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   min-height: 665px;
-  padding: 60px 0 110px;
+  padding: 80px 0;
   background-position: center center;
   -webkit-background-size: cover;
           background-size: cover; }
   @media screen and (max-width: 1024px) {
     .section-hero {
       min-height: 450px; } }
+  @media screen and (max-width: 640px) {
+    .section-hero {
+      padding: 40px 0; } }
   .section-hero .hero-title {
     margin: 0 0 10px;
     font-family: "Bebas", sans-serif;
@@ -2881,14 +2900,27 @@ div#burger:hover button span:after {
     @media screen and (max-width: 1024px) {
       .section-hero .hero-title {
         font-size: 50px; } }
+    @media screen and (max-width: 640px) {
+      .section-hero .hero-title {
+        font-size: 40px; } }
   .section-hero .hero-description {
+    padding: 0 0 110px;
     line-height: 1;
     text-transform: uppercase; }
+    @media screen and (max-width: 1024px) {
+      .section-hero .hero-description {
+        padding: 0 0 60px; } }
+    @media screen and (max-width: 640px) {
+      .section-hero .hero-description {
+        padding: 0 0 30px;
+        font-size: 16px;
+        line-height: 1.2; } }
   .section-hero .hero-btn {
-    position: absolute;
-    left: 50%;
-    bottom: -180px;
-    width: 60%;
+    position: relative;
+    display: block;
+    width: -webkit-calc(50% + 30px);
+    width: calc(50% + 30px);
+    margin: auto;
     padding: 23px 20px;
     background: #fff;
     font-size: 42px;
@@ -2896,12 +2928,15 @@ div#burger:hover button span:after {
     color: #008dd2;
     text-decoration: none;
     text-align: center;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%); }
+    white-space: nowrap; }
     @media screen and (max-width: 1024px) {
       .section-hero .hero-btn {
         font-size: 24px; } }
+    @media screen and (max-width: 640px) {
+      .section-hero .hero-btn {
+        width: 80%;
+        padding: 15px;
+        font-size: 18px; } }
     .section-hero .hero-btn:before, .section-hero .hero-btn:after {
       content: "";
       position: absolute;
@@ -2919,16 +2954,30 @@ div#burger:hover button span:after {
           width: 60px;
           height: 60px;
           top: 8.5px; } }
+      @media screen and (max-width: 640px) {
+        .section-hero .hero-btn:before, .section-hero .hero-btn:after {
+          width: 43px;
+          height: 43px;
+          top: 5.5px; } }
     .section-hero .hero-btn:before {
       left: -40px; }
       @media screen and (max-width: 1024px) {
         .section-hero .hero-btn:before {
           left: -30px; } }
+      @media screen and (max-width: 640px) {
+        .section-hero .hero-btn:before {
+          left: -20px; } }
     .section-hero .hero-btn:after {
       right: -40px; }
       @media screen and (max-width: 1024px) {
         .section-hero .hero-btn:after {
           right: -30px; } }
+      @media screen and (max-width: 640px) {
+        .section-hero .hero-btn:after {
+          right: -20px; } }
+    .section-hero .hero-btn span {
+      position: relative;
+      z-index: 1; }
 
 .section-categories {
   background: #0295d0;
@@ -2950,6 +2999,9 @@ div#burger:hover button span:after {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   margin: 60px 0 0; }
+  @media screen and (max-width: 640px) {
+    .categories-list {
+      margin: 20px 0 0; } }
 
 .categories-card {
   max-width: 275px;

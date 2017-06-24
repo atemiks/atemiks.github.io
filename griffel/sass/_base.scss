@@ -78,7 +78,7 @@ p {
 
 a {
 	color: $link-color;
-	transition: color 300ms ease;
+	@extend .transition;
 	&:hover {
 		text-decoration: none;
 	}
@@ -123,6 +123,7 @@ button,
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
+	@extend .transition;
 	&:hover {
 		background: $primary;
 		color: #fff;
