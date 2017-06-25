@@ -37,6 +37,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cut:before {
+  content: "\e901";
+}
+.icon-settings:before {
+  content: "\e902";
+}
+.icon-print:before {
+  content: "\e903";
+}
+.icon-pen:before {
+  content: "\e900";
+}
 .icon-close:before {
   content: "\f00d";
 }

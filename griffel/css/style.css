@@ -1939,6 +1939,18 @@ th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-cut:before {
+  content: "\e901"; }
+
+.icon-settings:before {
+  content: "\e902"; }
+
+.icon-print:before {
+  content: "\e903"; }
+
+.icon-pen:before {
+  content: "\e900"; }
+
 .icon-close:before {
   content: "\f00d"; }
 
@@ -3042,6 +3054,16 @@ div#burger:hover button span:after {
       -webkit-transform: rotate(-60deg);
           -ms-transform: rotate(-60deg);
               transform: rotate(-60deg); }
+    .categories-card .categories-icon-wrap .categories-icon {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: #fff; }
   .categories-card .categories-title {
     margin: 0 0 15px;
     text-transform: uppercase; }
@@ -3052,6 +3074,8 @@ div#burger:hover button span:after {
     font-weight: 300; }
   .categories-card:hover .categories-icon-wrap {
     background: #fff; }
+    .categories-card:hover .categories-icon-wrap .categories-icon {
+      color: #008dd2; }
 
 .section-services {
   -webkit-background-size: cover;

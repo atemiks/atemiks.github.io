@@ -164,6 +164,16 @@
 	    &:after {
 	    	transform:rotate(-60deg);
 	    }
+
+	    .categories-icon {
+	    	position: absolute;
+	    	z-index: 1;
+	    	top: 50%;
+	    	left: 50%;
+	    	transform: translate(-50%, -50%);
+	    	font-size: 60px;
+	    	color: #fff;
+	    }
 	}
 	.categories-title {
 		margin: 0 0 15px;
@@ -180,6 +190,9 @@
 	&:hover {
 		.categories-icon-wrap {
 			background: #fff;
+			.categories-icon {
+				color: $primary;
+			}
 		}
 	}
 }
