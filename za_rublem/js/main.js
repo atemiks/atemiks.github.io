@@ -142,5 +142,11 @@ $(document).ready(function () {
     $(this).parent().find(".sprite-icon-arrow-up").removeClass("sprite-icon-arrow-up").addClass("sprite-icon-arrow-down");
     });
 
+    // fancy box
+    $('[data-fancybox]').fancybox({
+        infobar : false,
+        toolbar : false,
+        arrows : false
+    })
 
 });

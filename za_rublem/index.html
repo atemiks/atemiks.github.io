@@ -47,7 +47,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group text-center">
                                 <button type="submit" class="btn btn-lg btn-gradient" ><span>отправить заявку</span></button>
                             </div>
                         </form>
@@ -206,51 +206,48 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
-                                    <form action="" class="form-calc">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="range-sum-box">
-                                                    <div class="range-field">
-                                                        <span>Сумма, <br> руб.</span>
-                                                        <input type="number" id="range-sum-input" value="25000" min="0" max="5000000"></input>
-                                                    </div>
-                                                    <div class="range-slider range-sum-slider-wrap">
-                                                        <input type="range" id="range-sum-slider" value="25000" min="0" max="5000000">
-
-                                                        <div class="range-sum-value-left"></div>
-                                                        <div class="range-sum-value-right"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="range-time-box">
-                                                    <div class="range-field">
-                                                        <span>Срок, <br> дней</span>
-                                                        <input type="number" id="range-time-input" value="60" min="0" max="300"></input>
-                                                    </div>
-                                                    <div class="range-slider range-time-slider-wrap">
-                                                        <input type="range" id="range-time-slider" value="60" min="0" max="300"> 
-
-                                                        <div class="range-time-value-left"></div>
-                                                        <div class="range-time-value-right"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="result-box">
-                                                    <p class="result-title">ежемесячный платеж</p>
-                                                    <p class="result">0</p>
-                                                </div>
-                                            </div>
+                                <div class="col-md-4">
+                                    <div class="range-sum-box">
+                                        <div class="range-field">
+                                            <span>Сумма, <br> руб.</span>
+                                            <input type="number" id="range-sum-input" value="25000" min="0" max="5000000"></input>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-4 col-md-offset-8 text-center">
-                                                <button type="submit" ><span>оставить заявку</span></button>
-                                            </div>
+                                        <div class="range-slider range-sum-slider-wrap">
+                                            <input type="range" id="range-sum-slider" value="25000" min="0" max="5000000">
+
+                                            <div class="range-sum-value-left"></div>
+                                            <div class="range-sum-value-right"></div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
+
+                                <div class="col-md-4">
+                                    <div class="range-time-box">
+                                        <div class="range-field">
+                                            <span>Срок, <br> дней</span>
+                                            <input type="number" id="range-time-input" value="60" min="0" max="300"></input>
+                                        </div>
+                                        <div class="range-slider range-time-slider-wrap">
+                                            <input type="range" id="range-time-slider" value="60" min="0" max="300"> 
+
+                                            <div class="range-time-value-left"></div>
+                                            <div class="range-time-value-right"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <div class="result-box">
+                                        <p class="result-title">ежемесячный платеж</p>
+                                        <p class="result">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-8 text-center">
+                                    <a class="btn" data-toggle="modal" data-target="#modalCallback" ><span>оставить заявку</span></a>
+                                </div>
+                                
                             </div>
                         </div>
                     </section>
@@ -366,7 +363,7 @@
                                                 </div>
                                                 <div class="media-body">
                                                     <p class="media-heading">Имя Фамилия, 29 лет</p>
-                                                    <a class="more-link" href="#link">Читать отзыв клиента</a>
+                                                    <a class="more-link" data-fancybox="gallery" href="img/testimonials/testimonial-text-1.png" >Читать отзыв клиента</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -401,7 +398,7 @@
                                                 </div>
                                                 <div class="media-body">
                                                     <p class="media-heading">Имя Фамилия, 29 лет</p>
-                                                    <a class="more-link" href="#link">Читать отзыв клиента</a>
+                                                    <a class="more-link"  data-fancybox="gallery" href="img/testimonials/testimonial-text-2.png" >Читать отзыв клиента</a>
                                                 </div>
                                             </div>
                                         </div>
