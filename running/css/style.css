@@ -3847,6 +3847,16 @@ input[type=number] {
     vertical-align: middle; }
   .product-rate .rating-answers {
     font-size: 15px; }
+  .product-rate .rating-existing {
+    position: relative; }
+    .product-rate .rating-existing:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
 
 .rating {
   cursor: default; }
@@ -5118,6 +5128,7 @@ input[type=number] {
     .aside-filters {
       position: relative;
       top: 0 !important;
+      left: 0 !important;
       display: block !important; } }
   .aside-filters .aside-filters-head {
     overflow: hidden; }
