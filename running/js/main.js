@@ -71,8 +71,8 @@ $(document).ready(function() {
 
     
 
-    $('.rating-existing').starrr({
-        readOnly: true
+    $('.starrr').starrr({
+      readOnly: true
     })
 
     // sliders init

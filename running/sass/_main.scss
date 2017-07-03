@@ -82,6 +82,7 @@
 		border-top: 3px solid $light-gray;
 		text-align: center;
 		text-transform: uppercase;
+		@extend .transition;
 	}
 	.categories-thumbnail {
 		position: relative;

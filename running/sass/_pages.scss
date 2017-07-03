@@ -53,6 +53,7 @@
 	max-width: 265px;
 	margin: 0 0 25px;
 	border: 1px solid transparent;
+	@extend .transition;
 	@media screen and (max-width: 767px) {
 		border-color: $light-gray;
 	}
@@ -143,6 +144,19 @@
 	}
 	.rating-answers {
 		font-size: 15px;
+	}
+
+	.rating-existing {
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
 	}
 }
 .rating {
@@ -411,10 +425,15 @@
 }
 
 
+.breadcrumb-box {
+	padding: 37px 0 21px;
+	@media screen and (max-width: 767px) {
+		padding: 21px 0;
+	}
+}
 .breadcrumb {
 	@extend .reset-list;
 	cursor: default;
-	padding: 37px 0 15px;
 	
 	li {
 		position: relative;

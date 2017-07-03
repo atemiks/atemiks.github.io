@@ -244,6 +244,9 @@
 	@media screen and (max-width: 767px) {
 		overflow: hidden;
 		justify-content: space-between;
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.related-item {
 		@media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -255,6 +258,18 @@
 			max-width: 265px;
 			&:nth-child(n+3) {
 				display: none;
+			}
+		}
+	}
+
+	.product-card {
+		.product-body {
+			.product-rate {
+				.rating-answers {
+					@media screen and (max-width: 375px) {
+						display: none;
+					}
+				}
 			}
 		}
 	}
