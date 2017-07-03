@@ -1,0 +1,394 @@
+* {
+	box-sizing: border-box !important;
+}
+
+html, 
+body {
+	height: 100%;
+	font-family: $base-font, sans-serif;
+	font-size: 16px;
+	line-height: 1.3125;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 20px;
+	font-family: $base-heading;
+	color: $default-heading;
+	line-height: 1;
+}
+
+h1,
+.h1 {
+	font-size: 50px;
+	letter-spacing: -3.1px;
+	line-height: 1.1;
+	@media screen and (max-width: 991px) {
+		font-size: 40px;
+	}
+}
+h2,
+.h2 {
+	font-size: 45px;
+	letter-spacing: -4.0px;
+	@media screen and (max-width: 1199px) {
+		font-size: 42px;
+	}
+	@media screen and (max-width: 991px) {
+		font-size: 40px;
+	}
+}
+h3,
+.h3 {
+	font-size: 42px;
+	letter-spacing: -2.0px;
+}
+h4,
+.h4 {
+	font-size: 21px;
+}
+h5,
+.h5 {
+	font-size: 20px;
+	@media screen and (max-width: 767px)  {
+		font-size: 18px;
+	}
+}
+h6,
+.h6 {
+	font-size: 16px;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: $link-color;
+	transition: color 300ms ease;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+section,
+article {
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+article {
+	h1,
+	.h1 {
+		font-size: 42px;
+	}
+	h2,
+	.h2 {
+		font-size: 24px;
+	}
+	h3,
+	.h3 {
+		font-size: 22px;
+	}
+	h4,
+	.h4 {
+		font-size: 20px;
+	}
+	h5,
+	.h5 {
+		font-size: 18px;
+	}
+	h6,
+	.h6 {
+		font-size: 18px;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display:none;
+}
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+	cursor: pointer;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 500;
+    color: $default;
+}
+
+
+input[type="radio"] + label span,
+input[type="checkbox"] + label span {
+    cursor:pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px 0 0;
+    padding: 7px;
+    border: 1px solid $light-gray;
+    border-radius: 50%;
+    background: #fff;
+}
+
+input[type="radio"] + label span,
+input[type="checkbox"] + label span {
+     background-color: #fff;
+}
+input[type="checkbox"] + label span {
+	border-radius: 0;
+}
+
+
+input[type="radio"]:checked + label span {
+    background-color: $warning;
+}
+input[type="checkbox"]:checked + label span {
+	position: relative;
+	border-color: $warning;
+	&:before {
+		font-family: 'icomoon';
+		content: "\e905";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		font-size: 14px;
+		font-weight: 700;
+		color: $warning;
+		text-align: center;
+		line-height: 14px;
+	}
+}
+input[type="checkbox"]:checked + label span + span:before {
+	display: none;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span,
+input[type="checkbox"] + label span,
+input[type="checkbox"]:checked + label span {
+	@extend .transition;
+}
+
+input[type="radio"] + label span + span,
+input[type="checkbox"] + label span + span {
+	overflow: hidden;
+	width: auto;
+	height: auto;
+	border: none !important;
+	padding: 0;
+}
+
+.radio, 
+.radio + .radio,
+.checkbox,
+.checkbox + .checkbox {
+	margin-top: 9px;
+	margin-bottom: 9px;
+	label {
+		padding-left: 0;
+	}
+}
+
+button,
+.btn {
+	outline: none;
+	display: inline-block;
+	padding: 14px 22px 12px;
+	border: 1px solid $warning;
+	border-radius: 22px;
+	background: $warning;
+	font-size: 18px;
+	font-weight: 700;
+	color: $default;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1;
+
+	&:hover {
+		border-color: $light-warning;
+		background: $light-warning;
+	}
+
+	&.btn-outline {
+		border-color: $default;
+		background: transparent;
+		&:hover {
+			border-color: $default;
+			background: $default;
+			color: #fff;
+		}
+	}
+}
+
+.btn-sm {
+	padding: 13px 20px 9px;
+	font-size: 14px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+button:disabled,
+.btn.disabled,
+.btn.btn-outline.btn-disabled {
+	cursor: default;
+	border-color: #cccccb !important;
+	background: #cccccb !important;
+	color: #7a7878 !important;
+}
+
+input {
+	outline: none;
+	&::-webkit-input-placeholder {color:#000;}
+	&::-moz-placeholder          {color:#000;}
+	&:-moz-placeholder           {color:#000;}
+	&:-ms-input-placeholder      {color:#000;}
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity  {
+  	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	border: 1px solid $gray;
+	border-radius: 22px;
+  	margin: 0 20px 0 0;
+  	padding: 0 0 0 25px;
+  	vertical-align: middle;
+
+	input {
+		height: 44px;
+		width: 100%;
+		border: none;
+		font-size: 16px;
+		color: $gray;
+		&:focus {
+			outline: 0;
+		}
+	}
+	.quantity-button {
+		cursor: pointer;
+		position: absolute;
+		right: 20px;
+		@extend .transition;
+		&.quantity-up {
+			top: 5px;
+			border: 6px solid transparent;	
+			border-bottom: 6px solid $gray;
+			&:hover {
+				border-bottom-color: $dark-gray;
+			}
+		}
+		&.quantity-down {
+			bottom: 5px;
+			border: 6px solid transparent;	
+			border-top: 6px solid $gray;
+			&:hover {
+				border-top-color: $dark-gray;
+			}
+		}
+	}
+}
+
+// select
+.select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+}
+
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    color: $warning;
+    height: 14px;
+    width: 100px;
+    line-height: 1;
+}
+
+.select-styled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    @include transition(all 0.2s ease-in);
+    &:after {
+    	font-family: 'icomoon';
+        content: "\e90a";
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 16px;
+        color: $default;
+    }
+    &:active,
+    &.active {
+    	color: darken($warning, 5%);
+        &:after {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    li {
+        margin: 0;
+        padding: 12px 0;
+        text-indent: 15px;
+        border-top: 1px solid $light-gray;
+        @include transition(all 0.15s ease-in);
+        &:hover {
+            color: $warning;
+        }
+        &[rel="hide"] {
+            display: none;
+        }
+    }
+}
+
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}

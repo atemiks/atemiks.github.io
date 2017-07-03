@@ -1,0 +1,348 @@
+.section-hero {
+	position: relative;
+	overflow: hidden;
+	background-color: $light-warning;
+	background-position: center center;
+	background-size: cover;
+	margin: 0 0 -15px;
+	padding-top: 80px;
+	padding-bottom: 150px;
+	@media screen and (max-width: 991px) {
+		padding-bottom: 110px;
+	}
+	@media screen and (max-width: 767px) {
+		padding-top: 68px;
+		padding-bottom: 90px;
+	}
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top:100%;
+		width: 65%;
+		height: 150px;
+		background: #fff;
+	}
+	&:before {
+		left: -5%;
+		transform: rotate(7deg);
+		transform-origin: right;
+	}
+	&:after {
+		right: -5%;
+		transform: rotate(-7deg);
+		transform-origin: left;
+	}
+
+	.hero-title	{
+		margin: 0 0 10px;
+		text-transform: uppercase;
+		@media screen and (max-width: 767px) {
+			margin: 0 0 15px;
+		}
+	}
+	.hero-description {
+		max-width: 80%;
+		margin: 0 0 20px;
+		font-size: 18px;
+		@media screen and (min-width: 768px) and (max-width: 991px) {
+			max-width: 100%;
+		}
+	}
+}
+
+.section-categories {}
+.categories-list {
+	@extend .reset-list;
+	position: relative;
+	top: -5px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: -70px;
+}
+.categories-card {
+	position: relative;
+	margin-bottom: 70px;
+	@media screen and (max-width: 767px)  {
+		margin-bottom: 40px;
+	}
+
+	.categories-link {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.categories-title {
+		padding: 15px;
+		border-top: 3px solid $light-gray;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.categories-thumbnail {
+		position: relative;
+		padding-bottom: calc(60% - 20px);
+		border: 10px solid transparent;
+		@media screen and (min-width: 992px) and (max-width: 1199px)  {
+			padding-bottom: calc(73% - 20px);
+		}
+		@media screen and (max-width: 991px) {
+			padding-bottom: calc(86% - 20px);
+		}
+		@media screen and (max-width: 767px)  {
+			padding-bottom: calc(95% - 20px);
+		}
+
+		.categories-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			max-width: 100%;
+			max-height: 100%;
+			margin: auto;
+		}
+	}
+
+	&:hover {
+		.categories-title {
+			border-color: $warning;
+			color: $warning;
+		}
+	}
+}
+
+
+.section-articles {
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	background-color: #000;
+	background-position: center center;
+	background-size: cover;
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		height: 400px;
+		width: 60%;
+		background: #fff;
+	}
+	&:before {
+		left: -5%;
+		transform: rotate(-7deg);
+		transform-origin: right;
+		@media screen and (max-width: 767px) {
+			left: -10%;
+		}
+	}
+	&:after {
+		right: -5%;
+		transform: rotate(7deg);
+		transform-origin: left;
+		@media screen and (max-width: 767px) {
+			right: -10%;
+		}
+	}
+
+	.section-articles-wrap {
+		position: relative;
+		padding: 120px 0;
+		@media screen and (min-width: 992px) and (max-width: 1199px) {
+			padding: 80px 0 100px;
+		}
+		@media screen and (max-width: 991px) {
+			padding: 80px 0 40px;
+		}
+		@media screen and (max-width: 767px) {
+			padding: 65px 0 70px;
+		}
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			height: 400px;
+			width: 60%;
+			background: #fff;
+		}
+		&:before {
+			left: -5%;
+			transform: rotate(7deg);
+			transform-origin: right;
+			@media screen and (max-width: 767px) {
+				left: -10%;
+			}
+		}
+		&:after {
+			right: -5%;
+			transform: rotate(-7deg);
+			transform-origin: left;
+			@media screen and (max-width: 767px) {
+				right: -10%;
+			}
+		}
+	}
+
+	.section-header {
+		position: relative;
+		z-index: 1;
+		.section-title {
+			@extend .h3;
+			color: #fff;
+			@media screen and (max-width: 991px) {
+				font-size: 40px;
+			}
+			@media screen and (max-width: 767px)  {
+				font-size: 38px;
+			}
+		}
+	}
+}
+.slider-articles {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	@media screen and (max-width: 991px) {
+		max-width: 650px;
+		margin: -10px auto 0;
+	}
+	@media screen and (max-width: 767px) {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.slick-list {
+		@media screen and (max-width: 767px) {
+			margin: 0 40px;
+		}
+	}
+	.slick-arrow {
+		&:before {
+			opacity: 1;
+			color: #fff;
+		}
+	}
+}
+.articles-card {
+	position: relative;
+	z-index: 2;
+	margin-bottom: 20px;
+	padding-bottom: 67%;
+	background-position: center center;
+	background-size: cover;
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+	}
+	.articles-link {
+		position: absolute;
+		z-index: 5;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.articles-inner {
+		position: absolute;
+		z-index: 4;
+		left: 20px;
+		right: 5px;
+		bottom: 20px;
+		@media screen and (min-width: 992px) and (max-width: 1199px) {
+			left: 38px;
+			bottom: 25px;
+		}
+		@media screen and (max-width: 991px) {
+			left: 30px;
+			bottom: 28px;
+		}
+	}
+
+	.articles-title {
+		margin: 0 0 5px;
+		color: #fff;
+	}
+	.articles-description {
+		color: #fff;
+	}
+}
+.more-articles {
+	position: relative;
+	float: right;
+	margin: 0 -15px 0 0;
+	padding: 0 15px;
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		z-index: 1;
+		float: none;
+		top: -60px;
+		max-width: 650px;
+		margin: 0 auto;
+		text-align: right;
+	}
+	@media screen and (max-width: 767px) {
+		margin: 0 40px;
+	}
+
+	a {
+		font-size: 18px;
+		color: #fff;
+		text-decoration: none;
+		span {
+			text-decoration: underline;
+		}
+		i {
+			display: inline-block;
+			margin: 0;
+			font-size: 36px;
+			vertical-align: middle;
+			@media screen and (max-width: 767px) {
+				display: none;
+			}
+		}
+
+		&:hover {
+			color: $warning;
+		}
+	}
+}
+
+.section-products {
+	padding-bottom: 65px;
+	@media screen and (max-width: 991px) {
+		padding-bottom: 70px;
+	}
+	@media screen and (max-width: 767px) {
+		padding: 60px 0 35px;
+	}
+}
+.slider-products {
+	@media screen and (max-width: 767px) {
+		margin: 0 -15px 0 0;
+	}
+
+	.slick-list {
+		@media screen and (min-width: 768px) and (max-width: 991px) {
+			margin: 0 25px;
+		}
+	}
+	.slide-item {
+		@media screen and (max-width: 767px) {
+			width: 170px;
+			margin: 0 15px 0 0;
+		}
+	}
+}
