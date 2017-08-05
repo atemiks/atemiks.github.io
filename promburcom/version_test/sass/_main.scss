@@ -1,0 +1,131 @@
+.section-hero {
+	padding: 0;
+}
+.slider-hero {
+	margin: 0;
+	.slide-item {
+		height: 400px;
+		background-position: center center;
+		background-size: cover;
+		background-color: $primary;
+	}
+	.slick-list {
+		margin: 0;
+	}
+}
+
+.section-faq {
+	padding-top: 0;
+	padding-bottom: 80px;
+}
+
+
+.section-advantages {
+	padding-top: 80px;
+	background-position: center center;
+	background-size: cover;
+}
+.advantages-list {
+	@extend .reset-list;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 -20px;
+	.advantages-item {
+		width: 20%;
+		padding: 0 15px;
+	}
+}
+
+.advantages-card {
+	max-width: 200px;
+	margin: 0 auto 30px;
+	text-align: center;
+	.advantages-thumb {
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+		width: 170px;
+		height: 170px;
+		margin: 0 auto 30px;
+		border: 1px solid rgba(163, 168, 175, 0.5);
+		border-radius: 50%;
+		background: #fff;
+		font-size: 40px;
+		color: $info;
+	}
+
+	.advantages-title {
+		margin: 0 0 10px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.advantages-description {
+		font-size: 14px;
+		color: #99a2b0;
+		line-height: 1.4285;
+	}
+}
+
+
+.section-testimonials {
+	padding-bottom: 50px;
+}
+.slider-testimonials {
+	margin: 65px 0 50px;
+	.slide-item {
+		padding: 0 15px;
+	}
+}
+
+.testimonial-card {
+	text-align: center;
+	.testimonial-header {
+		margin: 0 0 30px;
+		.testimonial-name {
+			@extend .h6;
+			margin: 0 0 5px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		.testimonial-info {
+			@extend .h6;
+			margin: 0 0 5px;
+			color: $gray;
+		}
+	}
+	.testimonial-body {
+		position: relative;
+		min-height: 164px;
+		border-radius: 10px;
+		padding: 20px;
+		background-color: #f6f6f6;
+		font-size: 14px;
+		line-height: 1.45;
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: -20px;
+			left: 50%;
+			border: 10px solid transparent;	
+			border-bottom: 10px solid #f6f6f6;
+			transform: translateX(-50%);
+		}
+
+		p {
+			margin: 0;
+			
+			color: $gray;
+		}
+	}
+}
+
+.section-callback {
+	padding-top: 20px;
+	padding-bottom: 50px;
+	border-top: 1px solid #d1d4d7;
+}
+
+.form-callback {
+	margin-top: -20px;
+}
