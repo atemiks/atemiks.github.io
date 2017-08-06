@@ -2,8 +2,20 @@
     overflow: hidden;
     padding: 5px 0;
     border-bottom: 1px solid #d1d4d7;
+    @media (max-width: 767px) {
+        display: none;
+    }
+
+    .container {
+        @media (max-width: 1199px) {
+            width: 100%;
+        }
+    }
     .header-statusbar-inner {
         padding: 0 50px;
+        @media (max-width: 1199px) {
+            padding: 0 15px;
+        }
     }
 }
 .header-statusbar-menu {
@@ -27,12 +39,31 @@
 
 .header-logo {
     width: 214px;
-    @media screen and (max-width: 1199px) {
+    @media (max-width: 1199px) {
         width: 164px;
     }
+    @media (max-width: 991px) {
+        padding: 6px 0;
+    }
+    @media (max-width: 767px) {
+        width: 44px;
+        padding: 12px 0;
+    }
 
-    a {
+    img {
         display: block;
+    }
+
+    .logo-desktop {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    .logo-mobile {
+        display: none;
+        @media (max-width: 767px) {
+            display: block;
+        }
     }
 }
 
@@ -76,10 +107,17 @@
         padding: 0 5px;
         font-size: 32px;
         color: #a3a8af;
+        @media (max-width: 767px) {
+            font-size: 24px;
+        }
     }
 
     .header-contact-inner {
         font-size: 14px;
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
+
         p {
             margin: 0;
             font-family: $fontArial;
@@ -97,6 +135,9 @@
             font-size: 22px;
             color: #000;
             line-height: 1;
+            @media (max-width: 767px) {
+                font-size: 20px;
+            }
         }
     }
 }
@@ -104,12 +145,24 @@
 
 .header-box {
     border-bottom: 1px solid #d1d4d7;
+    .container {
+         @media screen and (max-width: 1199px) {
+            width: 100%;
+         }
+    }
     .header-content-inner {
+        overflow: hidden;
         display: flex;
         align-items: center;
+        @media screen and (max-width: 991px) {
+            display: block;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
     }
 
     .header-logo {
+        float: left;
         flex: 0 0 auto;
     }
     .header-menu-wrap {
@@ -132,6 +185,7 @@
         }
     }
     .header-contact {
+        float: right;
         flex: 0 0 auto;
     }
 }
@@ -173,6 +227,12 @@
         transform: translateY(0);
     }
 
+    .container {
+         @media screen and (max-width: 1199px) {
+            width: 100%;
+         }
+    }
+
     .header-fixed-inner  {
        /*  display: table; */
        display: flex;
@@ -188,20 +248,24 @@
 
     .header-logo {
         flex: 0 0 auto;
-        width: 55px;
+        width: 55px !important;
+        padding: 0;
+        @media (min-width: 768px) and (max-width: 991px) {
+            flex: 1 0 auto;
+        }
     }
 
     .header-menu {
         flex: 1 0 auto;
         padding: 0 10px;
-        @media screen and (max-width: 991px) {
+        @media (max-width: 991px) {
             display: none;
         }
 
         li {
             margin: 0;
             padding: 0 20px;
-            @media screen and (min-width: 992px) and (max-width: 1199px) {
+            @media (min-width: 992px) and (max-width: 1199px) {
                 padding: 0 5px;
             }
 
@@ -211,6 +275,9 @@
                 font-size: 13px;
                 letter-spacing: 0.4px;
                 color: #fff;
+                &:hover {
+                    color: darken(#fff, 10%);
+                }
             }
         }
     }
@@ -218,19 +285,50 @@
     .header-contact {
         flex: 0 0 auto;
         /* white-space: nowrap; */
+        @media (max-width: 767px) {
+            flex: 1 0 auto;
+            justify-content: center;
+        }
         .phone {
             margin: 0 30px 0 0;
             font-size: 18px;
             color: #a3a8af;
-            @media screen and (max-width: 1199px) {
-                margin: 0 15px 0 0;
+            @media (min-width: 992px) and (max-width: 1199px) {
                 font-size: 14px;
+            }
+            @media (max-width: 1199px) {
+                margin: 0 15px 0 0;
+            }
+            @media (max-width: 767px) {
+                margin: 0;
+            }
+
+            &:hover {
+                color: darken(#a3a8af, 10%);
             }
         }
         .btn {
-            @media screen and (max-width: 1199px) {
+            @media (max-width: 1199px) {
                 padding-left: 15px;
                 padding-right: 15px;
+            }
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+
+    .off-canvas-toggle {
+        margin: 0 0 0 15px;
+        @media (max-width: 767px) {
+            margin: 0 0 0 27px;
+        }
+
+        a {
+            &:before,
+            &:after,
+            span {
+                background: #a3a8af;
             }
         }
     }
@@ -238,13 +336,14 @@
 
 /*  offcanvas  */
 .off-canvas-wrap {
-   z-index: 2;
-   transition: transform 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    transition: transform 0.5s;
 }
 
 .close-off-canvas {
    position: fixed;
-   z-index: 5;
+   z-index: 101;
    top: 0;
    left: 0;
    width: 100%;
@@ -256,17 +355,23 @@
 }
 
 .off-canvas-toggle {
+    float: right;
     display: none;
-    margin-left: 15px;
+    min-width: initial;
+    margin: 25px 0 25px 30px;
+    padding: 0;
     border: none;
     background: none;
     vertical-align: middle;
     @media screen and (max-width: 991px) {
         display: inline-block;
     }
-    @media screen and(max-width: 375px) {
-      margin-left: 5px;
+    @media screen and(max-width: 767px) {
+        margin: 25px 0 25px 15px;
     }
+    /* @media screen and(max-width: 375px) {
+      margin-left: 5px;
+    } */
 
     a {
         position: relative;
@@ -304,7 +409,7 @@
    right: 0;
    top: 0;
    background: #fff;
-   z-index: 1;
+   z-index: 100;
    height: 100%;
    width: 240px;
    padding: 0;
@@ -332,12 +437,14 @@
 
          li {
             position: relative;
+            padding: 0;
+            text-transform: uppercase;
 
             &.current-menu-item {
                background-color: #fff;
 
                & > a {
-                  color: red;
+                  color: $warning;
                }
             }
          }
@@ -349,6 +456,10 @@
             border-bottom: 1px solid #e0e0e0;
             text-decoration: none;
             color: $default;
+         }
+
+         i {
+            margin: 0 10px 0 0;
          }
 
          li.menu-item-has-children {
