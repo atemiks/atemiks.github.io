@@ -1,5 +1,5 @@
 .section-hero {
-	padding: 0;
+	padding: 0 !important;
 }
 .slider-hero {
 	margin: 0;
@@ -30,8 +30,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 0 -20px;
+	@media (max-width: 767px) {
+		justify-content: center;
+	}
 	.advantages-item {
-		width: 20%;
+		width: 230px;
 		padding: 0 15px;
 	}
 }
@@ -52,6 +55,10 @@
 		background: #fff;
 		font-size: 40px;
 		color: $info;
+		@media (max-width: 767px) {
+			width: 120px;
+			height: 120px;
+		}
 	}
 
 	.advantages-title {
@@ -72,6 +79,9 @@
 }
 .slider-testimonials {
 	margin: 65px 0 50px;
+	@media (max-width: 767px) {
+		margin: 10px 0 30px;
+	}
 	.slide-item {
 		padding: 0 15px;
 	}
@@ -128,4 +138,13 @@
 
 .form-callback {
 	margin-top: -20px;
+	@media (max-width: 767px) {
+		margin-top: 0;
+	}
+
+	p {
+		@media (max-width: 767px) {
+			margin-bottom: 20px;
+		}
+	}
 }
