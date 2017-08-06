@@ -275,6 +275,9 @@
                 font-size: 13px;
                 letter-spacing: 0.4px;
                 color: #fff;
+                &:hover {
+                    color: darken(#fff, 10%);
+                }
             }
         }
     }
@@ -292,13 +295,16 @@
             color: #a3a8af;
             @media (min-width: 992px) and (max-width: 1199px) {
                 font-size: 14px;
-                
             }
             @media (max-width: 1199px) {
                 margin: 0 15px 0 0;
             }
             @media (max-width: 767px) {
                 margin: 0;
+            }
+
+            &:hover {
+                color: darken(#a3a8af, 10%);
             }
         }
         .btn {
@@ -403,7 +409,7 @@
    right: 0;
    top: 0;
    background: #fff;
-   z-index: 1;
+   z-index: 100;
    height: 100%;
    width: 240px;
    padding: 0;

@@ -78,6 +78,7 @@ h3,
 h4,
 .h4 {
 	font-size: 24px;
+	margin-bottom: 30px;
 	@media (max-width: 767px) {
 		font-size: 20px;
 	}
@@ -85,6 +86,7 @@ h4,
 h5,
 .h5 {
 	font-size: 18px;
+	margin-bottom: 30px;
 }
 h6,
 .h6 {
@@ -129,15 +131,25 @@ p + ol {
 		margin-top: 0;
 	}
 }
+p:last-of-type + ul,
+p:last-of-type + ol {
+	margin-top: 0;
+}
 
 blockquote {
 	display: block;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	font-family: Georgia, Times, "Times New Roman", serif;
 	font-size: 24px;
 	font-style: italic;
 	color: $default;
 	line-height: 1.41667;
 	text-align: center;
+	@media (max-width: 767px) {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
 }
 
 del {
@@ -189,6 +201,7 @@ textarea {
 
 button,
 .btn {
+	@extend .transition;
 	outline: none;
 	display: inline-block;
 	min-width: 135px;
@@ -202,6 +215,10 @@ button,
 	color: $default-heading;
 	text-align: center;
 	text-transform: uppercase;
+	&:hover {
+		background: darken($warning, 5%);
+		color: $default-heading;
+	}
 }
 
 .btn-lg {
