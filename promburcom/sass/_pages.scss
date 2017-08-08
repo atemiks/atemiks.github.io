@@ -12,7 +12,7 @@
 		float: left;
 		min-height: 1px;
 		width: 300px;
-		padding: 0 15px;
+		padding: 10px 15px 0;
 		@media (max-width: 991px) {
 			width: 100%;
 		} 
@@ -41,7 +41,7 @@
 	.content-inner {
 		overflow: hidden;
 		width: calc(100% - 300px);
-		padding: 0 15px;
+		padding: 10px 15px 0;
 		@media (max-width: 991px) {
 			width: 100%;
 		} 
@@ -119,30 +119,29 @@
 		display: inline-block;
 		padding: 0;
 		border: 1px solid #e1e1e1;
-		border-top-width: 2px;
-		border-bottom-width: 2px;
+		border-left: none;
 		a {
 			display: block;
-			padding: 5px 10px;
-			font-size: 14px;
+			min-width: 35px;
+			height: 35px;
+			padding: 0 14px;
+			font-size: 13px;
 			color: $default-heading;
+			line-height: 35px;
 			&:hover {
 				background: #fffae7;
 			}
 
 			i {
 				display: inline-block;
-				margin: 0 5px;
+				margin: 0 2px;
 				font-size: 10px;
 				vertical-align: middle;
 			}
 		}
 
 		&:first-child {
-			border-left-width: 2px;
-		}
-		&:last-child {
-			border-right-width: 2px;
+			border-left: 1px solid #e1e1e1;
 		}
 		&.active {
 			a {
@@ -399,10 +398,10 @@
 	}
 	.card-title {
 		margin: 0 0 17px;
-		font-weight: 700;
+		font-weight: 500;
 		color: $default-heading;
 		text-transform: uppercase;
-		letter-spacing: -1.3px;
+		letter-spacing: -0.6px;
 		a {
 			color: inherit;
 		}

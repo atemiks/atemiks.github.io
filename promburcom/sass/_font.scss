@@ -20,6 +20,15 @@
 }
 @font-face {
   font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium/Roboto-Medium.eot');
+  src: url('../fonts/Roboto-Medium/Roboto-Medium.woff') format('woff'), 
+       url('../fonts/Roboto-Medium/Roboto-Medium.ttf') format('truetype'), 
+       url('../fonts/Roboto-Medium/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
   src: url('../fonts/Roboto-Bold/Roboto-Bold.eot');
   src: url('../fonts/Roboto-Bold/Roboto-Bold.woff') format('woff'), 
        url('../fonts/Roboto-Bold/Roboto-Bold.ttf') format('truetype'), 

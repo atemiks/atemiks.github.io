@@ -44,21 +44,27 @@ $(document).ready(function() {
     });
     /* Off canvas - End */
 
+   
 
-    var offset = 300,
+
+    var 
         //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
         offset_opacity = 1200,
         //duration of the top scrolling animation (in ms)
         scroll_duration = 700,
         //grab the "back to top" link
         $back_to_top = $('.top'),
+        // grab the header
+        $header = $('.header-box'),
         // grab the "fixed header"
-        $fixedHeader = $('.header-fixed');
+        $fixedHeader = $('.header-fixed'),
+        offset = $header.height();
+
+        console.log('offset' + offset);
 
 
     //hide or show the "back to top" link
     $(window).scroll(function(){
-        /*( $(this).scrollTop() > offset ) ? $back_to_top.addClass('is-visible') : $back_to_top.removeClass('is-visible fade-out');*/
         if( $(this).scrollTop() > offset ) {
             $back_to_top.addClass('is-visible')
             $fixedHeader.addClass('is-visible');
