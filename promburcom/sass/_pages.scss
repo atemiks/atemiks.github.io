@@ -155,8 +155,10 @@
 .table-responsive {
 	margin-top: 30px;
 	padding: 0 8px;
+	border: none !important;
 	@media (max-width: 767px) {
 		margin-top: 20px;
+		padding: 0;
 	}
 }
 
@@ -165,13 +167,23 @@
     border-bottom: 1px solid #e1e1e1;
     width: initial !important;
     max-width: initial !important;
+    @media (max-width: 767px) {
+    	table-layout: fixed;
+    	width: 	100% !important;
+    }
+
 	th,
 	td {
 	    padding-left: 16px;
 	    width: 192px;
 	    border: 1px solid #e1e1e1;
 	    border-bottom: none;
-	    text-align: left;
+	    text-align: center;
+	    word-break: break-word;
+		white-space: normal !important;
+	    @media (max-width: 1199px) {
+	    	width: 156px !important;
+	    }
 	}
 
 	th {
@@ -181,14 +193,15 @@
 		font-family: $base-heading;
 		font-size: 16px;
 		font-weight: 700;
-		text-align: center;
 		vertical-align: middle !important;
+		@media (max-width: 1199px) {
+			font-size: 14px;
+		}
 	}
 
 	td {
 	    height: 60px;
 	    font-size: 14px;
-	    text-align: center;
 		vertical-align: middle !important;
 	}
 
@@ -196,6 +209,10 @@
 	tr.active {
 	    @extend .transition;
 	    display: block;
+	    @media (max-width: 767px) {
+	    	display: table-row;
+	    }
+
 	    &:hover {
 	    	background: #fff !important;
 	    	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);

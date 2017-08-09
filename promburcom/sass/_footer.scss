@@ -10,7 +10,7 @@
 
 .footer-logo {
 	@media (max-width: 767px) {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -28,6 +28,10 @@
 
 .footer-block {
 	width: 168px;
+	@media (max-width: 767px)  {
+		padding: 10px 0;
+	}
+
 	.block-title {
 		margin: 0 0 15px;
 		padding: 0 0 10px;
