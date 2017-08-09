@@ -3126,11 +3126,17 @@ button,
 
 .table {
   border-collpase: collapse;
-  table-layout: fixed;
   margin: auto;
   text-align: center; }
+  .table tr {
+    display: block;
+    margin-top: -1px; }
+  .table th,
+  .table td {
+    width: 197px !important; }
   .table th {
     height: 120px;
+    min-height: 120px;
     padding: 15px 10px;
     border: 1px solid #e1e1e1 !important;
     background: rgba(225, 225, 225, 0.25);
@@ -3141,13 +3147,12 @@ button,
     vertical-align: middle !important; }
     @media (max-width: 1024px) {
       .table th {
-        width: 150px;
-        white-space: normal !important;
         font-size: 14px; } }
   .table td {
     position: relative;
     z-index: 1;
     height: 60px;
+    min-height: 60px;
     border: 1px solid #e1e1e1 !important;
     font-size: 14px;
     vertical-align: middle !important;
@@ -4037,8 +4042,7 @@ button,
               align-items: center; } }
 
 .footer-block {
-  width: 100%;
-  max-width: 168px; }
+  width: 168px; }
   .footer-block .block-title {
     margin: 0 0 15px;
     padding: 0 0 10px;

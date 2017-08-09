@@ -161,16 +161,23 @@
 }
 .table {
 	border-collpase: collapse;
-	table-layout: fixed;
 	margin: auto;
 	text-align: center;
 	tr {
 		@extend .transition;
+		display: block;
+		margin-top: -1px;
+	}
+
+	th,
+	td {
+		width: 197px !important;
 	}
 
 
 	th {
 		height: 120px;
+		min-height: 120px;
 		padding: 15px 10px;
 		border: 1px solid #e1e1e1 !important;
 		background: rgba(225, 225, 225, 0.25);
@@ -180,8 +187,7 @@
 		text-align: center;
 		vertical-align: middle !important;
 		@media (max-width: 1024px) {
-			width: 150px;
-			white-space: normal !important;
+			
 			font-size: 14px;
 		}
 	}
@@ -190,6 +196,7 @@
 		position: relative;
 		z-index: 1;
 		height: 60px;
+		min-height: 60px;
 		border: 1px solid #e1e1e1 !important;
 		font-size: 14px;
 		vertical-align: middle !important;
