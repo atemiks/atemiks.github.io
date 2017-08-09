@@ -154,13 +154,67 @@
 // table
 .table-responsive {
 	margin-top: 30px;
-	padding: 20px 5px;
+	padding: 0 4px;
 	@media (max-width: 767px) {
 		margin-top: 20px;
 	}
 }
+
 .table {
-	border-collpase: collapse;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e8e8e8;
+    width: initial !important;
+    max-width: initial !important;
+	th,
+	td {
+	    padding-left: 16px;
+	    width: 192px;
+	    border: 1px solid #e8e8e8;
+	    border-bottom: none;
+	    text-align: left;
+	}
+
+	th {
+		height: 120px;
+		padding: 10px;
+		background: rgba(225, 225, 225, 0.25);
+		font-family: $base-heading;
+		font-size: 16px;
+		font-weight: 700;
+		text-align: center;
+		vertical-align: middle !important;
+	}
+
+	td {
+	    height: 60px;
+	    font-size: 14px;
+	    text-align: center;
+		vertical-align: middle !important;
+	}
+
+	tr,
+	tr.active {
+	    @extend .transition;
+	    display: block;
+	    &:hover {
+	    	background: #fff !important;
+	    	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+	    	td {
+	    		border-left-color: #fff;
+				border-right-color: #fff;
+	    	}
+	    }
+	}
+
+	tr:first-child:hover {
+		box-shadow: none !important;
+	} 
+}
+
+
+
+.table {
+	/* border-collpase: collapse;
 	margin: auto;
 	text-align: center;
 	tr {
@@ -190,16 +244,16 @@
 			
 			font-size: 14px;
 		}
-	}
+	} */
 
 	td {
-		position: relative;
+		/* position: relative;
 		z-index: 1;
 		height: 60px;
 		min-height: 60px;
 		border: 1px solid #e1e1e1 !important;
 		font-size: 14px;
-		vertical-align: middle !important;
+		vertical-align: middle !important; */
 		/* &:before,
 		&:after {
 			opacity: 0;
@@ -221,18 +275,14 @@
 		} */
 	}
 
-	tr:hover,
+	/* tr:hover,
 	tr.active {
 		background: #fff !important;
 		box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 		td {
 			border-color: transparent !important;
 			border-color: transparent !important;
-			/* &:before,
-			&:after {
-				opacity: 1;
-				visibility: visible;
-			} */
+			
 
 			&:first-child {
 				border-left-color: #e1e1e1 !important;
@@ -245,7 +295,7 @@
 
 	tr:first-child:hover {
 		box-shadow: none !important;
-	}
+	} */
 }
 
 

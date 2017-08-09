@@ -5,7 +5,8 @@
   list-style: none; }
 
 .transition, a, button,
-.btn, .table tr, .card, .header-fixed {
+.btn, .table tr,
+.table tr.active, .card, .header-fixed {
   -webkit-transition: 300ms ease;
   -o-transition: 300ms ease;
   transition: 300ms ease; }
@@ -3119,43 +3120,115 @@ button,
 
 .table-responsive {
   margin-top: 30px;
-  padding: 20px 5px; }
+  padding: 0 4px; }
   @media (max-width: 767px) {
     .table-responsive {
       margin-top: 20px; } }
 
 .table {
-  border-collpase: collapse;
-  margin: auto;
-  text-align: center; }
-  .table tr {
-    display: block;
-    margin-top: -1px; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #e8e8e8;
+  width: initial !important;
+  max-width: initial !important; }
   .table th,
   .table td {
-    width: 197px !important; }
+    padding-left: 16px;
+    width: 192px;
+    border: 1px solid #e8e8e8;
+    border-bottom: none;
+    text-align: left; }
   .table th {
     height: 120px;
-    min-height: 120px;
-    padding: 15px 10px;
-    border: 1px solid #e1e1e1 !important;
+    padding: 10px;
     background: rgba(225, 225, 225, 0.25);
     font-family: "Roboto", serif;
     font-size: 16px;
     font-weight: 700;
     text-align: center;
     vertical-align: middle !important; }
-    @media (max-width: 1024px) {
-      .table th {
-        font-size: 14px; } }
   .table td {
-    position: relative;
-    z-index: 1;
     height: 60px;
-    min-height: 60px;
-    border: 1px solid #e1e1e1 !important;
     font-size: 14px;
-    vertical-align: middle !important;
+    text-align: center;
+    vertical-align: middle !important; }
+  .table tr,
+  .table tr.active {
+    display: block; }
+    .table tr:hover,
+    .table tr.active:hover {
+      background: #fff !important;
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+              box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15); }
+      .table tr:hover td,
+      .table tr.active:hover td {
+        border-left-color: #fff;
+        border-right-color: #fff; }
+  .table tr:first-child:hover {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+
+.table {
+  /* border-collpase: collapse;
+	margin: auto;
+	text-align: center;
+	tr {
+		@extend .transition;
+		display: block;
+		margin-top: -1px;
+	}
+
+	th,
+	td {
+		width: 197px !important;
+	}
+
+
+	th {
+		height: 120px;
+		min-height: 120px;
+		padding: 15px 10px;
+		border: 1px solid #e1e1e1 !important;
+		background: rgba(225, 225, 225, 0.25);
+		font-family: $base-heading;
+		font-size: 16px;
+		font-weight: 700;
+		text-align: center;
+		vertical-align: middle !important;
+		@media (max-width: 1024px) {
+			
+			font-size: 14px;
+		}
+	} */
+  /* tr:hover,
+	tr.active {
+		background: #fff !important;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+		td {
+			border-color: transparent !important;
+			border-color: transparent !important;
+			
+
+			&:first-child {
+				border-left-color: #e1e1e1 !important;
+			}
+			&:last-child {
+				border-right-color: #e1e1e1 !important;
+			}
+		}
+	}
+
+	tr:first-child:hover {
+		box-shadow: none !important;
+	} */ }
+  .table td {
+    /* position: relative;
+		z-index: 1;
+		height: 60px;
+		min-height: 60px;
+		border: 1px solid #e1e1e1 !important;
+		font-size: 14px;
+		vertical-align: middle !important; */
     /* &:before,
 		&:after {
 			opacity: 0;
@@ -3175,29 +3248,6 @@ button,
 			bottom: -11px;
 			background: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.10) 100%);
 		} */ }
-  .table tr:hover,
-  .table tr.active {
-    background: #fff !important;
-    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); }
-    .table tr:hover td,
-    .table tr.active td {
-      border-color: transparent !important;
-      border-color: transparent !important;
-      /* &:before,
-			&:after {
-				opacity: 1;
-				visibility: visible;
-			} */ }
-      .table tr:hover td:first-child,
-      .table tr.active td:first-child {
-        border-left-color: #e1e1e1 !important; }
-      .table tr:hover td:last-child,
-      .table tr.active td:last-child {
-        border-right-color: #e1e1e1 !important; }
-  .table tr:first-child:hover {
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important; }
 
 .section-header {
   margin-bottom: 30px;
