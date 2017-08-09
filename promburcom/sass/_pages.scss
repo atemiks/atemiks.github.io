@@ -154,7 +154,7 @@
 // table
 .table-responsive {
 	margin-top: 30px;
-	padding: 0 4px;
+	padding: 0 8px;
 	@media (max-width: 767px) {
 		margin-top: 20px;
 	}
@@ -162,14 +162,14 @@
 
 .table {
     box-sizing: border-box;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e1e1e1;
     width: initial !important;
     max-width: initial !important;
 	th,
 	td {
 	    padding-left: 16px;
 	    width: 192px;
-	    border: 1px solid #e8e8e8;
+	    border: 1px solid #e1e1e1;
 	    border-bottom: none;
 	    text-align: left;
 	}
@@ -202,6 +202,12 @@
 	    	td {
 	    		border-left-color: #fff;
 				border-right-color: #fff;
+				&:first-child {
+					border-left-color: #e1e1e1;
+				}
+				&:last-child {
+					border-right-color: #e1e1e1;
+				}
 	    	}
 	    }
 	}

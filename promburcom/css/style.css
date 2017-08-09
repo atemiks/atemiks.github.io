@@ -3120,7 +3120,7 @@ button,
 
 .table-responsive {
   margin-top: 30px;
-  padding: 0 4px; }
+  padding: 0 8px; }
   @media (max-width: 767px) {
     .table-responsive {
       margin-top: 20px; } }
@@ -3128,14 +3128,14 @@ button,
 .table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e1e1e1;
   width: initial !important;
   max-width: initial !important; }
   .table th,
   .table td {
     padding-left: 16px;
     width: 192px;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #e1e1e1;
     border-bottom: none;
     text-align: left; }
   .table th {
@@ -3164,6 +3164,12 @@ button,
       .table tr.active:hover td {
         border-left-color: #fff;
         border-right-color: #fff; }
+        .table tr:hover td:first-child,
+        .table tr.active:hover td:first-child {
+          border-left-color: #e1e1e1; }
+        .table tr:hover td:last-child,
+        .table tr.active:hover td:last-child {
+          border-right-color: #e1e1e1; }
   .table tr:first-child:hover {
     -webkit-box-shadow: none !important;
             box-shadow: none !important; }
