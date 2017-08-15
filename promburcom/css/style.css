@@ -3946,6 +3946,8 @@ button,
       background: #a3a8af; }
 
 .mobile-nav {
+  visibility: hidden;
+  opacity: 0;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   position: fixed;
@@ -3957,6 +3959,8 @@ button,
       -ms-transform: translateY(-100vh);
           transform: translateY(-100vh); }
   .mobile-nav.mobile-nav-active {
+    visibility: visible;
+    opacity: 1;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0); }

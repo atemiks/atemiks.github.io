@@ -365,6 +365,8 @@
 
 // mobile navigation
 .mobile-nav {
+    visibility: hidden;
+    opacity: 0;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     position: fixed;
@@ -375,6 +377,8 @@
     transform: translateY(-100vh);
     @extend .transition;
     &.mobile-nav-active {
+        visibility: visible;
+        opacity: 1;
         transform: translateY(0);
     }
 
