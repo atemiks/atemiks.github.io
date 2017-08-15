@@ -1,0 +1,22 @@
+.news-grid {
+	@extend .reset-list;
+	> li {
+		padding: 0;
+		border-bottom: 1px solid #d1d4d7;
+		&:hover {
+			border-color: transparent;
+			.card {
+				z-index: 1;
+			}
+		}
+	}
+
+	.card {
+		position: relative;
+		z-index: -1;
+		top: -1px;
+		@media (max-width: 1024px) {
+			z-index: 1;
+		}
+	}
+}
