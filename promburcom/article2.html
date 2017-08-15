@@ -21,24 +21,27 @@
     <body>
         <button class="top">Top</button>
 
-        <aside class="off-canvas-sidebar" >
-            <div class="off-canvas-menu">
-                <ul>
-                    <li><a href="#link"><i class="icon-about" ></i>О компании</a></li>
-                    <li><a href="#link"><i class="icon-portfolio" ></i>Наши работы</a></li>
-                    <li><a href="#link"><i class="icon-testimonials" ></i>Отзывы</a></li>
-                    <li><a href="#link"><i class="icon-location" ></i>Контакты</a></li>
-                    <li><a href="#link"><i class="icon-sales" ></i>Акции</a></li>
-                    <li><a href="#link">Бурение скважин</a></li>
-                    <li class="current-menu-item"><a href="article2.html">ОБУСТРОЙСТВО СКВАЖИН</a></li>
-                    <li><a href="#link">КАНАЛИЗАЦИЯ</a></li>
-                    <li><a href="#link">ВОДООЧИСТКА</a></li>
-                </ul>
+        <nav class="mobile-nav">
+            <div class="mobile-nav-header">
+                <div class="mobile-nav-logo">
+                    <a href="index.html"><img src="img/logo-fixed.png" alt="Promburcom"></a>
+                </div>
+                <button class="mobile-nav-close" ><i class="icon-close-thin" ></i></button>
             </div>
-        </aside>
+            <ul class="mobile-nav-list">
+                <li><a href="#link">О компании</a></li>
+                <li><a href="#link">Наши работы</a></li>
+                <li><a href="#link">Отзывы</a></li>
+                <li><a href="#link">Контакты</a></li>
+                <li><a href="#link">Акции</a></li>
+                <li class="current-menu-item" ><a href="#link">Бурение скважин</a></li>
+                <li><a href="article2.html">Обустройство скважин</a></li>
+                <li><a href="#link">Канализация</a></li>
+                <li><a href="#link">Водоочистка</a></li>
+            </ul>
+        </nav>
 
-        <div class="wrapper off-canvas-wrap">
-            <a href="#link" class="close-off-canvas"></a>
+        <div class="wrapper">
 
             <div class="content">
 
@@ -84,10 +87,6 @@
                                         </ul>
                                     </nav>
 
-                                    <button class="off-canvas-toggle">
-                                        <a href="#link"><span class="icon" ></span></a>
-                                    </button>
-
                                     <div class="header-contact">
                                         <div class="header-contact-icon">
                                             <i class="icon-phone" ></i>
@@ -98,6 +97,10 @@
                                             <a href="#section-callback">заказать обратный звонок</a>
                                         </div>
                                     </div>
+
+                                    <button class="off-canvas-toggle">
+                                        <a href="#link"><span class="icon" ></span></a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +112,10 @@
                         <div class="row">
                             <div class="header-fixed-inner col-sm-12">
                                 <div class="header-logo">
-                                    <a href="index.html"><img src="img/logo-fixed.png" alt="Promburcom"></a>
+                                    <a href="index.html">
+                                        <img src="img/logo-fixed.png" alt="Promburcom">
+                                        <span>Промбурком</span>
+                                    </a>
                                 </div>
 
                                 <ul class="header-menu">
@@ -120,8 +126,8 @@
                                 </ul>
 
                                 <div class="header-contact">
-                                    <a class="phone" href="tel:+7 495 984 08 89">+7 495 984 08 89</a>
-                                    <a href="#section-callback" class="btn btn-rounded" >Получить консультацию</a>
+                                    <a class="phone" href="tel:+7 495 984 08 89">+7 495 984 08 89 <i class="icon-phone" ></i> </a>
+                                    <a href="#section-callback" class="btn btn-rounded btn-order" >Получить консультацию</a>
                                 </div>
 
                                 <button class="off-canvas-toggle">
@@ -133,6 +139,14 @@
                 </div>
 
                 <main>
+                    <section class="section-hero">
+                        <div class="slider-hero">
+                            <div class="slide-item" style="background-image: url('img/main/hero/banner.png')" ></div>
+                            <div class="slide-item" style="background-image: url('img/main/hero/banner.png')" ></div>
+                            <div class="slide-item" style="background-image: url('img/main/hero/banner.png')" ></div>
+                        </div>
+                    </section>
+                    
                     <div class="content">
                         <section class="section-faq">
                             <div class="section-menu-wrap">

@@ -185,6 +185,16 @@
             text-align: center;
             li {
                 display: table-cell;
+                a {
+                    &:hover {
+                        border-color: $warning;
+                    }
+                }
+                &.active {
+                    a {
+                        border-color: $warning;
+                    }
+                }
             }
         }
     }
@@ -204,7 +214,7 @@
     }
 }
 
-.page-home {
+/* .page-home {
     .header-menu {
         li {
             a {
@@ -219,7 +229,7 @@
             }
         }
     }
-}
+} */
 
 // header fixed
 .header-fixed {
@@ -245,16 +255,10 @@
         }
     }
     .header-fixed-inner {
-        /*  display: table; */
         display: flex;
         align-items: center;
     }
-    .header-logo,
-    .header-menu,
-    .header-contact {
-        /* display: table-cell;
-        vertical-align: middle; */
-    }
+
     .header-logo {
         max-width: 55px;
         flex: 0 0 auto;
@@ -362,6 +366,7 @@
 // mobile navigation
 .mobile-nav {
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     position: fixed;
     z-index: 1000;
     width: 100%;
