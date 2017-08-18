@@ -3933,6 +3933,7 @@ tbody.collapse.in {
 html,
 body {
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
   height: 100%;
   font-family: "Rubik", sans-serif, sans-serif;
   font-size: 16px;
