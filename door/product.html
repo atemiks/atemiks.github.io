@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Door</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modalOrderLabel">Бесплатный <br> вызов замерщика</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="modal-callback-form" action="">
+                            <div class="form-group">
+                                <label for="modalCallbackName">Ваше имя</label>
+                                <input type="text" class="form-control" id="modalCallbackName" required >
+                            </div>
+                            <div class="form-group">
+                                <label for="modalCallbackTel">Телефон</label>
+                                <input type="text" class="form-control" id="modalCallbackTel" required >
+                            </div>
+                            <div class="form-group">
+                                <label for="modalCallbackAddress">Адрес</label>
+                                <textarea class="form-control" id="modalCallbackAddress" required  ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-round"  >Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper">
+
+            <div class="content">
+                <header class="header-box">
+                    <div class="header-desktop container">
+                        <div class="row">
+                            <div class="header-inner col-md-24">
+                                <div class="header-logo">
+                                    <a href="index.html"><img class="logo-img" src="img/logo.png" alt="Дверная компания"></a>
+                                </div>
+                                <div class="header-contact">
+                                    <div class="header-contact-inner">
+                                        <ul class="contact-phone-list">
+                                            <li><a href="tel:4832337713"><span>(4832)</span> 33-77-13,</a></li>
+                                            <li><a href="tel:4832306035">30-60-35</a></li>
+                                        </ul>
+                                        <p class="contact-address">Брянск, ул. Дуки, 65 (здание МПСУ)</p>
+                                    </div>
+                                </div>
+                                <div class="header-callback">
+                                    <div class="work-hours">
+                                        <div class="work-icon">
+                                            <img src="img/icons/icon-clock.png" alt="">
+                                        </div>
+                                        <div class="work-body">
+                                            <span>ЕЖЕДНЕВНО</span> <br>
+                                            с 9:00 до 19:00
+                                        </div>
+                                    </div>
+                                    <a href="#order" class="btn btn-order" data-toggle="modal" data-target="#modalOrder" >Заказать замер</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-mobile">
+                        <div class="container">
+                            <div class="row">
+                                <div class="header-mobile-inner col-md-24">
+                                    <div class="header-mobile-left">
+                                        <div class="header-mobile-logo">
+                                            <a href="index.html"><img src="img/logo-mobile.png" alt="Дверная компания"></a>
+                                        </div>
+                                    </div>
+                                    <div class="header-mobile-right">
+                                        <div class="header-mobile-contact">
+                                            <a href="tel:4832337713"><i class="icon-phone" ></i></a>
+                                        </div>
+                                        <div class="header-mobile-order">
+                                            <a href="#order" class="btn btn-order" data-toggle="modal" data-target="#modalOrder" >Консультация</a>
+                                        </div>
+                                        <!-- Brand and toggle get grouped for better mobile display -->
+                                        <div class="header-mobile-toggle navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-menu" aria-expanded="false">
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="header-menu-wrap navbar navbar-default">
+                        <div class="container">
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="header-menu">
+                                <ul class="header-menu-list nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#link">Межкомнатные двери</a></li>
+                                            <li><a href="#link">Входные двери</a></li>
+                                            <li><a href="#link">Межкомнатные перегородки</a></li>
+                                            <li><a href="#link">Отделка дверных откосов</a></li>
+                                            <li><a href="#link">Фуринитура и комплектующие</a></li>
+                                        </ul>
+                                    </li>
+                                           
+                                    <li><a href="#link">О нас</a></li>
+                                    <li><a href="#link">Услуги</a></li>
+                                    <li><a href="#link">Полезная информация</a></li>
+                                    <li><a href="#link">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+
+                <div class="content-wrap content-with-aside">
+                    <div class="container">
+                        <div class="row">
+                            <aside class="content-aside col-sm-7 col-md-6">
+                                <button class="content-aside-toggle" >Фильтр</button>
+                                <div class="content-aside-collapse">
+                                    <form action="" class="form-filter">
+                                        <div class="aside-block">
+                                            <h5 class="aside-title">Категории</h5>
+                                            <div class="aside-body">
+                                                <ul class="check-list">
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox01" name="checkbox" />
+                                                        <label for="checkbox01">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Дверь в квартиру</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox02" name="checkbox" />
+                                                        <label for="checkbox02">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Дверь для дома</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox03" name="checkbox" />
+                                                        <label for="checkbox03">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Противопожарные двери и люки</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="aside-block">
+                                            <h5 class="aside-title">Класс</h5>
+                                            <div class="aside-body">
+                                                <ul class="check-list">
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox04" name="checkbox" />
+                                                        <label for="checkbox04">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Нестандарт</span>
+                                                        </label>
+
+                                                        <ul class="check-list">
+                                                            <li>
+                                                                <input type="checkbox" id="checkbox05" name="checkbox" />
+                                                                <label for="checkbox05">
+                                                                    <span class="status" ></span>
+                                                                    <span class="value">Тамбурная</span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" id="checkbox06" name="checkbox" />
+                                                                <label for="checkbox06">
+                                                                    <span class="status" ></span>
+                                                                    <span class="value">Подъездная</span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" id="checkbox07" name="checkbox" />
+                                                                <label for="checkbox07">
+                                                                    <span class="status" ></span>
+                                                                    <span class="value">В кассу</span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" id="checkbox08" name="checkbox" />
+                                                                <label for="checkbox08">
+                                                                    <span class="status" ></span>
+                                                                    <span class="value">В оружейную</span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" id="checkbox09" name="checkbox" />
+                                                                <label for="checkbox09">
+                                                                    <span class="status" ></span>
+                                                                    <span class="value">В электрощитовую</span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" id="checkbox10" name="checkbox" />
+                                                                <label for="checkbox10">
+                                                                    <span class="status" ></span>
+                                                                    <span class="value">В котельную</span>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" id="checkbox11" name="checkbox" />
+                                                                <label for="checkbox11">
+                                                                    <span class="status" ></span>
+                                                                    <span class="value">Многостворчатые двери</span>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox12" name="checkbox" />
+                                                        <label for="checkbox12">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Элит-Стандарт</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox13" name="checkbox" />
+                                                        <label for="checkbox13">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Эконом</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="aside-block">
+                                            <h5 class="aside-title">Стоимость</h5>
+                                            <div class="aside-body">
+                                                <div class="slider-price-wrap">
+                                                    <div class="slider-price-inputs">
+                                                        <span>от</span>
+                                                        <input type="text" id="minCost" value="0"/> 
+                                                        <span>до</span>
+                                                        <input type="text" id="maxCost" value="100000"/>
+                                                        <span>р.</span>
+                                                    </div>
+                                                    <div class="slider-price">
+                                                        <div id="range-slider"></div>
+                                                        <div class="range-value-left">0</div>
+                                                        <div class="range-value-right">0</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="aside-block">
+                                            <h5 class="aside-title">Производители</h5>
+                                            <div class="aside-body">
+                                                <ul class="check-list">
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox14" name="checkbox" />
+                                                        <label for="checkbox14">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Любой производитель</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox15" name="checkbox" />
+                                                        <label for="checkbox15">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Мир дверей</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox16" name="checkbox" />
+                                                        <label for="checkbox16">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Владимирская фабрика дверей</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox17" name="checkbox" />
+                                                        <label for="checkbox17">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Дариано</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox18" name="checkbox" />
+                                                        <label for="checkbox18">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Практика</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox19" name="checkbox" />
+                                                        <label for="checkbox19">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Porta Bella</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="checkbox20" name="checkbox" />
+                                                        <label for="checkbox20">
+                                                            <span class="status" ></span>
+                                                            <span class="value">Profil Doors</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-round"  >Показать</button>
+                                    </form>
+                                    
+                                </div>
+                            </aside>
+                            <main class="content-inner col-sm-17 col-md-18" >
+                                <div class="row">
+                                    <ol class="breadcrumb col-md-24">
+                                        <li><a href="index.html">Главная</a></li>
+                                        <li><a href="catalog.html">Каталог</a></li>
+                                        <li><a href="category.html">Входные двери</a></li>
+                                        <li class="active" >Прованс, модель 1</li>
+                                    </ol>
+                                </div>
+
+                                <div class="row">
+                                    <div class="content-header col-md-24">
+                                        <h1 class="content-title">Прованс, модель 1</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="product-box">
+                                        <div class="product-thumb-wrap col-md-8">
+                                            <div class="product-thumb">
+                                                <img src="img/goods/goods-item-1.png" alt="Прованс, модель 1" class="product-img" >
+                                            </div>
+                                        </div>
+                                        <div class="product-info col-md-16">
+                                            <div class="product-price">
+                                                <ins>35 500 <small>р.</small></ins>
+                                            </div>
+
+                                            <ul class="product-details">
+                                                <li>наличник МДФ 16 мм</li>
+                                                <li>нанесение патины с двух сторон</li>
+                                                <li>лист 1,5 мм</li>
+                                                <li>накладка МДФ 16 мм с пленкой Винорит, ручная резьба</li>
+                                                <li>накладка МДФ 16 мм с пленкой Винорит, художественная фрезеровка</li>
+                                                <li>замок верхний меттэм 08</li>
+                                                <li>замок нижний меттэм под личинку</li>
+                                                <li>утепление полотна IZOVER</li>
+                                                <li>ночная задвижка APEX</li>
+                                                <li>возможна установка двери на улицу с последующей гарантией</li>
+                                                <li>изготовление любых размеров без дополнительной оплаты</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-24">
+                                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                                            <li role="presentation" class="active"><a href="#product-tab-1" aria-controls="product-tab-1" role="tab" data-toggle="tab">описание</a></li>
+                                            <li role="presentation"><a href="#product-tab-2" aria-controls="product-tab-2" role="tab" data-toggle="tab">Фрезеровки</a></li>
+                                            <li role="presentation"><a href="#product-tab-3" aria-controls="product-tab-3" role="tab" data-toggle="tab">пленка</a></li>
+                                            <li role="presentation"><a href="#product-tab-4" aria-controls="product-tab-4" role="tab" data-toggle="tab">напыление</a></li>
+                                            <li role="presentation"><a href="#product-tab-5" aria-controls="product-tab-5" role="tab" data-toggle="tab">замки и фурнитура</a></li>
+                                            <li role="presentation"><a href="#product-tab-6" aria-controls="product-tab-6" role="tab" data-toggle="tab">внутренняя отделка</a></li>
+                                        </ul>
+                                        
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="product-tab-1">
+                                                <p>Взломостойкая дверь 5 (наивысшего) класса защиты для частного дома. Дверь снабжена многоуровневой защитой, которая включает в себя:</p>
+                                                <ul style="list-style-type: none;" >
+                                                    <li>- Скрытые ребра жесткости уникальной собственной разработки.</li>
+                                                    <li>- Противосъемные ригели диаметром более 15 мм, каждый выдерживает по 1,2 тонны усилия.</li>
+                                                    <li>- Стальные пластины в зоне замков (толщина стали 2,7 мм), а также врезные пластины для зашиты цилиндра.</li>
+                                                    <li>- Все ключи упакованы в фирменный пакет, что исключает изготовление подделок.</li>
+                                                </ul>
+
+                                                <p>Отделка двери выполнена в классическом темном стиле. Темный цвет внешней и внутренней стороны двери подойдет к любому классическому стилю квартиры.</p>
+                                                <p>Материалом отделки двери служат уникальный запатентованный материал SteelTex©, который прекрасно передает фактуру дерева, но в отличии от массива дерева не требует специального ухода и не подвержен внешним воздействиям.</p>
+                                                <p>Толщина двери в 80 мм позволяет использовать 2 контура уплотнения, внутри двери находится утеплитель толщиной 50 мм. Для уплотнения двери используется немецкая система герметизации последнего поколения, которая надежно защищает квартиру от внешних запахов и шума. Дверь изготовлена из цельного листа металла толщиной 1,2 мм методом холодной гибки.</p>
+                                                <p>Дверь комплектуется замками КALE 257L+ КALE 252R и фурнитурой - броня Apecs, ручки-розетки Avers + Н/З, накладки на сувальду со шторкой CRIT. Глазок Apecs. Цвет фурнитуры – хром. На дверь возможна установка герконов.</p>
+                                                <p>Дверь тестировалась на 300 000 открываний.</p>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="product-tab-2">
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">стандарт:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/milling/standart/milling-standart-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/standart/milling-standart-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/standart/milling-standart-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/standart/milling-standart-4.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/standart/milling-standart-5.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/standart/milling-standart-6.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">премиум:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/milling/premium/milling-premium-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/premium/milling-premium-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/premium/milling-premium-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/premium/milling-premium-4.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/premium/milling-premium-5.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/premium/milling-premium-6.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">элит:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/milling/elites/milling-elites-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/elites/milling-elites-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/elites/milling-elites-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/elites/milling-elites-4.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/elites/milling-elites-5.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/milling/elites/milling-elites-6.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="product-tab-3">
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">пвх:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/membrane/pvh/pvh-item-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/membrane/pvh/pvh-item-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/membrane/pvh/pvh-item-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/membrane/pvh/pvh-item-4.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/membrane/pvh/pvh-item-5.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/membrane/pvh/pvh-item-6.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">винорит:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/membrane/vinorit/vinorit-item-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/membrane/vinorit/vinorit-item-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/membrane/vinorit/vinorit-item-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/membrane/vinorit/vinorit-item-4.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/membrane/vinorit/vinorit-item-5.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/membrane/vinorit/vinorit-item-6.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="product-tab-4">
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">шагрень:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/spraying/shagren/shagren-item-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/shagren/shagren-item-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/shagren/shagren-item-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/shagren/shagren-item-4.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/shagren/shagren-item-5.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/shagren/shagren-item-6.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">крокодил:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/spraying/krokodil/krokodil-item-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/krokodil/krokodil-item-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/krokodil/krokodil-item-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/krokodil/krokodil-item-4.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">антик:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/spraying/antik/antik-item-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/antik/antik-item-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/antik/antik-item-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/antik/antik-item-4.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/antik/antik-item-5.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/antik/antik-item-6.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">винорит:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/spraying/vinorit/vinorit-item-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/vinorit/vinorit-item-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/spraying/vinorit/vinorit-item-3.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="product-tab-5">
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">верхние замки:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/upper-locks/upper-locks-item-1.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Меттем 06 4-х оригельный</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/upper-locks/upper-locks-item-2.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Меттем 08 <br> 3-х оригельный</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/upper-locks/upper-locks-item-3.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Guardian <br> 3001</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/upper-locks/upper-locks-item-4.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Сам под цилиндр, ручка фалевая</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/upper-locks/upper-locks-item-5.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Меттем под сувальный ключ с ночной задвижкой</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/upper-locks/upper-locks-item-6.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Меттем под личинку</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">нижние замки:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/lower-locks/lower-locks-item-1.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Меттем 06 <br> 4-х оригельный</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/lower-locks/lower-locks-item-2.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Меттем 08 <br> 3-х оригельный</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/lower-locks/lower-locks-item-3.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Guardian <br> 3001</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/lower-locks/lower-locks-item-4.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Сам под цилиндр, ручка фалевая</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/lower-locks/lower-locks-item-5.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Меттем под сувальный ключ с ночной задвижкой</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/lower-locks/lower-locks-item-6.png" alt="">
+                                                                </div>
+                                                                <div class="detail-body">
+                                                                    <p class="detail-title">Меттем под личинку</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">ручки:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/handles/handles-item-1.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/handles/handles-item-2.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/handles/handles-item-3.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/handles/handles-item-4.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/handles/handles-item-5.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="detail-card">
+                                                                <a href="#link" class="detail-link"></a>
+                                                                <div class="detail-thumb">
+                                                                    <img class="detail-img" src="img/product/fittings/handles/handles-item-6.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="product-tab-6">
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">ламинат:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/inside/laminate/laminate-item-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/laminate/laminate-item-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/laminate/laminate-item-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/laminate/laminate-item-4.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/laminate/laminate-item-5.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/laminate/laminate-item-6.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">мдф:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/inside/mdf/mdf-item-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/mdf/mdf-item-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/mdf/mdf-item-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/mdf/mdf-item-4.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/mdf/mdf-item-5.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/mdf/mdf-item-6.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">покраска:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/inside/painting/painting-item-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/painting/painting-item-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/painting/painting-item-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/painting/painting-item-4.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/painting/painting-item-5.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/painting/painting-item-6.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="product-customize-wrap">
+                                                    <div class="product-customize-header">
+                                                        <p class="product-customize-title">кож-винил:</p>
+                                                        <a href="#link" class="btn-more" ></a>
+                                                    </div>
+                                                    <ul class="product-customize-list">
+                                                        <li><a href="#lnik"><img src="img/product/inside/leather-vinyl/leather-vinyl-item-1.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/leather-vinyl/leather-vinyl-item-2.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/leather-vinyl/leather-vinyl-item-3.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/leather-vinyl/leather-vinyl-item-4.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/leather-vinyl/leather-vinyl-item-5.png" alt=""></a></li>
+                                                        <li><a href="#lnik"><img src="img/product/inside/leather-vinyl/leather-vinyl-item-6.png" alt=""></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+
+                <div class="section-callback section-dark" >
+                    <div class="container">
+                        <div class="row">
+                            <div class="callback-inner">
+                                <div class="callback-body col-md-18">
+                                    <h3 class="section-title">Бесплатный вызов замерщика</h3>
+                                    <form class="callback-form" action="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="callbackName">Ваше имя</label>
+                                                    <input type="text" class="form-control" id="callbackName" required >
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="callbackPhone">Телефон</label>
+                                                    <input type="tel" class="form-control" id="callbackPhone" required >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-24">
+                                                <div class="form-group">
+                                                    <label for="callbackAddress">Адрес замера</label>
+                                                    <input type="text" class="form-control" id="callbackAddress" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-24">
+                                                <button type="submit" class="btn btn-round"  >Отправить</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="callback-aside col-md-6">
+                                    <img class="callback-img" src="img/footer/callback/callback-img.png" alt="Бесплатный вызов замерщика">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-box">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-24">
+                                <ul class="map-info-list">
+                                    <li>Брянск, ул. Дуки, 65 (здание МПСУ)</li>
+                                    <li>Телефоны: <a href="tel:(4832) 33-77-13">(4832) 33-77-13</a>, <a href="tel:(4832) 30-60-35">30-60-35</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <iframe id="map" src="https://snazzymaps.com/embed/9303" width="100%" height="388px" style="border:none;"></iframe>
+                </div>
+
+                <div class="footer-menu-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-24">
+                                <ul class="footer-menu-list">
+                                    <li><a href="#link">Каталог</a></li>
+                                    <li><a href="#link">О нас</a></li>
+                                    <li><a href="#link">Услуги</a></li>
+                                    <li><a href="#link">Полезная информация </a></li>
+                                    <li><a href="#link">Контакты</a></li>
+                                </ul>
+
+                                <a href="#order" class="btn btn-order" >Заказать замер</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-content-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="footer-hotlinks-menu">
+                                    <li><a href="#link">Межкомнатные двери</a></li>
+                                    <li><a href="#link">Входные двери</a></li>
+                                    <li><a href="#link">Межкомнатные перегородки</a></li>
+                                    <li><a href="#link">Отделка дверных откосов</a></li>
+                                    <li><a href="#link">Фуринитура и комплектующие</a></li>
+                                    <li><a href="#link">Документы</a></li>
+                                    <li><a href="#link">Сертификаты</a></li>
+                                    <li><a href="#link">Доставка</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-18">
+                                <div class="footer-content">
+                                    <ul class="nav nav-tabs nav-stacked" role="tablist">
+                                        <li role="presentation" class="active"><a href="#services-item-1" aria-controls="services-item-1" role="tab" data-toggle="tab">Установка дверей</a></li>
+                                        <li role="presentation"><a href="#services-item-2" aria-controls="services-item-2" role="tab" data-toggle="tab">Бесплатный замер</a></li>
+                                        <li role="presentation"><a href="#services-item-3" aria-controls="services-item-3" role="tab" data-toggle="tab">Гарантийное обслуживание</a></li>
+                                        <li role="presentation"><a href="#services-item-4" aria-controls="services-item-4" role="tab" data-toggle="tab">Доставка</a></li>
+                                        <li role="presentation"><a href="#services-item-5" aria-controls="services-item-5" role="tab" data-toggle="tab">Покупка в кредит</a></li>
+                                        <li role="presentation"><a href="#services-item-6" aria-controls="services-item-6" role="tab" data-toggle="tab">Демонтаж старой двери</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="services-item-1">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Установка дверей">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Установка дверей</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="services-item-2">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Бесплатный замер">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Бесплатный замер</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="services-item-3">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Гарантийное обслуживание">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Гарантийное обслуживание</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="services-item-4">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Доставка">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Доставка</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="services-item-5">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Покупка в кредит">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Покупка в кредит</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="services-item-6">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Демонтаж старой двери">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Демонтаж старой двери</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-statusbar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img class="logo-img" src="img/logo.png" alt="Дверная компания"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-16">
+                                <ul class="social-list">
+                                    <li><a href="#link"><img src="img/icons/icon-ok.png" alt=""></a></li>
+                                    <li><a href="#link"><img src="img/icons/icon-fb.png" alt=""></a></li>
+                                    <li><a href="#link"><img src="img/icons/icon-tw.png" alt=""></a></li>
+                                    <li><a href="#link"><img src="img/icons/icon-insta.png" alt=""></a></li>
+                                    <li><a href="#link"><img src="img/icons/icon-yt.png" alt=""></a></li>
+                                    <li><a href="#link"><img src="img/icons/icon-vk.png" alt=""></a></li>
+                                </ul>
+
+                                <ul class="contact-phone-list list-sm">
+                                    <li><a href="tel:4832337713"><span>(4832)</span> 33-77-13,</a></li>
+                                    <li><a href="tel:4832306035">30-60-35</a></li>
+                                </ul>
+
+                                <form action="" class="form-search">
+                                    <input type="search">
+                                    <select name="" id="">
+                                        <option value="searchByCatalog">Поиск по каталогу</option>
+                                        <option value="searchBySite">Поиск по сайту</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="work-hours">
+                                    <div class="work-icon">
+                                        <img src="img/icons/icon-clock.png" alt="">
+                                    </div>
+                                    <div class="work-body">
+                                        <span>ЕЖЕДНЕВНО</span> <br>
+                                        с 9:00 до 19:00
+                                    </div>
+                                </div>
+                                <div class="powered-box">
+                                    <a href="#link"><img class="powered-img" src="img/powered.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </footer>
+
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,24 @@
+.info-grid {
+	@extend .reset-list;
+}
+.info-card {
+	overflow: hidden;
+	min-height: 185px;
+	margin: 0 auto 50px;
+	.info-thumb {
+		padding-bottom: 30%;
+		background-size: cover;
+		background-position: center;
+		background-color: $medium-gray;
+	}
+
+	.info-title {
+		a {
+			color: inherit;
+			text-decoration: none;
+			&:hover {
+				color: $dark-secondary;
+			}
+		}
+	}
+}

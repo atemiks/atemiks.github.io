@@ -1,0 +1,45 @@
+.catalog-grid {
+	@extend .reset-list;
+	cursor: default;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.catalog-card {
+	position: relative;
+	margin: 0 auto 40px;
+	border: 1px solid $medium-gray;
+	text-align: center;
+	.catalog-link {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.catalog-thumb {
+		position: relative;
+		border: 10px solid transparent;
+		padding-bottom: 100%;
+		.catalog-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			max-width: 100%;
+			max-height: 100%;
+			margin: auto;
+		}
+	}
+
+	.catalog-body {
+		padding: 10px;
+		.catalog-title {
+			overflow: hidden;
+			height: 40px;
+		}
+	}
+}

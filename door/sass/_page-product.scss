@@ -1,0 +1,126 @@
+.product-box {
+	overflow: hidden;
+	margin: -20px 0 0;
+	.product-thumb-wrap {
+		margin-bottom: 35px;
+		.product-thumb {
+			position: relative;
+			padding-bottom: 160%;
+			border: 1px solid $medium-gray;
+			.product-img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				max-width: calc(100% - 20px);
+				max-height: calc(100% - 20px);
+				margin: auto;
+			}
+		}
+	}
+
+	.product-info {
+		margin-bottom: 35px;
+		.product-price {
+			@extend .h3;
+			margin: 10px 0 30px;
+			font-weight: 900;
+			color: $secondary;
+			small {
+				font-size: 18px;
+				font-weight: 400;
+				color: $default;
+			}
+
+			ins {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.product-details {
+		@extend .reset-list;
+		padding: 0 0 0 12px;
+		li {
+			position: relative;
+			padding: 6px 0;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 12px;
+				left: -12px;
+				width: 3px;
+				height: 3px;
+				background: $secondary;
+			}
+		}
+	}
+}
+.product-customize-wrap {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	margin: 0 0 20px;
+	.product-customize-header {
+		flex: 0 0 120px;
+		text-align: center;
+		.product-customize-title {
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+	}
+	.product-customize-list {
+		@extend .reset-list;
+		overflow: hidden;
+		cursor: default;
+		flex: 1 1 auto;
+		li {
+			float: left;
+			width: 16.666666%;
+		}
+	}
+}
+
+.detail-card {
+	position: relative;
+	padding: 0 5px;
+	text-align: center;
+	.detail-link {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.detail-thumb {
+		position: relative;
+		padding-bottom: 100%;
+		border: 5px solid transparent;
+		.detail-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			max-width: 100%;
+			max-height: 100%;
+			margin: auto;
+		}
+	}
+
+	.detail-body {
+		.detail-title {
+			margin: 0;
+			font-size: 16px;
+		}
+	}
+
+	&:hover {
+		.detail-title {
+			color: $dark-secondary;
+		}
+	}
+}

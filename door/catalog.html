@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Door</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modalOrderLabel">Бесплатный <br> вызов замерщика</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="modal-callback-form" action="">
+                            <div class="form-group">
+                                <label for="modalCallbackName">Ваше имя</label>
+                                <input type="text" class="form-control" id="modalCallbackName" required >
+                            </div>
+                            <div class="form-group">
+                                <label for="modalCallbackTel">Телефон</label>
+                                <input type="text" class="form-control" id="modalCallbackTel" required >
+                            </div>
+                            <div class="form-group">
+                                <label for="modalCallbackAddress">Адрес</label>
+                                <textarea class="form-control" id="modalCallbackAddress" required  ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-round"  >Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper">
+
+            <div class="content">
+                <header class="header-box">
+                    <div class="header-desktop container">
+                        <div class="row">
+                            <div class="header-inner col-md-24">
+                                <div class="header-logo">
+                                    <a href="index.html"><img class="logo-img" src="img/logo.png" alt="Дверная компания"></a>
+                                </div>
+                                <div class="header-contact">
+                                    <div class="header-contact-inner">
+                                        <ul class="contact-phone-list">
+                                            <li><a href="tel:4832337713"><span>(4832)</span> 33-77-13,</a></li>
+                                            <li><a href="tel:4832306035">30-60-35</a></li>
+                                        </ul>
+                                        <p class="contact-address">Брянск, ул. Дуки, 65 (здание МПСУ)</p>
+                                    </div>
+                                </div>
+                                <div class="header-callback">
+                                    <div class="work-hours">
+                                        <div class="work-icon">
+                                            <img src="img/icons/icon-clock.png" alt="">
+                                        </div>
+                                        <div class="work-body">
+                                            <span>ЕЖЕДНЕВНО</span> <br>
+                                            с 9:00 до 19:00
+                                        </div>
+                                    </div>
+                                    <a href="#order" class="btn btn-order" data-toggle="modal" data-target="#modalOrder" >Заказать замер</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-mobile">
+                        <div class="container">
+                            <div class="row">
+                                <div class="header-mobile-inner col-md-24">
+                                    <div class="header-mobile-left">
+                                        <div class="header-mobile-logo">
+                                            <a href="index.html"><img src="img/logo-mobile.png" alt="Дверная компания"></a>
+                                        </div>
+                                    </div>
+                                    <div class="header-mobile-right">
+                                        <div class="header-mobile-contact">
+                                            <a href="tel:4832337713"><i class="icon-phone" ></i></a>
+                                        </div>
+                                        <div class="header-mobile-order">
+                                            <a href="#order" class="btn btn-order" data-toggle="modal" data-target="#modalOrder" >Консультация</a>
+                                        </div>
+                                        <!-- Brand and toggle get grouped for better mobile display -->
+                                        <div class="header-mobile-toggle navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-menu" aria-expanded="false">
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="header-menu-wrap navbar navbar-default">
+                        <div class="container">
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="header-menu">
+                                <ul class="header-menu-list nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#link">Межкомнатные двери</a></li>
+                                            <li><a href="#link">Входные двери</a></li>
+                                            <li><a href="#link">Межкомнатные перегородки</a></li>
+                                            <li><a href="#link">Отделка дверных откосов</a></li>
+                                            <li><a href="#link">Фуринитура и комплектующие</a></li>
+                                        </ul>
+                                    </li>
+                                           
+                                    <li><a href="#link">О нас</a></li>
+                                    <li><a href="#link">Услуги</a></li>
+                                    <li><a href="#link">Полезная информация</a></li>
+                                    <li><a href="#link">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+
+                <div class="content-wrap content-with-aside">
+                    <div class="container">
+                        <div class="row">
+                            <aside class="content-aside col-md-4">
+                                <div class="aside-block">
+                                    <h5 class="aside-title">Категории</h5>
+                                    <div class="aside-body">
+                                        <ul class="aside-menu">
+                                            <li>
+                                                <a href="#link">Входные</a>
+                                                <ul class="aside-submenu">
+                                                    <li><a href="#link">Нестандарт</a></li>
+                                                    <li><a href="#link">Элит-Стандарт</a></li>
+                                                    <li><a href="#link">Эконом</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#link">Межкомнатые</a>
+                                                <ul class="aside-submenu">
+                                                    <li><a href="#link">Мир дверей</a></li>
+                                                    <li><a href="#link">Владимирская фабрика дверей</a></li>
+                                                    <li><a href="#link">Дариано</a></li>
+                                                    <li><a href="#link">Практика</a></li>
+                                                    <li><a href="#link">Porta Bella</a></li>
+                                                    <li><a href="#link">Profil Doors</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#link">Межкомнатные перегородки</a></li>
+                                            <li><a href="#link">Отделка дверных откосов</a></li>
+                                            <li>
+                                                <a href="#link">Фурнитура и комплектующие</a>
+                                                <ul class="aside-submenu">
+                                                    <li><a href="#link">Замки</a></li>
+                                                    <li><a href="#link">Ручки</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#link">Художественная ковка</a>
+                                                <ul class="aside-submenu">
+                                                    <li><a href="#link">Козырьки</a></li>
+                                                    <li><a href="#link">Решетки</a></li>
+                                                    <li><a href="#link">Ворота</a></li>
+                                                    <li><a href="#link">Лестницы и перила</a></li>
+                                                    <li><a href="#link">Беседки</a></li>
+                                                    <li><a href="#link">Подставки под цветы</a></li>
+                                                    <li><a href="#link">Мангалы</a></li>
+                                                    <li><a href="#link">Фонари</a></li>
+                                                    <li><a href="#link">Каминные принадлежности</a></li>
+                                                    <li><a href="#link">Кровати</a></li>
+                                                    <li><a href="#link">Лавки и диваны</a></li>
+                                                    <li><a href="#link">Столы и стулья</a></li>
+                                                    <li><a href="#link">Прочее</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </aside>
+                            <main class="content-inner col-md-18" >
+                                <div class="row">
+                                    <ol class="breadcrumb col-md-24">
+                                        <li><a href="index.html">Главная</a></li>
+                                        <li class="active" >Каталог</li>
+                                    </ol>
+                                </div>
+
+                                <div class="row">
+                                    <div class="content-header col-md-24">
+                                        <h1 class="content-title">Каталог</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <ul class="catalog-grid">
+                                        <li class="catalog-item col-md-8">
+                                            <div class="catalog-card">
+                                                <a href="category.html" class="catalog-link" ></a>
+                                                <div class="catalog-thumb">
+                                                    <img src="img/catalog/catalog-item-1.png" alt="Входные двери" class="catalog-img">
+                                                </div>
+                                                <div class="catalog-body">
+                                                    <h5 class="catalog-title">Входные двери</h5>
+                                                    <a href="category.html" class="btn-more" ></a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-item col-md-8">
+                                            <div class="catalog-card">
+                                                <a href="category.html" class="catalog-link" ></a>
+                                                <div class="catalog-thumb">
+                                                    <img src="img/catalog/catalog-item-2.png" alt="Межкомнатные двери" class="catalog-img">
+                                                </div>
+                                                <div class="catalog-body">
+                                                    <h5 class="catalog-title">Межкомнатные двери</h5>
+                                                    <a href="category.html" class="btn-more" ></a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-item col-md-8">
+                                            <div class="catalog-card">
+                                                <a href="category.html" class="catalog-link" ></a>
+                                                <div class="catalog-thumb">
+                                                    <img src="img/catalog/catalog-item-3.png" alt="Межкомнатные перегородки" class="catalog-img">
+                                                </div>
+                                                <div class="catalog-body">
+                                                    <h5 class="catalog-title">Межкомнатные перегородки</h5>
+                                                    <a href="category.html" class="btn-more" ></a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-item col-md-8">
+                                            <div class="catalog-card">
+                                                <a href="category.html" class="catalog-link" ></a>
+                                                <div class="catalog-thumb">
+                                                    <img src="img/catalog/catalog-item-4.png" alt="Отделка дверных косяков" class="catalog-img">
+                                                </div>
+                                                <div class="catalog-body">
+                                                    <h5 class="catalog-title">Отделка дверных косяков</h5>
+                                                    <a href="category.html" class="btn-more" ></a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-item col-md-8">
+                                            <div class="catalog-card">
+                                                <a href="category.html" class="catalog-link" ></a>
+                                                <div class="catalog-thumb">
+                                                    <img src="img/catalog/catalog-item-5.png" alt="Фурнитура и комплектующие" class="catalog-img">
+                                                </div>
+                                                <div class="catalog-body">
+                                                    <h5 class="catalog-title">Фурнитура и комплектующие</h5>
+                                                    <a href="category.html" class="btn-more" ></a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-item col-md-8">
+                                            <div class="catalog-card">
+                                                <a href="category.html" class="catalog-link" ></a>
+                                                <div class="catalog-thumb">
+                                                    <img src="img/catalog/catalog-item-6.png" alt="Художественная ковка" class="catalog-img">
+                                                </div>
+                                                <div class="catalog-body">
+                                                    <h5 class="catalog-title">Художественная ковка</h5>
+                                                    <a href="category.html" class="btn-more" ></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+
+                <div class="section-callback section-dark" >
+                    <div class="container">
+                        <div class="row">
+                            <div class="callback-inner">
+                                <div class="callback-body col-md-18">
+                                    <h3 class="section-title">Бесплатный вызов замерщика</h3>
+                                    <form class="callback-form" action="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="callbackName">Ваше имя</label>
+                                                    <input type="text" class="form-control" id="callbackName" required >
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="callbackPhone">Телефон</label>
+                                                    <input type="tel" class="form-control" id="callbackPhone" required >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-24">
+                                                <div class="form-group">
+                                                    <label for="callbackAddress">Адрес замера</label>
+                                                    <input type="text" class="form-control" id="callbackAddress" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-24">
+                                                <button type="submit" class="btn btn-round"  >Отправить</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="callback-aside col-md-6">
+                                    <img class="callback-img" src="img/footer/callback/callback-img.png" alt="Бесплатный вызов замерщика">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-box">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-24">
+                                <ul class="map-info-list">
+                                    <li>Брянск, ул. Дуки, 65 (здание МПСУ)</li>
+                                    <li>Телефоны: <a href="tel:(4832) 33-77-13">(4832) 33-77-13</a>, <a href="tel:(4832) 30-60-35">30-60-35</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <iframe id="map" src="https://snazzymaps.com/embed/9303" width="100%" height="388px" style="border:none;"></iframe>
+                </div>
+
+                <div class="footer-menu-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-24">
+                                <ul class="footer-menu-list">
+                                    <li><a href="#link">Каталог</a></li>
+                                    <li><a href="#link">О нас</a></li>
+                                    <li><a href="#link">Услуги</a></li>
+                                    <li><a href="#link">Полезная информация </a></li>
+                                    <li><a href="#link">Контакты</a></li>
+                                </ul>
+
+                                <a href="#order" class="btn btn-order" >Заказать замер</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-content-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="footer-hotlinks-menu">
+                                    <li><a href="#link">Межкомнатные двери</a></li>
+                                    <li><a href="#link">Входные двери</a></li>
+                                    <li><a href="#link">Межкомнатные перегородки</a></li>
+                                    <li><a href="#link">Отделка дверных откосов</a></li>
+                                    <li><a href="#link">Фуринитура и комплектующие</a></li>
+                                    <li><a href="#link">Документы</a></li>
+                                    <li><a href="#link">Сертификаты</a></li>
+                                    <li><a href="#link">Доставка</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-18">
+                                <div class="footer-content">
+                                    <ul class="nav nav-tabs nav-stacked" role="tablist">
+                                        <li role="presentation" class="active"><a href="#services-item-1" aria-controls="services-item-1" role="tab" data-toggle="tab">Установка дверей</a></li>
+                                        <li role="presentation"><a href="#services-item-2" aria-controls="services-item-2" role="tab" data-toggle="tab">Бесплатный замер</a></li>
+                                        <li role="presentation"><a href="#services-item-3" aria-controls="services-item-3" role="tab" data-toggle="tab">Гарантийное обслуживание</a></li>
+                                        <li role="presentation"><a href="#services-item-4" aria-controls="services-item-4" role="tab" data-toggle="tab">Доставка</a></li>
+                                        <li role="presentation"><a href="#services-item-5" aria-controls="services-item-5" role="tab" data-toggle="tab">Покупка в кредит</a></li>
+                                        <li role="presentation"><a href="#services-item-6" aria-controls="services-item-6" role="tab" data-toggle="tab">Демонтаж старой двери</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="services-item-1">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Установка дверей">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Установка дверей</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="services-item-2">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Бесплатный замер">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Бесплатный замер</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="services-item-3">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Гарантийное обслуживание">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Гарантийное обслуживание</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="services-item-4">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Доставка">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Доставка</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="services-item-5">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Покупка в кредит">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Покупка в кредит</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="services-item-6">
+                                            <div class="service-card">
+                                                <div class="service-thumb">
+                                                    <img src="img/footer/services/services-item-1.png" alt="Демонтаж старой двери">
+                                                </div>
+                                                <div class="service-body">
+                                                    <h5 class="service-title">Демонтаж старой двери</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-statusbar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img class="logo-img" src="img/logo.png" alt="Дверная компания"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-16">
+                                <ul class="social-list">
+                                    <li><a href="#link"><img src="img/icons/icon-ok.png" alt=""></a></li>
+                                    <li><a href="#link"><img src="img/icons/icon-fb.png" alt=""></a></li>
+                                    <li><a href="#link"><img src="img/icons/icon-tw.png" alt=""></a></li>
+                                    <li><a href="#link"><img src="img/icons/icon-insta.png" alt=""></a></li>
+                                    <li><a href="#link"><img src="img/icons/icon-yt.png" alt=""></a></li>
+                                    <li><a href="#link"><img src="img/icons/icon-vk.png" alt=""></a></li>
+                                </ul>
+
+                                <ul class="contact-phone-list list-sm">
+                                    <li><a href="tel:4832337713"><span>(4832)</span> 33-77-13,</a></li>
+                                    <li><a href="tel:4832306035">30-60-35</a></li>
+                                </ul>
+
+                                <form action="" class="form-search">
+                                    <input type="search">
+                                    <select name="" id="">
+                                        <option value="searchByCatalog">Поиск по каталогу</option>
+                                        <option value="searchBySite">Поиск по сайту</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="work-hours">
+                                    <div class="work-icon">
+                                        <img src="img/icons/icon-clock.png" alt="">
+                                    </div>
+                                    <div class="work-body">
+                                        <span>ЕЖЕДНЕВНО</span> <br>
+                                        с 9:00 до 19:00
+                                    </div>
+                                </div>
+                                <div class="powered-box">
+                                    <a href="#link"><img class="powered-img" src="img/powered.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </footer>
+
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

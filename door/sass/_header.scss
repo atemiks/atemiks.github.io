@@ -1,0 +1,378 @@
+.header-box {
+	.header-inner {
+		display: flex;
+
+		.header-logo,
+		.header-callback {
+			flex: 0 0 auto;
+		}
+		.header-contact {
+			flex: 1 1 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+		}
+	}
+}
+
+// header desktop 
+.header-desktop {
+	@media (max-width: 991px) {
+		display: none;
+	}
+}
+
+
+.header-logo {
+	max-width: 180px;
+	margin: 10px 0;
+	.logo-img {
+		display: block;
+	}
+}
+
+.header-contact {
+	color: $black;
+}
+.contact-phone-list {
+	@extend .reset-list;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.2;
+	@media (max-width: 1199px) {
+		font-size: 30px;
+	}
+
+	li {
+		display: inline-block;
+		a {
+			color: $secondary;
+			text-decoration: none;
+			span {
+				font-weight: 300;
+				color: $black;
+			}
+		}
+	}
+
+	&.list-sm {
+		font-size: 30px;
+	}
+}
+
+.contact-address {
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 1.3;
+	@media (max-width: 1199px) {
+		font-size: 18px;
+	}
+}
+
+
+.header-callback {
+	position: relative;
+	z-index: 1;
+	margin: 0 0 -62px;
+	background: $medium-gray;
+	.btn-order {
+		position: relative;
+		width: 100%;
+		padding: 20px 10px;
+		@media (max-width: 1199px) {
+			min-width: 180px;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			right: -12px;
+			bottom: 0;
+			border: 6px solid transparent;	
+			border-left: 6px solid $dark-secondary; 
+			border-top: 6px solid $dark-secondary;
+		}
+	}
+}
+.work-hours {
+	overflow: hidden;
+	padding: 26px 30px 27px;
+	@media (max-width: 1199px) {
+		padding: 30px 15px;
+	}
+
+	.work-icon {
+		float: left;
+		margin: 0 15px 0 0;
+	}
+	.work-body {
+		overflow: hidden;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 22px;
+		color: $black;
+		@media (max-width: 1199px) {
+			font-size: 18px;
+		}
+
+		span {
+			letter-spacing: 3px;
+			@media (max-width: 1199px) {
+				letter-spacing: 2.3px;
+			}
+		}
+	}
+}
+
+
+// header mobile
+.header-mobile {
+	display: none;
+	background-image: linear-gradient(to top, #141615 0%, #2d2e30 99%, #2d2e30 100%);
+	@media (max-width: 991px) {
+		display: block;
+	}
+
+	.header-mobile-inner {
+		display: flex;
+		align-items: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.header-mobile-left {
+		flex: 1 0 auto;
+	}
+	.header-mobile-right {
+		flex: 0 0 auto;
+		display: flex;
+		align-items: center;
+	}
+
+	.header-mobile-logo {
+		img {
+			display: block;
+		}
+	}
+
+	.header-mobile-contact,
+	.header-mobile-order,
+	.header-mobile-toggle {
+		display: inline-block;
+	}
+
+
+	.header-mobile-contact {
+		margin: 0 7px;
+		i {
+			display: inline-block;
+			width: 34px;
+			height: 34px;
+			background: $secondary;
+			font-size: 20px;
+			color: #fff;
+			text-align: center;
+			line-height: 34px;
+		}
+	}
+
+	.header-mobile-order {
+		margin: 0 7px;
+		.btn-order {
+			min-width: initial;
+			padding: 6px 10px;
+			font-size: 18px;
+		}
+	}
+
+	.header-mobile-toggle {
+		margin: 0 0 0 7px;
+		.navbar-toggle  {
+			min-width: initial;
+			margin: 0;
+			border-color: $secondary;
+			border-radius: 0;
+			span {
+				background: $secondary;
+			}
+		}
+	}
+}
+
+
+
+// header menu
+.header-menu-wrap {
+	border: none;
+	border-radius: 0;
+	background-image: linear-gradient(to top, #141615 0%, #2d2e30 99%, #2d2e30 100%);
+	@media (max-width: 991px) {
+		min-height: initial;
+	}
+	
+	#header-menu {
+		padding: 0;
+	}
+	.header-menu-list {
+		@media (max-width: 991px) {
+			margin: 0;
+		}
+		
+		li {
+			position: relative;
+
+			a {
+				padding: 15px 0;
+				background: none !important;
+				font-size: 21px;
+				font-weight: 400;
+				color: #fff;
+				text-decoration: none;
+				@media (max-width: 1199px) {
+					font-size: 16px;
+				}
+
+				&:hover,
+				&:focus {
+					color: $secondary;
+				}
+			}
+		}
+
+		> li {
+			padding: 0 32px;
+			@media (max-width: 1199px) {
+				padding: 0 20px;
+			}
+			@media (max-width: 991px) {
+				padding: 0 10px !important;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 6px;
+				height: 6px;
+				background: $secondary;
+				transform: translateY(-50%);
+				@media (max-width: 1199px) {
+					width: 4px;
+					height: 4px;
+				}
+				@media (max-width: 991px) {
+					display: none;
+				}
+			}
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+				&:after {
+					display: none;
+				}
+			}
+		}
+		.open,
+		.active {
+			> a {
+				color: $secondary !important;
+				background: none !important;
+			}
+		}
+	}
+
+	.dropdown-menu {
+		left: -10px;
+		min-width: 435px;
+		padding: 15px 10px 30px;
+		border: none;
+		border-radius: 0;
+		column-count: 2;
+		column-gap: 30px;
+		column-rule: 2px solid $secondary;
+		background-image: linear-gradient(to top, #141615 0%, #2d2e30 99%, #2d2e30 100%);
+		@media (max-width: 991px) {
+			min-width: 100%;
+			padding: 0;
+			column-count: 1;
+			background: none;
+		}
+
+		> li {
+			padding: 3px 0;
+			> a {
+				padding: 0;
+				white-space: normal;
+			}
+		}
+	}
+}
+
+
+// modal
+.modal {
+	.modal-dialog {
+		.modal-content {
+			border: none;
+			border-radius: 0;
+			background-image: linear-gradient(to top, #141615 0%, #2d2e30 99%, #2d2e30 100%);
+			box-shadow: none;
+
+			.modal-header,
+			.modal-body {
+				padding: 0 30px;
+			}
+
+			.modal-header {
+				position: relative;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				border-bottom: none;
+				.close {
+					position: absolute;
+					top: 10px;
+					right: 10px;
+					min-width: auto;
+					padding: 0;
+					border: none;
+					background: none;
+					font-size: 48px;
+					color: $secondary;
+					text-shadow: none;
+					&:hover {
+						color: $dark-secondary;
+					}
+				}
+				.modal-title {
+					font-size: 30px;
+					font-weight: 700;
+					color: $secondary;
+					line-height: 1;
+				}
+			}
+		}
+
+		&.modal-sm {
+			width: 350px;
+		}
+	}
+}
+
+.modal-callback-form {
+	button {
+		margin-top: 20px;
+		margin-bottom: -27px;
+	}
+
+	.form-group {
+		margin-bottom: 30px;
+
+		label {
+			color: #fff;
+		}
+	}
+}
