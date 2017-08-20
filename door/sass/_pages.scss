@@ -75,6 +75,9 @@
 		.content-inner {
 			padding-top: 63px;
 			padding-left: 20px;
+			@media (max-width: 767px) {
+				padding-left: 10px;
+			}
 		}
 	}
 }
@@ -411,12 +414,14 @@
 }
 .nav-tabs,
 .nav-justified {
+	position: relative;
 	border-bottom: 3px solid $secondary;
 	@media (max-width: 1024px) {
 		overflow-x: scroll;
-		margin-right: -20px;
+		white-space: nowrap;
 		-webkit-overflow-scrolling: touch;
 	}
+
 	> li {
 		margin: 0;
 		border-left: 1px solid #fff;
@@ -424,7 +429,9 @@
 		text-align: left;
 		vertical-align: top;
 		@media (max-width: 1024px) {
-			float: left;
+			float: none;
+			display: inline-block;
+			width: initial;
 		}
 		
 		&:first-child {
@@ -439,6 +446,7 @@
 	 		display: flex;
 	 		align-items: center;
 	 		height: 55px;
+	 		margin: 0;
 	 		padding: 0 13px;
 	 		border: none;
 	 		border-radius: 0;
