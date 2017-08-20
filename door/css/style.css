@@ -5028,9 +5028,6 @@ button,
   .modal-callback-form .form-group label {
     color: #fff; }
 
-.footer {
-  overflow-x: hidden; }
-
 .section-callback {
   margin: 0 0 -57px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#141615), color-stop(99%, #2d2e30), to(#2d2e30));
@@ -5076,7 +5073,7 @@ button,
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
       .map-box .container {
         top: auto;
         bottom: 10px;
@@ -5208,9 +5205,25 @@ button,
   padding: 0;
   border-right: 2px solid #9b5a24;
   border-bottom: none; }
+  @media (max-width: 767px) {
+    .footer-content .nav.nav-stacked {
+      position: relative;
+      right: -10px;
+      overflow-x: scroll;
+      white-space: nowrap;
+      float: none;
+      width: -webkit-calc(100% + 10px);
+      width: calc(100% + 10px);
+      margin: 0 -10px;
+      border-right: none;
+      border-bottom: 2px solid #9b5a24; } }
   .footer-content .nav.nav-stacked > li {
     margin: 0;
     border: none; }
+    @media (max-width: 767px) {
+      .footer-content .nav.nav-stacked > li {
+        float: none;
+        display: inline-block; } }
     .footer-content .nav.nav-stacked > li > a {
       height: initial;
       margin: 0;
@@ -5224,6 +5237,9 @@ button,
       text-decoration: none;
       text-transform: none;
       text-align: left; }
+      @media (max-width: 767px) {
+        .footer-content .nav.nav-stacked > li > a {
+          padding: 8px 8px; } }
     .footer-content .nav.nav-stacked > li:hover > a, .footer-content .nav.nav-stacked > li.active > a {
       background: #c37b40; }
 
@@ -5232,6 +5248,9 @@ button,
   padding: 0 0 0 20px;
   font-size: 14px;
   font-weight: 300; }
+  @media (max-width: 767px) {
+    .footer-content .tab-content {
+      padding: 10px 0; } }
 
 .service-card {
   overflow: hidden; }
@@ -5243,9 +5262,16 @@ button,
     overflow: hidden;
     color: #fff;
     text-align: justify; }
+    @media (max-width: 767px) {
+      .service-card .service-body {
+        overflow: initial; } }
     .service-card .service-body .service-title {
       margin: 0 0 10px;
-      color: #c37b40; }
+      color: #c37b40;
+      text-align: left; }
+
+.footer-statusbar {
+  overflow-x: hidden; }
 
 .footer-statusbar-inner {
   display: -webkit-box;

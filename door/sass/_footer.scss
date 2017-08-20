@@ -1,5 +1,5 @@
 .footer {
-	overflow-x: hidden;
+	
 }
 // footer callback
 .section-callback {
@@ -54,7 +54,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		@media (max-width: 767px) {
+		@media (max-width: 1024px) {
 			top: auto;
 			bottom: 10px;
 			left: 0;
@@ -207,9 +207,26 @@
 		padding: 0;
 		border-right: 2px solid $dark-secondary;
 		border-bottom: none;
+		@media (max-width: 767px) {
+			position: relative;
+			right: -10px;
+			overflow-x: scroll;
+			white-space: nowrap;
+			float: none;
+			width: calc(100% + 10px);
+			margin: 0 -10px;
+			border-right: none;
+			border-bottom: 2px solid $dark-secondary;
+		}
+
 		> li {
 			margin: 0;
 			border: none;
+			@media (max-width: 767px) {
+				float: none;
+				display: inline-block;
+			}
+
 			> a {
 				height: initial;
 				margin: 0;
@@ -223,6 +240,9 @@
 				text-decoration: none;
 				text-transform: none;
 				text-align: left;
+				@media (max-width: 767px) {
+					padding: 8px 8px;
+				}
 			}
 
 			&:hover,
@@ -239,6 +259,9 @@
 		padding: 0 0 0 20px;
 		font-size: 14px;
 		font-weight: 300;
+		@media (max-width: 767px) {
+			padding: 10px 0;
+		}
 	}
 }
 
@@ -253,15 +276,23 @@
 		overflow: hidden;
 		color: #fff;
 		text-align: justify;
+		@media (max-width: 767px) {
+			overflow: initial;
+		}
+
 		.service-title {
 			margin: 0 0 10px;
 			color: $secondary;
+			text-align: left;
 		}
 	}
 }
 
 
 // footer statusbar
+.footer-statusbar {
+	overflow-x: hidden;
+}
 .footer-statusbar-inner {
 	display: flex;
     flex-wrap: wrap;
