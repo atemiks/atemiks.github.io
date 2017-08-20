@@ -1,3 +1,35 @@
+.section-hero {
+	padding-top: 0;
+	padding-bottom: 0;
+	background-size: cover;
+	background-position: center bottom;
+}
+.slider-hero {
+	.slide-item {
+		display: flex;
+    	align-items: flex-end;
+		min-height: 490px;
+		.slide-body {
+			padding: 80px 0 120px;
+		}
+		.slide-title {
+			span {
+				display: inline-block;
+				max-width: 300px;
+				font-size: 28px;
+				font-weight: 400;
+				line-height: 1;
+			}
+		}
+	}
+
+	.slick-dots {
+		left: 16.66667%;
+		bottom: 80px;
+		text-align: left;
+	}
+}
+
 .section-offer {
 	border-top: 20px solid #000;
 	background-image: linear-gradient(to top, #141615 0%, #2d2e30 99%, #2d2e30 100%);

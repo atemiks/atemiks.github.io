@@ -19,6 +19,7 @@
 .content-wrap {
 	margin-top: -20px;
 	.content-inner {
+		padding-top: 70px;
 		.content-header {
 			margin: 0 0 30px;
 			line-height: 1.2;
@@ -31,10 +32,13 @@
 	}
 
 	&.content-with-aside {
+		padding-top: 0;
 		.content-aside {
-			padding-top: 94px;
+			min-height: 1025px;
+			padding-top: 114px;
 			background: $medium-gray;
 			@media (max-width: 767px) {
+				min-height: initial;
 				padding-top: 15px;
 				padding-bottom: 15px;
 			}
@@ -69,7 +73,7 @@
 			}
 		}
 		.content-inner {
-			padding-top: 43px;
+			padding-top: 63px;
 			padding-left: 20px;
 		}
 	}
@@ -99,19 +103,21 @@
 
 .aside-menu {
 	@extend .reset-list;
-	> li {
+	padding: 0 0 0 15px;
+	li {
 		position: relative;
+		padding: 6px 0;
 		&:before {
-			content: '•';
+			content: '';
 			position: absolute;
-			top: -4px;
-			left: -10px;
-			font-size: 20px;
-			color: $secondary;
-			line-height: 1;
+			top: 11px;
+			left: -12px;
+			width: 3px;
+			height: 3px;
+			background: $secondary;
 		}
 
-		> a {
+		a {
 			font-weight: 500;
 			color: $default;
 			text-decoration: none;
@@ -122,33 +128,21 @@
 	}
 }
 .aside-submenu {
-	margin: 0 0 0 20px;
+	margin: 4px 0 0 20px;
 	padding: 0;
 	list-style: none;
 	li {
 		position: relative;
-		&:before {
-			content: '•';
-			position: absolute;
-			top: -4px;
-			left: -10px;
-			font-size: 20px;
-			color: $secondary;
-			line-height: 1;
-		}
-
+		padding: 4px 0;
 		a {
-			color: $default;
-			text-decoration: none;
-			&:hover {
-				color: $secondary;
-			}
+			font-weight: 300;
 		}
 	}
 }
 
 .check-list {
 	@extend .reset-list;
+	max-width: 270px;
 	li {
 		margin: 0 0 3px;
 	}
@@ -188,19 +182,20 @@
 }
 
 .slider-price-wrap {
+	overflow: hidden;
 	margin-bottom: 15px;
 }
 .slider-price {
-	margin: 0 10px 30px 7px;
+	margin: 20px 10px 30px 7px;
 	@media (max-width: 1024px) {
-		margin: 0 15px 30px 15px;
+		margin: 20px 15px 30px 15px;
 	}
 
 	.range-value-left,
 	.range-value-right {
-		margin-top: 10px;
+		margin-top: 15px;
 		@media (max-width: 1024px) {
-			margin-top: 15px;
+			margin-top: 20px;
 		}
 	}
 
@@ -298,6 +293,8 @@
 		color: $black;
 		&:after {
 			content: '/';
+			display: inline-block;
+    		padding: 0 0 0 4px;
 			color: $default;
 		}
 		&:last-child:after {
@@ -326,15 +323,32 @@
 
 	nav {
 		display: inline-block;
+		@media (max-width: 991px) {
+			display: block;
+			margin: 20px -20px;
+		}
+		@media (max-width: 767px) {
+			margin: 10px 0;
+		}
 	}
 }
 .pagination {
 	@extend .reset-list;
 	cursor: default;
 	font-size: 0;
+	text-transform: uppercase;
+	@media (max-width: 767px) {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
 	li {
 		display: inline-block;
 		border: 1px solid $medium-gray;
+		@media (max-width: 767px) {
+			order: 3;
+		}
 		a {
 			display: block;
 			min-width: 38px;
@@ -363,22 +377,56 @@
 	.previous,
 	.next {
 		margin: 0 20px;
+		@media (max-width: 767px) {
+			width: 50%;
+			margin: 10px 0;
+		}
+
 		a {
 			padding: 0 20px;
+		}
+	}
+	.previous {
+		@media (max-width: 767px) {
+			order: 1;
+		}
+	}
+	.next {
+		@media (max-width: 767px) {
+			order: 2;
+		}
+	}
+
+	.disabled {
+		a {
+			cursor: default;
+			color: $medium-gray !important;
+			background: none !important;
 		}
 	}
 }
 
 // navs
+.nav-wrap {
+}
 .nav-tabs,
 .nav-justified {
 	border-bottom: 3px solid $secondary;
+	@media (max-width: 1024px) {
+		overflow-x: scroll;
+		margin-right: -20px;
+		-webkit-overflow-scrolling: touch;
+	}
 	> li {
 		margin: 0;
 		border-left: 1px solid #fff;
 		border-right: 1px solid #fff;
 		text-align: left;
 		vertical-align: top;
+		@media (max-width: 1024px) {
+			float: left;
+		}
+		
 		&:first-child {
 			border-left: none;
 		}
@@ -440,35 +488,20 @@
 		outline: none;
 	}
 }
-.slick-arrow {
-	z-index: 1;
-	width: 40px;
-	height: 40px;
-	&:before {
-		font-family: 'icomoon';
-		font-size: 38px;
-		color: $gray;
-	}
-
-	&:hover:before {
-		color: $default;
-	}
-}
-.slick-prev {
-	@media screen and (min-width: 320px) and (max-width: 1199px) {
-		left: 5px;
-	}
-
-	&:before {
-		content: '\e909';
-	}
-}
-.slick-next {
-	@media screen and (min-width: 320px) and (max-width: 1199px)  {
-		right: 5px;
-	}
-
-	&:before {
-		content: '\e908';
+.slick-dots {
+	li {
+		width: 13px;
+		height: 13px;
+		button {
+			width: inherit;
+			min-width: initial;
+			height: inherit;
+			background: #a29681;
+		}
+		&.slick-active {
+			button {
+				background: $secondary;
+			}
+		}
 	}
 }

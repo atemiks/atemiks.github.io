@@ -21,8 +21,8 @@
 
 	.catalog-thumb {
 		position: relative;
-		border: 10px solid transparent;
-		padding-bottom: 100%;
+		border: 20px solid transparent;
+		padding-bottom: 110%;
 		.catalog-img {
 			position: absolute;
 			top: 0;
@@ -36,10 +36,28 @@
 	}
 
 	.catalog-body {
-		padding: 10px;
+		margin: -5px 0 0;
+		padding: 0 10px;
 		.catalog-title {
 			overflow: hidden;
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
 			height: 40px;
+		    margin: 4px 0 10px;
+		    line-height: 0.9;
+		}
+		.btn-more {
+			margin-bottom: -20px;
+		}
+	}
+
+	&:hover {
+		.catalog-title {
+			color: $dark-secondary;
+		}
+		.btn-more {
+			background-color: $dark-secondary;
 		}
 	}
 }

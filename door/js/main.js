@@ -5,9 +5,11 @@ $(document).ready(function() {
 
 
     //  page product
-    $('.slider-gallery').slick({
+    $('.slider-hero').slick({
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
     });
 
 

@@ -1,5 +1,5 @@
 .footer {
-
+	overflow-x: hidden;
 }
 // footer callback
 .section-callback {
@@ -7,34 +7,41 @@
 	background-image: linear-gradient(to top, #141615 0%, #2d2e30 99%, #2d2e30 100%);
 	.callback-inner {
 		display: flex;
-		.callback-body {
-			padding-top: 30px;
+	}
+
+	.callback-body {
+		padding-top: 30px;
+		.section-title {
+			color: $secondary;
+		}
+		
+		.callback-form {
+			margin-top: 30px;
+			label {
+				color: #fff;
+			}
+			.btn-round {
+				position: relative;
+				z-index: 1;
+				margin: 30px 0 0;
+			}
 		}
 	}
 
-	.section-title {
-		color: $secondary;
-	}
-	
-	.callback-form {
-		margin-top: 30px;
-		label {
-			color: #fff;
+	.callback-aside {
+		@media (max-width: 767px) {
+			display: none;
 		}
-		.btn-round {
-			position: relative;
-			z-index: 1;
-			margin: 30px 0 0;
+
+		.callback-img {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 57px;
+			max-width: 100%;
+			max-height: calc(100% + 150px);
+			margin: auto;
 		}
-	}
-	.callback-img {
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 57px;
-		max-width: 100%;
-		max-height: calc(100% + 150px);
-		margin: auto;
 	}
 }
 
@@ -44,9 +51,15 @@
 	position: relative;
 	.container {
 		position: absolute;
-		left: 50%;
 		top: 50%;
+		left: 50%;
 		transform: translate(-50%, -50%);
+		@media (max-width: 767px) {
+			top: auto;
+			bottom: 10px;
+			left: 0;
+			transform: translate(0);
+		}
 	}
 
 	.map-info-list {
@@ -56,6 +69,10 @@
 		background: #fff;
 		font-size: 21px;
 		font-weight: 400;
+		@media (max-width: 767px) {
+			font-size: 16px;
+		}
+
 		li {
 			a {
 				color: $default;
@@ -278,7 +295,7 @@
 
 	.footer-center {
 		flex: 1 1 auto;
-		max-width: 640px;
+		max-width: 660px;
 		padding: 0 20px;
 		@media (max-width: 991px) {
 			order: 3;
@@ -329,7 +346,6 @@
 
 .form-search {
 	display: flex;
-	margin-bottom: 20px;
 	input,
 	.select {
 		height: 44px;
