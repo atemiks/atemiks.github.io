@@ -139,6 +139,12 @@
 					color: $link-color;
 				}
 			}
+
+			&.active {
+				a {
+					color: $secondary;
+				}
+			}
 		}
 	}
 

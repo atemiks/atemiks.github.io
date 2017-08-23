@@ -28,14 +28,26 @@ h6 {
 h1,
 .h1 {
 	font-size: 87px;
+	@media (max-width: 1199px) {
+		font-size: 65px;
+	}
+	@media (max-width: 991px) {
+		font-size: 45px;
+	}
 }
 h2,
 .h2 {
 	font-size: 45px;
+	@media (max-width: 991px) {
+		font-size: 36px;
+	}
 }
 h3,
 .h3 {
 	font-size: 36px;
+	@media (max-width: 991px)  {
+		font-size: 30px;
+	}
 }
 h4,
 .h4 {
@@ -46,6 +58,9 @@ h5,
 	font-size: 21px;
 	font-weight: 300;
 	line-height: 1.095;
+	@media (max-width: 1199px) {
+		font-size: 18px;
+	}
 }
 h6,
 .h6 {
@@ -65,6 +80,10 @@ a {
 	}
 }
 
+
+ul {
+	padding: 0 0 0 20px;
+}
 
 section,
 article {

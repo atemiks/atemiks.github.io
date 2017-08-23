@@ -15,6 +15,9 @@ $(document).ready(function() {
 
 
     // default
+    $("[data-fancybox]").fancybox({
+        toolbar  : false
+    });
 
     // aside collapse
 

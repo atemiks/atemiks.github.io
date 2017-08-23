@@ -1,0 +1,65 @@
+.contact-block {
+	margin: -20px 0 40px;
+	.contact-title {
+		display: flex;
+    	align-items: center;
+		min-height: 45px;
+		margin: 0 0 15px;
+		font-weight: 400;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+	.contact-list {
+		@extend .reset-list;
+		font-size: 21px;
+		font-weight: 400;
+		line-height: 1.42;
+		color: $default-heading;
+		@media (max-width: 1199px) {
+			font-size: 18px;
+		}
+
+		a {
+			font-weight: 500;
+			text-decoration: none;
+			@media (max-width: 991px) {
+				display: block;
+				font-weight: 400;
+			}
+		}
+		span {
+			font-weight: 500;
+			color: $secondary;
+			@media (max-width: 991px) {
+				display: block;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+.gallery-grid {
+	@extend .reset-list;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: -25px;
+	.gallery-item {
+		width: 16.66666666666667%;
+		max-width: 199px;
+		margin: 0 0 25px;
+		padding: 0 10px;
+		@media (max-width: 991px) {
+			width: 20%;
+		}
+		@media (max-width: 767px) {
+			width: 25%;
+		}
+		@media (max-width: 475px) {
+			width: 33.3333%;
+		}
+
+		img {
+			display: block;
+		}
+	}
+}
