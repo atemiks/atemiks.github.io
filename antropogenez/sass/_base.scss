@@ -1,0 +1,173 @@
+* {
+	box-sizing: border-box !important;
+}
+
+html, 
+body {
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+	font-family: $base-font, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+body {
+	background: url('../img/bg-light.png') $light-gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 10px;
+	font-family: $base-heading;
+	font-weight: 500;
+	color: $default-heading;
+}
+
+h1,
+.h1 {
+	font-size: 40px;
+	@media (max-width: 1199px) {
+		font-size: 30px;
+	}
+}
+h2,
+.h2 {
+	font-size: 30px;
+	@media (max-width: 1199px) {
+		font-size: 24px;
+	}
+}
+h3,
+.h3 {
+	font-size: 21px;
+	@media (max-width: 1199px) {
+		font-size: 18px;
+	}
+}
+h4,
+.h4 {
+	font-size: 18px;
+	@media (max-width: 1199px) {
+		font-size: 16px;
+	}
+}
+h5,
+.h5 {
+	font-size: 15px;
+	font-weight: 300;
+}
+h6,
+.h6 {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 5px;
+}
+
+a {
+	color: $link-color;
+	@extend .transition;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+ul {
+	padding: 0 0 0 20px;
+}
+
+section,
+article {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+img {
+	max-width: 100%;
+}
+
+label {
+	font-size: 21px;
+	font-weight: 400;
+}
+
+
+input {
+	outline: none;
+	display: inline-block;
+	height: 45px;
+	padding: 0 15px;
+	border: 1px solid $light-gray;
+	color: $dark-gray;
+	::-webkit-input-placeholder {color: $dark-gray;}
+	::-moz-placeholder          {color: $dark-gray;}
+	:-moz-placeholder           {color: $dark-gray;}
+	:-ms-input-placeholder      {color: $dark-gray;}
+}
+
+
+button,
+.btn {
+	position: relative;
+	outline: none;
+	display: inline-block;
+	min-height: 45px;
+	min-width: 190px;
+	padding: 16px 10px 17px;
+	border: none;
+	background: $success;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1;
+	@media (max-width: 767px) {
+		min-width: 150px;
+	}
+	
+	&:before {
+		content: '';
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		right: 3px;
+		bottom: 3px;
+		border: 1px solid $dark-success;
+	}
+
+	&:hover {
+		background: #272930;
+		color: #fff;
+		&:before {
+			border-color: #636363;
+		}
+	}
+}
+.btn-invert {
+	background: #fff;
+	color: $default;
+	&:before {
+		border-color: #b7b7b7;
+	}
+}
+
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}

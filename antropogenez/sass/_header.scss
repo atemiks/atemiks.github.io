@@ -1,0 +1,277 @@
+.header-box {
+	background: #fff;
+	.header-inner {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	.header-side-left {
+		flex: 0 1 280px;
+		@media (max-width: 767px) {
+			flex: 0 0 auto;
+		}
+	}
+	.header-side-right {
+		flex: 1 1 auto;
+		display: flex;
+    	align-items: center;
+    	justify-content: flex-end;
+	}
+}
+
+.header-logo {
+	.logo-img-desktop {
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+	.logo-img-mobile {
+		display: none;
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+}
+
+.header-menu-wrap {
+	display: inline-block;
+	@media (max-width: 1199px) {
+		position: absolute;
+		z-index: 1500;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background: #fff;
+	}
+
+	.header-nav {
+		@media (max-width: 1199px) {
+			padding: 0 0 10px;
+		}
+
+		li {
+			a {
+				background: none !important;
+				font-size: 16px;
+				line-height: 24px;
+				color: $default;
+				text-decoration: none;
+				&:hover {
+					color: $link-color;
+				}
+			}
+
+			&.active a {
+				color: $link-color;
+			}
+		}
+
+		> li {
+			> a {
+				display: block;
+				padding: 0 9px;
+				font-size: 17px;
+				line-height: 1;
+				@media (max-width: 1199px) {
+					padding: 6px 10px;
+				}
+			}
+		}
+	}
+}
+
+.header-actions {
+	display: inline-block;
+	margin: 0 0 0 40px;
+	@media (max-width: 767px) {
+		margin: 0 0 0 15px;
+	}
+}
+
+.header-lang {
+	display: inline-block;
+	margin: 0 0 0 50px;
+	@media (max-width: 767px) {
+		margin: 0 0 0 15px;
+	}
+}
+.lang-list {
+	@extend .reset-list;
+	white-space: nowrap;
+	li {
+		a {
+			text-decoration: none;
+		}
+
+		&.dropdown.open .caret {
+			transform: rotate(-180deg);
+		}
+	}
+
+	.dropdown-menu {
+		min-width: initial;
+		width: 42px;
+		padding: 0;
+		li {
+			margin: 0 0 3px;
+			&:last-child {
+				margin: 0;
+			}
+
+			a {
+				padding: 0;
+				img {
+					display: block;
+				}
+			}
+		}
+	}
+}
+.caret {
+	position: relative;
+	display: inline-block;
+	width: 16px;
+	height: 26px;
+	border: none;
+	vertical-align: middle;
+	transition: 300ms ease;
+	&:before {
+		font-family: 'icon-font';
+		content: '\f107';
+		font-size: 24px;
+		color: $medium-gray;
+		line-height: 1;
+	}
+}
+
+.navbar-toggle {
+	min-width: initial;
+	margin: 0 0 0 20px;
+	padding: 0;
+	border: none;
+	background: none !important;
+	&:before {
+		display: none;
+	}
+
+	span {
+		background: $success;
+	}
+}
+
+
+.main-menu {
+	background: $black;
+}
+.main-menu-list {
+	@extend .reset-list;
+	display: flex;
+	width: 100%;
+	@media (max-width: 991px) {
+		overflow: auto;
+		white-space: nowrap;
+	}
+
+	li {
+		a {
+			position: relative;
+			display: inline-block;
+			color: #fff;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+
+	> li {
+		position: relative;
+		flex: 1;
+		@media (max-width: 991px) {
+			flex: 0 0 180px;
+		}
+
+		> a {
+			display: block;
+			height: 100%;
+			padding: 12px 0;
+			@media (max-width: 1199px) {
+				font-size: 14px;
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 13px;
+				background-image: linear-gradient(left, rgba(0,0,0,1) 0%,rgba(255,255,255,0) 100%);
+			}
+		}
+
+		&.open,
+		&:hover {
+			> a {
+				color: $link-color;
+			}
+		}
+
+		&.open {
+			> a {
+				&:after {
+					content: '';
+					position: absolute;
+					z-index: 1001;
+					bottom: -10px;
+					left: 52px;
+					right: 15px;
+					height: 2px;
+					background: #fff;
+					@media (max-width: 1199px) {
+						left: 40px;
+					}
+				}
+			}
+		}
+	}
+
+	.main-menu-icon {
+		float: left;
+		display: block;
+		position: relative;
+		z-index: 1;
+		width: 52px;
+		height: 36px;
+		line-height: 46px;
+		text-align: center;
+		@media (max-width: 1199px) {
+			width: 40px;
+		}
+	}
+	.main-menu-title {
+		overflow: hidden;
+		display: block;
+	}
+
+	.dropdown-menu {
+		width: 600px;
+		margin: 0;
+		padding: 23px 30px 30px;
+		column-count:2;
+		column-gap:10px;	
+		background: $black;
+		@media (max-width: 1199px) {
+			padding: 23px 20px 30px;
+		}
+
+		li {
+			width: 230px;
+			padding: 2px 0;
+			a {
+				white-space: normal;
+			}
+		}
+	}
+}
