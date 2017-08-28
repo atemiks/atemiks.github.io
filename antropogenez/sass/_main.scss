@@ -42,6 +42,10 @@
 		padding: 0 25px;
 		background-size: cover;
 		background-position: center;
+		@media (max-width: 767px) {
+			padding: 0 10px;
+		}
+
 		img {
 			display: block;
 			margin: 0 0 10px;
@@ -53,8 +57,16 @@
 			width: 50%;
 			padding: 50px 15px;
 		}
+		.slide-side-left {
+			@media (max-width: 767px) {
+				width: 90%;
+			}
+		}
 		.slide-side-right {
 			text-align: right;
+			@media (max-width: 767px) {
+				display: none;
+			}
 		}
 
 		.slide-title {
@@ -161,6 +173,9 @@
 
 		.btn {
 			margin: 30px 0 20px 90px;
+			@media (max-width: 767px) {
+				margin: 20px 0;
+			}
 		}
 	}
 }
@@ -173,6 +188,14 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom center;
+}
+
+
+.section-news {
+	margin: 0 0 -20px;
+	.news-block {
+		margin: 0 0 20px;
+	}
 }
 
 .news-block {
@@ -205,6 +228,12 @@
 	.news-thumb {
 		float: left;
 		margin: 0 20px 10px 0;
+		@media (max-width: 767px) {
+			float: none;
+			max-width: 260px;
+			margin: 0 auto 10px;
+		}
+
 		.news-thumb-img {
 			width: 260px;
 		}
@@ -240,8 +269,10 @@
 	}
 	.event-thumb {
 		position: relative;
+		max-width: 340px;
 		margin: 0 0 10px;
 		&:after {
+			@extend .transition;
 			opacity: 0;
 			content: '';
 			position: absolute;
@@ -253,6 +284,7 @@
 		}
 		.event-thumb-img {
 			display: block;
+			width: 100%;
 		}
 	}
 
@@ -287,12 +319,46 @@
 	width: 170px;
 	@media (max-width: 767px) {
 		width: 100%;
+		height: 85px !important;
+		margin: 15px 0 0 !important;
+	}
+
+	.slick-list  {
+		padding: 0 !important;
+		.slick-track {
+			@media (max-width: 767px) {
+				overflow: auto;
+				white-space: nowrap;
+				 -webkit-overflow-scrolling: touch;
+				 -ms-overflow-style: -ms-autohiding-scrollbar;
+			}
+		}
 	}
 
 	.slide-item {
+		position: relative;
 		margin: 0 0 14px;
+		@media (max-width: 767px) {
+			display: inline-block;
+			float: none !important;
+			width: 150px !important;
+		}
+
+		&:before {
+			font-family: 'icon-font';
+			content: '\f04b';
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 40px;
+			color: #8f96b0;
+			line-height: 1;
+		}
 	}
 }
+
 .video-card {
 	.video-header {
 		margin: 0 0 5px;
@@ -334,9 +400,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin: 0 -25px;
+		margin: 0 -25px -20px;
 		.live-item-col {
 			max-width: 425px;
+			margin: 0 0 20px;
 		}
 	}
 }
@@ -473,10 +540,17 @@
 			font-weight: 500;
 		}
 	}
+
+	&:hover {
+		.gallery-title {
+			color: $link-color;
+		}
+	}
 }
 
 
 .section-best {
+	padding-top: 0;
 	.best-block {
 		padding-bottom: 40px;
 	}
