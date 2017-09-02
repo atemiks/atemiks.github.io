@@ -194,6 +194,12 @@
 
 }
 
+.secect2-container {
+	@media (max-width: 767px) {
+		display: block;
+		width: 260px !important;
+	}
+}
 .select2-container--default .select2-selection--single {
 	height: 35px;
 	border-color: $light-gray;

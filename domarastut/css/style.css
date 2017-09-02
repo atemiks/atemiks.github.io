@@ -3571,6 +3571,11 @@ body {
       display: block;
       width: 260px !important; } }
 
+@media (max-width: 767px) {
+  .secect2-container {
+    display: block;
+    width: 260px !important; } }
+
 .select2-container--default .select2-selection--single {
   height: 35px;
   border-color: #efefef;
