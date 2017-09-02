@@ -1,0 +1,201 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: $base-font;
+	font-size: 18px;
+	color: $default;
+	line-height: 1.333;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+section,
+article {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	@media screen and (max-width: 640px) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $base-heading;
+	font-weight: 700;
+	color: $default-heading;
+	margin: 0 0 20px;
+}
+
+h1,
+.h1 {
+	font-size: 48px;
+}
+h2,
+.h2 {
+	font-size: 42px;
+	@media screen and (max-width: 1199px) {
+		font-size: 30px;
+	}
+}
+h3,
+.h3 {
+	font-size: 24px;
+
+}
+h4,
+.h4 {
+	font-size: 20px;
+}
+h5,
+.h5 {
+	font-size: 18px;
+}
+h6,
+.h6 {
+	font-size: 16px;
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+a {
+	@extend .transition;
+	color: $primary;
+}
+
+img {
+	max-width: 100%;
+}
+
+input,
+textarea {
+	outline: none;
+	height: 40px;
+	padding: 0 20px;
+	background-color: white;
+	border: 1px solid #cbcdcd;
+	border-radius: 20px;
+	font-size: 20px;
+	font-weight: 400;
+	color: $gray;
+}
+textarea {
+	resize: none;
+	height: 140px;
+	padding: 15px 20px;
+}
+
+button, 
+.btn {
+	outline: none;
+	display: inline-block;
+	min-height: 40px;
+	background-color: $light-success;
+	padding: 9px 20px 7px;
+	border: none;
+	border-radius: 20px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1;
+	@extend .transition;
+	@media screen and (max-width: 640px) {
+		font-size: 20px;
+	}
+
+	&:hover {
+		background-color: $success;
+	}
+}
+
+.btn-lg {
+	padding: 12px 30px 10px;
+	border-radius: 25px;
+}
+
+.btn-success {
+	background-color: $success;
+	&:hover {
+		background-color: $light-success;
+	}
+}
+
+// new style
+input[type="radio"],
+input[type="checkbox"] {
+    display:none;
+}
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+	cursor: pointer;
+	margin: 0 5px 0 0;
+    font-size: 16px;
+    color: $default;
+}
+input[type="radio"] + label .status,
+input[type="checkbox"] + label .status {
+    float: left;
+    display: block;
+    cursor:pointer;
+    width:17px;
+    height:17px;
+    margin:-1px 9px 0 0;
+    border: 1px solid #c7c2c0;
+    border-radius:  50%;
+    background: #fff;
+    vertical-align:middle;
+    text-align: center;
+}
+
+input[type="radio"] + label .status {
+
+}
+
+input[type="checkbox"] + label .status {
+	border-radius: 0;
+}
+input[type="checkbox"] + label .status:before {
+	opacity: 0;
+    content: '✓';
+	position: relative;
+	top: -2px;
+    font-size: 14px;
+    color: $warning;
+}
+
+input[type="radio"]:checked + label .status {
+    background-color: $warning;
+}
+
+input[type="checkbox"]:checked + label .status:before {
+	opacity: 1;
+}
+
+input[type="radio"] + label .value,
+input[type="checkbox"] + label .value {
+	overflow: hidden;
+	display: block;
+	word-break: break-word;
+	font-weight: 400;
+	line-height: 1.1;
+}
+
+input[type="radio"] + label .status,
+input[type="radio"]:checked + label .status
+input[type="radio"]:checked + label .status:before {
+  transition: 0.4s linear;
+}

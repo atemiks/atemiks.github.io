@@ -1,0 +1,260 @@
+.proposal-grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 20px;
+	padding: 0 5px;
+	.proposal-item {
+		margin: 0 0 20px;
+		padding: 0 10px;
+		.proposal-card {
+			height: 100%;
+		}
+	}
+}
+.proposal-card {
+	position: relative;
+	max-width: 320px;
+	margin: auto;
+	padding: 0 0 60px;
+	background: #fff;
+	.proposal-lable {
+		position: absolute;
+		z-index: 2;
+		top: 10px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: $success;
+		font-size: 24px;
+		color: #fff;
+		text-align: center;
+		line-height: 40px;
+		&.proposal-time {
+			&:before {
+				font-family: 'icomoon';
+				content: '\f017';
+			}
+		}
+		&.proposal-thumb {
+			&:before {
+				font-family: 'icomoon';
+				content: '\f087';
+			}
+		}
+	}
+
+	.proposal-thumbnail {
+		position: relative;
+		padding-bottom: 65%;
+		background-size: cover;
+		background-position: center;
+		background-color: $light-gray;
+		.proposal-thumbnail-link {
+			position: absolute;
+			z-index: 9;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+
+	.proposal-header {
+		padding: 10px;
+		border-bottom: 1px solid $light-gray;
+		.proposal-title {
+			margin: 5px 0;
+			a {
+				color: $warning;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+	}
+	.proposal-id {
+		margin: 0;
+		font-size: 14px;
+	}
+	.proposal-contact-list {
+		@extend .reset-list;
+		a {
+			color: $default-heading;
+			text-decoration: none;
+			&:hover {
+				color: $default;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.proposal-body {
+		padding: 10px;
+		font-size: 16px;
+	}
+	.proposal-price {
+		margin: 0 0 5px;
+		font-size: 18px;
+		color: $default-heading;
+		white-space: nowrap;
+		&:after {
+			font-family: 'icomoon';
+			content: '\f158';
+			display: inline-block;
+			margin: 0 0 0 5px;
+			font-size: 14px;
+			font-weight: 400;
+			color: $default;
+		}
+	}
+
+
+	.proposal-footer {
+		position: absolute;
+		left: 10px;
+		right: 10px;
+		bottom: 10px;
+		.proposal-action {
+			width: 100%;
+			min-width: 100%;
+			padding: 14px 10px 12px;
+			font-size: 14px;
+		}
+	}
+}
+
+.aside-box {
+	margin: 0 0 20px;
+	background: #fff;
+	.aside-box-header {
+		padding: 15px;
+		border-bottom: 1px solid $light-gray;
+		text-align: center;
+		.aside-box-title {
+			margin: 0;
+		}
+	}
+	.aside-box-body {
+		padding: 0 0 15px;
+	}
+}
+
+.aside-menu {
+	line-height: 1.2;
+	li {
+		a {
+			font-size: 16px;
+			color: $warning;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.sort-box {
+	padding: 13px 10px;
+	background: #fff;
+	.form-sort {
+		display: inline-block;
+		margin: 0 0 0 10px;
+		vertical-align: middle;
+		@media (max-width: 767px) {
+			display: block;
+			margin: 5px 0 0;
+		}
+	}
+}
+
+.form-filter {
+	button[type='submit'] {
+		width: calc(100% - 30px);
+		margin: 15px 0 0;
+	}
+	
+	.form-group {
+		margin: 0;
+		padding: 10px 15px 15px;
+		border-bottom: 1px solid $light-gray;
+		.control-label {
+			color: $default-heading;
+			font-weight: 400;
+		}
+	}
+	.select2-container {
+		width: 100% !important;
+	}
+
+}
+
+.select2-container--default .select2-selection--single {
+	height: 35px;
+	border-color: $light-gray;
+	border-radius: 0;
+	outline: none;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+	line-height: 35px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 33px;
+}
+
+
+.select2-container--default .select2-selection--multiple {
+	border-color: $light-gray;
+	border-radius: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li,
+.select2-container--default .select2-search--inline .select2-search__field {
+	width: 100% !important;
+}
+
+.select2-dropdown {
+	border-color: $light-gray;
+	border-radius: 0 !important;
+}
+.select2-results__group {
+	background: $light-gray;
+}
+.select2-results__option {
+	font-size: 16px;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background: $warning;
+}
+
+
+.range-slider-wrap {
+	overflow: hidden;
+	@media (max-width: 767px) {
+		width: 260px;
+	}
+}
+.range-slider-wrap .leftLabel {
+	float: left;
+	margin: 5px 0 0;
+	font-size: 14px;
+}
+.range-slider-wrap .rightLabel {
+	float: right;
+	margin: 5px 0 0;
+	font-size: 14px;
+}
+.nstSlider {
+	width: 100%;
+	background-color: transparent;
+	@media (max-width: 767px) {
+		width: 260px;
+	}
+}
+.nstSlider .bar {
+	background: lighten($warning, 30%)
+}
+.nstSlider .rightGrip, 
+.nstSlider .leftGrip {
+	background-color: $warning;
+}

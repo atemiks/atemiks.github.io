@@ -1,0 +1,152 @@
+.header-box {
+   .header-aside-left {
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      @media screen and (max-width: 425px) {
+         width: 80%;
+      }
+   }
+
+   .header-aside-right {
+      float: right;
+      padding-left: 15px;
+      padding-right: 15px;
+      @media screen and (max-width: 425px) {
+         width: 20%;
+      }
+   }
+}
+
+.header-logo {
+   margin: 45px 0 0;
+   @media screen and (max-width: 640px) {
+      margin: 25px 0 0;
+   }
+}
+
+.header-nav {
+    @media screen and (max-width: 1024px) {
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: block;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: -105%;
+      background: $gray;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+      z-index: 99;
+      padding: 80px 15px 20px;
+       &.active {
+         left: 0;
+       }
+    }
+}
+
+.header-nav-list {
+   @extend .reset-list;
+   cursor: default;
+   li {
+      display: inline-block;
+      padding: 67px 20px 0;
+      border-right: 1px solid $gray;
+      @media screen and (max-width: 1199px) {
+         padding-left: 15px;
+         padding-right: 15px;
+      }
+      @media screen and (max-width: 1024px) {
+         display: block;
+         padding: 10px 0;
+         text-align: center;
+      }
+
+      &:last-child {
+         padding-right: 0 !important;
+         border-right: 0;
+      }
+
+      a {
+         color: #54534e;
+         text-transform: uppercase;
+         text-decoration: none;
+         @media screen and (max-width: 1199px) {
+            font-size: 16px;
+         }
+         @media screen and (max-width: 1024px) {
+            font-size: 24px;
+            color: #fff;
+         }
+
+         &:hover {
+            color: #000;
+         }
+      }
+
+      &.active {
+         a {
+            color: #000;
+         }
+      }
+   }
+}
+
+.header-toggle {
+   position: relative;
+   z-index: 100;
+   display: none;
+   margin: 45px 0 0;
+   padding: 0;
+   border: none;
+   background: none !important;
+   @media screen and (max-width: 1024px) {
+      display: inline-block;
+   }
+   @media screen and (max-width: 640px) {
+      margin: 25px 0 0;
+   }
+
+   a {
+      position: relative;
+      display: block;
+      transition: transform 100ms ease-in-out;
+      &:after,
+      &:before {
+       content: '';
+       position: relative;
+       display: block;
+       width: 28px;
+       height: 3px;
+       background-color: $light-success;
+       transition: transform 450ms ease-out;
+       transform-origin: 80% 60%;
+      }
+
+      span {
+         display: block;
+         width: 28px;
+         height: 3px;
+         background-color: $light-success;
+         margin: 3px 0;
+         transition: transform 400ms ease-out;
+      }
+   }
+
+   &.active {
+       a {
+         &:before {
+            transform: rotate(-45deg);
+         }
+
+         &:after {
+            transform: rotate(45deg);
+         }
+
+         span {
+            transform: scale(0);
+         }
+       }
+   }
+}
