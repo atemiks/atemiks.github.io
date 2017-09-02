@@ -45,13 +45,17 @@ $(document).ready(function () {
         $('.content-aside-inner').slideToggle();
     });
 
+    function selectInit() {
+        $(".select2").select2({
+          minimumResultsForSearch: Infinity
+        });
+        $(".select-subway").select2({
+          placeholder: "Выберите или найдите.."
+        });
+    }
+    setTimeout(selectInit, 300);
 
-    $(".select2").select2({
-      minimumResultsForSearch: Infinity
-    });
-    $(".select-subway").select2({
-      placeholder: "Выберите или найдите.."
-    });
+
 
     $('.nstSlider').nstSlider({
         "rounding": {
