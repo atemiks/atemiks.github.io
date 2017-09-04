@@ -2857,13 +2857,9 @@ body {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto; }
 
-.container {
-  /* @media screen and (max-width: 991px) {
-		width: 100% !important;
-	} */ }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1110px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1110px; } }
 
 .section-header {
   display: -webkit-box;
@@ -3551,36 +3547,37 @@ body {
         display: block;
         margin: 5px 0 0; } }
 
-.form-filter button[type='submit'] {
-  width: -webkit-calc(100% - 30px);
-  width: calc(100% - 30px);
-  margin: 15px 0 0; }
-
-.form-filter .form-group {
-  margin: 0;
-  padding: 10px 15px 15px;
-  border-bottom: 1px solid #efefef; }
-  .form-filter .form-group .control-label {
-    color: #505050;
-    font-weight: 400; }
-
-.form-filter .select2-container {
-  width: 100% !important; }
-  @media (max-width: 767px) {
-    .form-filter .select2-container {
-      display: block;
-      width: 260px !important; } }
+.form-filter {
+  /* .select2-container--default .select2-selection--multiple .select2-selection__rendered li,
+	.select2-container--default .select2-search--inline .select2-search__field {
+		@media (max-width: 767px) {
+			width: 260px !important;
+		}
+	}  */ }
+  .form-filter button[type='submit'] {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+    margin: 15px 0 0; }
+  .form-filter .form-group {
+    margin: 0;
+    padding: 10px 15px 15px;
+    border-bottom: 1px solid #efefef; }
+    .form-filter .form-group .control-label {
+      color: #505050;
+      font-weight: 400; }
+  .form-filter .select2-container {
+    width: 100% !important;
+    /* @media (max-width: 767px) {
+			display: block;
+			width: 260px !important;
+		} */ }
 
 @media (max-width: 767px) {
-  .form-filter .select2-container--default .select2-selection--multiple .select2-selection__rendered li,
-  .form-filter .select2-container--default .select2-search--inline .select2-search__field {
+  .secect2-container,
+  .select2-container--default .select2-selection--multiple .select2-selection__rendered li,
+  .select2-container--default .select2-search--inline .select2-search__field {
+    display: block;
     width: 260px !important; } }
-
-.secect2-container {
-  /* @media (max-width: 767px) {
-		display: block;
-		width: 260px !important;
-	} */ }
 
 .select2-container--default .select2-selection--single {
   height: 35px;
