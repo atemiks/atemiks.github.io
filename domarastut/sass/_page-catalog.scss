@@ -186,20 +186,10 @@
 	}
 	.select2-container {
 		width: 100% !important;
-		/* @media (max-width: 767px) {
-			display: block;
-			width: 260px !important;
-		} */
 	}
-	/* .select2-container--default .select2-selection--multiple .select2-selection__rendered li,
-	.select2-container--default .select2-search--inline .select2-search__field {
-		@media (max-width: 767px) {
-			width: 260px !important;
-		}
-	}  */
 }
 
-.secect2-container,
+.select2-container,
 .select2-container--default .select2-selection--multiple .select2-selection__rendered li,
 .select2-container--default .select2-search--inline .select2-search__field {
 	@media (max-width: 767px) {
