@@ -1,5 +1,9 @@
 $(document).ready(function() {
     'use strict'
+
+    $( ".content-aside-toggle" ).on( "click", function() {
+        $('.content-aside-collapse').slideToggle();
+    });
     
 
     $('.slider-hero').slick({
@@ -42,4 +46,32 @@ $(document).ready(function() {
         position:false, left:false, top:false
       }).detach());
     });*/
+
+    $("select").select2({
+      minimumResultsForSearch: Infinity
+    });
+
+    $('select').select2()
+    .on("select2:open", function () {
+        $('.select2-results__options').niceScroll({
+            cursoropacitymin: 1,
+            cursorcolor:"rgba(27, 156,155,1)",
+            cursorwidth:"45px",
+            background:"#fff",
+            cursorborder:"0px solid transparent",
+            cursorborderradius:0
+        });
+    });
+
+    // page news
+    $('.masonry-grid').masonry({
+        // options
+        itemSelector: '.masonry-item',
+        percentPosition: true
+    });
+
+    // page slideshow
+    $("[data-fancybox]").fancybox({
+        toolbar : false
+    });
 });

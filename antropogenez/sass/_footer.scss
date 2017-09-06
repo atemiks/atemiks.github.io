@@ -91,6 +91,18 @@
 		.footer-menu-title {
 			color: #fff;
 			text-transform: uppercase;
+			a {
+				color: inherit;
+				&:hover {
+					color: $light-success;
+					text-decoration: none;
+				}
+			}
+			&.active {
+				a {
+					color: $light-success;
+				}
+			}
 		}
 	}
 
@@ -102,7 +114,12 @@
 				color: #fff;
 				text-decoration: none;
 				&:hover {
-					color: $medium-gray;
+					color: $light-success;
+				}
+			}
+			&.active {
+				a {
+					color: $light-success;
 				}
 			}
 		}

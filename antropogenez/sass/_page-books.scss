@@ -1,0 +1,41 @@
+.book-card {
+	position: relative;
+	overflow: hidden;
+	.book-header {
+		.book-title {
+			@extend .card-title;
+		}
+	}
+
+	.book-thumb {
+		@extend .card-thumb;
+		width: 50%;
+		float: left;
+		margin: 0 15px 10px 0;
+		padding-bottom: 100%;
+		.book-thumb-link {
+			@extend .card-thumb-link;
+		}
+	}
+	
+	.book-body {
+		.book-author {
+			margin: 0;
+			font-weight: 500;
+		}
+		.book-edition {
+			margin: 0;
+			color: $medium-gray;
+		}
+		.book-description {
+			@extend .card-body;
+		}
+	}
+
+	.book-footer {
+		@extend .card-footer;
+		.book-footer-info {
+			@extend .card-count-info;
+		}
+	}
+}

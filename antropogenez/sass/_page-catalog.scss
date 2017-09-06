@@ -1,0 +1,80 @@
+.promo-map-wrap {
+	padding: 10px;
+	background: $black;
+	color: #fff;
+	.promo-map {
+		display: flex;
+		align-items: center;
+	}
+
+	.map-link {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.catalog-grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 20px;
+}
+.catalog-card {
+	position: relative;
+	margin: 0 0 20px;
+	.catalog-link {
+		position: absolute;
+		z-index: 9;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.catalog-header {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		padding: 12px 10px;
+		border: 1px solid $light-gray;
+		border-bottom: none;
+		background: #fff;
+		.catalog-title {
+			float: left;
+			width: calc(100% - 50px);
+			margin: 0;
+			font-size: 24px;
+		}
+		.catalog-action {
+			@extend .action-arrow;
+			float: right;
+			margin: 0;
+			background: $black;
+		}
+	}
+
+	.catalog-thumb {
+		padding-bottom: 60%;
+		background-color: $medium-gray;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.catalog-body {
+		margin: 6px 0 0;
+		padding: 10px 10px;
+		background: $success;
+	}
+	.catalog-info-list {
+		@extend .reset-list;
+		color: #fff;
+		li {
+			display: flex;
+			justify-content: space-between;
+			padding: 3px 0;
+			font-size: 14px;
+		}
+	}
+}

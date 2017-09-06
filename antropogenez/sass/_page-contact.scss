@@ -1,0 +1,34 @@
+.form-contact {
+	margin: 0 0 55px;
+}
+
+.captcha {
+	display: inline-block;
+	margin: 0 20px 0 0;
+	vertical-align: top;
+	.captcha-img {
+		width: 165px;
+		height: 45px;
+		margin: 0 20px 0 0;
+		vertical-align: top;
+	}
+	.captcha-input {
+		width: 100px;
+		text-align: center;
+	}
+}
+
+.subscribe-list {
+	@extend .reset-list;
+	margin: 0 -10px;
+	li {
+		display: inline-block;
+		font-size: 18px;
+
+		img {
+			display: inline-block;
+			margin: 0 5px 0 0;
+			vertical-align: middle;
+		}
+	}
+}

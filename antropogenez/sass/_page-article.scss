@@ -1,0 +1,46 @@
+article {
+	.article-footer {
+		padding: 15px 10px;
+		border-top: 1px solid $light-gray;
+		.article-footer-info {
+			@extend .card-count-info;
+			a {
+				color: inherit;
+				&:hover {
+					color: $link-color;
+				}
+			}
+		}
+	}
+}
+.article-thumb-hero {
+	img {
+		width: 100%;
+	}
+}
+
+.author-card {
+	
+}
+
+.section-similar-posts {
+	.similar-grid {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -25px -20px;
+		.similar-item {
+			margin: 0 0 20px;
+		}
+
+		.article-card {
+			height: 100%;
+			.article-header {
+				padding-bottom: 10px;
+				text-align: center;
+				.article-title {
+					margin-bottom: 10;
+				}
+			}
+		}
+	}
+}

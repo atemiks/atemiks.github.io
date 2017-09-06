@@ -215,9 +215,10 @@
 		}
 
 		&.open,
+		&.active,
 		&:hover {
 			> a {
-				color: $link-color;
+				color: #73e2e1;
 			}
 		}
 
