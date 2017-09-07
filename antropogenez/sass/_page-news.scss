@@ -1,5 +1,61 @@
 .news-grid {
-	.article-card {
-		border-color: transparent;
+	.news-item {
+		margin: 0 0 20px;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+}
+
+.news-card {
+	position: relative;
+	max-width: 475px;
+	margin: auto;
+	padding-bottom: 60px;
+	.news-header {
+		.news-title {
+			a {
+				color: inherit;
+				&:hover {
+					color: $link-color;
+				}
+			}
+		}
+	}
+	.news-info {
+		overflow: hidden;
+		margin: 0 0 5px;
+	}
+
+	.news-thumb {
+		float: left;
+		position: relative;
+		width: calc(50% - 20px);
+		margin: 0 20px 0 0;
+		padding-bottom: 28%;
+		background-position: center;
+		background-size: cover;
+		@media (max-width: 991px) {
+			width: 100%;
+			margin: 0 0 20px;
+			padding-bottom: 61%;
+		}
+		.news-thumb-link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+	.news-body {}
+	.news-footer {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 46px;
+		padding: 15px 10px;
+		border-top: 1px solid $light-gray;
 	}
 }

@@ -74,4 +74,9 @@ $(document).ready(function() {
     $("[data-fancybox]").fancybox({
         toolbar : false
     });
+
+    jQuery(function ($) {
+        $('.text-justify p').hyphenate('ru');
+        $('.text-justify p').hyphenate('en-us');
+    });
 });

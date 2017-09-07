@@ -159,23 +159,25 @@
                         </div>
                         <div class="content row">
                             <main class="content-inner col-sm-16 col-md-18">
-                                <section class="error-box" >
+                                <div class="error-box" >
                                     <div class="error-inner row">
-                                        <div class="col-md-16">
-                                            <h3>УПС!</h3>
-                                            <p>Запрашиваемая вами страница не существует или была перемещена по другому адресу. <br> Вы можете вернуться назад или воспользоваться поиском по нашему сайту:</p>
+                                        <div class="side-left col-md-13">
+                                            <div class="error-message">
+                                                <h3 class="error-title" >УПС!</h3>
+                                                <p>Запрашиваемая вами страница не существует или была перемещена по другому адресу. <br> Вы можете вернуться назад или воспользоваться поиском по нашему сайту:</p>
+                                            </div>
 
                                             <form action="" class="form-search form-search-fluid">
                                                 <input class="search-input" type="search" placeholder="Найти...">
                                                 <button type="submit" class="search-button" ><i class="icon-search" ></i></button>
                                             </form>
                                         </div>
-                                        <div class="col-md-8">
-                                            <img src="img/404/404.png" alt="Страница не найдена">
+                                        <div class="side-right col-md-11">
+                                            <img class="error-img" src="img/404/404.png" alt="Страница не найдена">
                                         </div>
                                     </div>
                                         
-                                </section>
+                                </div>
                             </main>
 
                             <aside class="content-aside col-sm-8 col-md-6">
@@ -371,6 +373,9 @@
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/libs.min.js"></script>
+        <script src="js/jquery.hypher.js" ></script>
+        <script src="js/en-us.js" ></script>
+        <script src="js/ru.js" ></script>
         <script src="js/main.js"></script>
     </body>
 

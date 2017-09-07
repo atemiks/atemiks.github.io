@@ -98,11 +98,6 @@
 					text-decoration: none;
 				}
 			}
-			&.active {
-				a {
-					color: $light-success;
-				}
-			}
 		}
 	}
 
@@ -129,6 +124,12 @@
 		li {
 			padding: 10px 0;
 			text-transform: uppercase;
+		}
+	}
+
+	&.active {
+		.footer-menu-title {
+			color: $light-success;
 		}
 	}
 }

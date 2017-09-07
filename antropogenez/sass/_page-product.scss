@@ -74,19 +74,8 @@
 		margin-bottom: 20px;
 	}
 }
-.product-footer {
+ .product-footer {
 	height: 45px;
 	padding: 15px 10px;
 	border-top: 1px solid $light-gray;
-	.product-footer-info {
-		@extend .card-count-info;
-		li {
-			a {
-				color: inherit;
-				&:hover {
-					color: $link-color;
-				}
-			}
-		}
-	}
-}
+} 

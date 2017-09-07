@@ -1,26 +1,30 @@
 article {
 	.article-footer {
+		height: 46px;
+		margin: 30px 0 0;
 		padding: 15px 10px;
 		border-top: 1px solid $light-gray;
-		.article-footer-info {
-			@extend .card-count-info;
-			a {
-				color: inherit;
-				&:hover {
-					color: $link-color;
-				}
-			}
-		}
 	}
 }
 .article-thumb-hero {
+	margin: 0 0 30px;
 	img {
 		width: 100%;
 	}
 }
 
 .author-card {
-	
+	margin: 0 20px 20px 0;
+	padding: 20px 20px 15px;
+	background: $medium-gray;
+	figcaption {
+		margin-top: 10px;
+		font-style: normal;
+		color: $default;
+	}
+	&.pull-right {
+		margin: 0 0 20px 20px;
+	}
 }
 
 .section-similar-posts {
