@@ -53,9 +53,7 @@ $(document).ready(function() {
           minimumResultsForSearch: Infinity
         });
 
-        alert('hello');
-
-        /*$('select').select2()
+        $('select').select2()
         .on("select2:open", function () {
             $('.select2-results__options').niceScroll({
                 cursoropacitymin: 1,
@@ -65,7 +63,7 @@ $(document).ready(function() {
                 cursorborder:"0px solid transparent",
                 cursorborderradius:0
             });
-        });*/
+        });
 
       
         $('.masonry-grid').masonry({
