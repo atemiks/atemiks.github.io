@@ -47,28 +47,34 @@ $(document).ready(function() {
       }).detach());
     });*/
 
-    $("select").select2({
-      minimumResultsForSearch: Infinity
-    });
 
-    $('select').select2()
-    .on("select2:open", function () {
-        $('.select2-results__options').niceScroll({
-            cursoropacitymin: 1,
-            cursorcolor:"rgba(27, 156,155,1)",
-            cursorwidth:"45px",
-            background:"#fff",
-            cursorborder:"0px solid transparent",
-            cursorborderradius:0
+    function explode(){
+        $("select").select2({
+          minimumResultsForSearch: Infinity
         });
-    });
+
+        $('select').select2()
+        .on("select2:open", function () {
+            $('.select2-results__options').niceScroll({
+                cursoropacitymin: 1,
+                cursorcolor:"rgba(27, 156,155,1)",
+                cursorwidth:"45px",
+                background:"#fff",
+                cursorborder:"0px solid transparent",
+                cursorborderradius:0
+            });
+        });
+
+      
+        $('.masonry-grid').masonry({
+            // options
+            itemSelector: '.masonry-item',
+            percentPosition: true
+        });
+    }
+    setTimeout(explode, 300);
 
     // page news
-    $('.masonry-grid').masonry({
-        // options
-        itemSelector: '.masonry-item',
-        percentPosition: true
-    });
 
     // page slideshow
     $("[data-fancybox]").fancybox({

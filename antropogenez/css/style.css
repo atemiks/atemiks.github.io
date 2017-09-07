@@ -5340,6 +5340,7 @@ article {
   article h2,
   article h3 {
     color: #1b9c9b;
+    text-align: left !important;
     text-transform: uppercase; }
   article h4,
   article h5,
@@ -5595,6 +5596,9 @@ button,
         padding-right: 10px; } }
   .content-wrapper .page-header {
     min-height: 100px; }
+    @media (max-width: 767px) {
+      .content-wrapper .page-header {
+        min-height: 70px; } }
     .content-wrapper .page-header .page-title {
       display: inline-block;
       margin: 0;
@@ -5966,7 +5970,7 @@ button,
     width: 100%; }
 
 .form-filter {
-  min-height: 45px;
+  /* min-height: 45px; */
   margin: 0 0 45px; }
 
 .dropdown-menu {
@@ -7172,6 +7176,11 @@ button,
   padding: 10px 30px;
   background: #272930;
   color: #fff; }
+  @media (max-width: 767px) {
+    .catalog-map {
+      margin-left: -10px;
+      margin-right: -10px;
+      padding: 10px; } }
   .catalog-map .catalog-map-inner {
     display: -webkit-box;
     display: -webkit-flex;
@@ -7181,6 +7190,9 @@ button,
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 767px) {
+      .catalog-map .catalog-map-inner {
+        display: block; } }
   .catalog-map .catalog-map-thumb {
     display: -webkit-box;
     display: -webkit-flex;
@@ -7202,10 +7214,15 @@ button,
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin: 0 -20px 20px; }
+  @media (max-width: 767px) {
+    .catalog-grid {
+      margin-left: 0;
+      margin-right: 0; } }
 
 .catalog-card {
   position: relative;
-  margin: 0 0 20px; }
+  max-width: 475px;
+  margin: 0 auto 20px; }
   .catalog-card .catalog-link {
     position: absolute;
     z-index: 9;
@@ -7499,12 +7516,15 @@ button,
     width: calc(50% - 20px);
     float: left;
     margin: 0 15px 5px 0;
-    padding-bottom: 70%; }
+    padding-bottom: 70%;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center center; }
     @media (max-width: 991px) {
       .book-card .book-thumb {
         width: 100%;
         margin: 0 0 20px;
-        padding-bottom: 61%; } }
+        padding-bottom: 130%; } }
   .book-card .book-body .book-author {
     margin: 0;
     font-weight: 500; }
