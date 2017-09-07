@@ -1,11 +1,52 @@
 $(document).ready(function() {
     'use strict'
 
+    //init
+
+    // detect browser and init selects
+    if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+      $("select").select2({
+          minimumResultsForSearch: Infinity
+        });
+
+        $('select').select2()
+        .on("select2:open", function () {
+            $('.select2-results__options').niceScroll({
+                cursoropacitymin: 1,
+                cursorcolor:"rgba(27, 156,155,1)",
+                cursorwidth:"45px",
+                background:"#fff",
+                cursorborder:"0px solid transparent",
+                cursorborderradius:0
+            });
+        });
+    }
+
+    // init masonry grid
+    $('.masonry-grid').masonry({
+        itemSelector: '.masonry-item',
+        percentPosition: true
+    });
+
+    // init popup gallery
+    $("[data-fancybox]").fancybox({
+        toolbar : false
+    });
+
+    // init hypher
+    jQuery(function ($) {
+        $('.text-justify p').hyphenate('ru');
+        $('.text-justify p').hyphenate('en-us');
+    });
+
+
+
+    // mobile aside menu
     $( ".content-aside-toggle" ).on( "click", function() {
         $('.content-aside-collapse').slideToggle();
     });
     
-
+    // init sliders
     $('.slider-hero').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -17,7 +58,6 @@ $(document).ready(function() {
     $('.slider-video').slick({
          infinite: false,
         vertical: true,
-       /* verticalSwiping: true,*/
         arrows: false,
         dots: false,
         asNavFor: '.slider-video-nav'
@@ -46,43 +86,5 @@ $(document).ready(function() {
         position:false, left:false, top:false
       }).detach());
     });*/
-
-
-    function explode(){
-        $("select").select2({
-          minimumResultsForSearch: Infinity
-        });
-
-        $('select').select2()
-        .on("select2:open", function () {
-            $('.select2-results__options').niceScroll({
-                cursoropacitymin: 1,
-                cursorcolor:"rgba(27, 156,155,1)",
-                cursorwidth:"45px",
-                background:"#fff",
-                cursorborder:"0px solid transparent",
-                cursorborderradius:0
-            });
-        });
-
-      
-        $('.masonry-grid').masonry({
-            // options
-            itemSelector: '.masonry-item',
-            percentPosition: true
-        });
-    }
-    setTimeout(explode, 300);
-
-    // page news
-
-    // page slideshow
-    $("[data-fancybox]").fancybox({
-        toolbar : false
-    });
-
-    jQuery(function ($) {
-        $('.text-justify p').hyphenate('ru');
-        $('.text-justify p').hyphenate('en-us');
-    });
+    
 });
