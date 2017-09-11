@@ -1,0 +1,160 @@
+.footer {
+	background: $black;
+	color: #fff;
+}
+.footer-statusbar {
+	background: #fff;
+	color: $default;
+	.footer-statusbar-inner {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		@media (max-width: 991px) {
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.footer-logo {
+	flex: 1 1 auto;
+	margin: 10px 0;
+	@media (max-width: 767px) {
+		text-align: center;
+	}
+
+	.footer-logo-img {
+		width: 100%;
+		max-width: 280px;
+	}
+}
+
+.footer-search {
+	flex: 0 1 340px;
+	margin: 10px 0;
+	padding: 0 15px;
+}
+
+.footer-copyright {
+	flex: 1 1 auto;
+	max-width: 505px;
+	margin: 10px 0;
+	padding: 0 15px;
+	@media (max-width: 991px) {
+		width: 100%;
+		max-width: 100%;
+		margin: 15px 0 0;
+		padding: 0;
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+.footer-hotlinks {
+	position: relative;
+	padding: 30px 0 40px;
+	.footer-hotlinks-inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 0 -20px;
+		padding: 0;
+		@media (max-width: 1199px) {
+			justify-content: flex-start;
+		}
+		
+		.footer-hotlinks-col {
+			flex: 0 1 230px;
+			margin: 0 0 20px;
+			padding: 0 10px;
+			@media (max-width: 767px) {
+				flex: 1 1 100%;
+			}
+
+			&:nth-child(4n),
+			&:nth-child(5n) {
+				padding-bottom: 50px;
+				@media (max-width: 1199px)  {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.footer-menu-block {
+	margin-bottom: 30px;
+	.footer-menu-header {
+		.footer-menu-title {
+			color: #fff;
+			text-transform: uppercase;
+			a {
+				color: inherit;
+				&:hover {
+					color: $light-success;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.footer-menu-list {
+		@extend .reset-list;
+		li {
+			padding: 3px 0;
+			a {
+				color: #fff;
+				text-decoration: none;
+				&:hover {
+					color: $light-success;
+				}
+			}
+			&.active {
+				a {
+					color: $light-success;
+				}
+			}
+		}
+	}
+	.footer-menu-list.footer-menu-lg {
+		margin: 20px 0;
+		li {
+			padding: 10px 0;
+			text-transform: uppercase;
+		}
+	}
+
+	&.active {
+		.footer-menu-title {
+			color: $light-success;
+		}
+	}
+}
+
+
+.footer-social {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	max-width: 470px;
+	@media (max-width: 1199px)  {
+		position: relative;
+	}
+}
+.social-list {
+	@extend .reset-list;
+	cursor: default;
+	li {
+		display: inline-block;
+		padding: 0 3px;
+		img {
+			display: block;
+			width: 38px;
+			height: 38px;
+		}
+	}
+}
