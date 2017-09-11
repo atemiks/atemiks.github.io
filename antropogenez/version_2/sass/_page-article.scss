@@ -1,0 +1,50 @@
+article {
+	.article-footer {
+		height: 46px;
+		margin: 30px 0 0;
+		padding: 15px 10px;
+		border-top: 1px solid $light-gray;
+	}
+}
+.article-thumb-hero {
+	margin: 0 0 30px;
+	img {
+		width: 100%;
+	}
+}
+
+.author-card {
+	margin: 0 20px 20px 0;
+	padding: 20px 20px 15px;
+	background: $medium-gray;
+	figcaption {
+		margin-top: 10px;
+		font-style: normal;
+		color: $default;
+	}
+	&.pull-right {
+		margin: 0 0 20px 20px;
+	}
+}
+
+.section-similar-posts {
+	.similar-grid {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -25px -20px;
+		.similar-item {
+			margin: 0 0 20px;
+		}
+
+		.article-card {
+			height: 100%;
+			.article-header {
+				padding-bottom: 10px;
+				text-align: center;
+				.article-title {
+					margin-bottom: 10;
+				}
+			}
+		}
+	}
+}
