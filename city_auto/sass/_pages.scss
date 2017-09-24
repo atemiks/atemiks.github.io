@@ -1,0 +1,50 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	@media (min-width: 1200px) {
+		width: 1200px;
+	}
+}
+
+
+.section-dark {
+	background: $dark-gray;
+}
+.section-light {
+	background: $light-gray;
+}
+
+.section-header {
+	.section-title {
+		@extend .text-gradient;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		line-height: 1.1;
+	}
+
+	&.header-with-aside {
+		.header-aside {
+			@media (max-width: 767px) {
+				margin-bottom: 40px;
+			}
+
+			img {
+				@media (max-width: 767px) {
+					display: block;
+					max-width: 180px;
+					margin: auto;
+				}
+			}
+		}
+	}
+}
