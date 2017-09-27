@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+@font-face {
+  font-family: 'icon-font';
+  src: url('../fonts/icon-font/icon-font.eot');
+  src: url('../fonts/icon-font/icon-font.woff') format('woff'), 
+       url('../fonts/icon-font/icon-font.ttf') format('truetype'), 
+       url('../fonts/icon-font/icon-font.svg#icon-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'icon-font' !important;
+   speak: none;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+ 
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+
+.icon-envelope-o:before {
+  content: "\f003";
+}
+.icon-check:before {
+  content: "\f00c";
+}
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-remove:before {
+  content: "\f00d";
+}
+.icon-times:before {
+  content: "\f00d";
+}
+.icon-map-marker:before {
+  content: "\f041";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-caret-down:before {
+  content: "\f0d7";
+}
+.icon-caret-up:before {
+  content: "\f0d8";
+}
+.icon-angle-left:before {
+  content: "\f104";
+}
+.icon-angle-right:before {
+  content: "\f105";
+}
+.icon-angle-up:before {
+  content: "\f106";
+}
+.icon-angle-down:before {
+  content: "\f107";
+}
+.icon-vk:before {
+  content: "\f189";
+}
+.icon-odnoklassniki:before {
+  content: "\f263";
+}
+
+
+
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bubble {
+    width: 220px;
+    height: 75px;
+    background-position: -5px -5px;
+}
+
+.sprite-bubble-active {
+    width: 220px;
+    height: 75px;
+    background-position: -5px -90px;
+}
+
+.sprite-icon-arrow-down {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -175px;
+}
+
+.sprite-icon-arrow-up {
+    width: 24px;
+    height: 24px;
+    background-position: -39px -175px;
+}
+
+.sprite-icon-time {
+    width: 32px;
+    height: 38px;
+    background-position: -235px -5px;
+}

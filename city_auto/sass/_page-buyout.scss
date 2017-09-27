@@ -1,0 +1,63 @@
+.section-buyout {
+	@extend .section-calc;
+
+	.section-header {
+		.section-title {
+			color: #fff;
+			-webkit-text-fill-color: #fff;
+		}
+	}
+}
+
+
+.slider-buyout {
+	@media (max-width: 991px) {
+		padding: 0 30px;
+	}
+
+	.slick-prev {
+		@media (max-width: 991px) {
+			left: 0;
+		}
+	}
+	.slick-next {
+		@media (max-width: 991px) {
+			right: 0;
+		}
+	}
+}
+
+.buyout-card {
+	margin: 0 -10px;
+	.buyout-title,
+	.buyout-info,
+	.buyout-price {
+		@extend .h4;
+		margin: 0 0 20px;
+		font-weight: 400;
+		color: #fff;
+		text-transform: none;
+		line-height: 1.2;
+		span {
+			font-weight: 700;
+			color: $primary;
+		}
+	}
+
+	.buyout-info {
+		@extend .reset-list;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		li {
+			display: inline-block;
+		}
+	}
+
+	.buyout-price {
+		span {
+			display: block;
+			font-size: 40px;
+		}
+	}
+}
