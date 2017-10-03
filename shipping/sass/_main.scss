@@ -141,9 +141,15 @@
 	overflow: hidden;
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
+	@media (max-width: 768px) {
+		overflow: hidden;
+	}
+	
 	.info-inner {
 		display: flex;
-		flex-wrap: wrap;
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 }
 

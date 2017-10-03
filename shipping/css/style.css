@@ -20,7 +20,7 @@
 .horizontal-gradient-green {
   background-color: #007187;
   filter-gradient: #007187, #00bfc7, horizontal;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, #007187), to(#00bfc7));
+  background-image: -webkit-gradient(linear, left top, right top, from(#007187), to(#00bfc7));
   background-image: linear-gradient(left, #007187 0%, #00bfc7 100%); }
 
 .text-gradient {
@@ -4093,12 +4093,19 @@ button,
   overflow: hidden;
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
+  @media (max-width: 768px) {
+    .section-info {
+      overflow: hidden; } }
   .section-info .info-inner {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    display: flex; }
+    @media (max-width: 768px) {
+      .section-info .info-inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
 
 .contact-card {
   position: relative;
