@@ -1,0 +1,17 @@
+.footer {
+	overflow: hidden;
+	padding: 20px 0;
+	background: #3e4c5e;
+	font-size: 10px;
+	color: rgba(255,255,255,.5);
+	p {
+		margin: 0;
+	}
+	
+	.footer-copyright {
+		float: left;
+	}
+	.footer-developed {
+		float: right;
+	}
+}
