@@ -3480,6 +3480,14 @@ h6 {
   color: #666666;
   line-height: 1;
   letter-spacing: 0.3px; }
+  @media (max-width: 640px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0 0 25px; } }
 
 h1,
 .h1 {
@@ -3566,12 +3574,17 @@ button,
   color: #2c2a50;
   text-align: center;
   text-decoration: none; }
+  @media (max-width: 991px) {
+    button,
+    .btn {
+      min-width: 288px; } }
   @media (max-width: 767px) {
     button,
     .btn {
       min-width: 240px;
       min-height: 50px;
-      padding: 10px 15px 7px; } }
+      padding: 10px 15px 7px;
+      font-size: 20px; } }
   button:before,
   .btn:before {
     font-family: 'icon-font';
@@ -3727,6 +3740,9 @@ button,
     background-position: center;
     text-align: center;
     color: #fff; }
+    @media (max-width: 640px) {
+      .modal .modal-dialog .modal-content {
+        padding: 10px; } }
     .modal .modal-dialog .modal-content:before, .modal .modal-dialog .modal-content:after {
       content: '';
       position: absolute; }
@@ -3742,6 +3758,12 @@ button,
       right: 20px;
       bottom: 20px;
       border: 1px solid rgba(255, 255, 255, 0.5); }
+      @media (max-width: 640px) {
+        .modal .modal-dialog .modal-content:after {
+          top: 5px;
+          left: 5px;
+          right: 5px;
+          bottom: 5px; } }
   .modal .modal-dialog .close {
     position: absolute;
     right: 0;
@@ -3757,6 +3779,9 @@ button,
     font-size: 18px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.3); }
+    @media (max-width: 640px) {
+      .modal .modal-dialog .close {
+        font-size: 14px; } }
     .modal .modal-dialog .close:before {
       display: none; }
   .modal .modal-dialog .modal-header,
@@ -3765,6 +3790,11 @@ button,
     position: relative;
     z-index: 1;
     border: none; }
+    @media (max-width: 640px) {
+      .modal .modal-dialog .modal-header,
+      .modal .modal-dialog .modal-body,
+      .modal .modal-dialog .modal-footer {
+        padding: 10px; } }
   .modal .modal-dialog .modal-header [class*='col-'] {
     position: static; }
   .modal .modal-dialog .modal-header .modal-title,
@@ -3785,13 +3815,22 @@ button,
   .modal .modal-dialog .control-icon {
     display: inline-block;
     padding: 8px 0; }
+    @media (max-width: 640px) {
+      .modal .modal-dialog .control-icon {
+        font-size: 28px; } }
   .modal .modal-dialog .btn {
     margin-top: 40px; }
+    @media (max-width: 640px) {
+      .modal .modal-dialog .btn {
+        margin-top: 20px; } }
     .modal .modal-dialog .btn:before {
       display: none; }
 
 .form-modal {
   overflow: hidden; }
+  @media (max-width: 640px) {
+    .form-modal {
+      margin: 0 -15px; } }
   .form-modal .form-group {
     overflow: hidden;
     margin: 0 0 20px; }
@@ -3848,6 +3887,15 @@ button,
   .header-contact a {
     color: #fff;
     text-decoration: none; }
+    @media (max-width: 640px) {
+      .header-contact a {
+        font-size: 0; } }
+  .header-contact i {
+    display: none;
+    font-size: 30px; }
+    @media (max-width: 640px) {
+      .header-contact i {
+        display: block; } }
 
 .page-home .header-box {
   position: absolute;
@@ -3857,7 +3905,6 @@ button,
   right: 0; }
 
 .header-fixed {
-  display: none !important;
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -3870,6 +3917,9 @@ button,
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%); }
+  @media (max-width: 640px) {
+    .header-fixed {
+      padding: 10px 0 5px; } }
   .header-fixed.is-visible {
     opacity: 1;
     visibility: visible;
@@ -3882,7 +3932,9 @@ button,
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center; }
 
 .fixed-logo {
   -webkit-box-flex: 1;
@@ -3891,14 +3943,32 @@ button,
 
 .fixed-contact {
   margin: 0 20px; }
+  @media (max-width: 640px) {
+    .fixed-contact {
+      height: 40px;
+      margin: 0; } }
   .fixed-contact li {
     display: inline-block;
     margin: 0 10px; }
     .fixed-contact li a {
       color: rgba(255, 255, 255, 0.1);
       text-decoration: none; }
+      @media (max-width: 640px) {
+        .fixed-contact li a {
+          font-size: 0; } }
       .fixed-contact li a:hover {
         color: #fff; }
+    .fixed-contact li i {
+      display: none;
+      font-size: 30px;
+      color: #fff; }
+      @media (max-width: 640px) {
+        .fixed-contact li i {
+          display: block; } }
+
+@media (max-width: 640px) {
+  .fixed-action {
+    display: none; } }
 
 .footer {
   overflow: hidden;
@@ -3906,12 +3976,21 @@ button,
   background: #3e4c5e;
   font-size: 10px;
   color: rgba(255, 255, 255, 0.5); }
+  @media (max-width: 640px) {
+    .footer {
+      text-align: center; } }
   .footer p {
     margin: 0; }
   .footer .footer-copyright {
     float: left; }
+    @media (max-width: 640px) {
+      .footer .footer-copyright {
+        float: none; } }
   .footer .footer-developed {
     float: right; }
+    @media (max-width: 640px) {
+      .footer .footer-developed {
+        float: none; } }
 
 .section-hero {
   position: relative;
@@ -3922,12 +4001,13 @@ button,
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  padding-top: 120px !important;
   padding-bottom: 120px !important;
   background-size: cover;
   background-position: center; }
   @media (max-width: 767px) {
     .section-hero {
-      padding-top: 40px !important;
+      padding-top: 110px !important;
       padding-bottom: 40px !important; } }
   .section-hero:before {
     content: '';
@@ -3947,6 +4027,9 @@ button,
     color: #fff; }
   .section-hero .hero-action {
     margin-top: 80px; }
+    @media (max-width: 767px) {
+      .section-hero .hero-action {
+        margin-top: 40px; } }
 
 .section-services {
   padding-bottom: 0 !important; }
@@ -3981,8 +4064,13 @@ button,
 
 .services-slider {
   margin: 0 -15px !important; }
-  .services-slider img {
-    width: calc(100% + 30px); }
+  .services-slider .slide-item {
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 9.2%; }
+    @media (max-width: 475px) {
+      .services-slider .slide-item {
+        padding-bottom: 20%; } }
 
 .company-achievement-box {
   padding: 80px 0 85px;
@@ -4030,6 +4118,9 @@ button,
     overflow: hidden;
     color: #2c2a50;
     line-height: 1.7777778; }
+    @media (max-width: 640px) {
+      .contact-list li {
+        font-size: 16px; } }
     .contact-list li a {
       color: inherit;
       text-decoration: none; }
@@ -4039,6 +4130,11 @@ button,
       height: 60px;
       font-size: 30px;
       color: #6a7da0; }
+      @media (max-width: 640px) {
+        .contact-list li i {
+          width: 40px;
+          height: 40px;
+          font-size: 24px; } }
 
 .calc-card {
   position: relative;
@@ -4071,6 +4167,9 @@ button,
       color: inherit; }
   .calc-card .btn {
     margin: 25px 0 100px; }
+    @media (max-width: 640px) {
+      .calc-card .btn {
+        margin: 0 0 35px; } }
 
 .contact-card,
 .calc-card {
@@ -4079,12 +4178,17 @@ button,
   @media (max-width: 1024px) {
     .contact-card,
     .calc-card {
-      padding-left: 20px;
-      padding-right: 20px; } }
+      padding-left: 15px;
+      padding-right: 15px; } }
   @media (max-width: 768px) {
     .contact-card,
     .calc-card {
       width: 100%; } }
+  @media (max-width: 640px) {
+    .contact-card,
+    .calc-card {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
   .contact-card .card-header,
   .contact-card .card-body,
   .contact-card .card-footer,
@@ -4100,12 +4204,19 @@ button,
   .calc-card .card-header {
     margin-bottom: 55px;
     text-align: center; }
+    @media (max-width: 640px) {
+      .contact-card .card-header,
+      .calc-card .card-header {
+        margin: 0; } }
 
 .section-partner {
   padding-bottom: 180px; }
 
 .steps-box {
   padding: 20px 0 0; }
+  @media (max-width: 640px) {
+    .steps-box {
+      overflow: hidden; } }
   .steps-box .steps-title {
     text-align: center; }
 
@@ -4181,9 +4292,16 @@ button,
     width: 90px;
     font-size: 60px;
     color: #6a7da0; }
+    @media (max-width: 640px) {
+      .partner-service-card .partner-service-thumb {
+        width: 60px;
+        font-size: 40px; } }
   .partner-service-card .partner-service-inner {
     overflow: hidden;
     padding: 30px 0 0; }
+    @media (max-width: 640px) {
+      .partner-service-card .partner-service-inner {
+        padding: 15px 0 0; } }
   .partner-service-card .partner-service-title {
     margin: 0 0 35px; }
   .partner-service-card .partner-service-description {

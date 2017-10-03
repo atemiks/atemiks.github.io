@@ -33,6 +33,9 @@ h6 {
 	color: $default;
 	line-height: 1;
 	letter-spacing: 0.3px;
+	@media (max-width: 640px) {
+		margin: 0 0 25px;
+	}
 }
 
 
@@ -121,10 +124,14 @@ button,
 	color: $default-heading;
 	text-align: center;
 	text-decoration: none;
+	@media (max-width: 991px) {
+		min-width: 288px;
+	}
 	@media (max-width: 767px) {
 		min-width: 240px;
 		min-height: 50px;
 		padding: 10px 15px 7px;
+		font-size: 20px;
 	}
 
 	&:before {
@@ -156,6 +163,7 @@ button,
 	padding: 10px 15px 5px;
 	box-shadow: 0 3px $dark-warning;
 	font-size: 18px;
+
 	&:before {
 		display: none !important;
 	}

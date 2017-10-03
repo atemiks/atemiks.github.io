@@ -18,7 +18,18 @@
 	a {
 		color: #fff;
 		text-decoration: none;
+        @media (max-width: 640px)  {
+            font-size: 0;
+        }
 	}
+
+    i {
+        display: none;
+        font-size: 30px;
+        @media (max-width: 640px) {
+            display: block;
+        }
+    }
 }
 
 .page-home {
@@ -34,7 +45,7 @@
 
 // header fixed
 .header-fixed {
-    display: none !important;
+    @extend .transition;
     opacity: 0;
     visibility: hidden;
     position: fixed;
@@ -45,7 +56,10 @@
     padding: 25px 0;
     background: $dark-primary;
     transform: translateY(-100%);
-    @extend .transition;
+    @media (max-width: 640px) {
+        padding: 10px 0 5px;
+    }
+    
     &.is-visible {
         opacity: 1;
         visibility: visible;
@@ -54,8 +68,8 @@
     .header-fixed-inner {
         display: flex;
         align-items: center;
+        align-content: center;
     }
-
 }
 
 .fixed-logo {
@@ -64,15 +78,39 @@
 .fixed-contact {
     @extend .reset-list;
     margin: 0 20px;
+    @media (max-width: 640px) {
+        height: 40px;
+        margin: 0;
+    }
+
     li {
         display: inline-block;
         margin: 0 10px;
         a {
             color: rgba(#fff, .1);
             text-decoration: none;
+            @media (max-width: 640px)  {
+                font-size: 0;
+            }
+
             &:hover {
                 color: #fff;
             }
         }
+
+        i {
+            display: none;
+            font-size: 30px;
+            color: #fff;
+            @media (max-width: 640px) {
+                display: block;
+            }
+        }
+    }
+}
+
+.fixed-action {
+    @media (max-width: 640px) {
+        display: none;
     }
 }

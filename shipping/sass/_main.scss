@@ -3,11 +3,12 @@
 	display: flex;
     align-items: center;
 	min-height: 100vh;
+	padding-top: 120px !important;
 	padding-bottom: 120px !important;
 	background-size: cover;
 	background-position: center;
 	@media (max-width: 767px) {
-		padding-top: 40px !important;
+		padding-top: 110px !important;
 		padding-bottom: 40px !important;
 	}
 
@@ -34,6 +35,9 @@
 	}
 	.hero-action {
 		margin-top: 80px;
+		@media (max-width: 767px) {
+			margin-top: 40px;
+		}
 	}
 }
 
@@ -91,8 +95,13 @@
 }
 .services-slider {
 	margin: 0 -15px !important;
-	img {
-		width: calc(100% + 30px);
+	.slide-item {
+		background-position: center;
+		background-size: cover;
+		padding-bottom: 9.2%;
+		@media (max-width: 475px) {
+			padding-bottom: 20%;
+		}
 	}
 }
 
@@ -158,9 +167,14 @@
 		overflow: hidden;
 		color: $default-heading;
 		line-height: 1.7777778;
+		@media (max-width: 640px) {
+			font-size: 16px;
+		}
+
 		a {
 			color: inherit;
 			text-decoration: none;
+			
 		}
 
 		i {
@@ -169,6 +183,11 @@
 			height: 60px;
 			font-size: 30px;
 			color: $primary;
+			@media (max-width: 640px) {
+				width: 40px;
+				height: 40px;
+				font-size: 24px;
+			}
 		}
 	}
 }
@@ -210,6 +229,9 @@
 
 	.btn {
 		margin: 25px 0 100px;
+		@media (max-width: 640px) {
+			margin: 0 0 35px;
+		}
 	}
 }
 
@@ -218,11 +240,15 @@
 	padding: 80px 70px 35px;
 	text-align: center;
 	@media (max-width: 1024px) {
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	@media (max-width: 768px) {
 		width: 100%;
+	}
+	@media (max-width: 640px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 
 	.card-header,
@@ -237,6 +263,9 @@
 	.card-header {
 		margin-bottom: 55px;
 		text-align: center;
+		@media (max-width: 640px) {
+			margin: 0;
+		}
 	}
 }
 
@@ -247,6 +276,10 @@
 
 .steps-box {
 	padding: 20px 0 0;
+	@media (max-width: 640px) {
+		overflow: hidden;
+	}
+
 	.steps-title {
 		text-align: center;
 	}
@@ -338,10 +371,17 @@
 		width: 90px;
 		font-size: 60px;
 		color: $primary;
+		@media (max-width: 640px) {
+			width: 60px;
+			font-size: 40px;
+		}
 	}
 	.partner-service-inner {
 		overflow: hidden;
 		padding: 30px 0 0;
+		@media (max-width: 640px) {
+			padding: 15px 0 0;
+		}
 	}
 	
 	.partner-service-title {

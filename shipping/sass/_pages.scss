@@ -83,6 +83,10 @@
 			background-position: center;
 			text-align: center;
 			color: #fff;
+			@media (max-width: 640px) {
+				padding: 10px;
+			}
+
 			&:before,
 			&:after {
 				content: '';
@@ -101,6 +105,12 @@
 				right: 20px;
 				bottom: 20px;
 				border: 1px solid rgba(#fff, .5);
+				@media (max-width: 640px) {
+					top: 5px;
+					left: 5px;
+					right: 5px;
+					bottom: 5px;
+				}
 			}
 		}
 
@@ -118,6 +128,10 @@
 			font-size: 18px;
 			font-weight: 300;
 			color: rgba(#fff, .3);
+			@media (max-width: 640px) {
+				font-size: 14px;
+			}
+
 			&:before {
 				display: none;
 			}
@@ -130,6 +144,9 @@
 			position: relative;
 			z-index: 1;
 			border: none;
+			@media (max-width: 640px) {
+				padding: 10px;
+			}
 		}
 
 		.modal-header {
@@ -165,10 +182,17 @@
 		.control-icon {
 			display: inline-block;
 			padding: 8px 0;
+			@media (max-width: 640px) {
+				font-size: 28px;
+			}
 		}
 
 		.btn {
 			margin-top: 40px;
+			@media (max-width: 640px) {
+				margin-top: 20px;
+			}
+
 			&:before {display: none;}
 		}
 	}
@@ -176,6 +200,10 @@
 
 .form-modal {
 	overflow: hidden;
+	@media (max-width: 640px) {
+		margin: 0 -15px;
+	}
+
 	.form-group {
 		overflow: hidden;
 		margin: 0 0 20px;
