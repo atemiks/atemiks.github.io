@@ -74,6 +74,10 @@
 
 .fixed-logo {
     flex: 1;
+    .fixed-logo-img {
+        width: 174px;
+        height: 47px;
+    }
 }
 .fixed-contact {
     @extend .reset-list;

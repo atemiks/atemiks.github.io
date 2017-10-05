@@ -3342,8 +3342,8 @@ tbody.collapse.in {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-arrow-right:before {
-  content: "\e910"; }
+.icon-list:before {
+  content: "\e911"; }
 
 .icon-lorry:before {
   content: "\e900"; }
@@ -3392,6 +3392,9 @@ tbody.collapse.in {
 
 .icon-mobile:before {
   content: "\e90f"; }
+
+.icon-arrow-right:before {
+  content: "\e910"; }
 
 .icon-user:before {
   content: "\f007"; }
@@ -3961,6 +3964,9 @@ button,
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
+  .fixed-logo .fixed-logo-img {
+    width: 174px;
+    height: 47px; }
 
 .fixed-contact {
   margin: 0 20px; }
@@ -4102,15 +4108,34 @@ button,
 .company-achievement-box {
   padding: 80px 0 85px;
   background: #131e32; }
+  @media (max-width: 991px) {
+    .company-achievement-box {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
 
 .company-achievement-card {
   overflow: hidden; }
+  .company-achievement-card .company-achievement-thumb {
+    float: left;
+    width: 90px;
+    font-size: 60px;
+    color: #fff;
+    line-height: 1; }
+    @media (max-width: 640px) {
+      .company-achievement-card .company-achievement-thumb {
+        width: 60px;
+        font-size: 40px; } }
+  .company-achievement-card .company-achievement-inner {
+    overflow: hidden; }
   .company-achievement-card .company-achievement-description {
     margin: 0 0 -30px;
     font-size: 22px;
     font-weight: 300;
     color: #fff;
     line-height: 1.54; }
+    @media (max-width: 640px) {
+      .company-achievement-card .company-achievement-description {
+        font-size: 18px; } }
 
 .section-about {
   padding-top: 95px;
