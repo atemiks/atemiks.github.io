@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box !important;
+}
+
+html, 
+body {
+	position: relative;
+	height: 100%;
+	font-family: $base-font, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+body {
+	padding: 60px 0 0;
+	&.mobile-header-open {
+		overflow: hidden;
+		height: 100%;
+	}
+}
+
+section {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: $base-heading;
+	font-weight: 700;
+	color: $default;
+	line-height: 1.5;
+}
+
+
+
+h1,
+.h1 {
+	font-size: 40px;
+}
+h2,
+.h2 {
+	font-size: 36px;
+}
+h3,
+.h3 {
+	font-size: 30px;
+}
+h4,
+.h4 {
+	font-size: 24px;
+}
+h5,
+.h5 {
+	font-size: 18px;
+}
+h6,
+.h6 {
+	font-size: 15px;
+}
+
+p {
+	margin: 0 0 30px;
+}
+
+a {
+	@extend .transition;
+}
+
+button,
+.btn {
+	@extend .transition;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	min-width: 103px;
+	border: 1px solid $medium-gray;
+	border-radius: 0;
+	padding: 6px 15px 5px;
+	background: none;
+	font-style: 16px;
+	font-weight: 400;
+	color: $default;
+	text-align: center;
+	&:hover {
+		background: $medium-gray;
+	}
+}
+.btn-active {
+	background: $medium-gray;
+}
+
+
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.text-justify {
+	text-align: justify;
+}

@@ -1,0 +1,172 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.top {
+	flex: 1 0 auto;
+}
+.bottom {
+	flex: 0 0 auto;
+}
+
+
+.container {
+	@media(min-width: 1280px) {
+		width: 1220px;
+	}
+}
+
+.section-header {
+	min-height: 69px;
+	margin: 0 0 20px;
+	text-align: center;
+	.section-title {
+		margin: 0 0 15px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+}
+
+.social-list {
+	@extend .reset-list;
+	cursor: default;
+	margin: 0 -5px;
+	li {
+		display: inline-block;
+		margin: 0 5px;
+		a {
+			display: inline-block;
+			width: 29px;
+			height: 29px;
+			border-radius: 50%;
+			font-size: 16px;
+			color: #fff;
+			text-align: center;
+			line-height: 30px;
+			&.icon-vk {
+				background: #4e76a1;
+			}
+			&.icon-odnoklassniki {
+				background: #f28532;
+			}
+			&.icon-facebook {
+				background: #3c5a96;
+			}
+			&.icon-twitter {
+				background: #1dabed;
+			}
+			&.icon-google-plus {
+				background: #ce4432;
+			}
+		}
+	}
+}
+
+.dropdown-menu {
+	margin: 0;
+	padding: 4px 0;
+	background: rgba(0,0,0, .8);
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	li {
+		a {
+			display: block;
+			position: relative;
+			min-height: 30px;
+			padding: 4px 25px;
+			font-size: 16px;
+			font-weight: 400;
+			color: #fff;
+			text-decoration: none;
+			transition: 300ms ease;
+			&:before {
+				display: inline-block;
+				margin: 0 5px 0 0;
+				font-family: 'FontAwesome';
+				content: '\f0da';
+				font-size: 0;
+				color: #fff;
+				transition: 300ms ease;
+			}
+		}
+
+		&:hover {
+			a {
+				font-weight: 700;
+				color: #fff;
+				background: none;
+				&:before {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+
+.slick-slider {
+	outline: none;
+	* {
+		outline: none;
+	}
+
+	.slick-arrow {
+		z-index: 1;
+		width: 55px;
+		min-width: 55px;
+		height: 100%;
+		background: rgba(0,0,0, .9);
+		&:before {
+			font-family: 'FontAwesome';
+			font-size: 30px;
+			color: #fff;
+		}
+	}
+	.slick-prev {
+		left: -55px;
+		&:before {
+			content: '\f104';
+		}
+	}
+	.slick-next {
+		right: -55px;
+		&:before {
+			content: '\f105';
+		}
+	}
+
+	.slick-dots {
+		position: relative;
+		bottom: 0;
+		padding: 10px 0;
+		background: $light-gray;
+		line-height: 1;
+		li {
+			width: 12px;
+			height: 12px;
+			min-width: 12px;
+			vertical-align: middle;
+			line-height: 1;
+			button {
+				width: inherit;
+				height: inherit;
+				min-width: inherit;
+				padding: 0;
+				background: $medium-gray;
+				&:before {
+					display: none;
+				}
+			}
+
+			&.slick-active {
+				button {
+					background: $dark-gray;
+				}
+			}
+		}
+	}
+
+
+}
