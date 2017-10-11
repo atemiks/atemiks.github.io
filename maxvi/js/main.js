@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     // header
     $(".header-toggle, .header-mobile-close").on( "click", function() {
-    	$('body').toggleClass('mobile-header-open');
+    	$('html, body').toggleClass('mobile-header-open');
     	$(".header-mobile").toggleClass('header-mobile-active');
 	});
 

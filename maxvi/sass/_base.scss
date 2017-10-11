@@ -13,10 +13,11 @@ body {
 }
 body {
 	padding: 60px 0 0;
-	&.mobile-header-open {
-		overflow: hidden;
-		height: 100%;
-	}
+	
+}
+.mobile-header-open {
+	overflow: hidden;
+	height: 100%;
 }
 
 section {
