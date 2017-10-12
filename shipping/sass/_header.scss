@@ -18,7 +18,7 @@
 	a {
 		color: #fff;
 		text-decoration: none;
-        @media (max-width: 640px)  {
+        @media (max-width: 767px)  {
             font-size: 0;
         }
 	}
@@ -26,7 +26,7 @@
     i {
         display: none;
         font-size: 30px;
-        @media (max-width: 640px) {
+        @media (max-width: 767px) {
             display: block;
         }
     }
@@ -56,7 +56,7 @@
     padding: 25px 0;
     background: $dark-primary;
     transform: translateY(-100%);
-    @media (max-width: 640px) {
+    @media (max-width: 767px) {
         padding: 10px 0 5px;
     }
     
@@ -82,7 +82,7 @@
 .fixed-contact {
     @extend .reset-list;
     margin: 0 20px;
-    @media (max-width: 640px) {
+    @media (max-width: 767px) {
         height: 40px;
         margin: 0;
     }
@@ -93,7 +93,7 @@
         a {
             color: rgba(#fff, .1);
             text-decoration: none;
-            @media (max-width: 640px)  {
+            @media (max-width: 767px)  {
                 font-size: 0;
             }
 
@@ -106,7 +106,7 @@
             display: none;
             font-size: 30px;
             color: #fff;
-            @media (max-width: 640px) {
+            @media (max-width: 767px) {
                 display: block;
             }
         }
@@ -114,7 +114,7 @@
 }
 
 .fixed-action {
-    @media (max-width: 640px) {
+    @media (max-width: 767px) {
         display: none;
     }
 }

@@ -3911,13 +3911,13 @@ button,
   .header-contact a {
     color: #fff;
     text-decoration: none; }
-    @media (max-width: 640px) {
+    @media (max-width: 767px) {
       .header-contact a {
         font-size: 0; } }
   .header-contact i {
     display: none;
     font-size: 30px; }
-    @media (max-width: 640px) {
+    @media (max-width: 767px) {
       .header-contact i {
         display: block; } }
 
@@ -3941,7 +3941,7 @@ button,
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%); }
-  @media (max-width: 640px) {
+  @media (max-width: 767px) {
     .header-fixed {
       padding: 10px 0 5px; } }
   .header-fixed.is-visible {
@@ -3970,7 +3970,7 @@ button,
 
 .fixed-contact {
   margin: 0 20px; }
-  @media (max-width: 640px) {
+  @media (max-width: 767px) {
     .fixed-contact {
       height: 40px;
       margin: 0; } }
@@ -3980,7 +3980,7 @@ button,
     .fixed-contact li a {
       color: rgba(255, 255, 255, 0.1);
       text-decoration: none; }
-      @media (max-width: 640px) {
+      @media (max-width: 767px) {
         .fixed-contact li a {
           font-size: 0; } }
       .fixed-contact li a:hover {
@@ -3989,11 +3989,11 @@ button,
       display: none;
       font-size: 30px;
       color: #fff; }
-      @media (max-width: 640px) {
+      @media (max-width: 767px) {
         .fixed-contact li i {
           display: block; } }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .fixed-action {
     display: none; } }
 

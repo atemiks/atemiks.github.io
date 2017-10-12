@@ -17,11 +17,12 @@ $(document).ready(function() {
         return rv;
     }
 
-    if(getInternetExplorerVersion()!==-1){
+    if(getInternetExplorerVersion()!==-1 || (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) ){
       //Значит это IE
     }
     else
         $("body").niceScroll(); 
+
 
 
 
