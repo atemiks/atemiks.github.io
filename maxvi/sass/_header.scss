@@ -4,7 +4,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	background: rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.8);
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 	.header-inner {
@@ -103,6 +103,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
+	padding: 15px 0;
 	background: rgba(0,0,0, 9);
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
@@ -112,12 +113,12 @@
     .header-mobile-close {
     	position: absolute;
     	z-index: 9;
-    	top: 15px;
+    	top: -2px;
     	right: 15px;
     	min-width: initial;
     	padding: 0;
     	border: none;
-    	font-size: 28px;
+    	font-size: 34px;
     	color: $medium-gray;
     	line-height: 1;
     	&:hover {
@@ -126,10 +127,13 @@
     	}
     }
 
+    .header-mobile-logo {
+    	opacity: .7;
+    }
+
     .header-mobile-nav-list {
     	@extend .reset-list;
-    	width: 90%;
-    	margin: 60px auto 40px;
+    	margin: 40px 0;
     	li {
     		border-bottom: 1px solid rgba($medium-gray, .3);
     		a {
@@ -145,8 +149,6 @@
     }
 
     .header-mobile-social {
-    	max-width: 90%;
-    	margin: auto;
     	text-align: center;
     	li {
     		a {
