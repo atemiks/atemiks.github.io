@@ -2,9 +2,9 @@ $(document).ready(function() {
     'use strict'
 
     // header
-    $(".header-toggle, .header-mobile-close").on( "click", function() {
-    	$('html, body').toggleClass('mobile-header-open');
-    	$(".header-mobile").toggleClass('header-mobile-active');
+    $(".header-toggle, .mobile-navigation-close").on( "click", function() {
+    	$('html, body').toggleClass('mobile-navigation-open');
+    	$(".mobile-navigation").toggleClass('mobile-navigation-active');
 	});
 
     $('.slider-hero').slick({
@@ -41,7 +41,6 @@ $(document).ready(function() {
 	        asNavFor: sliderId,
 	        dots: false,
 	        arrows: false,
-	        // centerMode: true,
 	        variableWidth: true,
 	        focusOnSelect: true
 	    });
@@ -75,9 +74,6 @@ $(document).ready(function() {
 	        slidesToScroll: 1
 	      }
 	    }
-	    // You can unslick at a given breakpoint now by adding:
-	    // settings: "unslick"
-	    // instead of a settings object
 	  ]
     });
 

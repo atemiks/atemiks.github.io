@@ -1,52 +1,76 @@
 .section-hero {
+	overflow: hidden;
 	margin-bottom: 40px;
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
+	@media (max-width: 767px) {
+		display: none;
+	}
 }
 
 .slider-hero {
-	overflow: hidden;
-	margin: 0 !important;
-	img {
-		width: 100%;
+	margin: 0 0 36px !important;
+	.slide-item {
+		height: 405px;
+		background-size: auto 405px;
+		background-position: center center;
+		background-color: $dark-gray;
+		background-repeat: no-repeat;
+		@media (max-width: 767px) {
+			height: 280px;
+			background-size: auto 280px;
+		}
+
+		.slide-link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
 	}
 
 	.slick-arrow {
-		height: 37px;
-		top: auto;
-		bottom: 0;
-		background: $medium-gray;
-		transform: translate(0);
+		width: 33px;
+		height: 90px;
+		background: none;
 		transition: 300ms ease;
+		&:before {
+			font-size: 90px;
+			@media (max-width: 767px) {
+				display: none;
+				font-size: 40px;
+			}
+		}
 	}
 
 	.slick-prev {
-		left: 0;
-		transform: translateX(-100%);
+		left: -100px;
 	}
 	.slick-next {
-		right: 0;
-		transform: translateX(100%);
+		right: -100px;
 	}
 
 	&:hover {
 		.slick-prev {
-			transform: translateX(0);
+			left: 25px;
+			@media (max-width: 767px) {
+				left: 0;
+			}
 		}
 		.slick-next {
-			transform: translateX(0);
+			right: 25px;
+			@media (max-width: 767px) {
+				right: 0;
+			}
 		}
 	}
 
-	.slide-item {
-		min-height: 405px;
-		background-size: cover;
-		background-position: center center;
-		background-color: $dark-gray;
-		@media (max-width: 767px) {
-			min-height: 280px;
-		}
+	.slick-dots {
+		position: absolute;
+		bottom: -36px;
 	}
+
 }
 
 
@@ -56,15 +80,19 @@
 .products-grid {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 0 -35px;
-	.product-item {
-		margin: 0 0 35px;
-	}
+	width: 100%;
+	margin: -23px 0;
+	
 }
 .product-card {
 	position: relative;
 	max-width: 450px;
 	margin: auto;
+	padding: 23px 0;
+	@media (max-width: 767px) {
+		border-bottom: 1px solid rgba($light-gray, .5);
+	}
+
 	.product-header {
 		.product-title {
 			font-weight: 700;
@@ -72,6 +100,7 @@
 			text-transform: uppercase;
 			@media (max-width: 767px) {
 				margin: 0 0 15px;
+				text-align: center;
 			}
 
 			a {
@@ -111,6 +140,9 @@
 		border: 10px solid transparent;
 		padding-bottom: calc(120% - 20px);
 		@media (max-width: 767px) {
+			padding-bottom: calc(60% - 20px);
+		}
+		@media (max-width: 475px) {
 			padding-bottom: calc(80% - 20px);
 		}
 
