@@ -4711,13 +4711,8 @@ input {
     position: relative;
     z-index: 5; }
   .section-hero .hero-content {
-    position: absolute;
-    z-index: 9;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    position: relative;
+    z-index: 9; }
     @media (max-width: 767px) {
       .section-hero .hero-content {
         width: 100%; } }
