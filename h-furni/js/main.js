@@ -46,7 +46,7 @@ $(document).ready(function() {
 
     // fancy box caption
 
-    $( "[data-fancybox]" ).fancybox({
+    $( "[data-fancybox], .fancybox-gallery" ).fancybox({
         idleTime: false,
         caption : function( instance, item ) {
             var caption = $(this).data('caption') || '';
@@ -140,8 +140,6 @@ $(document).ready(function() {
 
 
     /* section gallery */
-    // init gallery
-    $(".fancybox-gallery").fancybox();
 
     // open gallery button
     $('.intro-action').click(function(e) {
