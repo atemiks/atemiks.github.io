@@ -14,8 +14,7 @@ $(document).ready(function() {
     });
 
 
-
-    /* section hero */ 
+    // hero video
     var video = document.getElementById("hero-video");
 
     //Check if video can play, and play it
@@ -24,11 +23,10 @@ $(document).ready(function() {
     });
 
 
+     
 
-    /* section main navigation */ 
-    // isotope init
+    // isotope
     var $grid = $('.grid-filter').isotope();
-
 
     // filter items on button click
     $('.navigation-filter').on( 'click', 'button', function() {
@@ -114,6 +112,8 @@ $(document).ready(function() {
 
     }
 
+    
+
     //when load more button clicked
     $("#load-more").click(function() {
         if ($('#filters').data('clicked')) {
@@ -137,8 +137,7 @@ $(document).ready(function() {
     });
 
 
-    /* section gallery */
-    // show gallery
+
     $('.intro-action').click(function(e) {
         $("[data-fancybox='photo-gallery']:eq(0)").click();
     });e.preventDefault();
