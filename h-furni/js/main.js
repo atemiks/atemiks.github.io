@@ -14,7 +14,7 @@ $(document).ready(function() {
     });
 
 
-    // hero video
+    /* section hero */
     var video = document.getElementById("hero-video");
 
     //Check if video can play, and play it
@@ -24,8 +24,8 @@ $(document).ready(function() {
 
 
      
-
-    // isotope
+    /* section main navigation */
+    // isotope init
     var $grid = $('.grid-filter').isotope();
 
     // filter items on button click
@@ -138,8 +138,16 @@ $(document).ready(function() {
 
 
 
+
+    /* section gallery */
+    // init gallery
+    $(".fancybox-gallery").fancybox();
+
+    // open gallery button
     $('.intro-action').click(function(e) {
-        $("[data-fancybox='photo-gallery']:eq(0)").click();
-    });e.preventDefault();
+      e.preventDefault();
+      $('.fancybox-gallery:eq(0)').click();
+    });
+
 
 });
