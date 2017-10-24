@@ -79,6 +79,7 @@ p {
 
 a {
 	@extend .transition;
+	outline: none !important;
 	color: $primary;
 	text-decoration: none !important;
 }

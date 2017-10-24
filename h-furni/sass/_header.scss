@@ -120,7 +120,7 @@
 .header-toggle {
 	display: none;
 	width: 28px;
-	margin: 0 0 0 10px;
+	margin: 0 0 0 15px;
 	@media (max-width: 767px) {
 		display: inline-block;
 	}
@@ -165,7 +165,12 @@
 }
 
 .header-fixed-logo {
+	display: none;
 	flex: 1;
+	@media (max-width: 768px) {
+		display: block;
+	}
+
 	.header-logo-img {
 		@media (max-width: 991px) {
 			width: 80px;
@@ -189,11 +194,17 @@
 		}
 
 		a {
+			display: inline-block;
+			padding: 5px 0;
 			color: #fff;
+			&:hover {
+				transform: translateY(-3px);
+			}
 		}
 	}
 }
-.header-fixed-phone {
+.header-fixed-phone,
+.header-fixed-action {
 	flex: 1;
 	font-size: 20px;
 	text-align: right;
@@ -203,7 +214,12 @@
 	}
 
 	a {
+		display: inline-block;
+		padding: 5px 0;
 		color: #fff;
+		&:hover {
+			transform: translateY(-3px);
+		}
 	}
 }
 

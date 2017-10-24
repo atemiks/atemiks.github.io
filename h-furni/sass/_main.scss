@@ -31,9 +31,6 @@
 	.hero-content {
 		position: relative;
 		z-index: 9;
-		// top: 50%;
-		// left: 50%;
-		// transform: translate(-50%, -50%);
 		@media (max-width: 767px) {
 			width: 100%;
 		}
@@ -383,7 +380,7 @@
 	padding: 20px 0;
 	font-size: 16px;
 	a[href^="tel:"] {
-		display: inline-block;
+		display: block;
 		margin: 25px 0 0;
 		color: $default-heading;
 	}
@@ -395,6 +392,23 @@
 	}
 	.contact-body {
 		color: $default;
+	}
+
+	.contact-phone {
+		.contact-phone-desktop {
+			display: block;
+			margin: 25px 0 0;
+			color: $default-heading;
+			@media (max-width: 1024px) {
+				display: none;
+			}
+		}
+		.contact-phone-mobile {
+			display: none;
+			@media (max-width: 1024px) {
+				display: block;
+			}
+		}
 	}
 }
 

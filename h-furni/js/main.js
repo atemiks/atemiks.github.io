@@ -223,9 +223,6 @@ $(document).ready(function() {
 
 
     
-
-
-
     /* section gallery */
 
     // open gallery button
@@ -233,6 +230,9 @@ $(document).ready(function() {
       e.preventDefault();
       $('.fancybox-gallery:eq(0)').click();
     });
+
+
+    /* section contact */
 
 
 });
