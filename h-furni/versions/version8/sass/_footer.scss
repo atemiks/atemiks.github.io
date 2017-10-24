@@ -1,0 +1,82 @@
+.footer {
+	position: relative;
+	overflow: hidden;
+	background-color: $info;
+	background-image: url("../img/footer-bg.png");
+	.footer-content {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+	.footer-side-left {
+		float: left;
+		padding: 20px 30px;
+		background: rgba($primary, .2);
+	}
+	.footer-side-right {
+		float: right;
+		padding: 20px 30px;
+		background: rgba($medium-gray, .2);
+	}
+}
+
+.footer-logo {
+	margin: 0;
+	letter-spacing: -0.96px;
+	text-transform: uppercase;
+	.logo {
+		margin: 0;
+		a {
+			color: $default-heading;
+		}
+	}
+}
+
+.footer-description {
+	font-size: 16px;
+	letter-spacing: -0.32px;
+	text-transform: uppercase;
+}
+
+
+.footer-phone {
+	@extend .h1;
+	color: $default-heading;
+	@media (max-width: 767px)  {
+		margin-bottom: 10px;
+		font-size: 26px;
+	}
+
+	a {
+		color: inherit;
+	}
+}
+
+.footer-contact-list {
+	@extend .reset-list;
+	font-size: 16px;
+	letter-spacing: -0.32px;
+	color: $default;
+	li {
+
+	}
+}
+
+.footer-statubar {
+	position: relative;
+	padding: 25px 30px;
+	background-image: url("../img/footer-statusbar-bg.png");
+	background-color: $light-gray;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 100%;
+		width: 100vh;
+		height: 100%;
+		background-image: url("../img/footer-statusbar-bg.png");
+		background-color: $light-gray;
+	}
+}
