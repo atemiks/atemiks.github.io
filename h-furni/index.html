@@ -35,7 +35,7 @@
                             <div class="col-md-20 col-md-offset-2">
                                 <form action="" class="form-modal">
                                     <div class="form-group">
-                                        <input type="tel" placeholder="+7 (___) ___ __ __" required >
+                                        <input type="tel" required >
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-warning btn-lg btn-block">Отправить</button>
@@ -173,10 +173,8 @@
                                 <div class="col-md-24">
                                     <div class="slider-hero">
                                         <div class="slide-item" >
-                                            <a href="#link">
-                                                <img src="img/home/hero/hero-advert-item-1.png" alt="">
-                                                <span class="slide-btn btn btn-warning btn-lg">Да!</span>
-                                            </a>
+                                            <img src="img/home/hero/hero-advert-item-1.png" alt="">
+                                            <a href="#modalOrder"  data-toggle="modal" data-target="#modalOrder" class="slide-btn btn btn-warning btn-lg">Да!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -561,7 +559,7 @@
                                 <div class="col-md-24 text-center">
                                     <form action="" class="form-request-designer form-inline">
                                         <div class="form-group">
-                                            <input type="tel" class="form-control input-lg" placeholder="+7 (___) ___ __ __" required >
+                                            <input type="tel" class="form-control input-lg" required >
                                             
                                         </div>
                                         <button type="submit" class="btn btn-warning btn-lg" >Вызвать дизайнера</button>
@@ -616,7 +614,7 @@
                                             <div class="contact-body">
                                                 <form action="" class="form-contact">
                                                     <div class="form-group">
-                                                        <input type="tel" placeholder="+7 (___) ___ __ __" required >
+                                                        <input type="tel" required >
                                                     </div>
                                                     <button class="btn btn-primary btn-block" type="submit" >Заказать звонок</button>
                                                 </form>
@@ -774,7 +772,7 @@
                                             </div>
                                         </a>
 
-                                        <a href="#link" class="product-item-btn btn btn-warning btn-block">Выбрать кровать</a>
+                                        <a href="#modalOrder"  data-toggle="modal" data-target="#modalOrder" class="product-item-btn btn btn-warning btn-block">Выбрать кровать</a>
                                     </div>
 
                                     <div class="product-item col-xs-12 col-sm-8 col-md-8 col-lg-6">
@@ -804,7 +802,7 @@
                                             </div>
                                         </a>
 
-                                        <a href="#link" class="product-item-btn btn btn-warning btn-block">Выбрать шкаф</a>
+                                        <a href="#modalOrder"  data-toggle="modal" data-target="#modalOrder" class="product-item-btn btn btn-warning btn-block">Выбрать шкаф</a>
                                     </div>
                                 </div>
                             </div>
@@ -856,7 +854,8 @@
         <script src="js/slick.js" ></script>
         <script src="js/isotope.pkgd.js" ></script>
         <script src="js/jquery.fancybox.js" ></script> 
-        <script src="js/jquery.maskedinput.js" ></script>  
+        <!-- <script src="js/jquery.maskedinput.js" ></script>   -->
+        <script src="js/jquery.mask.js" ></script>
         <script src="js/main.js"></script>
 
         <script>

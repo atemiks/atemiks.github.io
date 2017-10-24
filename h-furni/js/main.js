@@ -9,7 +9,8 @@ $(document).ready(function() {
     }
 
     // input mask
-    $('input[type="tel"]').mask("+7 (999) 999 99 99",{placeholder:"+7 (___) ___ __ __ "});
+    // $('input[type="tel"]').mask("+7 (999) 999 99 99",{placeholder:"+7 (___) ___ __ __ "});
+    $('input[type="tel"]').mask("+7 (000) 000-00-00", {placeholder: "+7 (___) ___-__-__"});
 
 
     // smooth scrolling 
@@ -184,6 +185,7 @@ $(document).ready(function() {
     // fancy box caption
 
     $( "[data-fancybox], .fancybox-gallery" ).fancybox({
+        loop: true,
         idleTime: false,
         caption : function( instance, item ) {
             var caption = $(this).data('caption') || '';
@@ -202,6 +204,7 @@ $(document).ready(function() {
 
 
         $.fancybox.open( visibleLinks, {
+            loop: true,
             idleTime: false,
             caption : function( instance, item ) {
                 var caption = $(this).data('caption') || '';
