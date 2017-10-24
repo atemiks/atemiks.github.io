@@ -47,11 +47,13 @@
 }
 .slider-hero {
 	.slide-item {
+		position: relative;
 		height: 405px;
 		text-align: center;
 		@media (max-width: 767px) {
 			height: initial;
 		}
+
 		img {
 			display: inline-block;
 			height: 405px;
@@ -59,6 +61,27 @@
 				width: calc(100% + 40px);
 				height: initial;
 				margin: 0 -20px;
+			}
+		}
+
+		.slide-btn {
+			position: absolute;
+			left: 50%;
+			bottom: 50px;
+			width: initial;
+			min-width: 212px;
+			transform: translate(-50%, 0);
+			@media (max-width: 767px) {
+				bottom: 12%;
+				min-width: 95px;
+				padding: 2px 15px 4px;
+				border-radius: 5px;
+				font-size: 12px;
+			}
+
+			&:hover {
+				box-shadow: -26px 26px 22px 0 rgba(0,0,0,.16);
+    			transform: translate(-50%, -10px);
 			}
 		}
 	}
@@ -70,15 +93,6 @@
 .section-navigation {
 	padding-top: 15px;
 	padding-bottom: 20px;
-	.grid-products {
-		.product-item {
-			@media (max-width: 767px) {
-				&:nth-child(n+5) {
-					display: none;
-				}
-			}
-		}
-	}
 }
 .navigation-header {
 	margin: 0 0 20px;
@@ -127,24 +141,18 @@
 			.sprite-all {
 				@extend .sprite-all-active;
 			}
-
 			.sprite-wood {
 				@extend .sprite-wood-active;
 			}
-
 			.sprite-mdf {
 				@extend .sprite-mdf-active;
 			}
-
-
 			.sprite-plastic {
 				@extend .sprite-plastic-active;
 			}
-
 			.sprite-paint {
 				@extend .sprite-paint-active;
 			}
-
 			.sprite-econom {
 				@extend .sprite-econom-active;
 			}

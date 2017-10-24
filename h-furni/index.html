@@ -41,9 +41,12 @@
                                         <button type="submit" class="btn btn-warning btn-lg btn-block">Отправить</button>
                                     </div>
                                 </form>
-                                
                             </div>
-                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-20 col-md-offset-2 text-center">
+                                <p>Нажимая на кнопку «ОТПРАВИТЬ», Вы соглашаетесь на обработку персональных данных, <a href="http://furnikuhni.ru/pk.html" target="_blank" >подробнее</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -73,7 +76,6 @@
                                         </ul>
                                     </div>
 
-                                    
                                 </div>
                                 <div class="header-side-right">
                                     <div class="header-phone">
@@ -103,6 +105,38 @@
                 </header>
 
 
+                <div class="header-fixed">
+                    <div class="container">
+                        <div class="row">
+                            <div class="header-fixed-inner col-md-24">
+                                <div class="header-fixed-logo">
+                                    <a href="index.html"><img class="header-logo-img" src="img/logo.png" alt="H-furni"></a>
+                                </div>
+
+                                <ul class="header-fixed-nav">
+                                    <li><a href="#section-navigation" data-filter-id="1" >Все кухни</a></li>
+                                    <li><a href="#section-navigation" data-filter-id="2" >Массив</a></li>
+                                    <li><a href="#section-navigation" data-filter-id="3" >Мдф</a></li>
+                                    <li><a href="#section-navigation" data-filter-id="4" >Пластик</a></li>
+                                    <li><a href="#section-navigation" data-filter-id="5" >Эмаль</a></li>
+                                    <li><a href="#section-navigation" data-filter-id="6" >Эконом</a></li>
+                                </ul>
+
+                                <div class="header-fixed-phone">
+                                    <a href="tel:+74954889427 ">+7 (495) 488-94-27</a>
+                                </div>
+
+                                <div class="header-toggle">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="mobile-navigation">
                     <div class="mobile-navigation-header">
                         <div class="mobile-navigation-logo">
@@ -114,12 +148,12 @@
                     </div>
                     <div class="mobile-navigation-body">
                         <ul class="mobile-navigation-list">
-                            <li><a href="#link">Все кухни</a></li>
-                            <li><a href="#link">Массив</a></li>
-                            <li><a href="#link">МДФ</a></li>
-                            <li><a href="#link">Пластик</a></li>
-                            <li><a href="#link">Эмаль</a></li>
-                            <li><a href="#link">Эконом</a></li>
+                            <li><a href="#section-navigation" data-filter-id="1" >Все кухни</a></li>
+                            <li><a href="#section-navigation" data-filter-id="2" >Массив</a></li>
+                            <li><a href="#section-navigation" data-filter-id="3" >Мдф</a></li>
+                            <li><a href="#section-navigation" data-filter-id="4" >Пластик</a></li>
+                            <li><a href="#section-navigation" data-filter-id="5" >Эмаль</a></li>
+                            <li><a href="#section-navigation" data-filter-id="6" >Эконом</a></li>
                         </ul>
                     </div>
                 </div>
@@ -139,7 +173,10 @@
                                 <div class="col-md-24">
                                     <div class="slider-hero">
                                         <div class="slide-item" >
-                                            <a href="#link"><img src="img/home/hero/hero-advert-item-1.png" alt=""></a>
+                                            <a href="#link">
+                                                <img src="img/home/hero/hero-advert-item-1.png" alt="">
+                                                <span class="slide-btn btn btn-warning btn-lg">Да!</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -149,20 +186,20 @@
                     </section>
 
 
-                    <section class="section-navigation">
+                    <section class="section-navigation" id="section-navigation" >
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="navigation-header">
                                     <div class="container">
                                         <div class="row">
                                             <div class="navigation-side-left col-sm-18">
-                                                <div id="filters" class="navigation-filter">
-                                                    <button data-filter="*" class="btn is-checked"><i class="sprite sprite-all" ></i>Все кухни</button>
-                                                    <button data-filter=".massiv"  class="btn"><i class="sprite sprite-wood" ></i>Массив</button>
-                                                    <button data-filter=".mdf"  class="btn"><i class="sprite sprite-mdf" ></i>МДФ</button>
-                                                    <button data-filter=".plastik"  class="btn"><i class="sprite sprite-plastic" ></i>Пластик</button>
-                                                    <button data-filter=".emal"  class="btn"><i class="sprite sprite-paint" ></i>Эмаль</button>
-                                                    <button data-filter=".ekonom"  class="btn"><i class="sprite sprite-econom" ></i>Эконом</button>
+                                                <div id="" class="navigation-filter filters">
+                                                    <button data-filter-id="1" data-filter="*" class="btn is-checked"><i class="sprite sprite-all" ></i>Все кухни</button>
+                                                    <button data-filter-id="2" data-filter=".massiv"  class="btn"><i class="sprite sprite-wood" ></i>Массив</button>
+                                                    <button data-filter-id="3" data-filter=".mdf"  class="btn"><i class="sprite sprite-mdf" ></i>МДФ</button>
+                                                    <button data-filter-id="4" data-filter=".plastik"  class="btn"><i class="sprite sprite-plastic" ></i>Пластик</button>
+                                                    <button data-filter-id="5" data-filter=".emal"  class="btn"><i class="sprite sprite-paint" ></i>Эмаль</button>
+                                                    <button data-filter-id="6" data-filter=".ekonom"  class="btn"><i class="sprite sprite-econom" ></i>Эконом</button>
                                                 </div>
                                             </div>
                                             <div class="navigation-side-right col-sm-6">
@@ -348,132 +385,6 @@
                                     </div>
 
                                     <div class="product-item col-xs-12 col-sm-8 col-md-8 col-lg-6 mdf">
-                                        <a href="img/home/main-navigation/kitchen/kitchen-item-1.png" class="product-card fancybox" >
-                                            <div class="product-statusbar">
-                                                <span class="product-status"><i class="sprite sprite-list" ></i>На заказ</span>
-                                            </div>
-                                            <div class="product-header">
-                                                <div class="product-figure">
-                                                    <span class="product-label label label-warning">Скидка 20%</span>
-                                                    <div class="product-img" style="background-image: url(img/home/main-navigation/kitchen/kitchen-item-1.png)"></div>
-                                                </div>
-                                                <h5 class="product-title">Кухня <b>«Фисташка»</b></h5>
-                                            </div>
-                                            <div class="product-body">
-                                                <div class="product-info">
-                                                    <p class="product-price">от <b>32 000 <span class="rouble" >a</span></b> / п.м</p>
-                                                    <p class="product-time">от <b>30</b> дней</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="product-item col-xs-12 col-sm-8 col-md-8 col-lg-6 mdf">
-                                        <a href="img/home/main-navigation/kitchen/kitchen-item-1.png" class="product-card fancybox" >
-                                            <div class="product-statusbar">
-                                                <span class="product-status"><i class="sprite sprite-list" ></i>На заказ</span>
-                                            </div>
-                                            <div class="product-header">
-                                                <div class="product-figure">
-                                                    <span class="product-label label label-warning">Скидка 20%</span>
-                                                    <div class="product-img" style="background-image: url(img/home/main-navigation/kitchen/kitchen-item-1.png)"></div>
-                                                </div>
-                                                <h5 class="product-title">Кухня <b>«Фисташка»</b></h5>
-                                            </div>
-                                            <div class="product-body">
-                                                <div class="product-info">
-                                                    <p class="product-price">от <b>32 000 <span class="rouble" >a</span></b> / п.м</p>
-                                                    <p class="product-time">от <b>30</b> дней</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="product-item col-xs-12 col-sm-8 col-md-8 col-lg-6 massiv">
-                                        <a href="img/home/main-navigation/kitchen/kitchen-item-1.png" class="product-card fancybox" >
-                                            <div class="product-statusbar">
-                                                <span class="product-status"><i class="sprite sprite-list" ></i>На заказ</span>
-                                            </div>
-                                            <div class="product-header">
-                                                <div class="product-figure">
-                                                    <span class="product-label label label-warning">Скидка 20%</span>
-                                                    <div class="product-img" style="background-image: url(img/home/main-navigation/kitchen/kitchen-item-1.png)"></div>
-                                                </div>
-                                                <h5 class="product-title">Кухня <b>«Фисташка»</b></h5>
-                                            </div>
-                                            <div class="product-body">
-                                                <div class="product-info">
-                                                    <p class="product-price">от <b>32 000 <span class="rouble" >a</span></b> / п.м</p>
-                                                    <p class="product-time">от <b>30</b> дней</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="product-item col-xs-12 col-sm-8 col-md-8 col-lg-6 plastik">
-                                        <a href="img/home/main-navigation/kitchen/kitchen-item-1.png" class="product-card fancybox" >
-                                            <div class="product-statusbar">
-                                                <span class="product-status"><i class="sprite sprite-list" ></i>На заказ</span>
-                                            </div>
-                                            <div class="product-header">
-                                                <div class="product-figure">
-                                                    <span class="product-label label label-warning">Скидка 20%</span>
-                                                    <div class="product-img" style="background-image: url(img/home/main-navigation/kitchen/kitchen-item-1.png)"></div>
-                                                </div>
-                                                <h5 class="product-title">Кухня <b>«Фисташка»</b></h5>
-                                            </div>
-                                            <div class="product-body">
-                                                <div class="product-info">
-                                                    <p class="product-price">от <b>32 000 <span class="rouble" >a</span></b> / п.м</p>
-                                                    <p class="product-time">от <b>30</b> дней</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="product-item col-xs-12 col-sm-8 col-md-8 col-lg-6 emal">
-                                        <a href="img/home/main-navigation/kitchen/kitchen-item-1.png" class="product-card fancybox" >
-                                            <div class="product-statusbar">
-                                                <span class="product-status"><i class="sprite sprite-list" ></i>На заказ</span>
-                                            </div>
-                                            <div class="product-header">
-                                                <div class="product-figure">
-                                                    <span class="product-label label label-warning">Скидка 20%</span>
-                                                    <div class="product-img" style="background-image: url(img/home/main-navigation/kitchen/kitchen-item-1.png)"></div>
-                                                </div>
-                                                <h5 class="product-title">Кухня <b>«Фисташка»</b></h5>
-                                            </div>
-                                            <div class="product-body">
-                                                <div class="product-info">
-                                                    <p class="product-price">от <b>32 000 <span class="rouble" >a</span></b> / п.м</p>
-                                                    <p class="product-time">от <b>30</b> дней</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="product-item col-xs-12 col-sm-8 col-md-8 col-lg-6 plastik">
-                                        <a href="img/home/main-navigation/kitchen/kitchen-item-1.png" class="product-card fancybox" >
-                                            <div class="product-statusbar">
-                                                <span class="product-status"><i class="sprite sprite-list" ></i>На заказ</span>
-                                            </div>
-                                            <div class="product-header">
-                                                <div class="product-figure">
-                                                    <span class="product-label label label-warning">Скидка 20%</span>
-                                                    <div class="product-img" style="background-image: url(img/home/main-navigation/kitchen/kitchen-item-1.png)"></div>
-                                                </div>
-                                                <h5 class="product-title">Кухня <b>«Фисташка»</b></h5>
-                                            </div>
-                                            <div class="product-body">
-                                                <div class="product-info">
-                                                    <p class="product-price">от <b>32 000 <span class="rouble" >a</span></b> / п.м</p>
-                                                    <p class="product-time">от <b>30</b> дней</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="product-item col-xs-12 col-sm-8 col-md-8 col-lg-6 ekonom">
                                         <a href="img/home/main-navigation/kitchen/kitchen-item-1.png" class="product-card fancybox" >
                                             <div class="product-statusbar">
                                                 <span class="product-status"><i class="sprite sprite-list" ></i>На заказ</span>
