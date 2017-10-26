@@ -3743,7 +3743,37 @@ tbody.collapse.in {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-icon-check:before {
+.icon-budget:before {
+  content: "\e901"; }
+
+.icon-project:before {
+  content: "\e902"; }
+
+.icon-design:before {
+  content: "\e903"; }
+
+.icon-materials:before {
+  content: "\e904"; }
+
+.icon-photo:before {
+  content: "\e905"; }
+
+.icon-opinions:before {
+  content: "\e906"; }
+
+.icon-safety:before {
+  content: "\e907"; }
+
+.icon-advice:before {
+  content: "\e908"; }
+
+.icon-appliances:before {
+  content: "\e909"; }
+
+.icon-furniture:before {
+  content: "\e90a"; }
+
+.icon-check:before {
   content: "\e900"; }
 
 .sprite {
@@ -4227,7 +4257,8 @@ input {
     width: 84px;
     height: 84px;
     border-radius: 10px;
-    background: #e0edfb; }
+    background: #e0edfb;
+    font-size: 40px; }
     @media (max-width: 767px) {
       .section-header .section-header-left {
         display: none; } }
@@ -5048,8 +5079,10 @@ input {
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease; }
   .designer-card .designer-header .designer-icon {
+    display: inline-block;
     height: 32px;
-    margin: 0 0 10px; }
+    margin: 0 0 10px;
+    font-size: 28px; }
   .designer-card .designer-header .designer-title {
     display: -webkit-box;
     display: -ms-flexbox;

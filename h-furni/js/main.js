@@ -3,8 +3,6 @@ $(document).ready(function() {
 
 
     // default
-
-
     var 
         //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
         offset_opacity = 1200,
@@ -75,23 +73,12 @@ $(document).ready(function() {
     });
 
 
-    
-
-    
-
-
     // header
     $(".header-toggle, .mobile-navigation-close").on( "click", function() {
         $('html, body').toggleClass('mobile-navigation-open');
         $(".mobile-navigation").toggleClass('mobile-navigation-active');
     });
 
-
-    
-
-    
-
-    console.log('offset' + offset);
 
     $(window).scroll(function(){
         if( $(this).scrollTop() > offset ) {
@@ -114,8 +101,6 @@ $(document).ready(function() {
 
      
     /* section main navigation */
-    
-
 
     // isotope init
     var $grid = $('.grid-filter').isotope();
@@ -154,7 +139,6 @@ $(document).ready(function() {
     // Isotope Load more button
     //****************************
     
-
     var counter = initShow; //counter for load more button
     var iso = $grid.data('isotope'); // get Isotope instance
 
