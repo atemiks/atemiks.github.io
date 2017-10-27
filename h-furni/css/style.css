@@ -4976,7 +4976,8 @@ input {
             align-items: center;
     min-height: 100vh;
     padding: 140px 0 40px;
-    font-size: 24px; }
+    font-size: 22px;
+    text-transform: uppercase; }
     @media (max-width: 767px) {
       .section-hero .hero-content {
         max-width: 375px;
@@ -4986,6 +4987,7 @@ input {
         padding-bottom: 60px;
         font-size: 20px; } }
     .section-hero .hero-content .hero-title {
+      margin-bottom: 30px;
       line-height: 1.5;
       letter-spacing: 0.5px;
       color: #fff;
@@ -4994,7 +4996,7 @@ input {
         .section-hero .hero-content .hero-title {
           font-size: 24px; } }
     .section-hero .hero-content .hero-lead {
-      margin-top: 30px;
+      margin-top: 0px;
       margin-bottom: 30px;
       font-weight: 700;
       letter-spacing: 10px; }
