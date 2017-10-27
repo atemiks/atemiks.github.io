@@ -1,8 +1,14 @@
 .header-box {
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	right: 0;
 	.header-inner {
 		overflow: hidden;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		color: #fff;
 		@media (max-width: 767px) {
 			display: flex;
 			align-items: center;
@@ -65,7 +71,6 @@
 	display: inline-block;
 	vertical-align: top;
 	font-family: $secondary-font;
-	color: $default-heading;
 	@media (max-width: 767px) {
 		margin: 3px 0;
 		font-size: 18px;
@@ -92,7 +97,6 @@
 	@extend .reset-list;
 	font-family: $secondary-font;
 	font-size: 14px;
-	color: $default-heading;
 	li {
 		position: relative;
 		margin: 7px 0;
@@ -100,12 +104,13 @@
 			overflow: hidden;
 			display: inline-block;
 			margin: 0 0 0 25px;
-			border-bottom: 1px dotted $default-heading;
+			border-bottom: 1px dotted #fff;
 			color: inherit;
 			text-decoration: none !important;
 			&:hover {
 				border-color: transparent;
 			}
+
 		}
 	}
 
@@ -113,6 +118,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		font-size: 16px;
 	}
 }
 
@@ -135,7 +141,7 @@
 			display: block;
 			height: 2px;
 			margin: 6px 0;
-			background: $default-heading;
+			background: #fff;
 		}
 	}
 }

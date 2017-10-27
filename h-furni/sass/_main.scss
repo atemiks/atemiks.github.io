@@ -1,10 +1,18 @@
 .section-hero {
 	position: relative;
 	overflow: hidden;
-	height: 405px;
 	padding: 0;
-	@media (max-width: 767px) {
-		height: initial;
+	color: #fff;
+	text-align: center;
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: 5;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0,0,0, .6);
 	}
 
 	.hero-background {
@@ -31,56 +39,81 @@
 	.hero-content {
 		position: relative;
 		z-index: 9;
+		display: flex;
+		align-items: center;
+		min-height: 100vh;
+		padding: 140px 0 40px;
+		font-size: 24px;
 		@media (max-width: 767px) {
-			width: 100%;
+			max-width: 375px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 60px;
+			padding-bottom: 60px;
+			font-size: 20px;
 		}
 
-		.container {
-			@media (max-width: 768px) {
-				width: 100%;
+		
+		.hero-title {
+			@extend .h2;
+			line-height: 1.5;
+			letter-spacing: 0.5px;
+			color: #fff;
+			text-transform: uppercase;
+			@media (max-width: 767px) {
+				font-size: 24px;
+			}
+		}
+
+		.hero-lead {
+		    @extend .h2;
+		    margin-top: 30px;
+		    margin-bottom: 30px;
+		    font-weight: 700;
+		    letter-spacing: 10px;
+		    @media (max-width: 767px) {
+		    	font-size: 20px;
+		    }
+		}
+
+		.hero-btn {
+			margin-top: 20px;
+			margin-bottom: 50px;
+			@media (max-width: 767px) {
+				margin-bottom: 0;
 			}
 		}
 	}
 }
-.slider-hero {
-	.slide-item {
-		position: relative;
-		height: 405px;
-		text-align: center;
-		@media (max-width: 767px) {
-			height: initial;
-		}
+.hero-features {
+	@extend .reset-list;
+	display: flex;
+	flex-wrap: wrap;
+	@media (max-width: 767px) {
+		display: none;
+	}
 
-		img {
-			display: inline-block;
-			height: 405px;
-			@media (max-width: 767px) {
-				width: calc(100% + 40px);
-				height: initial;
-				margin: 0 -20px;
+	.hero-feature-item {
+		margin-bottom: 20px;
+	}
+}
+.feature-card {
+	text-align: center;
+	.feature-icon {
+		display: inline-block;
+		margin-bottom: 15px;
+		svg {
+			width: 50px;
+			height: 50px;
+			path {
+				fill: #fff !important;
 			}
 		}
-
-		.slide-btn {
-			position: absolute;
-			left: 50%;
-			bottom: 50px;
-			width: initial;
-			min-width: 212px;
-			transform: translate(-50%, 0);
-			@media (max-width: 767px) {
-				bottom: 8%;
-				min-width: 115px;
-    			padding: 6px 15px 7px;
-				border-radius: 5px;
-				font-size: 12px;
-			}
-
-			&:hover {
-				box-shadow: -26px 26px 22px 0 rgba(0,0,0,.16);
-    			transform: translate(-50%, -10px);
-			}
-		}
+	}
+	.feature-title {
+		color: #fff;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
 	}
 }
 
@@ -127,10 +160,12 @@
 		}
 
 
-		.sprite {
+		.sprite,
+		.icon {
 			display: block;
 			height: 40px !important;
 			margin: 0 auto 5px;
+			font-size: 40px;
 		}
 				
 		&.is-checked,
@@ -194,7 +229,9 @@
 	.why-header {
 		text-align: center;
 		.why-icon {
+			display: inline-block;
 			margin: 0 0 20px;
+			font-size: 60px;
 		}
 
 		.why-title {
