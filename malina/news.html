@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Малина</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!-- Modal -->
+        <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h3 class="modal-title" id="modalOrderLabel">Заявка</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-modal">
+                            <div class="form-group">
+                                <input type="text" placeholder="Ваше имя" required >
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Телефон" required >
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="E-mail" required >
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox01" name="checkbox" />
+                                <label for="checkbox01">
+                                    <span class="icon" ></span>
+                                    <span class="inner">
+                                        Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.  <br>
+                                        <a href="#link">Узнать больше</a>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" >отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="top">
+
+                <header class="header-box" >
+                    <div class="container">
+                        <div class="row">
+                            <div class="header-inner col-md-12">
+                                <div class="header-contact">
+                                    <ul class="contact-list">
+                                        <li><a href="tel:8 (923) 456 78 90"><i class="icon icon-phone" ></i>8 (923) 456 78 90</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="header-logo">
+                                    <a href="index.html"><img src="img/logo.png" alt="Малина" class="header-logo-img"></a>
+                                </div>
+
+                                <div class="header-address">
+                                    <span>г. Брянск,  <br> ул. Название улицы, 5</span>
+                                    <i class="icon icon-location" ></i>
+                                </div>
+
+
+                                <div class="header-toggle-wrap">
+                                    <button class="header-toggle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-menu-wrap container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav class="header-nav">
+                                    <ul class="nav navbar-nav header-nav-list">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#link">Акции</a></li>
+                                                <li><a href="news.html">Новости</a></li>
+                                                <li><a href="#link">Лицензии</a></li>
+                                                <li><a href="#link">Вакансии</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="menu.html">Меню</a></li>
+                                        <li><a href="photogallery.html">Фотогалерея</a></li>
+                                        <li><a href="#link">Контакты</a></li>
+                                    </ul>
+                                </nav>
+
+                                <button class="nav-close">&times;</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="section-content content-with-aside">
+                    <div class="container">
+                        <div class="row">
+                            <div class="content-aside col-sm-4 col-lg-3">
+                                <button class="content-aside-toggle btn-block">Меню</button>
+
+                                <div class="content-aside-inner">
+                                    <div class="aside-block">
+                                        <div class="aside-header">
+                                            <h3 class="aside-title">о нас</h3>
+                                        </div>
+                                        <div class="aside-body">
+                                            <ul class="aside-nav">
+                                                <li><a href="#link">Акции </a></li>
+                                                <li class="active" ><a href="#link">Новости </a></li>
+                                                <li><a href="#link">Лицензии </a></li>
+                                                <li><a href="#link">Вакансии</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <main class="content-inner col-sm-8 col-lg-9">
+                                <section class="section-news">
+                                    <div class="row">
+                                        <div class="section-header col-md-12">
+                                            <h2 class="section-title">новости</h2>
+                                            <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="news-grid">
+                                            <div class="news-item col-xs-12 col-sm-6 col-lg-4">
+                                                <div class="news-card" >
+                                                    <a href="#link" class="news-link"></a>
+                                                    <div class="news-thumb" style="background-image: url(img/home/news/news-preview-1.png)" ></div>
+
+                                                    <div class="news-header">
+                                                        <p class="news-date">21.09.2017 г.</p>
+                                                        <h4 class="news-title">Живая музыка весь вечер в субботу, 23 сентября</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="news-item col-xs-12 col-sm-6 col-lg-4">
+                                                <div class="news-card" >
+                                                    <a href="#link" class="news-link"></a>
+                                                    <div class="news-thumb" style="background-image: url(img/home/news/news-preview-2.png)" ></div>
+
+                                                    <div class="news-header">
+                                                        <p class="news-date">21.09.2017 г.</p>
+                                                        <h4 class="news-title">Обновление меню</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="news-item col-xs-12 col-sm-6 col-lg-4">
+                                                <div class="news-card" >
+                                                    <a href="#link" class="news-link"></a>
+                                                    <div class="news-thumb" style="background-image: url(img/home/news/news-preview-3.png)" ></div>
+
+                                                    <div class="news-header">
+                                                        <p class="news-date">21.09.2017 г.</p>
+                                                        <h4 class="news-title">Всем детям, получившим пятерку, ‒ мороженое в подарок!</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <nav aria-label="Page navigation">
+                                                <ul class="pagination">
+                                                    <li class="active" ><a href="#link">1</a></li>
+                                                    <li><a href="#link">2</a></li>
+                                                    <li><a href="#link">3</a></li>
+                                                    <li><a href="#link">4</a></li>
+                                                    <li>...</li>
+                                                    <li><a href="#link">26</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="section-event">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="event-card">
+                                                <div class="event-header">
+                                                    <h3 class="event-title"><a href="#link">Мастер-класс по приготовлению пиццы для всех желающих</a></h3>
+                                                </div>
+                                                <div class="event-body">
+                                                    <div class="event-thumb-wrap">
+                                                        <a href="#link" class="event-thumb-link"></a>
+                                                        <div class="event-thumb-img" style="background-image: url(img/page-news/events/event-thumb-item-1.png)" ></div>
+                                                    </div>
+                                                    <p class="event-date date">28.08.2017 г.</p>
+
+                                                    <p>Кулинарный мастер-класс образом, что все дети одновременно заняты. А наша детская кухня, детская только потому, что предназначена исключительно для маленьких творцов, однако наполнение нашей кухни высокопрофессиональное, с настоящей пицца-печью, где можно наблюдать в режиме реального времени как формируется румяная корочка на пицце или «поднимаются» вкуснейшие кексы. </p>
+                                                    <p>Вместе с тем, мы постарались создать максимально «домашнюю» атмосферу, ребенок находится в окружении привычных предметов, обстановка располагает к тому, чтобы каждый чувствовал себя как дома. Освоив несколько мастер-классов, ребенок легко и с удовольствием сможет воссоздать полюбившийся рецепт дома. <a href="#link">Ссылка в тексте выделяется так.</a> Результат своего труда и вдохновения мы с удовольствием поможем красиво упаковать для того, чтобы каждый ребенок смог поделиться своим кулинарным достижением с родными и близкими. </p>
+                                                    <ul>
+                                                        <li>Мастер-класс по выпечке (пицца, сосиски в тесте, пирожки) ‒ от 3-х лет </li>
+                                                        <li>Мастер-класс по лепке пельменей, равиолли ‒ от 3-х лет </li>
+                                                        <li>Мастер-класс по сладостям (печенье, конфеты, мармелад) ‒ от 3-х лет</li>
+                                                    </ul>
+
+                                                    <br class="clearfix">
+
+                                                    <h4>Подзаголовок </h4>
+                                                    <p>Легко ли приготовить настоящую итальянскую пиццу в домашних условиях? На самом деле, не так уж и трудно. Вместе с нашими друзьями из eda.ua, единого сервиса заказов еды из ресторанов и магазинов, мы побывали в гостях у Виталия Ярового, шеф-повара известной киевской пиццерии «Меню Авеню», и подсмотрели, как приготовить вкусную пиццу «Сицилийская». Сделали красочные фотографии и отличный видео-рецепт.</p>
+                                                </div>
+                                                <div class="event-footer">
+                                                    <a href="#order" class="btn" data-toggle="modal" data-target="#modalOrder" >Записаться</a>
+                                                    <a href="#link" class="link-more" >К другим новостям <i class="icon icon-angle-double-right" ></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </main>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <footer class="footer-box bottom">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="reservation-box">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form action="" class="form-reservation form-inline">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Ваше имя" required >
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" placeholder="Телефон" required >
+                                            </div>
+                                            <div class="form-group">
+                                                <input id="datePicker" type="date" placeholder="" required >
+                                            </div>
+                                            <div class="form-group no-shrink">
+                                                <input id="datePicker" type="time" placeholder="" required >
+                                                <button type="submit" >Заказать столик</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="map-box">
+                            <div class="map-container container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="map-banner">
+                                            <h3 class="map-banner-title">Ждем вас в гости! </h3>
+                                            <div class="map-banner-description">
+                                                <p>
+                                                    г. Брянск, ул. Название улицы, 5 З <br> 
+                                                    Заказ столиков:  <br> 
+                                                    <a href="tel:8 (923) 456 78 90">8 (923) 456 78 90</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <iframe id="map" src="https://snazzymaps.com/embed/25298" width="100%" style="border:none;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer-menu-wrap container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="footer-nav">
+                                <ul class="nav navbar-nav footer-nav-list">
+                                    <li><a href="#link">О нас</a></li>
+                                    <li><a href="menu.html">Меню</a></li>
+                                    <li><a href="photogallery.html">Фотогалерея</a></li>
+                                    <li><a href="#link">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-inner col-md-12">
+                                <div class="footer-contact">
+                                    <ul class="contact-list">
+                                        <li><a href="tel:8 (923) 456 78 90"><i class="icon icon-phone" ></i>8 (923) 456 78 90</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="img/logo.png" alt="Малина" class="footer-logo-img"></a>
+                                </div>
+
+                                <div class="footer-address">
+                                    <span>г. Брянск,  <br> ул. Название улицы, 5</span>
+                                    <i class="icon icon-location" ></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/ru.js" ></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

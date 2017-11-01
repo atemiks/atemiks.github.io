@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Малина</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!-- Modal -->
+        <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h3 class="modal-title" id="modalOrderLabel">Заявка</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-modal">
+                            <div class="form-group">
+                                <input type="text" placeholder="Ваше имя" required >
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Телефон" required >
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="E-mail" required >
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox01" name="checkbox" />
+                                <label for="checkbox01">
+                                    <span class="icon" ></span>
+                                    <span class="inner">
+                                        Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.  <br>
+                                        <a href="#link">Узнать больше</a>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" >отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="top">
+
+                <header class="header-box" >
+                    <div class="container">
+                        <div class="row">
+                            <div class="header-inner col-md-12">
+                                <div class="header-contact">
+                                    <ul class="contact-list">
+                                        <li><a href="tel:8 (923) 456 78 90"><i class="icon icon-phone" ></i>8 (923) 456 78 90</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="header-logo">
+                                    <a href="index.html"><img src="img/logo.png" alt="Малина" class="header-logo-img"></a>
+                                </div>
+
+                                <div class="header-address">
+                                    <span>г. Брянск,  <br> ул. Название улицы, 5</span>
+                                    <i class="icon icon-location" ></i>
+                                </div>
+
+
+                                <div class="header-toggle-wrap">
+                                    <button class="header-toggle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-menu-wrap container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav class="header-nav">
+                                    <ul class="nav navbar-nav header-nav-list">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#link">Акции</a></li>
+                                                <li><a href="news.html">Новости</a></li>
+                                                <li><a href="#link">Лицензии</a></li>
+                                                <li><a href="#link">Вакансии</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="menu.html">Меню</a></li>
+                                        <li><a href="photogallery.html">Фотогалерея</a></li>
+                                        <li><a href="#link">Контакты</a></li>
+                                    </ul>
+                                </nav>
+
+                                <button class="nav-close">&times;</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+                <section class="section-content">
+                    <div class="container">
+                        <div class="row">
+                            <main class="content-inner col-md-12">
+                                <section class="section-photogallery">
+                                    <div class="row">
+                                        <div class="section-header col-md-12" >
+                                            <h2 class="section-title">фотогалерея</h2>
+                                            <p class="section-description">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="photogallery-grid ">
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-1.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Зал для проведения  банкетов</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-2.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Мы рады видеть Вас у нас в гостях!</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-3.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Изысканная праздничная  сервировка</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-4.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Доброжелательный  персонал</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-1.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Зал для проведения  банкетов</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-2.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Мы рады видеть Вас у нас в гостях!</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-3.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Изысканная праздничная  сервировка</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-4.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Доброжелательный  персонал</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-1.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Зал для проведения  банкетов</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-2.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Мы рады видеть Вас у нас в гостях!</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-3.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Изысканная праздничная  сервировка</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photogallery-item col-xs-12 col-sm-4 col-md-3">
+                                                <div class="photogallery-card">
+                                                    <a href="#link" class="photogallery-link"></a>
+                                                    <div class="photogallery-header">
+                                                        <div class="photogallery-thumb" style="background-image: url(img/page-photogallery/photogallery-item-4.png)"  >
+                                                        </div>
+                                                        <h4 class="photogallery-title">Доброжелательный  персонал</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 text-center">
+                                                <a href="#link" class="btn btn-danger" >показать еще</a>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </section>
+                            </main>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-news">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-header col-md-12" >
+                                <h2 class="section-title">новости</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="slider-news ">
+                                <div class="news-item slide-item">
+                                    <div class="news-card" >
+                                        <a href="#link" class="news-link"></a>
+                                        <div class="news-thumb" style="background-image: url(img/home/news/news-preview-1.png)" ></div>
+
+                                        <div class="news-header">
+                                            <p class="news-date">21.09.2017 г.</p>
+                                            <h4 class="news-title">Живая музыка весь вечер в субботу, 23 сентября</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-item slide-item">
+                                    <div class="news-card" >
+                                        <a href="#link" class="news-link"></a>
+                                        <div class="news-thumb" style="background-image: url(img/home/news/news-preview-2.png)" ></div>
+
+                                        <div class="news-header">
+                                            <p class="news-date">21.09.2017 г.</p>
+                                            <h4 class="news-title">Обновление меню</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-item slide-item">
+                                    <div class="news-card" >
+                                        <a href="#link" class="news-link"></a>
+                                        <div class="news-thumb" style="background-image: url(img/home/news/news-preview-3.png)" ></div>
+
+                                        <div class="news-header">
+                                            <p class="news-date">21.09.2017 г.</p>
+                                            <h4 class="news-title">Всем детям, получившим пятерку, ‒ мороженое в подарок!</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-item slide-item">
+                                    <div class="news-card" >
+                                        <a href="#link" class="news-link"></a>
+                                        <div class="news-thumb" style="background-image: url(img/home/news/news-preview-4.png)" ></div>
+
+                                        <div class="news-header">
+                                            <p class="news-date">21.09.2017 г.</p>
+                                            <h4 class="news-title">Мастер-класс по приготовлению пиццы для всех желающих</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+               
+            </div>
+
+            <footer class="footer-box bottom">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="reservation-box">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form action="" class="form-reservation form-inline">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Ваше имя" required >
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" placeholder="Телефон" required >
+                                            </div>
+                                            <div class="form-group">
+                                                <input id="datePicker" type="date" placeholder="" required >
+                                            </div>
+                                            <div class="form-group no-shrink">
+                                                <input id="datePicker" type="time" placeholder="" required >
+                                                <button type="submit" >Заказать столик</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="map-box">
+                            <div class="map-container container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="map-banner">
+                                            <h3 class="map-banner-title">Ждем вас в гости! </h3>
+                                            <div class="map-banner-description">
+                                                <p>
+                                                    г. Брянск, ул. Название улицы, 5 З <br> 
+                                                    Заказ столиков:  <br> 
+                                                    <a href="tel:8 (923) 456 78 90">8 (923) 456 78 90</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <iframe id="map" src="https://snazzymaps.com/embed/25298" width="100%" style="border:none;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer-menu-wrap container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="footer-nav">
+                                <ul class="nav navbar-nav footer-nav-list">
+                                    <li><a href="#link">О нас</a></li>
+                                    <li><a href="menu.html">Меню</a></li>
+                                    <li><a href="photogallery.html">Фотогалерея</a></li>
+                                    <li><a href="#link">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-inner col-md-12">
+                                <div class="footer-contact">
+                                    <ul class="contact-list">
+                                        <li><a href="tel:8 (923) 456 78 90"><i class="icon icon-phone" ></i>8 (923) 456 78 90</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="img/logo.png" alt="Малина" class="footer-logo-img"></a>
+                                </div>
+
+                                <div class="footer-address">
+                                    <span>г. Брянск,  <br> ул. Название улицы, 5</span>
+                                    <i class="icon icon-location" ></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/ru.js" ></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

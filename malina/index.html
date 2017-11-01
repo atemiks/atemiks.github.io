@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Малина</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h3 class="modal-title" id="modalOrderLabel">Заявка</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-modal">
+                            <div class="form-group">
+                                <input type="text" placeholder="Ваше имя" required >
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Телефон" required >
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="E-mail" required >
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox01" name="checkbox" />
+                                <label for="checkbox01">
+                                    <span class="icon" ></span>
+                                    <span class="inner">
+                                        Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности.  <br>
+                                        <a href="#link">Узнать больше</a>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" >отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="top">
+
+                <header class="header-box" >
+                    <div class="container">
+                        <div class="row">
+                            <div class="header-inner col-md-12">
+                                <div class="header-contact">
+                                    <ul class="contact-list">
+                                        <li><a href="tel:8 (923) 456 78 90"><i class="icon icon-phone" ></i>8 (923) 456 78 90</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="header-logo">
+                                    <a href="index.html"><img src="img/logo.png" alt="Малина" class="header-logo-img"></a>
+                                </div>
+
+                                <div class="header-address">
+                                    <span>г. Брянск,  <br> ул. Название улицы, 5</span>
+                                    <i class="icon icon-location" ></i>
+                                </div>
+
+
+                                <div class="header-toggle-wrap">
+                                    <button class="header-toggle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-menu-wrap container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav class="header-nav">
+                                    <ul class="nav navbar-nav header-nav-list">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#link">Акции</a></li>
+                                                <li><a href="news.html">Новости</a></li>
+                                                <li><a href="#link">Лицензии</a></li>
+                                                <li><a href="#link">Вакансии</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="menu.html">Меню</a></li>
+                                        <li><a href="photogallery.html">Фотогалерея</a></li>
+                                        <li><a href="#link">Контакты</a></li>
+                                    </ul>
+                                </nav>
+
+                                <button class="nav-close">&times;</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <main>
+
+                    <div class="hero-box">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="slider-hero">
+                                    <div class="slide-item">
+                                        <div class="hero-card" style="background-image: url(img/home/slider-hero/hero-slide-1.png)" >
+                                            <a href="#link" class="hero-link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="slide-item">
+                                        <div class="hero-card" style="background-image: url(img/home/slider-hero/hero-slide-2.png)" >
+                                            <a href="#link" class="hero-link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="slide-item">
+                                        <div class="hero-card" style="background-image: url(img/home/slider-hero/hero-slide-3.png)" >
+                                            <a href="#link" class="hero-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reservation-box">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form action="" class="form-reservation form-inline">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Ваше имя" required >
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" placeholder="Телефон" required >
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="datePicker" type="date" placeholder="" required >
+                                        </div>
+                                        <div class="form-group no-shrink">
+                                            <input id="datePicker" type="time" placeholder="" required >
+                                            <button type="submit" >Заказать столик</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="section-about">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-md-12">
+                                    <h2 class="section-title">Ресторан «Малина»</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="about-description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+                                        <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="about-gallery">
+                                        <div class="gallery-column">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <a class="gallery-item size-1" href="img/home/about/about-gallery-item-1.png" style="background-image: url('img/home/about/about-gallery-item-1.png')" data-fancybox="about-gallery" ></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <a class="gallery-item size-3" href="img/home/about/about-gallery-item-2.png" style="background-image: url('img/home/about/about-gallery-item-2.png')" data-fancybox="about-gallery" ></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-column">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <a class="gallery-item size-3" href="img/home/about/about-gallery-item-3.png" style="background-image: url('img/home/about/about-gallery-item-3.png')" data-fancybox="about-gallery" ></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6">
+                                                    <a class="gallery-item size-3" href="img/home/about/about-gallery-item-4.png" style="background-image: url('img/home/about/about-gallery-item-4.png')" data-fancybox="about-gallery" ></a>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6">
+                                                    <a class="gallery-item size-3" href="img/home/about/about-gallery-item-5.png" style="background-image: url('img/home/about/about-gallery-item-5.png')" data-fancybox="about-gallery" ></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <a class="gallery-item size-2" href="img/home/about/about-gallery-item-6.png" style="background-image: url('img/home/about/about-gallery-item-6.png')" data-fancybox="about-gallery" ></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-3">
+                                                    <a class="gallery-item size-4" href="img/home/about/about-gallery-item-7.png" style="background-image: url('img/home/about/about-gallery-item-7.png')" data-fancybox="about-gallery" ></a>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-3">
+                                                    <a class="gallery-item size-4" href="img/home/about/about-gallery-item-8.png" style="background-image: url('img/home/about/about-gallery-item-8.png')" data-fancybox="about-gallery" ></a>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-3">
+                                                    <a class="gallery-item size-4" href="img/home/about/about-gallery-item-9.png" style="background-image: url('img/home/about/about-gallery-item-9.png')" data-fancybox="about-gallery" ></a>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-3">
+                                                    <a class="gallery-item size-4" href="img/home/about/about-gallery-item-10.png" style="background-image: url('img/home/about/about-gallery-item-10.png')" data-fancybox="about-gallery" ></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-news">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-md-12" >
+                                    <h2 class="section-title">новости</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="slider-news ">
+                                    <div class="news-item slide-item">
+                                        <div class="news-card" >
+                                            <a href="#link" class="news-link"></a>
+                                            <div class="news-thumb" style="background-image: url(img/home/news/news-preview-1.png)" ></div>
+
+                                            <div class="news-header">
+                                                <p class="news-date date">21.09.2017 г.</p>
+                                                <h4 class="news-title">Живая музыка весь вечер в субботу, 23 сентября</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item slide-item">
+                                        <div class="news-card" >
+                                            <a href="#link" class="news-link"></a>
+                                            <div class="news-thumb" style="background-image: url(img/home/news/news-preview-2.png)" ></div>
+
+                                            <div class="news-header">
+                                                <p class="news-date date">21.09.2017 г.</p>
+                                                <h4 class="news-title">Обновление меню</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item slide-item">
+                                        <div class="news-card" >
+                                            <a href="#link" class="news-link"></a>
+                                            <div class="news-thumb" style="background-image: url(img/home/news/news-preview-3.png)" ></div>
+
+                                            <div class="news-header">
+                                                <p class="news-date date">21.09.2017 г.</p>
+                                                <h4 class="news-title">Всем детям, получившим пятерку, ‒ мороженое в подарок!</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item slide-item">
+                                        <div class="news-card" >
+                                            <a href="#link" class="news-link"></a>
+                                            <div class="news-thumb" style="background-image: url(img/home/news/news-preview-4.png)" ></div>
+
+                                            <div class="news-header">
+                                                <p class="news-date date">21.09.2017 г.</p>
+                                                <h4 class="news-title">Мастер-класс по приготовлению пиццы для всех желающих</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-categories">
+                        <div class="container">
+                            <div class="row">
+                                <div class="categories-grid">
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-cheese" ></i>
+                                                </div>
+                                                <h4 class="category-title">Холодные закуски</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Прекрасный выбор сыров, овощей и мяса</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-bear" ></i>
+                                                </div>
+                                                <h4 class="category-title">Закуски к пенному</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Для хороших посиделок в компании друзей</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-soup" ></i>
+                                                </div>
+                                                <h4 class="category-title">Супы</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Доброе начало традиционной русской трапезы</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-grill" ></i>
+                                                </div>
+                                                <h4 class="category-title">Гриль-меню</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Дивные стейки с овощным гарниром</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-salad" ></i>
+                                                </div>
+                                                <h4 class="category-title">Салаты</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Любимые салаты народов мира</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-burger size-half" ></i>
+                                                </div>
+                                                <h4 class="category-title">Бургер-меню</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Классическое блюдо американской кухни</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-pancakes size-half" ></i>
+                                                </div>
+                                                <h4 class="category-title">Блины</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Вкуснейшие блинчики  с различной начинкой</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-pasta size-half" ></i>
+                                                </div>
+                                                <h4 class="category-title">Итальянские пасты</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Для тонких ценителей итальянской кухни</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-pizza" ></i>
+                                                </div>
+                                                <h4 class="category-title">Итальянские пиццы</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Популярнейшее блюдо во всем мире</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-fish size-half" ></i>
+                                                </div>
+                                                <h4 class="category-title">Рыба</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Горячие блюда из рыбы</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-chicken size-half" ></i>
+                                                </div>
+                                                <h4 class="category-title">Птица</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Горячие блюда из мяса курицы</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-meat size-half" ></i>
+                                                </div>
+                                                <h4 class="category-title">Мясо</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Горячие блюда из свинины, говядины и баранины</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-draniki" ></i>
+                                                </div>
+                                                <h4 class="category-title">Драники</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Горячая закуска из картофеля</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-garnish" ></i>
+                                                </div>
+                                                <h4 class="category-title">Гарниры</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Сытные гарниры на любой вкус</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-sauces size-half" ></i>
+                                                </div>
+                                                <h4 class="category-title">Соусы</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Любое блюдо вкуснее с соусом</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-bread" ></i>
+                                                </div>
+                                                <h4 class="category-title">Хлеб</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Не даром говорится, хлеб ‒ всему голова</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-dessert" ></i>
+                                                </div>
+                                                <h4 class="category-title">Десерты</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Для настоящих сластен</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-fruit" ></i>
+                                                </div>
+                                                <h4 class="category-title">Фрукты</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Сезонные фрукты ‒ вкусно и полезно</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-icecream" ></i>
+                                                </div>
+                                                <h4 class="category-title">Мороженое</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Отличный выбор, включая мороженое от шеф-повара</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="categories-item col-xs-6 col-sm-4 col-md-3">
+                                        <div class="category-card">
+                                            <a href="#link" class="category-link"></a>
+                                            <div class="category-header">
+                                                <div class="category-thumb">
+                                                    <i class="icon icon-cocktails" ></i>
+                                                </div>
+                                                <h4 class="category-title">Напитки</h4>
+                                            </div>
+                                            <div class="category-body">
+                                                <div class="category-description">
+                                                    <p>Напитки собственного производства</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-photogallery-carousel" style="background-image: url(img/home/photogallery/photogallery-bg.png)" >
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header">
+                                    <h2 class="section-title">Фотогалерея</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="photogallery-carousel photogallery-carousel-desktop">
+                                        <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        <img class="active" src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                    </div>
+
+                                    <div class="photogallery-carousel-mobile">
+                                        <div class="slide-item">
+                                            <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="img/home/photogallery/photogalleryslideshow-item-1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+
+                </main>
+            </div>
+
+            <footer class="footer-box bottom">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="reservation-box">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form action="" class="form-reservation form-inline">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Ваше имя" required >
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" placeholder="Телефон" required >
+                                            </div>
+                                            <div class="form-group">
+                                                <input id="datePicker" type="date" placeholder="" required >
+                                            </div>
+                                            <div class="form-group no-shrink">
+                                                <input id="datePicker" type="time" placeholder="" required >
+                                                <button type="submit" >Заказать столик</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="map-box">
+                            <div class="map-container container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="map-banner">
+                                            <h3 class="map-banner-title">Ждем вас в гости! </h3>
+                                            <div class="map-banner-description">
+                                                <p>
+                                                    г. Брянск, ул. Название улицы, 5 З <br> 
+                                                    Заказ столиков:  <br> 
+                                                    <a href="tel:8 (923) 456 78 90">8 (923) 456 78 90</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <iframe id="map" src="https://snazzymaps.com/embed/25298" width="100%" style="border:none;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer-menu-wrap container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="footer-nav">
+                                <ul class="nav navbar-nav footer-nav-list">
+                                    <li><a href="#link">О нас</a></li>
+                                    <li><a href="menu.html">Меню</a></li>
+                                    <li><a href="photogallery.html">Фотогалерея</a></li>
+                                    <li><a href="#link">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-inner col-md-12">
+                                <div class="footer-contact">
+                                    <ul class="contact-list">
+                                        <li><a href="tel:8 (923) 456 78 90"><i class="icon icon-phone" ></i>8 (923) 456 78 90</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="img/logo.png" alt="Малина" class="footer-logo-img"></a>
+                                </div>
+
+                                <div class="footer-address">
+                                    <span>г. Брянск,  <br> ул. Название улицы, 5</span>
+                                    <i class="icon icon-location" ></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/ru.js" ></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

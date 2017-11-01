@@ -1,0 +1,305 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.top {
+	flex: 1 0 auto;
+}
+.bottom {
+	flex: 0 0 auto;
+}
+
+
+.container {
+	@media (min-width: 1280px) {
+		width: 1200px;
+	}
+}
+
+.section-header {
+	.section-title {
+		margin-bottom: 30px;
+		color: $dark-success;
+		text-transform: uppercase;
+		letter-spacing: 2.3px;
+	}
+	.section-description {
+		margin-bottom: 40px;
+	}
+}
+
+.section-content {
+	padding-top: 110px;
+	padding-bottom: 20px;
+	@media (max-width: 767px) {
+		padding-top: 30px;
+	}
+}
+
+body {
+	section {
+		.section-header {
+			text-align: center;
+		}
+
+		&:nth-of-type(1) {
+			.section-header {
+
+				text-align: left;
+			}
+		}
+	}
+}
+
+
+.content-aside-toggle {
+	display: none;
+	margin-bottom: 15px;
+	@media (max-width: 767px) {
+		display: block;
+	}
+}
+.content-aside-inner {
+	@media (min-width: 768px) {
+		display: block !important;
+	}
+	@media (max-width: 767px) {
+		overflow: hidden;
+		display: none;
+	}
+}
+.aside-block {
+	padding: 20px;
+	background: $medium-gray;
+	.aside-header {
+		padding: 10px 0;
+	}
+	.aside-title {
+		color: $success;
+		text-transform: uppercase;
+	}
+
+	.aside-body {
+		padding: 8px 0;
+	}
+	.aside-nav {
+		li {
+			overflow: visible;
+			margin: 10px 0;
+			padding: 0 0 0 10px;
+			&:before {
+				top: 10px;
+				left: -2px;
+			}
+
+			a {
+				font-size: 21px;
+				font-weight: 500;
+				color: $default;
+				text-decoration: none;
+				@media (max-width: 991px) {
+					font-size: 16px;
+				}
+			}
+
+			&.active,
+			&:hover {
+				a {
+					color: $success;
+				}
+			}
+		}
+	}
+}
+
+
+.modal {
+	.modal-dialog {
+		@media (min-width: 768px) {
+			width: 330px;
+		}
+
+		.modal-content {
+
+		}
+	}
+}
+.modal-content {
+	border: 4px solid $medium-gray;
+	border-radius: 0;
+	.close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 36px;
+		width: 36px;
+		min-width: initial;
+		padding: 0;
+		border: none;
+		border-radius: 50%;
+		transform: translate(50%, -50%);
+		font-size: 40px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 36px;
+		@media (max-width: 767px) {
+			transform: translate(30%, -20%);
+		}
+	}	
+
+	.modal-header {
+		padding: 30px 25px;
+		border: none;
+		text-align: center;
+		.modal-title {
+			color: $success;
+			text-transform: uppercase;
+			letter-spacing: 1.4px;
+		}
+	}
+
+	.modal-body {
+		padding: 0 25px 45px;
+		.form-modal {
+			input {
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+.dropdown-menu {
+	min-width: 150px;
+	border: none;
+	padding: 12px 0;
+	box-shadow: 0 3px 9px rgba(68, 66, 60, 0.21);
+	text-align: center;
+	li {
+		padding: 0;
+		&:before {
+			display: none;
+		}
+
+		a {
+			display: block;
+			padding: 2px 0 !important;
+			color: $default-heading !important;
+			@media (max-width: 991px) {
+				padding: 10px 0 !important;
+			}
+
+			&:hover {
+				color: $success !important;
+			}
+		}
+	}
+}
+
+
+
+.pagination {
+	@extend .reset-list;
+	cursor: default;
+	margin: 15px 0;
+	li {
+		display: inline-block;
+		padding: 0;
+		vertical-align: middle;
+		font-size: 28px;
+		@media (max-width: 767px) {
+			font-size: 20px;
+		}
+		
+		&:before {
+			display: none;
+		}
+
+		a {
+			display: inline-block;
+			height: 42px;
+			min-width: 42px;
+			border-radius: 50%;
+			color: $default;
+			line-height: 42px;
+			text-align: center;
+			text-decoration: none;
+			@media (max-width: 767px) {
+				height: 38px;
+				min-width: 38px;
+				line-height: 38px;
+			}
+		}
+
+		&.active,
+		&:hover {
+			a {
+				background: $danger;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+
+.date {
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.link-more {
+	font-size: 18px;
+	font-weight: 500;
+	i {
+		vertical-align: middle;
+	}
+
+	&:hover {
+		i {
+			color: $default-heading;
+		}
+	}
+}
+
+
+
+.slick-slider {
+	outline: none;
+	* {
+		outline: none;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+.slick-dots {
+	position: relative;
+	bottom: 0;
+	margin: 15px 0;
+	li {
+		button {
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+
+.fancybox-button ,
+.fancybox-arrow {
+	min-width: initial;
+	min-height: initial;
+	&:hover {
+		background: none;
+	}
+}
