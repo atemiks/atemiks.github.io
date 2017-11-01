@@ -226,14 +226,24 @@
 			color: $success;
 			line-height: 1;
 			transform: translate(-50%, -50%);
+			@media (max-width: 767px) {
+				font-size: 40px;
+			}
+
 			&.size-half {
 				font-size: 60px;
+				@media (max-width: 767px) {
+					font-size: 30px;
+				}
 			}
 		}
 	}
 	.category-title {
 		@extend .transition;
 		margin: 0;
+		@media (max-width: 767px) {
+			font-size: 18px;
+		}
 	}
 
 	.category-body {
