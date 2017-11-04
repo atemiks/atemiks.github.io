@@ -99,28 +99,37 @@
 	border-bottom: 1px solid $light-gray;
 	.block-header {
 		.block-title {
-			margin: 20px 10px 20px 0;
+			padding: 20px 10px 20px 0;
 			font-size: 22px;
 			font-weight: 400;
 			@media (max-width: 1024px) {
 				font-size: 18px;
 			}
 			@media (max-width: 767px)  {
-				margin: 10px 0;
+				padding: 10px 0;
 				font-size: 16px;
 			}
 		}
 	}
 
 	&.block-inline {
-		display: flex;
-		@media (max-width: 991px)  {
-			display: block;
+		vertical-align: middle;
+
+		.block-header,
+		.block-body {
+			display: inline-block;
+			vertical-align: middle;
+			@media (max-width: 991px) {
+				display: block;
+			}
 		}
 
 		.block-header {
 			.block-title {
-				margin-top: 5px;
+				padding-bottom: 40px;
+				@media (max-width: 991px) {
+					padding-bottom: 10px;
+				}
 			}
 		}
 	}
