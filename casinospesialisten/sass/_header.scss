@@ -1,0 +1,159 @@
+.header-box {
+	background: $danger;
+}
+
+.header-navigation {
+	@media (max-width: 767px) {
+		display: none;
+	}
+}
+.header-nav {
+	@extend .reset-list;
+	display: flex;
+	@media (max-width: 767px) {
+		flex-direction: column;
+	}
+
+	> li {
+		flex: 1 1 auto;
+		font-size: 22px;
+		font-weight: 700;
+		color: #fff;
+		text-transform: uppercase;
+		@media (max-width: 991px) {
+			font-size: 16px;
+		}
+
+		> a {
+			display: block;
+			height: 80px;
+			padding: 23px 15px 18px;
+			color: inherit;
+			text-decoration: none;
+			@media (max-width: 767px) {
+				height: 60px;
+				padding: 15px 15px 15px;
+			}
+		}
+
+		&.dropdown {
+			> a {
+				&:after {
+					display: none;
+					font-family: 'icomoon';
+					content: '\f105';
+					position: absolute;
+					top: 50%;
+					right: 15px;
+					font-size: 30px;
+					color: #fff;
+					transform: translate(0, -50%);
+					@media (max-width: 767px) {
+						display: block;
+					}
+				}
+			}
+		}
+
+		&:hover,
+		&.open {
+			background: #ff7940;
+		}
+
+		.burger {
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+	}
+}
+
+
+.header-submenu {
+	min-width: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none;
+	border-radius: 0;
+	background: $warning;
+	box-shadow: none;
+	@media (max-width: 767px) {
+		position: relative;
+		min-height: auto !important;
+	}
+
+	.header-submenu-item {
+		position: static !important;
+		a {
+			position: relative;
+			padding: 15px 35px 10px 15px;
+			font-size: 18px;
+			font-weight: 700;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			&:focus,
+			&:hover {
+				background: #ff9d73;
+				color: #fff;
+			}
+		}
+
+		&.dropdown {
+			> a {
+				&:after {
+					font-family: 'icomoon';
+					content: '\f105';
+					position: absolute;
+					top: 50%;
+					right: 15px;
+					font-size: 30px;
+					color: #fff;
+					transform: translate(0, -50%);
+				}
+			}
+		}
+
+		> .header-submenu {
+		    position: absolute;
+		    top: 0;
+		    left: 100%;
+		    background: #ff9d73;
+		    @media (max-width: 767px) {
+		    	position: relative;
+		    	left: 0;
+		    	min-height: auto !important;
+		    }
+
+		    .header-submenu-item {
+		    	a {
+		    		font-size: 16px;
+		    	}
+		    }
+		}
+	}
+}
+
+
+
+.burger {
+	position: relative;
+	display: inline-block;
+	width: 31px;
+	margin: 0 15px 3px 0;
+	vertical-align: middle;
+	span {
+		display: block;
+		height: 2px;
+		background: #fff;
+		margin: 8px 0;
+	}
+}
+
+.header-toggle {
+	display: none;
+	margin: 5px 0;
+	@media (max-width: 767px) {
+		display: inline-block;
+	}
+}
