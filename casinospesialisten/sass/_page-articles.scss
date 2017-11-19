@@ -1,0 +1,66 @@
+.section-article {
+	padding-bottom: 60px;
+}
+
+.article-img-hero {
+	width: 100%;
+}
+
+.articles-grid {
+	.article-item {
+	}
+}
+
+.article-card {
+	overflow: hidden;
+	margin: 15px auto;
+	@media (max-width: 767px)  {
+		max-width: 425px;
+	}
+
+	.article-media {
+		float: left;
+		width: 140px;
+		padding: 20px 10px;
+		text-align: center;
+		@media (max-width: 767px) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	.article-inner {
+		overflow: hidden;
+		padding: 0 0 0 50px;
+		@media (max-width: 767px) {
+			padding: 0;
+		}
+	}
+	.article-title {
+		margin: 0;
+		text-transform: uppercase;
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+	.article-description {
+		line-height: 2;
+	}
+}
+
+.article-stats {
+	@extend .reset-list; 
+	li {
+		display: inline-block;
+		margin: 0 25px 0 0;
+		font-size: 14px;
+		font-weight: 300;
+		color: $light-primary;
+		i {
+			display: inline-block;
+			margin: 0 5px 3px 0;
+			vertical-align: middle;
+		}
+	}
+}
