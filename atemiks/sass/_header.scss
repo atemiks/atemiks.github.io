@@ -1,0 +1,57 @@
+.header-box {
+	.header-inner {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+
+.header-logo {
+	font-size: 60px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1;
+	a {
+		color: inherit;
+	}
+}
+
+.header-nav {
+	padding: 20px 0;
+	line-height: 1;
+}
+.header-nav-list {
+	@extend .reset-list;
+	cursor: default;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	li {
+		display: inline-block;
+		padding: 0 10px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.page-home {
+	.header-box {
+		position: absolute;
+		z-index: 99;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.header-nav-list {
+		li {
+			a {
+				color: #fff;
+			}
+		}
+	}
+}

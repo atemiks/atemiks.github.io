@@ -1,0 +1,26 @@
+.blog-grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.article-card {
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	background: red;
+	border-radius: $global-radius;
+
+	.article-header {}
+	.article-thumb {
+		.article-img {
+			padding-bottom: 50%;
+			background-position: center;
+			background-size: cover;
+		}
+	}
+
+	.article-body {
+		padding: 15px;
+	}
+}
