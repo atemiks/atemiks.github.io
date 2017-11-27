@@ -49,3 +49,17 @@
 		outline: none;
 	}
 }
+
+
+
+@keyframes sliding {
+    from {
+    	transform: translateY(0px);
+    }
+    50% {
+    	transform: translateY(-3px);
+    }
+    to {
+		transform: translateY(0px);
+    }
+}

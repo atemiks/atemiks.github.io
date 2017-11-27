@@ -19,7 +19,7 @@ body {
 section,
 article {
 	padding-top: 55px;
-	padding-bottom: 55px;
+	padding-bottom: 70px;
 }
 
 
@@ -74,28 +74,35 @@ textarea {
 
 button,
 .btn {
+	@extend .transition;
 	display: inline-block;
 	min-width: 200px;
-	padding: 16px 15px 14px;
+	padding: 18px 15px 12px;
 	border: none;
 	border-radius: $global-radius;
 	color: #fff;
-	// background: #91BA2A;
 	// background: linear-gradient(to bottom, rgba(176,213,84,1) 0%,rgba(146,204,0,1) 100%);
-	background: linear-gradient(to bottom, #ED612E 0%, #EA3E00 100%);
+	// background: linear-gradient(to bottom, #FF2E2E 0%, #E80000 100%);
+	// background: linear-gradient(to bottom, #58D396 0%, #33CA7F 100%);
+	background: linear-gradient(to bottom, #24d5f8 0%, #1f8ff0 100%);
+	// background: #33CA7F;
 	box-shadow: $global-shadow;
-	font-size: 16px;
+	font-family: $base-secondary;
+	font-size: 18px;
 	font-weight: 500;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: $global-shadow-hover;
+	}
 }
 .btn-outline {
-	border: 1px solid transparent;
-	&.outline-white {
-		border-color: #fff;
-		color: #fff;
-	}
+	border: 2px solid rgba($default, .05);
+	box-shadow: none !important;
+	background: none;
+	color: $default;
 }
 
 .form-group {

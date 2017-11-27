@@ -11,7 +11,6 @@
 .header-logo {
 	font-size: 60px;
 	font-weight: 700;
-	color: #fff;
 	line-height: 1;
 	a {
 		color: inherit;
@@ -29,10 +28,29 @@
 	font-weight: 700;
 	letter-spacing: 0.8px;
 	text-transform: uppercase;
+	color: $default-heading;
 	li {
+		position: relative;
 		display: inline-block;
-		padding: 0 10px;
+		padding: 0 14px 0 10px;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background: $default;
+			vertical-align: middle;
+			transform: translateY(-50%);
+		}
+		&:last-child:after {
+			display: none;
+		}
+
 		a {
+			color: inherit;
 			text-decoration: none;
 		}
 	}
@@ -50,7 +68,6 @@
 	.header-nav-list {
 		li {
 			a {
-				color: #fff;
 			}
 		}
 	}
