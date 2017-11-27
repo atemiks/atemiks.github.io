@@ -3353,6 +3353,7 @@ button,
 
 .header-box.header-fixed {
   position: fixed !important;
+  z-index: 99;
   top: 0;
   left: 0;
   right: 0;
@@ -3470,7 +3471,7 @@ button,
       margin: 0 25px; }
   .section-hero .scroll-down {
     position: absolute;
-    z-index: 99;
+    z-index: 9;
     left: 0;
     right: 0;
     bottom: 15px;

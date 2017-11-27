@@ -20,7 +20,7 @@ $(document).ready(function() {
                     // Only prevent default if animation is actually gonna happen
                     event.preventDefault();
                     $('html, body').animate({
-                        scrollTop: target.offset().top
+                        scrollTop: target.offset().top - 68
                     }, 300);
                 }
             }
@@ -29,7 +29,7 @@ $(document).ready(function() {
     var offset = 300,
         //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
         //duration of the top scrolling animation (in ms)
-        scrollTopDuration = 700,
+        scrollTopDuration = 800,
         //grab the "back to top" link
         $headerFixed = $('.header-box');
 
