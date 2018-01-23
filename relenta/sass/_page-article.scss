@@ -1,0 +1,60 @@
+.article-inner {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 35px 0;
+	}
+
+	img {
+		margin-bottom: 15px;
+	}
+
+	.title {
+		margin: 0 0 10px;
+	}
+	.post-author {
+		margin: 0 0 25px;
+		font-size: 14px;
+		font-weight: 300;
+	}
+}
+
+.navigation-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 55px 0 0;
+	a {
+		position: relative;
+		font-size: 16px;
+		font-weight: 700;
+		color: $info;
+		text-decoration: none;
+		@media screen and (max-width: 640px) {
+			font-size: 14px;
+		}
+		
+		&:hover {
+			color: lighten( $info, 10%);
+		}
+	}
+
+	@media screen and (max-width: 640px) {
+		.col-left {
+			order: 1;
+		}
+		.col-center {
+			order: 3;
+			width: 100%;
+			margin: 15px 0 0;
+			text-align: center;
+		}
+		.col-right {
+			order: 2;
+		}
+	}
+}

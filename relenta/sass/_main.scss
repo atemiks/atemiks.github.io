@@ -1,0 +1,404 @@
+.section-hero {
+	min-height: 100vh;
+	padding: 0;
+	background-color: $primary;
+	background-position: center center;
+	background-size: cover;
+	display: flex !important;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	.section-inner {
+		padding: 120px 0;
+		@media screen and (max-width: 1024px) {
+			padding-bottom: 60px;
+		}
+	}
+
+	.title {
+		position: relative;
+		margin: 0 0 60px;
+		padding: 0 0 74px;
+		font-family: $second-base-heading;
+		@media screen and (max-width: 1024px) {
+			margin: 0 0 40px;
+			padding-bottom: 30px;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 50%;
+			height: 1px;
+			margin-left: -25%;
+			background: #fff;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: -9px;
+			left: 50%;
+			width: 18px;
+			height: 18px;
+			margin-left: -9px;
+			background: #fff;
+			transform: rotate(45deg);
+		}
+	}
+	.lead {
+		font-weight: 300;
+	}
+	.hero-actions {
+		margin: 90px 0 0;
+		padding: 0;
+		list-style: none;
+		@media screen and (max-width: 1024px)  {
+			margin: 40px 0 0;
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 15px 10px;
+		}
+	}
+}
+
+
+
+.section-achievements {
+	padding-bottom: 70px;
+	.section-description {
+		@extend .h5;
+		font-weight: 300;
+		text-align: center;
+		margin: 0 0 40px;
+		p {
+			@extend .h5;
+			margin: 0;
+			font-weight: 300;
+			line-height: 1.666666666666667;
+		}
+	}
+}
+
+.achievements-card  {
+	height: 100%;
+	margin: auto;
+	padding: 11px 15px 20px;
+	border-radius: 7px;
+	box-shadow: 0.5px 0.9px 6px rgba(0, 0, 0, 0.26);
+	color: #fff;
+	text-align: center;
+	&.card-danger {
+		background: $danger;
+	}
+	&.card-success {
+		background: $success;
+	}
+	&.card-info {
+		background: $info;
+	}
+
+	figcaption,
+	p {
+		@extend .h6;
+		font-weight: 300;
+		line-height: 1.666666666666667;
+		color: #fff;
+	}
+
+	figcaption {
+		margin: 0 0 36px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	img {
+		@media screen and (max-width: 1024px) {
+			width: 80px;
+		}
+	}
+
+	.achievements-description {
+		margin: 60px 0 0;
+		@media screen and (max-width: 1024px) {
+			margin: 30px 0 0;
+		}
+	}
+}
+
+.slider-achievements {
+	.slick-track {
+		display: flex;
+		alight-items: stretch;
+	}
+	.slide-item {
+		height: initial;
+		padding: 0 15px 5px;
+		@media screen and (max-width: 1024px) {
+			padding: 0 10px 5px;
+		}
+
+		img {
+			display: inline-block;
+		}
+	}
+}
+
+
+
+.section-lead {
+	padding: 40px 0 50px;
+	background-position: center center;
+	background-size: cover;
+	&:before {
+		background: rgba($primary, .8);
+	}
+
+	.row {
+		display: flex;
+		/* /max-width: 1512px;*/
+		@media screen and (max-width: 640px) {
+			flex-direction: column;
+		}
+	}
+
+	/* .aside-left,
+	.aside-right {
+		padding-bottom: 22px;
+	} */
+
+	
+	.aside-left {
+		@media screen and (max-width: 640px) {
+			order: 1;
+			width: 100%;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+	}
+	/* .center {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		@media screen and (max-width: 640px) {
+			order: 3;
+			width: 100%;
+		}
+	} */
+	.aside-right {
+		text-align: right;
+		@media screen and (max-width: 640px) {
+			order: 2;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	.title {
+		margin: 0 0 30px;
+		font-weight: 700;
+	}
+	.description {
+		@extend .h6;
+		font-weight: 400;
+		line-height: 1.666666666666667;
+		margin-bottom: 30px;
+		p {
+			@extend .h6;
+			font-weight: 400;
+			line-height: 1.666666666666667;
+		}
+	}
+}
+
+
+
+.section-benefits {}
+.benefits-card {
+	overflow: hidden;
+	max-width: 370px;
+	height: 100%;
+	margin: auto;
+	background-color: #fefefe;
+	border-radius: 7px;
+	box-shadow: 0.5px 0.9px 6px rgba(0, 0, 0, 0.26);
+	text-align: center;
+
+
+	.title {
+		margin: 0 0 43px;
+		padding: 18px 22px;
+		text-transform: uppercase;
+		&.danger {
+			background: $danger;
+			color: #fff;
+		}
+		&.success {
+			background: $success;
+			color: #fff;
+		}
+		&.info {
+			background: $info;
+			color: #fff;
+		}
+	}
+
+	.benefits-pic {
+		margin: 0 0 30px;
+		img {
+			@media screen and (max-width: 1024px) {
+				width: 80px;
+			}
+		}
+	}
+
+	.benefits-description {
+		@extend .h6;
+		padding: 0 22px 20px;
+		font-weight: 400;
+		line-height: 1.666666666666667;
+		@media screen and (max-width: 1024px) {
+			padding: 0 15px 15px;
+		}
+
+		p {
+			@extend .h6;
+			font-weight: 400;
+			line-height: 1.666666666666667;
+		}
+	}
+}
+
+
+.slider-benefits {
+	.slick-track {
+		display: flex;
+		align-items: stretch;
+	}
+	.slide-item {
+		height: initial;
+		padding: 0 15px 5px;
+		@media screen and (max-width: 1024px) {
+			padding: 0 10px 5px;
+		}
+
+		img {
+			display: inline-block;
+		}
+	}
+}
+
+
+
+.section-lead-interact {
+	padding: 70px 0 90px;
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	@media screen and (max-width: 1024px) {
+		padding: 50px 0;
+	}
+
+	.title {
+		font-weight: 700;
+	}
+
+	.section-description {
+		p {
+			@extend .h5;
+			font-weight: 400;
+			line-height: 2.4;
+		}
+
+		.btn {
+			margin-top: 10px;
+		}
+	}
+}
+
+
+
+.section-price {
+	padding-top: 70px;
+	padding-bottom: 30px;
+	@media screen and (max-width: 1024px) {
+		padding: 50px 0 30px;
+	}
+}
+
+.table-price {
+	overflow: hidden;	
+	max-width: 526px;
+	margin: 0 auto 15px;
+	border-radius: 7px;
+	box-shadow: 3.5px 6.1px 30.4px 1.6px rgba(0, 0, 0, 0.11);
+	background: #fff;
+	&.primary {
+		.table-header {
+			background: $primary;
+		}
+	}
+
+	.table-header {
+		padding: 20px 25px 35px;
+		text-align: center;
+	}
+	.table-body {
+		padding: 30px 40px 15px 50px;
+		@media screen and (max-width: 768px) {
+			padding: 20px 20px 15px;
+		}
+	}
+
+	.table-title,
+	.table-lead {
+		text-align: center;
+	}
+
+	.table-title {
+		font-weight: 700;
+	}
+	.price {
+		margin-bottom: 20px;
+		font-family: $second-base-heading;
+		font-size: 110px;
+		color: #fff;
+		line-height: 1;
+	}
+	.table-lead {
+		@extend .h5;
+		font-weight: 700;
+		color: $success;
+		p {
+			@extend .h5;
+			font-weight: 700;
+			color: $success;
+			margin: 0 0 6px;
+		}
+	}
+}
+
+
+
+.section-how-started {
+	text-align: center;
+	.section-header {
+		.section-title {
+			color: rgba(#fefefe, .15) !important;
+		}
+	}
+
+	.section-sescription {
+		p {
+			@extend .h5;
+		}
+		.title {
+			@extend .h4;
+			font-weight: 700;
+		}
+	}
+}

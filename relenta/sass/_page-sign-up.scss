@@ -1,0 +1,30 @@
+.section-sign-up {
+	padding-top: 111px;
+	@media screen and (max-width: 1024px) {
+		padding-top: 50px;
+	}
+}
+
+.sign-up-box {
+	padding-top: 36px;
+	padding-bottom: 50px;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0 0 9.5px 0.5px rgba(0, 0, 0, 0.11);
+	text-align: center;
+
+	.title {
+		margin: 0 0 30px;
+		font-weight: 700;
+	}
+}
+
+.form-create {
+	margin-bottom: 10px;
+	.form-info {
+		a {
+			color: $success;
+			border-bottom: 1px solid $success;
+		}
+	}
+}
