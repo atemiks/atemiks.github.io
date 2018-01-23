@@ -1,0 +1,96 @@
+.logo-box {
+	display: inline-block;
+	.logo-img {
+		display: block;
+		max-width: 180px;
+		margin: 15px 0;
+	}
+}
+
+.section-hero {
+	.hero-aside {
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	.hero-title,
+	.hero-subtitle,
+	.hero-action {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.hero-hint {
+		margin-top: 40px;
+	}
+}
+
+.section-achievements {}
+.achievements-grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: -25px;
+	.achievement-item {
+		margin-bottom: 25px;
+	}
+}
+
+.achievement-card {
+	.achievement-header {
+		text-align: center;
+	}
+
+	.achievement-icon-wrap {
+		height: 80px;
+	}
+
+	.achievement-title {
+		margin: 15px 0;
+	}
+
+	.achievement-list {
+		li {
+			padding: 8px 0;
+		}
+	}
+}
+
+
+.section-order {
+    background-image: linear-gradient(to right, rgba(55, 209, 195, 1) 0%, rgba(40, 188, 237, 1) 47%, rgba(88, 116, 225, 1) 100%);
+}
+.form-order {
+	padding: 30px;
+	border-radius: 5px;
+	background: rgba(255,255,255, .2);
+	.form-header {
+		padding: 15px 0 30px;
+		text-align: center;
+		.form-title {
+			-webkit-text-fill-color: #fff;
+		}
+	}
+	.form-footer {
+		padding: 15px 0;
+		text-align: center;
+	}
+	.hint {
+		font-size: 16px;
+		font-style: italic;
+	}
+}
+
+
+.section-contact {}
+.contact-address {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	line-height: 1.5;
+}
+.contact-phone {
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
