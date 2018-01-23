@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Клиника</title>
+
+        <link rel="stylesheet" href="css/foundation-grid.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="page-home" id="top" >
+
+        <div class="popup">
+            <div class="popup-container">
+                <div class="popup-header">
+                    <a href="#0" class="popup-close img-replace">&times;</a>
+                    <h5 class="title">Хотите записаться на прием? <br>
+                    Получить бесплатную консультацию? <br> 
+                    Мы с удовольствием Вам перезвоним.</h5>
+                </div>
+                <div class="popup-body">
+                    <form class="popup-form" method="POST" action="https://script.google.com/macros/s/AKfycbybcDxWBeo_pYtQfErnvFmXKMcdA8iyypvqlM8hpS6W-vYsdBIA/exec" id="gformpopup" >
+                        <fieldset class="pure-group">
+                            <div class="input-group">
+                                <input class="tel" type="tel" name="tel" id="tel" placeholder="Ваш телефон: +38 (___) ___-__-__" required >
+                            </div>
+                        </fieldset>
+                        <fieldset class="pure-group">
+                            <div class="input-group">
+                                <button class="btn" type="submit" >получить консультацию</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div> 
+        </div> 
+
+    	<aside class="off-canvas-sidebar" >
+            <div class="off-canvas-menu">
+                <ul>
+                    <li><a href="#advantages">Клиника</a></li>
+                    <li><a href="#aboutDoctor">Про доктора</a></li>
+                    <li><a href="#services">Маммопластка</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="wrapper off-canvas-wrap" >
+        	<a href="#link" class="close-off-canvas"></a>
+
+            <div class="content-wrap">
+            	<header class="header-box post">
+                    <div class="header-inner row">
+                    	<div class="aside-left small-5 medium-4 large-3 columns">
+	                        <div class="header-logo">
+	                            <a href="index.html">КИЕВСКИЙ ОБЛАСТНОЙ ЦЕНТР ПЛАСТИЧЕСКОЙ ХИРУРГИИ</a>
+	                        </div>
+                    	</div>
+
+                    	<div class="aside-right small-7 medium-8 large-9 columns">
+	                        <nav class="header-menu">
+	                            <ul class="header-menu-list">
+	                                <li><a href="#advantages">Клиника</a></li>
+	                                <li><a href="#aboutDoctor">Про доктора</a></li>
+	                                <li><a href="#services">Маммопластка</a></li>
+	                                <li><a href="#contacts">Контакты</a></li>
+	                            </ul>
+	                        </nav>
+
+	                        <ul class="header-actions">
+	                        	<li>
+	                        		<a href="tel:+380675634377"> <small>+38 (067)</small> 563 43 77</a>
+	                        	</li>
+	                        	<li class="action-btn" >
+	                        		<a href="#order" class="btn popup-trigger" >Записаться</a>
+	                        	</li>
+	                        </ul>
+
+                            <button class="off-canvas-toggle">
+                                <a href="#link"><span class="icon" ></span></a>
+                            </button>
+                    	</div>
+                    </div>
+                </header>
+
+                <main>
+                    <section class="section-hero" style="background-image: url(img/hero/hero-bg.png)" >
+                        <div class="section-inner">
+                        	<div class="row">
+                        		<div class="hero-inner medium-6 medium-offset-6 columns dark post">
+                        			<div class="hero-header">
+                        				<h1 class="title">Увеличение груди <span>всего за <mark>60 000 грн.</mark></span></h1>
+                        			</div>
+                                    <div class="hero-description">
+                                        <p class="lead text-right"><em>Мы зафиксировали цену!</em></p>
+                                        <p>Никаких дополнительных платежей, переплат или сюрпризов. Операцию проводит лично Роман Миронович Левицкий.</p>
+                                    </div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </section>
+                    
+                    <section class="section-advantages bg-gray" id="advantages" >
+                    	<div class="row">
+                    		<div class="section-header columns post">
+                    			<h3 class="section-title">Почему мы?</h3>
+                    		</div>
+                    	</div>
+                    	<div class="row">
+                    		<ul class="advantages-list  medium-up-3 large-up-4 post">
+                    			<li class="columns">
+                    				<div class="advantages-icon"><img src="img/icons/ico-imo-pro.svg" alt=""></div>
+                    				<h6 class="advantages-title">Евро протокол</h6>
+                    				<div class="advantages-description">
+                    					<p>Операции проходят по стандартам используемым в Европе.</p>
+                    				</div>
+                    			</li>
+
+                    			<li class="columns">
+                    				<div class="advantages-icon"><img src="img/icons/ico-anesthesia.svg" alt=""></div>
+                    				<h6 class="advantages-title">Ксеноновый наркоз</h6>
+                    				<div class="advantages-description">
+                    					<p>Ксеноновая анестезия - безвредный и легко управляемый наркоз с восстанавливающим воздействием.</p>
+                    				</div>
+                    			</li>
+
+                    			<li class="columns">
+                    				<div class="advantages-icon"><img src="img/icons/ico-fundacion.svg" alt=""></div>
+                    				<h6 class="advantages-title">Невидимые швы</h6>
+                    				<div class="advantages-description">
+                    					<p>При наложении швов применяется авторская техника маскирующая рубцы.</p>
+                    				</div>
+                    			</li>
+
+                    			<li class="columns">
+                    				<div class="advantages-icon"><img src="img/icons/ico-financiacion.svg" alt=""></div>
+                    				<h6 class="advantages-title">Фиксированные цены</h6>
+                    				<div class="advantages-description">
+                    					<p>Никаких дополнительных платежей или  переплат. All included.</p>
+                    				</div>
+                    			</li>
+                    		</ul>
+                    	</div>
+                    </section>
+
+                    <section class="section-about">
+                        <div class="section-inner post ">
+                        	<div class="row">
+                        		<div class="aside-left medium-7 columns">
+                        			<h3 class="title">Добро пожаловать в наш центр</h3>
+                        			<p>Киевский областной центр пластической хирургии основан на базе Киевской областной клинической больницы, имеет в своем составе 22 отделения, на базе которых работают 11 кафедр высших учебных заведений Украины.</p>
+                        			<p>Центр тесно сотрудничает с одной из ведущих клиник пластической и эстетической хирургии Германии Proaesthetic в городе Гейдельберг.</p>
+
+                        			<p class="h6 text-up"><b>Директор центра: <mark>Левицкий Роман Миронович</mark></b></p>
+
+                        			<p>Единственный из украинских хирургов закончил двухлетнюю клиническую ординатуру на кафедре пластической и эстетической хирургии Санкт-Петербургской медицинской академии последипломного образования, получив таким образом, базовое образование по пластической и эстетической хирургии.</p>
+                        			<p>Хирург высшей категории с 20-летним опытом работы в пластической хирургии, выполнил 16 000 успешных операций из которых 6 000 по увеличению груди. Единственный из украинских хирургов, имеющий право выполнять пластические операции не только в нашей стране, но и за рубежом.</p>
+                        		</div>
+                        		<div class="aside-right medium-4 medium-offset-1 columns">
+                        			<div class="about-gallery">
+                        				<div class="row">
+                        					<div class="columns">
+                        						<div class="gallery-card">
+                        							<img src="img/aboutCompany/item-1.png" alt="">
+                        							<p class="description h6">Киевский областной центр <br>пластической хирургии</p>
+                        						</div>
+                        					</div>
+                        				</div>
+                        				<div class="row">
+                        					<div class="medium-7 columns">
+                        						<div class="gallery-card">
+                        							<img src="img/aboutCompany/item-2.png" alt="">
+                        						</div>
+                        					</div>
+                        					<div class="medium-5 columns">
+                        						<div class="gallery-card">
+                        							<img src="img/aboutCompany/item-3.png" alt="">
+                        						</div>
+                        					</div>
+                        				</div>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </section>
+
+                    <section class="section-about-doctor post" id="aboutDoctor" style="background-image: url(img/aboutDoctor/doctor-bg.jpg)" >
+                        <div class="section-inner">
+                        	<div class="row">
+                        		<div class="medium-8 large-6 medium-offset-4 large-offset-6 columns dark">
+                                    <div class="doctor-decription">
+                            			<h4 class="title" >Пластический хирург сертифицированный в Германии, России и Украине </h4>
+                            			<p><b>Левицкий Роман Миронович</b> — хирург высшей категории с <b>20-летним опытом работы</b> в пластической хирургии, провел <b>16 000 успешных операций</b>. Закончил двухлетнюю клиническую ординатуру на кафедре пластической и эстетической хирургии Санкт-Петербургской медицинской академии последипломного образования.</p>
+                                        <p>Сертифицирован для работы в ближайшем зарубежье и европейских странах. Стажировался и практиковался в Бразилии, Германии, Франции, Америке. Роман Миронович - автор многочисленных статей и работ по пластической хирургии, представленных в специализированных изданиях. Разработал ряд малотравматичных техник, лично проводит все операции по маммопластике и ринопластике. В 2013 году доктор Левицкий <b>сдал квалификационный экзамен в Германии</b>, подтвердил медицинское образование и приглашен на работу ведущим пластическим хирургом в немецкую клинику пластической хирургии — Proaesthetic, город Гейдельберг. </p>
+                                        <p>2015 году вернулся в Украину для помощи пострадавшим в АТО.</p>
+                                    </div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </section>
+
+                    <section class="section-testimonials bg-pale-pink">
+                        <div class="section-inner post">
+                        	<div class="row">
+                        		<div class="section-header columns">
+                        			<h3 class="section-title">Отзывы пациенток</h3>
+                        		</div>
+                        	</div>
+                        	<div class="row">
+                        		<div class="testimonials-slider slider">
+
+                        			<div class="slide-item">
+                        				<div class="media-card">
+                        					<div class="media-thumbnail medium-2 columns">
+                        						<img src="img/media/item-1.png" alt="">
+                        					</div>
+                        					<div class="media-body medium-10 columns">
+                        						<em>“Сделала операцию по увеличению груди имплантами у Левицкого Романа
+                                                 Мироновича. Хотела небольшой размер, чтобы было как можно естественнее :) Роман Миронович настоял на размере 315мл, и я осталась очень довольна! Прекрасная форма, очень эстетично и аккуратно, хотя прошло всего две недели после операции. Никаких жалоб, Руки золотые! К пациенту отношение очень внимательное. Огромное спасибо также девочкам Наташе и Маргарите за внимание и деликатный подход!”</em>
+                        						<p class="media-info" >Александра, <span>21.01.2016</span></p>
+                        					</div>
+                        				</div>
+                        			</div>
+
+                                    <div class="slide-item">
+                                        <div class="media-card">
+                                            <div class="media-thumbnail medium-2 columns">
+                                                <img src="img/media/item-2.png" alt="">
+                                            </div>
+                                            <div class="media-body medium-10 columns">
+                                                <em>“Я пів року назад зробила операцію зі збільшення грудей у Левицкого Романа Мироновича і хочу виразити велику вдячность цьому хірургу від Бога. Песонал дуже піклувался за мною. Перебуванням в клініці задоволенна.<br> Результат на 5 з 5. Рекомендую. ”</em>
+                                                <p class="media-info" >Инна, <span>12.02.2016</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slide-item">
+                                        <div class="media-card">
+                                            <div class="media-thumbnail medium-2 columns">
+                                                <img src="img/media/item-3.png" alt="">
+                                            </div>
+                                            <div class="media-body medium-10 columns">
+                                                <em>“Мне была сделана операция по эндопротезированию молочных желез.<br>
+                                                Я очень долго решалась на эту операцию и выбирала хирурга и очень рада
+                                                что не ошиблась. Достаточно сложная операция, когда импланты вставлялись через подмышки, Романом Мироновичем была проведена мастерски. Не возникло никаких осложнений и после операции. Я осталась очень довольна результатом.”</em>
+                                                <p class="media-info" >Ольга, <span>16.03.2016</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                        		</div>
+                        	</div>
+                            
+                        </div>
+                    </section>
+
+                    <section class="section-services post" id="services" >
+                    	<div class="row">
+                    		<div class="section-header columns">
+                    			<h3 class="section-title">НАШИ УСЛУГИ</h3>
+                    		</div>
+                    	</div>
+                    	<div class="services-list row">
+                    		<div class="medium-6 columns">
+                    			<div class="service-card main-service-card" style="background-image: url(img/services/item-1.png)" >
+                                    <button class="icon-close" >&times;</button>
+                    				<div class="inner">
+                    					<h6 class="title"><a href="#link">Увеличение груди</a></h6>
+                                        <div class="description">
+                    					   <p>Увеличение груди, бесспорно, наиболее востребованная процедура в эстетической хирургии. Как правило, успешность операции оценивается пациентками по двум факторам: 1) отсутствие следов хирургического вмешательства; 2) естественный вид. <br> Добиться этого можно выбрав оптимальный вид и наполнитель имплантата для увеличения груди, а иногда может дополнительно потребоваться корректирующая операция. Для многих женщин предпочтительным является размещение протеза под грудной мышцей.</p>
+                                        </div>
+                    				</div>
+                    			</div>
+                    		</div>
+                    		<div class="medium-6 columns">
+                    			<div class="row">
+                    				<div class="medium-6 columns">
+                    					<div class="service-card" style="background-image: url(img/services/item-2.png)" >
+                                            <button class="icon-close" >&times;</button>
+		                    				<div class="inner">
+		                    					<h6 class="title"><a href="#link">Уменьшение груди</a></h6>
+                                                <div class="description">
+                                                	<p>Операция по уменьшению грудивыполняется не только по эстетическим но и и по медицинским показаниям.Чрезмерное увеличение молочных желез отрицательно сказывается на общем здоровье женщины, становиться причиной деформации позвоночника, хронической мастопатии и других осложнений.</p>
+                                                    <p>Типы редукционной маммопластики:<br>
+                                                    Уменьшение молочной железы путем удаления излишков кожи и перемещением сосково-ареолярного комплекса.<br>
+                                                    Уменьшение молочной железы путем резекции (частичном удалении) внутренней ткани, c сохранением сосково-ареолярного комплекса.<br>
+                                                    Уменьшение молочной железы путем полного удаления внутренней ткани (при гигантомастии).</p>
+                                                </div>
+		                    				</div>
+		                    			</div>
+                    				</div>
+
+                    				<div class="medium-6 columns">
+                    					<div class="service-card" style="background-image: url(img/services/item-3.png)" >
+                                            <button class="icon-close" >&times;</button>
+		                    				<div class="inner">
+		                    					<h6 class="title"><a href="#link">Подтяжка груди</a></h6>
+                                                <div class="description">
+                                                    <p>Подтяжка грудей (мастопексия)—операциякоторая позволяет восстановить форму груди или сделать ее более привлекательной и изящной.</p>
+                                                    <p>Со временем молочные железы уменьшаются в размерах, кожа растягивается а кормление грудью могут привести к тому что грудь может иметь прежний размер, но при этом провисание молочных желез не отличается внешней привлекательностью.</p>
+                                                    <p>Показанием для коррекции груди является наличиемастоптоза—опущения тканей молочной железы различной степени выраженности.  Чаще всего птоз характеризуется уплощением и распластанностью верхнего полюса груди, с опущеннымсосково-ареолярнымкомплексом. Железа при этом нависает над субмаммарной. складкой. Железа при этом нависает над субмаммарной складкой.</p>
+                                                    <p>Главной задачей подтяжки молочных желез является не только перемещение в более высокое положение сосково-ареолярных комплексов, но и создание той формы, которая наиболее подходит к данному типу телосложения пациентки.</p>
+                                                </div>
+		                    				</div>
+		                    			</div>
+                    				</div>
+                    			</div>
+                    			<div class="row">
+                    				<div class="medium-6 columns">
+                    					<div class="service-card" style="background-image: url(img/services/item-4.png)" >
+                                            <button class="icon-close" >&times;</button>
+		                    				<div class="inner">
+		                    					<h6 class="title"><a href="#link">Коррекция формы и размера ареолы</a></h6>
+                                                <div class="description">
+                                                    <p>Коррекция ареолы – это пластическая операция, цель которой улучшение внешнего вида груди, коррекция втянутых, широких, или слишком длинных сосков или уменьшение слишком больших ареол.</p>
+                                                    <p>Операция исправит асимметрию и деформация сосков в результате операций, процесса естественного старения.<br>
+                                                    Как правило, операция проводится одновременно с пластикой или подтяжкой груди и позволяет придать ареоле желаемую форму.</p>
+                                                    <p>Не влияет на функции молочной железы, а так же не снижают чувствительность.</p>
+                                                </div>
+		                    				</div>
+		                    			</div>
+                    				</div>
+
+                    				<div class="medium-6 columns">
+                    					<div class="service-card" style="background-image: url(img/services/item-5.png)" >
+                                            <button class="icon-close" >&times;</button>
+		                    				<div class="inner">
+		                    					<h6 class="title"><a href="#link">ВОСТАНОВЛЕНИЕ МОЛОЧНЫХ ЖЕЛЕЗ</a></h6>
+                                                <div class="description">
+                                                    <p>Реконструктивные операции, которые проводятнаши специалисты по пластической хирургии, позволяют полностью восстановить форму молочной железы.Пластические операциипо реконструкции возможны с использованием как искусственных имплантов, так и тканей самой пациентки. В некоторых случаях мы предлагаем женщинам комбинированную реконструкцию с привлечением обеих методик. </p>
+                                                    <p>Реконструкция молочной железы при помощи силиконовых имплантатовНаиболее подходящие показания для данного метода: отсутствие проведения лучевой терапии, небольшой размер груди и небольшой вес женщины.</p>
+                                                    <p>Современные медицинские методы и средства позволяют создать грудь, имеющую форму и вид, мало чем отличающиеся от настоящих. Часто реконструкция возможна сразу после удаления молочной железы (мастэктомии), так что пациент просыпается после операции с уже восстановленной формой груди.</p>
+                                                    <p>Однако следует заметить, что одновременное проведение мастэктомии и реконструкции молочной железы — непростая процедура и ее проведение возможно не во всех случаях. Решение о проведении такой операции принимает хирург на основании клинической картины и дополнительного обследования пациента</p>
+                                                </div>
+		                    				</div>
+		                    			</div>
+                    				</div>
+                    			</div>
+                    		</div>
+                    	</div>
+                    </section>
+
+                    <section class="section-result bg-pale-pink post">
+                    	<div class="row">
+                    		<div class="section-header columns">
+                    			<h3 class="section-title">ФОТО ДО И ПОСЛЕ увеличения груди</h3>
+                    		</div>
+                    	</div>
+                    	<div class="row">
+                         <div class="result-slider slider ">
+                             <div class="slide-item">
+                                <div class="slide-inner">
+                                    <div class="twentytwenty-container">
+                                        <img src="img/result/1_1.jpg" alt="">
+                                        <img src="img/result/1_2.jpg" alt="">
+                                    </div>
+                                </div>
+                             </div>
+
+                             <div class="slide-item">
+                                <div class="slide-inner">
+                                    <div class="twentytwenty-container">
+                                        <img src="img/result/2_1.jpg" alt="">
+                                        <img src="img/result/2_2.jpg" alt="">
+                                    </div>
+                                </div>
+                             </div>
+
+                             <div class="slide-item">
+                                <div class="slide-inner">
+                                    <div class="twentytwenty-container">
+                                        <img src="img/result/3_1.jpg" alt="">
+                                        <img src="img/result/3_2.jpg" alt="">
+                                    </div>
+                                </div>
+                             </div>
+
+                             <div class="slide-item">
+                                <div class="slide-inner">
+                                    <div class="twentytwenty-container">
+                                        <img src="img/result/4_1.jpg" alt="">
+                                        <img src="img/result/4_2.jpg" alt="">
+                                    </div>
+                                </div>
+                             </div>
+
+                             <div class="slide-item">
+                                <div class="slide-inner">
+                                    <div class="twentytwenty-container">
+                                        <img src="img/result/5_1.jpg" alt="">
+                                        <img src="img/result/5_2.jpg" alt="">
+                                    </div>
+                                </div>
+                             </div>
+
+                             <div class="slide-item">
+                                <div class="slide-inner">
+                                    <div class="twentytwenty-container">
+                                        <img src="img/result/6_1.jpg" alt="">
+                                        <img src="img/result/6_2.jpg" alt="">
+                                    </div>
+                                </div>
+                             </div>
+
+                             <div class="slide-item">
+                                <div class="slide-inner">
+                                    <div class="twentytwenty-container">
+                                        <img src="img/result/7_1.jpg" alt="">
+                                        <img src="img/result/7_2.jpg" alt="">
+                                    </div>
+                                </div>
+                             </div>
+
+                             <div class="slide-item">
+                                <div class="slide-inner">
+                                    <div class="twentytwenty-container">
+                                        <img src="img/result/8_1.jpg" alt="">
+                                        <img src="img/result/8_2.jpg" alt="">
+                                    </div>
+                                </div>
+                             </div>
+                         </div>  
+                        </div>
+                    </section>
+
+                    <section class="section-faq post">
+                    	<div class="section-inner">
+	                    	<div class="row">
+	                    		<div class="section-header columns">
+	                    			<h3 class="section-title">Часто задаваемые вопросы</h3>
+	                    		</div>
+	                    	</div>
+	                    	<div class="row">
+	                    		<div class="panel-group" id="accordion">
+	                                <div class="panel panel-default">
+	                                    <div class="panel-heading">
+	                                        <h4 class="panel-title">
+	                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false">
+	                                                <span class="icon-plus-circled"></span>
+	                                                Сколько стоит увеличить грудь?
+	                                            </a>
+	                                        </h4>
+	                                    </div>
+	                                    <div id="collapseOne" class="panel-collapse collapse">
+	                                      <div class="panel-body">
+	                                        Увеличение груди в нашей клинике в Киеве стоит 60 000 грн. В эту стоимость включено все необходимое - операция, импланты и анестезия. Никаких дополнительных платежей или переплат.
+	                                      </div>
+	                                    </div>
+	                                </div>
+	                                <div class="panel panel-default">
+	                                    <div class="panel-heading">
+	                                        <h4 class="panel-title">
+	                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false">
+	                                                <span class="icon-plus-circled"></span>
+	                                                Как записаться на консультацию?
+	                                            </a>
+	                                        </h4>
+	                                    </div>
+	                                    <div id="collapseTwo" class="panel-collapse collapse">
+	                                        <div class="panel-body">
+	                                            Оставьте свой номер в форме ниже или позвоните нам по номеру <a href="tel:+380675671338">+38 (067) 567 13 38</a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="panel panel-default">
+	                                    <div class="panel-heading">
+	                                        <h4 class="panel-title">
+	                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false">
+	                                                <span class="icon-plus-circled"></span>
+	                                                Я не из Киева, но хотела бы прооперироваться именно у доктора Левицкого, возможно ли это?
+	                                            </a>
+	                                        </h4>
+	                                    </div>
+	                                    <div id="collapseThree" class="panel-collapse collapse">
+	                                        <div class="panel-body">
+	                                            Конечно, в наличии доступные палаты на 2-3 персоны и комфортные одноместные палаты, будем рады вас видеть на период обследования, лечения или весь период реабилитации. Если же долгосрочное пребывание в клинике не входит в Ваши планы, забронируем номер в гостиницах неподалёку.
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="panel panel-default">
+	                                    <div class="panel-heading">
+	                                        <h4 class="panel-title">
+	                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false">
+	                                                <span class="icon-plus-circled"></span>
+	                                                Какой материал используется при увеличении груди? Насколько это безопасно для здоровья женщины?
+	                                            </a>
+	                                        </h4>
+	                                    </div>
+	                                    <div id="collapseFour" class="panel-collapse collapse">
+	                                        <div class="panel-body">
+	                                            Имплантаты для увеличения молочных желез изготавливаются из силиконовых оболочки и наполнителя. Все наши пациентки с увеличенной грудью проблем после родов при кормлении не имели.
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="panel panel-default">
+	                                    <div class="panel-heading">
+	                                        <h4 class="panel-title">
+	                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false">
+	                                                <span class="icon-plus-circled"></span>
+	                                                Когда грудь приобретет естественную форму?
+	                                            </a>
+	                                        </h4>
+	                                    </div>
+	                                    <div id="collapseFive" class="panel-collapse collapse">
+	                                        <div class="panel-body">
+	                                             Вы должны быть готовы к тому что первые 3 месяца грудь будет твердой. После полугода ткани становится мягкими, а форма естественной.
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="panel panel-default">
+	                                    <div class="panel-heading">
+	                                        <h4 class="panel-title">
+	                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false">
+	                                                <span class="icon-plus-circled"></span>
+	                                                Сколько длиться период реабилитации после увеличения грудей, и как часто нужно ходить на осмотры?
+	                                            </a>
+	                                        </h4>
+	                                    </div>
+	                                    <div id="collapseSix" class="panel-collapse collapse">
+	                                        <div class="panel-body">
+	                                            Все ограничения снимаются через месяц. Желательно приходить на плановые осмотры через месяц, три месяца, полгода, год. 
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="panel panel-default">
+	                                    <div class="panel-heading">
+	                                        <h4 class="panel-title">
+	                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false">
+	                                                <span class="icon-plus-circled"></span>
+	                                                Я хочу сделать грудь, когда лучше делать - до родов или после? И нужно ли после увеличения груди в течение жизни менять импланты?
+	                                            </a>
+	                                        </h4>
+	                                    </div>
+	                                    <div id="collapseSeven" class="panel-collapse collapse">
+	                                        <div class="panel-body">
+	                                            Правильно проведенная операция увеличения груди не мешает беременности, лактации или кормлению. Во время беременности грудь с имплантатом тоже несколько увеличится, а после примет обычные формы. Иногда, в результате кормления, грудь может поменять свою форму и выглядеть менее эстетично. Импланты на такое поведение не влияют. В таком случае будет необходима коррекция груди.
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="panel panel-default">
+	                                    <div class="panel-heading">
+	                                        <h4 class="panel-title">
+	                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false">
+	                                                <span class="icon-plus-circled"></span>
+	                                                Я хочу увеличить грудь, но у меня небольшая асимметрия. Хотела бы узнать, при увеличении она остается, или же как-то можно исправить? С помощью подтяжки?
+	                                            </a>
+	                                        </h4>
+	                                    </div>
+	                                    <div id="collapseEight" class="panel-collapse collapse">
+	                                        <div class="panel-body">
+	                                            Можем исправить с помощью подтяжки или установки имплантов разного объема. Определить объем операции по устранению асимметрии груди можно только на очной консультации.
+	                                        </div>
+	                                    </div>
+	                                </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false">
+                                                    <span class="icon-plus-circled"></span>
+                                                    Видны ли швы после операции по увеличению груди? Можно ли сделать шов незаметным?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseNine" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                При увеличивающей маммопластике используют три способа установки имплантов и в каждом из них рубчики скрыты от постороннего взгляда: Субмаммарный, маленький шов в 3-4 см прячется в складку под грудью. Периареолярный, шов полукругом по нижней части соска, маскируется ареолой. Трансаксиллярный, установка анатомического импланта через подмышку, по авторской методике доктора Левицкого. Сложный в исполнении способ, но совсем не оставляет швов в области груди и сокращает период восстановления.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false">
+                                                    <span class="icon-plus-circled"></span>
+                                                    Сколько длится операция по увеличению груди?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTen" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                Продолжительность процедуры зависит от способа установки импланта и как правило занимает 30-60 минут. Более сложный, эндоскопический, метод установки через подмышечную впадину требует полутора часа времени.
+                                            </div>
+                                        </div>
+                                    </div>
+	                            </div>
+	                    	</div>
+                    		
+                    	</div>
+                    </section>
+
+                    <section class="section-questions bg-pale-pink post">
+                        <div class="section-inner">
+                            <div class="row">
+                                <div class="section-header columns">
+                                    <h3 class="section-title">Вопросы ПАЦИЕНток</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="questions-slider slider">
+
+                                    <div class="slide-item">
+                                        <div class="media-card">
+                                            <div class="medium-10 columns">
+                                                <div class="row">
+                                                    <div class="media-thumbnail medium-2 columns">
+                                                        <img src="img/media/item-1.png" alt="Александра">
+                                                    </div>
+                                                    <div class="media-body medium-10 columns">
+                                                        <em>“Здравствуйте! Скажите, интересует какие силиконовые импланты вы используете при коррекции груди и их цена.”</em>
+                                                        <p class="media-info" >Александра, <span>24.01.2016</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="media-card">
+                                            <div class="medium-9 medium-offset-3 columns">
+                                                <div class="row">
+                                                    <div class="media-body medium-10 columns">
+                                                        <p><em>Здравствуйте. Мы используем все виды силиконовых имплантов, сертифицированных в Украине. Импланты подбираться в каждом случае индивидуально, на консультации доктор поможет вариант подходящий именно вам.</em></p>
+                                                        <p><em>Стоимость операции по увеличению груди, в нашей клинике, фиксированная — 60000 грн., в цену входит стоимость имплантов. </em></p>
+                                                        <p class="media-info text-right" > Левицкий Роман Миронович </p>
+                                                    </div>
+                                                    <div class="media-thumbnail medium-2 columns">
+                                                        <img src="img/media/doctor.png" alt="Левицкий Роман Миронович">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slide-item">
+                                        <div class="media-card">
+                                            <div class="medium-10 columns">
+                                                <div class="row">
+                                                    <div class="media-thumbnail medium-2 columns">
+                                                        <img src="img/media/item-2.png" alt="Анна">
+                                                    </div>
+                                                    <div class="media-body medium-10 columns">
+                                                        <em>“Здравствуйте. Хочу увеличить грудь, после вторых родов все плачевно(((<br>
+                                                        Живу не в Киеве, хотела приехать на увеличение грудей. Как долго длиться сдача анализов и назначение операции в определённый день? ”</em>
+                                                        <p class="media-info" >Анна, <span>04.02.2016</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="media-card">
+                                            <div class="medium-9 medium-offset-3 columns">
+                                                <div class="row">
+                                                    <div class="media-body medium-10 columns">
+                                                        <em>Здравствуйте. Иногородние приезжают к нам в день операции утром натощак, предварительно согласовав дату по телефону. После сдачи анализов и получения результатов (через 2-3 часа), если данные в норме и нет противопоказаний, операция проводиться в тот же день.</em>
+                                                        <p class="media-info text-right" > Левицкий Роман Миронович </p>
+                                                    </div>
+                                                    <div class="media-thumbnail medium-2 columns">
+                                                        <img src="img/media/doctor.png" alt="Левицкий Роман Миронович">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slide-item">
+                                        <div class="media-card">
+                                            <div class="medium-10 columns">
+                                                <div class="row">
+                                                    <div class="media-thumbnail medium-2 columns">
+                                                        <img src="img/media/item-3.png" alt="Валентина">
+                                                    </div>
+                                                    <div class="media-body medium-10 columns">
+                                                        <em>“Добрый день. Делаете ли пластическую операцию по увеличению груди своей жировой тканью(вроде как процедура называется липофилинг)?”</em>
+                                                        <p class="media-info" >Валентина, <span>12.03.2016</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="media-card">
+                                            <div class="medium-9 medium-offset-3 columns">
+                                                <div class="row">
+                                                    <div class="media-body medium-10 columns">
+                                                        <em>Здравствуйте. Только увеличение груди с помощью имплантов обеспечивает желанный результат, грудь идеальной формы и размера. Пересаженный жир в грудь рассасывается в течение 3-6 месяцев, поэтому липофилинг груди я не делаю.</em>
+                                                        <p class="media-info text-right" > Левицкий Роман Миронович </p>
+                                                    </div>
+                                                    <div class="media-thumbnail medium-2 columns">
+                                                        <img src="img/media/doctor.png" alt="Левицкий Роман Миронович">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slide-item">
+                                        <div class="media-card">
+                                            <div class="medium-10 columns">
+                                                <div class="row">
+                                                    <div class="media-thumbnail medium-2 columns">
+                                                        <img src="img/media/item-4.png" alt="Анастасия">
+                                                    </div>
+                                                    <div class="media-body medium-10 columns">
+                                                        <em>“После рождения ребенка решилась на пластическую операцию по увеличению груди. Дело в том, что я очень опасаюсь последствий, хотя со здоровьем у меня проблем серьезных нет, но я хотела бы знать не вредны ли силиконовые протезы, можно ли кормить грудью, как часто нужно наблюдаться у врачей после операции? Я живу в маленьком городе, где нет хороших специалистов. Буду очень благодарна за ответ. Заранее спасибо!”</em>
+                                                        <p class="media-info" >Анастасия, <span>05.04.2016</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="media-card">
+                                            <div class="medium-9 medium-offset-3 columns">
+                                                <div class="row">
+                                                    <div class="media-body medium-10 columns">
+                                                        <em>Здравствуйте. Увеличивающую пластику груди силиконовыми имплантатами я делаю более 20 лет. За все это время сменилось несколько поколений имплантатов, качество постоянно растет и сейчас безопасность такой процедуры не вызывает никаких сомнений. </em>
+                                                        <p class="media-info text-right" > Левицкий Роман Миронович </p>
+                                                    </div>
+                                                    <div class="media-thumbnail medium-2 columns">
+                                                        <img src="img/media/doctor.png" alt="Левицкий Роман Миронович">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slide-item">
+                                        <div class="media-card">
+                                            <div class="medium-10 columns">
+                                                <div class="row">
+                                                    <div class="media-thumbnail medium-2 columns">
+                                                        <img src="img/media/item-5.png" alt="Валерия">
+                                                    </div>
+                                                    <div class="media-body medium-10 columns">
+                                                        <em>“Я хочу увеличить грудь, но у меня небольшая асимметрия. Хотела бы узнать, при увеличении она остается, или же как-то можно исправить? С помощью подтяжки?”</em>
+                                                        <p class="media-info" >Валерия, <span>08.05.2016</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="media-card">
+                                            <div class="medium-9 medium-offset-3 columns">
+                                                <div class="row">
+                                                    <div class="media-body medium-10 columns">
+                                                        <em>Здравствуйте. Можно исправить. С помощью подтяжки и/или с помощью установки имплантов разного объема. Определить объем операции по устранению асимметрии груди можно только на очной консультации.</em>
+                                                        <p class="media-info text-right" > Левицкий Роман Миронович </p>
+                                                    </div>
+                                                    <div class="media-thumbnail medium-2 columns">
+                                                        <img src="img/media/doctor.png" alt="Левицкий Роман Миронович">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-feedback overlay dark" style="background-image: url(img/feedback/feedback-bg.png)" >
+                    	<div class="section-wrap overlay-inner">
+                            <div class="section-inner post">
+    	                    	<div class="row">
+    	                    		<div class="section-header columns">
+    	                    			<h3 class="section-title">Еще сомневаетесь или остались вопросы?</h3>
+    	                    			<p class="section-subtitle">Задайте вопрос специалисту!</p>
+    	                    		</div>
+    	                    	</div>
+    	                    	<div class="row">
+    	                    		<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbybcDxWBeo_pYtQfErnvFmXKMcdA8iyypvqlM8hpS6W-vYsdBIA/exec" class="form-feedback medium-6 medium-offset-3 columns" >
+    	                    			<div class="row">
+    	                    				<div class="medium-6 columns">
+                                                <fieldset class="pure-group">
+                                                    <div class="input-group">
+        	                    					  <input class="tel" type="tel" name="tel" id="tel" placeholder="Ваш телефон*" required>
+                                                    </div>
+                                                </fieldset>
+    	                    				</div>
+    	                    				<div class="medium-6 columns">
+                                                <fieldset class="pure-group">
+                                                    <div class="input-group">
+        	                    					  <button class="btn btn-lg btn-fluid">ЗАДАТЬ ВОПРОС</button>
+                                                    </div>
+                                                </fieldset>
+    	                    				</div>
+    	                    			</div>
+    	                    		</form>
+
+                                    <div style="display:none;" id="thankyou_message" class="medium-6 medium-offset-3 columns">
+                                        <h2>CПАСИБО ЗА ВАШУ ЗАЯВКУ</h2>
+                                        <p>Мы свяжемся с Вами в ближайшее время</p>
+                                    </div>
+    	                    	</div>
+                            </div>
+                    	</div>
+                    </section>
+
+                    <section class="section-contact bg-gray" id="contacts" >
+                    	<div class="section-inner post">
+	                    	<div class="row">
+	                    		<div class="medium-6 columns">
+                                    <div class="maps-box" style="overflow: hidden;" >
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1509.9112503637034!2d30.467972806978075!3d50.471680250111966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f45c7430b72eb42!2z0JrQuNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLQvdCw0Y8g0LrQu9C40L3QuNGH0LXRgdC60LDRjyDQsdC-0LvRjNC90LjRhtCw!5e0!3m2!1sru!2sua!4v1486841125170" width="100%" height="500" frameborder="0" style="border:0; margin-top: -150px;" allowfullscreen></iframe>
+                                    </div>         
+                                </div>
+	                    		<div class="medium-6 columns">
+	                    			<div class="section-header">
+	                    				<h3 class="section-title">НАШИ Контакты</h3>
+	                    				<p class="section-description" >Kiev regional clinical hospital surgery dep. building ground floor</p>
+	                    			</div>
+
+	                    			<ul class="contact-list">
+	                    				<li>
+	                    					<div class="list-icon">
+	                    						<img src="img/icons/icon-location.png" alt="location">
+	                    					</div>
+	                    					<ul class="list-description">
+	                    						<li>Адрес: 04107, г. Киев ул. Баггоутовская 1<br>Киевская областная клиническая больница</li>
+	                    					</ul>
+	                    				</li>
+
+	                    				<li>
+	                    					<div class="list-icon">
+	                    						<img src="img/icons/icon-phone.png" alt="phone">
+	                    					</div>
+	                    					<ul class="list-description">
+	                    						<li><a href="tel:+380675634377">+38(067) 563 43 77</a></li>
+	                    					</ul>
+	                    				</li>
+
+	                    				<li>
+	                    					<div class="list-icon">
+	                    						<img src="img/icons/icon-mail.png" alt="mail">
+	                    					</div>
+	                    					<ul class="list-description">
+	                    						<li>Email: <a href="mailto:mail@plasticsurgery.kiev.ua"> mail@plasticsurgery.kiev.ua</a></li>
+	                    					</ul>
+	                    				</li>
+
+	                    				<li>
+	                    					<div class="list-icon">
+	                    						<img src="img/icons/icon-time.png" alt="time">
+	                    					</div>
+	                    					<ul class="list-description">
+	                                            <li>будни с 10.00 до 19.00</li>
+	                                            <li>суббота с 10.00 до 15.00</li>
+	                                            <li>воскресенье — выходной</li>
+	                    					</ul>
+	                    				</li>
+	                    			</ul>
+	                    		</div>
+	                    	</div>
+                    		
+                    	</div>
+                    </section>
+
+                </main>
+            </div>
+            <footer class="footer-wrap">
+                <div class="row">
+                	<a href="#top" class="gotop" ><i class="icon-up-open" ></i></a>
+
+                    <div class="aside-left medium-6 large-4 columns ">
+                        <div class="footer-logo">
+                            <p class="logo-description">КИЕВСКИЙ ОБЛАСТНОЙ ЦЕНТР ПЛАСТИЧЕСКОЙ ХИРУРГИИ</p>
+                        </div>
+                    </div>
+                    <div class="aside-right medium-6 large-8 columns ">
+                        <div class="copyright-box">
+                            <p>Copyright ©2017 all rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/form-submission-handler.js" ></script>
+        <script src="js/libs.min.js" ></script>
+        <script src="js/viewportchecker.js" ></script>
+        <script src="js/main.js" ></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112922187-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-112922187-1');
+        </script>
+    </body>
+</html>
