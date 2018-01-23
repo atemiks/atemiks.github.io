@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>GSS / calc</title>
+
+        <link rel="stylesheet" href="css/foundation-grid.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <aside class="off-canvas-sidebar" >
+            <div class="off-canvas-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calc.html">CRO Calculator</a></li>
+                    <li><a href="article.html">What is split testing?</a></li>
+                    <li><a href="article.html">What is Conversion Rate Optimization?</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="wrapper off-canvas-wrap">
+            <a href="#link" class="close-off-canvas"></a>
+
+            <div class="content-wrap">
+                <header class="header-box post">
+                    <div class="row">
+                        <div class="header-logo">
+                            <a href="index.html"><img src="img/logo-header.png" alt="logo"></a>
+                        </div>
+                        <ul class="header-actions-list">
+                            <li><a href="index.html#section-buy" class="btn btn-danger btn-round" >BUY THE BOOK</a></li>
+                            <li>
+                                <button class="off-canvas-toggle">
+                                    <a href="#link"><span class="icon" ></span></a>
+                                </button>
+                            </li>
+                        </ul>
+                        <nav class="header-menu">
+                            <ul class="header-menu-list">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active" ><a href="calc.html">CRO Calculator</a></li>
+                                <li><a href="article.html">What is split testing?</a></li>
+                                <li><a href="article.html">What is Conversion Rate Optimization?</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+
+                <main>
+                    <section class="section-calc post">
+                        <div class="row">
+                            <div class="section-header medium-10 medium-offset-1 column text-center">
+                                <h2 class="section-title">Conversion rate optimization calculator</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="section-description medium-8 medium-offset-2 column">
+                                <p>Enter your website statistics in to the fields below to discover how a small increase in your website conversion rate can lead to a significant increase in revenue and sales without increasing the number of visitors to your site.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="calc-box medium-10 medium-offset-1 column">
+                                <div class="input-group row" >
+                                    <div class="medium-8 medium-offset-2 large-6 large-offset-3">
+                                        <label class="columns" for="">What is your average number of visitors?<br> (per month)</label>
+                                        <div class="small-10 columns">
+                                            <input type="number"  min="0" value="0">
+                                        </div>
+                                        <div class="small-2 columns"></div>
+                                    </div>
+                                </div>
+
+                                <div class="input-group input-percent row"  >
+                                    <div class="medium-8 medium-offset-2 large-6 large-offset-3">
+                                        <label class="columns" for="">What is your average website conversion rate?</label>
+                                        <div class="small-10 columns">
+                                            <input type="number" min="0" value="0">
+                                        </div>
+                                        <div class="small-2 columns">
+                                            <span class="symbol" >%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="input-group input-cost row">
+                                    <div class="medium-8 medium-offset-2 large-6 large-offset-3">
+                                        <label class="columns" for="">What is your average transaction value? (average checkout, basket, or sales value)</label>
+                                        <div class="small-10 columns end">
+                                            <span class="symbol" >$</span>
+                                            <input type="number" value="0" >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="input-group input-range row">
+                                    <div class="medium-8 medium-offset-2 large-6 large-offset-3">
+                                        <label class="columns" for="">What average website conversion rate would you like?</label>
+                                        <div class="small-10 columns">
+                                            <input type="range" name="averageWebsiteName" id="averageWebsiteId" value="0" min="0" max="100" step="1" oninput="averageWebsiteOutputId.value = averageWebsiteId.value">
+                                        </div>
+                                        <div class="small-2 columns">
+                                            <span class="symbol">
+                                                <output name="averageWebsiteOutputName" id="averageWebsiteOutputId">0</output>%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#calc-result-box" class="btn btn-show-result btn-success btn-lg btn-fluid" >See your result</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="calc-result-box" id="calc-result-box">
+                        <div class="row">
+                            <div class="section-header medium-10 medium-offset-1">
+                                <p>Buy the book</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-8 medium-offset-2 columns">
+                                <table class="calc-result-table" >
+                                    <tr>
+                                        <th></th>
+                                        <th>Old Website</th>
+                                        <th>Optimized Website</th>
+                                        <th>Incremental Benefit</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Your visitors</td>
+                                        <td>5500</td>
+                                        <td>5500</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Website conversions</td>
+                                        <td>2%</td>
+                                        <td>2.36%</td>
+                                        <td>+0.36%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Number of sales</td>
+                                        <td>110</td>
+                                        <td>130</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Revenue</td>
+                                        <td>$ 1100</td>
+                                        <td>$ 1298</td>
+                                        <td>$ 198</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Revenue per visitor</td>
+                                        <td>$ 0.2</td>
+                                        <td>$ 0.24</td>
+                                        <td>+18%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visitors per transaction</td>
+                                        <td>50</td>
+                                        <td>42.37</td>
+                                        <td>-15.25%</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="medium-10 medium-offset-1 columns text-center">
+                                <a href="index.html#section-buy" class="btn-outline" >Buy the book</a>
+                            </div>
+                        </div>
+                        
+                    </section>
+                </main>
+            </div>
+            <footer class="footer-wrap dark">
+                <div class="footer-inner row">
+                    <div class="footer-logo medium-2 columns ">
+                        <a href="index.html"><img src="img/logo-footer.png" alt="GSS"></a>
+                    </div>
+
+                    <nav class="footer-menu medium-8 columns ">
+                        <ul class="footer-menu-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="calc.html">CRO Calculator</a></li>
+                            <li><a href="article.html">What is split testing?</a></li>
+                            <li><a href="article.html">What is Conversion Rate Optimization?</a></li>
+                            <li><a href="#link">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class="footer-actions medium-2 columns text-right">
+                        <li>
+                            <a href="index.html#section-buy" class="btn btn-danger btn-round" >BUY THE BOOK</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="footer-statusbar medium-12 text-center">
+                        <p>Rated by 42 users to 4.8 / 5</p>
+                        <p>&copy; <a href="#link">Mountain Land</a>. All rights reserved</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/libs.min.js" ></script>
+        <script src="js/viewportchecker.js" ></script>
+        <script src="js/main.js" ></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112922187-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-112922187-1');
+        </script>
+    </body>
+</html>
