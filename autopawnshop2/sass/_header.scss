@@ -1,0 +1,20 @@
+.header-box {
+	display: none;
+	padding: 15px 0;
+	border-bottom: 3px solid #ebebeb;
+	@media (max-width: 640px) {
+		display: block;
+	}
+
+	.header-logo-box {
+		width: 110px;
+	}
+
+	.header-contact {
+		padding: 5px 0;
+		text-align: right;
+		a {
+			font-size: 18px;
+		}
+	}
+}
