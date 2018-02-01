@@ -1068,7 +1068,7 @@ hr {
   padding: 0;
   list-style: none; }
 
-.transition, a, .btn, .best-card .best-inner, .form-search-plan, .mobile-offcanvas {
+.transition, a, .btn, .best-card .best-inner, .form-search-plan, .header-toggle span, .mobile-offcanvas {
   -webkit-transition: 300ms ease;
   -o-transition: 300ms ease;
   transition: 300ms ease; }
@@ -1179,6 +1179,11 @@ h1,
     .h1,
     .section-header .section-title {
       font-size: 40px; } }
+  @media (max-width: 640px) {
+    h1,
+    .h1,
+    .section-header .section-title {
+      font-size: 30px; } }
 
 h2,
 .h2 {
@@ -1980,8 +1985,11 @@ button {
 
 .header-toggle {
   display: none;
-  width: 40px;
+  position: relative;
+  z-index: 102;
+  width: 30px;
   min-width: initial;
+  padding: 0;
   border: none;
   background: none !important;
   vertical-align: middle; }
@@ -1991,8 +1999,22 @@ button {
   .header-toggle span {
     display: block;
     height: 2px;
+    width: 30px;
     margin: 6px 0;
     background: #fff; }
+  .header-toggle.header-toggle-close span {
+    position: absolute;
+    margin: 0; }
+    .header-toggle.header-toggle-close span:nth-child(1) {
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .header-toggle.header-toggle-close span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    .header-toggle.header-toggle-close span:nth-child(2) {
+      display: none; }
 
 .mobile-offcanvas {
   opacity: 0;
@@ -2003,6 +2025,7 @@ button {
   right: 0;
   bottom: 0;
   overflow-y: scroll;
+  padding: 20px 0;
   background: rgba(0, 0, 0, 0.9);
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);

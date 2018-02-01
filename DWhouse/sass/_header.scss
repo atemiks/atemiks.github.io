@@ -193,8 +193,11 @@
 
 .header-toggle {
 	display: none;
-	width: 40px;
+	position: relative;
+	z-index: 102;
+	width: 30px;
 	min-width: initial;
+	padding: 0;
 	border: none;
 	background: none !important;
 	vertical-align: middle;
@@ -203,10 +206,28 @@
 	}
 
 	span {
+		@extend .transition;
 		display: block;
 		height: 2px;
+		width: 30px;
 		margin: 6px 0;
 		background: #fff;
+	}
+	&.header-toggle-close {
+		span {
+			position: absolute;
+			margin: 0;
+
+			&:nth-child(1) {
+				transform: rotate(45deg);
+			}
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+			}
+			&:nth-child(2) {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -221,6 +242,7 @@
 	right: 0;
 	bottom: 0;
 	overflow-y: scroll;
+	padding: 20px 0;
 	background: rgba(#000, .9);
 	transform: translateX(100%);
 	color: #fff;

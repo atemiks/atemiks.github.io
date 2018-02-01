@@ -38,7 +38,8 @@ $( document ).ready(function() {
 
 	// mobile header
 	$( ".header-toggle" ).on( "click", function() {
-	  	$("body").toggleClass('mobile-offcanvas-active');
+	  	$("html, body").toggleClass('mobile-offcanvas-active');
+	  	$(this).toggleClass('header-toggle-close');
 	  	$(".mobile-offcanvas").toggleClass('mobile-offcanvas-active');
 	});
 	$( ".action-search" ).on( "click", function() {
