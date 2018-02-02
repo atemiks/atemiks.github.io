@@ -6,6 +6,9 @@
 		font-size: 18px;
 		color: #fff;
 		text-decoration: none;
+		&:hover {
+			color: darken(#fff, 15%);
+		}
 	}
 
 	.header-inner {

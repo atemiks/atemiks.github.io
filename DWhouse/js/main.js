@@ -46,4 +46,13 @@ $( document ).ready(function() {
 	  	$(".form-search-plan").toggleClass('form-search-plan-active');
 	});
 
+
+	// home page
+	$('.slider-hero').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false
+	});
+
 });
