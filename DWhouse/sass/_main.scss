@@ -212,7 +212,7 @@
 	button {
 		min-width: 150px;
 		height: 52px;
-		margin: 10px 0;
+		margin: 10px 5px;
 	}
 
 	.form-group {
@@ -220,13 +220,16 @@
 		padding: 0 5px;
 	}
 
-	.select-custom-beds + span,
-	.select-custom-baths + span,
-	.select-custom-stories + span {
-		min-width: 112px;
-	}
-	.select-custom-garages + span {
-		min-width: 135px;
+	.select-custom-wrap {
+		&.select-custom-wrap-lg .select {
+			width: 206px;
+		}
+		&.select-custom-wrap-md .select {
+			width: 135px;
+		}
+		&.select-custom-wrap-sm .select {
+			width: 112px;
+		}
 	}
 }
 
