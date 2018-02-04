@@ -1702,11 +1702,13 @@ button {
       background: #3c5493; }
 
 .nav-pills {
-  overflow-x: scroll;
   margin: 0;
   border: none;
-  background: #959493;
-  -webkit-overflow-scrolling: touch; }
+  background: #959493; }
+  @media (max-width: 1024px) {
+    .nav-pills {
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch; } }
   .nav-pills > li {
     margin: 0; }
     .nav-pills > li > a {
