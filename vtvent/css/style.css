@@ -307,6 +307,15 @@ body {
         margin: 0 auto 20px;
     }
     
+    .product-structure-list {
+        left: 0;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .product-structure-card {
+        max-width: 100%;
+    }
+    
     .product-hotlinks li {
         display: block;
         border: none;
