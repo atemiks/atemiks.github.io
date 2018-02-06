@@ -13,6 +13,15 @@
 		}
 	}
 
+	.hero-link {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
 	.hero-label {
 		position: absolute;
 		top: 30px;
@@ -174,6 +183,9 @@
 	.select-custom-wrap {
 		&.select-custom-wrap-lg .select {
 			width: 206px;
+			.select-styled {
+				padding-left: 8px;
+			}
 		}
 		&.select-custom-wrap-md .select {
 			width: 135px;
@@ -413,5 +425,13 @@
 
 	.author-title {
 		margin: 0 0 40px;
+	}
+
+	.author-btn {
+		min-width: 300px;
+		padding: 11px 15px 11px;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: none;
 	}
 }

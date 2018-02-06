@@ -142,11 +142,14 @@
 
 // tabs
 .nav-pills {
-	overflow-x: scroll;
 	margin: 0;
 	border: none;
 	background: $gray;
-	-webkit-overflow-scrolling: touch;
+	@media (max-width: 1024px) {
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+	
 	> li {
 		margin: 0;
 		> a {
@@ -245,7 +248,7 @@
 			@media (max-width: 767px) {
 				font-size: 20px;
 			}
-			
+
 			&:hover {
 				color: darken(#fff, 10%);
 				text-decoration: none;

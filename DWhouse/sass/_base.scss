@@ -158,9 +158,6 @@ button {
 	font-weight: 700;
 }
 .btn-lg {
-	// min-width: 300px;
-	// padding: 14px 15px 10px;
-	// font-size: 18px;
 	min-width: 265px;
 	padding: 13px 15px;
 	font-size: 20px;
@@ -182,6 +179,10 @@ button {
 	&:hover {
 		background: $dark-gray;
 		color: #fff;
+	}
+
+	&:focus {
+		color: inherit;
 	}
 }
 

@@ -1275,7 +1275,7 @@ tbody.collapse.in {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 0 40px 0 15px;
+  padding: 0 30px 0 15px;
   border: 1px solid #1d0f00;
   background-color: #1d0f00;
   color: #fff;
@@ -1542,6 +1542,8 @@ button {
   .btn-outline:hover {
     background: #1d0f00;
     color: #fff; }
+  .btn-outline:focus {
+    color: inherit; }
 
 .form-group {
   margin-bottom: 25px; }
@@ -1850,6 +1852,13 @@ button {
     @media (max-width: 640px) {
       .section-hero .hero-card {
         padding-bottom: 400px; } }
+  .section-hero .hero-link {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .section-hero .hero-label {
     position: absolute;
     top: 30px;
@@ -2001,6 +2010,8 @@ button {
     padding: 0 5px; }
   .form-main-search .select-custom-wrap.select-custom-wrap-lg .select {
     width: 206px; }
+    .form-main-search .select-custom-wrap.select-custom-wrap-lg .select .select-styled {
+      padding-left: 8px; }
   .form-main-search .select-custom-wrap.select-custom-wrap-md .select {
     width: 135px; }
   .form-main-search .select-custom-wrap.select-custom-wrap-sm .select {
@@ -2190,6 +2201,12 @@ button {
     text-align: center; }
   .section-about .author-title {
     margin: 0 0 40px; }
+  .section-about .author-btn {
+    min-width: 300px;
+    padding: 11px 15px 11px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none; }
 
 .header-box {
   padding: 10px 0;
