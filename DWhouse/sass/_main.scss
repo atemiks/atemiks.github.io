@@ -80,6 +80,7 @@
 
 .slider-hero {
 	overflow: hidden;
+	margin: 0 !important;
 }
 
 .house-label {
@@ -145,7 +146,7 @@
 		margin: 10px 0;
 		font-size: 16px;
 		font-weight: 600;
-		color: #fff;
+		color: #224195;
 		text-transform: uppercase;
 	}
 }
@@ -264,7 +265,7 @@
 		
 	}
 	.best-title {
-		margin: 0 0 5px;
+		margin: 0 0 2px;
 		color: inherit;
 	}
 	.best-description {
@@ -359,12 +360,19 @@
 	flex-wrap: wrap;
 	width: 100%;
 	margin-bottom: -5px;
+	.favorite-item {
+		padding-bottom: 20px;
+		background-color: #e8e8e8;
+		background-clip: content-box;
+	}
 }
 
 .favorite-card {
 	position: relative;
 	max-width: 425px;
-	margin: 0 auto 20px;
+	height: 100%;
+	margin: 0 auto;
+	border-bottom: 1px solid $primary;
 	text-align: center;
 	.favorite-link {
 		position: absolute;

@@ -118,11 +118,11 @@
 		}
 		button {
 			width: 90px;
-			background: #625f5b;
+			background: #615e5b;
 			font-weight: 600;
 			text-transform: uppercase;
 			&:hover {
-				background: darken(#625f5b, 5%);
+				background: darken(#615e5b, 5%);
 			}
 		}
 	}
@@ -320,6 +320,29 @@
 			@media (max-width: 1024px) {
 				right: 0;
 			}
+		}
+	}
+}
+
+.slick-dots {
+	bottom: 15px;
+	li {
+		@extend .transition;
+		opacity: 0.5;
+		width: 15px;
+		height: 15px;
+		button {
+			width: inherit;
+			height: inherit;
+			border-radius: 50%;
+			background: #fff;
+			&:before {
+				display: none;
+			}
+		}
+		&:hover,
+		&.slick-active {
+			opacity: 1;
 		}
 	}
 }

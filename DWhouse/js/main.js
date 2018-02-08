@@ -64,7 +64,10 @@ $( document ).ready(function() {
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		dots: false
+		dots: true,
+	 	autoplay: true,
+  		autoplaySpeed: 3000
+
 	});
 
 
