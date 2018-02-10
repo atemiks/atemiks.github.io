@@ -1685,6 +1685,8 @@ button {
         .nav-pills > li > a {
           font-size: 1.125em;
           white-space: nowrap; } }
+      .nav-pills > li > a:hover {
+        background: #455490 !important; }
     .nav-pills > li.active > a {
       background: #4d5ea1 !important; }
       .nav-pills > li.active > a:hover {
@@ -2795,7 +2797,7 @@ button {
   padding-top: 5px;
   padding-bottom: 5px; }
   .section-plan-floors .tab-content {
-    padding: 20px 80px;
+    padding: 0;
     background: #fff; }
     @media (max-width: 767px) {
       .section-plan-floors .tab-content {
@@ -2804,12 +2806,14 @@ button {
 .image-flip-container {
   position: relative;
   z-index: 1;
-  width: 95%;
+  width: 100%;
   margin: auto;
   -webkit-perspective: 1000;
           perspective: 1000; }
   .image-flip-container .image-flip-card {
-    padding-bottom: 90%;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 70%;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     -webkit-transition: all 1.0s linear;
@@ -2836,7 +2840,7 @@ button {
     position: absolute;
     z-index: 9;
     top: 40px;
-    right: -50px;
+    right: 0;
     min-width: 245px;
     font-weight: 400;
     text-transform: capitalize; }
@@ -2893,4 +2897,7 @@ button {
       border-left: 1px solid #201600;
       line-height: 1; }
       .similar-card .similar-info li:first-child {
-        border-left: none; }
+        border-left: none;
+        padding-left: 0; }
+      .similar-card .similar-info li:last-child {
+        padding-right: 0; }

@@ -166,6 +166,10 @@
 				font-size: 1.125em;
 				white-space: nowrap;
 			}
+
+			&:hover {
+				background: darken($primary, 5%) !important;
+			}
 		}
 		&.active {
 			> a {

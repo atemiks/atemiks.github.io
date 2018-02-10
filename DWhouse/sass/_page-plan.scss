@@ -357,7 +357,7 @@
 	padding-top: 5px;
 	padding-bottom: 5px;
 	.tab-content {
-		padding: 20px 80px;
+		padding: 0;
 		background: #fff;
 		@media (max-width: 767px) {
 			padding: 100px 10px 20px;
@@ -367,11 +367,13 @@
 .image-flip-container {
 	position: relative;
 	z-index: 1;
-	width: 95%;
+	width: 100%;
 	margin: auto;
 	perspective: 1000;
 	.image-flip-card {
-		padding-bottom: 90%;
+		max-width: 80%;
+		margin: auto;
+		padding-bottom: 70%;
 		transform-style: preserve-3d;
 		transition: all 1.0s linear;
 		&.active {
@@ -398,7 +400,7 @@
 		position: absolute;
 		z-index: 9;
 		top: 40px;
-		right: -50px;
+		right: 0;
 		min-width: 245px;
 		font-weight: 400;
 		text-transform: capitalize;
@@ -459,6 +461,10 @@
 			line-height: 1;
 			&:first-child {
 				border-left: none;
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
 			}
 		}
 	}
