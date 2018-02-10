@@ -92,10 +92,10 @@
 	text-align: left;
 	.newsletter-title {
 		font-size: 16px;
-		color: $gray;
+		color: #97aaa9;
 		text-transform: uppercase;
 		span {
-			color: $dark-gray;
+			color: #202729;
 		}
 	}
 	.form-newsletter {
@@ -115,14 +115,17 @@
 		input {
 			width: 148px;
 			padding: 0 6px;
+			&::placeholder {
+				color: #000;
+			}
 		}
 		button {
 			width: 90px;
-			background: #615e5b;
+			background: #595959;
 			font-weight: 600;
 			text-transform: uppercase;
 			&:hover {
-				background: darken(#615e5b, 5%);
+				background: darken(#595959, 5%);
 			}
 		}
 	}
@@ -238,7 +241,7 @@
 	@extend .reset-list;
 	display: inline-block;
 	padding: 5px 0;
-	background: #484d51;
+	background: #405559;
 	text-align: center;
 	li {
 		display: inline-block;

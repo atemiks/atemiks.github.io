@@ -240,11 +240,11 @@
 	width: 90%;
 	max-width: 565px;
 	margin: 20px auto 35px;
-	border: 1px solid #e6e7e8;
+	border: 1px solid #e5e5e5;
 	text-align: center;
 	.plan-metrics-item {
 		padding: 5px;
-		background: $light-gray;
+		background: #fff;
 		.plan-metrics-title {
 			font-size: 1.125em;
 			margin: 9px 0;
@@ -266,7 +266,7 @@
 				}
 			}
 			&:nth-child(2n+6) {
-				background: $light-gray;
+				background: #fff;
 				.plan-metrics-value {
 					color: $gray;
 				}
@@ -342,8 +342,8 @@
 	}
 	.plan-hint-description {
 		font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-		font-size: 18px;
-		color: #484d51;
+		font-size: 1.125em;
+		color: #405559;
 		line-height: 1.2;
 	}
 }

@@ -98,11 +98,6 @@
 }
 .house-label-lg {
 	padding: 0.45em 1.5rem;
-	// @media (max-width: 640px) {
-	// 	padding-left: 15px;
-	// 	padding-right: 15px;
-	// }
-
 	li {
 		font-weight: 400;
 		color: #989796;
@@ -123,7 +118,7 @@
 
 .main-search {
 	padding: 0 0 10px;
-	background: #838990;
+	background: #829ba2;
 	.main-search-inner {
 		display: flex;
 		flex-wrap: wrap;
@@ -146,7 +141,7 @@
 		margin: 10px 0;
 		font-size: 16px;
 		font-weight: 600;
-		color: #224195;
+		color: #1e4eee;
 		text-transform: uppercase;
 	}
 }
@@ -164,10 +159,9 @@
 		font-size: 18px;
 		font-weight: 600;
 		color: #fff;
-		&::-webkit-input-placeholder {color: #fff;}
-		&::-moz-placeholder          {color: #fff;}
-		&:-moz-placeholder           {color: #fff;}
-		&:-ms-input-placeholder      {color: #fff;}
+		&::placeholder {
+			color: #fff;
+		}
 	}
 
 	button {
@@ -436,7 +430,7 @@
 
 .section-about {
 	padding: 45px 0;
-	background: $gray;
+	background: #969696;
 	p {
 		margin-bottom: 1.6666666667em;
 	}
