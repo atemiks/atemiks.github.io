@@ -1,0 +1,16 @@
+.reset-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.transition {
+	transition: 300ms ease;
+}
+
+.overlay-danger {
+	background-image: linear-gradient(to top, #922f3b 0%, #922f3b 1%, #662731 100%);
+}
+.overlay-light {
+	background: rgba(#fff, .7);
+}

@@ -1,0 +1,109 @@
+.footer-box {
+	background: $warning;
+}
+.footer-content {
+	@extend .header-content;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footer-logo {
+	@extend .header-logo;
+}
+
+
+
+.footer-address {
+	@extend .header-address;
+	.footer-address-icon {
+		@extend .header-address-icon;
+	}
+	.footer-address-value {
+		@extend .header-address-value;
+	}
+}
+
+
+.footer-order {
+	padding: 0 15px;
+}
+
+
+.footer-social {
+	@extend .reset-list;
+	li {
+		display: inline-block;
+		font-size: 30px;
+		padding: 0 5px;
+		a {
+			color: $success;
+		}
+	}
+}
+
+
+.footer-contact {
+	@extend .header-contact;
+	.footer-contact-tel {
+		@extend .header-contact-tel;
+	}
+}
+
+
+.section-map {
+	position: relative;
+	.map-container {
+		position: absolute;
+	    top: 0;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    @media (max-width: 767px) {
+	    	position: relative;
+	    	left: 0;
+	    	transform: translateX(0);
+	    	background: #fff;
+	    }
+	}
+}
+
+.map-info-list {
+	@extend .reset-list;
+	position: absolute;
+	width: 320px;
+	padding: 40px 5px 35px;
+	background: #fff;
+	line-height: 1.5;
+	text-align: center;
+	@media (max-width: 767px) {
+		position: relative;
+		width: 100%;
+		left: 0;
+		right: 0;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: -27px;
+		height: 27px;
+		width: 100%;
+		background: url('../img/page-home/map/map-shadow.png') no-repeat right top ;
+		background-size: contain;
+	}
+
+	li {
+		padding: 5px 0;
+	}
+
+	a {
+		color: $default;
+	}
+
+	.map-info-title {
+		margin: 0;
+		font-weight: 700;
+		letter-spacing: 1.05px;
+	}
+}

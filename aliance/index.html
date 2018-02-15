@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Альянс</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="offcanvas">
+            <div class="offcanvas-header">
+                <button class="offcanvas-close" ></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="offcanvas-menu-list">
+                    <li><a href="#link">Наши преимущества</a></li>
+                    <li><a href="#link">доходность портфелей</a></li>
+                    <li><a href="#link">инвестиционные возможности</a></li>
+                    <li><a href="#link">портфельное инвестирование</a></li>
+                    <li><a href="#link">стратегии</a></li>
+                    <li><a href="#link">новости</a></li>
+                    <li><a href="#link">команда</a></li>
+                </ul>
+            </div>
+            <div class="offcanvas-footer">
+                <div class="offcanvas-block">
+                    <div class="offcanvas-contact">
+                        <a href="tel:+8223182116" class="offcanvas-contact-tel">+82 2 318-2116</a>
+                    </div>
+                </div>
+                <div class="offcanvas-block">
+                    <div class="offcanvas-address">
+                        34-16 Chong-dong, Chung-gu, Seoul, <br> 100-120, Republic of Korea
+                    </div>
+                </div>
+                <div class="offcanvas-block">
+                    <ul class="offcanvas-social social-list">
+                        <li><a href="#link"><i class="icon icon-telegram" ></i></a></li>
+                        <li><a href="#link"><i class="icon icon-vk" ></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        <h3 class="modal-title" id="modalCallbackLabel">заказать обратный звонок</h3>
+                        <p class="modal-subtitle">Перезвоним через 5 минут!</p>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-callback form-modal">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Ваше имя" required >
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="tel" placeholder="Телефон" required >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox01" name="checkbox" checked />
+                                            <label for="checkbox01">
+                                                <span class="custom-check-icon" ></span>
+                                                <span class="custom-check-value" >Я согласен на обработку моих персональных данных</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-warning btn-fluid" >Перезвоните мне!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalRequest" tabindex="-1" role="dialog" aria-labelledby="modalRequestLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        <h3 class="modal-title" id="modalRequestLabel">Начните зарабатывать уже сегодня!</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-request form-modal">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Ваше имя" required >
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="tel" placeholder="Телефон" required >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="number" placeholder="Планируемые инвестиции" >
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="time" placeholder="Удобное время для замера" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" id="checkbox01" name="checkbox" checked />
+                                            <label for="checkbox01">
+                                                <span class="custom-check-icon" ></span>
+                                                <span class="custom-check-value" >Я согласен на обработку моих персональных данных</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-warning btn-fluid" >Перезвоните мне!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+
+        <div class="wrapper">
+            <div class="upper-part">
+                <header class="header-box">
+                    <div class="header-statusbar">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <nav class="header-nav">
+                                        <ul class="header-nav-list">
+                                            <li><a href="#link">Наши преимущества</a></li>
+                                            <li><a href="#link">доходность портфелей</a></li>
+                                            <li><a href="#link">инвестиционные возможности</a></li>
+                                            <li><a href="#link">портфельное инвестирование</a></li>
+                                            <li><a href="#link">стратегии</a></li>
+                                            <li><a href="#link">новости</a></li>
+                                            <li><a href="#link">команда</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="header-content col-md-12">
+                                    <div class="header-logo">
+                                        <a href="index.html"><img src="img/logo.png" alt="Альянс" class="header-logo-img"></a>
+                                    </div>
+
+                                    <div class="header-address">
+                                        <div class="header-address-icon">
+                                            <img src="img/icons/icon-location.png" alt="34-16 Chong-dong, Chung-gu, Seoul, 100-120, Republic of Korea">
+                                        </div>
+                                        <div class="header-address-value">34-16 Chong-dong, Chung-gu, Seoul, <br> 100-120, Republic of Korea</div>
+                                    </div>
+                                    <div class="header-order">
+                                        <a class="btn btn-sm btn-success" href="#callback" data-toggle="modal" data-target="#modalCallback" >Получить консультацию</a>
+                                    </div>
+
+                                    <ul class="header-social social-list">
+                                        <li><a href="#link"><i class="icon icon-telegram" ></i></a></li>
+                                        <li><a href="#link"><i class="icon icon-vk" ></i></a></li>
+                                    </ul>
+
+                                    <div class="header-contact">
+                                        <div class="header-contact-top">
+                                            <a href="tel:+8223182116" class="header-contact-tel">+82 2 318-2116</a>
+                                        </div>
+                                        <div class="header-contact-bottom">
+                                            <div>
+                                                <a class="header-contact-mail" href="mailto:info@nazvaniesaita.ru">info@nazvaniesaita.ru</a>
+                                            </div>
+                                            <div>
+                                                <a class="header-contact-order" href="#callback" data-toggle="modal" data-target="#modalCallback" >заказать звонок</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <button class="header-toggle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+
+                    <section class="section-hero">
+                        <div class="container">
+                            <div class="row">
+                                <div class="hero-inner col-md-12" style="background-image: url(img/page-home/hero/hero-bg.png)" >
+                                    <div class="row">
+                                        <div class="section-header col-sm-7">
+                                            <h1 class="section-title hero-title">Помогаем правильно инвестировать <b>в криптовалюты</b></h1>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <a class="btn btn-lg btn-success" href="#request" data-toggle="modal" data-target="#modalRequest" >Инвестировать</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <ul class="counter-list">
+                                                <li class="counter-item" >
+                                                    <div class="counter-card">
+                                                        <h3 class="counter-title">96<span class="percent" >%</span></h3>
+                                                        <p class="counter-description">клиентов заработали с нами</p>
+                                                    </div>
+                                                </li>
+
+                                                <li class="counter-item" >
+                                                    <div class="counter-card">
+                                                        <h3 class="counter-title">150 <span>млн</span></h3>
+                                                        <p class="counter-description">самый крупный клиент компании</p>
+                                                    </div>
+                                                </li>
+
+                                                <li class="counter-item" >
+                                                    <div class="counter-card">
+                                                        <h3 class="counter-title">12 <span>месяцев</span></h3>
+                                                        <p class="counter-description">средний срок инвестирования</p>
+                                                    </div>
+                                                </li>
+
+                                                <li class="counter-item" >
+                                                    <div class="counter-card">
+                                                        <h3 class="counter-title">35<span class="percent" >%</span> <span>годовых</span></h3>
+                                                        <p class="counter-description">средняя доходность вложений</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-services">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-md-12">
+                                    <h2 class="section-title">для чего нужно к нам обратиться?</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="services-grid">
+                                    <div class="services-item col-xs-12 col-sm-6">
+                                        <div class="service-card">
+                                            <div class="service-thumb">
+                                                <img src="img/page-home/services/service-icon-1.svg" alt="Консультируем, как и куда нужно вкладывать деньги, чтобы создать дополнительный пассивный доход">
+                                            </div>
+                                            <div class="service-description">Консультируем, как и куда нужно вкладывать деньги, чтобы создать дополнительный пассивный доход</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="services-item col-xs-12 col-sm-6">
+                                        <div class="service-card">
+                                            <div class="service-thumb">
+                                                <img src="img/page-home/services/service-icon-2.svg" alt="Рассказываем, как распорядиться свободными деньгами, вкладывая их по ставке выше банковских процентов с минимальными рисками, от 20% годовых">
+                                            </div>
+                                            <div class="service-description">Рассказываем, как распорядиться свободными деньгами, вкладывая их по ставке выше банковских процентов с минимальными рисками, от 20% годовых</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="services-item col-xs-12 col-sm-6">
+                                        <div class="service-card">
+                                            <div class="service-thumb">
+                                                <img src="img/page-home/services/service-icon-3.svg" alt="Показываем, какие стратегии инвестирования подойдут именно Вам, в зависимости от суммы инвестиций, срока, ожидаемой доходности и рисков">
+                                            </div>
+                                            <div class="service-description">Показываем, какие стратегии инвестирования подойдут именно Вам, в зависимости от суммы инвестиций, срока, ожидаемой доходности и рисков</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="services-item col-xs-12 col-sm-6">
+                                        <div class="service-card">
+                                            <div class="service-thumb">
+                                                <img src="img/page-home/services/service-icon-4.svg" alt="Убережем от ошибок и неверных шагов, на которых теряют деньги начинающие инвесторы">
+                                            </div>
+                                            <div class="service-description">Убережем от ошибок и неверных шагов, на которых теряют деньги начинающие инвесторы</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-achievements">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header section-header-columns col-md-12">
+                                    <h2 class="section-title">доходность портфелей</h2>
+                                    <div class="achievements-value">
+                                        доход в $ с 01.01.2017 <span>7 406%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img src="img/page-home/achievements/grathic.png" alt="доходность портфелей">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-opportunities">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-md-12">
+                                    <h2 class="section-title">инвестиционные возможности</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="opportunities-grid">
+                                    <div class="opportunities-item col-xs-12 col-sm-6 col-md-4">
+                                        <div class="opportunity-card">
+                                            <div class="opportunity-header">
+                                                <div class="opportunity-thumb">
+                                                    <i class="icon icon-bag opportunity-icon" ></i>
+                                                </div>
+                                                <h3 class="opportunity-title">портфельное инвестирование</h3>
+                                            </div>
+                                            <div class="opportunity-body">
+                                                <ul class="opportunity-include-list">
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">масштабируемость</h4>
+                                                        Нет ограничений по сумме входа
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">диверсифекация по валютам</h4>
+                                                        Распределение денежных резервов по наиболее устойчивым криптовалютам
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">ликвидность</h4>
+                                                        Возможность быстрого входа и выхода без существенного влияния на цену
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">минимизация рисков человеческого фактора</h4>
+                                                        Ребалансировка портфеля происходит автоматически
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">минимальная комиссия</h4>
+                                                        Комиссия взимается после дохода в 60% годовых
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="opportunity-footer">
+                                                <a class="btn btn-success btn-opportunity" href="#request" data-toggle="modal" data-target="#modalRequest" >Инвестировать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="opportunities-item col-xs-12 col-sm-6 col-md-4">
+                                        <div class="opportunity-card">
+                                            <div class="opportunity-header">
+                                                <div class="opportunity-thumb">
+                                                    <i class="icon icon-relations opportunity-icon" ></i>
+                                                </div>
+                                                <h3 class="opportunity-title">портфельное инвестирование</h3>
+                                            </div>
+                                            <div class="opportunity-body">
+                                                <ul class="opportunity-include-list">
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">легкий вход</h4>
+                                                        От 3 ВТС
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">простота</h4>
+                                                        Один аккаунт для совершения всех видов операций
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">доступность</h4>
+                                                        Возможность участия в стратегиях ДУ с относительно небольшим капиталом
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">Прозрачность</h4>
+                                                        Еженедельная статистика по счёту доступна в любой момент времени
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">Комиссия за успех</h4>
+                                                        Комиссия взимается только с прибыли инвестора
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="opportunity-footer">
+                                                <a class="btn btn-success btn-opportunity" href="#request" data-toggle="modal" data-target="#modalRequest" >Инвестировать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="opportunities-item col-xs-12 col-sm-6 col-md-4">
+                                        <div class="opportunity-card">
+                                            <div class="opportunity-header">
+                                                <div class="opportunity-thumb">
+                                                    <i class="icon icon-hands opportunity-icon" ></i>
+                                                </div>
+                                                <h3 class="opportunity-title">персональный управляющий</h3>
+                                            </div>
+                                            <div class="opportunity-body">
+                                                <ul class="opportunity-include-list">
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">Минимальная сумма входа</h4>
+                                                        от 100 BTC
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">Безопасность</h4>
+                                                        Фонд не может вводить/выводить средства без подтверждения владельца
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">Повышенная ожидаемая доходность</h4>
+                                                        Улучшенный профиль доходности-риска
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">Прозрачность</h4>
+                                                        Статистика по счёту доступна в любой момент времени
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="opportunity-include-title">Комиссия за успех</h4>
+                                                        Комиссия взимается только с прибыли инвестора
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="opportunity-footer">
+                                                <a class="btn btn-success btn-opportunity" href="#request" data-toggle="modal" data-target="#modalRequest" >Инвестировать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-investment" style="background-image: url(img/page-home/investment/investment-bg.jpg)" >
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-md-12">
+                                    <h2 class="section-title">портфельное инвестирование</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="investment-grid">
+                                    <div class="investment-item col-xs-12 col-sm-6">
+                                        <div class="investment-card">
+                                            <div class="investment-header">
+                                                <div class="investment-thumb">
+                                                    <img src="img/page-home/investment/investment-item-1.svg" alt="Голубые Фишки (Blue Chips)">
+                                                </div>
+                                                <h3 class="investment-title">Голубые Фишки (Blue Chips)</h3>
+                                            </div>
+                                            <div class="investment-body">
+                                                <p><span>Задача.</span> Дать инвестору простой доступ к индексу основных криптовалют, основной вес в котором имеют криптовалюты с наибольшей капитализацией в USD.</p>
+
+                                                <p><span>Статистика.</span> В 2017 году на 17 декабря доходность вложений в этот портфель превысила доходность вложений в биткоин в 6 раз и составила 5910%.</p>
+                                            </div>
+                                            <div class="investment-footer">
+                                                <ul class="investment-actions">
+                                                    <li><a class="btn btn-success" href="#request" data-toggle="modal" data-target="#modalRequest" >Инвестировать</a></li>
+                                                    <li><a class="btn btn-link" href="#link">Статистика портфеля</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="investment-item col-xs-12 col-sm-6">
+                                        <div class="investment-card">
+                                            <div class="investment-header">
+                                                <div class="investment-thumb">
+                                                    <img src="img/page-home/investment/investment-item-2.svg" alt="Широкий Срез (Rabbit Creek)">
+                                                </div>
+                                                <h3 class="investment-title">Широкий Срез (Rabbit Creek)</h3>
+                                            </div>
+                                            <div class="investment-body">
+                                                <p><span>Задача.</span> Дать инвестору простой доступ к индексу широкого спектра криптовалют, соответствующих основным критериям надежности.</p>
+                                                <p><span>Статистика.</span> В 2017 году на 17 декабря доходность вложений в этот портфель превысила доходность вложений в биткоин в 6 раз и составила 5910%.</p>
+                                            </div>
+                                            <div class="investment-footer">
+                                                <ul class="investment-actions">
+                                                    <li><a class="btn btn-success" href="#request" data-toggle="modal" data-target="#modalRequest" >Инвестировать</a></li>
+                                                    <li><a class="btn btn-link" href="#link">Статистика портфеля</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-strategy">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-md-12">
+                                    <h2 class="section-title">стратегии доверительного управления</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="strategy-grid">
+                                    <div class="strategy-item col-xs-12 col-sm-6 col-md-4">
+                                        <div class="strategy-card">
+                                            <div class="strategy-header">
+                                                <i class="icon icon-law strategy-icon" ></i>
+                                                <h3 class="strategy-title">арбитраж</h3>
+                                            </div>
+                                            <div class="strategy-body">Торговые алгоритмы собственной разработки отслеживают низкорисковые арбитражные возможности торговли определенными криптовалютными парами между разными криптобиржами и реализуют их с помощью автоматической торговой системы. </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="strategy-item col-xs-12 col-sm-6 col-md-4">
+                                        <div class="strategy-card">
+                                            <div class="strategy-header">
+                                                <i class="icon icon-tv strategy-icon" ></i>
+                                                <h3 class="strategy-title">медиа-аналитика</h3>
+                                            </div>
+                                            <div class="strategy-body">Решения базируются на системе медиа-аналитики, которая позволяет в режиме реального времени мониторить упоминания конкретной криптовалюты в СМИ, Социальных медиа и прогнозировать стоимость на основе количества упоминаний и настроения сообщений.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="strategy-item col-xs-12 col-sm-6 col-md-4">
+                                        <div class="strategy-card">
+                                            <div class="strategy-header">
+                                                <i class="icon icon-increase strategy-icon" ></i>
+                                                <h3 class="strategy-title">роботизированная торговля</h3>
+                                            </div>
+                                            <div class="strategy-body">Стратегии основаны на техническом анализе, алгоритмы прошли глубокое тестирование на исторических данных и в режиме реального времени. <br> Во всех алгоритмах реализовано автоматическое соблюдение правил риск-менеджмента.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-callback">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-md-12">
+                                    <h3 class="section-title">отправить заявку на консультацию</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <form action="" class="form-callback">
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Ваше имя" required  >
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <input type="tel" placeholder="Телефон" required  >
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <input type="email" placeholder="E-mail" required  >
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <button class="btn btn-fluid btn-warning" >Отправить заявку</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-news">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-md-12">
+                                    <h2 class="section-title">новости рынка</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="news-grid">
+                                    <div class="news-item col-xs-12 col-sm-6 col-md-4">
+                                        <div class="news-card">
+                                            <div class="news-header">
+                                                <div class="news-thumb" style="background-image: url(img/page-home/news/news-item-1.png)" >
+                                                    <a href="#link" class="news-thumb-link"></a>
+                                                </div>
+                                                <date class="news-date">05.02.2018</date>
+                                                <h3 class="news-title"><a href="#link">Биткоин-биржи Индии: никакого запрета криптовалют нет</a></h3>
+                                            </div>
+                                            <div class="news-body">Руководители трех ведущих биткоин-бирж Индии Unocoin, ZebPay и Coinsecure единогласно заявили, что распространившиеся ранее на этой неделе слухи и сообщения о запрете криптовалют в этой стране не имеют под собой никаких оснований. Об этом пишет CoinTelegraph. </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item col-xs-12 col-sm-6 col-md-4">
+                                        <div class="news-card">
+                                            <div class="news-header">
+                                                <div class="news-thumb" style="background-image: url(img/page-home/news/news-item-2.png)" >
+                                                    <a href="#link" class="news-thumb-link"></a>
+                                                </div>
+                                                <date class="news-date">04.02.2018</date>
+                                                <h3 class="news-title"><a href="#link">Нью-Йорк обдумывает создание собственной криптовалюты</a></h3>
+                                            </div>
+                                            <div class="news-body">Законодатели Нью-Йорка, ранее опубликовавшие идеи нескольких блокчейн-проектов, выпустили законопроект, призывающий к изучению возможностей по созданию криптовалюты штата. </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item col-xs-12 col-sm-6 col-md-4">
+                                        <div class="news-card">
+                                            <div class="news-header">
+                                                <div class="news-thumb" style="background-image: url(img/page-home/news/news-item-3.png)" >
+                                                    <a href="#link" class="news-thumb-link"></a>
+                                                </div>
+                                                <date class="news-date">03.02.2018</date>
+                                                <h3 class="news-title"><a href="#link">Анализ курса Ethereum за неделю</a></h3>
+                                            </div>
+                                            <div class="news-body">На протяжении всей недели курс Ethereum падал, достигнув минимума на отметке в $740. На четырехчасовом графике можно увидеть прорыв поддержки восходящей линии тренда на уровне $1 115 парой ETH/USD. Сейчас курс восстанавливается, однако у отметки $1 020 ему придется встретиться с сопротивлением. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a href="#link" class="btn btn-success" >Больше новостей</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-team">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-md-12">
+                                    <h2 class="section-title">наша команда</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="team-grid">
+                                    <div class="team-item col-xs-12 col-sm-6 col-md-3">
+                                        <div class="team-card">
+                                            <div class="team-header">
+                                                <figure class="team-figure" >
+                                                    <div class="team-img" style="background-image: url(img/page-home/team/team-item-1.png)" ></div>
+                                                    <figcaption class="team-caption" >
+                                                        <p class="team-name">Андрей Фамилия</p>
+                                                        <span class="team-position">CEO, Co-founder</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="team-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="team-item col-xs-12 col-sm-6 col-md-3">
+                                        <div class="team-card">
+                                            <div class="team-header">
+                                                <figure class="team-figure" >
+                                                    <div class="team-img" style="background-image: url(img/page-home/team/team-item-2.png)" ></div>
+                                                    <figcaption class="team-caption" >
+                                                        <p class="team-name">Иван Фамилия</p>
+                                                        <span class="team-position">Advisory Board, Analytics</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="team-body">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="team-item col-xs-12 col-sm-6 col-md-3">
+                                        <div class="team-card">
+                                            <div class="team-header">
+                                                <figure class="team-figure" >
+                                                    <div class="team-img" style="background-image: url(img/page-home/team/team-item-3.png)" ></div>
+                                                    <figcaption class="team-caption" >
+                                                        <p class="team-name">Иван <br> Длинная фамилия</p>
+                                                        <span class="team-position">CEO, Co-founder</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="team-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="team-item col-xs-12 col-sm-6 col-md-3">
+                                        <div class="team-card">
+                                            <div class="team-header">
+                                                <figure class="team-figure" >
+                                                    <div class="team-img" style="background-image: url(img/page-home/team/team-item-4.png)" ></div>
+                                                    <figcaption class="team-caption" >
+                                                        <p class="team-name">Сергей Фамилия</p>
+                                                        <span class="team-position">Advisory Board, Analytics</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="team-body">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </main>
+            </div>
+            <div class="down-part">
+                <footer class="footer-box">
+                    <div class="section-map">
+                        <div class="map-container container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="map-info-list">
+                                        <li>
+                                            <h4 class="map-info-title" >адрес</h4>
+                                            34-16 Chong-dong, Chung-gu, Seoul, 100-120, Republic of Korea 
+                                        </li>
+                                        <li>
+                                            <h4 class="map-info-title" >телефон</h4>
+                                            <a href="tel:+8223182116">+82 2 318-2116</a>
+                                        </li>
+                                        <li>
+                                            <h4 class="map-info-title" >e-mail</h4>
+                                            <a href="mailto:">info@nazvaniesaita.ru</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe id="map" src="https://snazzymaps.com/embed/48502" width="100%" height="485" style="border:none;"></iframe>
+
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-content col-md-12">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="img/logo.png" alt="Альянс" class="footer-logo-img"></a>
+                                </div>
+
+                                <div class="footer-address">
+                                    <div class="footer-address-icon">
+                                        <img src="img/icons/icon-location.png" alt="34-16 Chong-dong, Chung-gu, Seoul, 100-120, Republic of Korea">
+                                    </div>
+                                    <div class="footer-address-value">34-16 Chong-dong, Chung-gu, Seoul, <br> 100-120, Republic of Korea</div>
+                                </div>
+                                <div class="footer-order">
+                                    <a class="btn btn-sm btn-success" href="#callback" data-toggle="modal" data-target="#modalCallback" >Получить консультацию</a>
+                                </div>
+
+                                <ul class="footer-social">
+                                    <li><a href="#link"><i class="icon icon-telegram" ></i></a></li>
+                                    <li><a href="#link"><i class="icon icon-vk" ></i></a></li>
+                                </ul>
+
+                                <div class="footer-contact">
+                                    <div class="footer-contact-top">
+                                        <a href="tel:+8223182116" class="footer-contact-tel">+82 2 318-2116</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/libs.min.js" ></script>
+        <script src="js/main.js" ></script>
+    </body>
+
+</html>

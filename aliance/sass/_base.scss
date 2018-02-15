@@ -1,0 +1,256 @@
+html,
+body {
+	height: 100%;
+	font-family: $base-font;
+	font-weight: 300;
+	font-size: 21px;
+	line-height: 1.2;
+	color: $default;
+	@media (max-width: 991px) {
+		font-size: 18px;
+	}
+	@media (max-width: 640px) {
+		font-size: 16px;
+	}
+}
+
+
+body {
+	padding-top: 139px;
+	@media (max-width: 1024px) {
+		padding-top: 84px;
+	}
+	@media (max-width: 767px) {
+		padding-top: 79px;
+	}
+}
+
+
+section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	background-image: linear-gradient(to right, #922f3b 0%, #922f3b 1%, #662731 100%);
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: $heading-font;
+	outline: none;
+    color: $default-heading;
+    text-transform: uppercase;
+}
+
+h1,
+.h1 {
+	font-size: 70px;
+	@media (max-width: 1199px) {
+		font-size: 48px;
+	}
+	@media (max-width: 767px) {
+		font-size: 34px;
+	}
+}
+
+h2,
+.h2 {
+	font-size: 48px;
+	@media (max-width: 1199px) {
+		font-size: 36px;
+	}
+	@media (max-width: 767px) {
+		font-size: 26px;
+	}
+}
+
+h3,
+.h3 {
+	font-size: 28px;
+	@media (max-width: 1199px) {
+		font-size: 20px;
+	}
+}
+
+h4,
+.h4 {
+	font-size: 21px;
+	@media (max-width: 1199px) {
+		font-size: 18px;
+	}
+}
+
+h5,
+.h5 {
+	font-size: 18px;
+}
+
+h6,
+.h6 {
+	font-size: 16px;
+}
+
+p {
+	margin: 0;
+}
+
+
+
+a {
+	@extend .transition;
+	color: $default-heading;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+
+form {}
+
+input,
+textarea {
+	height: 50px;
+	padding: 0 15px;
+	border: none;
+	background: #fff;
+	&::placeholder {
+		color: $default;
+	}
+}
+textarea {
+	height: 200px;
+	padding: 10px 15px;
+}
+
+
+// custom checkbox
+input[type="checkbox"] {
+    display: none !important;
+}
+input[type="checkbox"] + label {
+    
+}
+input[type="checkbox"] + label .custom-check-icon {
+    cursor: pointer;
+	position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+   	margin: 0 15px 0 0;
+}
+
+input[type="checkbox"] + label .custom-check-icon:after {
+	@extend .transition;
+	opacity: 0;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('../img/icons/check.svg') no-repeat 0 0;
+	background-size: contain;
+}
+
+input[type="checkbox"] + label .custom-check-icon {
+     background-color: #fff;
+}
+
+input[type="checkbox"]:checked + label .custom-check-icon:after {
+     opacity: 1;
+}
+
+input[type="checkbox"] + label .custom-check-icon,
+input[type="checkbox"]:checked + label .custom-check-icon {
+	@extend .transition;
+}
+
+
+input[type="checkbox"] + label .custom-check-value {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	top: -3px;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.form-group {
+	margin: 20px 0;
+}
+
+.btn {
+	@extend .transition;
+	outline: none !important;
+	display: inline-block;
+	min-width: 220px;
+	padding: 17px 10px ;
+	box-shadow: 0 2px 0 rgba(87, 100, 18, 0.3);
+	border-radius: 3px;
+	border: none;
+	font-size: 15px;
+	font-weight: 500;
+	color: #2b2b2b !important;
+	text-align: center;
+	text-decoration: none !important;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.btn-success {
+	background-color: $success;
+	&:hover {
+		background-color: $warning;
+		color: #fff !important;
+	}
+}
+.btn-warning {
+	background-color: $light-warning;
+	color: $default-heading !important;
+	&:hover {
+		background-color: $success;
+		color: $default !important;
+	}
+}
+
+.btn-link {
+	box-shadow: none;
+	font-size: 15px;
+	font-weight: 500;
+	color: $default-heading !important;
+}
+
+.btn-sm {
+	min-width: 200px;
+	padding: 10px 15px;
+	@media (max-width: 767px) {
+		min-width: initial;
+	} 
+}
+.btn-fluid {
+	width: 100%;
+	min-width: 100%;
+}
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
