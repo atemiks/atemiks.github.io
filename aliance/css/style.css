@@ -1262,7 +1262,7 @@ body {
       font-size: 16px; } }
 
 body {
-  padding-top: 139px; }
+  padding-top: 130px; }
   @media (max-width: 1024px) {
     body {
       padding-top: 84px; } }
@@ -1752,6 +1752,9 @@ input[type="checkbox"] + label .custom-check-value {
 .achievements-value {
   font-size: 24px;
   font-weight: 400; }
+  @media (max-width: 767px) {
+    .achievements-value {
+      display: block; } }
   .achievements-value span {
     margin: 0 0 0 15px;
     color: #922f3b;
@@ -2137,7 +2140,10 @@ input[type="checkbox"] + label .custom-check-value {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 30px;
         -ms-flex: 0 0 30px;
-            flex: 0 0 30px; }
+            flex: 0 0 30px;
+    font-size: 34px;
+    color: #fff;
+    line-height: 1; }
   .header-address .header-address-value, .footer-address .header-address-value, .footer-address .footer-address-value {
     padding: 0 15px; }
     @media (max-width: 1199px) {
@@ -2268,9 +2274,46 @@ input[type="checkbox"] + label .custom-check-value {
 .footer-content {
   padding-top: 20px;
   padding-bottom: 20px; }
+  @media (max-width: 1024px) {
+    .footer-content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+@media (max-width: 1024px) {
+  .footer-logo {
+    margin: 15px 0; } }
+
+@media (max-width: 1024px) {
+  .footer-address {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto;
+    margin: 15px 0; } }
 
 .footer-order {
   padding: 0 15px; }
+  @media (max-width: 1024px) {
+    .footer-order {
+      display: block;
+      margin: 15px 0; } }
+
+@media (max-width: 1024px) {
+  .footer-social {
+    display: block;
+    margin: 15px 0; } }
+
+@media (max-width: 1024px) {
+  .footer-contact {
+    display: block;
+    margin: 15px 0; } }
 
 .section-map {
   position: relative; }

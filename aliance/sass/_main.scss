@@ -145,6 +145,10 @@
 .achievements-value {
 	font-size: 24px;
 	font-weight: 400;
+	@media (max-width: 767px) {
+		display: block;
+	}
+	
 	span {
 		@extend .h2;
 		@extend .section-title;

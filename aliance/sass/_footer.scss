@@ -5,16 +5,28 @@
 	@extend .header-content;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	@media (max-width: 1024px) {
+		flex-direction: column;
+	}
 }
 
 .footer-logo {
 	@extend .header-logo;
+	@media (max-width: 1024px) {
+		margin: 15px 0;
+	}
 }
 
 
 
 .footer-address {
 	@extend .header-address;
+	@media (max-width: 1024px) {
+		display: flex;
+		flex: auto;
+		margin: 15px 0;
+	}
+
 	.footer-address-icon {
 		@extend .header-address-icon;
 	}
@@ -26,14 +38,28 @@
 
 .footer-order {
 	padding: 0 15px;
+	@media (max-width: 1024px) {
+		display: block;
+		margin: 15px 0;
+	}
 }
 
 
-
+.footer-social {
+	@media (max-width: 1024px) {
+		display: block;
+		margin: 15px 0;
+	}
+}
 
 
 .footer-contact {
 	@extend .header-contact;
+	@media (max-width: 1024px) {
+		display: block;
+		margin: 15px 0;
+	}
+	
 	.footer-contact-tel {
 		@extend .header-contact-tel;
 	}
