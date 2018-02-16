@@ -35,13 +35,12 @@
 	.counter-list,
 	.btn {
 		position: relative;
-		z-index: 1;
+		z-index: 2;
 	}
 
 	.hero-title {
 		@extend .h2;
 		letter-spacing: 0.78px;
-		line-height: 1.2;
 		b {
 			@extend .h1;
 			display: block;
@@ -54,7 +53,6 @@
 
 .counter-list {
 	@extend .reset-list;
-	position: relative;
 	display: inline-block;
 	margin: 100px 0 0 ;
 	padding: 0 15px 0 0;
@@ -166,7 +164,6 @@
 }
 .opportunity-card {
 	margin: 0 0 20px;
-	line-height: 1.2;
 	.opportunity-header {
 		display: flex;
 		align-items: center;
@@ -258,13 +255,11 @@
 		.investment-title {
 			margin: 0;
 			letter-spacing: 1.4px;
-			line-height: 1.2;
 		}
 	}
 
 	.investment-body {
 		padding: 10px 0;
-		line-height: 1.2;
 		p {
 			margin: 15px 0;
 		}
@@ -300,7 +295,6 @@
 }
 .strategy-card {
 	margin: 0 0 20px;
-	line-height: 1.2;
 	.strategy-header {
 		display: flex;
 		align-items: center;
@@ -342,12 +336,12 @@
 
 
 .section-callback {
-	padding: 20px 0 0;
+	padding: 10px 0;
 	background: $success;
 	.section-header {
 		margin: 0;
 		.section-title {
-			margin: 0;
+			margin: 10px 0 0;
 			text-shadow: 0 2px 0 rgba(129, 70, 158, 0.3);
 			letter-spacing: 1.4px;
 			-webkit-text-fill-color: #fff;
@@ -374,7 +368,6 @@
 .news-card {
 	position: relative;
 	margin: 0 0 20px;
-	line-height: 1.2;
 	.news-header {
 		.news-thumb {
 			position: relative;
@@ -424,7 +417,6 @@
 }
 .team-card {
 	margin: 0 0 20px;
-	line-height: 1.2;
 	.team-header {
 		margin-bottom: -50px;
 		.team-figure {

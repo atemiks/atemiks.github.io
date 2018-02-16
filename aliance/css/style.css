@@ -1194,34 +1194,20 @@ tbody.collapse.in {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-vk:before {
+  content: "\e902"; }
+
+.icon-location:before {
+  content: "\e903"; }
+
+.icon-telegram:before {
+  content: "\e904"; }
+
 .icon-increase:before {
   content: "\e900"; }
 
 .icon-law:before {
   content: "\e901"; }
-
-.icon-close .path1:before {
-  content: "\e902";
-  color: #d0843a; }
-
-.icon-close .path2:before {
-  content: "\e903";
-  margin-left: -1em;
-  color: white; }
-
-.icon-check .path1:before {
-  content: "\e904";
-  color: white; }
-
-.icon-check .path2:before {
-  content: "\e905";
-  margin-left: -1em;
-  color: #f3f3f3; }
-
-.icon-check .path3:before {
-  content: "\e906";
-  margin-left: -1em;
-  color: #bbcc5f; }
 
 .icon-relations:before {
   content: "\e90a"; }
@@ -1235,13 +1221,10 @@ tbody.collapse.in {
 .icon-hands:before {
   content: "\e90d"; }
 
-.icon-vk:before {
-  content: "\f189"; }
+.icon-phone:before {
+  content: "\f095"; }
 
-.icon-telegram:before {
-  content: "\f2c6"; }
-
-.reset-list, .social-list, .counter-list, .opportunity-card .opportunity-include-list, .investment-card .investment-actions, .header-nav-list, .header-social, .offcanvas-menu-list, .footer-social, .map-info-list {
+.reset-list, .social-list, .counter-list, .opportunity-card .opportunity-include-list, .investment-card .investment-actions, .header-nav-list, .header-social, .offcanvas-menu-list, .map-info-list {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -1445,7 +1428,7 @@ input[type="checkbox"] + label .custom-check-value {
   line-height: 1.2; }
 
 .form-group {
-  margin: 20px 0; }
+  margin: 10px 0; }
 
 .btn {
   outline: none !important;
@@ -1491,6 +1474,9 @@ input[type="checkbox"] + label .custom-check-value {
   @media (max-width: 767px) {
     .btn-sm {
       min-width: initial; } }
+
+.btn-lg {
+  min-width: 280px; }
 
 .btn-fluid {
   width: 100%;
@@ -1613,10 +1599,8 @@ input[type="checkbox"] + label .custom-check-value {
 .modal-backdrop.in {
   opacity: 0.95; }
 
-.form-modal .form-group {
-  margin: 10px 0; }
-  .form-modal .form-group input {
-    width: 100%; }
+.form-modal .form-group input {
+  width: 100%; }
 
 .form-modal .row:last-child {
   padding-top: 20px; }
@@ -1625,7 +1609,11 @@ input[type="checkbox"] + label .custom-check-value {
   margin: 0 -8px; }
   .social-list li {
     display: inline-block;
-    padding: 0 8px; }
+    font-size: 24px;
+    padding: 0 5px; }
+    .social-list li a {
+      color: #bbcc5f;
+      text-shadow: 0 2px 0 rgba(87, 100, 18, 0.3); }
 
 .section-hero {
   padding-top: 0;
@@ -1663,17 +1651,15 @@ input[type="checkbox"] + label .custom-check-value {
   .section-hero .counter-list,
   .section-hero .btn {
     position: relative;
-    z-index: 1; }
+    z-index: 2; }
   .section-hero .hero-title {
-    letter-spacing: 0.78px;
-    line-height: 1.2; }
+    letter-spacing: 0.78px; }
     .section-hero .hero-title b {
       display: block;
       letter-spacing: 1.14px;
       line-height: 1.5; }
 
 .counter-list {
-  position: relative;
   display: inline-block;
   margin: 100px 0 0;
   padding: 0 15px 0 0;
@@ -1783,8 +1769,7 @@ input[type="checkbox"] + label .custom-check-value {
   margin: 10px 0 -20px; }
 
 .opportunity-card {
-  margin: 0 0 20px;
-  line-height: 1.2; }
+  margin: 0 0 20px; }
   .opportunity-card .opportunity-header {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1873,11 +1858,9 @@ input[type="checkbox"] + label .custom-check-value {
       height: inherit; }
   .investment-card .investment-header .investment-title {
     margin: 0;
-    letter-spacing: 1.4px;
-    line-height: 1.2; }
+    letter-spacing: 1.4px; }
   .investment-card .investment-body {
-    padding: 10px 0;
-    line-height: 1.2; }
+    padding: 10px 0; }
     .investment-card .investment-body p {
       margin: 15px 0; }
     .investment-card .investment-body span {
@@ -1905,8 +1888,7 @@ input[type="checkbox"] + label .custom-check-value {
   margin: 10px 0 70px; }
 
 .strategy-card {
-  margin: 0 0 20px;
-  line-height: 1.2; }
+  margin: 0 0 20px; }
   .strategy-card .strategy-header {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1953,12 +1935,12 @@ input[type="checkbox"] + label .custom-check-value {
         padding: 15px 10px 30px 20px; } }
 
 .section-callback {
-  padding: 20px 0 0;
+  padding: 10px 0;
   background: #bbcc5f; }
   .section-callback .section-header {
     margin: 0; }
     .section-callback .section-header .section-title, .section-callback .section-header .achievements-value span, .achievements-value .section-callback .section-header span {
-      margin: 0;
+      margin: 10px 0 0;
       text-shadow: 0 2px 0 rgba(129, 70, 158, 0.3);
       letter-spacing: 1.4px;
       -webkit-text-fill-color: #fff; }
@@ -1981,8 +1963,7 @@ input[type="checkbox"] + label .custom-check-value {
 
 .news-card {
   position: relative;
-  margin: 0 0 20px;
-  line-height: 1.2; }
+  margin: 0 0 20px; }
   .news-card .news-header .news-thumb {
     position: relative;
     margin: 0 0 35px;
@@ -2024,8 +2005,7 @@ input[type="checkbox"] + label .custom-check-value {
   width: 100%; }
 
 .team-card {
-  margin: 0 0 20px;
-  line-height: 1.2; }
+  margin: 0 0 20px; }
   .team-card .team-header {
     margin-bottom: -50px; }
     .team-card .team-header .team-figure {
@@ -2174,13 +2154,6 @@ input[type="checkbox"] + label .custom-check-value {
   .header-social {
     display: none; } }
 
-.header-social li {
-  display: inline-block;
-  font-size: 30px;
-  padding: 0 5px; }
-  .header-social li a {
-    color: #bbcc5f; }
-
 .header-contact, .footer-contact {
   margin: 0 0 0 20px;
   font-size: 15px;
@@ -2213,8 +2186,13 @@ input[type="checkbox"] + label .custom-check-value {
 
 .header-toggle {
   display: none;
-  width: 42px;
-  margin: 0 0 0 10px; }
+  width: 30px;
+  margin: 0 0 0 10px;
+  padding: 0;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background: none; }
   @media (max-width: 1024px) {
     .header-toggle {
       display: block; } }
@@ -2279,8 +2257,7 @@ input[type="checkbox"] + label .custom-check-value {
   font-weight: 700; }
 
 .offcanvas-address {
-  font-size: 15px;
-  line-height: 1.2; }
+  font-size: 15px; }
 
 .offcanvas-social {
   font-size: 30px; }
@@ -2294,13 +2271,6 @@ input[type="checkbox"] + label .custom-check-value {
 
 .footer-order {
   padding: 0 15px; }
-
-.footer-social li {
-  display: inline-block;
-  font-size: 30px;
-  padding: 0 5px; }
-  .footer-social li a {
-    color: #bbcc5f; }
 
 .section-map {
   position: relative; }

@@ -100,7 +100,6 @@
 
 .form-modal {
 	.form-group {
-		margin: 10px 0;
 		input {
 			width: 100%;
 		}
@@ -117,6 +116,11 @@
 	margin: 0 -8px;
 	li {
 		display: inline-block;
-		padding: 0 8px;
+		font-size: 24px;
+		padding: 0 5px;
+		a {
+			color: $success;
+			text-shadow: 0 2px 0 rgba(87, 100, 18, 0.3);
+		}
 	}
 }

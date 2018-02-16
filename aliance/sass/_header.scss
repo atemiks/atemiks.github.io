@@ -111,15 +111,6 @@
 	@media (max-width: 991px) {
 		display: none;
 	}
-
-	li {
-		display: inline-block;
-		font-size: 30px;
-		padding: 0 5px;
-		a {
-			color: $success;
-		}
-	}
 }
 
 
@@ -158,8 +149,12 @@
 // header mobile
 .header-toggle {
 	display: none;
-	width: 42px;
+	width: 30px;
 	margin: 0 0 0 10px;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background: none;
 	@media (max-width: 1024px) {
 		display: block;
 	}
@@ -240,7 +235,6 @@
 
 .offcanvas-address {
 	font-size: 15px;
-	line-height: 1.2;
 }
 
 .offcanvas-social {

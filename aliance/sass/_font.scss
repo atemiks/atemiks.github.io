@@ -27,34 +27,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-vk:before {
+  content: "\e902";
+}
+.icon-location:before {
+  content: "\e903";
+}
+.icon-telegram:before {
+  content: "\e904";
+}
 .icon-increase:before {
   content: "\e900";
 }
 .icon-law:before {
   content: "\e901";
-}
-.icon-close .path1:before {
-  content: "\e902";
-  color: rgb(208, 132, 58);
-}
-.icon-close .path2:before {
-  content: "\e903";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon-check .path1:before {
-  content: "\e904";
-  color: rgb(255, 255, 255);
-}
-.icon-check .path2:before {
-  content: "\e905";
-  margin-left: -1em;
-  color: rgb(243, 243, 243);
-}
-.icon-check .path3:before {
-  content: "\e906";
-  margin-left: -1em;
-  color: rgb(187, 204, 95);
 }
 .icon-relations:before {
   content: "\e90a";
@@ -68,9 +54,6 @@
 .icon-hands:before {
   content: "\e90d";
 }
-.icon-vk:before {
-  content: "\f189";
-}
-.icon-telegram:before {
-  content: "\f2c6";
+.icon-phone:before {
+  content: "\f095";
 }
