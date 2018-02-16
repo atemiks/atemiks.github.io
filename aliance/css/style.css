@@ -2316,7 +2316,8 @@ input[type="checkbox"] + label .custom-check-value {
     margin: 15px 0; } }
 
 .section-map {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .section-map .map-container {
     position: absolute;
     top: 0;

@@ -59,7 +59,7 @@
 		display: block;
 		margin: 15px 0;
 	}
-	
+
 	.footer-contact-tel {
 		@extend .header-contact-tel;
 	}
@@ -68,6 +68,7 @@
 
 .section-map {
 	position: relative;
+	overflow: hidden;
 	.map-container {
 		position: absolute;
 	    top: 0;
@@ -81,6 +82,7 @@
 	    }
 	}
 }
+
 
 .map-info-list {
 	@extend .reset-list;
