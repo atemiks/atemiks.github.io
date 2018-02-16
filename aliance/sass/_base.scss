@@ -39,7 +39,8 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	background-image: linear-gradient(to right, #922f3b 0%, #922f3b 1%, #662731 100%);
+	background: -moz-linear-gradient(left, rgba(146,47,59,1) 0%, rgba(146,47,59,1) 10%, rgba(102,39,49,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(146,47,59,1) 0%,rgba(146,47,59,1) 10%,rgba(102,39,49,1) 100%);
 	text-transform: uppercase;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;

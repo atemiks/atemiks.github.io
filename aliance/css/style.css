@@ -1281,10 +1281,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#922f3b), color-stop(1%, #922f3b), to(#662731));
-  background-image: -webkit-linear-gradient(left, #922f3b 0%, #922f3b 1%, #662731 100%);
-  background-image: -o-linear-gradient(left, #922f3b 0%, #922f3b 1%, #662731 100%);
-  background-image: linear-gradient(to right, #922f3b 0%, #922f3b 1%, #662731 100%);
+  background: -webkit-linear-gradient(left, #922f3b 0%, #922f3b 10%, #662731 100%);
   text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1526,10 +1523,7 @@ input[type="checkbox"] + label .custom-check-value {
   margin: 20px 0; }
   .section-header .section-title, .section-header .achievements-value span, .achievements-value .section-header span {
     margin: 20px 0;
-    background-image: -webkit-gradient(linear, left top, right top, from(#922f3b), color-stop(1%, #922f3b), to(#662731));
-    background-image: -webkit-linear-gradient(left, #922f3b 0%, #922f3b 1%, #662731 100%);
-    background-image: -o-linear-gradient(left, #922f3b 0%, #922f3b 1%, #662731 100%);
-    background-image: linear-gradient(to right, #922f3b 0%, #922f3b 1%, #662731 100%);
+    background: -webkit-linear-gradient(left, #922f3b 0%, #922f3b 10%, #662731 100%);
     text-transform: uppercase;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
