@@ -2322,7 +2322,7 @@ button {
     margin: 10px 0;
     font-size: 16px;
     font-weight: 600;
-    color: #1e4eee;
+    color: #fff;
     text-transform: uppercase; }
 
 .form-main-search {
@@ -2558,13 +2558,16 @@ button {
         font-size: 1.285em; } }
   .section-about .author-title {
     margin: 0 0 40px; }
+  @media (min-width: 991px) {
+    .section-about .author-description {
+      padding: 0 15px; } }
   .section-about .author-btn {
     min-width: 300px;
     padding: 11px 15px 11px;
     font-size: 18px;
     font-weight: 700;
     text-transform: none; }
-  .section-about .img-author {
+  .section-about .author-img {
     display: block;
     max-width: 95%;
     margin: auto; }
