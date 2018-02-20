@@ -7,7 +7,7 @@
 		background-position: center;
 		background-size: cover;
 		background-color: $gray;
-		padding-bottom: 38.3%;
+		padding-bottom: 38.4%;
 		@media (max-width: 640px) {
 			padding-bottom: 400px;
 		}
@@ -168,7 +168,7 @@
 		margin: 10px 0;
 		font-size: 16px;
 		font-weight: 600;
-		color: #1e4eee;
+		color: #fff;
 		text-transform: uppercase;
 	}
 }
@@ -194,11 +194,11 @@
 	button {
 		min-width: 150px;
 		height: 52px;
-		margin: 10px 5px;
+		margin: 15px 5px 5px;
 	}
 
 	.form-group {
-		margin: 10px 0;
+		margin: 15px 0 5px;
 		padding: 0 5px;
 	}
 
@@ -223,6 +223,10 @@
 .faq-box {
 	margin: 15px 0;
 	text-align: left;
+	@media (max-width: 1440px) {
+		margin: 10px 0 15px;
+	}
+	
 	.faq-title {
 		color: $primary;
 	}
@@ -457,7 +461,7 @@
 
 .section-about {
 	padding: 45px 0;
-	background: #969696;
+	background: #555;
 	p {
 		margin-bottom: 1.6666666667em;
 	}
@@ -474,6 +478,12 @@
 		margin: 0 0 40px;
 	}
 
+	.author-description {
+		@media (min-width: 991px) {
+			padding: 0 15px;
+		}
+	}
+
 	.author-btn {
 		min-width: 300px;
 		padding: 11px 15px 11px;
@@ -482,7 +492,7 @@
 		text-transform: none;
 	}
 
-	.img-author {
+	.author-img {
 		display: block;
 		max-width: 95%;
 		margin: auto;

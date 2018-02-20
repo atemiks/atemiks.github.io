@@ -46,7 +46,7 @@
 
 .section-header-columns {
 	display: flex;
-    align-items: center;
+    align-items: start;
 	margin-bottom: 0;
 	@media (max-width: 1024px) {
 		flex-wrap: wrap;
@@ -90,6 +90,10 @@
 	max-width: 250px;
 	margin: 15px 0;
 	text-align: left;
+	@media (max-width: 1440px) {
+		margin: 10px 0 15px;
+	}
+	
 	.newsletter-title {
 		font-size: 16px;
 		color: #97aaa9;

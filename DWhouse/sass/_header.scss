@@ -71,6 +71,11 @@
 }
 
 .header-nav {
+	@media (min-width: 1440px) {
+		max-width: 85%;
+		margin: auto;
+	}
+
 	.header-nav-list {
 		@extend .reset-list;
 		display: flex;
@@ -79,6 +84,11 @@
 		li {
 			a {
 				font-size: 18px;
+				img {
+					display: inline-block;
+					margin: 0 4px;
+				}
+
 				i {
 					@extend .h3;
 					display: inline-block;

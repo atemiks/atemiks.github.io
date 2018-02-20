@@ -1878,10 +1878,10 @@ button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
   margin-bottom: 0; }
   @media (max-width: 1024px) {
     .section-header-columns {
@@ -1932,6 +1932,9 @@ button {
   max-width: 250px;
   margin: 15px 0;
   text-align: left; }
+  @media (max-width: 1440px) {
+    .newsletter-box {
+      margin: 10px 0 15px; } }
   .newsletter-box .newsletter-title {
     font-size: 16px;
     color: #97aaa9;
@@ -2174,7 +2177,7 @@ button {
     -webkit-background-size: cover;
             background-size: cover;
     background-color: #969696;
-    padding-bottom: 38.3%; }
+    padding-bottom: 38.4%; }
     @media (max-width: 640px) {
       .section-hero .hero-card {
         padding-bottom: 400px; } }
@@ -2351,9 +2354,9 @@ button {
   .form-main-search button {
     min-width: 150px;
     height: 52px;
-    margin: 10px 5px; }
+    margin: 15px 5px 5px; }
   .form-main-search .form-group {
-    margin: 10px 0;
+    margin: 15px 0 5px;
     padding: 0 5px; }
   .form-main-search .select-custom-wrap.select-custom-wrap-lg .select {
     width: 206px; }
@@ -2367,6 +2370,9 @@ button {
 .faq-box {
   margin: 15px 0;
   text-align: left; }
+  @media (max-width: 1440px) {
+    .faq-box {
+      margin: 10px 0 15px; } }
   .faq-box .faq-title {
     color: #1e4eee; }
   .faq-box .faq-description {
@@ -2547,7 +2553,7 @@ button {
 
 .section-about {
   padding: 45px 0;
-  background: #969696; }
+  background: #555; }
   .section-about p {
     margin-bottom: 1.6666666667em; }
   .section-about .author-inner {
@@ -2637,6 +2643,11 @@ button {
     .header-contact-list li a {
       font-size: 18px; }
 
+@media (min-width: 1440px) {
+  .header-nav {
+    max-width: 85%;
+    margin: auto; } }
+
 .header-nav .header-nav-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2651,6 +2662,9 @@ button {
           align-items: center; }
   .header-nav .header-nav-list li a {
     font-size: 18px; }
+    .header-nav .header-nav-list li a img {
+      display: inline-block;
+      margin: 0 4px; }
     .header-nav .header-nav-list li a i {
       display: inline-block;
       margin: 0 5px 0 0;
