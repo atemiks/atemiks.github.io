@@ -1,6 +1,6 @@
 .header-box {
 	padding: 5px 0 10px;
-	background: #000;
+	background: #414142;
 	color: #fff;
 	a {
 		font-size: 18px;
@@ -269,6 +269,13 @@
 				display: none;
 			}
 		}
+	}
+}
+
+
+.page-home {
+	.header-box {
+		background: #000;
 	}
 }
 

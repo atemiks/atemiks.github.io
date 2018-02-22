@@ -1634,7 +1634,7 @@ tbody.collapse.in {
     margin: 0;
     padding: 8px 8px; }
     .select-options li:hover {
-      background: #1e4eee;
+      background: #2e3192;
       color: #fff; }
   .select-options li[rel="hide"] {
     display: none; }
@@ -1795,9 +1795,9 @@ button {
   text-transform: uppercase; }
 
 .btn-primary {
-  background: #1e4eee; }
+  background: #2e3192; }
   .btn-primary:hover {
-    background: #1141e1; }
+    background: #282a7f; }
 
 .btn-outline {
   border: 1px solid #202729;
@@ -1975,10 +1975,10 @@ button {
       .newsletter-box .form-newsletter button:hover {
         background: #4c4c4c; }
   .newsletter-box.newsletter-primary .form-newsletter button {
-    background: #1e4eee;
+    background: #2e3192;
     color: #fff; }
     .newsletter-box.newsletter-primary .form-newsletter button:hover {
-      background: #1141e1; }
+      background: #282a7f; }
 
 .nav-pills {
   margin: 0 0 10px;
@@ -2005,11 +2005,11 @@ button {
           font-size: 1.125em;
           white-space: nowrap; } }
       .nav-pills > li > a:hover {
-        background: #1141e1 !important; }
+        background: #282a7f !important; }
     .nav-pills > li.active > a {
-      background: #1e4eee !important; }
+      background: #2e3192 !important; }
       .nav-pills > li.active > a:hover {
-        background: #1141e1 !important; }
+        background: #282a7f !important; }
     .nav-pills > li:last-child > a {
       border-right: none !important; }
 
@@ -2019,7 +2019,7 @@ button {
   color: #fff !important; }
 
 .nav-pills-colorfull > li:nth-child(2n+1) > a {
-  background: #1e4eee !important; }
+  background: #2e3192 !important; }
 
 .nav-pills-colorfull > li:nth-child(2n+2).active > a {
   background: #202729 !important;
@@ -2374,7 +2374,7 @@ button {
     .faq-box {
       margin: 10px 0 15px; } }
   .faq-box .faq-title {
-    color: #1e4eee; }
+    color: #2e3192; }
   .faq-box .faq-description {
     margin: 0;
     font-size: 18px;
@@ -2510,7 +2510,7 @@ button {
   max-width: 475px;
   height: 100%;
   margin: 0 auto;
-  border-bottom: 1px solid #1e4eee;
+  border-bottom: 1px solid #2e3192;
   text-align: center; }
   .favorite-card .favorite-link {
     position: absolute;
@@ -2547,13 +2547,13 @@ button {
     margin: 0 0 15px; }
   .favorite-card .favorite-action {
     font-weight: 700;
-    color: #1e4eee; }
+    color: #2e3192; }
   .favorite-card:hover .favorite-action {
-    color: #1141e1; }
+    color: #282a7f; }
 
 .section-about {
   padding: 45px 0;
-  background: #555; }
+  background: #8b9298; }
   .section-about p {
     margin-bottom: 1.6666666667em; }
   .section-about .author-inner {
@@ -2580,7 +2580,7 @@ button {
 
 .header-box {
   padding: 5px 0 10px;
-  background: #000;
+  background: #414142;
   color: #fff; }
   .header-box a {
     font-size: 18px;
@@ -2788,7 +2788,7 @@ button {
             flex: 0 0 35px;
     display: inline-block;
     border: none;
-    background: #1e4eee;
+    background: #2e3192;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -2826,6 +2826,9 @@ button {
               transform: rotate(-45deg); }
     .header-toggle.header-toggle-close span:nth-child(2) {
       display: none; }
+
+.page-home .header-box {
+  background: #000; }
 
 .mobile-offcanvas {
   opacity: 0;
@@ -3203,7 +3206,7 @@ button {
     margin: 5px 0;
     font-size: 1.75em;
     font-weight: 400;
-    color: #1e4eee; }
+    color: #2e3192; }
   .plan-hint-box .plan-hint-description {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-size: 1.125em;
