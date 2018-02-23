@@ -9,7 +9,9 @@
 }
 
 .text-gradient {
-	background-image: linear-gradient(to right, #554794 0%, #326896 100%);
+	background-image: -webkit-linear-gradient(left, #554794 0%, #326896 100%);
+	background-image: -moz-linear-gradient(left, #554794 0%, #326896 100%);
+	background-image: -o-linear-gradient(left, #554794 0%, #326896 100%);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
