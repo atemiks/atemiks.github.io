@@ -308,7 +308,7 @@ $( document ).ready(function() {
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(55.750665, 37.586016),
         map: map,
-        icon: '../img/icons/icon-location.png',
+        icon: '/img/icons/icon-location.png',
         title: 'Криптокошелек!'
     });
             
