@@ -2445,7 +2445,9 @@ input[type="checkbox"] + label .custom-check-value {
 .header-toggle {
   display: none;
   width: 40px;
-  margin: 23px 10px; }
+  margin: 23px 10px;
+  border: none;
+  background: none; }
   @media (max-width: 991px) {
     .header-toggle {
       display: inline-block; } }
