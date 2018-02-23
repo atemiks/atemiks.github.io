@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kriptokoshelek</title>
+        
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="offcanvas">
+            <div class="offcanvas-header">
+                <button class="offcanvas-close">&times;</button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="offcanvas-menu">
+                    <li><a href="#section-products">кошельки</a></li>
+                    <li><a href="#section-services">безопасность</a></li>
+                    <li><a href="#section-delivery">доставка</a></li>
+                    <li><a href="#section-partners">приложения</a></li>
+                </ul>
+            </div>
+            <div class="offcanvas-footer">
+                <div class="offcanvas-contact">
+                    <a href="tel:+7(495)6789090">(495) <b>678 90 90</b></a>
+                </div>
+                <ul class="offcanvas-social social-list">
+                    <li><a href="#link"><i class="icon-phone-sq" ></i></a></li>
+                    <li><a href="#link"><i class="icon-telegram" ></i></a></li>
+                    <li><a href="#link"><i class="icon-phone-c" ></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="modal-title" id="modalOrderLabel">заказать кошелек</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="modal-subtitle">Перезвоним через 5 минут!</p>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="modal-body">
+                    <form  class="form-modal">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-flex">
+                                    <label for="">Ваше имя:</label>
+                                    <input type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-flex">
+                                    <label for="">Телефон:</label>
+                                    <input type="tel" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="form-group">
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" id="checkbox01" name="checkbox" checked />
+                                        <label for="checkbox01">
+                                            <span class="custom-check-icon" ></span>
+                                            <span class="custom-check-value" >Я согласен на обработку персональных данных</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <div class="form-group">
+                                    <button type="submit"  class="btn btn-light">Заказать кошелек</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+                  
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalBuy" tabindex="-1" role="dialog" aria-labelledby="modalBuyLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                 <h3 class="modal-title" id="modalBuyLabel">заказать кошелек</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="modal-subtitle">Перезвоним через 5 минут!</p>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="modal-body">
+                    <form  class="form-modal">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-flex">
+                                    <label for="">Ваше имя:</label>
+                                    <input type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-flex">
+                                    <label for="">Телефон:</label>
+                                    <input type="tel" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group form-group-flex">
+                                    <label for="">Адрес доставки:</label>
+                                    <input type="text" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group form-group-flex">
+                                    <label for="">Кошелек:</label>
+                                    <select name="" id="" class="custom-select">
+                                        <option value="Ledger Nano S">Ledger Nano S</option>
+                                        <option value="TREZOR">TREZOR</option>
+                                        <option value="KEEP KEY">KEEP KEY</option>
+                                        <option value="COOL WALLET">COOL WALLET</option>
+                                        <option value="XZEN">XZEN</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="form-group">
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" id="checkbox02" name="checkbox" checked />
+                                        <label for="checkbox02">
+                                            <span class="custom-check-icon" ></span>
+                                            <span class="custom-check-value" >Я согласен на обработку персональных данных</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3 text-right">
+                                <div class="form-group">
+                                    <button type="submit"  class="btn btn-light">Заказать кошелек</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+                  
+                </div>
+            </div>
+        </div>
+  
+
+
+
+        <div class="wrapper">
+            <div class="upper-part">
+               <header class="header-box">
+                   <div class="container">
+                       <div class="row">
+                           <div class="header-inner col-md-12">
+                               <div class="header-side-left">
+                                   <div class="header-logo">
+                                       <a href="index.html"><img src="img/logo.png" alt="Kriptokoshelek" class="header-logo-img"></a>
+                                   </div>
+                               </div>
+                               <div class="header-side-center">
+                                   <div class="header-address">
+                                       г. Москва, Название улицы, 23/7, офис 34
+                                       <a href="#section-map"><i class="icon icon-location" ></i>На карте</a>
+                                   </div>
+                                   <nav class="header-nav">
+                                       <ul class="header-nav-list">
+                                           <li><a href="#section-products">кошельки</a></li>
+                                           <li><a href="#section-services">безопасность</a></li>
+                                           <li><a href="#section-delivery">доставка</a></li>
+                                           <li><a href="#section-partners">приложения</a></li>
+                                       </ul>
+                                   </nav>
+                               </div>
+                               <div class="header-side-right">
+                                    <div class="header-contact">
+                                        <div class="header-contact-side-left">
+                                            <div class="header-partner">
+                                                <ul class="header-partner-list">
+                                                    <li><a href="#link"><img src="img/icons/logo-ledger.svg" alt="Ledger"></a></li>
+                                                    <li><a href="#link"><img src="img/icons/logo-trezor.svg" alt="Trezor"></a></li>
+                                                </ul>
+                                            </div>
+                                           <div class="header-phone">
+                                               <a href="tel:+7(495)6789090">(495) <b>678 90 90</b></a>
+                                           </div>
+                                        </div>
+                                        <div class="header-contact-side-right">
+                                           <div class="header-order">
+                                               <button class="btn" data-toggle="modal" data-target="#modalOrder" >Заказать кошелек</button>
+                                           </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="header-toggle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </header>
+                <main>
+
+                    <section class="section-hero" style="background-image: url(img/hero/hero-bg.png)" >
+                        <div class="container">
+                            <div class="row">
+                                <div class="hero-top col-sm-8">
+                                    <h1 class="hero-title">Аппаратные кошельки для криптовалют</h1>
+                                    <h2 class="hero-subtitle">Самый безопасный способ <br> хранения криптовалюты</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <form class="form-hero form-inline">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                                                <div class="form-group form-group-flex">
+                                                    <label for="">Ваше имя:</label>
+                                                    <input type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                                                <div class="form-group form-group-flex">
+                                                    <label for="">Телефон:</label>
+                                                    <input type="tel" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-3 col-lg-2">
+                                                <div class="form-group">
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" id="checkbox03" name="checkbox" checked />
+                                                        <label for="checkbox03">
+                                                            <span class="custom-check-icon" ></span>
+                                                            <span class="custom-check-value" >Я согласен на обработку персональных данных</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-3 col-lg-2">
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn" >Заказать кошелек</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-products" id="section-products">
+                        <div class="container">
+                            <div class="row">
+                                <div class="products-grid">
+                                    <div class="product-item">
+                                        <div class="product-card">
+                                            <div class="product-aside col-xs-12 col-sm-4">
+                                                <div class="product-images-wrap">
+                                                    <div class="slider-product">
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product1/product-1-item-1.png" alt="Ledger Nano S" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product1/product-1-item-2.png" alt="Ledger Nano S" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product1/product-1-item-3.png" alt="Ledger Nano S" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product1/product-1-item-4.png" alt="Ledger Nano S" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="slider-product-nav">
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product1/product-1-item-2.png" alt="Ledger Nano S" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product1/product-1-item-3.png" alt="Ledger Nano S" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product1/product-1-item-4.png" alt="Ledger Nano S" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product1/product-1-item-5.png" alt="Ledger Nano S" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content col-xs-12 col-sm-8 col-md-7">
+                                                <div class="product-header">
+                                                    <h2 class="product-title">Ledger Nano S</h2>
+                                                </div>
+                                                <div class="product-body">
+                                                    <div class="product-description">
+                                                        <p>Ledger Nano S —  это кошелек, который подойдет для хранения биткоина, этериума и других альткоинов. В общей сложности он поддерживает более 20-ти монет и их количество постоянно пополняется.</p>
+                                                        <p>Основной приоритет Ledger —  безоговорочная безопасность и современная криптография для защиты платежей и обмена криптовалютами, а также безопасного хранения электронных накоплений.</p>
+                                                        <p>Кошелек может подключаться к любому компьютеру с помощью USB кабеля и имеет OLED экран для проверки операций, а также две кнопки, для удобной навигации и подтверждения транзакции одним нажатием.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="product-footer">
+                                                    <ul class="product-price">
+                                                        <li><del>12 300</del></li>
+                                                        <li><ins>10 990<span>₽</span></ins></li>
+                                                    </ul>
+
+                                                    <div class="product-order">
+                                                        <button class="btn" data-toggle="modal" data-target="#modalBuy" >купить кошелек</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="product-item">
+                                        <div class="product-card">
+                                            <div class="product-aside col-xs-12 col-sm-4">
+                                                <div class="product-images-wrap">
+                                                    <div class="slider-product">
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product2/product-2-item-1.png" alt="TREZOR" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product2/product-2-item-2.png" alt="TREZOR" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product2/product-2-item-3.png" alt="TREZOR" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product2/product-2-item-4.png" alt="TREZOR" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="slider-product-nav">
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product2/product-2-item-2.png" alt="TREZOR" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product2/product-2-item-3.png" alt="TREZOR" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product2/product-2-item-4.png" alt="TREZOR" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product2/product-2-item-5.png" alt="TREZOR" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content col-xs-12 col-sm-8 col-md-7">
+                                                <div class="product-header">
+                                                    <h2 class="product-title">TREZOR</h2>
+                                                </div>
+                                                <div class="product-body">
+                                                    <div class="product-description">
+                                                        <p>Trezor — кошелек для безопасныйх транзакций в криптовалютах. Он был пионером холодного хранения и для многих стал стандартом защищенности при хранении и операциях с биткоином и другими криптовалютами.</p>
+                                                        <p>При использовании кошелтка Trezor ваши транзакции безопасны даже на незащищенном компьютере благодаря современной криптографии и закрытым операциям, проходящим только внутри архитектуры кошелька.</p>
+                                                        <p>Все ваши транзакции подтверждаются механическим нажатием кнопки, а подключение кошелька сопровождается введением пин-кода. При утере Trezor'a вы всегда можете восстановить свои средства с помощью приватных ключей.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="product-footer">
+                                                    <ul class="product-price">
+                                                        <li><del>15 300</del></li>
+                                                        <li><ins>13 490<span>₽</span></ins></li>
+                                                    </ul>
+
+                                                    <div class="product-order">
+                                                        <button class="btn" data-toggle="modal" data-target="#modalBuy" >купить кошелек</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="product-item">
+                                        <div class="product-card">
+                                            <div class="product-aside col-xs-12 col-sm-4">
+                                                <div class="product-images-wrap">
+                                                    <div class="slider-product">
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product3/product-3-item-1.png" alt="KEEP KEY" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product3/product-3-item-2.png" alt="KEEP KEY" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product3/product-3-item-3.png" alt="KEEP KEY" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product3/product-3-item-4.png" alt="KEEP KEY" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="slider-product-nav">
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product3/product-3-item-2.png" alt="KEEP KEY" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product3/product-3-item-3.png" alt="KEEP KEY" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product3/product-3-item-4.png" alt="KEEP KEY" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product3/product-3-item-5.png" alt="KEEP KEY" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content col-xs-12 col-sm-8 col-md-7">
+                                                <div class="product-header">
+                                                    <h2 class="product-title">KEEP KEY</h2>
+                                                </div>
+                                                <div class="product-body">
+                                                    <div class="product-description">
+                                                        <p>KeepKey — холодный кошелек для хранения биткоина, эфира, литкоина, биткоин кэш, догкоин, дэш и неймкоин. Ваши криптоактивы всегда будут защищены от хакеров и мошенников.</p>
+                                                        <p>KeepKey работает с приложением на вашем компьютере и использует приватные ключи и требует личное подтверждение каждой транзакции.</p>
+                                                        <p>Ваши ключи и пароли хранятся защищенно внутри архитектуры кошелька и никогда не выходят за его пределы. Keep Key защищен пин-кодом, поэтому ваши средства останутся в безопасности, даже если кошелек попадет в чужие руки Если вы потеряли свой Keep Key, вы сможете восстановить свои средства. на новом устройстве с помощью приватных ключей</p>
+                                                    </div>
+                                                </div>
+                                                <div class="product-footer">
+                                                    <ul class="product-price">
+                                                        <li><del>12 300</del></li>
+                                                        <li><ins>10 990<span>₽</span></ins></li>
+                                                    </ul>
+
+                                                    <div class="product-order">
+                                                        <button class="btn" data-toggle="modal" data-target="#modalBuy" >купить кошелек</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="product-item">
+                                        <div class="product-card">
+                                            <div class="product-aside col-xs-12 col-sm-4">
+                                                <div class="product-images-wrap">
+                                                    <div class="slider-product">
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product4/product-4-item-1.png" alt="COOL WALLET" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product4/product-4-item-2.png" alt="COOL WALLET" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product4/product-4-item-3.png" alt="COOL WALLET" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product4/product-4-item-4.png" alt="COOL WALLET" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="slider-product-nav">
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product4/product-4-item-2.png" alt="COOL WALLET" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product4/product-4-item-3.png" alt="COOL WALLET" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product4/product-4-item-4.png" alt="COOL WALLET" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product4/product-4-item-5.png" alt="COOL WALLET" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content col-xs-12 col-sm-8 col-md-7">
+                                                <div class="product-header">
+                                                    <h2 class="product-title">COOL WALLET</h2>
+                                                </div>
+                                                <div class="product-body">
+                                                    <div class="product-description">
+                                                        <p>CoolWallet — самый удобный и самый красивый биткоин кошелек. Теперь вы сможете хранить свои биткоины на устройстве размером с кредитную карту Устройство подключается по bluetooth к вашему телефону, заряжается с помощью беспроводного зарядного устройства, которое идет в комплекте. Все транзакции пожно осуществлять через удобное приложение для смартфона как на android, так и на iOS.</p>
+                                                        <p>Кошелек имеет экран с электронными чернилами, кнопку, нажав на которую вы сможете включать устройство и подтверждать действия <br>
+                                                        Если ваш кошелек утерян, вы сможете восстановить средства на новом кошельке Cool Wallet. Лучший подарок для держателей биткоина.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="product-footer">
+                                                    <ul class="product-price">
+                                                        <li><del>7 900</del></li>
+                                                        <li><ins>9 900<span>₽</span></ins></li>
+                                                    </ul>
+
+                                                    <div class="product-order">
+                                                        <button class="btn" data-toggle="modal" data-target="#modalBuy" >купить кошелек</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="product-item">
+                                        <div class="product-card">
+                                            <div class="product-aside col-xs-12 col-sm-4">
+                                                <div class="product-images-wrap">
+                                                    <div class="slider-product">
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product5/product-5-item-1.png" alt="xzen" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product5/product-5-item-2.png" alt="xzen" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product5/product-5-item-3.png" alt="xzen" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product5/product-5-item-4.png" alt="xzen" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="slider-product-nav">
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product5/product-5-item-2.png" alt="xzen" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product5/product-5-item-3.png" alt="xzen" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product5/product-5-item-4.png" alt="xzen" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="slide-card">
+                                                                <img src="img/products/product5/product-5-item-5.png" alt="xzen" class="slide-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content col-xs-12 col-sm-8 col-md-7 col-md-offset-1">
+                                                <div class="product-header">
+                                                    <h2 class="product-title">xzen</h2>
+                                                </div>
+                                                <div class="product-body">
+                                                    <div class="product-description">
+                                                        <p>Единая экосистема XZEN позволяет пользователю безопасно хранить многие виды фиатных и крипто-валют, а также открывает доступ к различным финансовым сервисам. С помощью XZEN пользователи смогут инвестировать свои денежные средства, получать и предоставлять кредиты, а также напрямую производить переводы без участия привычных банков с 0% комиссией.</p>
+                                                        <p>Устройство XZEN спроектировано из высококачественной стали и ударопрочного стекла и  оснащено процессором Qualcomm Snapdragon 430, сканером отпечатка пальца, технологией тройного шифрования и децентрализованного хранения данных для безопасности транзакций и защищенного хранения активов пользователей.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="product-footer">
+                                                    <ul class="product-price">
+                                                        <li><del>12 300</del></li>
+                                                        <li><ins>10 990<span>₽</span></ins></li>
+                                                    </ul>
+
+                                                    <div class="product-order">
+                                                        <button class="btn" data-toggle="modal" data-target="#modalBuy" >купить кошелек</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-services" id="section-services" >
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-sm-12">
+                                    <h2 class="section-title">безопасность</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="services-grid">
+                                        <div class="service-item col-xs-12 col-sm-8 col-sm-offset-2">
+                                            <div class="service-card">
+                                                <div class="service-header">
+                                                    <div class="service-thumbnail">
+                                                        <img src="img/icons/service-1.svg" alt="" class="service-icon">
+                                                    </div>
+                                                    <h3 class="service-title">защищенный модуль</h3>
+                                                </div>
+                                                <div class="service-body">Кошельки базируются на двойной архитектуре чипа (ST31/STM32, уровень сертификации: CC EAL5+). Целостность программ гарантируется криптографичским подтверждением.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="service-item col-xs-12 col-sm-8 col-sm-offset-2">
+                                            <div class="service-card">
+                                                <div class="service-header">
+                                                    <div class="service-thumbnail">
+                                                        <img src="img/icons/service-2.svg" alt="" class="service-icon">
+                                                    </div>
+                                                    <h3 class="service-title">защита от вредоносного по</h3>
+                                                </div>
+                                                <div class="service-body">Инициализация или восттановление конфигурации полностью выполняется в безопасной среде. Ваши криптографические секреты никогда не попадут во внешний мир.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="service-item col-xs-12 col-sm-8 col-sm-offset-2">
+                                            <div class="service-card">
+                                                <div class="service-header">
+                                                    <div class="service-thumbnail">
+                                                        <img src="img/icons/service-3.svg" alt="" class="service-icon">
+                                                    </div>
+                                                    <h3 class="service-title">pin-код</h3>
+                                                </div>
+                                                <div class="service-body">При первом включении кошелька вы устанавливаете pin-код и каждый последующий вход будет невозможен без кода. Таким образом, доступ к средствам будет только у вас.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="service-item col-xs-12 col-sm-8 col-sm-offset-2">
+                                            <div class="service-card">
+                                                <div class="service-header">
+                                                    <div class="service-thumbnail">
+                                                        <img src="img/icons/service-4.svg" alt="" class="service-icon">
+                                                    </div>
+                                                    <h3 class="service-title">конфиденциальность</h3>
+                                                </div>
+                                                <div class="service-body">Мы и третьи лица не обладают информацией о ваших частных ключах: они блокируются в защищенном модуле. Ваш кошелек децентрализован, и вы сами себе банк.</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-request">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-sm-12">
+                                    <h2 class="section-title">Отправить заявку</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <form class="form-request form-light">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                                                <div class="form-group form-group-flex">
+                                                    <label for="">Ваше имя:</label>
+                                                    <input type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                                                <div class="form-group form-group-flex">
+                                                    <label for="">Телефон:</label>
+                                                    <input type="tel" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-3 col-lg-2">
+                                                <div class="form-group">
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" id="checkbox04" name="checkbox" checked required />
+                                                        <label for="checkbox04">
+                                                            <span class="custom-check-icon" ></span>
+                                                            <span class="custom-check-value" >Я согласен на обработку персональных данных</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-3 col-lg-2">
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-light" >Заказать кошелек</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-delivery" id="section-delivery">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-sm-12">
+                                    <h2 class="section-title">доставка и оплата</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="delivery-grid">
+                                    <div class="delivery-item col-xs-12 col-sm-6 col-md-3 ">
+                                        <div class="delivery-card">
+                                            <div class="delivery-header">
+                                                <div class="delivery-thumbnail">
+                                                    <img src="img/icons/delivery-1.svg" alt="самовывоз" class="delivery-icon">
+                                                </div>
+                                                <h3 class="delivery-title">самовывоз</h3>
+                                            </div>
+                                            <div class="delivery-body">Вы можете забрать кошелек у нас в офисе. <br> Мы поможем вам его подключить и настроить.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="delivery-item col-xs-12 col-sm-6 col-md-3 ">
+                                        <div class="delivery-card">
+                                            <div class="delivery-header">
+                                                <div class="delivery-thumbnail">
+                                                    <img src="img/icons/delivery-2.svg" alt="доставка по москве" class="delivery-icon">
+                                                </div>
+                                                <h3 class="delivery-title">доставка по москве</h3>
+                                            </div>
+                                            <div class="delivery-body">Доставим ваш биткоин кошелек на следующий день при заказе до 18:00. Заказы после 18:00 доставим через день. Стоимость доставки по Москве — 350 р.</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="delivery-item col-xs-12 col-sm-6 col-md-3 ">
+                                        <div class="delivery-card">
+                                            <div class="delivery-header">
+                                                <div class="delivery-thumbnail">
+                                                    <img src="img/icons/delivery-3.svg" alt="доставка по всей рф" class="delivery-icon">
+                                                </div>
+                                                <h3 class="delivery-title">доставка по всей рф</h3>
+                                            </div>
+                                            <div class="delivery-body">Вы можете купить биткоин кошелек из любого города РФ. Доставка до одной недели <br> от 350 до 600 р. <br> в зависимости от региона.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="delivery-item col-xs-12 col-sm-6 col-md-3 ">
+                                        <div class="delivery-card">
+                                            <div class="delivery-header">
+                                                <div class="delivery-thumbnail">
+                                                    <img src="img/icons/delivery-4.svg" alt="оплата" class="delivery-icon">
+                                                </div>
+                                                <h3 class="delivery-title">оплата</h3>
+                                            </div>
+                                            <div class="delivery-body">Любой заказ оплачивается на месте при получении товара, никакой предоплаты не требуется.</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-news" style="background-image: url(img/dotted.png);" id="section-news" >
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-sm-12">
+                                    <h2 class="section-title">Последние новости</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="news-grid">
+                                    <div class="news-item">
+                                        <div class="news-card">
+                                            <div class="news-aside col-xs-12 col-sm-4">
+                                                <div class="news-thumbnail" style="background-image: url(img/news/news-item-1.png)" >
+                                                    <a href="#link" class="news-thumbnail-link"></a>
+                                                </div>
+                                            </div>
+                                            <div class="news-content col-xs-12 col-sm-8">
+                                                <div class="news-header">
+                                                    <h4 class="news-title"><a href="#link">МВД России выступает за контролируемый оборот криптовалют, а МЭР озвучит собственное мнение по ICO</a></h4>
+                                                    <time class="news-date" >16/02/2018</time>
+                                                </div>
+                                                <div class="news-body">
+                                                    <div class="news-description">
+                                                        МВД России придерживается точки зрения Центробанка о необходимости ограничения и регламента оборота цифровых валют, в целях противодействия использования коинов для «теневой экономики». Министерство экономического развития хочет внести коррективы в пакет норм и правил по проведению ICO, которые будут готовы 2-3 недели.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item">
+                                        <div class="news-card">
+                                            <div class="news-aside col-xs-12 col-sm-4">
+                                                <div class="news-thumbnail" style="background-image: url(img/news/news-item-2.png)" >
+                                                    <a href="#link" class="news-thumbnail-link"></a>
+                                                </div>
+                                            </div>
+                                            <div class="news-content col-xs-12 col-sm-8">
+                                                <div class="news-header">
+                                                    <h4 class="news-title"><a href="#link">Правоохранители вскрыли схемы хищения с помощью фишинга и псевдо-инвестиций на $ 125 млн</a></h4>
+                                                    <time class="news-date" >16/02/2018</time>
+                                                </div>
+                                                <div class="news-body">
+                                                    <div class="news-description">
+                                                        Новички, открывающие свой первый кошелек на популярном сервисе Blockchain.info отдали хакерам $10 млн во время криптовалютного бума, через фишинговую копию сайта. Граждане Евросоюза «подарили» криптопирамиде из Коста-Рики Optioment $115 млн, в надежде быстро разбогатеть.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <a href="#link" class="btn" >Больше новостей</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-buy">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-sm-12">
+                                    <h2 class="section-title">Отправить заявку</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form action="" class="form-buy form-light">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="form-group form-group-flex ">
+                                                    <label for="">Ваше имя:</label>
+                                                    <input type="text" required >
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="form-group form-group-flex ">
+                                                    <label for="">Телефон:</label>
+                                                    <input type="tel" required >
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 col-lg-4">
+                                                <div class="form-group form-group-flex ">
+                                                    <label for="">Кошелек:</label>
+                                                    <select class="custom-select">
+                                                        <option value="Ledger Nano S">Ledger Nano S</option>
+                                                        <option value="TREZOR">TREZOR</option>
+                                                        <option value="KEEP KEY">KEEP KEY</option>
+                                                        <option value="COOL WALLET">COOL WALLET</option>
+                                                        <option value="XZEN">XZEN</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class=" col-xs-12 col-md-6 col-lg-8">
+                                                <div class="form-group form-group-flex ">
+                                                    <label for="">Адрес доставки:</label>
+                                                    <input type="text" required >
+                                                </div>
+                                            </div>
+                                            <div class=" col-xs-12 col-md-3 col-lg-2">
+                                                <div class="form-group">
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" id="checkbox05" name="checkbox" checked />
+                                                        <label for="checkbox05">
+                                                            <span class="custom-check-icon" ></span>
+                                                            <span class="custom-check-value" >Я согласен на обработку персональных данных</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-3 col-lg-2">
+                                                <div class="form-group text-right">
+                                                    <button class="btn btn-light" >Заказать кошелек</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-partners" id="section-partners">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-header col-sm-12">
+                                    <h2 class="section-title">приложения</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="partners-grid">
+                                        <div class="partner-item">
+                                            <div class="partner-card">
+                                                <a href="#link" class="partner-link"></a>
+                                                <figure>
+                                                    <div class="partner-thumbnail">
+                                                        <img src="img/partners/partner-logo-1.png" alt="Ledger">
+                                                    </div>
+                                                    <figcaption class="partner-title" >Ledger</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <div class="partner-item">
+                                            <div class="partner-card">
+                                                <a href="#link" class="partner-link"></a>
+                                                <figure>
+                                                    <div class="partner-thumbnail">
+                                                        <img src="img/partners/partner-logo-2.png" alt="Trezor">
+                                                    </div>
+                                                    <figcaption class="partner-title" >Trezor</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <div class="partner-item">
+                                            <div class="partner-card">
+                                                <a href="#link" class="partner-link"></a>
+                                                <figure>
+                                                    <div class="partner-thumbnail">
+                                                        <img src="img/partners/partner-logo-3.png" alt="keep key">
+                                                    </div>
+                                                    <figcaption class="partner-title" >keep key</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <div class="partner-item">
+                                            <div class="partner-card">
+                                                <a href="#link" class="partner-link"></a>
+                                                <figure>
+                                                    <div class="partner-thumbnail">
+                                                        <img src="img/partners/partner-logo-4.png" alt="cool wallet">
+                                                    </div>
+                                                    <figcaption class="partner-title" >cool wallet</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <div class="partner-item">
+                                            <div class="partner-card">
+                                                <a href="#link" class="partner-link"></a>
+                                                <figure>
+                                                    <div class="partner-thumbnail">
+                                                        <img src="img/partners/partner-logo-5.png" alt="XZEN">
+                                                    </div>
+                                                    <figcaption class="partner-title" >XZEN</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-map" id="section-map" >
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div id="map"></div>
+                                <!-- <iframe src="https://snazzymaps.com/embed/50487" width="100%" height="600px" style="border:none;" async/> -->
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="section-contact" id="section-contact" style="background-image: url('./img/dotted.png')"  >
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="contact-block">
+                                        <h4 class="contact-title">звоните!</h4>
+                                        <p><a href="tel:+74956789090">(495) 678 90 90</a></p>
+                                    </div>
+
+                                    <div class="contact-block">
+                                        <h4 class="contact-title">приходите!</h4>
+                                        <p>г. Москва, Название улицы, 23/7, офис 34</p>
+                                    </div>
+
+                                    <div class="contact-block">
+                                        <h4 class="contact-title">пишите!</h4>
+                                        <p><a href="mailto:info@kriptokoshelek.ru">info@kriptokoshelek.ru</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </main>
+            </div>
+            <div class="down-part">
+                <footer class="footer-box">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-inner col-sm-12">
+                                <div class="footer-side-left">
+                                    <div class="footer-logo">
+                                       <a href="index.html"><img src="img/logo.png" alt="Kriptokoshelek" class="footer-logo-img"></a>
+                                   </div>
+                                </div>
+                                <div class="footer-side-center">
+                                    <ul class="footer-nav">
+                                       <li><a href="#section-products">кошельки</a></li>
+                                       <li><a href="#section-services">безопасность</a></li>
+                                       <li><a href="#section-delivery">доставка</a></li>
+                                       <li><a href="#section-partners">приложения</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-side-right">
+                                    <div class="footer-phone">
+                                       <a href="tel:+7(495)6789090">(495) <b>678 90 90</b></a>
+                                   </div>
+                                   <ul class="footer-social social-list">
+                                        <li><a href="#link"><i class="icon-phone-sq" ></i></a></li>
+                                        <li><a href="#link"><i class="icon-telegram" ></i></a></li>
+                                        <li><a href="#link"><i class="icon-phone-c" ></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC_6dU-jxCoGgjMBEQCAByXL2ec-Ld_k0"></script>
+        <script src="js/libs.min.js" ></script>
+        <script src="js/slick.js" ></script>
+        <script src="js/mask.js" ></script>
+        <script src="js/main.js" ></script>
+    </body>
+
+</html>
