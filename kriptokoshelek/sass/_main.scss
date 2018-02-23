@@ -224,7 +224,8 @@
 }
 
 .services-grid {
-	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 	padding: 70px 0 0;
 	.service-item {
 		&:last-child {

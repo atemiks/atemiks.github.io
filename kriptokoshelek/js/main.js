@@ -1,5 +1,10 @@
 $( document ).ready(function() {
 
+	
+	setTimeout(function(){
+	  AOS.init();
+	}, 100);
+
 	// smooth scroll
 	$('a[href*="#"]')
 	  .not('[href="#"]')
