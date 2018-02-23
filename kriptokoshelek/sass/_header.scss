@@ -161,6 +161,7 @@
 	display: none;
 	width: 40px;
 	margin: 23px 10px;
+	padding: 0;
 	border: none;
 	background: none;
 	@media (max-width: 991px) {
@@ -205,6 +206,9 @@
 			position: absolute;
 			top: 0;
 			right: 0;
+			padding: 0;
+			border: nono;
+			background: none;
 			font-size: 34px;
 			color: #fff;
 		}

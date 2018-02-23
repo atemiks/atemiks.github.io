@@ -1829,6 +1829,7 @@ input[type="checkbox"] + label .custom-check-value {
   position: absolute;
   top: 0;
   right: 0;
+  padding: 0;
   border: none;
   background: none;
   font-size: 36px;
@@ -2444,6 +2445,7 @@ input[type="checkbox"] + label .custom-check-value {
   display: none;
   width: 40px;
   margin: 23px 10px;
+  padding: 0;
   border: none;
   background: none; }
   @media (max-width: 991px) {
@@ -2485,6 +2487,9 @@ input[type="checkbox"] + label .custom-check-value {
       position: absolute;
       top: 0;
       right: 0;
+      padding: 0;
+      border: nono;
+      background: none;
       font-size: 34px;
       color: #fff; }
   .offcanvas .offcanvas-body {
@@ -2549,6 +2554,9 @@ input[type="checkbox"] + label .custom-check-value {
       bottom: 0;
       width: 100vw;
       border-bottom: 2px solid #ebebeb; }
+  @media (max-width: 767px) {
+    .footer-box .footer-side-right {
+      width: 100%; } }
 
 @media (max-width: 767px) {
   .footer-logo {

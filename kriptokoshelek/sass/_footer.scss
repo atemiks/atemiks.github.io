@@ -30,6 +30,9 @@
 	}
 	.footer-side-right {
 		@extend .header-side-right;
+		@media (max-width: 767px) {
+			width: 100%;
+		}
 	}
 }
 
