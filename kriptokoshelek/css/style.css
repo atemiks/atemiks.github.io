@@ -1827,12 +1827,13 @@ input[type="checkbox"] + label .custom-check-value {
 
 .modal .close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 10px;
   padding: 0;
   border: none;
   background: none;
   font-size: 36px;
+  line-height: 1;
   color: #fff; }
 
 .modal .modal-header {
@@ -2443,7 +2444,7 @@ input[type="checkbox"] + label .custom-check-value {
 
 .header-toggle {
   display: none;
-  width: 40px;
+  width: 30px;
   margin: 23px 10px;
   padding: 0;
   border: none;
@@ -2485,13 +2486,14 @@ input[type="checkbox"] + label .custom-check-value {
     padding: 15px; }
     .offcanvas .offcanvas-header .offcanvas-close {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 5px;
+      right: 10px;
       padding: 0;
-      border: nono;
+      border: none;
       background: none;
       font-size: 34px;
-      color: #fff; }
+      color: #fff;
+      line-height: 1; }
   .offcanvas .offcanvas-body {
     padding: 15px; }
     .offcanvas .offcanvas-body .offcanvas-menu li {

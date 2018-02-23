@@ -159,7 +159,7 @@
 // offcanvas
 .header-toggle {
 	display: none;
-	width: 40px;
+	width: 30px;
 	margin: 23px 10px;
 	padding: 0;
 	border: none;
@@ -204,13 +204,14 @@
 		padding: 15px;
 		.offcanvas-close {
 			position: absolute;
-			top: 0;
-			right: 0;
+			top: 5px;
+			right: 10px;
 			padding: 0;
-			border: nono;
+			border: none;
 			background: none;
 			font-size: 34px;
 			color: #fff;
+			line-height: 1;
 		}
 	}
 	.offcanvas-body {
