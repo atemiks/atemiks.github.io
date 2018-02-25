@@ -1,0 +1,28 @@
+.footer-box {
+	padding: 12px 0;
+	background: $dark;
+	color: $light;
+}
+
+.footer-nav,
+.footer-copyright {
+	font-size: 1.0625em;
+}
+
+.footer-nav {
+	text-align: right;
+}
+.footer-nav-list {
+	@extend .reset-list;
+	margin: 0 -12px;
+	li {
+		display: inline-block;
+		padding: 0 12px;
+		a {
+			color: inherit;
+			&:hover {
+				color: $warning;
+			}
+		}
+	}
+}

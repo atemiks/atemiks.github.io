@@ -1,0 +1,19 @@
+.header-box {
+	padding: 12px 0;
+	background: rgba($dark, .9);
+}
+
+.header-logo {}
+
+.header-social {
+	text-align: right;
+	li {
+		a {
+			color: $light;
+			&:hover {
+				color: $warning;
+			}
+		}
+	}
+}
+
