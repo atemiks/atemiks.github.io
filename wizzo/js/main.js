@@ -17,8 +17,8 @@ $( document ).ready(function() {
 		swipeToSlide: false
 	});
 
-	 var item_length = $('.slider-presentation-nav > div').length - 1;
-	 console.log(item_length);
+ 	var item_length = $('.slider-presentation-nav > div').length - 1;
+
 	$('.slider-presentation-nav').slick({
 		slidesToShow: 6,
 		slidesToScroll: 1,
@@ -39,39 +39,20 @@ $( document ).ready(function() {
 	        swipeToSlide: true,
 	        draggable: true,
 	        slidesToShow: 3,
-	        slidesToScroll: 1,
+	        slidesToScroll: 3,
 	        variableWidth: false,
-	        adaptiveHeight: true,
-	        // centerMode: true,
-	        arrows: false,
-	        beforeChange: function(event, slick, currentSlide, nextSlide){
-	        	console.log('work');
-	            if( item_length == index ){
-	                alert("Slide 2");
-	            };
-	        }
-	        // infinite: true
+	        // adaptiveHeight: true,
+	        // centermode: true,
+	        arrows: false
 	      }
 	    },
 	    {
-	      breakpoint: 600,
-	      settings: {
-	        slidesToShow: 2,
-	        slidesToScroll: 2
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1
-	      }
+	      breakpoint: 767,
+	      settings: 'unslick'
 	    }
-	    // You can unslick at a given breakpoint now by adding:
-	    // settings: "unslick"
-	    // instead of a settings object
 	  ]
 	});
+
 	$('.slider-presentation-nav').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 	  	if( item_length == nextSlide ){
             $('.slider-presentation-nav').addClass('overlay-hidden');

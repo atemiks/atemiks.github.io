@@ -25,57 +25,79 @@ h6 {
 
 h1,
 .h1 {
-	font-size: 3.125em;
+	font-size: 50px;
 	font-weight: 700;
-	margin-top: 0.4em;
-	margin-bottom: 0.4em;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	@media (min-width: 768px) and (max-width: 991px) {
-		font-size: 2.5em;
+		font-size: 40px;
+	}
+	@media (max-width: 767px) {
+		font-size: 30px;
 	}
 }
 
 h2,
 .h2 {
-	font-size: 2.8125em;
+	font-size: 45px;
 	font-weight: 300;
-	margin-top: 0.5333333333em;
-	margin-bottom: 0.5333333333em;
+	margin-top: 24px;
+	margin-bottom: 14px;
 	@media (min-width: 768px) and (max-width: 991px) {
-		font-size: 2.5em;
+		font-size: 40px;
 		margin-top: 8px;
 		margin-bottom: 8px;
+	}
+	@media (max-width: 767px) {
+		font-size: 25px;
 	}
 }
 
 h3,
 .h3 {
-	font-size: 1.625em;
+	font-size: 26px;
 	font-weight: 500;
-	margin-top: 0.4615384615em;
-	margin-bottom: 0.4615384615em;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	@media (max-width: 767px) {
+		font-size: 16px;
+	}
 }
 
 h4,
 .h4 {
-	font-size: 1.375em;
+	font-size: 22px;
 	font-weight: 400;
+	@media (max-width: 767px) {
+		font-size: 14px;
+	}
 }
 
 h5,
 .h5 {
-	font-size: 1.25em;
+	font-size: 20px;
 	font-weight: 400;
+	@media (max-width: 767px) {
+		font-size: 12px;
+	}
 }
 
 h6,
 .h6 {
-	font-size: 1.0625em;
+	font-size: 17px;
 	font-weight: 400;
+	@media (max-width: 767px) {
+		font-size: 12px;
+	}
 }
 
 p {
 	margin-top: 8px;
 	margin-bottom: 8px;
+	font-size: 17px;
+	@media (max-width: 767px) {
+		font-size: 12px;
+	}
 }
 
 

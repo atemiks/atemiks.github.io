@@ -21,15 +21,19 @@
 		color: $warning;
 	}
 	.section-subtitle {
-		font-size: 1.375em;
+		font-size: 22px;
 		line-height: 1.5;
+		@media (max-width: 767px) {
+			font-size: 14px;
+			line-height: 1.375;
+		}
 	}
 }
 
 .social-list {
 	@extend .reset-list;
 	margin: 3px 0;
-	font-size: 1.25em;
+	font-size: 20px;
 	@media (max-width: 991px) {
 		margin-left: -14px;
 		margin-right: -14px;
@@ -45,15 +49,20 @@
 
 .download-badges {
 	@extend .reset-list;
-	margin: 2.8125em -15px;
+	margin: 30px -15px;
 	li {
 		display: inline-block;
+		margin: 15px 0;
 		padding: 0 15px;
+	}
+
+	img {
+		height: 65px;
 	}
 
 	&.download-badges-sm {
 		img {
-			height: 65px;
+			height: 50px;
 		}
 	}
 }

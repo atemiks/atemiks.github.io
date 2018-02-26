@@ -6,7 +6,10 @@
 
 .footer-nav,
 .footer-copyright {
-	font-size: 1.0625em;
+	font-size: 17px;
+	@media (max-width: 767px) {
+		font-size: 9px;
+	}
 }
 
 .footer-nav {

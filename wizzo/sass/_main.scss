@@ -30,12 +30,15 @@
 	}
 
 	.hero-description {
-		font-size: 1.25em;
+		font-size: 20px;
+		@media (max-width: 767px) {
+			font-size: 16px;
+		}
+
 		p {
-			margin: 0.4em 0;
+			font-size: inherit;
 		}
 	}
-
 }
 .hero-thumbnail-wrap {
 	position: relative;
@@ -59,12 +62,22 @@
 		padding: 60px 12px 0;
 		background: url('../img/hero/hero-phone.png') no-repeat 0 0;
 		background-size: contain;
+		@media (max-width: 767px) {
+			width: 265px;
+			height: 470px;
+			padding: 55px 11px;
+		}
+
 		.hero-thumbnail {
 			overflow: hidden;
 			width: 263px;
 			height: 447px;
 			border-top-left-radius: 8px;
 			border-top-right-radius: 8px;
+			@media (max-width: 767px) {
+			    width: 243px;
+    			height: 415px;
+			}
 		}
 
 		.bubble {
@@ -76,19 +89,23 @@
 			border-radius: 22px 22px 0;
 			background: #fff;
 		    transform: translateX(-100%);
-			font-size: 1.25em;
+			font-size: 20px;
 			color: $default;
 			text-align: left;
 			@media (min-width: 992px) and (max-width: 1199px) {
 				min-height: 37px;
 				max-width: 90px;
-				font-size: 1.0625em;
+				padding: 12px 8px 8px 20px;
+				font-size: 17px;
 			}
 			@media (max-width: 991px) {
 				min-height: 37px;
 				max-width: 86px;
 				padding: 12px 5px 8px 20px;
-				font-size: 1.0625em;
+				font-size: 17px;
+			}
+			@media (max-width: 767px) {
+				display: none;
 			}
 
 			&.bubble-inverse {
@@ -113,7 +130,7 @@
 				right: -23px;
 				@media (min-width: 992px) and (max-width: 1199px) {
 					top: 175px;
-					right: -15px;
+					right: -10px;
 				}
 				@media (max-width: 991px) {
 				    top: 179px;
@@ -173,21 +190,32 @@
 	    background-size: 84%;
         transform: translateX(-46%);
 	}
+	@media (max-width: 767px) {
+		height: 364px;
+	    background-size: 56%;
+	    transform: translateX(-52%);
+	}
 }
 .testimonial-card {
 	position: absolute;
 	display: inline-block;
 	max-width: 258px;
-	padding: 16px 20px;
+	padding: 14px 10px 14px 20px;
 	border-radius: 22px 22px 0;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 	background: $light;
-	font-size: 1.0625em;
+	font-size: 17px;
 	line-height: 1.25;
 	@media (min-width: 768px) and (max-width: 991px) {
 		max-width: 225px;
 		padding: 15px;
-		font-size: 1em;
+		font-size: 16px;
+	}
+	@media (max-width: 767px) {
+		max-width: 107px;
+		padding: 5px;
+		border-radius: 11px 11px 0;
+		font-size: 11px;
 	}
 	&:before,
 	&:after {
@@ -202,6 +230,12 @@
 		width: 26px;
 		height: 26px;
 		background: rgba(#ff7200, .4);
+		@media (max-width: 767px) {
+			right: -6px;
+			bottom: -6px;
+			width: 13px;
+			height: 13px;
+		}
 	}
 	&:after {
 		right: -7px;
@@ -209,19 +243,35 @@
 		width: 16px;
 		height: 16px;
 		background-color: #ffb32e;
+		@media (max-width: 767px) {
+			right: -3px;
+			bottom: -4px;
+			width: 8px;
+			height: 8px;
+		}
 	}
 	&.testimonial-card-inverse {
 		border-radius: 22px 22px 22px 0;
+		@media (max-width: 767px) {
+			border-radius: 11px 11px 11px 0;
+		}
+
 		&:before {
 			right: initial;
 			left: -12px;
-			
+			@media (max-width: 767px) {
+				left: -6px;
+			}
 		}
 		&:after {
 			right: initial;
 			left: -7px;
+			@media (max-width: 767px) {
+				left: -3px;
+			}
 		}
 	}
+
 	&:nth-child(1) {
 		top: 40px;
 		left: 389px;
@@ -229,6 +279,10 @@
 		    top: 30px;
     		left: 445px;
     		max-width: 200px;
+		}
+		@media (max-width: 767px) {
+		    top: 40px;
+    		left: 700px;
 		}
 	}
 	&:nth-child(2) {
@@ -239,6 +293,10 @@
     		left: 572px;
 			max-width: 215px;
 		}
+		@media (max-width: 767px) {
+			top: 120px;
+    		left: 680px;
+		}
 	}
 	&:nth-child(3) {
 		top: 363px;
@@ -248,6 +306,11 @@
     		left: 380px;
 			max-width: 260px;
 		}
+		@media (max-width: 767px) {
+		    top: 160px;
+			left: 805px;
+			max-width: 125px;
+		}
 	}
 	&:nth-child(4) {
 		top: 122px;
@@ -256,6 +319,11 @@
 		    top: 112px;
     		right: 559px;
 			max-width: 200px;
+		}
+		@media (max-width: 767px) {
+		    top: 33px;
+		    right: 610px;
+		    max-width: 140px;
 		}
 	}
 	&:nth-child(5) {
@@ -267,6 +335,9 @@
     		right: 535px;
 			max-width: 225px;
 		}
+		@media (max-width: 767px) {
+			display: none;
+		}
 	}
 	&:nth-child(6) {
 		max-width: 230px;
@@ -276,6 +347,11 @@
 		    top: 375px;
     		right: 510px;
 			max-width: 210px;
+		}
+		@media (max-width: 767px) {
+		    top: 273px;
+		    right: 639px;
+		    max-width: 110px;
 		}
 	}
 
@@ -310,18 +386,42 @@
 	min-height: 685px;
 	margin: 0 -15px;
 	padding: 15px 0;
+	@media (max-width: 767px) {
+		min-height: initial;
+	}
 }
 .presentation-card {
 	cursor: pointer;
-	margin: 40px 0;
+	margin: 30px 0 35px;
 	@media (max-width: 991px) {
 		margin: 0;
 		padding: 15px 0 60px;
 	}
 
-	.presentation-thumbnail {}
+	.presentation-thumbnail {
+		display: none;
+		float: left;
+		overflow: hidden;
+		width: 75px;
+		height: 75px;
+		margin: 0 15px;
+		border-radius: 50%;
+		background-color: $light-gray;
+		box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+		background-position: center;
+		background-size: cover;
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
 	.presentation-content {
+		overflow: hidden;
 		color: $gray;
+		@media (max-width: 767px) {
+			padding: 0 15px;
+			color: $default;
+		}
+
 		.presentation-title,
 		.presentation-description {
 			@extend .transition;
@@ -339,11 +439,17 @@
 			@media (min-width: 992px) and (max-width: 1199px) {
 				max-width: 285px;
 			}
+			@media (max-width: 767px) {
+				font-size: 12px;
+			}
 		}
 	}
 	&:hover {
 		.presentation-content {
 			color: $dark-gray;
+			@media (max-width: 767px) {
+				color: $default;
+			}
 		}
 	}
 }
@@ -362,6 +468,9 @@
 		width: 50%;
 		margin: 0;
 		transform: translateY(0);
+	}
+	@media (max-width: 767px) {
+		display: none;
 	}
 }
 .presentation-phone {
@@ -385,9 +494,6 @@
 	}
 	.slick-dots {
 		bottom: -120px;
-		@media (min-width: 992px) and (max-width: 1199px) {
-			bottom: -140px;
-		}
 		@media (max-width: 991px) {
 			left: 50%;
 			bottom: -50px;
@@ -396,7 +502,7 @@
 }
 .slider-presentation-nav {
 	position: relative;
-	@media (max-width: 991px) {
+	@media (min-width: 768px) and (max-width: 991px) {
 		width: 50%;
 		margin-left: 50%;
 	}
@@ -413,7 +519,7 @@
 		bottom: 0;
 		height: 55px;
 		background-image: linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-		@media (max-width: 991px) {
+		@media (min-width: 768px) and (max-width: 991px) {
 			display: block;
 		}
 	}
@@ -429,10 +535,6 @@
 	}
 
 	.slick-list {
-		@media (max-width: 991px) {
-			height: 597px !important;
-		}
-
 		.slick-track {
 			&:before,
 			&:after {
@@ -440,7 +542,6 @@
 					display: none;
 				}
 			}
-
 			@media (min-width: 992px) {
 				display: flex;
 				flex-wrap: wrap;
@@ -486,9 +587,12 @@
 						order: 6;
 					}
 				}
-
 			}
 		}
+	}
+
+	.slide-item {
+		outline: none;
 	}
 }
 
@@ -516,7 +620,13 @@
 
 // section guide
 .section-guide {
+	margin-bottom: -105px;
+	padding-top: 40px;
 	padding-bottom: 0;
+	@media (min-width: 992px) and (max-width: 1199px) {
+		margin-bottom: -75px;
+		padding-top: 20px;
+	}
 }
 .guide-grid {
 	margin: -80px 0 0;
@@ -548,6 +658,10 @@
 		height: 329px;
 		padding: 33px 7px 0;
 	}
+	@media (max-width: 767px) {
+		display: none;
+	}
+
 	.guide-img {
 		width: 236px;
 		height: 421px;
@@ -569,6 +683,10 @@
 	@media (min-width: 992px) and (max-width: 1199px) {
 		padding: 10px 0 35px;
 	}
+
+	p {
+		font-size: inherit;
+	}
 }
 
 .guide-actions {
@@ -576,9 +694,13 @@
 	@extend .h4;
 	line-height: 1.35;
 	text-align: center;
+	@media (max-width: 767px) {
+		display: none;
+	}
+
 	li {
 		span {
-			font-size: 1.1818181818em;
+			font-size: 26px;
 			font-weight: 300;
 			color: $warning;
 		}
@@ -590,14 +712,8 @@
 .section-download {
 	@extend .gradient-warning;
 	position: relative;
-	z-index: 9;
-	margin-top: -105px;
 	padding-top: 0;
 	padding-bottom: 0;
-	trasnofrm: translateY(-50%);
-	@media (min-width: 992px) and (max-width: 1199px) {
-		margin-top: -75px;
-	}
 }
 .download-box {
 	text-align: center;
@@ -608,6 +724,7 @@
 	}
 
 	.download-title {
+		margin: 15px 0;
 		color: #fff;
 	}
 	.download-badges {
