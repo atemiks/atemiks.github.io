@@ -667,18 +667,19 @@
 
 .guide-lead {
 	@extend .h4;
+	margin: 8px 0 -192px;
 	padding: 16px 0;
 	text-align: center;
 	@media (min-width: 992px) and (max-width: 1199px) {
+		margin: 8px 0 -172px;
 		padding: 10px 0 35px;
 	}
 	@media (max-width: 991px) {
-		margin: -5px 0;
+		margin: -5px 0 30px;
 		padding: 0;
 	}
 	@media (max-width: 767px) {
-		margin-left: -10px;
-		margin-right: -10px;
+		margin: -5px -10px;
 	}
 
 	p {
@@ -694,17 +695,10 @@
 
 
 .guide-grid {
-	margin: -200px 0 0;
-	@media (min-width: 992px) and (max-width: 1199px) {
-		margin: -180px 0 0;
-	}
-	@media (max-width: 991px) {
-		margin: 30px 0;
-	}
 	@media (max-width: 767px) {
 		display: none;
 	}
-
+	
 	.guide-step {
 		&:before,
 		&:after {
@@ -749,14 +743,14 @@
 .guide-actions {
 	@extend .reset-list;
 	@extend .h4;
-	padding: 210px 0 60px;
+	padding: 145px 0 60px;
 	line-height: 1.35;
 	text-align: center;
 	@media (min-width: 992px) and (max-width: 1199px) {
-		padding: 170px 0 60px;
+		padding: 160px 0 60px;
 	}
 	@media (max-width: 991px) {
-		padding: 40px 0;
+		padding: 35px 0;
 	}
 
 	li {
