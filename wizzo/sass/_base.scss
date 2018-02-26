@@ -8,7 +8,14 @@ body {
 }
 
 section {
+	overflow: hidden;
 	padding: 20px 0 80px;
+	@media (max-width: 991px) {
+		padding: 20px 0 60px;
+	}
+	@media (max-width: 767px) {
+		padding: 20px 0;
+	}
 }
 
 
@@ -49,6 +56,7 @@ h2,
 		margin-bottom: 8px;
 	}
 	@media (max-width: 767px) {
+		margin-top: 14px;
 		font-size: 25px;
 	}
 }
@@ -108,6 +116,10 @@ a {
 	}
 }
 
+
+img {
+	max-width: 100%;
+}
 
 
 .text-left {

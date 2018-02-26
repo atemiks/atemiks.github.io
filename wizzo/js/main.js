@@ -1,6 +1,8 @@
 $( document ).ready(function() {
 
-	AOS.init();
+	setTimeout(function(){
+	  AOS.init();
+	}, 100);
 
 	// section presentation
 	 $('.slider-presentation').slick({

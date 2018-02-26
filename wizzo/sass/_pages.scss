@@ -17,6 +17,10 @@
 .section-header {
 	padding: 20px 0;
 	text-align: center;
+	@media (max-width: 767px) {
+		padding: 10px 0;
+	}
+
 	.section-title {
 		color: $warning;
 	}
@@ -38,6 +42,12 @@
 		margin-left: -14px;
 		margin-right: -14px;
 	}
+	@media (max-width: 767px) {
+		margin-left: -10px;
+		margin-right: -10px;
+		font-size: 14px;
+	}
+
 	li {
 		display: inline-block;
 		padding: 0 12px;
@@ -49,20 +59,40 @@
 
 .download-badges {
 	@extend .reset-list;
+	position: relative;
+	z-index: 9;
 	margin: 30px -15px;
+	@media (min-width: 768px) and (max-width: 991px) {
+		margin: 20px -15px;
+	}
+	@media (max-width: 767px) {
+		display: flex !important;
+		flex-direction: column-reverse;
+		margin: 15px -15px;
+	}
+
 	li {
 		display: inline-block;
 		margin: 15px 0;
 		padding: 0 15px;
+		@media (max-width: 767px) {
+			margin: 10px 0;
+		}
 	}
 
 	img {
 		height: 65px;
+		@media (max-width: 767px) {
+			height: 40px;
+		}
 	}
 
 	&.download-badges-sm {
 		img {
 			height: 50px;
+			@media (max-width: 767px) {
+				height: 43px;
+			}
 		}
 	}
 }

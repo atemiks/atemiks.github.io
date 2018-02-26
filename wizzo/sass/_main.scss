@@ -8,6 +8,9 @@
 	@media (max-width: 991px) {
 		padding-top: 34px;
 	}
+	@media (max-width: 767px) {
+		padding-top: 40px;
+	}
 
 	.hero-inner {
 		display: flex;
@@ -42,6 +45,10 @@
 }
 .hero-thumbnail-wrap {
 	position: relative;
+	@media (max-width: 991px) {
+		margin-top: 20px;
+	}
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -101,7 +108,7 @@
 			@media (max-width: 991px) {
 				min-height: 37px;
 				max-width: 86px;
-				padding: 12px 5px 8px 20px;
+				padding: 10px 5px 8px 17px;
 				font-size: 17px;
 			}
 			@media (max-width: 767px) {
@@ -213,7 +220,7 @@
 	}
 	@media (max-width: 767px) {
 		max-width: 107px;
-		padding: 5px;
+		padding: 6px 8px;
 		border-radius: 11px 11px 0;
 		font-size: 11px;
 	}
@@ -332,8 +339,8 @@
 		right: 285px;
 		@media (min-width: 768px) and (max-width: 991px) {
 		    top: 230px;
-    		right: 535px;
-			max-width: 225px;
+		    right: 555px;
+		    max-width: 205px;
 		}
 		@media (max-width: 767px) {
 			display: none;
@@ -349,9 +356,9 @@
 			max-width: 210px;
 		}
 		@media (max-width: 767px) {
-		    top: 273px;
-		    right: 639px;
-		    max-width: 110px;
+	        top: 265px;
+		    right: 635px;
+		    max-width: 115px;
 		}
 	}
 
@@ -388,6 +395,7 @@
 	padding: 15px 0;
 	@media (max-width: 767px) {
 		min-height: initial;
+		padding: 0;
 	}
 }
 .presentation-card {
@@ -396,6 +404,9 @@
 	@media (max-width: 991px) {
 		margin: 0;
 		padding: 15px 0 60px;
+	}
+	@media (max-width: 767px) {
+		padding: 15px 0;
 	}
 
 	.presentation-thumbnail {
@@ -418,7 +429,7 @@
 		overflow: hidden;
 		color: $gray;
 		@media (max-width: 767px) {
-			padding: 0 15px;
+			padding: 0 5px;
 			color: $default;
 		}
 
@@ -430,6 +441,9 @@
 
 		.presentation-title {
 			margin: 10px 0;
+			@media (max-width: 767px) {
+				margin: -3px 0 5px;
+			}
 		}
 		.presentation-description {
 			display: inline-block;
@@ -441,6 +455,7 @@
 			}
 			@media (max-width: 767px) {
 				font-size: 12px;
+				line-height: 1.2;
 			}
 		}
 	}
@@ -586,6 +601,10 @@
 					&:nth-child(6) {
 						order: 6;
 					}
+
+					&.hidden {
+						order: 99;
+					}
 				}
 			}
 		}
@@ -602,8 +621,10 @@
 	position: relative;
 	canvas {
 		position: absolute;
-		width: 100%;
-  		height: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
 	}
 
 	.section-header {
@@ -614,25 +635,76 @@
 
 	.video-box {
 		padding: 0 25px;
+		@media (max-width: 991px) {
+			padding: 15px 0;
+		}
+		@media (max-width: 767px) {
+			margin: -20px -10px 10px;
+		}
 	}
 }
 
 
 // section guide
 .section-guide {
-	margin-bottom: -105px;
-	padding-top: 40px;
+	margin-bottom: -115px;
 	padding-bottom: 0;
+	@media (min-width: 1200px) {
+		padding-top: 40px;
+	}
 	@media (min-width: 992px) and (max-width: 1199px) {
 		margin-bottom: -75px;
-		padding-top: 20px;
+	}
+	@media (max-width: 991px) {
+		margin-bottom: -90px;
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 0;
+		padding-bottom: 50px;
 	}
 }
-.guide-grid {
-	margin: -80px 0 0;
+
+
+.guide-lead {
+	@extend .h4;
+	padding: 16px 0;
+	text-align: center;
 	@media (min-width: 992px) and (max-width: 1199px) {
-		margin: -10px 0 0;
+		padding: 10px 0 35px;
 	}
+	@media (max-width: 991px) {
+		margin: -5px 0;
+		padding: 0;
+	}
+	@media (max-width: 767px) {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	p {
+		font-size: inherit;
+	}
+
+	span {
+		@media (max-width: 991px) {
+			display: block;
+		}
+	}
+}
+
+
+.guide-grid {
+	margin: -200px 0 0;
+	@media (min-width: 992px) and (max-width: 1199px) {
+		margin: -180px 0 0;
+	}
+	@media (max-width: 991px) {
+		margin: 30px 0;
+	}
+	@media (max-width: 767px) {
+		display: none;
+	}
+
 	.guide-step {
 		&:before,
 		&:after {
@@ -658,9 +730,6 @@
 		height: 329px;
 		padding: 33px 7px 0;
 	}
-	@media (max-width: 767px) {
-		display: none;
-	}
 
 	.guide-img {
 		width: 236px;
@@ -676,26 +745,18 @@
 	}
 }
 
-.guide-description {
-	@extend .h4;
-	padding: 95px 0 35px;
-	text-align: center;
-	@media (min-width: 992px) and (max-width: 1199px) {
-		padding: 10px 0 35px;
-	}
-
-	p {
-		font-size: inherit;
-	}
-}
 
 .guide-actions {
 	@extend .reset-list;
 	@extend .h4;
+	padding: 210px 0 60px;
 	line-height: 1.35;
 	text-align: center;
-	@media (max-width: 767px) {
-		display: none;
+	@media (min-width: 992px) and (max-width: 1199px) {
+		padding: 170px 0 60px;
+	}
+	@media (max-width: 991px) {
+		padding: 40px 0;
 	}
 
 	li {
@@ -726,10 +787,22 @@
 	.download-title {
 		margin: 15px 0;
 		color: #fff;
+		@media (max-width: 991px) {
+			margin: 26px 0;
+		}
+		@media (max-width: 767px) {
+			margin-top: 22px;
+			margin-bottom: 22px;
+			font-size: 20px;
+		}
 	}
 	.download-badges {
 		margin-left: 20px;
 		margin-right: 20px;
+		@media (max-width: 991px) {
+			margin-top: -20px;
+			margin-bottom: 30px;
+		}
 		li {
 			padding: 0 28px;
 		}
