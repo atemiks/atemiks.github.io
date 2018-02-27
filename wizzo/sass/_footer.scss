@@ -3,6 +3,12 @@
 	padding: 12px 0;
 	background: $dark;
 	color: $light;
+	a {
+		color: inherit;
+		&:hover {
+			color: $warning;
+		}
+	}
 
 	.footer-side-left,
 	.footer-side-right {
@@ -29,11 +35,5 @@
 	li {
 		display: inline-block;
 		padding: 0 12px;
-		a {
-			color: inherit;
-			&:hover {
-				color: $warning;
-			}
-		}
 	}
 }

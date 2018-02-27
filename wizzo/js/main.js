@@ -24,6 +24,8 @@ $( document ).ready(function() {
 	$('.slider-presentation-nav').slick({
 		slidesToShow: 6,
 		slidesToScroll: 1,
+		arrows: false,
+		dots: false,
 		asNavFor: '.slider-presentation',
 		focusOnSelect: true,
 		variableWidth: true,
@@ -43,8 +45,6 @@ $( document ).ready(function() {
 	        slidesToShow: 3,
 	        slidesToScroll: 3,
 	        variableWidth: false,
-	        // adaptiveHeight: true,
-	        // centermode: true,
 	        arrows: false
 	      }
 	    },
@@ -55,6 +55,7 @@ $( document ).ready(function() {
 	  ]
 	});
 
+	// show-hide overflow
 	$('.slider-presentation-nav').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 	  	if( item_length == nextSlide ){
             $('.slider-presentation-nav').addClass('overlay-hidden');
@@ -68,12 +69,12 @@ $( document ).ready(function() {
 	var Canvas = document.getElementById('canvas');
 	var ctx = Canvas.getContext('2d');
 
-	var resize = function() {
+	var canvasResize = function() {
 	    Canvas.width = Canvas.clientWidth;
 	    Canvas.height = Canvas.clientHeight;
 	};
-	window.addEventListener('resize', resize);
-	resize();
+	canvasResize();
+	
 
 	var elements = [];
 	var presets = {};
@@ -158,6 +159,14 @@ $( document ).ready(function() {
 	    for (var e in elements)
 			elements[e].draw(ctx, time);
 	}, 10);
+
+
+
+
+	// resize
+	$( window ).resize(function() {
+	  	canvasResize();
+	});
 		
 
 });

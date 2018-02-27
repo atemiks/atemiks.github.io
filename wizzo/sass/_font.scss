@@ -30,6 +30,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-arrow-left:before {
+  content: "\e907";
+}
+.icon-curved-arrow-right-down:before {
+  content: "\e903";
+  color: #ff9001;
+}
+.icon-curved-arrow-right-up:before {
+  content: "\e904";
+  color: #ff9001;
+}
+.icon-curved-arrow-left-down:before {
+  content: "\e905";
+  color: #ff9001;
+}
+.icon-curved-arrow-left-up:before {
+  content: "\e906";
+  color: #ff9001;
+}
 .icon-facebook:before {
   content: "\e900";
 }
