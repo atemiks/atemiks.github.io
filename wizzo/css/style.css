@@ -1094,18 +1094,18 @@ hr {
   padding: 0;
   list-style: none; }
 
-.transition, a, .slick-dots li button, .presentation-card .presentation-content .presentation-title,
-.presentation-card .presentation-content .presentation-description, .slider-presentation-nav:before, .slider-presentation-nav:after {
-  -webkit-transition: 300ms ease;
-  -o-transition: 300ms ease;
-  transition: 300ms ease; }
-
 .gradient-warning, .section-hero, .section-download {
   background-color: #ff9800;
   background-image: -webkit-gradient(linear, left top, right top, from(#ff6000), color-stop(28%, #ff7800), to(#ffd400));
   background-image: -webkit-linear-gradient(left, #ff6000 0%, #ff7800 28%, #ffd400 100%);
   background-image: -o-linear-gradient(left, #ff6000 0%, #ff7800 28%, #ffd400 100%);
   background-image: linear-gradient(to right, #ff6000 0%, #ff7800 28%, #ffd400 100%); }
+
+.transition, a, .slick-dots li button, .presentation-card .presentation-content .presentation-title,
+.presentation-card .presentation-content .presentation-description, .slider-presentation-nav:before, .slider-presentation-nav:after {
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease; }
 
 .sprite {
   display: inline-block;
