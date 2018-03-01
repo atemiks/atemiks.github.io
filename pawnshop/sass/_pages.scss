@@ -20,6 +20,36 @@
 }
 
 
+.wrapper-content {
+	overflow: hidden;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 1790px;
+		right: 75vw;
+		height: 1424px;
+		width: 1424px;
+		transform: rotate(45deg);
+		background: $light-pink;
+		@media (max-width: 991px) {
+			height: 704px;
+			width: 704px;
+		}
+	}
+
+	&:nth-child(2) {
+		&:before {
+			top: -435px;
+			right: initial;
+			left: 72vw;
+			@media (max-width: 991px) {
+				top: -180px;
+			}
+		}
+	}
+}
+
 .section-header {
 	.section-title {
 		@extend .text-gradient;

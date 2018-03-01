@@ -154,6 +154,7 @@
 	}
 
 	.service-inner {
+		padding: 0 5px;
 		background: #fff;
 	}
 	.service-thumbnail {
@@ -177,11 +178,18 @@
 		margin: 0;
 		padding: 10px 0;
 		color: $default;
+		@media (max-width: 767px) {
+			font-size: 14px;
+		}
 	}
 }
 
 .service-item-help {
 	flex: 1;
+	@media (max-width: 767px) {
+		flex: 1 0 100%;
+	}
+
 	.service-help-title {
 		@extend .gradient-purple;
 		@extend .text-gradient;
@@ -515,7 +523,9 @@
 }
 
 // section contact
-.section-contact {}
+.section-contact {
+	padding-bottom: 0;
+}
 .contact-container {
 	@extend .gradient-purple;
 }

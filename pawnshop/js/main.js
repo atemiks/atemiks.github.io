@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-	
+	// animation
 	setTimeout(function(){
 	  AOS.init();
 	}, 100);
@@ -26,15 +26,14 @@ $( document ).ready(function() {
 	    }
 	  });
 
-	// header
-
-	// $( ".header-toggle, .offcanvas-close, .offcanvas-menu a" ).on( "click", function() {
-	// 	$('body').toggleClass('offcanvas-open');
-	// 	$('.offcanvas').toggleClass('offcanvas-active');
-	// });
-
 	// phone mask
 	$("input[type='tel']").mask("+7 (999) 999-99-99");
+
+    // header
+    $( ".mobile-toggle, .offcanvas-close" ).on( "click", function() {
+        $('body').toggleClass('offcanvas-open');
+        $('.offcanvas').toggleClass('offcanvas-active');
+    });
 
 
 	// sliders

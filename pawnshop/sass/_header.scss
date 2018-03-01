@@ -242,8 +242,84 @@
 
 
 
+// offcanvas
+.offcanvas {
+	@extend .transition;
+	opacity: 0;
+	transform: translateX(100%);
+	position: fixed;
+	overflow-y: scroll;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: $light-pink;
+	&.offcanvas-active {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.offcanvas-header {
+		padding: 20px 20px;
+		border-bottom: 1px solid rgba($purple, .1);
+	}
+	.offcanvas-logo {
+		font-weight: 700;
+		text-transform: uppercase;
+		a {
+			border-bottom: none;
+		}
+	}
+	.offcanvas-close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25px;
+		height: 25px;
+		border: none;
+		padding: 0;
+		background: $purple;
+		font-size: 36px;
+    	line-height: 25px;
+    	color: #fff;
+    	text-align: center;
+	}
+
+	.offcanvas-body {
+		padding: 10px 20px;
+	}
+	.offcanvas-menu {
+		@extend .reset-list;
+		li {
+			border-bottom: 1px solid rgba($purple, .1);
+			a {
+				display: block;
+				padding: 12px 0;
+				border-bottom: none;
+				text-transform: uppercase;
+				letter-spacing: .9px;
+			}
+		}
+	}
+	.offcanvas-footer {
+		padding: 10px 20px;
+	}
+
+	.offcanvas-contact {
+		margin: 10px 0;
+		font-size: 20px;
+	}
+	.offcanvas-address {
+		margin: 20px 0;
+		font-size: 14px;
+	}
+}
 
 
+.offcanvas-open {
+	overflow: hidden;
+}
 
 
 

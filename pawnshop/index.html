@@ -23,39 +23,34 @@
 
     <body>
 
-
-
-        <!-- <div class="offcanvas">
+        <div class="offcanvas">
             <div class="offcanvas-header">
+                <div class="offcanvas-logo">
+                    <a href="index.html">Logotip</a>
+                </div>
                 <button class="offcanvas-close">&times;</button>
             </div>
             <div class="offcanvas-body">
                 <ul class="offcanvas-menu">
-                    <li><a href="#section-products">кошельки</a></li>
-                    <li><a href="#section-services">безопасность</a></li>
-                    <li><a href="#section-delivery">доставка</a></li>
-                    <li><a href="#section-partners">приложения</a></li>
+                    <li><a href="#section-about">Про нас</a></li>
+                    <li><a href="#link">FAQ</a></li>
+                    <li><a href="#link">Блог</a></li>
+                    <li><a href="#link">Партнеры</a></li>
+                    <li><a href="#link">Контакты</a></li>
+                    <li><a href="#link">ПТС</a></li>
+                    <li><a href="#link">Авто</a></li>
+                    <li><a href="#link">недвижимость</a></li>
                 </ul>
             </div>
             <div class="offcanvas-footer">
                 <div class="offcanvas-contact">
-                    <a href="tel:+7(495)6789090">(495) <b>678 90 90</b></a>
+                    <a href="tel:+7(495)6789090">+7 (495) <b>678 90 90</b></a>
                 </div>
-                <ul class="offcanvas-social social-list">
-                    <li><a href="#link"><i class="icon-phone-sq" ></i></a></li>
-                    <li><a href="#link"><i class="icon-telegram" ></i></a></li>
-                    <li><a href="#link"><i class="icon-phone-c" ></i></a></li>
-                </ul>
-            </div>
-        </div> -->
 
-        <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalCallback">
-          Launch demo modal
-        </button>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalGet">
-          Launch demo modal2
-        </button>
- -->
+                <div class="offcanvas-address">Москва, ул. Название улицы, 46/А, офис 123</div>
+            </div>
+        </div>
+
         <!-- Modal -->
         <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel">
             <div class="modal-dialog" role="document">
@@ -186,7 +181,7 @@
                     </div>
                 </div>
 
-               <header class="header-box">
+               <header class="header-box" data-aos="fade-down" >
                    <div class="header-statusbar container-fluid">
                        <div class="row">
                            <div class="container">
@@ -277,735 +272,742 @@
                    </div>
                </header>
                 <main>
-                    <section class="section-hero" style="background-image: url(img/page-home/hero/hero-bg.jpg)" >
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h1 class="hero-title" ><span>Выдаем наличные в день обращения</span> от <span class="lead" >1,5%</span> в месяц </h1>
-                                    <ul class="hero-list">
-                                        <li>Без штрафов для просрочку!</li>
-                                        <li>Пересчёт процентов по дням!</li>
-                                    </ul>
+                    <div class="wrapper-content">
+                        
+                        <section class="section-hero" style="background-image: url(img/page-home/hero/hero-bg.jpg)" >
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1 class="hero-title" data-aos="fade-up" ><span>Выдаем наличные в день обращения</span> от <span class="lead" >1,5%</span> в месяц </h1>
+                                        <ul class="hero-list" data-aos="fade-up" data-aos-delay="200">
+                                            <li>Без штрафов для просрочку!</li>
+                                            <li>Пересчёт процентов по дням!</li>
+                                        </ul>
 
-                                    <div class="hero-action">
+                                        <div class="hero-action" data-aos="fade-up" data-aos-delay="300" >
+                                            <a href="#get" class="btn" data-toggle="modal" data-target="#modalGet" >Получить деньги</a>
+                                        </div>
+
+                                        <div class="hero-achievements" data-aos="fade-up" data-aos-delay="400" >
+                                            <h4 class="achievement-title">Выдаем деньги:</h4>
+                                            <ul class="achievements-list">
+                                                <li class="achievement-item" data-aos="fade-up" >
+                                                    <div class="achievement-card">
+                                                        <div class="achievement-thumbnail">
+                                                            <img src="img/icons/achievement-icon-1.svg" alt="Без справок" class="achievement-icon">
+                                                        </div>
+                                                        <div class="achievement-value">Без справок</div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="achievement-item" data-aos="fade-up" data-aos-delay="200"  >
+                                                    <div class="achievement-card">
+                                                        <div class="achievement-thumbnail">
+                                                            <img src="img/icons/achievement-icon-2.svg" alt="Без поручителей" class="achievement-icon">
+                                                        </div>
+                                                        <div class="achievement-value">Без поручителей</div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="achievement-item" data-aos="fade-up" data-aos-delay="400"  >
+                                                    <div class="achievement-card">
+                                                        <div class="achievement-thumbnail">
+                                                            <img src="img/icons/achievement-icon-3.svg" alt="Всего по 3 документам (ПТС, СТС, паспорт)" class="achievement-icon">
+                                                        </div>
+                                                        <div class="achievement-value">Всего по 3 документам (ПТС, СТС, паспорт)</div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="achievement-item" data-aos="fade-up" data-aos-delay="600"  >
+                                                    <div class="achievement-card">
+                                                        <div class="achievement-thumbnail">
+                                                            <img src="img/icons/achievement-icon-4.svg" alt="Даже с плохой кредитной историей" class="achievement-icon">
+                                                        </div>
+                                                        <div class="achievement-value">Даже с плохой кредитной историей</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section-services">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="section-header col-sm-8 col-md-8 col-lg-9" data-aos="fade-up" >
+                                        <h2 class="section-title">Выдаем деньги под</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="services-grid">
+                                            <div class="service-item col-xs-6 col-sm-3 col-lg-2 " data-aos="fade-up"  >
+                                                <div class="service-card">
+                                                    <div class="service-inner">
+                                                        <div class="service-thumbnail">
+                                                            <i class="service-icon icon-car-front"></i>
+                                                        </div>
+                                                        <h6 class="service-title">Автомобиль</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="service-item col-xs-6 col-sm-3 col-lg-2 " data-aos="fade-up" data-aos-delay="200"  >
+                                                <div class="service-card">
+                                                    <div class="service-inner">
+                                                        <div class="service-thumbnail">
+                                                            <i class="service-icon icon-list-check"></i>
+                                                        </div>
+                                                        <h6 class="service-title">ПТС</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="service-item col-xs-6 col-sm-3 col-lg-2 " data-aos="fade-up" data-aos-delay="400"  >
+                                                <div class="service-card">
+                                                    <div class="service-inner">
+                                                        <div class="service-thumbnail">
+                                                            <i class="service-icon icon-ship"></i>
+                                                        </div>
+                                                        <h6 class="service-title">Катер/Яхту</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="service-item col-xs-6 col-sm-3 col-lg-2 " data-aos="fade-up" data-aos-delay="600"  >
+                                                <div class="service-card">
+                                                    <div class="service-inner">
+                                                        <div class="service-thumbnail">
+                                                            <i class="service-icon icon-machine"></i>
+                                                        </div>
+                                                        <h6 class="service-title">Спецтехнику</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="service-item col-xs-6 col-sm-3 col-lg-2 " data-aos="fade-up" data-aos-delay="800"  >
+                                                <div class="service-card">
+                                                    <div class="service-inner">
+                                                        <div class="service-thumbnail">
+                                                            <i class="service-icon icon-box"></i>
+                                                        </div>
+                                                        <h6 class="service-title">Товар</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="service-item col-xs-6 col-sm-3 col-lg-2 " data-aos="fade-up" data-aos-delay="1000"  >
+                                                <div class="service-card">
+                                                    <div class="service-inner">
+                                                        <div class="service-thumbnail">
+                                                            <i class="service-icon icon-money"></i>
+                                                        </div>
+                                                        <h6 class="service-title">Криптовалюту</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="service-item col-xs-6 col-sm-3 col-lg-2 " data-aos="fade-up"  >
+                                                <div class="service-card">
+                                                    <div class="service-inner">
+                                                        <div class="service-thumbnail">
+                                                            <i class="service-icon icon-moto"></i>
+                                                        </div>
+                                                        <h6 class="service-title">Мотоцикл</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="service-item col-xs-6 col-sm-3 col-lg-2 " data-aos="fade-up" data-aos-delay="200"  >
+                                                <div class="service-card">
+                                                    <div class="service-inner">
+                                                        <div class="service-thumbnail">
+                                                            <i class="service-icon icon-build"></i>
+                                                        </div>
+                                                        <h6 class="service-title">Недвижимость</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="service-item col-xs-6 col-sm-3 col-lg-2 " data-aos="fade-up" data-aos-delay="400"  >
+                                                <div class="service-card">
+                                                    <div class="service-inner">
+                                                        <div class="service-thumbnail">
+                                                            <i class="service-icon icon-house"></i>
+                                                        </div>
+                                                        <h6 class="service-title">Дачный участок</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="service-item col-xs-12 col-sm-6 col-lg-6  service-item-help" data-aos="fade-up" data-aos-delay="600"  >
+                                                <div class="service-card service-card-help ">
+                                                    <div class="service-inner">
+                                                        <p class="service-help-title">Не нашли нужный вариант? Оставьте заявку, и мы обсудим предмет залога на идивидуальных условиях</p>
+                                                        <a href="#orderCallBack" class="service-help-action btn" data-toggle="modal" data-target="#modalCallback" >Перезвоните мне!</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section-calc" id="section-calc" >
+                            <div class="container">
+                                <div class="row">
+                                    <div class="section-header col-sm-8 col-md-8 col-lg-9" data-aos="fade-up" >
+                                        <h2 class="section-title">Рассчитать стоимость займа</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-8 col-lg-9">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="range-sum-box" data-aos="fade-up" >
+                                                    <div class="range-field">
+                                                        <p class="range-title" >Сумма</p>
+                                                        <div class="range-slider-wrap">
+                                                          <div class="range-slider range-sum-slider-wrap">
+                                                              <input type="range" id="range-sum-slider" value="50000" min="0" max="10000000">
+
+                                                              <div class="range-sum-value-left"></div>
+                                                              <div class="range-sum-value-right"></div>
+                                                          </div>
+                                                        </div>
+                                                        <input class="range-input" id="range-sum-input" type="text" value="50000" min="0" max="10000000"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="range-time-box" data-aos="fade-up" >
+                                                    <div class="range-field">
+                                                        <p class="range-title" >Срок</p>
+                                                        <div class="range-slider-wrap">
+                                                            <div class="range-slider range-time-slider-wrap">
+                                                                <input type="range" id="range-time-slider" value="12" min="0" max="60"> 
+
+                                                                <div class="range-time-value-left"></div>
+                                                                <div class="range-time-value-right"></div>
+                                                            </div>
+                                                        </div>
+                                                        <input class="range-input" type="number" id="range-time-input" value="12" min="0" max="60"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-lg-3">
+                                        <div class="result-box" data-aos="fade-up" data-aos-delay="200"  >
+                                            <div class="result-block">
+                                                <h6 class="result-title">ежемесячный платеж</h6>
+                                                <p class="result">0</p>
+                                            </div>
+                                            <div class="result-block">
+                                                <h6 class="result-title">процент/месяц</h6>
+                                                <p class="result-percent">5280%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-8 col-lg-9 " data-aos="fade-up" >
+                                        <div class="calc-hint">
+                                            Расчет представлен для первичного ориентирования. <br> При обращении в офис Вам могут предложить индивидуальные, более выгодные условия!
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-lg-3" data-aos="fade-up" data-aos-delay="200" >
                                         <a href="#get" class="btn" data-toggle="modal" data-target="#modalGet" >Получить деньги</a>
                                     </div>
+                                </div>
+                            </div>
+                        </section>
 
-                                    <div class="hero-achievements">
-                                        <h4 class="achievement-title">Выдаем деньги:</h4>
-                                        <ul class="achievements-list">
-                                            <li class="achievement-item">
-                                                <div class="achievement-card">
-                                                    <div class="achievement-thumbnail">
-                                                        <img src="img/icons/achievement-icon-1.svg" alt="Без справок" class="achievement-icon">
-                                                    </div>
-                                                    <div class="achievement-value">Без справок</div>
-                                                </div>
-                                            </li>
-
-                                            <li class="achievement-item">
-                                                <div class="achievement-card">
-                                                    <div class="achievement-thumbnail">
-                                                        <img src="img/icons/achievement-icon-2.svg" alt="Без поручителей" class="achievement-icon">
-                                                    </div>
-                                                    <div class="achievement-value">Без поручителей</div>
-                                                </div>
-                                            </li>
-
-                                            <li class="achievement-item">
-                                                <div class="achievement-card">
-                                                    <div class="achievement-thumbnail">
-                                                        <img src="img/icons/achievement-icon-3.svg" alt="Всего по 3 документам (ПТС, СТС, паспорт)" class="achievement-icon">
-                                                    </div>
-                                                    <div class="achievement-value">Всего по 3 документам (ПТС, СТС, паспорт)</div>
-                                                </div>
-                                            </li>
-
-                                            <li class="achievement-item">
-                                                <div class="achievement-card">
-                                                    <div class="achievement-thumbnail">
-                                                        <img src="img/icons/achievement-icon-4.svg" alt="Даже с плохой кредитной историей" class="achievement-icon">
-                                                    </div>
-                                                    <div class="achievement-value">Даже с плохой кредитной историей</div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                        <section class="section-example">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="section-header section-header-columns col-md-12" data-aos="fade-up" >
+                                        <div class="section-header-side-left">
+                                            <h2 class="section-title">Примеры выданных займов</h2>
+                                        </div>
+                                        <div class="section-header-side-right">
+                                            <div class="examples-controls header-controls">
+                                                <button class="example-control-left header-control-left slick-arrow slick-prev"></button>
+                                                <button class="example-control-right header-control-right slick-arrow slick-next"></button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
 
-                    <section class="section-services">
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-header col-sm-8 col-md-8 col-lg-9">
-                                    <h2 class="section-title">Выдаем деньги под</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="services-grid">
-                                        <div class="service-item col-xs-6 col-sm-3 col-lg-2 ">
-                                            <div class="service-card">
-                                                <div class="service-inner">
-                                                    <div class="service-thumbnail">
-                                                        <i class="service-icon icon-car-front"></i>
+                                <div class="row">
+                                    <div class="slider-example">
+                                        <div class="slide-item">
+                                            <div class="example-card">
+                                                <div class="example-aside col-xs-12 col-sm-5" data-aos="fade-up" >
+                                                    <div class="example-thumbnail-wrap">
+                                                        <div class="example-thumbnail" style="background-image: url(img/page-home/example/example-thumbnail-item-1.png);" ></div>
                                                     </div>
-                                                    <h6 class="service-title">Автомобиль</h6>
+                                                </div>
+                                                <div class="example-inner col-xs-12 col-sm-7 col-md-5 col-md-offset-1" data-aos="fade-up" data-aos-delay="200" >
+                                                    <div class="example-header">
+                                                        <h4 class="example-title">fORD fOCUS hATCHBACK</h4>
+                                                        <p class="example-subtitle">2013 г.в., 68 000 км, 1600 см3,  автомат</p>
+                                                    </div>
+                                                    <div class="example-body">
+                                                        <div class="example-price">Оценка: 475 000 р.</div>
+                                                        <ul class="example-info">
+                                                            <li class="example-info-col" ><b>300 000 р. <br> под 8,0% в месяц</b> предлагали другие автоломбарды</li>
+                                                            <li class="example-info-col" ><b>300 000 р. <br> под 8,0% в месяц</b> предлагали другие автоломбарды</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="example-footer">
+                                                        <a href="#link" class="btn" >Читать отзыв клиента</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="service-item col-xs-6 col-sm-3 col-lg-2 ">
-                                            <div class="service-card">
-                                                <div class="service-inner">
-                                                    <div class="service-thumbnail">
-                                                        <i class="service-icon icon-list-check"></i>
+                                        <div class="slide-item">
+                                            <div class="example-card">
+                                                <div class="example-aside col-xs-12 col-sm-5" data-aos="fade-up"  >
+                                                    <div class="example-thumbnail-wrap">
+                                                        <div class="example-thumbnail" style="background-image: url(img/page-home/example/example-thumbnail-item-1.png);" ></div>
                                                     </div>
-                                                    <h6 class="service-title">ПТС</h6>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-item col-xs-6 col-sm-3 col-lg-2 ">
-                                            <div class="service-card">
-                                                <div class="service-inner">
-                                                    <div class="service-thumbnail">
-                                                        <i class="service-icon icon-ship"></i>
+                                                <div class="example-inner col-xs-12 col-sm-7 col-md-5 col-md-offset-1" data-aos="fade-up" data-aos-delay="200"  >
+                                                    <div class="example-header">
+                                                        <h4 class="example-title">fORD fOCUS hATCHBACK</h4>
+                                                        <p class="example-subtitle">2013 г.в., 68 000 км, 1600 см3,  автомат</p>
                                                     </div>
-                                                    <h6 class="service-title">Катер/Яхту</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-item col-xs-6 col-sm-3 col-lg-2 ">
-                                            <div class="service-card">
-                                                <div class="service-inner">
-                                                    <div class="service-thumbnail">
-                                                        <i class="service-icon icon-machine"></i>
+                                                    <div class="example-body">
+                                                        <div class="example-price">Оценка: 475 000 р.</div>
+                                                        <ul class="example-info">
+                                                            <li class="example-info-col" ><b>300 000 р. <br> под 8,0% в месяц</b> предлагали другие автоломбарды</li>
+                                                            <li class="example-info-col" ><b>300 000 р. <br> под 8,0% в месяц</b> предлагали другие автоломбарды</li>
+                                                        </ul>
                                                     </div>
-                                                    <h6 class="service-title">Спецтехнику</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-item col-xs-6 col-sm-3 col-lg-2 ">
-                                            <div class="service-card">
-                                                <div class="service-inner">
-                                                    <div class="service-thumbnail">
-                                                        <i class="service-icon icon-box"></i>
+                                                    <div class="example-footer">
+                                                        <a href="#link" class="btn" >Читать отзыв клиента</a>
                                                     </div>
-                                                    <h6 class="service-title">Товар</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-item col-xs-6 col-sm-3 col-lg-2 ">
-                                            <div class="service-card">
-                                                <div class="service-inner">
-                                                    <div class="service-thumbnail">
-                                                        <i class="service-icon icon-money"></i>
-                                                    </div>
-                                                    <h6 class="service-title">Криптовалюту</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-item col-xs-6 col-sm-3 col-lg-2 ">
-                                            <div class="service-card">
-                                                <div class="service-inner">
-                                                    <div class="service-thumbnail">
-                                                        <i class="service-icon icon-moto"></i>
-                                                    </div>
-                                                    <h6 class="service-title">Мотоцикл</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-item col-xs-6 col-sm-3 col-lg-2 ">
-                                            <div class="service-card">
-                                                <div class="service-inner">
-                                                    <div class="service-thumbnail">
-                                                        <i class="service-icon icon-build"></i>
-                                                    </div>
-                                                    <h6 class="service-title">Недвижимость</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-item col-xs-6 col-sm-3 col-lg-2 ">
-                                            <div class="service-card">
-                                                <div class="service-inner">
-                                                    <div class="service-thumbnail">
-                                                        <i class="service-icon icon-house"></i>
-                                                    </div>
-                                                    <h6 class="service-title">Дачный участок</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-item col-xs-12 col-sm-6 col-lg-6  service-item-help">
-                                            <div class="service-card service-card-help ">
-                                                <div class="service-inner">
-                                                    <p class="service-help-title">Не нашли нужный вариант? Оставьте заявку, и мы обсудим предмет залога на идивидуальных условиях</p>
-                                                    <a href="#orderCallBack" class="service-help-action btn" data-toggle="modal" data-target="#modalCallback" >Перезвоните мне!</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
 
-                    <section class="section-calc" id="section-calc" >
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-header col-sm-8 col-md-8 col-lg-9">
-                                    <h2 class="section-title">Рассчитать стоимость займа</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-8 col-lg-9">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="range-sum-box">
-                                                <div class="range-field">
-                                                    <p class="range-title" >Сумма</p>
-                                                    <div class="range-slider-wrap">
-                                                      <div class="range-slider range-sum-slider-wrap">
-                                                          <input type="range" id="range-sum-slider" value="50000" min="0" max="10000000">
-
-                                                          <div class="range-sum-value-left"></div>
-                                                          <div class="range-sum-value-right"></div>
-                                                      </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form class="form-order" data-aos="fade-up" >
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                                    <div class="form-group">
+                                                        <input type="text" placeholder="Имя" required >
                                                     </div>
-                                                    <input class="range-input" id="range-sum-input" type="text" value="50000" min="0" max="10000000"></input>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                                    <div class="form-group">
+                                                        <input type="tel" placeholder="Телефон" required >
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                                    <div class="form-group">
+                                                        <input type="text" placeholder="Марка авто"  >
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                                    <div class="form-group">
+                                                        <input type="text" placeholder="Год"  >
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="range-time-box">
-                                                <div class="range-field">
-                                                    <p class="range-title" >Срок</p>
-                                                    <div class="range-slider-wrap">
-                                                        <div class="range-slider range-time-slider-wrap">
-                                                            <input type="range" id="range-time-slider" value="12" min="0" max="60"> 
-
-                                                            <div class="range-time-value-left"></div>
-                                                            <div class="range-time-value-right"></div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6 col-md-9">
+                                                    <div class="form-group">
+                                                        <div class="custom-checkbox">
+                                                            <input type="checkbox" id="checkbox03" name="checkbox" checked />
+                                                            <label for="checkbox03">
+                                                                <span class="custom-check-icon" ></span>
+                                                                <span class="custom-check-value" >Я согласен (-на) с политикой обработки персональных данных</span>
+                                                            </label>
                                                         </div>
                                                     </div>
-                                                    <input class="range-input" type="number" id="range-time-input" value="12" min="0" max="60"></input>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                                    <div class="form-group">
+                                                        <button type="submit" class="btn btn-fluid" >Получить деньги</button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-lg-3">
-                                    <div class="result-box">
-                                        <div class="result-block">
-                                            <h6 class="result-title">ежемесячный платеж</h6>
-                                            <p class="result">0</p>
-                                        </div>
-                                        <div class="result-block">
-                                            <h6 class="result-title">процент/месяц</h6>
-                                            <p class="result-percent">5280%</p>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
+                        </section>
 
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-8 col-lg-9 ">
-                                    <div class="calc-hint">
-                                        Расчет представлен для первичного ориентирования. <br> При обращении в офис Вам могут предложить индивидуальные, более выгодные условия!
+                        <section class="section-steps">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="section-header col-sm-8 col-md-8 col-lg-9" data-aos="fade-up" >
+                                        <h2 class="section-title">Очень простая схема работы</h2>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-sm-4 col-lg-3">
-                                    <a href="#get" class="btn" data-toggle="modal" data-target="#modalGet" >Получить деньги</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="section-example">
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-header section-header-columns col-md-12">
-                                    <div class="section-header-side-left">
-                                        <h2 class="section-title">Примеры выданных займов</h2>
-                                    </div>
-                                    <div class="section-header-side-right">
-                                        <div class="examples-controls header-controls">
-                                            <button class="example-control-left header-control-left slick-arrow slick-prev"></button>
-                                            <button class="example-control-right header-control-right slick-arrow slick-next"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="slider-example">
-                                    <div class="slide-item">
-                                        <div class="example-card">
-                                            <div class="example-aside col-xs-12 col-sm-5">
-                                                <div class="example-thumbnail-wrap">
-                                                    <div class="example-thumbnail" style="background-image: url(img/page-home/example/example-thumbnail-item-1.png);" ></div>
-                                                </div>
-                                            </div>
-                                            <div class="example-inner col-xs-12 col-sm-7 col-md-5 col-md-offset-1">
-                                                <div class="example-header">
-                                                    <h4 class="example-title">fORD fOCUS hATCHBACK</h4>
-                                                    <p class="example-subtitle">2013 г.в., 68 000 км, 1600 см3,  автомат</p>
-                                                </div>
-                                                <div class="example-body">
-                                                    <div class="example-price">Оценка: 475 000 р.</div>
-                                                    <ul class="example-info">
-                                                        <li class="example-info-col" ><b>300 000 р. <br> под 8,0% в месяц</b> предлагали другие автоломбарды</li>
-                                                        <li class="example-info-col" ><b>300 000 р. <br> под 8,0% в месяц</b> предлагали другие автоломбарды</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="example-footer">
-                                                    <a href="#link" class="btn" >Читать отзыв клиента</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="slide-item">
-                                        <div class="example-card">
-                                            <div class="example-aside col-xs-12 col-sm-5">
-                                                <div class="example-thumbnail-wrap">
-                                                    <div class="example-thumbnail" style="background-image: url(img/page-home/example/example-thumbnail-item-1.png);" ></div>
-                                                </div>
-                                            </div>
-                                            <div class="example-inner col-xs-12 col-sm-7 col-md-5 col-md-offset-1">
-                                                <div class="example-header">
-                                                    <h4 class="example-title">fORD fOCUS hATCHBACK</h4>
-                                                    <p class="example-subtitle">2013 г.в., 68 000 км, 1600 см3,  автомат</p>
-                                                </div>
-                                                <div class="example-body">
-                                                    <div class="example-price">Оценка: 475 000 р.</div>
-                                                    <ul class="example-info">
-                                                        <li class="example-info-col" ><b>300 000 р. <br> под 8,0% в месяц</b> предлагали другие автоломбарды</li>
-                                                        <li class="example-info-col" ><b>300 000 р. <br> под 8,0% в месяц</b> предлагали другие автоломбарды</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="example-footer">
-                                                    <a href="#link" class="btn" >Читать отзыв клиента</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <form class="form-order">
+                                <div class="row">
+                                    <div class="steps-inner col-xs-12 col-md-8 col-lg-8">
                                         <div class="row">
-                                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" placeholder="Имя" required >
+                                            <div class="steps-grid">
+                                                <div class="step-item col-xs-12 col-sm-4" data-aos="fade-up"  >
+                                                    <div class="step-card">
+                                                        <div class="step-header" style="background-image: url(img/page-home/steps/step-item-1.png)" >
+                                                            <div class="step-count">1</div>
+                                                            <h6 class="step-title">2 минуты</h6>
+                                                        </div>
+                                                        <div class="step-body">
+                                                            Оставьте <a href="#link">заявку онлайн</a>
+                                                            для точной оценки атомобиля
+                                                            и определения суммы 
+                                                            финансирования или свяжитесь
+                                                            с нами по телефону: <br>
+                                                            <a href="tel:+74954567890"><b>+7 (495) 456 78 90</b></a>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                                <div class="form-group">
-                                                    <input type="tel" placeholder="Телефон" required >
+
+                                                <div class="step-item col-xs-12 col-sm-4" data-aos="fade-up" data-aos-delay="200"  >
+                                                    <div class="step-card">
+                                                        <div class="step-header" style="background-image: url(img/page-home/steps/step-item-2.png)" >
+                                                            <div class="step-count">2</div>
+                                                            <h6 class="step-title">30 минут</h6>
+                                                        </div>
+                                                        <div class="step-body">
+                                                            Приезжайте к нам <br>
+                                                            на Вашем автомобиле <br>
+                                                            с документами <br>
+                                                            для заключения договора <br>
+                                                            <a class="link-location" href="#section-contact"><i class="icon-location" ></i>Наши адреса</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" placeholder="Марка авто"  >
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" placeholder="Год"  >
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-6 col-md-9">
-                                                <div class="form-group">
-                                                    <div class="custom-checkbox">
-                                                        <input type="checkbox" id="checkbox03" name="checkbox" checked />
-                                                        <label for="checkbox03">
-                                                            <span class="custom-check-icon" ></span>
-                                                            <span class="custom-check-value" >Я согласен (-на) с политикой обработки персональных данных</span>
-                                                        </label>
+
+                                                <div class="step-item col-xs-12 col-sm-4" data-aos="fade-up" data-aos-delay="400"  >
+                                                    <div class="step-card">
+                                                        <div class="step-header" style="background-image: url(img/page-home/steps/step-item-3.png)" >
+                                                            <div class="step-count">3</div>
+                                                            <h6 class="step-title">Моментально!</h6>
+                                                        </div>
+                                                        <div class="step-body">
+                                                            Получите деньги! <br>
+                                                            Всего за 40 минут,
+                                                            даже с плохой
+                                                            кредитной историей
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12 col-sm-6 col-md-3">
-                                                <div class="form-group">
-                                                    <button type="submit" class="btn btn-fluid" >Получить деньги</button>
-                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="steps-aside col-xs-12 col-md-4 col-lg-3 col-lg-offset-1" data-aos="fade-up" data-aos-delay="200" >
+                                        <div class="hint-box">
+                                            <h4 class="hint-title">наличные <br> без комиссии в день обращения</h4>
+                                            <p class="hint-lead"><span>100%</span> <br> одобрение</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8 col-lg-8" data-aos="fade-up"  >
+                                        <div class="propose-box">
+                                            <h4 class="propose-title" >Выездной автоломбард</h4>
+                                            <div class="propose-description">
+                                                <p><b>Можете не тратить время на посещение офиса ― наш специалист сам прибудет по указанному адресу в удобное для Вас время и произведет выдачу денежных средств.</b></p>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-1" data-aos="fade-up" data-aos-delay="200"  >
+                                        <a href="#link" class="propose-btn-aside btn" >Воспользоваться услугой</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
 
-                    <section class="section-steps">
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-header col-sm-8 col-md-8 col-lg-9">
-                                    <h2 class="section-title">Очень простая схема работы</h2>
+
+                        <section class="section-contact" id="section-contact" >
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div id="map" data-aos="fade-up"  ></div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="steps-inner col-xs-12 col-md-8 col-lg-8">
-                                    <div class="row">
-                                        <div class="steps-grid">
-                                            <div class="step-item col-xs-12 col-sm-4">
-                                                <div class="step-card">
-                                                    <div class="step-header" style="background-image: url(img/page-home/steps/step-item-1.png)" >
-                                                        <div class="step-count">1</div>
-                                                        <h6 class="step-title">2 минуты</h6>
+                            <div class="contact-container container-fluid">
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="contact-grid">
+                                            <div class="contact-item col-xs-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" >
+                                                <div class="contact-card">
+                                                    <div class="contact-thumbnail">
+                                                        <img src="img/icons/contact-item-1.svg" alt="Звоните" class="contact-thumbnail-icon">
                                                     </div>
-                                                    <div class="step-body">
-                                                        Оставьте <a href="#link">заявку онлайн</a>
-                                                        для точной оценки атомобиля
-                                                        и определения суммы 
-                                                        финансирования или свяжитесь
-                                                        с нами по телефону: <br>
-                                                        <a href="tel:+74954567890"><b>+7 (495) 456 78 90</b></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="step-item col-xs-12 col-sm-4">
-                                                <div class="step-card">
-                                                    <div class="step-header" style="background-image: url(img/page-home/steps/step-item-2.png)" >
-                                                        <div class="step-count">2</div>
-                                                        <h6 class="step-title">30 минут</h6>
-                                                    </div>
-                                                    <div class="step-body">
-                                                        Приезжайте к нам <br>
-                                                        на Вашем автомобиле <br>
-                                                        с документами <br>
-                                                        для заключения договора <br>
-                                                        <a class="link-location" href="#section-contact"><i class="icon-location" ></i>Наши адреса</a>
+                                                    <div class="contact-inner">
+                                                        <h4 class="contact-title">Звоните!</h4>
+                                                        <p class="contact-value">
+                                                            <a href="tel:+74954567890">+7 (495) 456 78 90</a>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="step-item col-xs-12 col-sm-4">
-                                                <div class="step-card">
-                                                    <div class="step-header" style="background-image: url(img/page-home/steps/step-item-3.png)" >
-                                                        <div class="step-count">3</div>
-                                                        <h6 class="step-title">Моментально!</h6>
+                                            <div class="contact-item col-xs-12 col-sm-6 col-md-4 col-lg-6" data-aos="fade-up" data-aos-delay="200" >
+                                                <div class="contact-card">
+                                                    <div class="contact-thumbnail">
+                                                        <img src="img/icons/contact-item-2.svg" alt="Приезжайте" class="contact-thumbnail-icon">
                                                     </div>
-                                                    <div class="step-body">
-                                                        Получите деньги! <br>
-                                                        Всего за 40 минут,
-                                                        даже с плохой
-                                                        кредитной историей
+                                                    <div class="contact-inner">
+                                                        <h4 class="contact-title">Приезжайте!</h4>
+                                                        <p class="contact-value">Москва, ул. Название улицы, 46/А, офис 123</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="steps-aside col-xs-12 col-md-4 col-lg-3 col-lg-offset-1">
-                                    <div class="hint-box">
-                                        <h4 class="hint-title">наличные <br> без комиссии в день обращения</h4>
-                                        <p class="hint-lead"><span>100%</span> <br> одобрение</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-md-8 col-lg-8">
-                                    <div class="propose-box">
-                                        <h4 class="propose-title" >Выездной автоломбард</h4>
-                                        <div class="propose-description">
-                                            <p><b>Можете не тратить время на посещение офиса ― наш специалист сам прибудет по указанному адресу в удобное для Вас время и произведет выдачу денежных средств.</b></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-1">
-                                    <a href="#link" class="propose-btn-aside btn" >Воспользоваться услугой</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
 
-
-                    <section class="section-contact" id="section-contact" >
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div id="map"></div>
-                            </div>
-                        </div>
-                        <div class="contact-container container-fluid">
-                            <div class="row">
-                                <div class="container">
-                                    <div class="contact-grid">
-                                        <div class="contact-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                            <div class="contact-card">
-                                                <div class="contact-thumbnail">
-                                                    <img src="img/icons/contact-item-1.svg" alt="Звоните" class="contact-thumbnail-icon">
-                                                </div>
-                                                <div class="contact-inner">
-                                                    <h4 class="contact-title">Звоните!</h4>
-                                                    <p class="contact-value">
-                                                        <a href="tel:+74954567890">+7 (495) 456 78 90</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="contact-item col-xs-12 col-sm-6 col-md-4 col-lg-6">
-                                            <div class="contact-card">
-                                                <div class="contact-thumbnail">
-                                                    <img src="img/icons/contact-item-2.svg" alt="Приезжайте" class="contact-thumbnail-icon">
-                                                </div>
-                                                <div class="contact-inner">
-                                                    <h4 class="contact-title">Приезжайте!</h4>
-                                                    <p class="contact-value">Москва, ул. Название улицы, 46/А, офис 123</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="contact-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                            <div class="contact-card">
-                                                <div class="contact-thumbnail">
-                                                    <img src="img/icons/contact-item-3.svg" alt="Пишите" class="contact-thumbnail-icon">
-                                                </div>
-                                                <div class="contact-inner">
-                                                    <h4 class="contact-title">Пишите!</h4>
-                                                    <p class="contact-value">
-                                                        <a href="mailto:info@nazvaniedomena.ru">info@nazvaniedomena.ru</a>
-                                                    </p>
+                                            <div class="contact-item col-xs-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400" >
+                                                <div class="contact-card">
+                                                    <div class="contact-thumbnail">
+                                                        <img src="img/icons/contact-item-3.svg" alt="Пишите" class="contact-thumbnail-icon">
+                                                    </div>
+                                                    <div class="contact-inner">
+                                                        <h4 class="contact-title">Пишите!</h4>
+                                                        <p class="contact-value">
+                                                            <a href="mailto:info@nazvaniedomena.ru">info@nazvaniedomena.ru</a>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
+
+                    </div>
 
 
-                    <section class="section-about" id="section-about" >
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-header col-sm-8 col-md-8 col-lg-9">
-                                    <h2 class="section-title">Название автоломбарда</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                                </div>
-                                <div class="col-xs-12 col-sm-6">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="gallery-grid">
-                                    <div class="gallery-item col-xs-12 col-sm-4">
-                                        <div class="gallery-card">
-                                            <div class="gallery-thumbnail" style="background-image: url(img/page-home/gallery/gallery-item-1.png);" ></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="gallery-item col-xs-12 col-sm-4">
-                                        <div class="gallery-card">
-                                            <div class="gallery-thumbnail" style="background-image: url(img/page-home/gallery/gallery-item-2.png);" ></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="gallery-item col-xs-12 col-sm-4">
-                                        <div class="gallery-card">
-                                            <div class="gallery-thumbnail" style="background-image: url(img/page-home/gallery/gallery-item-3.png);" ></div>
-                                        </div>
+                    <div class="wrapper-content">
+                        
+                        <section class="section-about" id="section-about" >
+                            <div class="container">
+                                <div class="row">
+                                    <div class="section-header col-sm-8 col-md-8 col-lg-9" data-aos="fade-up" >
+                                        <h2 class="section-title">Название автоломбарда</h2>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="section-conditions">
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-header col-sm-8 col-md-8 col-lg-9">
-                                    <h2 class="section-title">Условия</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-8 col-lg-9">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                                </div>
-                                <div class="col-xs-12 col-sm-4 col-lg-3">
-                                    <div class="hint-box">
-                                        <h4 class="hint-title hint-title-separate">займ оформляется по договору <br> залога <br> и договору займа</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6" data-aos="fade-up" >
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6" data-aos="fade-up" data-aos-delay="200" >
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
 
-                    <section class="section-documents">
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-header col-sm-8 col-md-8 col-lg-9">
-                                    <h4 class="section-title">НАШИ ДОКУМЕНТЫ</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="documents-grid">
-                                    <div class="document-item col-xs-12 col-sm-4">
-                                        <div class="document-card">
-                                            <div class="document-thumbnail">
-                                                <img src="img/page-home/documents/document-item-1.png" alt="анкета клиента" class="document-thumbnail-icon">
-                                            </div>
-                                            <div class="document-inner">
-                                                <h5 class="document-title">анкета клиента</h5>
-                                                <a href="#link" class="document-action">Ознакомиться</a>
+                                <div class="row">
+                                    <div class="gallery-grid">
+                                        <div class="gallery-item col-xs-12 col-sm-4" data-aos="fade-up" >
+                                            <div class="gallery-card">
+                                                <div class="gallery-thumbnail" style="background-image: url(img/page-home/gallery/gallery-item-1.png);" ></div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="document-item col-xs-12 col-sm-4">
-                                        <div class="document-card">
-                                            <div class="document-thumbnail">
-                                                <img src="img/page-home/documents/document-item-2.png" alt="согласие на обработку персональных данных" class="document-thumbnail-icon">
-                                            </div>
-                                            <div class="document-inner">
-                                                <h5 class="document-title">согласие на обработку персональных данных</h5>
-                                                <a href="#link" class="document-action">Ознакомиться</a>
+                                        <div class="gallery-item col-xs-12 col-sm-4" data-aos="fade-up" data-aos-delay="200"  >
+                                            <div class="gallery-card">
+                                                <div class="gallery-thumbnail" style="background-image: url(img/page-home/gallery/gallery-item-2.png);" ></div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="document-item col-xs-12 col-sm-4">
-                                        <div class="document-card">
-                                            <div class="document-thumbnail">
-                                                <img src="img/page-home/documents/document-item-3.png" alt="политика конфиденциальности" class="document-thumbnail-icon">
-                                            </div>
-                                            <div class="document-inner">
-                                                <h5 class="document-title">политика конфиденциальности</h5>
-                                                <a href="#link" class="document-action">Ознакомиться</a>
+                                        <div class="gallery-item col-xs-12 col-sm-4" data-aos="fade-up" data-aos-delay="400"  >
+                                            <div class="gallery-card">
+                                                <div class="gallery-thumbnail" style="background-image: url(img/page-home/gallery/gallery-item-3.png);" ></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
 
-
-                    <section class="section-blog">
-                        <div class="container">
-                            <div class="row">
-                                <div class="section-header col-sm-8 col-md-8 col-lg-9">
-                                    <h2 class="section-title">Блог</h2>
+                        <section class="section-conditions">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="section-header col-sm-8 col-md-8 col-lg-9" data-aos="fade-up">
+                                        <h2 class="section-title">Условия</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-8 col-lg-9" data-aos="fade-up"  >
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-lg-3" data-aos="fade-up" data-aos-delay="200"  >
+                                        <div class="hint-box">
+                                            <h4 class="hint-title hint-title-separate">займ оформляется по договору <br> залога <br> и договору займа</h4>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </section>
 
-                            <div class="row">
-                                <div class="articles-grid">
-                                    <div class="article-item col-xs-12 col-sm-6 col-md-4">
-                                        <article class="article-card article-vertical">
-                                            <header class="article-header">
-                                                <ul class="article-statusbar">
-                                                    <li>
-                                                        <time>12.02.2018</time>
-                                                    </li>
-                                                    <li>В России</li>
-                                                </ul>
-
-                                                <div class="article-thumbnail" style="background-image: url(img/page-home/blog/blog-item-1.png)" >
-                                                    <a href="#link" class="article-thumbnail-link"></a>
+                        <section class="section-documents">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="section-header col-sm-8 col-md-8 col-lg-9" data-aos="fade-up"  >
+                                        <h4 class="section-title">НАШИ ДОКУМЕНТЫ</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="documents-grid">
+                                        <div class="document-item col-xs-12 col-sm-4" data-aos="fade-up" >
+                                            <div class="document-card">
+                                                <div class="document-thumbnail">
+                                                    <img src="img/page-home/documents/document-item-1.png" alt="анкета клиента" class="document-thumbnail-icon">
                                                 </div>
-
-                                                <h5 class="article-title"><a href="#link">На сайте Банка России опубликован государственный реестр ломбардов</a></h5>
-                                            </header>
-                                            <div class="article-body">
-                                                <div class="article-description">В элек­трон­ном до­ку­мен­те пред­став­ле­на ин­фор­ма­ция обо всех лом­бар­дах, в том чис­ле и пре­кра­тив­ших свою де­я­тель­ность на се­го­дняш­ний день. В об­щей слож­но­сти ре­естр со­дер­жит бо­лее 10 000 юри­ди­че­ских лиц.</div>
-                                            </div>
-                                            <footer class="article-footer">
-                                                <a href="#link">Читать</a>
-                                            </footer>
-                                        </article>
-                                    </div>
-
-                                    <div class="article-item col-xs-12 col-sm-6 col-md-4">
-                                        <article class="article-card article-vertical">
-                                            <header class="article-header">
-                                                <ul class="article-statusbar">
-                                                    <li>
-                                                        <time>11.02.2018</time>
-                                                    </li>
-                                                    <li>Новости компании</li>
-                                                </ul>
-
-                                                <div class="article-thumbnail" style="background-image: url(img/page-home/blog/blog-item-2.png)" >
-                                                    <a href="#link" class="article-thumbnail-link"></a>
+                                                <div class="document-inner">
+                                                    <h5 class="document-title">анкета клиента</h5>
+                                                    <a href="#link" class="document-action">Ознакомиться</a>
                                                 </div>
-
-                                                <h5 class="article-title"><a href="#link">снижение ставки на займ под птс до 7,9% в месяц</a></h5>
-                                            </header>
-                                            <div class="article-body">
-                                                <div class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit int.</div>
                                             </div>
-                                            <footer class="article-footer">
-                                                <a href="#link">Читать</a>
-                                            </footer>
-                                        </article>
-                                    </div>
+                                        </div>
 
-                                    <div class="article-item col-xs-12 col-sm-6 col-md-4">
-                                        <article class="article-card article-vertical">
-                                            <header class="article-header">
-                                                <ul class="article-statusbar">
-                                                    <li>
-                                                        <time>10.02.2018</time>
-                                                    </li>
-                                                    <li>В России</li>
-                                                </ul>
-
-                                                <div class="article-thumbnail" style="background-image: url(img/page-home/blog/blog-item-3.png)">
-                                                    <a href="#link" class="article-thumbnail-link"></a>
+                                        <div class="document-item col-xs-12 col-sm-4" data-aos="fade-up" data-aos-delay="200" >
+                                            <div class="document-card">
+                                                <div class="document-thumbnail">
+                                                    <img src="img/page-home/documents/document-item-2.png" alt="согласие на обработку персональных данных" class="document-thumbnail-icon">
                                                 </div>
-
-                                                <h5 class="article-title"><a href="#link">Банк России разъясняет ломбардам требования страхования</a></h5>
-                                            </header>
-                                            <div class="article-body">
-                                                <div class="article-description">Ломбард обя­зан стра­хо­вать в поль­зу за­ем­щи­ка или по­кла­же­да­те­ля за свой счет риск утра­ты и по­вре­жде­ния ве­щи, при­ня­той в за­лог, на сум­му, рав­ную сум­ме ее оцен­ки, на про­тя­же­нии все­го пе­ри­о­да ее на­хож­де­ния в лом­бар­де.</div>
+                                                <div class="document-inner">
+                                                    <h5 class="document-title">согласие на обработку персональных данных</h5>
+                                                    <a href="#link" class="document-action">Ознакомиться</a>
+                                                </div>
                                             </div>
-                                            <footer class="article-footer">
-                                                <a href="#link">Читать</a>
-                                            </footer>
-                                        </article>
+                                        </div>
+
+                                        <div class="document-item col-xs-12 col-sm-4" data-aos="fade-up" data-aos-delay="400" >
+                                            <div class="document-card">
+                                                <div class="document-thumbnail">
+                                                    <img src="img/page-home/documents/document-item-3.png" alt="политика конфиденциальности" class="document-thumbnail-icon">
+                                                </div>
+                                                <div class="document-inner">
+                                                    <h5 class="document-title">политика конфиденциальности</h5>
+                                                    <a href="#link" class="document-action">Ознакомиться</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </section>
 
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <a href="#link" class="btn" >Больше новостей</a>
+
+                        <section class="section-blog">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="section-header col-sm-8 col-md-8 col-lg-9" data-aos="fade-up" >
+                                        <h2 class="section-title">Блог</h2>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="articles-grid">
+                                        <div class="article-item col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" >
+                                            <article class="article-card article-vertical">
+                                                <header class="article-header">
+                                                    <ul class="article-statusbar">
+                                                        <li>
+                                                            <time>12.02.2018</time>
+                                                        </li>
+                                                        <li>В России</li>
+                                                    </ul>
+
+                                                    <div class="article-thumbnail" style="background-image: url(img/page-home/blog/blog-item-1.png)" >
+                                                        <a href="#link" class="article-thumbnail-link"></a>
+                                                    </div>
+
+                                                    <h5 class="article-title"><a href="#link">На сайте Банка России опубликован государственный реестр ломбардов</a></h5>
+                                                </header>
+                                                <div class="article-body">
+                                                    <div class="article-description">В элек­трон­ном до­ку­мен­те пред­став­ле­на ин­фор­ма­ция обо всех лом­бар­дах, в том чис­ле и пре­кра­тив­ших свою де­я­тель­ность на се­го­дняш­ний день. В об­щей слож­но­сти ре­естр со­дер­жит бо­лее 10 000 юри­ди­че­ских лиц.</div>
+                                                </div>
+                                                <footer class="article-footer">
+                                                    <a href="#link">Читать</a>
+                                                </footer>
+                                            </article>
+                                        </div>
+
+                                        <div class="article-item col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="200" >
+                                            <article class="article-card article-vertical">
+                                                <header class="article-header">
+                                                    <ul class="article-statusbar">
+                                                        <li>
+                                                            <time>11.02.2018</time>
+                                                        </li>
+                                                        <li>Новости компании</li>
+                                                    </ul>
+
+                                                    <div class="article-thumbnail" style="background-image: url(img/page-home/blog/blog-item-2.png)" >
+                                                        <a href="#link" class="article-thumbnail-link"></a>
+                                                    </div>
+
+                                                    <h5 class="article-title"><a href="#link">снижение ставки на займ под птс до 7,9% в месяц</a></h5>
+                                                </header>
+                                                <div class="article-body">
+                                                    <div class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit int.</div>
+                                                </div>
+                                                <footer class="article-footer">
+                                                    <a href="#link">Читать</a>
+                                                </footer>
+                                            </article>
+                                        </div>
+
+                                        <div class="article-item col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="400" >
+                                            <article class="article-card article-vertical">
+                                                <header class="article-header">
+                                                    <ul class="article-statusbar">
+                                                        <li>
+                                                            <time>10.02.2018</time>
+                                                        </li>
+                                                        <li>В России</li>
+                                                    </ul>
+
+                                                    <div class="article-thumbnail" style="background-image: url(img/page-home/blog/blog-item-3.png)">
+                                                        <a href="#link" class="article-thumbnail-link"></a>
+                                                    </div>
+
+                                                    <h5 class="article-title"><a href="#link">Банк России разъясняет ломбардам требования страхования</a></h5>
+                                                </header>
+                                                <div class="article-body">
+                                                    <div class="article-description">Ломбард обя­зан стра­хо­вать в поль­зу за­ем­щи­ка или по­кла­же­да­те­ля за свой счет риск утра­ты и по­вре­жде­ния ве­щи, при­ня­той в за­лог, на сум­му, рав­ную сум­ме ее оцен­ки, на про­тя­же­нии все­го пе­ри­о­да ее на­хож­де­ния в лом­бар­де.</div>
+                                                </div>
+                                                <footer class="article-footer">
+                                                    <a href="#link">Читать</a>
+                                                </footer>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <a href="#link" class="btn" >Больше новостей</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
+                        
+                    </div>
 
-                    
                 </main>
             </div>
             <div class="down-part">
