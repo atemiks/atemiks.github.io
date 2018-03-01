@@ -1,0 +1,249 @@
+html,
+body {
+	height: 100%;
+	font-family: $base-font;
+	font-size: 16px;
+	line-height: 1.2;
+	color: $default;
+}
+
+
+section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+
+h1,
+.h1 {
+	margin: 0.55em 0;
+	font-size: 65px;
+	font-weight: 700;
+	@media (max-width: 768px) {
+		font-size: 36px;
+	} 
+	@media (max-width: 767px) {
+		font-size: 34px;
+	}
+}
+
+h2,
+.h2 {
+	margin: 0.91em 0;
+	font-size: 44px;
+	font-weight: 700;
+	@media (max-width: 768px) {
+		font-size: 30px;
+	}
+	@media (max-width: 767px) {
+		font-size: 26px;
+	}
+}
+
+h3,
+.h3 {
+	font-size: 34px;
+	@media (max-width: 768px) {
+		font-size: 26px;
+	}
+	@media (max-width: 767px) {
+		font-size: 24px;
+	}
+}
+
+h4,
+.h4 {
+	margin: 0.8em 0;
+	font-size: 24px;
+	font-weight: 400;
+	@media (max-width: 767px) {
+		font-size: 20px;
+	}
+}
+
+h5,
+.h5 {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+h6,
+.h6 {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+p {
+	margin: 15px 0;
+}
+
+a {
+	@extend .transition;
+	color: $light-purple;
+    border-bottom: 1px dashed rgba($light-purple, .3);
+    text-decoration: none !important;
+    &:hover {
+    	text-decoration: none;
+    }
+    &:focus {
+    	outline: none;
+    }
+
+    i {
+    	display: inline-block;
+    	margin: 0 5px 0 0;
+    }
+}
+
+time {
+	display: block;
+	margin: 20px 0;
+	color: $dark-gray;
+}
+
+
+
+img {
+	max-width: 100%;
+}
+
+
+
+
+
+// forms
+
+input {
+	outline: none;
+	display: block;
+	width: 100%;
+	height: 50px;
+	padding: 0 15px;
+	border: 2px solid $gray;
+	background: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	color: $default;
+	&:placeholder {
+		color: $default;
+	}
+}
+
+
+// custom checkbox
+.custom-checkbox {
+	padding: 5px 0;
+}
+input[type="checkbox"] {
+    display: none !important;
+}
+input[type="checkbox"] + label {
+	display: flex;
+	align-items: center;
+}
+input[type="checkbox"] + label .custom-check-icon {
+    cursor: pointer;
+	position: relative;
+	flex: 0 0 35px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid $gray;
+   	margin: 0 15px 0 0;
+}
+
+input[type="checkbox"] + label .custom-check-icon:after {
+	@extend .transition;
+	opacity: 0;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 14px;
+	background: url('../img/icons/icon-check.png') no-repeat 0 0;
+	background-size: contain;
+	transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"] + label .custom-check-icon {
+     background-color: #fff;
+}
+
+input[type="checkbox"]:checked + label .custom-check-icon:after {
+     opacity: 1;
+}
+
+input[type="checkbox"] + label .custom-check-icon,
+input[type="checkbox"]:checked + label .custom-check-icon {
+	@extend .transition;
+}
+
+
+input[type="checkbox"] + label .custom-check-value {
+	display: block;
+	position: relative;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: $default;
+}
+
+button {
+	outline: none;
+}
+.btn {
+	outline: none;
+	display: inline-block;
+	width: 100%;
+	max-width: 280px;
+	padding: 1.1111111111em 0 0.8333333333em;
+	border-radius: 15px;
+	border: none;
+	border-bottom: 5px solid $dark-pink;
+	background: $pink;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff !important;
+	text-shadow: 0 1px 1px rgba(194, 116, 140, 0.8);
+	text-align: center;
+	@media (max-width: 768px) {
+		max-width: 230px;
+		font-size: 16px;
+	}
+
+	&:hover {
+		background: $purple;
+		border-bottom-color: $dark-purple;
+		color: #fff;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+.btn-fluid {
+	max-width: 100%;
+}
+
+
+.form-group {
+	margin: 10px 0;
+}
+
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
