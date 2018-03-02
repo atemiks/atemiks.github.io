@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Автоломбард</title>
+        
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+        <link rel="stylesheet" href="css/select2.min.css">
+        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="offcanvas">
+            <div class="offcanvas-header">
+                <div class="offcanvas-logo">
+                    <a href="index.html">Logotip</a>
+                </div>
+                <button class="offcanvas-close">&times;</button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="offcanvas-menu">
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="#link">FAQ</a></li>
+                    <li class="active" ><a href="blog.html">Блог</a></li>
+                    <li><a href="partner.html">Партнеры</a></li>
+                    <li><a href="index.html#link">Контакты</a></li>
+                    <li><a href="#link">ПТС</a></li>
+                    <li><a href="#link">Авто</a></li>
+                    <li><a href="realty.html">недвижимость</a></li>
+                </ul>
+            </div>
+            <div class="offcanvas-footer">
+                <div class="offcanvas-contact">
+                    <a href="tel:+7(495)6789090">+7 (495) <b>678 90 90</b></a>
+                </div>
+
+                <div class="offcanvas-address">Москва, ул. Название улицы, 46/А, офис 123</div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="modalCallbackLabel">Заказать звонок</h3>
+                        <p class="modal-subtitle">Перезвоним через 2 минуты!</p>
+                    </div>
+                  <div class="modal-body">
+                    <form  class="form-modal">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Имя" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="tel" placeholder="Телефон" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" id="checkbox01" name="checkbox" checked />
+                                        <label for="checkbox01">
+                                            <span class="custom-check-icon" ></span>
+                                            <span class="custom-check-value" >Я согласен (-на) с политикой обработки персональных данных</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 text-right">
+                                <div class="form-group">
+                                    <button type="submit"  class="btn btn">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+                  
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalGet" tabindex="-1" role="dialog" aria-labelledby="modalGetLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                         <h3 class="modal-title" id="modalGetLabel">Получить деньги <br> на выгодных условиях!</h3>
+                    </div>
+                  <div class="modal-body">
+                    <form  class="form-modal">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Имя" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="tel" placeholder="Телефон" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" id="checkbox02" name="checkbox" checked />
+                                        <label for="checkbox02">
+                                            <span class="custom-check-icon" ></span>
+                                            <span class="custom-check-value" >Я согласен (-на) с политикой обработки персональных данных</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 text-right">
+                                <div class="form-group">
+                                    <button type="submit"  class="btn">Получить деньги</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+                  
+                </div>
+            </div>
+        </div>
+  
+
+
+
+        <div class="wrapper">
+            <div class="upper-part">
+                <div class="header-mobile">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="mobile-logo">
+                                    <a href="index.html">Logotip</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-8 text-right">
+                                <div class="mobile-phone">
+                                    <a href="tel:+74954567890">+7 (495) <b>456 78 90</b></a>
+                                </div>
+                                <button class="mobile-toggle">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <header class="header-box" data-aos="fade-down" >
+                   <div class="header-statusbar container-fluid">
+                       <div class="row">
+                           <div class="container">
+                               <div class="row">
+                                    <div class="header-statusbar-inner col-md-12">
+                                        <div class="header-address">Москва, ул. Название улицы, 46/А, офис 123</div>
+                                        
+                                        <div class="header-logo">
+                                            <a href="index.html">Logotip</a>
+                                        </div>
+
+                                        <nav class="header-nav">
+                                            <ul class="header-nav-list">
+                                                <li><a href="about.html">Про нас</a></li>
+                                                <li><a href="#link">FAQ</a></li>
+                                                <li class="active" ><a href="blog.html">Блог</a></li>
+                                                <li><a href="partner.html">Партнеры</a></li>
+                                                <li><a href="index.html#section-contact">Контакты</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="header-content">
+                       <div class="container">
+                           <div class="row">
+                                <div class="header-content-inner">
+                                   <div class="header-content-left">
+                                       <ul class="header-hotlinks">
+                                           <li class="hotlink-item">
+                                               <div class="hotlink-card">
+                                                   <div class="hotlink-thumbnail">
+                                                       <i class="hotlink-icon icon-time"></i>
+                                                   </div>
+                                                   <div class="hotlink-value">Круглосуточно без выходных</div>
+                                               </div>
+                                           </li>
+
+                                           <li class="hotlink-item">
+                                               <div class="hotlink-card">
+                                                   <div class="hotlink-thumbnail">
+                                                       <i class="hotlink-icon icon-calc"></i>
+                                                   </div>
+                                                   <div class="hotlink-value">
+                                                      <a href="index.html#section-calc">Расчет стоимости займа</a>
+                                                   </div>
+                                               </div>
+                                           </li>
+
+                                           <li class="hotlink-item">
+                                               <div class="hotlink-card">
+                                                   <div class="hotlink-thumbnail">
+                                                       <i class="hotlink-icon icon-calendar"></i>
+                                                   </div>
+                                                   <div class="hotlink-value">
+                                                       <a href="#get" data-toggle="modal" data-target="#modalGet" >Запись на бесплатный выезд</a>
+                                                   </div>
+                                               </div>
+                                           </li>
+                                       </ul>
+
+                                       <div class="header-services">
+                                           <p class="service-title">Выдаем деньги под:</p>
+                                           <ul class="services-menu">
+                                               <li><a href="#link">ПТС</a></li>
+                                               <li><a href="#link">Авто</a></li>
+                                               <li><a href="realty.html">недвижимость</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                   <div class="header-content-right">
+                                       
+                                       <div class="header-contact">
+                                           <a href="tel:+74954567890">+7 (495) <b>456 78 90</b></a>
+                                       </div>
+
+                                       <ul class="header-actinos">
+                                           <li><a href="index.html#section-contact">Мы на карте</a></li>
+                                           <li><a href="#orderCallback" data-toggle="modal" data-target="#modalCallback" >Заказать звонок (2 минуты)</a></li>
+                                       </ul>
+                                   </div>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+               </header>
+                <main>
+                    <div class="wrapper-content">
+
+                      <div class="display-header-wrap">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="display-header display-header-columns col-md-12" data-aos="fade-up">
+                                        <div class="display-header-side-left">
+                                            <h2 class="display-header-title">Блог</h2>
+                                        </div>
+                                        <div class="display-header-side-right">
+                                            <ul class="breadcrumbs">
+                                                <li><a href="index.html">Главная</a></li>
+                                                <li>Блог</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+
+                        <section class="section-blog">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="blog-grid">
+                                        <div class="blog-item col-xs-12 col-sm-6" data-aos="fade-up">
+                                            <article class="article-card article-horizontal">
+                                                <div class="article-thumbnail" style="background-image: url('img/page-blog/blog-item-1.png')" >
+                                                    <a href="#link" class="article-thumbnail-link" ></a>
+                                                </div>
+                                                <article class="article-header">
+                                                    <ul class="article-statusbar">
+                                                        <li>
+                                                            <time datetime="2018-02-12" >12.02.2018</time>
+                                                        </li>
+                                                        <li>В России</li>
+                                                    </ul>
+
+                                                    <h3 class="article-title"><a href="#link">На сайте Банка России опубликован государственный реестр ломбардов</a></h3>
+                                                </article>
+                                                <div class="article-body">
+                                                    <div class="article-description">
+                                                        <p>На сайте Банка России опубликован государственный реестр ломбардов</p>
+                                                        <p>В элек­трон­ном до­ку­мен­те пред­став­ле­на ин­фор­ма­ция обо всех лом­бар­дах, в том чис­ле и пре­кра­тив­ших свою де­я­тель­ность на се­го­дняш­ний день. В об­щей слож­но­сти ре­естр со­дер­жит бо­лее 10 000 юри­ди­че­ских лиц. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    </div>
+                                                </div>
+                                                <footer class="article-footer">
+                                                    <a href="#link">Читать</a>
+                                                </footer>
+                                            </article>
+                                        </div>
+
+                                        <div class="blog-item col-xs-12 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                                            <article class="article-card article-horizontal">
+                                                <div class="article-thumbnail" style="background-image: url('img/page-blog/blog-item-2.png')" >
+                                                    <a href="#link" class="article-thumbnail-link" ></a>
+                                                </div>
+                                                <article class="article-header">
+                                                    <ul class="article-statusbar">
+                                                        <li>
+                                                            <time datetime="2018-02-11" >11.02.2018</time>
+                                                        </li>
+                                                        <li>В России</li>
+                                                    </ul>
+
+                                                    <h3 class="article-title"><a href="#link">снижение ставки на займ под птс до 7,9% в месяц</a></h3>
+                                                </article>
+                                                <div class="article-body">
+                                                    <div class="article-description">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                                        <p>В элек­трон­ном до­ку­мен­те пред­став­ле­на ин­фор­ма­ция обо всех лом­бар­дах, в том чис­ле и пре­кра­тив­ших свою де­я­тель­ность на се­го­дняш­ний день. В об­щей слож­но­сти ре­естр со­дер­жит бо­лее 10 000 юри­ди­че­ских лиц. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    </div>
+                                                </div>
+                                                <footer class="article-footer">
+                                                    <a href="#link">Читать</a>
+                                                </footer>
+                                            </article>
+                                        </div>
+
+                                        <div class="blog-item col-xs-12 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                                            <article class="article-card article-horizontal">
+                                                <div class="article-thumbnail" style="background-image: url('img/page-blog/blog-item-3.png')" >
+                                                    <a href="#link" class="article-thumbnail-link" ></a>
+                                                </div>
+                                                <article class="article-header">
+                                                    <ul class="article-statusbar">
+                                                        <li>
+                                                            <time datetime="2018-02-10" >10.02.2018</time>
+                                                        </li>
+                                                        <li>В России</li>
+                                                    </ul>
+
+                                                    <h3 class="article-title"><a href="#link">Банк России разъясняет ломбардам новые требования страхования</a></h3>
+                                                </article>
+                                                <div class="article-body">
+                                                    <div class="article-description">
+                                                        <p>Ломбард обя­зан стра­хо­вать в поль­зу за­ем­щи­ка или по­кла­же­да­те­ля за свой счет риск утра­ты.</p>
+                                                        <p>Ломбард обя­зан стра­хо­вать в поль­зу за­ем­щи­ка или по­кла­же­да­те­ля за свой счет риск утра­ты и по­вре­жде­ния ве­щи, при­ня­той в за­лог, на сум­му, рав­ную сум­ме ее оцен­ки, на про­тя­же­нии все­го пе­ри­о­да ее на­хож­де­ния в лом­бар­де. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    </div>
+                                                </div>
+                                                <footer class="article-footer">
+                                                    <a href="#link">Читать</a>
+                                                </footer>
+                                            </article>
+                                        </div>
+
+                                        <div class="blog-item col-xs-12 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+                                            <article class="article-card article-horizontal">
+                                                <div class="article-thumbnail" style="background-image: url('img/page-blog/blog-item-4.png')" >
+                                                    <a href="#link" class="article-thumbnail-link" ></a>
+                                                </div>
+                                                <article class="article-header">
+                                                    <ul class="article-statusbar">
+                                                        <li>
+                                                            <time datetime="2018-02-09" >09.02.2018</time>
+                                                        </li>
+                                                        <li>В России</li>
+                                                    </ul>
+
+                                                    <h3 class="article-title"><a href="#link">Мы стали ближе! Открыт новый филиал в центре города</a></h3>
+                                                </article>
+                                                <div class="article-body">
+                                                    <div class="article-description">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit int.</p>
+                                                    </div>
+                                                </div>
+                                                <footer class="article-footer">
+                                                    <a href="#link">Читать</a>
+                                                </footer>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="pagination-box">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="pagination">
+                                            <li class="active" ><a href="#link">1</a></li>
+                                            <li><a href="#link">2</a></li>
+                                            <li><a href="#link">3</a></li>
+                                            <li><a href="#link">4</a></li>
+                                            <li><a href="#link">5</a></li>
+                                            <li>...</li>
+                                            <li><a href="#link">10</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+
+                </main>
+            </div>
+            <div class="down-part">
+                <footer class="footer-box">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-inner">
+                                <div class="footer-side-left col-xs-12 col-sm-4">
+                                    <div class="footer-copyright">
+                                        <p>&copy; 2018 «НАЗВАНИЕ КОМПАНИИ». <br>
+                                            Деньги под залог автомобилей
+                                        </p>
+                                        <p>ООО «Название» работает в соответствии <br>
+                                            с Федеральным Законом №196-ФЗ <br>
+                                            «О ломбардах» от 19.07.2007 г.</p>
+                                        <p>ОГРН 123412412534535345, ИНН 157575132980 <br>
+                                            КПП 348506067778 <br>
+                                            Р\с №93848721756865476 в ПАО «Сбербанк»</p>
+                                    </div>
+                                </div>
+                                <div class="footer-side-center col-xs-12 col-sm-4">
+                                    <div class="footer-menu-block">
+                                        <h4 class="footer-menu-title"><a href="about.html">О компании</a></h4>
+                                        <ul class="footer-menu-list">
+                                            <li><a href="#link">FAQ</a></li>
+                                            <li class="active" ><a href="blog.html">Блог</a></li>
+                                            <li><a href="partner.html">Партнерам</a></li>
+                                            <li><a href="index.html#section-contact">Контакты</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="footer-menu-block">
+                                        <h4 class="footer-menu-title"><a href="#link">Программы выдачи денег</a></h4>
+                                        <ul class="footer-menu-list">
+                                            <li><a href="#link">Под автомобиль</a></li>
+                                            <li><a href="#link">Под ПТС</a></li>
+                                            <li><a href="realty.html">Под недвижимость</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer-side-right col-xs-12 col-sm-4">
+                                    <div class="footer-contact">
+                                        <a class="footer-contact-phone" href="tel:+74954567890">+7 (495) <b>456 78 90</b></a>
+                                        <p class="footer-contact-hint"><i class="icon-time" ></i>Круглосуточно без выходных</p>
+                                    </div>
+
+                                    <ul class="footer-hotlinks">
+                                        <li><a href="#orderCallback" data-toggle="modal" data-target="#modalCallback" >Заказать звонок (перезвоним за 2 минуты)</a></li>
+                                        <li><a href="index.html#section-contact">Мы на карте</a></li>
+                                    </ul>
+
+                                    <div class="footer-address">Москва, ул. Название улицы, 46/А, офис 123</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC_6dU-jxCoGgjMBEQCAByXL2ec-Ld_k0"></script>
+        <script src="js/libs.min.js" ></script>
+        <script src="js/slick.js" ></script>
+        <script src="js/mask.js" ></script>
+        <script src="js/rangeslider.js" ></script>
+        <script src="js/jquery.number.js" ></script>
+        <script src="js/select2.min.js" ></script>
+        <script src="js/aos.js" ></script>
+        <script src="js/main.js" ></script>
+    </body>
+
+</html>
