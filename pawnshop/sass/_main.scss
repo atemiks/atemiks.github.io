@@ -261,8 +261,16 @@
 			flex: 0 0 65px;
 		}
 	}
-	.range-input {
+
+	.range-input-wrap {
 		flex: 0 0 180px;
+		width: 180px;
+		@media (max-width: 767px)  {
+			width: 100%;
+			margin: 55px 0 0;
+		}
+	}
+	.range-input {
 		width: 180px;
 		height: 50px;
 		border: 2px solid $gray;
@@ -271,9 +279,7 @@
 		color: $purple;
 		text-align: center;
 		@media (max-width: 767px) {
-			clear: both;
 			width: 100%;
-			margin: 55px 0 0;
 		}
 	}
 
