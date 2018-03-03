@@ -1,0 +1,229 @@
+html,
+body {
+	height: 100%;
+	font-family: $base-font;
+	font-size: 14px;
+	line-height: 1.2857142857;
+	color: $default;
+	
+}
+
+
+section {
+	padding-top: 30px;
+	padding-bottom: 65px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $default-heading;
+	// margin: 0;
+	
+}
+
+h1,
+.h1 {
+	margin: .5em 0;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 1.5;
+	text-transform: uppercase;
+	@media (max-width: 1024px) {
+		font-size: 44px;
+	}
+	@media (max-width: 767px) {
+		font-size: 30px;
+	}
+}
+
+h2,
+.h2 {
+    margin: 0.83em 0;
+	font-size: 48px;
+	font-weight: 700;
+	@media (max-width: 1024px) {
+		font-size: 44px;
+	}
+	@media (max-width: 767px) {
+		font-size: 34px;
+	}
+}
+
+h3,
+.h3 {
+	font-size: 30px;
+	margin: 0.4em 0;
+	@media (max-width: 991px) {
+		font-size: 24px;
+	}
+}
+
+h4,
+.h4 {
+	margin: 0.5em 0;
+	font-size: 24px;
+	@media (max-width: 991px) {
+		font-size: 20px;
+	}
+	@media (max-width: 767px) {
+		font-size: 16px;
+	}
+}
+
+h5,
+.h5 {
+	margin: 0.5em 0;
+	font-size: 18px;
+}
+
+h6,
+.h6 {
+	font-size: 16px;
+}
+
+p {
+
+}
+
+del {
+	font-size: 14px;
+	font-weight: 400;
+	color: #7d7d7d;
+}
+
+ins {
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+	color: $danger;
+	text-decoration: none;
+}
+
+time {
+	display: inline-block;
+	margin: 10px 0 5px;
+	font-size: 13px;
+	font-style: italic;
+	color: #d0d0d0;
+}
+
+a {
+	@extend .transition;
+	color: $primary;
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+form {}
+
+// input,
+// textarea {
+// 	height: 50px;
+// 	padding: 0 15px;
+// 	border: none;
+// 	background: #fff;
+// 	font-family: $heading-font;
+// 	&::placeholder {
+// 		color: $default;
+// 	}
+// }
+// textarea {
+// 	height: 200px;
+// 	padding: 10px 15px;
+// }
+
+
+// custom checkbox
+// input[type="checkbox"] {
+//     display: none !important;
+// }
+// input[type="checkbox"] + label {
+    
+// }
+// input[type="checkbox"] + label .custom-check-icon {
+//     cursor: pointer;
+// 	position: relative;
+//     float: left;
+//     width: 30px;
+//     height: 30px;
+//    	margin: 0 15px 0 0;
+// }
+
+// input[type="checkbox"] + label .custom-check-icon:after {
+// 	@extend .transition;
+// 	opacity: 0;
+// 	content: '';
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	background: url('../img/icons/check.svg') no-repeat 0 0;
+// 	background-size: contain;
+// }
+
+// input[type="checkbox"] + label .custom-check-icon {
+//      background-color: #fff;
+// }
+
+// input[type="checkbox"]:checked + label .custom-check-icon:after {
+//      opacity: 1;
+// }
+
+// input[type="checkbox"] + label .custom-check-icon,
+// input[type="checkbox"]:checked + label .custom-check-icon {
+// 	@extend .transition;
+// }
+
+
+// input[type="checkbox"] + label .custom-check-value {
+// 	display: block;
+// 	overflow: hidden;
+// 	position: relative;
+// 	top: -3px;
+// 	font-family: $heading-font;
+// 	font-size: 18px;
+// 	line-height: 1.3;
+// }
+
+.form-group {
+	margin: 10px 0;
+}
+
+.btn {
+	@extend .transition;
+	display: inline-block;
+	min-width: 208px;
+	padding: 17px 15px 16px;
+	background: $primary;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	&:hover {
+		background: darken($primary, 5%);
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}

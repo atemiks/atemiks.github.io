@@ -1,0 +1,108 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.upper-part {
+	overflow: hidden;
+	flex: 1 0 auto;
+	padding-top: 115px;
+	@media (max-width: 991px) {
+		padding-top: 65px;
+	}
+}
+.down-part {
+	flex: 0 0 auto;
+}
+
+
+.container {
+	@media (min-width: 1200px) {
+		width: 1200px;
+	}
+}
+
+
+.section-gray {
+	background: $light-gray;
+}
+
+.section-header {
+	text-align: center;
+	.section-title {}
+	.section-subtitle {}
+}
+
+
+.label-sale {
+	position: absolute;
+	z-index: 8;
+	top: 0;
+	right: 30px;
+	width: 48px;
+	height: 69px;
+	background: url('../img/icons/label-sale.png') no-repeat right top ;
+	background-size: contain;
+}
+
+.offcanvas-open {
+	overflow: hidden;
+}
+
+
+// sldier
+.slick-slider {
+	outline: none;
+	* {
+		outline: none;
+	}
+}
+
+
+.slick-arrow {
+	z-index: 1;
+	width: 25px;
+	height: 76px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	&:before {
+		display: none;
+	}
+}
+.slick-prev {
+	background-image: url('../img/icons/icon-left.png') !important;
+	@media (max-width: 991px) {
+		left: 0;
+	}
+}
+.slick-next {
+	background-image: url('../img/icons/icon-right.png') !important;
+	@media (max-width: 991px) {
+		right: 0;
+	}
+}
+
+.slick-dots {
+	li {
+		width: 18px;
+		height: 18px;
+		button {
+			@extend .transition;
+			width: inherit;
+			height: inherit;
+			border-radius: 50%;
+			background: rgba(#fff, .5);
+			&:before {
+				display: none;
+			}
+		}
+		
+		&:hover,
+		&.slick-active {
+			button {
+				background: #fff;
+			}
+		}
+	}
+}
