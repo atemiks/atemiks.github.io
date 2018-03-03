@@ -2417,8 +2417,10 @@ img {
     .offcanvas .offcanvas-header .offcanvas-close {
       position: absolute;
       top: 5px;
-      right: 5px;
-      font-size: 30px;
+      right: 10px;
+      border: none;
+      padding: 0;
+      font-size: 34px;
       color: #2a81ac; }
   .offcanvas .offcanvas-body {
     padding: 15px; }

@@ -272,8 +272,10 @@
 		.offcanvas-close {
 			position: absolute;
 			top: 5px;
-			right: 5px;
-			font-size: 30px;
+			right: 10px;
+			border: none;
+			padding: 0;
+			font-size: 34px;
 			color: $primary;
 		}
 	}
