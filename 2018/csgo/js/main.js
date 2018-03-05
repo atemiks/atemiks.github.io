@@ -21,10 +21,6 @@ $( document ).ready(function() {
 	    }
 	  });
 
-	setTimeout(function() {
-		AOS.init();
-	}, 100);
-
 	// header
 
 	$( ".header-toggle, .offcanvas-close" ).on( "click", function() {
