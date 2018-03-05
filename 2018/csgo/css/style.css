@@ -2544,7 +2544,8 @@ table {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin: -10px 0; }
+  margin: -10px 0;
+  width: 100%; }
   .guide-grid .guide-item {
     position: relative; }
     .guide-grid .guide-item:after {
@@ -2703,7 +2704,9 @@ table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: -5px -35px; }
+  margin: -5px -35px;
+  width: -webkit-calc(100% + 70px);
+  width: calc(100% + 70px); }
   @media (max-width: 767px) {
     .portfolio-grid {
       display: block; } }

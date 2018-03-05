@@ -192,6 +192,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: -10px 0;
+	width: 100%;
 	.guide-item {
 		position: relative;
 		&:after {
@@ -401,6 +402,7 @@
 .portfolio-grid {
 	display: flex;
 	margin: -5px -35px;
+	width: calc(100% + 70px);
 	@media (max-width: 767px) {
 		display: block;
 	}
