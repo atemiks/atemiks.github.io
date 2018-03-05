@@ -1,0 +1,33 @@
+// portfolio scroll
+.mCustomScrollBox.dark-portfolio .mCSB_scrollTools_vertical {
+	width: 14px;
+	margin: 0;
+	background: $main-color;
+	border-radius: 10px;
+}
+.mCustomScrollBox.dark-portfolio .mCSB_scrollTools_vertical .mCSB_draggerContainer .mCSB_dragger_bar {
+	width: 8px;
+	margin: 3px 3px;
+	background: #fff;
+}
+.mCustomScrollBox.dark-portfolio .mCSB_scrollTools_vertical .mCSB_draggerContainer .mCSB_draggerRail {
+	width: 8px;
+	margin: 0;
+	background: none;
+}
+
+// testimonial scroll
+.mCustomScrollBox.dark-testimonials .mCSB_scrollTools_vertical {
+	width: 8px;
+	margin: 15px 10px 15px;
+}
+.mCustomScrollBox.dark-testimonials .mCSB_scrollTools_vertical .mCSB_draggerContainer .mCSB_dragger_bar {
+	width: 8px;
+	margin: 0;
+	background: $main-color;
+}
+.mCustomScrollBox.dark-testimonials .mCSB_scrollTools_vertical .mCSB_draggerContainer .mCSB_draggerRail {
+	width: 8px;
+	margin: 0;
+	background: none;
+}
