@@ -3079,6 +3079,8 @@ table {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
+  .form-compare .row:before, .form-compare .row:after {
+    display: none; }
 
 .table-compare {
   width: 100%; }
