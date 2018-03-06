@@ -527,10 +527,10 @@ img {
   z-index: 1;
   width: 25px;
   height: 76px;
-  -webkit-background-size: contain;
-          background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
+  -webkit-background-size: contain !important;
+          background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important; }
   .slick-arrow:before {
     display: none; }
 

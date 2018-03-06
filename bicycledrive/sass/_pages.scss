@@ -174,7 +174,7 @@
 	@media (max-width: 767px) {
 		margin: 30px 0;
 	}
-	
+
 	.aside-block-title {
 		margin: 0;
 		padding: 15px 0 0;
@@ -357,9 +357,9 @@
 	z-index: 1;
 	width: 25px;
 	height: 76px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
 	&:before {
 		display: none;
 	}
