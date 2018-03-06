@@ -1,9 +1,6 @@
-@import "bootstrap";
 @import "font";
 @import "vars";
 @import "mixins";
-@import "libs/slick";
-@import "libs/slick-theme";
 @import "base";
 @import "pages";
 @import "main";
@@ -11,3 +8,5 @@
 @import "header";
 @import "footer";
 
+@import "page-catalog";
+@import "page-product";

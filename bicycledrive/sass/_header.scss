@@ -5,13 +5,19 @@
 	left: 0;
 	right: 0;
 	background: $danger;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 	@media (max-width: 991px) {
 		background: #fff;
 	}
 
 	.container {
 		@media (min-width: 1366px) {
+    		position: relative;
 			width: 1360px;
+		    left: 50%;
+    		transform: translateX(-52%);
+    		margin-left: 0;
+    		margin-right: 0;
 		}
 		@media (min-width: 992px) and (max-width: 1199px) {
 			width: 95%;
@@ -200,6 +206,7 @@
 	justify-content: space-around;
 	> li {
 		> a {
+			position: relative;
 			display: inline-block;
 			padding: 17px 0;
 			font-size: 18px;
@@ -208,8 +215,33 @@
 			text-decoration: none;
 			text-transform: uppercase;
 			text-shadow: 0 2px 0 #ffffff;
+			&:after {
+			    content: "";
+			    position: absolute;
+			    left: 50%;
+			    bottom: 10px;
+			    transform: translateX(-50%);
+			    width: 0;
+			    border-bottom: 3px solid $info;
+			    transition: .25s;
+			}
+
+			&:hover {
+				&:after {
+					width: 100%;
+				}
+			}
+
 			@media (max-width: 1024px) {
 				padding: 0;
+			}
+		}
+
+		&.open {
+			> a {
+				&:after {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -275,6 +307,7 @@
 			right: 10px;
 			border: none;
 			padding: 0;
+			background: none;
 			font-size: 34px;
 			color: $primary;
 		}

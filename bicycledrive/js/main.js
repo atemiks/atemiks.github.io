@@ -1,34 +1,46 @@
 $( document ).ready(function() {
 
 
-	function getHeaderHeight() {
-		return $('.header-box').height();
-	}
+	// function getHeaderHeight() {
+	// 	return $('.header-box').height();
+	// }
 
-	// smooth scroll
-	$('a[href*="#"]')
-	  .not('[href="#"]')
-	  .not('[href="#0"]')
-	  .click(function(event) {
-	    if (
-	      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-	      && 
-	      location.hostname == this.hostname
-	    ) {
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-	      if (target.length) {
-	        event.preventDefault();
-	        $('html, body').animate({
-	          scrollTop: target.offset().top - getHeaderHeight()
-	        }, 1000);
-	      }
-	    }
-	  });
+	// // smooth scroll
+	// $('a[href*="#"]')
+	//   .not('[href="#"]')
+	//   .not('[href="#0"]')
+	//   .click(function(event) {
+	//     if (
+	//       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+	//       && 
+	//       location.hostname == this.hostname
+	//     ) {
+	//       var target = $(this.hash);
+	//       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	//       if (target.length) {
+	//         event.preventDefault();
+	//         $('html, body').animate({
+	//           scrollTop: target.offset().top - getHeaderHeight()
+	//         }, 1000);
+	//       }
+	//     }
+	//   });
 
 
 	// init animation
-	AOS.init();
+	setTimeout(function() {
+	  	AOS.init();
+	}, 100)
+
+
+
+	// popup gallery
+	$("[data-fancybox]").fancybox({
+		buttons : [
+	        'close'
+	    ]
+	});
+	
 
 
 	// header
@@ -92,6 +104,42 @@ $( document ).ready(function() {
 	});
 
 
+	// page product
+	 $('.slider-product').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-product-nav'
+	});
+	$('.slider-product-nav').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		asNavFor: '.slider-product',
+		arrows: true,
+		dots: false,
+		focusOnSelect: true,
+		responsive: [
+	    {
+	      breakpoint: 767,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 1,
+	        dots: false
+	      }
+	    }
+	  ]
+	});
+	
+
+
+    // content
+    $(".content-aside-toggle" ).on( "click", function() {
+    	console.log('hl');
+	  	$('.content-aside-inner').slideToggle();
+	});
+
+
 	// map
 
     // Basic options for a simple Google Map
@@ -122,6 +170,8 @@ $( document ).ready(function() {
         title: 'Велодрайв'
     });
 
+
+    
 
 
 });

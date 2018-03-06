@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Велодрайв</title>
+
+        <link rel="stylesheet" href="css/libs/slick.css">
+        <link rel="stylesheet" href="css/libs/slick-theme.css">
+        <link rel="stylesheet" href="css/libs/jquery.fancybox.css">
+        <link rel="stylesheet" href="css/libs/aos.css">
+        <link rel="stylesheet" href="css/style-bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="offcanvas">
+            <div class="offcanvas-header">
+                <button class="offcanvas-close" >&times;</button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="offcanvas-menu-list">
+                    <li><a href="#link">О магазине</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог велосипедов <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#link">Женские велосипеды</a></li>
+                            <li><a href="#link">Дорожные велосипеды</a></li>
+                            <li><a href="#link">Детские велосипеды</a></li>
+                            <li><a href="#link">Подростковые</a></li>
+                            <li><a href="#link">Горные велосипеды</a></li>
+                            <li><a href="#link">Беговелы</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#link">Статьи</a></li>
+                    <li><a href="#link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="offcanvas-footer">
+                <div class="offcanvas-block">
+                    <div class="offcanvas-contact">
+                        <a href="tel:+74957777777" class="offcanvas-contact-tel">+7 (495) <b>777-77-77</a>
+                    </div>
+                </div>
+                <div class="offcanvas-block">
+                    <div class="offcanvas-address">
+                        г. Балашиха, мкр. Железнодорожный, <br>
+                        ул. Пролетарская., дом 1, к. 2 (магазин Океан)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <div class="upper-part">
+                <header class="header-box">
+                    <div class="container">
+                        <div class="row">
+                            <div class="header-inner">
+                                <div class="header-side-left col-xs-4 col-sm-3 col-lg-4">
+                                    <div class="header-logo">
+                                        <a href="index.html"><img src="img/logo.png" alt="Велодрайв" class="header-logo-img"></a>
+                                    </div>
+                                </div>
+                                <div class="header-side-right col-xs-8 col-sm-9 col-lg-8">
+                                    <div class="header-statusbar">
+                                        <div class="header-tagline">Огромный выбор <b>велосипедов</b> в Железнодорожном</div>
+                                        <div class="header-contact">
+                                            <a href="tel:+74957777777">+7 (495) <b>777-77-77</b></a>
+                                        </div>
+                                        <div class="header-address">
+                                            г. Балашиха, мкр. Железнодорожный, <br>
+                                            ул. Пролетарская., дом 1, к. 2 (магазин Океан)
+                                        </div>
+                                    </div>
+
+                                    <nav class="header-nav">
+                                        <ul class="header-nav-list">
+                                            <li><a href="#link">О магазине</a></li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог велосипедов <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#link">Женские велосипеды</a></li>
+                                                    <li><a href="#link">Дорожные велосипеды</a></li>
+                                                    <li><a href="#link">Детские велосипеды</a></li>
+                                                    <li><a href="#link">Подростковые</a></li>
+                                                    <li><a href="#link">Горные велосипеды</a></li>
+                                                    <li><a href="#link">Беговелы</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#link">Статьи</a></li>
+                                            <li><a href="#link">Контакты</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <button class="header-toggle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+                <div class="content-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <main class="content-inner col-md-12">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="breadcrumbs" data-aos="fade-up" >
+                                            <li><a href="index.html">Главная страница</a></li>
+                                            <li><a href="catalog.html">Каталог товаров</a></li>
+                                            <li><a href="catalog.html">Горные велосипеды</a></li>
+                                            <li class="active" >Велосипед Stels Navigator 325 Lady 28 (2016)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="display-header" data-aos="fade-up" >
+                                            <h1 class="display-title">Велосипед Stels Navigator 325 Lady 28 (2016)</h1>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-box">
+                                    <div class="row">
+                                        <div class="product-inner">
+                                            
+                                            <div class="product-aside" data-aos="fade-up" >
+                                                <div class="slider-product-wrap">
+                                                    <div class="slider-product">
+                                                        <div class="slide-item">
+                                                            <div class="product-thumbnail">
+                                                                <a href="img/page-product/product-thumbnail-1.png" class="product-thumbnail-link" data-fancybox="gallery">
+                                                                    <img src="img/page-product/product-thumbnail-1.png" alt="" class="product-thumbnail-img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="product-thumbnail">
+                                                                <a href="img/page-product/product-thumbnail-1.png" class="product-thumbnail-link" data-fancybox="gallery">
+                                                                    <img src="img/page-product/product-thumbnail-1.png" alt="" class="product-thumbnail-img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="product-thumbnail">
+                                                                <a href="img/page-product/product-thumbnail-1.png" class="product-thumbnail-link" data-fancybox="gallery">
+                                                                    <img src="img/page-product/product-thumbnail-1.png" alt="" class="product-thumbnail-img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="product-thumbnail">
+                                                                <a href="img/page-product/product-thumbnail-1.png" class="product-thumbnail-link" data-fancybox="gallery">
+                                                                    <img src="img/page-product/product-thumbnail-1.png" alt="" class="product-thumbnail-img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="product-thumbnail">
+                                                                <a href="img/page-product/product-thumbnail-1.png" class="product-thumbnail-link" data-fancybox="gallery">
+                                                                    <img src="img/page-product/product-thumbnail-1.png" alt="" class="product-thumbnail-img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider-product-nav">
+                                                        <div class="slide-item">
+                                                            <div class="product-thumbnail" style="background-image: url(img/page-product/product-thumbnail-sm-1.png)" ></div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="product-thumbnail" style="background-image: url(img/page-product/product-thumbnail-sm-2.png)" ></div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="product-thumbnail" style="background-image: url(img/page-product/product-thumbnail-sm-3.png)" ></div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="product-thumbnail" style="background-image: url(img/page-product/product-thumbnail-sm-4.png)" ></div>
+                                                        </div>
+                                                        <div class="slide-item">
+                                                            <div class="product-thumbnail" style="background-image: url(img/page-product/product-thumbnail-sm-2.png)" ></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-price-grid product-details-block" data-aos="fade-up">
+                                                <div class="product-price-col">
+                                                    <p class="product-price-item product-price-label">Акция!</p>
+                                                    <p class="product-price-item">Цена в магазине ВЕЛОДРАЙВ:</p>
+                                                </div>
+                                                <div class="product-price-col">
+                                                    <p class="product-price-item"><del>10 990 р.</del></p>
+                                                    <p class="product-price-item"><ins>7 440 <span>p.</span></ins></p>
+                                                </div>
+                                            </div>
+
+
+                                            <ul class="product-info product-details-block" data-aos="fade-up">
+                                                <li class="product-info-item">
+                                                    <p class="product-info-title" >Рама</p>
+                                                    <p class="product-info-value" >Сталь</p>
+                                                </li>
+                                                <li class="product-info-item">
+                                                    <p class="product-info-title" >Вилка</p>
+                                                    <p class="product-info-value" >Жесткая</p>
+                                                </li>
+                                                <li class="product-info-item">
+                                                    <p class="product-info-title" >Обода</p>
+                                                    <p class="product-info-value" >Двойные</p>
+                                                </li>
+                                                <li class="product-info-item">
+                                                    <p class="product-info-title" >Тормоза</p>
+                                                    <p class="product-info-value" >Ножные педальные</p>
+                                                </li>
+                                                <li class="product-info-item">
+                                                    <p class="product-info-title" >Скорости</p>
+                                                    <p class="product-info-value" >Одна скорость</p>
+                                                </li>
+                                                <li class="product-info-item">
+                                                    <p class="product-info-title" >Диаметр колес</p>
+                                                    <p class="product-info-value" >28 дюймов</p>
+                                                </li>
+                                            </ul>
+
+
+                                            <div class="product-description product-details-block" data-aos="fade-up">
+                                                <p>Женский дорожный велосипед начального уровня без переключения передач. Технические особенности: прочная стальная рама, жесткая вилка, двойные алюминиевые обода, ножные педальные тормоза, защита цепи, длинные крылья, багажник, передняя корзинка, звонок, комфортное седло. Подходит для прогулочной езды по шоссе и несложной пересеченной местности. Диаметр колес - 28 дюймов. Женский дорожный велосипед начального уровня без переключения передач. Технические особенности: прочная стальная рама, жесткая вилка, двойные алюминиевые обода, ножные педальные тормоза, защита цепи, длинные крылья, багажник, передняя корзинка, звонок, комфортное седло. Подходит для прогулочной езды по шоссе и несложной пересеченной местности. Диаметр колес - 28 дюймов.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="similar-box block">
+                                    <div class="row">
+                                        <div class="block-header col-md-12" data-aos="fade-up">
+                                            <h2 class="block-title">Похожие товары</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="similar-grid">
+                                            <div class="similar-item col-xs-6 col-sm-4 col-lg-3"  data-aos="fade-up" >
+                                                <div class="product-card">
+                                                    <a href="product.html" class="product-link"></a>
+                                                    <div class="product-header">
+                                                        <label for="" class="label label-success" >NEW</label>
+                                                        <div class="product-thumbnail">
+                                                            <img src="img/page-catalog/product-item-1.png" alt="Велосипед Десна 2610 V V010 (2018)" class="product-thumbnail-img">
+                                                        </div>
+
+                                                        <h3 class="product-title">Велосипед Десна 2610 V V010 (2018)</h3>
+                                                    </div>
+                                                    <div class="product-footer">
+                                                        <div class="product-price">
+                                                            <ins>7 300 <span>р.</span></ins>
+                                                        </div>
+
+                                                        <p class="product-action btn btn-xs">Смотреть</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="similar-item col-xs-6 col-sm-4 col-lg-3"  data-aos="fade-up" data-aos-delay="200" >
+                                                <div class="product-card">
+                                                    <a href="product.html" class="product-link"></a>
+                                                    <div class="product-header">
+                                                        <label for="" class="label label-warning" >Акция!</label>
+                                                        <div class="product-thumbnail">
+                                                            <img src="img/page-catalog/product-item-2.png" alt="Велосипед Stels Navigator 510 MD 26 V010 (2018)" class="product-thumbnail-img">
+                                                        </div>
+
+                                                        <h3 class="product-title">Велосипед Stels Navigator 510 MD 26 V010 (2018)</h3>
+                                                    </div>
+                                                    <div class="product-footer">
+                                                        <div class="product-price">
+                                                            <del>16 990 <span>р.</span></del>
+                                                            <ins>11 420 <span>р.</span></ins>
+                                                        </div>
+
+                                                        <p class="product-action btn btn-xs">Смотреть</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="similar-item col-xs-6 col-sm-4 col-lg-3"  data-aos="fade-up" data-aos-delay="400" >
+                                                <div class="product-card">
+                                                    <a href="product.html" class="product-link"></a>
+                                                    <div class="product-header">
+                                                        <label for="" class="label label-success" >NEW</label>
+                                                        <div class="product-thumbnail">
+                                                            <img src="img/page-catalog/product-item-1.png" alt="Велосипед Десна 2610 V V010 (2018)" class="product-thumbnail-img">
+                                                        </div>
+
+                                                        <h3 class="product-title">Велосипед Десна 2610 V V010 (2018)</h3>
+                                                    </div>
+                                                    <div class="product-footer">
+                                                        <div class="product-price">
+                                                            <ins>7 300 <span>р.</span></ins>
+                                                        </div>
+
+                                                        <p class="product-action btn btn-xs">Смотреть</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="similar-item col-xs-6 col-sm-4 col-lg-3"  data-aos="fade-up" data-aos-delay="600" >
+                                                <div class="product-card">
+                                                    <a href="product.html" class="product-link"></a>
+                                                    <div class="product-header">
+                                                        <label for="" class="label label-warning" >Акция!</label>
+                                                        <div class="product-thumbnail">
+                                                            <img src="img/page-catalog/product-item-2.png" alt="Велосипед Stels Navigator 510 MD 26 V010 (2018)" class="product-thumbnail-img">
+                                                        </div>
+
+                                                        <h3 class="product-title">Велосипед Stels Navigator 510 MD 26 V010 (2018)</h3>
+                                                    </div>
+                                                    <div class="product-footer">
+                                                        <div class="product-price">
+                                                            <del>16 990 <span>р.</span></del>
+                                                            <ins>11 420 <span>р.</span></ins>
+                                                        </div>
+
+                                                        <p class="product-action btn btn-xs">Смотреть</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="down-part">
+                <footer class="footer-box" >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="img/logo.png" alt="Велодрайв" class="footer-logo-img"></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-8">
+                                <ul class="footer-nav-list">
+                                    <li><a href="#link">О магазине</a></li>
+                                    <li><a href="#link">Каталог велосипедов</a></li>
+                                    <li><a href="#link">Статьи</a></li>
+                                    <li><a href="#link">Новости</a></li>
+                                    <li><a href="#link">Акции</a></li>
+                                    <li><a href="#link">Конаткты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="footer-statusbar">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="footer-copyright">
+                                        &copy; "ВЕЛО ДРАЙВ", 2004-2018
+                                        Вся предоставленная на сайте информация, касающаяся товаров и обсулживания, носит
+                                        информационный характер и не является публичной офертой, опеределяемой положениями ст. 437 (2) ГК РФ.
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="footer-address">
+                                        г. Балашиха, мкр. Железнодорожный, <br>
+                                        ул Пролетарская., дом 1, к.2 (магазин Океан)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC_6dU-jxCoGgjMBEQCAByXL2ec-Ld_k0"></script>
+        <!-- bootstrap js -->
+        <script src="js/dropdown.js" ></script>
+        <script src="js/transition.js" ></script>
+        <!-- libs js -->
+        <script src="js/slick.js" ></script>
+        <script src="js/jquery.fancybox.js" ></script>
+        <script src="js/aos.js" ></script>
+        <!-- common js -->
+        <script src="js/main.js" ></script>
+    </body>
+
+</html>
