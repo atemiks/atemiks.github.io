@@ -106,6 +106,9 @@
 .header-logo {
 	position: relative;
 	margin: 10px 0;
+	@media (max-width: 1199px) {
+		margin: 30px 0;
+	}
 	@media (max-width: 1024px) {
 		margin: 35px 0;
 	}
@@ -124,7 +127,7 @@
 .header-statusbar {
     display: flex;
     justify-content: space-around;
-    max-width: 97%;
+    max-width: 98%;
     margin: auto;
     padding: 15px 0;
     @media (max-width: 991px) {
@@ -140,7 +143,7 @@
 	font-size: 12px;
 	font-style: italic;
 	color: #333333;
-	@media (max-width: 1024px) {
+	@media (max-width: 1199px) {
 		flex: 1;
 	}
 	@media (max-width: 991px) {
@@ -150,13 +153,13 @@
 
 
 .header-contact {
+	flex: 0 0 auto;
 	display: inline-block;
 	padding: 0 5px;
 	font-size: 24px;
 	font-weight: 700;
 	color: $danger;
-	@media (max-width: 1024px) {
-		flex: 0 0 auto;
+	@media (max-width: 1199px) {
 		font-size: 20px;
 	}
 	@media (max-width: 767px) {
@@ -180,7 +183,7 @@
 	font-size: 12px;
 	font-style: italic;
 	color: #333333;
-	@media (max-width: 1024px) {
+	@media (max-width: 1199px) {
 		flex: 1;
 	}
 	@media (max-width: 991px) {
@@ -195,6 +198,7 @@
 	margin: auto;
 	@media (max-width: 1024px) {
 		max-width: 100%;
+		padding: 15px 0 0;
 	}
 	@media (max-width: 991px) {
 		display: none;
@@ -224,6 +228,9 @@
 			    width: 0;
 			    border-bottom: 3px solid $info;
 			    transition: .25s;
+			    @media (max-width: 1024px) {
+			    	bottom: -5px;
+			    }
 			}
 
 			&:hover {

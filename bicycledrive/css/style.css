@@ -335,12 +335,13 @@ img {
 .aside-menu {
   position: relative;
   min-height: 700px;
-  margin: 40px 0;
+  margin: 40px 0 60px;
   border: 2px solid #cfe4ee;
   border-right: 1px solid #93c1d7; }
   @media (max-width: 767px) {
     .aside-menu {
       min-height: auto;
+      margin: 40px 0;
       padding-bottom: 30px; } }
   .aside-menu:after {
     content: '';
@@ -361,20 +362,17 @@ img {
       font-weight: 400;
       color: #333;
       text-decoration: none;
-      vertical-align: middle; }
-      @media (max-width: 767px) {
-        .aside-menu li a {
-          height: 50px;
-          padding: 10px 15px; } }
-    .aside-menu li.active a {
-      color: #fff;
-      background: #358db8; }
-      .aside-menu li.active a:after {
+      vertical-align: middle;
+      -webkit-transition: color 300ms ease-out;
+      -o-transition: color 300ms ease-out;
+      transition: color 300ms ease-out; }
+      .aside-menu li a:after {
+        opacity: 0;
         content: '';
         position: absolute;
         z-index: 1;
         top: 0;
-        right: -25px;
+        right: 0;
         height: 0;
         width: 0;
         border: 32px solid transparent;
@@ -382,8 +380,18 @@ img {
         border-left-width: 26px;
         border-left-color: #358db8; }
         @media (max-width: 767px) {
-          .aside-menu li.active a:after {
+          .aside-menu li a:after {
             display: none; } }
+      @media (max-width: 767px) {
+        .aside-menu li a {
+          height: 50px;
+          padding: 10px 15px; } }
+    .aside-menu li:hover a, .aside-menu li.active a {
+      color: #fff;
+      background: #358db8; }
+      .aside-menu li:hover a:after, .aside-menu li.active a:after {
+        opacity: 1;
+        right: -25px; }
 
 .aside-block {
   margin: 70px 0;
@@ -418,6 +426,14 @@ img {
     .aside-card .aside-card-title a {
       color: #358db8;
       text-decoration: none; }
+  .aside-card .aside-card-thumbnail {
+    padding: 10px 0;
+    text-align: center; }
+    .aside-card .aside-card-thumbnail .aside-card-thumbnail-img {
+      height: 65px; }
+
+.aside-service {
+  margin: 40px 0; }
 
 .breadcrumbs li {
   display: inline-block;
@@ -435,6 +451,9 @@ img {
   .breadcrumbs li a {
     color: inherit;
     text-decoration: none; }
+    .breadcrumbs li a:hover {
+      color: #333333;
+      text-decoration: underline; }
   .breadcrumbs li.active {
     color: #706e6e; }
 
@@ -1021,6 +1040,9 @@ img {
 .header-logo {
   position: relative;
   margin: 10px 0; }
+  @media (max-width: 1199px) {
+    .header-logo {
+      margin: 30px 0; } }
   @media (max-width: 1024px) {
     .header-logo {
       margin: 35px 0; } }
@@ -1041,7 +1063,7 @@ img {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  max-width: 97%;
+  max-width: 98%;
   margin: auto;
   padding: 15px 0; }
   @media (max-width: 991px) {
@@ -1056,7 +1078,7 @@ img {
   font-size: 12px;
   font-style: italic;
   color: #333333; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1199px) {
     .header-tagline {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
@@ -1067,17 +1089,17 @@ img {
       display: none; } }
 
 .header-contact {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   display: inline-block;
   padding: 0 5px;
   font-size: 24px;
   font-weight: 700;
   color: #c63d19; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1199px) {
     .header-contact {
-      -webkit-box-flex: 0;
-      -webkit-flex: 0 0 auto;
-          -ms-flex: 0 0 auto;
-              flex: 0 0 auto;
       font-size: 20px; } }
   @media (max-width: 767px) {
     .header-contact {
@@ -1095,7 +1117,7 @@ img {
   font-size: 12px;
   font-style: italic;
   color: #333333; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1199px) {
     .header-address {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
@@ -1110,7 +1132,8 @@ img {
   margin: auto; }
   @media (max-width: 1024px) {
     .header-nav {
-      max-width: 100%; } }
+      max-width: 100%;
+      padding: 15px 0 0; } }
   @media (max-width: 991px) {
     .header-nav {
       display: none; } }
@@ -1146,6 +1169,9 @@ img {
       -webkit-transition: .25s;
       -o-transition: .25s;
       transition: .25s; }
+      @media (max-width: 1024px) {
+        .header-nav-list > li > a:after {
+          bottom: -5px; } }
     .header-nav-list > li > a:hover:after {
       width: 100%; }
     @media (max-width: 1024px) {
