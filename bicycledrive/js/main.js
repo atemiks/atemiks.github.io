@@ -1,32 +1,6 @@
 $( document ).ready(function() {
 
 
-	// function getHeaderHeight() {
-	// 	return $('.header-box').height();
-	// }
-
-	// // smooth scroll
-	// $('a[href*="#"]')
-	//   .not('[href="#"]')
-	//   .not('[href="#0"]')
-	//   .click(function(event) {
-	//     if (
-	//       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-	//       && 
-	//       location.hostname == this.hostname
-	//     ) {
-	//       var target = $(this.hash);
-	//       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-	//       if (target.length) {
-	//         event.preventDefault();
-	//         $('html, body').animate({
-	//           scrollTop: target.offset().top - getHeaderHeight()
-	//         }, 1000);
-	//       }
-	//     }
-	//   });
-
-
 	// init animation
 	setTimeout(function() {
 	  	AOS.init();
@@ -141,37 +115,34 @@ $( document ).ready(function() {
 
 
 	// map
+	if( $('#map').length == true ) {
+	    // Basic options for a simple Google Map
+	    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+	    var mapOptions = {
+	        // How zoomed in you want the map to start at (always required)
+	        zoom: 16,
 
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 16,
+	        // The latitude and longitude to center the map (always required)
+	        center: new google.maps.LatLng(55.762655, 37.894193),
 
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(55.762655, 37.894193),
+	        // How you would like to style the map. 
+	        // This is where you would paste any style found on Snazzy Maps.
+	        styles: []
+	    };
 
-        // How you would like to style the map. 
-        // This is where you would paste any style found on Snazzy Maps.
-        styles: []
-    };
+	    // Get the HTML DOM element that will contain your map 
+	    // We are using a div with id="map" seen below in the <body>
+	    var mapElement = document.getElementById('map');
 
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
+	    // Create the Google Map using our element and options defined above
+	    var map = new google.maps.Map(mapElement, mapOptions);
 
-    // Create the Google Map using our element and options defined above
-    var map = new google.maps.Map(mapElement, mapOptions);
-
-    // Let's also add a marker while we're at it
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(55.762655, 37.894193),
-        map: map,
-        title: 'Велодрайв'
-    });
-
-
-    
-
+	    // Let's also add a marker while we're at it
+	    var marker = new google.maps.Marker({
+	        position: new google.maps.LatLng(55.762655, 37.894193),
+	        map: map,
+	        title: 'Велодрайв'
+	    });
+	}
 
 });
