@@ -7,16 +7,6 @@ $( document ).ready(function() {
 	}, 100)
 
 
-
-	// popup gallery
-	$("[data-fancybox]").fancybox({
-		buttons : [
-	        'close'
-	    ]
-	});
-	
-
-
 	// header
 
 	$( ".header-toggle, .offcanvas-close" ).on( "click", function() {
@@ -29,16 +19,25 @@ $( document ).ready(function() {
 	$('.slider-hero').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
+		arrows: true,
+		prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>',
+        nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button">Next</button>',	
 		dots: true,
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		autoplay: true,
+  		autoplaySpeed: 5000,
+  		easing: 'ease',
+  		pauseOnFocus: false,
+  		pauseOnHover: false
 	});
 
 	$('.hero-controls .hero-control-left').click(function() {
+		console.log('true');
         $('.slider-hero').slick('slickPrev');
     })
 
     $('.hero-controls .hero-control-right').click(function() {
+    	console.log('true');
         $('.slider-hero').slick('slickNext');
     })
 
@@ -80,19 +79,30 @@ $( document ).ready(function() {
 
 	// page product
 	 $('.slider-product').slick({
+	 	infinite: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
-		fade: true,
-		asNavFor: '.slider-product-nav'
+		waitForAnimate: false,
+		fade: false,
+		draggable: false,
+		swipe: false,
+		swipeToSlide: false
+		//asNavFor: '.slider-product-nav'
 	});
 	$('.slider-product-nav').slick({
+		infinite: false,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		asNavFor: '.slider-product',
+		//asNavFor: '.slider-product',
 		arrows: true,
 		dots: false,
-		focusOnSelect: true,
+        prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>',
+        nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button">Next</button>',		
+		//focusOnSelect: true,
+		useCSS: false,
+		useTransform: false,
+
 		responsive: [
 	    {
 	      breakpoint: 767,
@@ -104,12 +114,36 @@ $( document ).ready(function() {
 	    }
 	  ]
 	});
-	
+
+	$('.slider-product-nav .slide-item').first().addClass('slick-current');
+
+	$('.slider-product-nav').on('click', '.slide-item', function () {
+		$('.slider-product-nav .slide-item').removeClass('slick-current');
+		$(this).addClass('slick-current');
+	    $('.slider-product').slick('slickGoTo', $(this).attr('data-slick-index') );
+	});
+
+
+
+	// popup gallery
+	$("[data-fancybox]").fancybox({
+
+		buttons : [
+	        'close'
+	    ]
+	    // afterShow: function(current, previous) {
+	    //     var index =  current.currIndex;
+	    // 	$('.slider-product').slickGoTo(index);
+	    // 	$('.slider-product-nav').slickGoTo(index).addClass('slick-current);		            
+	    // }
+	});
+
+
 
 
     // content
+
     $(".content-aside-toggle" ).on( "click", function() {
-    	console.log('hl');
 	  	$('.content-aside-inner').slideToggle();
 	});
 

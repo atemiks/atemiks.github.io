@@ -18,7 +18,7 @@
 .footer-logo {
 	@extend .transition;
 	max-width: 310px;
-	opacity: .5;
+	opacity: .65;
 	@media (max-width: 991px) {
 		margin: auto;
 	}
@@ -38,7 +38,6 @@
 	@extend .reset-list;
     margin: 15px -20px;
     font-size: 18px;
-    font-weight: 400;
 	text-align: right;
 	@media (max-width: 1024px) {
 		font-size: 16px;
@@ -76,7 +75,6 @@
 .footer-address {
 	margin: 40px 0;
 	font-size: 18px;
-	font-weight: 400;
 	text-align: right;
 	@media (max-width: 1024px) {
 		margin: 35px 0;
@@ -92,7 +90,6 @@
 	opacity: .5;
 	margin: 35px 0;
 	font-size: 12px;
-	font-weight: 400;
 	@media (max-width: 991px) {
 		margin: 15px 0;
 		text-align: center;

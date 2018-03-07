@@ -220,13 +220,11 @@
 	.promo-title {
 		@extend .h6;
 		margin: 0;
-		font-weight: 400;
 		text-decoration: underline;
 	}
 
 	.promo-body {
 		padding: 5px 0;
-		font-weight: 400;
 	}
 	.promo-footer {
 		display: flex;
@@ -324,9 +322,6 @@
 		}
 	}
 
-	.service-body {
-		font-weight: 400;
-	}
 	.service-footer {
 		padding: 30px 0 0;
 		text-align: center;
@@ -383,7 +378,6 @@
 
 	.news-body {
 		font-size: 13px;
-		font-weight: 400;
 	}
 }
 
