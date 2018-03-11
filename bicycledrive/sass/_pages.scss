@@ -82,6 +82,12 @@
 				display: none;
 			}
 		}
+
+		.aside-block {
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
 	}
 
 	.content-inner {
@@ -221,6 +227,9 @@
 
 .aside-service {
 	margin: 40px 0;
+	@media (max-width: 767px) {
+		display: none;
+	}
 }
 
 .breadcrumbs {
@@ -265,15 +274,31 @@
 	border-radius: 10px;
 	background-color: #f1f3f5;
 	text-align: center;
+	@media (max-width: 1024px) {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	}
+
+	&:before {
+		display: none;
+		content: '';
+		width: 100%;
+		order: 1;
+		@media (max-width: 1024px) {
+			display: block;
+		}
+	}
+
 	li {
 		display: inline-block;
 		padding: 0 4px;
-		@media (max-width: 767px) {
+		@media (max-width: 1024px) {
 			padding: 10px 4px;
 		}
 		
 		a {
-			display: block;
+			display: inline-block;
 			width: 27px;
 			height: 27px;
 			border-radius: 50%;
@@ -307,20 +332,38 @@
 		&.previous,
 		&.next {
 			padding: 0 18px;
+			@media (max-width: 1024px) {
+				float: left;
+				width: 50%;
+				padding-top: 3px;
+				padding-bottom: 3px
+			}
+
 			a {
 				width: auto;
 			}
 		}
 
-		&.first,
-		&.last,
-		&.previous,
+
+		&.previous {
+			@media (max-width: 1024px) {
+				order: 1;
+				
+			}
+		}
 		&.next {
-			@media (max-width: 767px) {
-				float: left;
-				width: 50%;
-				padding-top: 0;
-				padding-bottom: 0;
+			@media (max-width: 1024px) {
+				order: 2;
+			}
+		}
+		&.first {
+			@media (max-width: 1024px) {
+				order: 3;
+			}
+		}
+		&.last {
+			@media (max-width: 1024px) {
+				order: 4;
 			}
 		}
 	}

@@ -88,18 +88,15 @@ $( document ).ready(function() {
 		draggable: false,
 		swipe: false,
 		swipeToSlide: false
-		//asNavFor: '.slider-product-nav'
 	});
 	$('.slider-product-nav').slick({
 		infinite: false,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		//asNavFor: '.slider-product',
 		arrows: true,
 		dots: false,
         prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>',
         nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button">Next</button>',		
-		//focusOnSelect: true,
 		useCSS: false,
 		useTransform: false,
 
@@ -127,15 +124,10 @@ $( document ).ready(function() {
 
 	// popup gallery
 	$("[data-fancybox]").fancybox({
-
 		buttons : [
 	        'close'
 	    ]
-	    // afterShow: function(current, previous) {
-	    //     var index =  current.currIndex;
-	    // 	$('.slider-product').slickGoTo(index);
-	    // 	$('.slider-product-nav').slickGoTo(index).addClass('slick-current);		            
-	    // }
+
 	});
 
 
