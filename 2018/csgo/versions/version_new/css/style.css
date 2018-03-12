@@ -2344,17 +2344,11 @@ table {
   text-align: center; }
   .section-header .section-title {
     font-weight: 700;
-    letter-spacing: -4.62px;
+    letter-spacing: -1.2px;
     text-transform: none; }
-    @media (max-width: 1680px) {
-      .section-header .section-title {
-        letter-spacing: -2px; } }
 
 .section-description {
-  margin: -50px 0 30px; }
-  @media (max-width: 1680px) {
-    .section-description {
-      margin: -15px 0 30px; } }
+  margin: -15px 0 30px; }
 
 .section-header-columns {
   display: -webkit-box;
@@ -2396,9 +2390,6 @@ table {
   .section-header-columns .section-title {
     letter-spacing: -1.2px;
     text-transform: none; }
-    @media (max-width: 1024px) {
-      .section-header-columns .section-title {
-        letter-spacing: -2px; } }
     @media (max-width: 767px) {
       .section-header-columns .section-title {
         margin: 15px 0; } }
@@ -2778,8 +2769,8 @@ table {
 
 .section-extension {
   position: relative;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -2793,15 +2784,11 @@ table {
     color: #fff; }
 
 .extension-tabs {
-  margin: -40px 0 -10px;
+  margin: 0;
   border: none;
   text-align: center; }
-  @media (max-width: 1680px) {
-    .extension-tabs {
-      margin: 0; } }
   @media (max-width: 767px) {
     .extension-tabs {
-      margin: 0;
       overflow-x: scroll;
       white-space: nowrap; } }
   .extension-tabs > li {

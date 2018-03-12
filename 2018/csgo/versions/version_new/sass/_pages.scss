@@ -47,19 +47,13 @@
 	.section-title {
 		@extend .h1;
 		font-weight: 700;
-		letter-spacing: -4.62px;
+		letter-spacing: -1.2px;
 		text-transform: none;
-		@media (max-width: 1680px) {
-			letter-spacing: -2px;
-		}
 	}
 }
 
 .section-description {
-	margin: -50px 0 30px;
-	@media (max-width: 1680px) {
-		margin: -15px 0 30px;
-	}
+	margin: -15px 0 30px;
 }
 
 .section-header-columns {
@@ -94,9 +88,6 @@
 		@extend .h1;
 		letter-spacing: -1.2px;
 		text-transform: none;
-		@media (max-width: 1024px) {
-			letter-spacing: -2px;
-		}
 		@media (max-width: 767px) {
 			margin: 15px 0;
 		}
