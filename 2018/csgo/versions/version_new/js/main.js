@@ -40,6 +40,7 @@ $( document ).ready(function() {
 		dots: false,
 		variableWidth: true,
 		centerMode: true,
+		focusOnSelect: true,
 		responsive: [
 		{
 		  breakpoint: 767,
