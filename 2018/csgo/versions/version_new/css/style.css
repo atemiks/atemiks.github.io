@@ -2172,6 +2172,9 @@ button {
     background-color: #a54c1b;
     color: #fff;
     text-decoration: none; }
+  .btn:focus {
+    color: #fff;
+    text-decoration: none; }
 
 .btn-sm {
   min-width: 160px;
@@ -2391,7 +2394,7 @@ table {
   .section-header-columns .section-header-side-center {
     padding: 0 40px; }
   .section-header-columns .section-title {
-    letter-spacing: -3.36px;
+    letter-spacing: -1.2px;
     text-transform: none; }
     @media (max-width: 1024px) {
       .section-header-columns .section-title {
@@ -2486,7 +2489,6 @@ table {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  margin-bottom: -215px;
   padding-top: 0;
   padding-bottom: 0;
   background-position: bottom center;
@@ -2495,21 +2497,13 @@ table {
   .section-hero .hero-inner {
     position: relative;
     max-width: 1920px;
-    height: 940px;
     margin: auto;
     padding-top: 50px;
-    padding-bottom: 200px;
-    background-position: bottom center;
+    padding-bottom: 20px;
+    background-position: top center;
     background-repeat: no-repeat; }
-    @media (max-width: 1680px) {
-      .section-hero .hero-inner {
-        height: 830px; } }
-    @media (max-width: 1024px) {
-      .section-hero .hero-inner {
-        height: 780px; } }
     @media (max-width: 767px) {
       .section-hero .hero-inner {
-        height: 720px;
         padding-top: 20px; } }
     .section-hero .hero-inner:before, .section-hero .hero-inner:after {
       content: '';
@@ -2532,9 +2526,6 @@ table {
       background: linear-gradient(to right, transparent 0%, black 35%, black 100%); }
   .section-hero .hero-title {
     color: #fff; }
-
-.section-hero + section {
-  padding-top: 145px; }
 
 .games-grid {
   margin: 50px -10px 10px; }
