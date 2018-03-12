@@ -7,11 +7,14 @@
 		min-height: 60px;
 	}
 
+	.header-side-left,
+	.header-side-center,
+	.header-side-right {
+		padding: 0 10px;
+	}
+
 	.header-side-left {
-		flex: 1;
-		@media (max-width: 991px) {
-			flex: 0 0 180px;
-		}
+		flex: 0 0 auto;
 		@media (max-width: 767px) {
 			flex: 0 0 120px;
 		}
@@ -36,7 +39,7 @@
 }
 
 .header-logo {
-	max-width: 275px;
+	max-width: 155px;
 	.header-logo-img {
 		max-width: 100%;
 	}
@@ -49,33 +52,21 @@
 	cursor: default;
 	display: flex;
 	justify-content: space-between;
-	// margin: 0 -30px;
-	font-size: 28px;
-	font-weight: 500;
+	padding: 0 20px;
+	font-size: 18px;
+	font-weight: 400;
 	line-height: 1;
-	letter-spacing: -2.03px;
-	@media (max-width: 1900px) {
-		font-size: 24px;
-	}
-	@media (max-width: 1440px) {
-		font-size: 20px;
-		font-weight: 300;
-	}
+	letter-spacing: -1px;
+	
 	li {
 		display: inline-block;
-
+		padding: 0 15px;
 		a {
 			position: relative;
 			display: block;
-			padding: 36px 0;
+			padding: 28px 0 24px;
 			color: #c2c2c2;
 			text-decoration: none;
-			@media (max-width: 1900px) {
-				padding: 25px 0;
-			}
-			@media (max-width: 1440px) {
-				padding: 28px 0;
-			}
 
 			&:hover {
 				color: lighten(#c2c2c2, 20%);
@@ -185,7 +176,7 @@
 
 
 .user-login-img {
-	width: 228px;
+	width: 138px;
 	@media (max-width: 767px) {
 		width: 118px;
 	}

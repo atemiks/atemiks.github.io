@@ -24,7 +24,7 @@
 			height: 780px;
 		}
 		@media (max-width: 767px)  {
-			height: 840px;
+			height: 720px;
 			padding-top: 20px;
 		}
 
@@ -56,8 +56,8 @@
 }
 
 .games-grid {
-	display: flex;
-	flex-wrap: wrap;
+	// display: flex;
+	// flex-wrap: wrap;
 	margin: 50px -10px 10px;
 	@media (max-width: 1680px) {
 		max-width: 1200px;
@@ -67,9 +67,40 @@
 	@media (max-width: 767px)  {
 		margin: 10px -10px 10px;
 	}
+
 	.game-item {
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+}
+
+.slider-games-wrapper {
+	position: relative;
+}
+.slider-games {
+	position: static;
+	.slick-arrow {
+		background: none !important;
+		color: #fff;
+		&:before {
+			display: block;
+			font-family: 'icomoon';
+			font-size: 48px;
+		}
+	}
+	.slick-prev {
+		left: 0;
+
+		&:before {
+			content: '\f104';
+		}
+	}
+	.slick-next {
+		right: 0;
+
+		&:before {
+			content: '\f105';
+		}
 	}
 }
 
@@ -83,17 +114,9 @@
 	.game-thumbnail {
 		position: relative;
 		overflow: hidden;
-		width: 266px;
-		height: 266px;
+		width: 160px;
+		height: 160px;
 		border-radius: 50%;
-		@media (max-width: 1440px) {
-			width: 200px;
-			height: 200px;
-		}
-		@media (max-width: 1024px) {
-			width: 180px;
-			height: 180px;
-		}
 		@media (max-width: 991px) {
 			width: 140px;
 			height: 140px;
@@ -139,13 +162,9 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			max-width: 100%;
-			max-height: 100%;
+			max-width: 80%;
+			max-height: 80%;
 			margin: auto;
-			@media (max-width: 1440px) {
-				max-width: 80%;
-				max-height: 80%;
-			}
 			@media (max-width: 1024px) {
 				max-width: 60%;
 				max-height: 60%;
@@ -397,6 +416,7 @@
 		margin: 0;
 	}
 	@media (max-width: 767px) {
+		margin: 0;
 		overflow-x: scroll;
 		white-space: nowrap;
 	}
@@ -586,6 +606,9 @@
 			width: 320px;
 			padding: 165px 10px 0;
 		}
+		@media (max-width: 767px) {
+			padding: 130px 10px 0;
+		}
 		&.slick-current {
 			@media (min-width: 1681px) {
 				width: 420px;
@@ -594,9 +617,6 @@
 				width: 360px;
 				padding: 130px 0 0;
 			}
-			@media (max-width: 767px) {
-				padding: 130px 0 0;
-			} 
 			.extension-card {
 				min-height: 555px;
 				@media (max-width: 1680px) {

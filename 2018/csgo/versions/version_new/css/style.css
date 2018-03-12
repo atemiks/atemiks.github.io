@@ -2080,20 +2080,8 @@ h1,
 .h1,
 .section-header .section-title,
 .section-header-columns .section-title {
-  font-size: 56px;
+  font-size: 32px;
   line-height: 1.1; }
-  @media (max-width: 1680px) {
-    h1,
-    .h1,
-    .section-header .section-title,
-    .section-header-columns .section-title {
-      font-size: 40px; } }
-  @media (max-width: 767px) {
-    h1,
-    .h1,
-    .section-header .section-title,
-    .section-header-columns .section-title {
-      font-size: 34px; } }
 
 h2,
 .h2,
@@ -2195,13 +2183,13 @@ button {
   letter-spacing: -1.47px; }
 
 .btn-lg {
-  min-width: 350px;
-  padding: 16px 15px 17px;
+  min-width: 320px;
+  padding: 14px 15px 15px;
   -webkit-border-radius: 20px;
           border-radius: 20px;
   -webkit-box-shadow: 6px 10px 13px rgba(0, 0, 0, 0.26);
           box-shadow: 6px 10px 13px rgba(0, 0, 0, 0.26);
-  font-size: 29px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: -2.03px; }
   @media (max-width: 1024px) {
@@ -2379,12 +2367,23 @@ table {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; } }
+  @media (max-width: 767px) {
+    .section-header-columns {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .section-header-columns .section-header-side-left,
   .section-header-columns .section-header-side-right {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
+    @media (max-width: 767px) {
+      .section-header-columns .section-header-side-left,
+      .section-header-columns .section-header-side-right {
+        padding: 10px; } }
   .section-header-columns .section-header-side-left {
     text-align: right; }
   .section-header-columns .section-header-side-right {
@@ -2397,6 +2396,9 @@ table {
     @media (max-width: 1024px) {
       .section-header-columns .section-title {
         letter-spacing: -2px; } }
+    @media (max-width: 767px) {
+      .section-header-columns .section-title {
+        margin: 15px 0; } }
   .section-header-columns a {
     display: inline-block;
     padding: 5px 0 0;
@@ -2455,8 +2457,14 @@ table {
     display: none; }
   .slick-arrow.slick-prev {
     background-image: url("../img/icons/arrow-left.png"); }
+    @media (max-width: 767px) {
+      .slick-arrow.slick-prev {
+        left: 0 !important; } }
   .slick-arrow.slick-next {
     background-image: url("../img/icons/arrow-right.png"); }
+    @media (max-width: 767px) {
+      .slick-arrow.slick-next {
+        right: 0 !important; } }
 
 .slick-dots {
   position: relative; }
@@ -2501,7 +2509,7 @@ table {
         height: 780px; } }
     @media (max-width: 767px) {
       .section-hero .hero-inner {
-        height: 840px;
+        height: 720px;
         padding-top: 20px; } }
     .section-hero .hero-inner:before, .section-hero .hero-inner:after {
       content: '';
@@ -2529,13 +2537,6 @@ table {
   padding-top: 145px; }
 
 .games-grid {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   margin: 50px -10px 10px; }
   @media (max-width: 1680px) {
     .games-grid {
@@ -2548,6 +2549,27 @@ table {
   .games-grid .game-item {
     padding-top: 10px;
     padding-bottom: 10px; }
+
+.slider-games-wrapper {
+  position: relative; }
+
+.slider-games {
+  position: static; }
+  .slider-games .slick-arrow {
+    background: none !important;
+    color: #fff; }
+    .slider-games .slick-arrow:before {
+      display: block;
+      font-family: 'icomoon';
+      font-size: 48px; }
+  .slider-games .slick-prev {
+    left: 0; }
+    .slider-games .slick-prev:before {
+      content: '\f104'; }
+  .slider-games .slick-next {
+    right: 0; }
+    .slider-games .slick-next:before {
+      content: '\f105'; }
 
 .game-card {
   overflow: hidden;
@@ -2562,18 +2584,10 @@ table {
   .game-card .game-thumbnail {
     position: relative;
     overflow: hidden;
-    width: 266px;
-    height: 266px;
+    width: 160px;
+    height: 160px;
     -webkit-border-radius: 50%;
             border-radius: 50%; }
-    @media (max-width: 1440px) {
-      .game-card .game-thumbnail {
-        width: 200px;
-        height: 200px; } }
-    @media (max-width: 1024px) {
-      .game-card .game-thumbnail {
-        width: 180px;
-        height: 180px; } }
     @media (max-width: 991px) {
       .game-card .game-thumbnail {
         width: 140px;
@@ -2610,13 +2624,9 @@ table {
       left: 0;
       right: 0;
       bottom: 0;
-      max-width: 100%;
-      max-height: 100%;
+      max-width: 80%;
+      max-height: 80%;
       margin: auto; }
-      @media (max-width: 1440px) {
-        .game-card .game-thumbnail .game-thumbnail-logo {
-          max-width: 80%;
-          max-height: 80%; } }
       @media (max-width: 1024px) {
         .game-card .game-thumbnail .game-thumbnail-logo {
           max-width: 60%;
@@ -2797,6 +2807,7 @@ table {
       margin: 0; } }
   @media (max-width: 767px) {
     .extension-tabs {
+      margin: 0;
       overflow-x: scroll;
       white-space: nowrap; } }
   .extension-tabs > li {
@@ -2954,15 +2965,15 @@ table {
     .slider-extension .slide-item {
       width: 320px;
       padding: 165px 10px 0; } }
+  @media (max-width: 767px) {
+    .slider-extension .slide-item {
+      padding: 130px 10px 0; } }
   @media (min-width: 1681px) {
     .slider-extension .slide-item.slick-current {
       width: 420px; } }
   @media (min-width: 768px) {
     .slider-extension .slide-item.slick-current {
       width: 360px;
-      padding: 130px 0 0; } }
-  @media (max-width: 767px) {
-    .slider-extension .slide-item.slick-current {
       padding: 130px 0 0; } }
   .slider-extension .slide-item.slick-current .extension-card {
     min-height: 555px; }
@@ -3225,17 +3236,15 @@ table {
         -ms-flex-align: center;
             align-items: center;
     min-height: 60px; }
+  .header-box .header-side-left,
+  .header-box .header-side-center,
+  .header-box .header-side-right {
+    padding: 0 10px; }
   .header-box .header-side-left {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
-    @media (max-width: 991px) {
-      .header-box .header-side-left {
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 180px;
-            -ms-flex: 0 0 180px;
-                flex: 0 0 180px; } }
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto; }
     @media (max-width: 767px) {
       .header-box .header-side-left {
         -webkit-box-flex: 0;
@@ -3258,7 +3267,7 @@ table {
       width: 95%; } }
 
 .header-logo {
-  max-width: 275px; }
+  max-width: 155px; }
   .header-logo .header-logo-img {
     max-width: 100%; }
 
@@ -3272,31 +3281,20 @@ table {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 28px;
-  font-weight: 500;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1;
-  letter-spacing: -2.03px; }
-  @media (max-width: 1900px) {
-    .header-nav-list {
-      font-size: 24px; } }
-  @media (max-width: 1440px) {
-    .header-nav-list {
-      font-size: 20px;
-      font-weight: 300; } }
+  letter-spacing: -1px; }
   .header-nav-list li {
-    display: inline-block; }
+    display: inline-block;
+    padding: 0 15px; }
     .header-nav-list li a {
       position: relative;
       display: block;
-      padding: 36px 0;
+      padding: 28px 0 24px;
       color: #c2c2c2;
       text-decoration: none; }
-      @media (max-width: 1900px) {
-        .header-nav-list li a {
-          padding: 25px 0; } }
-      @media (max-width: 1440px) {
-        .header-nav-list li a {
-          padding: 28px 0; } }
       .header-nav-list li a:hover {
         color: whitesmoke; }
       .header-nav-list li a:after {
@@ -3335,7 +3333,7 @@ table {
     right: 0; }
 
 .user-login-img {
-  width: 228px; }
+  width: 138px; }
   @media (max-width: 767px) {
     .user-login-img {
       width: 118px; } }

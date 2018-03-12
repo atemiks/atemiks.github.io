@@ -32,6 +32,42 @@ $( document ).ready(function() {
 		minimumResultsForSearch: Infinity
 	});
 
+	$('.slider-games').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		responsive: [
+		{
+		  	breakpoint: 991,
+		  	settings: {
+			    slidesToShow: 3,
+			    slidesToScroll: 1,
+			    arrows: true,
+			    dots: false
+		  	}
+		},
+		{
+		  	breakpoint: 767,
+		  	settings: {
+			    slidesToShow: 2,
+			    slidesToScroll: 1,
+			    arrows: true,
+			    dots: false
+		  	}
+		},
+		{
+		  	breakpoint: 425,
+		  	settings: {
+			    slidesToShow: 1,
+			    slidesToScroll: 1,
+			    arrows: true,
+			    dots: false
+		  	}
+		},
+		]
+	})
+
 
 	$('.slider-extension').slick({
 		slidesToShow: 4,
@@ -43,15 +79,15 @@ $( document ).ready(function() {
 		focusOnSelect: true,
 		responsive: [
 		{
-		  breakpoint: 767,
-		  settings: {
-		    slidesToShow: 1,
-		    slidesToScroll: 1,
-		    dots: false,
-		    centerMode: false,
-		    variableWidth: false,
-		    adaptiveHeight: true
-		  }
+		  	breakpoint: 767,
+		  	settings: {
+			    slidesToShow: 1,
+			    slidesToScroll: 1,
+			    dots: false,
+			    centerMode: false,
+			    variableWidth: false,
+			    adaptiveHeight: true
+		  	}
 		}
 		]
 	})
@@ -65,16 +101,16 @@ $( document ).ready(function() {
 		slidesPerRow: 2,
 		responsive: [
 		{
-		  breakpoint: 1024,
-		  settings: {
-		  	rows: 2,
-		  	slidesPerRow: 1,
-		    slidesToShow: 1,
-		    slidesToScroll: 1,
-		    arrows: false,
-		    dots: true
-		  }
-		}
+		  	breakpoint: 1024,
+		  	settings: {
+			  	rows: 2,
+			  	slidesPerRow: 1,
+			    slidesToShow: 1,
+			    slidesToScroll: 1,
+			    arrows: false,
+			    dots: true
+		  	}
+			}
 		]
 	});
 
