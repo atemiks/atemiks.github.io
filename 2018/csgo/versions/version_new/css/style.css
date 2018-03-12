@@ -2501,7 +2501,9 @@ table {
     padding-top: 50px;
     padding-bottom: 20px;
     background-position: top center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover; }
     @media (max-width: 767px) {
       .section-hero .hero-inner {
         padding-top: 20px; } }
