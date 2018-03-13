@@ -2420,8 +2420,9 @@ table {
     color: #c07349; }
 
 .separate, .section-about:after {
-  height: 92px;
-  background: url("../img/line.png") repeat-x 0 0; }
+  margin: 0;
+  height: 10px;
+  background: #391658; }
 
 .social-list {
   margin: 0 -6px;
