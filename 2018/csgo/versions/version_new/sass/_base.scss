@@ -36,11 +36,8 @@ h6 {
 
 h1,
 .h1 {
-	font-size: 56px;
+	font-size: 40px;
 	line-height: 1.1;
-	@media (max-width: 1366px) {
-		font-size: 36px;
-	}
 	@media (max-width: 991px) {
 		font-size: 30px;
 	}
@@ -157,7 +154,7 @@ button {
 	text-decoration: none;
 	vertical-align: middle;
 	&:hover {
-		background-color: $secondary-color;
+		background: $secondary-color;
 		color: #fff;
 		text-decoration: none;
 	}
@@ -211,7 +208,6 @@ button {
 		min-width: 280px;
 		font-size: 20px;
 	}
-
 }
 
 .btn-icon {

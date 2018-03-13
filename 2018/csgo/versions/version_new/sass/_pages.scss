@@ -24,7 +24,7 @@
 	max-width: 1900px;
 	padding: 0 150px;
 	margin: auto;
-	@media (max-width: 1900px) {
+	@media (max-width: 1680px) {
 		padding: 0 50px;
 	}
 	@media (max-width: 767px) {
@@ -106,13 +106,16 @@
 		font-weight: 500;
 		text-decoration: underline;
 		color: #c07349;
+		&:hover {
+			color: #5b9eef;
+		}
 	}
 }
 
 .separate {
 	margin: 0;
 	height: 10px;
-	background: $main-color;
+	background: linear-gradient(to right, #ad5389, #3c1053);
 }
 
 .social-list {
@@ -170,23 +173,33 @@
 	z-index: 1;
 	width: 43px;
 	height: 43px;
-	background-size: contain !important;
-	background-repeat: no-repeat !important;
-	background-position: center !important;
 	&:before {
-		display: none;
+		content:'';
+		display: block;
+		width: 43px;
+		height: 43px;
+		margin: auto;
+		background-size: contain !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
 	}
 
 	&.slick-prev {
-		background-image: url('../img/icons/arrow-left.png');
 		@media (max-width: 767px) {
 			left: 0 !important;
 		}
+
+		&:before {
+			background-image: url('../img/icons/arrow-left.png');
+		}
 	}
 	&.slick-next {
-		background-image: url('../img/icons/arrow-right.png');
 		@media (max-width: 767px) {
 			right: 0 !important;
+		}
+
+		&:before {
+			background-image: url('../img/icons/arrow-right.png');
 		}
 	}
 }

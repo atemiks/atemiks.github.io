@@ -48,10 +48,13 @@
 
 	&.section-hero-arrow {
 		margin-bottom: -215px;
+		@media (max-width: 767px)  {
+			margin-bottom: -165px;
+		}
+
 		.hero-inner {
 			padding-bottom: 200px;
 			height: 830px;
-			background-size: auto;
 			@media (max-width: 1024px) {
 				height: 780px;
 			}
@@ -100,6 +103,7 @@
 			display: block;
 			font-family: 'icomoon';
 			font-size: 48px;
+			background: none;
 		}
 	}
 	.slick-prev {
@@ -200,6 +204,22 @@
 		@media (max-width: 1024px) {
 			padding: 10px;
 		}
+	}
+}
+
+.section-hero:not(.section-hero-arrow) + section {
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: '';
+		position: absolute;
+		// top: -100px;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 200px;
+		background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+		// background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 40%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,0) 100%);
 	}
 }
 
@@ -382,6 +402,29 @@
 		max-width: 1920px;
 		margin: auto;
     	padding-bottom: 30px;
+    	&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			bottom: 0;
+			width: 50vw;
+		}
+		&:before {
+			right: 1500px;
+			background: linear-gradient(to right, rgba(0,0,0,1) 60%,rgba(0,0,0,0) 100%);
+			@media (max-width: 1680px) {
+				right: 90%;
+			}
+		}
+		&:after {
+			left: 1500px;
+			background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 60%);
+			@media (max-width: 1680px) {
+				left: 90%;
+			}
+		}
 	}
 
 	.section-header {
@@ -442,8 +485,16 @@
 			} 
 		}
 
+		&:hover {
+			a {
+				background: $secondary-color;
+			}
+		}
+
 		&.active,
+		&.active:hover,
 		&:focus {
+			cursor: pointer;
 			a {
 				@extend .gradient-purple-horizontal;
 				color: #fff !important;
@@ -558,23 +609,7 @@
 	.slick-list  {
 		position: relative;
 		padding: 0 !important;
-		&:before,
-		&:after {
-			content: '';
-			position: absolute;
-			z-index: 2;
-			top: 45px;
-			bottom: 0;
-			width: 60px;
-		}
-		&:before {
-			left: 0;
-			background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);;
-		}
-		&:after {
-			right: 0;
-			background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
-		}
+		
 	}
 
 	.slide-item {
@@ -659,12 +694,23 @@
 
 	.slick-arrow {
 		z-index: 2;
+		width: 160px;
+		height: 100%;
+		@media (max-width: 767px) {
+			width: 42px;
+		}
 	}
 	.slick-prev {
-		left: -30px;
+		left: -100px;
+		@media (max-width: 1680px) {
+			left: -80px;
+		}
 	}
 	.slick-next {
-		right: -30px;
+		right: -100px;
+		@media (max-width: 1680px) {
+			right: -80px;
+		}
 	}
 }
 

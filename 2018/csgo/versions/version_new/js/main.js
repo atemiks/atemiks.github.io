@@ -77,6 +77,8 @@ $( document ).ready(function() {
 		variableWidth: true,
 		centerMode: true,
 		focusOnSelect: true,
+		infinite: false,
+		initialSlide: 2,
 		responsive: [
 		{
 		  	breakpoint: 767,
