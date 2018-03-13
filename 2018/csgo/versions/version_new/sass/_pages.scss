@@ -38,7 +38,7 @@
 	padding-bottom: 15px;
 	.display-title {
 		font-weight: 900;
-		letter-spacing: 2.5px;
+		letter-spacing: 0;
 	}
 }
 
@@ -47,8 +47,11 @@
 	.section-title {
 		@extend .h1;
 		font-weight: 700;
-		letter-spacing: -1.2px;
+		letter-spacing: -2px;
 		text-transform: none;
+		@media (max-width: 991px) {
+			letter-spacing: -1.2px;
+		}
 	}
 }
 
@@ -86,8 +89,11 @@
 
 	.section-title {
 		@extend .h1;
-		letter-spacing: -1.2px;
+		letter-spacing: -2px;
 		text-transform: none;
+		@media (max-width: 991px) {
+			letter-spacing: -1.2px;
+		}
 		@media (max-width: 767px) {
 			margin: 15px 0;
 		}

@@ -11,31 +11,25 @@
 	.hero-inner {
 		position: relative;
 		max-width: 1920px;
-		// height: 940px;
+		height: 740px;
 		margin: auto;
 	    padding-top: 50px;
 	    padding-bottom: 20px;
     	// padding-bottom: 200px;
-		background-position: top center;
+		background-position: bottom center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		// @media (max-width: 1680px) {
-		// 	height: 830px;
-		// }
-		// @media (max-width: 1024px) {
-		// 	height: 780px;
-		// }
-		@media (max-width: 767px)  {
-			// height: 720px;
-			padding-top: 20px;
+		@media (max-width: 1024px) {
+			height: 540px;
 		}
+		
 
 		&:before,
 		&:after {
 			content: '';
 			position: absolute;
 			top: 0;
-			bottom: 205px;
+			bottom: 0;
 			width: 50vw;
 			background: red;
 		}
@@ -51,15 +45,33 @@
 	.hero-title {
 		color: #fff;
 	}
+
+	&.section-hero-arrow {
+		margin-bottom: -215px;
+		.hero-inner {
+			padding-bottom: 200px;
+			height: 830px;
+			background-size: auto;
+			@media (max-width: 1024px) {
+				height: 780px;
+			}
+			@media (max-width: 767px)  {
+				height: 720px;
+				padding-top: 20px;
+			}
+			&:before,
+			&:after {
+				bottom: 200px;
+			}
+		}
+	}
+
+	&.section-hero-arrow + section {
+		padding-top: 145px;
+	}
 }
 
-// .section-hero + section {
-// 	padding-top: 145px;
-// }
-
 .games-grid {
-	// display: flex;
-	// flex-wrap: wrap;
 	margin: 50px -10px 10px;
 	@media (max-width: 1680px) {
 		max-width: 1200px;
@@ -116,8 +128,8 @@
 	.game-thumbnail {
 		position: relative;
 		overflow: hidden;
-		width: 160px;
-		height: 160px;
+		width: 200px;
+		height: 200px;
 		border-radius: 50%;
 		@media (max-width: 991px) {
 			width: 140px;
@@ -164,8 +176,8 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			max-width: 80%;
-			max-height: 80%;
+			max-width: 60%;
+			max-height: 60%;
 			margin: auto;
 			@media (max-width: 1024px) {
 				max-width: 60%;
@@ -371,37 +383,6 @@
 		max-width: 1920px;
 		margin: auto;
     	padding-bottom: 30px;
-		// &:before,
-		// &:after {
-		// 	content:'';
-		// 	position: absolute;
-		// 	z-index: 1;
-		// 	top: 0;
-		// 	height: 100%;
-		// 	width: 50vw;
-		// 	@media (max-width: 767px) {
-		// 		display: none;
-		// 	}
-		// }
-
-		// &:before {
-		// 	// right: 1530px;
-		// 	right: 80%;
-		// 	background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 80%,rgba(0,0,0,0) 100%);
-		// 	@media (min-width: 1920px) {
-		// 		right: 1530px;
-		// 		background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 100%);
-		// 	}
-		// }
-		// &:after {
-		// 	// left: 1530px;
-		// 	left: 80%;
-		// 	background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 20%,rgba(0,0,0,1) 100%);
-		// 	@media (min-width: 1920px) {
-		// 		left: 1530px;
-		// 		background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 100%);
-		// 	}
-		// }
 	}
 
 	.section-header {
@@ -438,7 +419,7 @@
 			padding: 15px 10px 15px;
 			border: none !important;
 			border-radius: 3px !important;
-			font-size: 30px;
+			font-size: 26px;
 			font-weight: 500;
 			color: #fff;
 			letter-spacing: -2.1px;
@@ -599,7 +580,7 @@
 
 	.slide-item {
 		@media (min-width: 1681px) {
-			width: 370px;
+			width: 380px;
 		}
 		@media (min-width: 768px) {
 			width: 320px;
@@ -609,11 +590,7 @@
 			padding: 130px 10px 0;
 		}
 		&.slick-current {
-			@media (min-width: 1681px) {
-				width: 420px;
-			}
 			@media (min-width: 768px) {
-				width: 360px;
 				padding: 130px 0 0;
 			}
 			.extension-card {
@@ -623,7 +600,7 @@
 				}
 
 				.extension-header {
-					padding: 0 45px 0;
+					padding: 0 25px;
 					@media (max-width: 1680px) {
 						padding: 0 30px;
 					}
@@ -641,7 +618,7 @@
 				}
 
 				.extension-title {
-					font-size: 44px;
+					font-size: 40px;
 					line-height: 0.9318181818;
 					@media (max-width: 1680px) {
 						font-size: 34px;
@@ -652,11 +629,11 @@
 				}
 
 				.extension-body {
-					padding: 0 45px 100px;
-					font-size: 19px;
+					padding: 0 25px 100px;
+					font-size: 18px;
 					font-weight: 500;
 					@media (max-width: 1680px) {
-						padding: 0 30px 100px;
+						padding: 0 20px 100px;
 						font-size: 16px;
 					}
 					@media (max-width: 767px) {
@@ -670,8 +647,8 @@
 				}
 
 				.extension-action-icon {
-					width: 46px;
-					height: 46px;
+					width: 44px;
+					height: 44px;
 					@media (max-width: 1680px) {
 						width: 36px;
 						height: 36px;
