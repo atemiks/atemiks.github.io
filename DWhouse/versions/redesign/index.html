@@ -31,7 +31,14 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="offcanvas-menu-list">
-                    <li><a href="#link">House Plans</a></li>
+                    <li class="dropdown" >
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#link">House Plans</a>
+                        <ul class="dropdown-menu" >
+                            <li><a href="#link">Advanced Search</a></li>
+                            <li><a href="#link">Search Styles</a></li>
+                            <li><a href="#link">Search Collections</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#link">Reviews</a></li>
                     <li><a href="#link">Builders</a></li>
                     <li><a href="#link">Home Inspiration</a></li>
@@ -44,6 +51,22 @@
                     <li><a href="#link">Chat</a></li>
                     <li><a href="tel:832-521-5820">832-521-5820</a></li>
                 </ul>
+            </div>
+        </div>
+
+         <!-- Modal -->
+        <div class="modal modal-fluid fade" id="modalHeroVideo" tabindex="-1" role="dialog" aria-labelledby="modalHeroVideoLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oQddUAaWUNU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -66,7 +89,14 @@
                                     </ul>
                                     <nav class="header-nav">
                                         <ul class="header-nav-list">
-                                            <li><a href="#link"><i class="icon-search" ></i>House Plans</a></li>
+                                            <li class="dropdown" >
+                                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#link"><img src="img/icons/icon-search.png" alt="search">House Plans</a>
+                                                <ul class="dropdown-menu" >
+                                                    <li><a href="#link">Advanced Search</a></li>
+                                                    <li><a href="#link">Search Styles</a></li>
+                                                    <li><a href="#link">Search Collections</a></li>
+                                                </ul>
+                                            </li>
                                             <li><a href="#link">Reviews</a></li>
                                             <li><a href="#link">Builders</a></li>
                                             <li><a href="#link">Home Inspiration</a></li>
@@ -120,9 +150,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="slide-item">
+                                    <div class="slide-item slide-item-video">
                                         <div class="hero-card" style="background-image: url(img/page-home/hero/hero-item-2.jpg)" >
-                                            <a href="plan.html" class="hero-link"></a>
+                                            <a href="#video" class="hero-link" data-toggle="modal" data-target="#modalHeroVideo" ></a>
                                             <ul class="hero-label house-label house-label-lg">
                                                 <li>PLEASANT COVE</li>
                                                 <li class="active" >HOUSE PLAN 2267</li>
