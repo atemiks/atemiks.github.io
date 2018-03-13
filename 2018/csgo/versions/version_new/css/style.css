@@ -2454,9 +2454,9 @@ table {
   margin: 20px 0; }
 
 .slick-slider {
-  outline: none; }
+  outline: none !important; }
   .slick-slider * {
-    outline: none; }
+    outline: none !important; }
 
 .slick-arrow {
   z-index: 1;
@@ -2641,11 +2641,10 @@ table {
       bottom: 0; }
     .game-card .game-thumbnail .game-thumbnail-logo {
       position: absolute;
-      z-index: 2;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
       max-width: 60%;
       max-height: 60%;
       margin: auto; }
@@ -3060,8 +3059,6 @@ table {
     .section-portfolio {
       padding-top: 20px;
       padding-bottom: 30px; } }
-  .section-portfolio .section-header {
-    text-align: left; }
 
 .portfolio-grid {
   display: -webkit-box;
