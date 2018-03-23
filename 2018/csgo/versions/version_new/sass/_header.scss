@@ -74,6 +74,7 @@
 		} 
 
 		a {
+			@extend .transition;
 			position: relative;
 			display: block;
 			padding: 28px 0 24px;

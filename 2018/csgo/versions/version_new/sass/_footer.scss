@@ -34,6 +34,7 @@
 	li {
 		display: inline-block;
 		a {
+			@extend .transition;
 			color: inherit;
 			&:hover {
 				color: darken(#7c521b, 10%);
@@ -53,6 +54,7 @@
 
 	li {
 		a {
+			@extend .transition;
 			&:hover {
 				color: #7c521b;
 			}

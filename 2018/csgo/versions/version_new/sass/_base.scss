@@ -83,7 +83,6 @@ p {
 }
 
 a {
-	@extend .transition;
 	color: $secondary-color;
 	text-decoration: none;
 	&:hover {
@@ -175,7 +174,7 @@ button {
 .btn-sm {
 	min-width: 160px;
 	padding: 9px 15px 10px;
-	border-radius: 20px;
+	border-radius: 5px;
 	font-size: 21px;
 	font-weight: 300;
 	letter-spacing: -1.47px;
