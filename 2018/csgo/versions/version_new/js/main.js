@@ -1,25 +1,13 @@
 $( document ).ready(function() {
 
-	// smooth scroll
-	// $('a[href*="#"]')
-	//   .not('[href="#"]')
-	//   .not('[href="#0"]')
-	//   .click(function(event) {
-	//     if (
-	//       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-	//       && 
-	//       location.hostname == this.hostname
-	//     ) {
-	//       var target = $(this.hash);
-	//       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-	//       if (target.length) {
-	//         event.preventDefault();
-	//         $('html, body').animate({
-	//           scrollTop: target.offset().top
-	//         }, 1000);
-	//       }
-	//     }
-	//   });
+
+	// preloader
+	setTimeout(function() {
+		var preloader = document.getElementById('page-preloader');
+		if( !preloader.classList.contains('done') ) {
+			preloader.classList.add('done');
+		}
+	})
 
 	// header
 
@@ -121,17 +109,31 @@ $( document ).ready(function() {
 	 
 	 $(".portfolio-block").mCustomScrollbar({
 	 	theme:"dark dark-portfolio",
-	 	axis:"y"
+	 	axis:"y",
+	 	advanced: {
+	 		updateOnContentResize: true
+	 	}
 	 });
 	 $(".testimonial-body").mCustomScrollbar({
 	 	theme:"dark dark-testimonials",
-	 	axis:"y"
+	 	axis:"y",
+	 	advanced: {
+	 		updateOnContentResize: true
+	 	}
 	 });
 
 	 $(".extention-description-inner").mCustomScrollbar({
 	 	theme:"dark dark-portfolio",
-	 	axis:"y"
+	 	axis:"y",
+	 	advanced: {
+	 		updateOnContentResize: true
+	 	}
 	 });
+
+	// $( window ).resize(function() {
+	//  	console.log('resize');
+	//  	$('.testimonial-body').mCustomScrollbar("update");
+	// });
 
 	
 
@@ -140,6 +142,12 @@ $( document ).ready(function() {
     $(this).parent().find(".icon-long-arrow-down").removeClass("icon-long-arrow-down").addClass("icon-long-arrow-up");
     }).on('hidden.bs.collapse', function(){
     $(this).parent().find(".icon-long-arrow-up").removeClass("icon-long-arrow-up").addClass("icon-long-arrow-down");
+    });
+
+    $('.collapse').on('shown.bs.collapse', function(){
+    $(this).parent().find(".icon-plus").removeClass("icon-plus").addClass("icon-minus");
+    }).on('hidden.bs.collapse', function(){
+    $(this).parent().find(".icon-minus").removeClass("icon-minus").addClass("icon-plus");
     });
 
     // page extension
@@ -161,6 +169,20 @@ $( document ).ready(function() {
 	  	$('.extention-packages-tabs button').removeClass('active');
 	  	$(this).addClass('active');
 	  	packagesActive( $(this).attr("class") );
+	});
+
+
+	// page faq
+	function faqNavHeight() {
+		return $('.faq-aside').height();
+	}
+	function faqTabHeight() {
+		$('.faq-tab-content').css('min-height', faqNavHeight() );
+	}
+	faqTabHeight();
+
+	$( window ).resize(function() {
+	   faqTabHeight();
 	});
 	
 

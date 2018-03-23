@@ -24,6 +24,10 @@
 
     <body>
 
+        <div id="page-preloader" class="preloader">
+            <div class="loader"></div>
+        </div>
+
         <div class="offcanvas">
             <div class="offcanvas-header">
                 <button class="offcanvas-close">&times;</button>
@@ -103,13 +107,8 @@
                 </header>
                 <main>
 
-                    <article>
-                        <div class="container">
-                            <div class="row">
-                                <div class="display-header col-md-12">
-                                    <h1 class="display-title">FAQ</h1>
-                                </div>
-                            </div>
+                    <section class="section-faq">
+                        <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                                     <div class="video-wrapper">
@@ -120,8 +119,596 @@
                                 </div>
                             </div>
                             <div class="row">
+                                <div class="faq-box">
+                                    <div class="faq-aside col-xs-12 col-sm-5">
+                                        <ul class="faq-nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active">
+                                                <a href="#faq-tab-media" aria-controls="faq-tab-media" role="tab" data-toggle="tab">
+                                                    <img src="img/icons/icon-speaker.png" alt="icon speaker" class="faq-tab-icon">
+                                                    <span class="faq-tab-title">Медиа-контент</span>
+                                                    <span class="faq-tab-value">Какой-то текст про что-то там бла бла-бла. И еще какой-то текст.</span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#faq-tab-refill" aria-controls="faq-tab-refill" role="tab" data-toggle="tab">
+                                                    <img src="img/icons/icon-speaker.png" alt="icon speaker" class="faq-tab-icon">
+                                                    <span class="faq-tab-title">Пополнение баланса</span>
+                                                    <span class="faq-tab-value">Какой-то текст про что-то там бла бла-бла. И еще какой-то текст.</span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#faq-tab-pay" aria-controls="faq-tab-pay" role="tab" data-toggle="tab">
+                                                    <img src="img/icons/icon-speaker.png" alt="icon speaker" class="faq-tab-icon">
+                                                    <span class="faq-tab-title">Платный функционал</span>
+                                                    <span class="faq-tab-value">Какой-то текст про что-то там бла бла-бла. И еще какой-то текст.</span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#faq-tab-return" aria-controls="faq-tab-return" role="tab" data-toggle="tab">
+                                                    <img src="img/icons/icon-speaker.png" alt="icon speaker" class="faq-tab-icon">
+                                                    <span class="faq-tab-title">Возврат средств</span>
+                                                    <span class="faq-tab-value">Какой-то текст про что-то там бла бла-бла. И еще какой-то текст.</span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#faq-tab-compare" aria-controls="faq-tab-compare" role="tab" data-toggle="tab">
+                                                    <img src="img/icons/icon-speaker.png" alt="icon speaker" class="faq-tab-icon">
+                                                    <span class="faq-tab-title">Сравнение и база цен</span>
+                                                    <span class="faq-tab-value">Какой-то текст про что-то там бла бла-бла. И еще какой-то текст.</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="faq-tab-content tab-content col-xs-12 col-sm-7">
+                                        <!-- tab media -->
+                                        <div role="tabpanel" class="tab-pane active" id="faq-tab-media">
+                                            <div class="faq-content-header">
+                                                <img src="img/icons/icon-speaker.png" class="faq-content-icon" alt="icon speaker">
+                                                <h2 class="faq-content-title">Медиа-контент</h2>
+                                                <p class="faq-content-subtitle">Какой-то текст про что-то там про пополнение баланса и чет еще. <br> И тут еще можно текст присобачить.</p>
+                                            </div>
+
+                                            <div class="faq-content-body panel-body">
+                                                <div class="collapse-wrapper">
+                                                    <div class="panel-group" id="media-accordion" role="tablist" aria-multiselectable="true">
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="media-headingOne">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#media-accordion" href="#media-collapseOne" aria-expanded="true" aria-controls="media-collapseOne">
+                                                                        Как пополнить баланс?
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="media-collapseOne" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="media-headingOne">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="media-headingTwo">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#media-accordion" href="#media-collapseTwo" aria-expanded="true" aria-controls="media-collapseTwo">
+                                                                        Не загружается инвентарь
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="media-collapseTwo" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="media-headingTwo">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="media-headingThree">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#media-accordion" href="#media-collapseThree" aria-expanded="true" aria-controls="media-collapseThree">
+                                                                        Не отправляется обмен
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="media-collapseThree" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="media-headingThree">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="media-headingFour">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#media-accordion" href="#media-collapseFour" aria-expanded="true" aria-controls="media-collapseFour">
+                                                                        Еще какой-то пункт
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="media-collapseFour" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="media-headingFour">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- tab media end -->
+
+                                        <!-- tab refill -->
+                                        <div role="tabpanel" class="tab-pane" id="faq-tab-refill">
+                                            <div class="faq-content-header">
+                                                <img src="img/icons/icon-speaker.png" class="faq-content-icon" alt="icon speaker">
+                                                <h2 class="faq-content-title">Пополнение баланса</h2>
+                                                <p class="faq-content-subtitle">Какой-то текст про что-то там про пополнение баланса и чет еще. <br> И тут еще можно текст присобачить.</p>
+                                            </div>
+
+                                            <div class="faq-content-body panel-body">
+                                                <div class="collapse-wrapper">
+                                                    <div class="panel-group" id="refill-accordion" role="tablist" aria-multiselectable="true">
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="refill-headingOne">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#refill-accordion" href="#refill-collapseOne" aria-expanded="true" aria-controls="refill-collapseOne">
+                                                                        Как пополнить баланс?
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="refill-collapseOne" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="refill-headingOne">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="refill-headingTwo">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#refill-accordion" href="#refill-collapseTwo" aria-expanded="true" aria-controls="refill-collapseTwo">
+                                                                        Не загружается инвентарь
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="refill-collapseTwo" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="refill-headingTwo">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="refill-headingThree">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#refill-accordion" href="#refill-collapseThree" aria-expanded="true" aria-controls="refill-collapseThree">
+                                                                        Не отправляется обмен
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="refill-collapseThree" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="refill-headingThree">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="refill-headingFour">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#refill-accordion" href="#refill-collapseFour" aria-expanded="true" aria-controls="refill-collapseFour">
+                                                                        Еще какой-то пункт
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="refill-collapseFour" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="refill-headingFour">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- tab refill end -->
+
+                                        <!-- tab pay -->
+                                        <div role="tabpanel" class="tab-pane" id="faq-tab-pay">
+                                            <div class="faq-content-header">
+                                                <img src="img/icons/icon-speaker.png" class="faq-content-icon" alt="icon speaker">
+                                                <h2 class="faq-content-title">Платный функционал</h2>
+                                                <p class="faq-content-subtitle">Какой-то текст про что-то там про пополнение баланса и чет еще. <br> И тут еще можно текст присобачить.</p>
+                                            </div>
+
+                                            <div class="faq-content-body panel-body">
+                                                <div class="collapse-wrapper">
+                                                    <div class="panel-group" id="pay-accordion" role="tablist" aria-multiselectable="true">
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="pay-headingOne">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#pay-accordion" href="#pay-collapseOne" aria-expanded="true" aria-controls="pay-collapseOne">
+                                                                        Как пополнить баланс?
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="pay-collapseOne" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="pay-headingOne">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="pay-headingTwo">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#pay-accordion" href="#pay-collapseTwo" aria-expanded="true" aria-controls="pay-collapseTwo">
+                                                                        Не загружается инвентарь
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="pay-collapseTwo" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="pay-headingTwo">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="pay-headingThree">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#pay-accordion" href="#pay-collapseThree" aria-expanded="true" aria-controls="pay-collapseThree">
+                                                                        Не отправляется обмен
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="pay-collapseThree" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="pay-headingThree">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="pay-headingFour">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#pay-accordion" href="#pay-collapseFour" aria-expanded="true" aria-controls="pay-collapseFour">
+                                                                        Еще какой-то пункт
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="pay-collapseFour" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="pay-headingFour">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- tab pay end -->
+
+                                        <!-- tab return -->
+                                        <div role="tabpanel" class="tab-pane" id="faq-tab-return">
+                                            <div class="faq-content-header">
+                                                <img src="img/icons/icon-speaker.png" class="faq-content-icon" alt="icon speaker">
+                                                <h2 class="faq-content-title">Возврат средств</h2>
+                                                <p class="faq-content-subtitle">Какой-то текст про что-то там про пополнение баланса и чет еще. <br> И тут еще можно текст присобачить.</p>
+                                            </div>
+
+                                            <div class="faq-content-body panel-body">
+                                                <div class="collapse-wrapper">
+                                                    <div class="panel-group" id="return-accordion" role="tablist" aria-multiselectable="true">
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="return-headingOne">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#return-accordion" href="#return-collapseOne" aria-expanded="true" aria-controls="return-collapseOne">
+                                                                        Как пополнить баланс?
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="return-collapseOne" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="return-headingOne">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="return-headingTwo">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#return-accordion" href="#return-collapseTwo" aria-expanded="true" aria-controls="return-collapseTwo">
+                                                                        Не загружается инвентарь
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="return-collapseTwo" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="return-headingTwo">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="return-headingThree">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#return-accordion" href="#return-collapseThree" aria-expanded="true" aria-controls="return-collapseThree">
+                                                                        Не отправляется обмен
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="return-collapseThree" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="return-headingThree">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="return-headingFour">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#return-accordion" href="#return-collapseFour" aria-expanded="true" aria-controls="return-collapseFour">
+                                                                        Еще какой-то пункт
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="return-collapseFour" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="return-headingFour">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- tab return end -->
+
+                                        <!-- tab compare -->
+                                        <div role="tabpanel" class="tab-pane" id="faq-tab-compare">
+                                            <div class="faq-content-header">
+                                                <img src="img/icons/icon-speaker.png" class="faq-content-icon" alt="icon speaker">
+                                                <h2 class="faq-content-title">Сравнение и база цен</h2>
+                                                <p class="faq-content-subtitle">Какой-то текст про что-то там про пополнение баланса и чет еще. <br> И тут еще можно текст присобачить.</p>
+                                            </div>
+
+                                            <div class="faq-content-body panel-body">
+                                                <div class="collapse-wrapper">
+                                                    <div class="panel-group" id="compare-accordion" role="tablist" aria-multiselectable="true">
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="compare-headingOne">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#compare-accordion" href="#compare-collapseOne" aria-expanded="true" aria-controls="compare-collapseOne">
+                                                                        Как пополнить баланс?
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="compare-collapseOne" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="compare-headingOne">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="compare-headingTwo">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#compare-accordion" href="#compare-collapseTwo" aria-expanded="true" aria-controls="compare-collapseTwo">
+                                                                        Не загружается инвентарь
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="compare-collapseTwo" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="compare-headingTwo">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="compare-headingThree">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#compare-accordion" href="#compare-collapseThree" aria-expanded="true" aria-controls="compare-collapseThree">
+                                                                        Не отправляется обмен
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="compare-collapseThree" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="compare-headingThree">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="faq-panel panel panel-default">
+                                                            <div class="faq-panel-heading panel-heading" role="tab" id="compare-headingFour">
+                                                                <h2 class="faq-panel-title panel-title">
+                                                                    <a role="button" data-toggle="collapse" data-parent="#compare-accordion" href="#compare-collapseFour" aria-expanded="true" aria-controls="compare-collapseFour">
+                                                                        Еще какой-то пункт
+                                                                        <span class="faq-panel-arrow icon-plus" ></span>
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="compare-collapseFour" class="faq-panel-collpase panel-collapse collapse" role="tabpanel" aria-labelledby="compare-headingFour">
+                                                                <div class="faq-panel-body panel-body">
+                                                                    <p>Могут быть 4 причины по которым не отправляется обмен:</p>
+                                                                    <ol>
+                                                                        <li>Steam в данный момент не доступен</li>
+                                                                        <li>Бот который отправляет обмены недоступен. В таком случае попробуйте еще раз через 10-20 минут</li>
+                                                                        <li>Ваш аккаунт в Steam ограничен и обмены будут задерживаться</li>
+                                                                        <li>У Вас уже есть активный обмен с нашим ботом. Если вы уже приняли или отклонили обмен, подождите 30 секунд пока бот обновит данные. Если по истечению 30 секунд данная проблема не решилась, пожалуйста, свяжитесь с тех.поддержкой</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- tab compare end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <article>
+                        <div class="container-fluid">
+                            <!-- <div class="row">
+                                <div class="display-header col-md-12">
+                                    <h1 class="display-title">FAQ</h1>
+                                </div>
+                            </div> -->
+                            <!-- <div class="row">
+                                <div class="video-wrapper">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nksEVYrDUNA" frameborder="0" allow="autoplay; allowfullscreen ></iframe>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="row">
                                 <div class="col-md-12">
-                                    <h2>медиа-контент</h2>
+
+
+                                    
+
+
+
+                                    <!-- <h2>медиа-контент</h2>
 
                                     <div class="collapse-wrapper">
                                         <div class="panel-group" id="media-accordion" role="tablist" aria-multiselectable="true">
@@ -288,7 +875,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     
 
                                 </div>
