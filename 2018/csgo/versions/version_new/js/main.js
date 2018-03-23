@@ -128,6 +128,11 @@ $( document ).ready(function() {
 	 	axis:"y"
 	 });
 
+	 $(".extention-description-inner").mCustomScrollbar({
+	 	theme:"dark dark-portfolio",
+	 	axis:"y"
+	 });
+
 	
 
 	/* accordion */
@@ -136,7 +141,27 @@ $( document ).ready(function() {
     }).on('hidden.bs.collapse', function(){
     $(this).parent().find(".icon-long-arrow-up").removeClass("icon-long-arrow-up").addClass("icon-long-arrow-down");
     });
-	   
+
+    // page extension
+    function packagesActive(index) {
+    	$('.extention-packages-services li').removeClass('active');
+
+    	if (index == 'packages-1 active') {
+    		$('.extention-packages-services .packages-1').addClass('active');
+    	}
+    	else if (index == 'packages-2 active') {
+    		$('.extention-packages-services .packages-1, .extention-packages-services .packages-2').addClass('active');
+    	}
+    	else if (index == 'packages-3 active') {
+    		$('.extention-packages-services .packages-1, .extention-packages-services .packages-2, .extention-packages-services .packages-3').addClass('active');
+    	}
+    }
+
+    $( ".extention-packages-tabs button" ).on( "click", function() {
+	  	$('.extention-packages-tabs button').removeClass('active');
+	  	$(this).addClass('active');
+	  	packagesActive( $(this).attr("class") );
+	});
 	
 
 });

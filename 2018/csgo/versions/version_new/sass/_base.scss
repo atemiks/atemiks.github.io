@@ -165,26 +165,12 @@ button {
 	}
 }
 
-// .btn {
-// 	@extend .transition;
-// 	outline: none;
-// 	display: inline-block;
-// 	min-width: 260px;
-// 	padding: 14px 25px 14px;
-// 	border: none;
-// 	background: $main-color;
-// 	font-size: 23px;
-// 	font-weight: 500;
-// 	color: #fff;
-// 	text-align: center;
-// 	text-decoration: none;
-// 	vertical-align: middle;
-// 	&:hover {
-// 		background: $secondary-color;
-// 		color: #fff;
-// 		text-decoration: none;
-// 	}
-// }
+.btn-warning {
+	background-color: $secondary-color;
+	&:hover {
+		background-color: $main-color;
+	}
+}
 
 .btn-sm {
 	min-width: 160px;
