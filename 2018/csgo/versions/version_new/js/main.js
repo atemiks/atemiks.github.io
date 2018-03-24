@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 
-
 	// preloader
 	setTimeout(function() {
 		var preloader = document.getElementById('page-preloader');
@@ -82,27 +81,26 @@ $( document ).ready(function() {
 		]
 	})
 
+
 	$('.slider-testimonials').slick({
 		dots: true,
 		infinite: false,
 		arrows: false,
 		dots: true,
 		rows: 2,
-		slidesPerRow: 2,
-		responsive: [
-		{
-		  	breakpoint: 1024,
-		  	settings: {
-			  	rows: 2,
-			  	slidesPerRow: 1,
-			    slidesToShow: 1,
-			    slidesToScroll: 1,
-			    arrows: false,
-			    dots: true
-		  	}
-			}
-		]
+		slidesPerRow: 2
 	});
+	$('.slider-testimonials-mobile').slick({
+		dots: true,
+		infinite: false,
+		arrows: false,
+		dots: true,
+		rows: 2,
+		slidesPerRow: 1
+	});
+
+
+
 
 
 
@@ -117,9 +115,10 @@ $( document ).ready(function() {
 	 $(".testimonial-body").mCustomScrollbar({
 	 	theme:"dark dark-testimonials",
 	 	axis:"y",
-	 	advanced: {
-	 		updateOnContentResize: true
-	 	}
+	 	advanced:{
+		    updateOnContentResize: true,
+		    updateOnImageLoad: true
+		 }
 	 });
 
 	 $(".extention-description-inner").mCustomScrollbar({
@@ -129,11 +128,6 @@ $( document ).ready(function() {
 	 		updateOnContentResize: true
 	 	}
 	 });
-
-	// $( window ).resize(function() {
-	//  	console.log('resize');
-	//  	$('.testimonial-body').mCustomScrollbar("update");
-	// });
 
 	
 

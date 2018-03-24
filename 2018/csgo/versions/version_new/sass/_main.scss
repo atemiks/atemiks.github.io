@@ -449,6 +449,7 @@
 }
 
 .extension-tabs {
+	@extend .reset-list;
 	margin: 0;
 	border: none;
 	text-align: center;
@@ -511,7 +512,7 @@
 		&:focus {
 			cursor: pointer;
 			a {
-				background: $main-color;
+				background: $main-color !important;
 				color: #fff !important;
 			}
 		}
@@ -869,8 +870,12 @@
 
 
 
-.slider-testimonials {
-	margin: 10px -20px 10px !important;
+.slider-testimonials,
+.slider-testimonials-mobile {
+	display: none;
+	margin: 10px -20px 10px !important;	
+	
+
 	.slide-item {
 		padding: 0 20px;
 	}
@@ -878,6 +883,18 @@
 		bottom: 25px;
 	}
 }
+
+.slider-testimonials {
+	@media (min-width: 768px) {
+		display: block;
+	}
+}
+.slider-testimonials-mobile {
+	@media (max-width: 767px) {
+		display: block;
+	}
+}
+
 .testimonial-card {
 	position: relative;
 	overflow: hidden;
