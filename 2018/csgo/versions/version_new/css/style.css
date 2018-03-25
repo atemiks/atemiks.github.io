@@ -2480,40 +2480,6 @@ table {
   -webkit-box-shadow: 0 19px 62px rgba(0, 0, 0, 0.32);
           box-shadow: 0 19px 62px rgba(0, 0, 0, 0.32); }
 
-.preloader {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background: #000;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-  opacity: 1;
-  visibility: visible; }
-  .preloader .loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 75px;
-    height: 75px;
-    border: 8px solid #fff;
-    border-top-color: #391658;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -webkit-animation: 1s spin infinite linear;
-            animation: 1s spin infinite linear; }
-  .preloader.done {
-    opacity: 0;
-    visibility: hidden; }
-
 @-webkit-keyframes spin {
   from {
     -webkit-transform: translate(-50%, -50%) rotate(0deg);
@@ -2661,7 +2627,18 @@ table {
     padding-top: 145px; }
 
 .games-grid {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin: 50px -10px 10px; }
+  @media (min-width: 992px) {
+    .games-grid {
+      height: 224px; } }
   @media (max-width: 1680px) {
     .games-grid {
       max-width: 1200px;
@@ -2791,6 +2768,7 @@ table {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center top;
+  background-color: #0a0210;
   font-size: 25px;
   font-weight: 300;
   line-height: 1.44;
@@ -3347,7 +3325,8 @@ table {
     border: 5px solid #fff;
     background-position: center;
     -webkit-background-size: cover;
-            background-size: cover; }
+            background-size: cover;
+    background-color: #0a0210; }
     @media (max-width: 1024px) {
       .testimonial-card .testimonial-thumbnail {
         width: 80px;
@@ -3715,9 +3694,6 @@ table {
       -o-transition: box-shadow 200ms ease;
       transition: box-shadow 200ms ease;
       transition: box-shadow 200ms ease, -webkit-box-shadow 200ms ease; }
-      .faq-nav > li > a:hover {
-        -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
-                box-shadow: 0 0 32px rgba(0, 0, 0, 0.1); }
       @media (max-width: 1199px) {
         .faq-nav > li > a {
           padding: 15px 20px 20px 75px; } }
@@ -3727,11 +3703,7 @@ table {
         top: 0;
         right: 0;
         bottom: 0;
-        width: 8px;
-        background: -webkit-gradient(linear, left top, left bottom, from(#9525d0), to(#4bcafc));
-        background: -webkit-linear-gradient(top, #9525d0 0%, #4bcafc 100%);
-        background: -o-linear-gradient(top, #9525d0 0%, #4bcafc 100%);
-        background: linear-gradient(to bottom, #9525d0 0%, #4bcafc 100%); }
+        width: 8px; }
       .faq-nav > li > a .faq-tab-icon {
         position: absolute;
         top: 25px;
@@ -3776,7 +3748,14 @@ table {
       max-width: 560px;
       margin-bottom: 35px; }
       .faq-nav > li.active > a {
-        padding: 15px 40px 25px 135px; }
+        padding: 15px 40px 25px 135px;
+        -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 32px rgba(0, 0, 0, 0.1); }
+        .faq-nav > li.active > a:after {
+          background: -webkit-gradient(linear, left top, left bottom, from(#9525d0), to(#4bcafc));
+          background: -webkit-linear-gradient(top, #9525d0 0%, #4bcafc 100%);
+          background: -o-linear-gradient(top, #9525d0 0%, #4bcafc 100%);
+          background: linear-gradient(to bottom, #9525d0 0%, #4bcafc 100%); }
         @media (max-width: 1199px) {
           .faq-nav > li.active > a {
             padding: 15px 20px 25px 95px; } }

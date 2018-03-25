@@ -182,38 +182,38 @@
 
 
 // preloader 
-.preloader {
-	position: fixed;
-	z-index: 999;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
-	background: #000;
-	transition: all 1s;
-	opacity: 1;
-	visibility: visible;
+// .preloader {
+// 	position: fixed;
+// 	z-index: 999;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	height: 100%;
+// 	width: 100%;
+// 	background: #000;
+// 	transition: all 1s;
+// 	opacity: 1;
+// 	visibility: visible;
 
-	.loader {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 75px;
-		height: 75px;
-		border: 8px solid #fff;
-		border-top-color: $main-color;
-		border-radius: 50%;
-		transform: translate(-50%, -50%);
-		animation: 1s spin infinite linear;
-	}
+// 	.loader {
+// 		position: absolute;
+// 		top: 50%;
+// 		left: 50%;
+// 		width: 75px;
+// 		height: 75px;
+// 		border: 8px solid #fff;
+// 		border-top-color: $main-color;
+// 		border-radius: 50%;
+// 		transform: translate(-50%, -50%);
+// 		animation: 1s spin infinite linear;
+// 	}
 
-	&.done {
-		opacity: 0;
-		visibility: hidden;
-	}
-}
+// 	&.done {
+// 		opacity: 0;
+// 		visibility: hidden;
+// 	}
+// }
 
 @keyframes spin {
 	from {

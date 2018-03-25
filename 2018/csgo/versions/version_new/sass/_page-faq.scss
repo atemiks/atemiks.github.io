@@ -60,7 +60,6 @@
 			background-color: #ffffff;
 			transition: box-shadow 200ms ease;
 			&:hover {
-				box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
 			}
 
 			@media (max-width: 1199px) {
@@ -74,7 +73,6 @@
 				right: 0;
 				bottom: 0;
 				width: 8px;
-				background: linear-gradient(to bottom, rgba(149,37,208,1) 0%,rgba(75,202,252,1) 100%);
 			}
 
 			.faq-tab-icon {
@@ -129,6 +127,10 @@
 
 			> a {
 				padding: 15px 40px 25px 135px;
+				box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+				&:after {
+					background: linear-gradient(to bottom, rgba(149,37,208,1) 0%,rgba(75,202,252,1) 100%);
+				}
 				
 				@media (max-width: 1199px) {
 					padding: 15px 20px 25px 95px;

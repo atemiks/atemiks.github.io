@@ -88,7 +88,13 @@
 }
 
 .games-grid {
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
 	margin: 50px -10px 10px;
+	@media (min-width: 992px) {
+		height: 224px;
+	}
 	@media (max-width: 1680px) {
 		max-width: 1200px;
 		margin-left: auto;
@@ -247,6 +253,7 @@
     padding-bottom: 180px;
 	background-size: cover;
 	background-position: center top;
+	background-color: $dark;
 	font-size: 25px;
 	font-weight: 300;
 	line-height: 1.44;
@@ -920,6 +927,7 @@
 		border: 5px solid #fff;
 		background-position: center;
 		background-size: cover;
+		background-color: $dark;
 		@media (max-width: 1024px) {
 			width: 80px;
 			height: 80px;
