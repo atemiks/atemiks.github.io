@@ -463,6 +463,7 @@
 	@media (max-width: 767px) {
 		overflow-x: scroll;
 		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
 	}
 
 	> li {
@@ -627,10 +628,21 @@
 
 
 .slider-extension {
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 	margin: 45px -10px 0;
+	&.lick-initialized {
+		display: block;
+		overflow: auto;
+	}
 	.slick-list  {
 		position: relative;
 		padding: 0 !important;
+		
+	}
+	.slick-track {
 		
 	}
 
@@ -892,8 +904,15 @@
 }
 
 .slider-testimonials {
-	@media (min-width: 768px) {
-		display: block;
+	height: 495px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    &.slick-initialized {
+    	display: block;
+    }
+	@media (max-width: 767px) {
+		display: none !important;
 	}
 }
 .slider-testimonials-mobile {

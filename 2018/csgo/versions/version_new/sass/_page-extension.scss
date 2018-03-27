@@ -25,7 +25,7 @@
 	padding-top: 65px;
 	.extention-title {
 		margin: 5px 0 15px;
-		font-size: 49px;
+		font-size: 38px;
 		font-weight: 900;
 		letter-spacing: -1.93px;
 	    @media (min-width: 768px) {
@@ -34,7 +34,7 @@
 	    	text-overflow: ellipsis;
 	    }
 		@media (max-width: 1680px) {
-			font-size: 40px;
+			font-size: 38px;
 		}
 		@media (max-width: 1280px) {
 			font-size: 32px;
@@ -67,8 +67,12 @@
 	.extention-description {
 		.extention-description-title {
 			margin: 1em 0 .5em;
+			font-size: 22px;
 			font-weight: 900;
 			letter-spacing: -0.98px;
+			@media (max-width: 1366px) {
+				font-size: 18px;
+			}
 		}
 
 		.extention-description-inner {
@@ -76,25 +80,25 @@
 			color: #5b5b5b;
 			letter-spacing: -0.84px;
 			@media (min-width: 1024px) {
-				height: 135px;
-			}
-			@media (min-width: 1199px) {
 				height: 150px;
 			}
+			@media (min-width: 1199px) {
+				height: 165px;
+			}
 			@media (min-width: 1280px) {
-				height: 175px;
+				height: 200px;
 				line-height: 1.2;
 			}
 			@media (min-width: 1366px) {
-				height: 190px;
+				height: 200px;
 				font-size: 16px;
 			}
 			@media (min-width: 1440px) {
-				height: 210px;
+				height: 215px;
 				font-size: 18px;
 			}
 			@media (min-width: 1680px) {
-				height: 270px;
+				height: 280px;
 				font-size: 20px;
 				line-height: 1.15;
 			}
@@ -106,6 +110,9 @@
 
 		.extention-description-list {
 			@extend .reset-list;
+			li {
+				padding: 5px 0;
+			}
 		}
 	}
 }
@@ -118,7 +125,7 @@
 
 	.extention-display-aside-title {
 		margin: 0;
-		font-size: 49px;
+		font-size: 38px;
 		font-weight: 900;
 		letter-spacing: -1.93px;
 		text-align: center;
@@ -181,7 +188,8 @@
 		color: #989898;
 		letter-spacing: -0.81px;
 		text-align: center;
-		@media (max-width: 1280px) {
+		@media (max-width: 1680px) {
+			min-width: 250px;
 			font-size: 20px;
 		}
 		@media (max-width: 1199px) {
@@ -215,31 +223,40 @@
 		font-weight: 500;
 		color: #d4d4d4;
 		letter-spacing: -0.81px;
-		@media (max-width: 1024px) {
+		@media (max-width: 1680px) {
+			padding: 8px 0 15px 45px;
 			font-size: 18px;
+			letter-spacing: -0.50px;
 		}
 
 		&:before {
-			content: '';
-			display: block;
+			font-family: 'icomoon';
+			content: '\f00d';
+			font-size: 16px;
+			font-weight: 400;
+			color: #fff;
+			line-height: 22px;
+			text-align: center;
+			display: block !important;
 			position: absolute;
-			top: 12px;
+			top: 10px;
 			left: 10px;
 			width: 24px;
 			height: 24px;
-			background: url('../img/icons/icon-not-included.jpg') no-repeat 0 0 ;
-			background-size: contain;
-			@media (max-width: 1024px) {
-				top: 10px;
-				width: 18px;
-				height: 18px;
+			border: 1px solid #aaaaaa;
+			border-radius: 3px;
+			background: #f1f1f1;
+			@media (max-width: 1680px) {
+				top: 6px;
 			}
 		}
 
 		&.active {
 			color: #181719;
 			&:before {
-				background-image: url('../img/icons/icon-included.jpg');
+				content: '\f00c';
+				border-color: $main-color;
+				background: $main-color;
 			}
 		}
 	}
@@ -270,6 +287,11 @@
 			font-size: 24px;
 			font-weight: 500;
 			letter-spacing: -0.94px;
+			@media (max-width: 1680px) {
+			    min-width: 185px;
+				padding: 8px 15px 10px;
+				font-size: 22px;
+			}
 			@media (max-width: 1024px) {
 				font-size: 20px;
 			}
@@ -278,6 +300,10 @@
 				padding-left: 10px;
 				padding-right: 10px;
 				font-size: 16px;
+			}
+
+			&:hover {
+				background-color: $dark;
 			}
 		}
 	}
