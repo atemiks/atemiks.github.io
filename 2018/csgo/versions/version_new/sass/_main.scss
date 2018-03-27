@@ -633,9 +633,9 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	margin: 45px -10px 0;
-	&.lick-initialized {
+	&.slick-initialized {
+		overflow: visible;
 		display: block;
-		overflow: auto;
 	}
 	.slick-list  {
 		position: relative;
