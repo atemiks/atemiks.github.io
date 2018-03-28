@@ -4019,30 +4019,26 @@ table {
       .section-extention-display .extention-title {
         font-size: 30px; } }
   .section-extention-display .extention-subtitle {
+    overflow: hidden;
+    max-height: 57px;
+    font-size: 16px;
     font-weight: 400;
     color: #5b5b5b;
     line-height: 1.2;
     letter-spacing: -0.84px; }
-    @media (min-width: 1366px) {
-      .section-extention-display .extention-subtitle {
-        font-size: 16px; } }
     @media (min-width: 1440px) {
       .section-extention-display .extention-subtitle {
+        max-height: 63px;
         font-size: 18px; } }
     @media (min-width: 1680px) {
       .section-extention-display .extention-subtitle {
+        max-height: 66px;
         font-size: 21px;
         line-height: 1.0909090909; } }
-    @media (max-width: 1199px) {
-      .section-extention-display .extention-subtitle {
-        font-size: 14px; } }
     @media (max-width: 991px) {
       .section-extention-display .extention-subtitle {
         font-weight: 500;
         line-height: 1.3; } }
-    @media (max-width: 767px) {
-      .section-extention-display .extention-subtitle {
-        font-size: 16px; } }
   .section-extention-display .extention-description .extention-description-title {
     margin: 1em 0 .5em;
     font-size: 22px;
@@ -4053,6 +4049,7 @@ table {
         font-size: 18px; } }
   .section-extention-display .extention-description .extention-description-inner {
     height: 240px;
+    font-size: 16px;
     font-weight: 500;
     color: #5b5b5b;
     letter-spacing: -0.84px; }
@@ -4068,8 +4065,7 @@ table {
         line-height: 1.2; } }
     @media (min-width: 1366px) {
       .section-extention-display .extention-description .extention-description-inner {
-        height: 200px;
-        font-size: 16px; } }
+        height: 200px; } }
     @media (min-width: 1440px) {
       .section-extention-display .extention-description .extention-description-inner {
         height: 215px;
@@ -4081,8 +4077,7 @@ table {
         line-height: 1.15; } }
     @media (max-width: 767px) {
       .section-extention-display .extention-description .extention-description-inner {
-        height: 210px;
-        font-size: 16px; } }
+        height: 210px; } }
   .section-extention-display .extention-description .extention-description-list li {
     padding: 5px 0; }
 
@@ -4242,6 +4237,6 @@ table {
           padding-right: 10px;
           font-size: 16px; } }
       .extention-packages-actions li .btn:hover {
-        background-color: #2c1144; }
+        background-color: #240e37; }
       .extention-packages-actions li .btn.btn-warning:hover {
-        background-color: #8f4217; }
+        background-color: #823c15; }
