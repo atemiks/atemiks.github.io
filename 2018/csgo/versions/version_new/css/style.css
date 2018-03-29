@@ -1783,11 +1783,15 @@ tbody.collapse.in {
         color: #fff; }
 
 .mCustomScrollBox.dark-portfolio .mCSB_scrollTools_vertical {
+  opacity: 1 !important;
   width: 14px;
   margin: 0;
   background: #391658;
   -webkit-border-radius: 10px;
           border-radius: 10px; }
+
+.mCustomScrollBox.dark-portfolio .mCSB_scrollTools_vertical .mCSB_draggerRail {
+  width: 14px !important; }
 
 .mCustomScrollBox.dark-portfolio .mCSB_scrollTools_vertical .mCSB_draggerContainer .mCSB_dragger_bar {
   width: 14px;
