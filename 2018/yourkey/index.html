@@ -9,7 +9,6 @@
         
         <link rel="stylesheet" href="css/libs/slick.css">
         <link rel="stylesheet" href="css/libs/slick-theme.css">
-        <link rel="stylesheet" href="css/libs/aos.css">
         <link rel="stylesheet" href="css/style.css">
 
 
@@ -28,7 +27,15 @@
                 <div class="offcanvas-logo">
                     <a href="index.html"><img src="img/logo.png" alt="Ваш ключ" class="offcanvas-logo-img"></a>
                 </div>
-                <button class="offcanvas-close">&times;</button>
+
+                <ul class="offcanvas-contact">
+                    <li><a href="tel:+74953074366">+7 (495) 307-43-66 <img src="img/icons/icon-whatsup.png" class="icon-messenger" alt="whatsup"></a></li>
+                    <li><a href="tel:+79263724874">+7 (926) 372-48-74</a></li>
+                </ul>
+                
+                <div class="offcanvas-close-wrap">
+                    <button class="offcanvas-close">&times;</button>
+                </div>
             </div>
             <div class="offcanvas-body">
                 <ul class="offcanvas-menu">
@@ -51,19 +58,13 @@
                     <li><a href="#link">Контакты</a></li>
                 </ul>
             </div>
-            <div class="offcanvas-footer">
-                <ul class="offcanvas-contact">
-                    <li><a href="tel:+74953074366">+7 (495) 307-43-66 <img src="img/icons/icon-whatsup.png" alt="whatsup"></a></li>
-                    <li><a href="tel:+79263724874">+7 (926) 372-48-74</a></li>
-                </ul>
-            </div>
         </div>
 
 
         <div class="wrapper">
             <div class="upper-part">
 
-                <header class="header-box" data-aos="fade-down" >
+                <header class="header-box">
                     <div class="container">
                         <div class="row">
                             <div class="header-upper">
@@ -77,16 +78,18 @@
 
                                     <div class="header-contact">
                                         <ul class="header-contact-list">
-                                            <li><a href="tel:+74953074366">+7 (495) 307-43-66 <img src="img/icons/icon-whatsup.png" alt="whatsup"></a></li>
+                                            <li><a href="tel:+74953074366">+7 (495) 307-43-66 <img src="img/icons/icon-whatsup.png" class="icon-messenger" alt="whatsup"></a></li>
                                             <li><a href="tel:+79263724874">+7 (926) 372-48-74</a></li>
                                         </ul>
                                    </div>
 
-                                   <button class="header-toggle">
-                                       <span></span>
-                                       <span></span>
-                                       <span></span>
-                                   </button>
+                                   <div class="header-toggle-wrap">
+                                       <button class="header-toggle">
+                                           <span></span>
+                                           <span></span>
+                                           <span></span>
+                                       </button>
+                                   </div>
                                 </div>
                            </div>
                         </div>
@@ -122,7 +125,7 @@
                  
                 </header>
                 <main>
-                    <section class="section-hero" data-aos="fade-up" >
+                    <section class="section-hero" >
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -152,86 +155,93 @@
                         <div class="container">
                             <div class="row">
                                 <div class="services-grid">
-                                    <div class="service-item col-xs-12" data-aos="fade-up" >
+                                    <div class="service-item col-xs-12" >
                                         <div class="service-card service-card-large">
+                                            <a href="#link" class="service-link"></a>
                                             <div class="service-aside">
-                                                <img src="img/page-home/services/service-item-1.jpg" alt="" class="service-thumbnail">
+                                                <img src="img/page-home/services/service-icon-1.png" alt="Дверные ключи" class="service-thumbnail">
                                             </div>
                                             <div class="service-inner">
                                                 <h2 class="service-title">Дверные ключи</h2>
-                                                <a href="#link" class="service-btn">Подробнее</a>
+                                                <p class="service-btn">Подробнее</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="service-item col-xs-12" data-aos="fade-up" data-aos-delay="200" >
+                                    <div class="service-item col-xs-12"  >
                                         <div class="service-card service-card-extraLarge">
+                                            <a href="#link" class="service-link"></a>
                                             <div class="service-aside">
-                                                <img src="img/page-home/services/service-item-2.jpg" alt="" class="service-thumbnail">
+                                                <img src="img/page-home/services/service-icon-2.png" alt="Автоключи" class="service-thumbnail">
                                             </div>
                                             <div class="service-inner">
                                                 <h2 class="service-title">Автоключи</h2>
-                                                <a href="#link" class="service-btn">Подробнее</a>
+                                                <p class="service-btn">Подробнее</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="service-item col-xs-12" data-aos="fade-up" data-aos-delay="200" >
+                                    <div class="service-item col-xs-12"  >
                                         <div class="service-card service-card-medium">
+                                            <a href="#link" class="service-link"></a>
                                             <div class="service-aside">
-                                                <img src="img/page-home/services/service-item-3.jpg" alt="" class="service-thumbnail">
+                                                <img src="img/page-home/services/service-icon-3.png" alt="Производители замков" class="service-thumbnail">
                                             </div>
                                             <div class="service-inner">
                                                 <h2 class="service-title">Производители замков</h2>
-                                                <a href="#link" class="service-btn">Подробнее</a>
+                                                <p class="service-btn">Подробнее</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="service-item col-xs-12" data-aos="fade-up" data-aos-delay="200" >
+                                    <div class="service-item col-xs-12"  >
                                         <div class="service-card">
+                                            <a href="#link" class="service-link"></a>
                                             <div class="service-aside">
-                                                <img src="img/page-home/services/service-item-4.jpg" alt="" class="service-thumbnail">
+                                                <img src="img/page-home/services/service-icon-4.png" alt="Патентованные ключи сервис-цент" class="service-thumbnail">
                                             </div>
                                             <div class="service-inner">
                                                 <h2 class="service-title"><small>Патентованные ключи</small> сервис-центр</h2>
-                                                <a href="#link" class="service-btn">Подробнее</a>
+                                                <p class="service-btn">Подробнее</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="service-item col-xs-12" data-aos="fade-up" data-aos-delay="200" >
+                                    <div class="service-item col-xs-12"  >
                                         <div class="service-card">
+                                            <a href="#link" class="service-link"></a>
                                             <div class="service-aside">
-                                                <img src="img/page-home/services/service-item-5.jpg" alt="" class="service-thumbnail">
+                                                <img src="img/page-home/services/service-icon-5.png" alt="Пульты для ворот и шлагбаумов" class="service-thumbnail">
                                             </div>
                                             <div class="service-inner">
                                                 <h2 class="service-title">Пульты для ворот <small>и шлагбаумов</small></h2>
-                                                <a href="#link" class="service-btn">Подробнее</a>
+                                                <p class="service-btn">Подробнее</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="service-item col-xs-12" data-aos="fade-up" data-aos-delay="200" >
+                                    <div class="service-item col-xs-12"  >
                                         <div class="service-card">
+                                            <a href="#link" class="service-link"></a>
                                             <div class="service-aside">
-                                                <img src="img/page-home/services/service-item-6.jpg" alt="" class="service-thumbnail">
+                                                <img src="img/page-home/services/service-icon-6.png" alt="Ключи для домофона и системы доступа" class="service-thumbnail">
                                             </div>
                                             <div class="service-inner">
                                                 <h2 class="service-title">Ключи для домофона <small>и системы доступа</small></h2>
-                                                <a href="#link" class="service-btn">Подробнее</a>
+                                                <p class="service-btn">Подробнее</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="service-item col-xs-12" data-aos="fade-up" data-aos-delay="200" >
+                                    <div class="service-item col-xs-12"  >
                                         <div class="service-card service-card-large">
+                                            <a href="#link" class="service-link"></a>
                                             <div class="service-aside">
-                                                <img src="img/page-home/services/service-item-7.jpg" alt="" class="service-thumbnail">
+                                                <img src="img/page-home/services/service-icon-7.png" alt="Аксессуары" class="service-thumbnail">
                                             </div>
                                             <div class="service-inner">
                                                 <h2 class="service-title">Аксессуары</h2>
-                                                <a href="#link" class="service-btn">Подробнее</a>
+                                                <p class="service-btn">Подробнее</p>
                                             </div>
                                         </div>
                                     </div>
@@ -243,13 +253,13 @@
                     <section class="section-steps">
                         <div class="container">
                             <div class="row">
-                                <div class="section-header col-md-12"  data-aos="fade-up" >
+                                <div class="section-header col-md-12"  >
                                     <h2 class="section-title">Не разбираетесь в ключах? присылайте фото, мы поможем!</h2>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="steps-grid">
-                                    <div class="step-item col-xs-12 col-sm-4" data-aos="fade-up" >
+                                    <div class="step-item col-xs-12 col-sm-4" >
                                         <div class="step-card">
                                             <div class="step-header">
                                                 <div class="step-thumbnail">
@@ -262,7 +272,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="step-item col-xs-12 col-sm-4" data-aos="fade-up" data-aos-delay="200" >
+                                    <div class="step-item col-xs-12 col-sm-4"  >
                                         <div class="step-card">
                                             <div class="step-header">
                                                 <div class="step-thumbnail">
@@ -275,7 +285,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="step-item col-xs-12 col-sm-4" data-aos="fade-up"  data-aos-delay="400" >
+                                    <div class="step-item col-xs-12 col-sm-4"   >
                                         <div class="step-card">
                                             <div class="step-header">
                                                 <div class="step-thumbnail">
@@ -295,20 +305,20 @@
                     <section class="section-guide">
                         <div class="container">
                             <div class="row">
-                                <div class="section-header col-md-12" data-aos="fade-up" >
+                                <div class="section-header col-md-12" >
                                     <h2 class="section-title">Фотографируй ключ правильно:</h2>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
                                     <div class="guide-grid">
-                                        <div class="guide-item col-xs-12 col-sm-6" data-aos="fade-up" >
+                                        <div class="guide-item col-xs-12 col-sm-6" >
                                             <div class="guide-card guide-card--true" >
                                                 <img src="img/page-home/guide/guide-item-1.png" alt="Правильная фотография ключа">
                                             </div>
                                         </div>
 
-                                        <div class="guide-item col-xs-12 col-sm-6" data-aos="fade-up" data-aos-delay="200" >
+                                        <div class="guide-item col-xs-12 col-sm-6"  >
                                             <div class="guide-card guide-card--false" >
                                                 <img src="img/page-home/guide/guide-item-2.png" alt="Неправильная фотография ключа">
                                             </div>
@@ -320,7 +330,7 @@
                     </section>
 
                     <section class="section-map">
-                        <div id="map" data-aos="fade-up" ></div>
+                        <div id="map" ></div>
                     </section>
 
                 </main>
@@ -330,7 +340,7 @@
                    <div class="container">
                        <div class="row">
                            <div class="col-xs-12 col-sm-4 col-md-3">
-                               <div class="footer-block" data-aos="fade-up" >
+                               <div class="footer-block" >
                                    <h4 class="footer-block-title">информация</h4>
                                    <ul class="footer-block-menu">
                                        <li><a href="#link">Новости</a></li>
@@ -341,7 +351,7 @@
                            </div>
 
                            <div class="col-xs-12 col-sm-4 col-md-3">
-                               <div class="footer-block" data-aos="fade-up" data-aos-delay="200" >
+                               <div class="footer-block"  >
                                    <h4 class="footer-block-title">Компания</h4>
                                    <ul class="footer-block-menu">
                                        <li><a href="#link">О нас</a></li>
@@ -353,14 +363,14 @@
                            </div>
 
                            <div class="col-xs-12 col-sm-4 col-md-3">
-                               <div class="footer-block" data-aos="fade-up" data-aos-delay="400" >
+                               <div class="footer-block"  >
                                    <h4 class="footer-block-title">Контакты</h4>
                                    <div class="footer-address">Москва, м.Люблино, ТК <br> "Люблинское поле", Тихорецкий б-р, д.1, строение 2А. корпус Т, павильон 109А</div>
                                </div>
                            </div>
 
                            <div class="col-xs-12 col-sm-12 col-md-3">
-                               <div class="footer-block" data-aos="fade-up" data-aos-delay="600" >
+                               <div class="footer-block"  >
                                     <div class="footer-contact">
                                         <ul class="footer-phone-list">
                                             <li><a href="tel:+79853074366">+7 (985) 307-43-66</a></li>
@@ -394,7 +404,6 @@
         <script src="js/libs/bootstrap/dropdown.js" ></script>
 
         <script src="js/libs/slick.js" ></script>
-        <script src="js/libs/aos.js" ></script>
         <script src="js/main.js" ></script>
     </body>
 

@@ -6,8 +6,18 @@ $( document ).ready(function() {
 	}, 100);
 
 
-
     // header
+    // header offset
+    function headerHeight() {
+        return $('.header-box').height();
+    }
+    function headerOffset() {
+        $('body').css('padding-top', headerHeight() );
+    }
+    headerOffset();
+
+
+    // header toogle
     $( ".header-toggle, .offcanvas-close" ).on( "click", function() {
         $('body').toggleClass('offcanvas-open');
         $('.offcanvas').toggleClass('offcanvas-active');
@@ -57,6 +67,13 @@ $( document ).ready(function() {
     //     icon: './img/icons/',
     //     title: 'Ваш ключ'
     // });
+
+
+    // resize window
+    $( window ).resize(function() {
+        // header offset
+        headerOffset();
+    });
             
 
 

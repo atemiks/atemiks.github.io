@@ -15,6 +15,9 @@
 		justify-content: space-between;
 		padding-top: 7px;
 		padding-bottom: 10px;
+		@media (max-width: 991px) {
+			flex-wrap: wrap;
+		}
 	}
 }
 
@@ -22,14 +25,12 @@
 	@media (max-width: 991px) {
 		flex: 1;
 	}
-	@media (max-width: 767px) {
-		position: relative;
-		margin: 0 0 0 -20px;
-	}
 
 	.header-logo-img {
 		max-width: 155px;
 		@media (max-width: 767px) {
+			position: relative;
+			left: -15px;
 			max-width: 105px;
 		}
 	}
@@ -43,7 +44,12 @@
 	color: #fff;
 	text-transform: uppercase;
 	@media (max-width: 991px) {
-		display: none;
+		flex: 1 0 100%;
+		width: 100%;
+		order: 4;
+		margin: 10px 0 0;
+		padding: 0;
+		text-align: center;
 	}
 
 	.header-tagline-title {
@@ -53,6 +59,10 @@
 		@media (max-width: 1199px) {
 			padding: 0 15px;
 			font-size: 16px;
+		}
+		@media (max-width: 767px) {
+			padding: 0;
+			font-size: 12px;
 		}
 	}
 }
@@ -69,7 +79,7 @@
 	@media (max-width: 767px) {
 		padding: 0 10px;
 	}
-	@media (max-width: 320px) {
+	@media (max-width: 325px) {
 		padding: 0 5px;
 	}
 
@@ -90,8 +100,11 @@
 				}
 			}
 
-			img {
+			.icon-messenger {
 				vertical-align: middle;
+				@media (max-width: 991px) {
+					display: none;
+				}
 			}
 		}
 	}
@@ -170,21 +183,26 @@
 
 
 // header mobile
-.header-toggle {
+.header-toggle-wrap {
 	display: none;
+	text-align: right;
+	@media (max-width: 991px) {
+		display: block;
+		flex: 1;
+	}
+
+}
+.header-toggle {
+	display: inline-block;
 	width: 32px;
-	margin: 0;
+	margin: 5px 0;
 	padding: 0;
 	border: none;
 	border-radius: 0;
 	background: none;
-	@media (max-width: 991px) {
-		display: block;
-		flex: 0 0 32px;
-	}
-
 	span {
 		display: block;
+		width: 32px;
 		height: 2px;
 		margin: 8px 0;
 		background: $danger;
@@ -212,6 +230,8 @@
 	}
 
 	.offcanvas-header {
+		display: flex;
+		align-items: center;
 		padding: 10px 15px;
 	}
 	.offcanvas-body {
@@ -220,7 +240,10 @@
 	.offcanvas-footer {
 		padding: 10px 15px;
 	}
-
+	
+	.offcanvas-close-wrap {
+		flex: 1;
+	}
 	.offcanvas-close {
 		position: absolute;
 		top: 0;
@@ -237,10 +260,15 @@
 	}
 
 	.offcanvas-logo {
-		position: relative;
-		left: -20px;
+		flex: 1;
 		.offcanvas-logo-img {
+			position: relative;
+			left: -20px;
 			width: 155px;
+			@media (max-width: 767px) {
+				left: -15px;
+				max-width: 105px;
+			}
 		}
 	}
 
@@ -284,14 +312,20 @@
 
 	.offcanvas-contact {
 		@extend .reset-list;
+		flex: 0 0 auto;
 		text-align: center;
 		li {
-			padding: 5px 0;
 			a {
 				font-size: 16px;
 				font-weight: 600;
 				color: #000;
 				text-decoration: none;
+				.icon-messenger {
+					vertical-align: middle;
+					@media (max-width: 991px) {
+						display: none;
+					}
+				}
 			}
 		}
 	}

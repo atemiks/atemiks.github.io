@@ -1649,8 +1649,9 @@ img {
       margin-bottom: 0; } }
   .services-grid .service-item:nth-child(2n+2) .service-card {
     background: #af5458; }
+    .services-grid .service-item:nth-child(2n+2) .service-card:hover {
+      background: #9f4a4e; }
     .services-grid .service-item:nth-child(2n+2) .service-card .service-btn {
-      background-image: url("../img/page-home/services/service-btn-danger.jpg");
       color: #af5458; }
 
 .service-card {
@@ -1659,9 +1660,13 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   min-height: 250px;
   margin: 0 0 20px;
-  background: #6f9ab2; }
+  background: #6f9ab2;
+  -webkit-transition: background-color 300ms ease;
+  -o-transition: background-color 300ms ease;
+  transition: background-color 300ms ease; }
   @media (max-width: 1199px) {
     .service-card {
       min-height: 200px; } }
@@ -1671,6 +1676,15 @@ img {
   @media (max-width: 767px) {
     .service-card {
       min-height: 95px; } }
+  .service-card:hover {
+    background: #5e8ea9; }
+  .service-card .service-link {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .service-card .service-aside {
     position: relative;
     -webkit-box-flex: 0;
@@ -1694,7 +1708,7 @@ img {
       position: absolute;
       left: 0;
       bottom: 0;
-      max-width: initial;
+      max-width: 425px;
       max-height: 100%; }
       @media (max-width: 767px) {
         .service-card .service-aside .service-thumbnail {
@@ -1725,7 +1739,7 @@ img {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-height: 160px;
+    min-height: 140px;
     margin: 0;
     font-family: "FuturicaBlack", sans-serif;
     font-size: 56px;
@@ -1742,6 +1756,7 @@ img {
     @media (max-width: 767px) {
       .service-card .service-title {
         min-height: 60px;
+        padding: 10px 0;
         font-size: 16px;
         letter-spacing: .5px;
         line-height: 1.3; } }
@@ -1750,7 +1765,7 @@ img {
     width: 452px;
     height: 64px;
     padding: 0 50px;
-    background: url("../img/page-home/services/service-btn-primary.jpg") no-repeat center top;
+    background: url("../img/page-home/services/service-btn.svg") no-repeat center top;
     -webkit-background-size: contain;
             background-size: contain;
     font-family: "FuturicaBlack", sans-serif;
@@ -1777,9 +1792,10 @@ img {
       .service-card .service-btn {
         width: 158px;
         height: 24px;
+        margin: 5px 0;
         padding: 0 25px;
         font-size: 12px;
-        line-height: 20px; } }
+        line-height: 22px; } }
   .service-card.service-card-medium .service-title {
     font-size: 50px; }
     @media (max-width: 1199px) {
@@ -1972,6 +1988,11 @@ img {
             justify-content: space-between;
     padding-top: 7px;
     padding-bottom: 10px; }
+    @media (max-width: 991px) {
+      .header-box .header-upper-inner {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; } }
 
 @media (max-width: 991px) {
   .header-logo {
@@ -1980,15 +2001,12 @@ img {
         -ms-flex: 1;
             flex: 1; } }
 
-@media (max-width: 767px) {
-  .header-logo {
-    position: relative;
-    margin: 0 0 0 -20px; } }
-
 .header-logo .header-logo-img {
   max-width: 155px; }
   @media (max-width: 767px) {
     .header-logo .header-logo-img {
+      position: relative;
+      left: -15px;
       max-width: 105px; } }
 
 .header-tagline {
@@ -2000,7 +2018,18 @@ img {
   text-transform: uppercase; }
   @media (max-width: 991px) {
     .header-tagline {
-      display: none; } }
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 0 100%;
+          -ms-flex: 1 0 100%;
+              flex: 1 0 100%;
+      width: 100%;
+      -webkit-box-ordinal-group: 5;
+      -webkit-order: 4;
+          -ms-flex-order: 4;
+              order: 4;
+      margin: 10px 0 0;
+      padding: 0;
+      text-align: center; } }
   .header-tagline .header-tagline-title {
     margin: 5px;
     padding: 0 20px;
@@ -2009,6 +2038,10 @@ img {
       .header-tagline .header-tagline-title {
         padding: 0 15px;
         font-size: 16px; } }
+    @media (max-width: 767px) {
+      .header-tagline .header-tagline-title {
+        padding: 0;
+        font-size: 12px; } }
 
 .header-contact {
   position: relative;
@@ -2025,7 +2058,7 @@ img {
   @media (max-width: 767px) {
     .header-contact {
       padding: 0 10px; } }
-  @media (max-width: 320px) {
+  @media (max-width: 325px) {
     .header-contact {
       padding: 0 5px; } }
   .header-contact .header-contact-list {
@@ -2039,8 +2072,11 @@ img {
       text-decoration: none; }
       .header-contact .header-contact-list li a:hover {
         color: #000; }
-    .header-contact .header-contact-list li img {
+    .header-contact .header-contact-list li .icon-messenger {
       vertical-align: middle; }
+      @media (max-width: 991px) {
+        .header-contact .header-contact-list li .icon-messenger {
+          display: none; } }
 
 @media (max-width: 991px) {
   .header-nav {
@@ -2102,24 +2138,29 @@ img {
       text-decoration: none;
       border-bottom: 1px solid #f3f3f3; }
 
-.header-toggle {
+.header-toggle-wrap {
   display: none;
+  text-align: right; }
+  @media (max-width: 991px) {
+    .header-toggle-wrap {
+      display: block;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; } }
+
+.header-toggle {
+  display: inline-block;
   width: 32px;
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
   border: none;
   -webkit-border-radius: 0;
           border-radius: 0;
   background: none; }
-  @media (max-width: 991px) {
-    .header-toggle {
-      display: block;
-      -webkit-box-flex: 0;
-      -webkit-flex: 0 0 32px;
-          -ms-flex: 0 0 32px;
-              flex: 0 0 32px; } }
   .header-toggle span {
     display: block;
+    width: 32px;
     height: 2px;
     margin: 8px 0;
     background: #c30b15; }
@@ -2145,11 +2186,24 @@ img {
         -ms-transform: translateX(0);
             transform: translateX(0); }
   .offcanvas .offcanvas-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px 15px; }
   .offcanvas .offcanvas-body {
     padding: 10px 15px; }
   .offcanvas .offcanvas-footer {
     padding: 10px 15px; }
+  .offcanvas .offcanvas-close-wrap {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
   .offcanvas .offcanvas-close {
     position: absolute;
     top: 0;
@@ -2165,10 +2219,18 @@ img {
     color: #000;
     text-align: center; }
   .offcanvas .offcanvas-logo {
-    position: relative;
-    left: -20px; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
     .offcanvas .offcanvas-logo .offcanvas-logo-img {
+      position: relative;
+      left: -20px;
       width: 155px; }
+      @media (max-width: 767px) {
+        .offcanvas .offcanvas-logo .offcanvas-logo-img {
+          left: -15px;
+          max-width: 105px; } }
   .offcanvas .offcanvas-menu > li > a {
     display: block;
     padding: 10px 0;
@@ -2191,14 +2253,21 @@ img {
       border-bottom: none;
       text-decoration: underline; }
   .offcanvas .offcanvas-contact {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     text-align: center; }
-    .offcanvas .offcanvas-contact li {
-      padding: 5px 0; }
-      .offcanvas .offcanvas-contact li a {
-        font-size: 16px;
-        font-weight: 600;
-        color: #000;
-        text-decoration: none; }
+    .offcanvas .offcanvas-contact li a {
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      text-decoration: none; }
+      .offcanvas .offcanvas-contact li a .icon-messenger {
+        vertical-align: middle; }
+        @media (max-width: 991px) {
+          .offcanvas .offcanvas-contact li a .icon-messenger {
+            display: none; } }
 
 .footer-box {
   min-height: 430px;
