@@ -3205,6 +3205,7 @@ table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   margin: -5px -35px;
   width: -webkit-calc(100% + 70px);
   width: calc(100% + 70px); }
@@ -3222,7 +3223,8 @@ table {
         padding: 0 25px; } }
     @media (max-width: 767px) {
       .portfolio-grid .portfolio-col {
-        border: none; } }
+        border: none;
+        width: 90%; } }
     .portfolio-grid .portfolio-col:nth-child(2n+2) {
       border-right: none; }
     .portfolio-grid .portfolio-col .portfolio-col-title {

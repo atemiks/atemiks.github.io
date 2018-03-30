@@ -773,6 +773,7 @@
 
 .portfolio-grid {
 	display: flex;
+	overflow: hidden;
 	margin: -5px -35px;
 	width: calc(100% + 70px);
 	@media (max-width: 1024px) {
@@ -790,6 +791,7 @@
 		}
 		@media (max-width: 767px) {
 			border: none;
+			width: 90%;
 		}
 
 		&:nth-child(2n+2) {
