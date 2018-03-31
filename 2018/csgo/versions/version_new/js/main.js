@@ -1,5 +1,8 @@
 $( document ).ready(function() {
 
+
+	var currentWidth = $(window).width();
+
 	// preloader
 	setTimeout(function() {
 		var preloader = document.getElementById('page-preloader');
@@ -102,33 +105,52 @@ $( document ).ready(function() {
 
 
 
+	// custom scroll
+	function customScroll() {
+		 $(".portfolio-block").mCustomScrollbar({
+		 	theme:"dark dark-portfolio",
+		 	axis:"y",
+		 	advanced: {
+		 		updateOnContentResize: true
+		 	}
+		 });
+		 $(".testimonial-body").mCustomScrollbar({
+		 	theme:"dark dark-testimonials",
+		 	axis:"y",
+		 	advanced:{
+			    updateOnContentResize: true,
+			    updateOnImageLoad: true
+			 }
+		 });
 
+		 $(".extention-description-inner").mCustomScrollbar({
+		 	theme:"dark dark-portfolio",
+		 	axis:"y",
+		 	advanced: {
+		 		updateOnContentResize: true
+		 	}
+		 });
+	}
+
+	function customScrollDestroy() {
+		$('.portfolio-block, .testimonial-body, .extention-description-inner').mCustomScrollbar("destroy");
+	}
+
+	function customScrollInit() {
+		if (currentWidth < 1024) {
+			console.log('scroll destroy');
+			customScrollDestroy();
+		}
+		else {
+			console.log('scroll init');
+			customScroll();
+		}
+	}
+
+	customScrollInit();
 
 
 	 
-	 $(".portfolio-block").mCustomScrollbar({
-	 	theme:"dark dark-portfolio",
-	 	axis:"y",
-	 	advanced: {
-	 		updateOnContentResize: true
-	 	}
-	 });
-	 $(".testimonial-body").mCustomScrollbar({
-	 	theme:"dark dark-testimonials",
-	 	axis:"y",
-	 	advanced:{
-		    updateOnContentResize: true,
-		    updateOnImageLoad: true
-		 }
-	 });
-
-	 $(".extention-description-inner").mCustomScrollbar({
-	 	theme:"dark dark-portfolio",
-	 	axis:"y",
-	 	advanced: {
-	 		updateOnContentResize: true
-	 	}
-	 });
 
 	
 
@@ -178,6 +200,11 @@ $( document ).ready(function() {
 
 	$( window ).resize(function() {
 	   faqTabHeight();
+	});
+
+	$( window ).resize(function() {
+		currentWidth = $(window).width();
+		customScrollInit();
 	});
 	
 

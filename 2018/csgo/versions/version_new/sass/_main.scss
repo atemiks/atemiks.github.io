@@ -813,6 +813,10 @@
 
 .portfolio-block {
 	height: 320px;
+	@media (max-width: 1024px) {
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
 }
 
 
@@ -968,12 +972,18 @@
 	}
 
 	.testimonial-body {
+		overflow: hidden;
 		position: relative;
 		height: 91px;
 		padding: 0 15px 0 15px;
 		font-size: 15px;
 		font-weight: 500;
 		line-height: 1.2;
+		@media (max-width: 1024px) {
+			overflow-y: scroll;
+			-webkit-overflow-scrolling: touch;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;

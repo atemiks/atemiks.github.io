@@ -3239,6 +3239,10 @@ table {
 
 .portfolio-block {
   height: 320px; }
+  @media (max-width: 1024px) {
+    .portfolio-block {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch; } }
 
 .work-block {
   margin: 0 70px 30px 0;
@@ -3382,12 +3386,17 @@ table {
       .testimonial-card .testimonial-inner {
         padding-left: 40px; } }
   .testimonial-card .testimonial-body {
+    overflow: hidden;
     position: relative;
     height: 91px;
     padding: 0 15px 0 15px;
     font-size: 15px;
     font-weight: 500;
     line-height: 1.2; }
+    @media (max-width: 1024px) {
+      .testimonial-card .testimonial-body {
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch; } }
     .testimonial-card .testimonial-body:before {
       content: '';
       position: absolute;
@@ -4054,6 +4063,7 @@ table {
       .section-extention-display .extention-description .extention-description-title {
         font-size: 18px; } }
   .section-extention-display .extention-description .extention-description-inner {
+    overflow: hidden;
     height: 240px;
     font-size: 16px;
     font-weight: 500;
@@ -4081,6 +4091,10 @@ table {
         height: 280px;
         font-size: 20px;
         line-height: 1.15; } }
+    @media (max-width: 1024px) {
+      .section-extention-display .extention-description .extention-description-inner {
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch; } }
     @media (max-width: 767px) {
       .section-extention-display .extention-description .extention-description-inner {
         height: 210px; } }
