@@ -1352,6 +1352,13 @@ tbody.collapse.in {
   font-style: normal; }
 
 @font-face {
+  font-family: 'Roboto Condensed';
+  src: url("../fonts/RobotoCondensed-Regular/RobotoCondensed-Regular.eot");
+  src: url("../fonts/RobotoCondensed-Regular/RobotoCondensed-Regular.eot#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-Regular/RobotoCondensed-Regular.ttf") format("truetype"), url("../fonts/RobotoCondensed-Regular/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular/RobotoCondensed-Regular.svg#RobotoCondensed-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot");
   src: url("../fonts/icomoon/icomoon.eot#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf") format("truetype"), url("../fonts/icomoon/icomoon.woff") format("woff"), url("../fonts/icomoon/icomoon.svg#icomoon") format("svg");
@@ -1473,6 +1480,14 @@ section {
   padding-top: 20px;
   padding-bottom: 20px; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif; }
+
 h2,
 .h2,
 .footer-block-title {
@@ -1561,6 +1576,7 @@ img {
 .section-header {
   text-align: center; }
   .section-header .section-title {
+    font-family: "Roboto Condensed", sans-serif;
     color: #333;
     font-weight: 400;
     text-transform: uppercase; }
