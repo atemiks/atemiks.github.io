@@ -46,7 +46,7 @@ $( document ).ready(function() {
 
 	// header toogle
     $( ".header-toggle, .offcanvas-close, .offcanvas-menu li a" ).on( "click", function() {
-        $('body').toggleClass('offcanvas-open');
+        $('html, body').toggleClass('offcanvas-open');
         $('.offcanvas').toggleClass('offcanvas-active');
     });
 
