@@ -1,0 +1,22 @@
+.reset-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.gradient-vertical-primary {
+	background-image: linear-gradient(to top, #506c84 0%, #506c84 1%, #274966 100%);
+}
+
+.text-gradient {
+	background-image: -moz-linear-gradient(bottom, #506c84 0%, #506c84 1%, #274966 100%);
+	background-image: -webkit-linear-gradient(bottom, #506c84 0%, #506c84 1%, #274966 100%);
+	background-image: -o-linear-gradient(bottom, #506c84 0%, #506c84 1%, #274966 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.transition {
+	transition: 300ms ease;
+}

@@ -1,0 +1,30 @@
+.sprite {
+    display: inline-block;
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.sprite-icon-location {
+    width: 74px;
+    height: 95px;
+    background-position: -10px -10px;
+}
+
+.sprite-icon-location-info {
+    width: 22px;
+    height: 28px;
+    background-position: -104px -10px;
+}
+
+.sprite-icon-location-primary {
+    width: 22px;
+    height: 28px;
+    background-position: -104px -58px;
+}
+
+.sprite-icon-location-white {
+    width: 22px;
+    height: 28px;
+    background-position: -104px -106px;
+}
