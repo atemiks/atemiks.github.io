@@ -493,8 +493,11 @@
 	}
 }
 #map {
-	height: 485px;
+	height: 630px;
 	width: 100%;
+	@media (max-width: 1024px) {
+		height: 485px;
+	}
 	@media (max-width: 767px) {
 		height: 320px;
 	}

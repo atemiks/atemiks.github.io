@@ -2423,8 +2423,11 @@ input[type="checkbox"] + label .custom-check-value {
     color: #fff; }
 
 #map {
-  height: 485px;
+  height: 630px;
   width: 100%; }
+  @media (max-width: 1024px) {
+    #map {
+      height: 485px; } }
   @media (max-width: 767px) {
     #map {
       height: 320px; } }
@@ -2666,9 +2669,9 @@ input[type="checkbox"] + label .custom-check-value {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 230px;
-      -ms-flex: 0 0 230px;
-          flex: 0 0 230px;
+  -webkit-flex: 0 0 240px;
+      -ms-flex: 0 0 240px;
+          flex: 0 0 240px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -2962,8 +2965,6 @@ input[type="checkbox"] + label .custom-check-value {
             -webkit-flex: 1 1 100%;
                 -ms-flex: 1 1 100%;
                     flex: 1 1 100%; } }
-  .footer-box .callback-box {
-    min-height: 150px; }
 
 .footer-logo {
   float: left;
