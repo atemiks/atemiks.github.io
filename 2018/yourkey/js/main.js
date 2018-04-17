@@ -13,20 +13,20 @@ $( document ).ready(function() {
 
     // header toogle
     $( ".header-toggle, .offcanvas-close" ).on( "click", function() {
-        $('html').toggleClass('overflow');
-        $('body').toggleClass('offcanvas-open');
+        // $('html').toggleClass('overflow');
+        $('html, body').toggleClass('offcanvas-open');
         $('.offcanvas').toggleClass('offcanvas-active');
     });
 
     $(document).mouseup(function(e) {
-        var offcanvasMenu = $('.offcanvas, .header-toggle');
+        var offcanvasMenu = $('.offcanvas-inner, .header-toggle');
         if ( !offcanvasMenu.is(e.target) && offcanvasMenu.has(e.target).length === 0 ) {
-            console.log('true');
-            $('html').toggleClass('overflow');
-            $('body').toggleClass('offcanvas-open');
+            // console.log('true');
+            // $('html').toggleClass('overflow');
+            $('html, body').toggleClass('offcanvas-open');
             $('.offcanvas').toggleClass('offcanvas-active');
         }
-        console.log('false');
+        // console.log('false');
     });
 
 

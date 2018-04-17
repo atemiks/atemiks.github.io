@@ -18,26 +18,26 @@ body {
 }
 
 .overflow {
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 .offcanvas-open {
 	overflow: hidden;
 	position: relative;
-	&:before {
-		cursor: pointer;
-		content: '';
-		position: absolute;
-		z-index: 100;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		height: 100vh;
-		width: 100vw;
-		background: rgba(#000, .7);
-		pointer-events: all;
-	}
+	// &:before {
+	// 	cursor: pointer;
+	// 	content: '';
+	// 	position: absolute;
+	// 	z-index: 100;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	height: 100vh;
+	// 	width: 100vw;
+	// 	background: rgba(#000, .7);
+	// 	pointer-events: all;
+	// }
 }
 
 section {

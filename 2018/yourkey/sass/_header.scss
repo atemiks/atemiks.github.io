@@ -217,21 +217,32 @@
 	@extend .transition;
 	visibility: hidden;
 	opacity: 0;
-	overflow-y: scroll;
 	position: fixed;
 	z-index: 999;
 	top: 0;
+	left: 0;
 	right: 0;
-	width: 80%;
-	max-width: 280px;
-	height: 100%;
-	background: #fff;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(#000, .8);
 	transform: translateX(100%);
-	-webkit-overflow-scrolling: touch;
 	&.offcanvas-active {
 		visibility: visible;
 		opacity: 1;
 		transform: translateX(0);
+	}
+
+	.offcanvas-inner {
+		position: fixed;
+		overflow-y: scroll;
+		top: 0;
+		right: 0;
+		width: 80%;
+		max-width: 280px;
+		height: 100%;
+		background: #fff;
+		-webkit-overflow-scrolling: touch;
 	}
 
 	.offcanvas-header {
