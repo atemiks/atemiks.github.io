@@ -17,14 +17,14 @@ $( document ).ready(function() {
         $('.offcanvas').toggleClass('offcanvas-active');
     });
 
-    $('.offcanvas').click(function(e) {
-        console.log(this);
-        var offcanvasMenu = $('.offcanvas-inner, .header-toggle');
-        if ( !offcanvasMenu.is(e.target) && offcanvasMenu.has(e.target).length === 0 ) {
-            $('html, body').toggleClass('offcanvas-open');
-            $('.offcanvas').toggleClass('offcanvas-active');
-        }
-    });
+    // $('.offcanvas').click(function(e) {
+    //     console.log(this);
+    //     var offcanvasMenu = $('.offcanvas-inner, .header-toggle');
+    //     if ( !offcanvasMenu.is(e.target) && offcanvasMenu.has(e.target).length === 0 ) {
+    //         $('html, body').toggleClass('offcanvas-open');
+    //         $('.offcanvas').toggleClass('offcanvas-active');
+    //     }
+    // });
 
 
 

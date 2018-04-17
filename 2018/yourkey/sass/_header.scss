@@ -218,6 +218,7 @@
 	visibility: hidden;
 	opacity: 0;
 	position: fixed;
+	overflow: hidden;
 	z-index: 999;
 	top: 0;
 	left: 0;
@@ -225,7 +226,7 @@
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(#000, .8);
+	// background: rgba(#000, .8);
 	transform: translateX(100%);
 	&.offcanvas-active {
 		visibility: visible;
@@ -233,9 +234,23 @@
 		transform: translateX(0);
 	}
 
+	.offcanvas-close {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(#000, .8);
+	}
+
 	.offcanvas-inner {
 		position: fixed;
+		z-index: 2;
 		overflow-y: scroll;
+		// position: fixed;
+		// overflow-y: scroll;
 		top: 0;
 		right: 0;
 		width: 80%;
@@ -264,20 +279,20 @@
 	.offcanvas-close-wrap {
 		flex: 1;
 	}
-	.offcanvas-close {
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 40px;
-		margin: 0;
-		padding: 0;
-		border: none;
-		border-radius: 0;
-		background: none;
-		font-size: 30px;
-		color: #000;
-		text-align: center;
-	}
+	// .offcanvas-close {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	right: 0;
+	// 	width: 40px;
+	// 	margin: 0;
+	// 	padding: 0;
+	// 	border: none;
+	// 	border-radius: 0;
+	// 	background: none;
+	// 	font-size: 30px;
+	// 	color: #000;
+	// 	text-align: center;
+	// }
 
 	.offcanvas-logo {
 		flex: 1;

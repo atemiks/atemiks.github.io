@@ -2187,6 +2187,7 @@ img {
   visibility: hidden;
   opacity: 0;
   position: fixed;
+  overflow: hidden;
   z-index: 999;
   top: 0;
   left: 0;
@@ -2194,7 +2195,6 @@ img {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%); }
@@ -2204,8 +2204,18 @@ img {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0); }
+  .offcanvas .offcanvas-close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); }
   .offcanvas .offcanvas-inner {
     position: fixed;
+    z-index: 2;
     overflow-y: scroll;
     top: 0;
     right: 0;
@@ -2235,20 +2245,6 @@ img {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-  .offcanvas .offcanvas-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    -webkit-border-radius: 0;
-            border-radius: 0;
-    background: none;
-    font-size: 30px;
-    color: #000;
-    text-align: center; }
   .offcanvas .offcanvas-logo {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
