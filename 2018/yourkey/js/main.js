@@ -18,13 +18,15 @@ $( document ).ready(function() {
         $('.offcanvas').toggleClass('offcanvas-active');
     });
 
-    $(document).on(function(e) {
+    $(document).mouseup(function(e) {
         var offcanvasMenu = $('.offcanvas, .header-toggle');
         if ( !offcanvasMenu.is(e.target) && offcanvasMenu.has(e.target).length === 0 ) {
-             $('html').toggleClass('overflow');
+            console.log('true');
+            $('html').toggleClass('overflow');
             $('body').toggleClass('offcanvas-open');
             $('.offcanvas').toggleClass('offcanvas-active');
         }
+        console.log('false');
     });
 
 

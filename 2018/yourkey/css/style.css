@@ -1478,6 +1478,7 @@ body {
   overflow: hidden;
   position: relative; }
   .offcanvas-open:before {
+    cursor: pointer;
     content: '';
     position: absolute;
     z-index: 100;
@@ -1487,7 +1488,8 @@ body {
     bottom: 0;
     height: 100vh;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.7); }
+    background: rgba(0, 0, 0, 0.7);
+    pointer-events: all; }
 
 section {
   position: relative;
