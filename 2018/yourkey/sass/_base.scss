@@ -21,6 +21,10 @@ body {
 	overflow: hidden;
 	position: relative;
 }
+body.offcanvas-open {
+	position: fixed;
+	width: 100%;
+}
 
 section {
 	position: relative;
