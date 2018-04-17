@@ -19,14 +19,15 @@ $( document ).ready(function() {
     });
 
     $('body').on('click', function(e) {
-        var offcanvasMenu = $('.offcanvas-inner, .header-toggle');
-        if ( !offcanvasMenu.is(e.target) && offcanvasMenu.has(e.target).length === 0 ) {
-            // console.log('true');
-            // $('html').toggleClass('overflow');
-            $('html, body').toggleClass('offcanvas-open');
-            $('.offcanvas').toggleClass('offcanvas-active');
-        }
-        // console.log('false');
+        alert('hello');
+        // var offcanvasMenu = $('.offcanvas-inner, .header-toggle');
+        // if ( !offcanvasMenu.is(e.target) && offcanvasMenu.has(e.target).length === 0 ) {
+        //     // console.log('true');
+        //     // $('html').toggleClass('overflow');
+        //     $('html, body').toggleClass('offcanvas-open');
+        //     $('.offcanvas').toggleClass('offcanvas-active');
+        // }
+        // // console.log('false');
     });
 
 
