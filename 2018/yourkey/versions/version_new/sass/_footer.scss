@@ -1,0 +1,86 @@
+.footer-box {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background: #41505a;
+	@media (max-width: 767px) {
+		text-align: center;
+	}
+	
+	color: #fff;
+	a {
+		color: #fff;
+		&:hover {
+			color: darken(#fff, 15%);
+			text-decoration: none;
+		}
+	}
+}
+
+.footer-block {
+	margin: 0 0 30px;
+}
+.footer-block-title {
+	@extend .h2;
+	margin: 0 0 .6em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.footer-block-menu,
+.footer-phone-list,
+.footer-email-list,
+.footer-hourswork {
+	@extend .reset-list;
+}
+
+.footer-block-menu {
+	li {
+		padding: 4px 0;
+	}
+}
+
+
+.footer-contact {
+	line-height: 1.2;
+	text-align: right;
+	@media (max-width: 991px) {
+		text-align: center;
+	}
+}
+
+.footer-address {
+	padding: 4px 0;
+	@media (max-width: 1199px) {
+		font-size: 14px;
+	} 
+}
+
+.footer-phone-list {
+	@extend .h3;
+	font-weight: 700;
+	@media (max-width: 1199px) {
+		font-size: 20px;
+	}
+
+	li {
+		@media (max-width: 1199px) {
+			padding: 5px 0;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.footer-email-list {
+	@extend .h3;
+	margin: 20px 0;
+	@media (max-width: 1199px) {
+		font-size: 20px;
+	}
+}
+
+.footer-hourswork {
+	font-size: 18px;
+}
