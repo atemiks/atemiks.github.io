@@ -13,13 +13,15 @@ $( document ).ready(function() {
 
     // header toogle
     $( ".header-toggle, .offcanvas-close" ).on( "click", function() {
+        $('html').toggleClass('overflow');
         $('body').toggleClass('offcanvas-open');
         $('.offcanvas').toggleClass('offcanvas-active');
     });
 
-    $(document).mouseup(function(e) {
+    $(document).on(function(e) {
         var offcanvasMenu = $('.offcanvas, .header-toggle');
         if ( !offcanvasMenu.is(e.target) && offcanvasMenu.has(e.target).length === 0 ) {
+             $('html').toggleClass('overflow');
             $('body').toggleClass('offcanvas-open');
             $('.offcanvas').toggleClass('offcanvas-active');
         }
