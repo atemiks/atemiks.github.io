@@ -18,16 +18,16 @@ $( document ).ready(function() {
         $('.offcanvas').toggleClass('offcanvas-active');
     });
 
-    $('.offcanvas').on('click', function() {
-        alert('hello');
-        // var offcanvasMenu = $('.offcanvas-inner, .header-toggle');
-        // if ( !offcanvasMenu.is(e.target) && offcanvasMenu.has(e.target).length === 0 ) {
-        //     // console.log('true');
-        //     // $('html').toggleClass('overflow');
-        //     $('html, body').toggleClass('offcanvas-open');
-        //     $('.offcanvas').toggleClass('offcanvas-active');
-        // }
-        // // console.log('false');
+    $('.offcanvas').click(function(e) {
+        console.log(this);
+        var offcanvasMenu = $('.offcanvas-inner, .header-toggle');
+        if ( !offcanvasMenu.is(e.target) && offcanvasMenu.has(e.target).length === 0 ) {
+            // console.log('true');
+            // $('html').toggleClass('overflow');
+            $('html, body').toggleClass('offcanvas-open');
+            $('.offcanvas').toggleClass('offcanvas-active');
+        }
+        // console.log('false');
     });
 
 
