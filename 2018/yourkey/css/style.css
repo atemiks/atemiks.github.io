@@ -2214,6 +2214,8 @@ img {
     height: 100%;
     background: #fff;
     -webkit-overflow-scrolling: touch; }
+  .offcanvas .dropdown-backdrop {
+    display: none !important; }
   .offcanvas .offcanvas-header {
     display: -webkit-box;
     display: -webkit-flex;
