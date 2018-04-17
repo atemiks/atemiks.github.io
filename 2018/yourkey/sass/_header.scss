@@ -194,7 +194,7 @@
 }
 .header-toggle {
 	display: inline-block;
-	width: 32px;
+	width: 35px;
 	margin: 5px 0;
 	padding: 0;
 	border: none;
@@ -202,10 +202,11 @@
 	background: none;
 	span {
 		display: block;
-		width: 32px;
-		height: 2px;
-		margin: 8px 0;
-		background: $danger;
+		width: 35px;
+		height: 4px;
+		border: 1px solid $danger;
+		margin: 5px 0;
+		background: #fff;
 	}
 }
 
@@ -218,8 +219,9 @@
 	position: fixed;
 	z-index: 999;
 	top: 0;
-	left: 0;
-	width: 100%;
+	right: 0;
+	width: 80%;
+	max-width: 280px;
 	height: 100%;
 	background: #fff;
 	transform: translateX(100%);

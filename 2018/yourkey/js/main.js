@@ -1,11 +1,5 @@
 $( document ).ready(function() {
 
-	// animation
-	setTimeout(function(){
-	  AOS.init();
-	}, 100);
-
-
     // header
     // header offset
     function headerHeight() {
@@ -22,6 +16,15 @@ $( document ).ready(function() {
         $('body').toggleClass('offcanvas-open');
         $('.offcanvas').toggleClass('offcanvas-active');
     });
+
+    $(document).mouseup(function(e) {
+        var offcanvasMenu = $('.offcanvas, .header-toggle');
+        if ( !offcanvasMenu.is(e.target) && offcanvasMenu.has(e.target).length === 0 ) {
+            $('body').toggleClass('offcanvas-open');
+            $('.offcanvas').toggleClass('offcanvas-active');
+        }
+    });
+
 
 
 	// sliders

@@ -19,6 +19,17 @@ body {
 
 .offcanvas-open {
 	overflow: hidden;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(#000, .7);
+	}
 }
 
 section {

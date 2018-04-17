@@ -1472,7 +1472,17 @@ body {
       padding-top: 55px; } }
 
 .offcanvas-open {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
+  .offcanvas-open:before {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); }
 
 section {
   position: relative;
@@ -2167,7 +2177,7 @@ img {
 
 .header-toggle {
   display: inline-block;
-  width: 32px;
+  width: 35px;
   margin: 5px 0;
   padding: 0;
   border: none;
@@ -2176,10 +2186,11 @@ img {
   background: none; }
   .header-toggle span {
     display: block;
-    width: 32px;
-    height: 2px;
-    margin: 8px 0;
-    background: #c30b15; }
+    width: 35px;
+    height: 4px;
+    border: 1px solid #c30b15;
+    margin: 5px 0;
+    background: #fff; }
 
 .offcanvas {
   visibility: hidden;
@@ -2188,8 +2199,9 @@ img {
   position: fixed;
   z-index: 999;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 80%;
+  max-width: 280px;
   height: 100%;
   background: #fff;
   -webkit-transform: translateX(100%);
