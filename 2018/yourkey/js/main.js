@@ -18,7 +18,7 @@ $( document ).ready(function() {
         $('.offcanvas').toggleClass('offcanvas-active');
     });
 
-    $('.offcanvas-inner').on('click', function(e) {
+    $('.offcanvas').on('click', function() {
         alert('hello');
         // var offcanvasMenu = $('.offcanvas-inner, .header-toggle');
         // if ( !offcanvasMenu.is(e.target) && offcanvasMenu.has(e.target).length === 0 ) {
