@@ -26,11 +26,11 @@ $( document ).ready(function() {
     });
 
     // swipe mobile menu
-    $("body").hammer().on("swiperight", function(ev) {
-        if ($(this).hasClass('offcanvas-open')) {
+    $(".offcanvas-inner").hammer().on("swiperight", function(ev) {
+        // if ($(this).hasClass('offcanvas-open')) {
             $('html, body').toggleClass('offcanvas-open');
             $('.offcanvas').toggleClass('offcanvas-active');
-        }
+        // }
     });
 
 
