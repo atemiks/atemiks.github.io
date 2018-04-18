@@ -232,10 +232,10 @@
 	.offcanvas-inner {
 		position: absolute;
 		top: 0;
-		right: 0;
+		right: 0 !important;
 		width: 80%;
 		max-width: 280px;
-		min-height: 100vh;
+		min-height: 100%;
 		background: #fff;
 		-webkit-overflow-scrolling: touch;
 		will-change: transform;
