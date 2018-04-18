@@ -214,11 +214,11 @@
 
 
 .offcanvas {
-    pointer-events: none;
+	    pointer-events: none;
 	// visibility: hidden;
 	// opacity: 0;
 	position: fixed;
-	overflow-y: scroll;
+	overflow: hidden;
 	z-index: 999;
 	top: 0;
 	left: 0;
@@ -231,11 +231,12 @@
 
 	.offcanvas-inner {
 		position: absolute;
+		overflow-y: scroll;
 		top: 0;
-		right: 0 !important;
+		right: 0;
 		width: 80%;
 		max-width: 280px;
-		min-height: 100%;
+		height: 100%;
 		background: #fff;
 		-webkit-overflow-scrolling: touch;
 		will-change: transform;
