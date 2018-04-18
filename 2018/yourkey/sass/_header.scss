@@ -232,14 +232,13 @@
 	.offcanvas-inner {
 		position: absolute;
 		top: 0;
-		right: 0 !important;
+		right: -100% !important;
 		width: 80%;
 		max-width: 280px;
 		min-height: 100%;
 		background: #fff;
 		will-change: transform;
-		transform: translateX(100%);
-		transition: transform 300ms ease;
+		transition: right 300ms ease;
 	}
 
 	&.offcanvas-active {
@@ -249,7 +248,7 @@
 		pointer-events: all;
 		background: rgba(#000, .8);
 		.offcanvas-inner {
-			transform: translateX(0);
+			right: 0 !important;
 		}
 	}
 
