@@ -33,6 +33,17 @@
 }
 
 @font-face {
+  font-family: 'Roboto';
+  src:  url('../fonts/Roboto-Black/Roboto-Black.eot');
+  src:  url('../fonts/Roboto-Black/Roboto-Black.eot#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Black/Roboto-Black.ttf') format('truetype'),
+    url('../fonts/Roboto-Black/Roboto-Black.woff') format('woff'),
+    url('../fonts/Roboto-Black/Roboto-Black.svg#Roboto-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Roboto Condensed';
   src:  url('../fonts/RobotoCondensed-Regular/RobotoCondensed-Regular.eot');
   src:  url('../fonts/RobotoCondensed-Regular/RobotoCondensed-Regular.eot#iefix') format('embedded-opentype'),
@@ -44,6 +55,14 @@
 }
 
 
+
+@font-face {
+  font-family: 'FuturicaBlack';
+  src: url('../fonts/FuturicaBlack/FuturicaBlack.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon/icomoon.eot');
@@ -54,14 +73,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'FuturicaBlack';
-  src: url('../fonts/FuturicaBlack/FuturicaBlack.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -78,54 +89,63 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-time:before {
-  content: "\e900";
+.icon-search:before {
+  content: "\f002";
 }
-.icon-car-front:before {
-  content: "\e901";
+.icon-heart:before {
+  content: "\f004";
 }
-.icon-list-check:before {
-  content: "\e902";
+.icon-star:before {
+  content: "\f005";
 }
-.icon-ship:before {
-  content: "\e903";
+.icon-check:before {
+  content: "\f00c";
 }
-.icon-machine:before {
-  content: "\e904";
+.icon-close:before {
+  content: "\f00d";
 }
-.icon-box:before {
-  content: "\e905";
+.icon-remove:before {
+  content: "\f00d";
 }
-.icon-money:before {
-  content: "\e906";
+.icon-times:before {
+  content: "\f00d";
 }
-.icon-moto:before {
-  content: "\e907";
+.icon-phone:before {
+  content: "\f095";
 }
-.icon-build:before {
-  content: "\e908";
+.icon-twitter:before {
+  content: "\f099";
 }
-.icon-house:before {
-  content: "\e909";
+.icon-facebook:before {
+  content: "\f09a";
 }
-.icon-calendar:before {
-  content: "\e90a";
+.icon-facebook-f:before {
+  content: "\f09a";
 }
-.icon-location-3d:before {
-  content: "\e90b";
+.icon-google-plus:before {
+  content: "\f0d5";
 }
-.icon-location:before {
-  content: "\e90c";
+.icon-angle-left:before {
+  content: "\f104";
 }
-.icon-calc:before {
-  content: "\e90d";
+.icon-angle-right:before {
+  content: "\f105";
 }
-.icon-list:before {
-  content: "\e90e";
+.icon-angle-up:before {
+  content: "\f106";
 }
-.icon-car:before {
-  content: "\e90f";
+.icon-angle-down:before {
+  content: "\f107";
 }
-.icon-thumb:before {
-  content: "\e910";
+.icon-youtube-play:before {
+  content: "\f16a";
+}
+.icon-skype:before {
+  content: "\f17e";
+}
+.icon-vk:before {
+  content: "\f189";
+}
+.icon-telegram:before {
+  content: "\f2c6";
 }

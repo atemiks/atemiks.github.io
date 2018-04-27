@@ -47,6 +47,15 @@ $( document ).ready(function() {
         pauseOnHover: false
 	});
 
+    $('.product-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        infinite: false
+    });
+
 
 	// map
 
