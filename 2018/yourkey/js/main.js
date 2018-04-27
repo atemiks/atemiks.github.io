@@ -53,7 +53,43 @@ $( document ).ready(function() {
         dots: false,
         arrows: true,
         autoplay: false,
-        infinite: false
+        infinite: false,
+        responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: false
+          }
+        }
+      ]
+    });
+
+
+    // popup gallery
+    $("[data-fancybox]").fancybox({
+        buttons : [
+            'close'
+        ]
+
+    });
+
+
+    // content
+
+    $(".content-aside-toggle" ).on( "click", function() {
+        $('.content-aside-inner').slideToggle();
     });
 
 

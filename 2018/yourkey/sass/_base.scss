@@ -47,6 +47,9 @@ h6 {
 h1,
 .h1 {
 	font-size: 48px;
+	@media (max-width: 767px) {
+		font-size: 34px;
+	}
 }
 
 h2,
@@ -101,6 +104,19 @@ img {
 	max-width: 100%;
 }
 
+.btn {
+	display: inline-block;
+	min-width: 180px;
+	padding: 10px 10px 8px;
+	border: none;
+	background: $danger;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+}
+.btn-fluid {
+	width: 100%;
+}
 
 .text-left {
 	text-align: left;
