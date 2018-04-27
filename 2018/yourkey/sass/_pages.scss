@@ -39,7 +39,8 @@
 
 
 .content-wrapper {
-	padding-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 50px;
 	&.content-with-aside {
 		.content-aside {
 			width: 315px;
@@ -60,7 +61,7 @@
 		position: relative;
 		&:after {
 			display: inline-block;
-			margin: 0 0 0 4px;
+			margin: 0 6px 0 10px;
 			font-family: 'icomoon';
 			content: '\f105';
 			font-size: 14px;
@@ -169,6 +170,9 @@
 
 
 .hint-box {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 1.8;
 	text-align: center;
 	a {
 		text-decoration: none;

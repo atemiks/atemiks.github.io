@@ -127,7 +127,7 @@
 
 	.product-header {
 		.product-title {
-			margin: 0;
+			margin: 0 0 15px;
 			font-family: 'Roboto';
 			font-weight: 500;
 			color: #751616;
@@ -146,6 +146,7 @@
 
 	.product-body {
 		display: flex;
+		align-items: flex-start;
 	}
 	.product-description {
 		flex: 1 1 auto;
@@ -160,7 +161,7 @@
 		flex: 0 0 auto;
 		min-width: 120px;
 		margin: 0 0 0 40px;
-		padding: 10px 10px 5px;
+		padding: 10px 10px 5px 15px;
 		background: #f7f7f7;
 		font-size: 13px;
 		font-weight: 300;

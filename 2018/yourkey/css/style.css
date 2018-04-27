@@ -1624,7 +1624,8 @@ img {
     color: #000; }
 
 .content-wrapper {
-  padding-top: 30px; }
+  padding-top: 35px;
+  padding-bottom: 50px; }
   .content-wrapper.content-with-aside .content-aside {
     width: 315px; }
   .content-wrapper.content-with-aside .content-inner {
@@ -1640,7 +1641,7 @@ img {
     position: relative; }
     .breadcrumbs li:after {
       display: inline-block;
-      margin: 0 0 0 4px;
+      margin: 0 6px 0 10px;
       font-family: 'icomoon';
       content: '\f105';
       font-size: 14px;
@@ -1710,6 +1711,9 @@ img {
       letter-spacing: 1px; }
 
 .hint-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.8;
   text-align: center; }
   .hint-box a {
     text-decoration: none; }
@@ -2623,7 +2627,7 @@ img {
       max-height: 100%;
       margin: auto; }
   .product-card .product-header .product-title {
-    margin: 0;
+    margin: 0 0 15px;
     font-family: 'Roboto';
     font-weight: 500;
     color: #751616;
@@ -2638,7 +2642,11 @@ img {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .product-card .product-description {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
@@ -2656,7 +2664,7 @@ img {
             flex: 0 0 auto;
     min-width: 120px;
     margin: 0 0 0 40px;
-    padding: 10px 10px 5px;
+    padding: 10px 10px 5px 15px;
     background: #f7f7f7;
     font-size: 13px;
     font-weight: 300;
