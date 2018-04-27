@@ -9,7 +9,7 @@
 	margin: 20px auto;
 	border: 1px solid transparent;
 	background: #fff;
-	transition: box-shadow border 300ms ease;
+	transition: box-shadow 300ms ease;
 	text-align: center;
 	.category-link {
 		position: absolute;
@@ -88,7 +88,7 @@
 	display: flex;
 	padding: 25px 20px;
 	border: 1px solid transparent;
-	transition: box-shadow border-color 300ms ease;
+	transition: box-shadow 300ms ease;
 	@media (max-width: 767px) {
 		flex-direction: column;
 	}
@@ -154,7 +154,7 @@
 	.product-header {
 		.product-title {
 			margin: 0 0 15px;
-			font-weight: 500;
+			font-weight: 400;
 			color: #751616;
 			text-transform: uppercase;
 			a {
