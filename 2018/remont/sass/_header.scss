@@ -223,7 +223,8 @@
 
 // offcanvas
 .offcanvas {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
 	position: fixed;
 	z-index: 100;
 	top: 0;
@@ -231,6 +232,13 @@
 	right: 0;
 	bottom: 0;
 	background: #fff;
+	transform: translateX(100%);
+	transition: transform 300ms ease;
+	&.offcanvas-active {
+		visibility: visible;
+		opacity: 1;
+		transform: translateX(0);
+	}
 	.offcanvas-header {
 		position: relative;
 		padding: 10px;

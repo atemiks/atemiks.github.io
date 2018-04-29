@@ -33,13 +33,12 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="offcanvas-menu">
-                    <li><a href="#section-about">о нас</a></li>
-                    <li><a href="#section-achievements">наши условия</a></li>
-                    <li><a href="#section-steps">схема работы</a></li>
-                    <li><a href="#section-advantages">преимущества</a></li>
-                    <li><a href="#section-testimonials">отзывы</a></li>
-                    <li><a href="#section-contact">контакты</a></li>
-                    <li><a href="#section-documents">документы</a></li>
+                    <li><a href="#section-portfolio">Наши работы</a></li>
+                    <li><a href="#section-calc">Стоимость работ</a></li>
+                    <li><a href="#section-testimonials">Отзывы</a></li>
+                    <li><a href="#link">Интернет-магазин</a></li>
+                    <li><a href="#link">Блог</a></li>
+                    <li><a href="#link">Контакты</a></li>
                 </ul>
             </div>
 
@@ -57,49 +56,221 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel">
+        <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="modalOrderLabel">Заказать обратный звонок</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&nbsp;</button>
+                        <h4 class="modal-title" id="modalCallbackLabel">Заказать обратный звонок</h4>
                         <p class="modal-subtitle">Перезвоним через 2 минуты!</p>
                     </div>
                     <div class="modal-body">
-                        <form action="#action" class="form form-modal" id="formModalOrder"  >
+                        <form action="#action" class="form form-modal" id="formModalCallback"  >
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-5">
                                     <div class="form-group">
-                                        <input type="text" name="formModalOrderName" placeholder="Ваше имя" required >
+                                        <label for="formModalCallbackName">Ваше имя</label>
+                                        <input type="text" name="formModalCallbackName" required >
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-5">
                                     <div class="form-group">
-                                        <input type="tel" name="formModalOrderPhone" placeholder="Телефон" required >
+                                        <label for="formModalCallbackPhone">Ваш телефон</label>
+                                        <input type="tel" name="formModalCallbackPhone" required >
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-8">
                                     <div class="form-group">
                                         <div class="form-group">
                                             <div class="custom-checkbox">
                                                 <input type="checkbox" id="checkbox01" name="checkbox" checked required >
                                                 <label for="checkbox01">
                                                     <span class="custom-check-icon"></span>
-                                                    <span class="custom-check-value">Я согласен на обработку моих персональных данных</span>
+                                                    <span class="custom-check-value">Согласен (-на) на обработку личных данных</span>
                                                 </label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-4">
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-block"  >Получить займ</button>
+                                        <button type="submit" class="btn btn-block"  >перезвоните мне!</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&nbsp;</button>
+                        <h4 class="modal-title" id="modalOrderLabel">Оформление заказа</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#action" class="form form-modal" id="formModalOrder"  >
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="formModalOrderName">Ваше имя</label>
+                                        <input type="text" name="formModalOrderName" required >
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="formModalOrderAddress">Адрес</label>
+                                        <input type="text" name="formModalOrderAddress" required >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" id="checkbox02" name="checkbox" checked required >
+                                                <label for="checkbox02">
+                                                    <span class="custom-check-icon"></span>
+                                                    <span class="custom-check-value">Согласен (-на) на обработку личных данных</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-block"  >Оформить заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalMaster" tabindex="-1" role="dialog" aria-labelledby="modalMasterLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&nbsp;</button>
+                        <h4 class="modal-title" id="modalMasterLabel">Запись на бесплатный замер</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#action" class="form form-modal" id="formModalMaster"  >
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="formModalMasterPhone">Телефон</label>
+                                        <input type="tel" name="formModalMasterPhone" required >
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="formModalMasterDate">Удобная дата</label>
+                                        <input type="date" name="formModalMasterDate" required >
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="formModalMasterTime">Удобное время</label>
+                                        <input type="time" name="formModalMasterTime" required >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="formModalMasterAddress">Адрес</label>
+                                        <input type="text" name="formModalMasterAddress" required >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" id="checkbox03" name="checkbox" checked required >
+                                                <label for="checkbox03">
+                                                    <span class="custom-check-icon"></span>
+                                                    <span class="custom-check-value">Согласен (-на) на обработку личных данных</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-block"  >Оформить заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalEstimate" tabindex="-1" role="dialog" aria-labelledby="modalEstimateLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&nbsp;</button>
+                        <h4 class="modal-title" id="modalEstimateLabel">Смета на ремонт квартиры</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="estimate-box">
+                            <div class="estimate-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tr>
+                                            <th>Наименование работ</th>
+                                            <th>Цена, руб.</th>
+                                            <th>Ед. изм.</th>
+                                            <th>Итого</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="estimate-footer">
+                                <button class="estimate-back"><i class="icon-arrow-left" ></i> Назад</button>
+                                <p class="estimate-total">Итого: <b>123 567</b> руб.</p>
+                                <button class="estimate-order btn">Оставить заявку</button>
+
+                            </div>
+                            <div class="estimate-hint">
+                                Данная смета несет ориентировочный характер, лучше записаться на бесплатный замер, в ходе которого мы учтем все ваши пожелания и тонкости помещения, в котором необходимо произвести хороший ремонт!
+                            </div>
+                        </div>
+                      
                     </div>
                 </div>
             </div>
@@ -164,7 +335,7 @@
                                                             <i class="icon-pencil" ></i>
                                                         </div>
                                                         <div class="header-service-value">
-                                                            <a href="#link">Бесплатный <br> замер</a>
+                                                            <a href="#order" data-toggle="modal" data-target="#modalMaster" >Бесплатный <br> замер</a>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -173,7 +344,7 @@
 
                                         <div class="header-contact">
                                             <a class="header-contact-phone" href="tel:+79123456789">+7 (912) 345 67 89</a>
-                                            <button class="header-contact-order btn btn-sm btn-block" data-toggle="modal" data-target="#modalOrder" >заказать звонок</button>
+                                            <button class="header-contact-order btn btn-sm btn-block" data-toggle="modal" data-target="#modalCallback" >заказать звонок</button>
                                         </div>
                                     </div>
                                 
@@ -228,7 +399,7 @@
                                                     </p>
 
                                                     <ul class="hero-actions">
-                                                        <li><a href="#link" class="btn" >Оставить заявку</a></li>
+                                                        <li><a href="#order" class="btn" data-toggle="modal" data-target="#modalOrder" >Оставить заявку</a></li>
                                                         <li><a href="#section-calc" class="btn" >расчет стоимости</a></li>
                                                     </ul>
                                                 </div>
@@ -879,7 +1050,7 @@
                                                 <div class="col-sm-9 col-sm-offset-1">
                                                     <ul class="calc-footer-actions">
                                                         <li><button class="calc-control-add" >Добавить помещение</button></li>
-                                                        <li><button class="btn btn-warning" >расчет стоимости</button></li>
+                                                        <li><button class="btn btn-warning" data-toggle="modal" data-target="#modalEstimate" >расчет стоимости</button></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -897,7 +1068,7 @@
                                 <div class="calc-hint col-md-12">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4 col-lg-3">
-                                            <button class="btn btn-block" >запись на бесплатный замер</button>
+                                            <button class="btn btn-block" data-toggle="modal" data-target="#modalMaster" >запись на бесплатный замер</button>
                                         </div>
                                         <div class="col-xs-12 col-sm-8 col-lg-9 text-left">
                                             Хотите получить подробный прайс? У Вас серьезно есть время его изучать? <br>
@@ -915,12 +1086,12 @@
                                             </div>
                                             <div class="col-xs-12 col-sm-4 col-md-3">
                                                 <div class="form-group">
-                                                    <input type="tel" placeholder="Телефон" required >
+                                                    <input type="tel" placeholder="Телефон" name="formPromoPhone" required >
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-4 col-md-3">
                                                 <div class="form-group">
-                                                    <input type="email" placeholder="E-mail" required >
+                                                    <input type="email" placeholder="E-mail" name="formPromoEmail" required >
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-md-2">
@@ -950,7 +1121,7 @@
                                 <div class="steps-inner col-sm-12 col-md-8 col-lg-6">
                                     <div class="steps-grid">
                                         <div class="row">
-                                            <div class="step-item col-sm-6">
+                                            <div class="step-item col-xs-12 col-sm-6">
                                                 <div class="step-card">
                                                     <div class="step-thumbnail">
                                                         <img src="img/icons/icon-step-1.svg" alt="" class="step-icon">
@@ -959,7 +1130,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="step-item col-sm-6">
+                                            <div class="step-item col-xs-12 col-sm-6">
                                                 <div class="step-card">
                                                     <div class="step-thumbnail">
                                                         <img src="img/icons/icon-step-2.svg" alt="" class="step-icon">
@@ -970,7 +1141,7 @@
                                         </div>
 
                                         <div class="row">
-                                            <div class="step-item col-sm-6">
+                                            <div class="step-item col-xs-12 col-sm-6">
                                                 <div class="step-card">
                                                     <div class="step-thumbnail">
                                                         <img src="img/icons/icon-step-3.svg" alt="" class="step-icon">
@@ -979,7 +1150,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="step-item col-sm-6">
+                                            <div class="step-item col-xs-12 col-sm-6">
                                                 <div class="step-card">
                                                     <div class="step-thumbnail">
                                                         <img src="img/icons/icon-step-4.svg" alt="" class="step-icon">
@@ -990,7 +1161,7 @@
                                         </div>
 
                                         <div class="row">
-                                            <div class="step-item col-sm-6">
+                                            <div class="step-item col-xs-12 col-sm-6">
                                                 <div class="step-card">
                                                     <div class="step-thumbnail">
                                                         <img src="img/icons/icon-step-5.svg" alt="" class="step-icon">
@@ -999,7 +1170,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="step-item col-sm-6">
+                                            <div class="step-item col-xs-12 col-sm-6">
                                                 <div class="step-card">
                                                     <div class="step-thumbnail">
                                                         <img src="img/icons/icon-step-6.svg" alt="" class="step-icon">
@@ -1010,7 +1181,7 @@
                                         </div>
 
                                         <div class="row">
-                                            <div class="step-item col-sm-6">
+                                            <div class="step-item col-xs-12 col-sm-6">
                                                 <div class="step-card">
                                                     <div class="step-thumbnail">
                                                         <img src="img/icons/icon-step-7.svg" alt="" class="step-icon">
@@ -1019,7 +1190,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="step-item col-sm-6">
+                                            <div class="step-item col-xs-12 col-sm-6">
                                                 <div class="step-card">
                                                     <div class="step-thumbnail">
                                                         <img src="img/icons/icon-step-8.svg" alt="" class="step-icon">
@@ -1133,7 +1304,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    Еще до сих пор не записались на бесплатный замер? Не теряйте времени зря: <button class="btn btn-lg" >запись на бесплатный замер</button>
+                                    Еще до сих пор не записались на бесплатный замер? Не теряйте времени зря: <button class="btn btn-lg" data-toggle="modal" data-target="#modalMaster" >запись на бесплатный замер</button>
                                 </div>
                             </div>
                         </div>
@@ -1223,19 +1394,19 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <form class="form-promo">
+                                    <form class="form-promo" id="formPromo2" >
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-4 col-md-4">
                                                 <p class="form-title">Хотите получить пример проекта? <br> Оставьте заявку:</p>
                                             </div>
                                             <div class="col-xs-12 col-sm-4 col-md-3">
                                                 <div class="form-group">
-                                                    <input type="tel" placeholder="Телефон" required >
+                                                    <input type="tel" placeholder="Телефон" name="formPromoPhone" required >
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-4 col-md-3">
                                                 <div class="form-group">
-                                                    <input type="email" placeholder="E-mail" required >
+                                                    <input type="email" placeholder="E-mail" name="formPromoEmail" required >
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-md-2">
@@ -1324,7 +1495,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    Еще до сих пор не записались на бесплатный замер? Не теряйте времени зря: <button class="btn btn-lg" >запись на бесплатный замер</button>
+                                    Еще до сих пор не записались на бесплатный замер? Не теряйте времени зря: <button class="btn btn-lg" data-toggle="modal" data-target="#modalMaster" >запись на бесплатный замер</button>
                                 </div>
                             </div>
                         </div>
@@ -1390,7 +1561,7 @@
                                                             <i class="icon-pencil" ></i>
                                                         </div>
                                                         <div class="footer-service-value">
-                                                            <a href="#link">Бесплатный <br> замер</a>
+                                                            <a href="#order" data-toggle="modal" data-target="#modalMaster" >Бесплатный <br> замер</a>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1399,7 +1570,7 @@
 
                                         <div class="footer-contact">
                                             <a class="footer-contact-phone" href="tel:+79123456789">+7 (912) 345 67 89</a>
-                                            <button class="footer-contact-order btn btn-sm btn-block" data-toggle="modal" data-target="#modalOrder" >заказать звонок</button>
+                                            <button class="footer-contact-order btn btn-sm btn-block" data-toggle="modal" data-target="#modalCallback" >заказать звонок</button>
                                         </div>
                                     </div>
                                 </div>

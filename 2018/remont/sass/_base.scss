@@ -154,6 +154,9 @@ mark {
 	@extend .h1;
 	margin: 15px 17%;
 	background: $secondary-color;
+	@media (max-width: 991px) {
+		margin: 15px 5%;
+	}
 	@media (max-width: 767px) {
 		margin: 5px 0;
 	} 
@@ -167,22 +170,118 @@ img {
 }
 
 
-input {
-	display: inline-block;
-	 -webkit-appearance: none;
-	width: 100%;
-	height: 50px;
-	border: none;
-	border-radius: 0;
-	padding: 0 18px;
-	background: #fff;
-	color: #4a4c51;
-	font-size: 15px;
-	font-weight: 300;
-    box-sizing: border-box;
-	&:placeholder {
-		color: #4a4c51;
+table {
+	border-collapse: collapse;
+	th,
+	td {
+		height: 50px;
+		padding: 5px 15px;
+		border: 1px solid $light-gray;
+		vertical-align: middle !important;
 	}
+
+	th {
+		background: $main-color;
+		font-size: 15px;
+		font-weight: 300;
+		color: #fff;
+	}
+}
+
+form {
+	label {
+		display: block;
+		margin: 10px 0;
+	}
+
+	input {
+		display: inline-block;
+		 -webkit-appearance: none;
+		width: 100%;
+		height: 50px;
+		border: 1px solid #ebebeb;
+		border-radius: 0;
+		padding: 0 18px;
+		background: #fff;
+		color: $default;
+		font-size: 15px;
+		font-weight: 300;
+	    box-sizing: border-box;
+		&:placeholder {
+			color: $default;
+		}
+	}
+}
+
+
+.form-group {
+	margin: 10px 0;
+}
+
+
+
+// custom checkbox
+.custom-checkbox {
+	padding: 8px 0;
+}
+input[type="checkbox"] {
+    display: none !important;
+}
+input[type="checkbox"] + label {
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"] + label .custom-check-icon {
+    cursor: pointer;
+	position: relative;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+   	margin: 0 15px 0 0;
+   	border: 1px solid $light-gray;
+}
+
+input[type="checkbox"] + label .custom-check-icon:after {
+	@extend .transition;
+	opacity: 0;
+	font-family: 'icomoon';
+	content: '\e901';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 12px;
+	color: $main-color;
+	// background: url('../img/icons/icon-check.svg') no-repeat 0 0;
+	// background-size: contain;
+}
+
+input[type="checkbox"] + label .custom-check-icon {
+     background-color: #fff;
+}
+
+input[type="checkbox"]:checked + label .custom-check-icon:after {
+     opacity: 1;
+}
+
+input[type="checkbox"] + label .custom-check-icon,
+input[type="checkbox"]:checked + label .custom-check-icon {
+	@extend .transition;
+}
+
+
+input[type="checkbox"] + label .custom-check-value {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	font-size: 14px;
+	color: #7b756f;
+	line-height: 1.2;
+}
+
+
+button {
+	outline: none;
 }
 
 .btn {
@@ -235,68 +334,6 @@ input {
 	min-width: 100%;
 }
 
-
-// custom checkbox
-.custom-checkbox {
-	padding: 8px 0;
-}
-input[type="checkbox"] {
-    display: none !important;
-}
-input[type="checkbox"] + label {
-    display: flex;
-    align-items: center;
-}
-input[type="checkbox"] + label .custom-check-icon {
-    cursor: pointer;
-	position: relative;
-    flex: 0 0 30px;
-    width: 30px;
-    height: 30px;
-   	margin: 0 15px 0 0;
-}
-
-input[type="checkbox"] + label .custom-check-icon:after {
-	@extend .transition;
-	opacity: 0;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: url('../img/icons/icon-check.svg') no-repeat 0 0;
-	background-size: contain;
-}
-
-input[type="checkbox"] + label .custom-check-icon {
-     background-color: #fff;
-}
-
-input[type="checkbox"]:checked + label .custom-check-icon:after {
-     opacity: 1;
-}
-
-input[type="checkbox"] + label .custom-check-icon,
-input[type="checkbox"]:checked + label .custom-check-icon {
-	@extend .transition;
-}
-
-
-input[type="checkbox"] + label .custom-check-value {
-	display: block;
-	overflow: hidden;
-	position: relative;
-	font-size: 15px;
-	line-height: 1.2;
-}
-
-
-
-
-.form-group {
-	margin: 10px 0;
-}
 
 
 

@@ -42,10 +42,25 @@
 	@media (max-width: 1024px) {
 		font-size: 16px;
 	}
+	@media (max-width: 767px) {
+		text-align: center;
+	}
+
+	.btn {
+		margin: 10px 5px;
+		vertical-align: middle;
+	}
 
 	.form-promo {
 		.form-title {
 			text-align: right;
+			@media (max-width: 767px) {
+				text-align: center;
+			}
+		}
+
+		.btn {
+			margin: 0;
 		}
 	}
 
@@ -89,11 +104,25 @@
 		@media (min-width: 768px) {
 			width: 640px;
 		}
+		@media (min-width: 992px) {
+			width: 800px;
+		}
+		&.modal-lg {
+			@media (min-width: 768px) {
+				width: 740px;
+			}
+			@media (min-width: 992px) {
+				width: 940px;
+			}
+			@media (min-width: 1199px) {
+				width: 1070px;
+			}
+		}
 
 		.modal-content {
 			border: none;
 			border-radius: 0;
-			background: $info;
+			background: #fff;
 		}
 	}
 
@@ -102,29 +131,28 @@
 		padding: 10px 30px;
 		border: none;
 		.modal-title {
+			@extend .h2;
+			@extend .text-gradient;
 			margin: 10px 0;
+			font-weight: 500;
 		}
 		.modal-subtitle {
 			margin: 0;
-			font-size: 18px;
+			font-size: 15px;
 			color: $main-color;
 		}
 
 		.close {
 			position: absolute;
-			top: 0;
-			right: 0;
-			width: 30px;
-			height: 30px;
+			top: -16px;
+			right: -16px;
+			width: 32px;
+			height: 32px;
 			border: none;
 			margin: 0;
 			padding: 0;
-			background: $secondary-color;
-			font-size: 28px;
-			font-weight: 500;
-			color: #fff;
-			line-height: 30px;
-			text-align: center;
+			background: url('../img/icons/icon-close.svg') no-repeat 0 0 ;
+			background-size: contain;
 		}
 	}
 	.modal-body {
@@ -132,10 +160,10 @@
 	}
 }
 .modal-backdrop {
-	background: rgba(0,0,0,.8);
+	@extend .gradient-dark-horizontal  ;
 }
 .modal-backdrop.in {
-	opacity: 0.95;
+	opacity: 0.9;
 }
 
 
@@ -149,6 +177,55 @@
 	// .row:last-child {
 	// 	padding-top: 20px;
 	// }
+}
+
+
+.estimate-box {
+	.estimate-body {}
+	.estimate-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 0;
+	}
+	
+	.estimate-total,
+	.estimate-back,
+	.estimate-order {
+		// flex: 0 0 auto;
+	}
+
+	.estimate-total {
+		@extend .h3;
+		@extend .text-gradient;
+		flex: 0 0 auto;
+		padding: 0 10px;
+		font-weight: 500;
+		color: $main-color;
+		b {
+			font-weight: 900;
+		}
+	}
+	.estimate-back {
+		flex: 0 0 180px;
+		padding: 0;
+		border: none;
+		background: none;
+		text-align: left;
+		i {
+			font-size: 12px;
+			vertical-align: middle;
+		}
+	}
+
+	.estimate-order {
+		flex: 0 0 180px;
+	}
+
+}
+.estimate-hint {
+	width: 100%;
+	padding: 15px 0 0;
 }
 
 

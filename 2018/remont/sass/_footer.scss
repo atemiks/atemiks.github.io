@@ -1,5 +1,6 @@
 .footer-box {
 	@extend .header-box;
+	display: block !important;
 	@media (max-width: 991px) {
 		padding-bottom: 40px;
 	}
@@ -49,6 +50,9 @@
 
 	.footer-logo-img {
 		@extend .header-logo-img;
+		@media (max-width: 767px) {
+			width: 120px;
+		}
 	}
 }
 
@@ -62,6 +66,16 @@
 }
 .footer-nav-list {
 	@extend .header-nav-list;
+	@media (max-width: 767px) {
+		flex-direction: column;
+		padding: 0 10px;
+	}
+
+	li {
+		@media (max-width: 767px) {
+			padding: 5px 0;
+		}
+	}
 }
 
 
@@ -82,8 +96,17 @@
 }
 .footer-services-list {
 	@extend .header-services-list;
+	@media (max-width: 767px) {
+		flex-direction: column;
+	}
+
 	.footer-service-item {
 		@extend .header-service-item ;
+		@media (max-width: 767px) {
+			width: 100%;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
 	}
 }
 
