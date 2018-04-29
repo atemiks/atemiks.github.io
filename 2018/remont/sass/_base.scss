@@ -1,0 +1,311 @@
+html,
+body {
+	height: 100%;
+	font-family: $base-font;
+	font-size: 15px;
+	font-weight: 300;
+	color: $default;
+}
+
+body {
+	
+}
+
+
+section {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+	margin: 0.5em 0;
+}
+
+h1,
+.h1 {
+	font-size: 58px;
+	@media (max-width: 1024px) {
+		font-size: 48px;
+	}
+	@media (max-width: 767px) {
+		font-size: 34px;
+	}
+}
+
+h2,
+.h2 {
+	font-size: 43px;
+	@media (max-width: 1024px) {
+		font-size: 36px;
+	} 
+	@media (max-width: 991px) {
+		font-size: 34px;
+	} 
+	@media (max-width: 767px) {
+		font-size: 28px;
+	}
+}
+
+h3,
+.h3 {
+	font-size: 35px;
+	@media (max-width: 1024px) {
+		font-size: 30px;
+	}
+	@media (max-width: 991px) {
+		font-size: 28px;
+	}
+	@media (max-width: 767px) {
+		font-size: 24px;
+	}
+}
+
+h4,
+.h4 {
+	font-size: 30px;
+	@media (max-width: 1024px) {
+		font-size: 26px;
+	} 
+	@media (max-width: 767px) {
+		font-size: 20px;
+	}
+}
+
+h5,
+.h5 {
+	font-size: 28px;
+	@media (max-width: 1024px) {
+		font-size: 24px;
+	}
+	@media (max-width: 767px) {
+		font-size: 18px;
+	} 
+}
+
+h6,
+.h6 {
+	font-size: 21px;
+	@media (max-width: 767px) {
+		font-size: 16px;
+	}
+}
+
+p {
+	margin: 8px 0;
+}
+
+time {
+	font-size: 13px;
+	font-weight: 300;
+	color: $gray;
+}
+
+a {
+	@extend .transition;
+	color: $secondary-color;
+	text-decoration: none;
+	&:hover {
+		color: darken($secondary-color, 10%);
+		text-decoration: none;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		position: relative;
+		padding: 0 0 0 13px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: 0;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background: $secondary-color;
+		}
+	}
+}
+
+mark {
+	@extend .h2;
+	display: inline-block;
+	margin: 10px 0;
+	padding: 0 30px 8px 20px;
+	background: $warning;
+	font-weight: 600;
+	color: #fff;
+	text-shadow: 0 2px 2px rgba(170, 159, 150, 0.64);
+	line-height: 1.5;
+}
+
+.mark-lead {
+	@extend .h1;
+	margin: 15px 17%;
+	background: $secondary-color;
+	@media (max-width: 767px) {
+		margin: 5px 0;
+	} 
+}
+
+
+
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+
+input {
+	display: inline-block;
+	 -webkit-appearance: none;
+	width: 100%;
+	height: 50px;
+	border: none;
+	border-radius: 0;
+	padding: 0 18px;
+	background: #fff;
+	color: #4a4c51;
+	font-size: 15px;
+	font-weight: 300;
+    box-sizing: border-box;
+	&:placeholder {
+		color: #4a4c51;
+	}
+}
+
+.btn {
+	@extend .transition;
+	display: inline-block;
+	min-width: 180px;
+	border: none;
+	border-radius: 3px;
+	padding: 17px 10px 16px;
+	background: $main-color !important;
+	box-shadow: 0 4px 0 $purple;
+	color: #eae7e0 !important;
+	font-family: 'Montserrat';
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+	text-align: center;
+	text-decoration: none !important;
+	@media (max-width: 767px) {
+		min-width: 120px;
+	}
+
+	&:hover {
+		background: $purple !important;
+		box-shadow: 0 4px 0 $main-color;
+	}
+}
+
+.btn-warning {
+	background: $dark-warning !important;
+	box-shadow: 0 4px 0 $secondary-color;
+	&:hover {
+		background: $secondary-color !important;
+		box-shadow: 0 4px 0  $dark-warning;
+	}
+}
+
+.btn-sm {
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.btn-lg {
+	min-width: 280px;
+}
+
+.btn-block {
+	width: 100%;
+	min-width: 100%;
+}
+
+
+// custom checkbox
+.custom-checkbox {
+	padding: 8px 0;
+}
+input[type="checkbox"] {
+    display: none !important;
+}
+input[type="checkbox"] + label {
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"] + label .custom-check-icon {
+    cursor: pointer;
+	position: relative;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+   	margin: 0 15px 0 0;
+}
+
+input[type="checkbox"] + label .custom-check-icon:after {
+	@extend .transition;
+	opacity: 0;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('../img/icons/icon-check.svg') no-repeat 0 0;
+	background-size: contain;
+}
+
+input[type="checkbox"] + label .custom-check-icon {
+     background-color: #fff;
+}
+
+input[type="checkbox"]:checked + label .custom-check-icon:after {
+     opacity: 1;
+}
+
+input[type="checkbox"] + label .custom-check-icon,
+input[type="checkbox"]:checked + label .custom-check-icon {
+	@extend .transition;
+}
+
+
+input[type="checkbox"] + label .custom-check-value {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	font-size: 15px;
+	line-height: 1.2;
+}
+
+
+
+
+.form-group {
+	margin: 10px 0;
+}
+
+
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}

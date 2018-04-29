@@ -1,0 +1,295 @@
+.header-box {
+	overflow: hidden;
+	@media (max-width: 991px) {
+		display: none;
+	}
+
+	.header-inner {
+		display: flex;
+		.header-aside {
+			border-right: 2px solid $light-gray;
+		}
+		.header-content {
+			padding: 0;
+			.header-upper {
+				position: relative;
+				display: flex;
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100vw;
+					border-bottom: 2px solid $light-gray;
+				}
+			}
+
+			.header-bottom {
+				display: flex;
+			}
+		}
+	}
+}
+
+
+.header-logo {
+	margin: 25px 0;
+	.header-logo-img {
+		width: 236px;
+	}
+}
+
+
+
+.header-nav {
+	flex: 1;
+	padding: 20px 18px 10px;
+	border-right: 2px solid $light-gray;
+	@media (max-width: 1199px) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+.header-nav-list {
+	@extend .reset-list;
+	cursor: default;
+	display: flex;
+	justify-content: space-between;
+	li {
+		display: inline-block;
+		position: relative;
+		&:after {
+			// content: '';
+			display: inline-block;
+			width: 2px;
+			height: 2px;
+			margin: 0 0 0 6px;
+			background: #3e3d40;
+			vertical-align: middle;
+		}
+		&:last-child:after {
+			display: none;
+		}
+
+		a {
+			display: inline-block;
+			color: $default;
+			font-size: 15px;
+			font-weight: 300;
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+	}
+}
+
+
+.header-social {
+	flex: 0 0 auto;
+	padding: 15px 40px 5px 20px;
+	@media (max-width: 1199px) {
+		padding-left: 20px;
+		padding-right: 10px;
+	}
+}
+
+.header-services {
+	flex: 1;
+	padding: 15px 18px;
+	border-right: 2px solid $light-gray;
+	@media (max-width: 1199px) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+.header-services-list {
+	@extend .reset-list;
+	cursor: default;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 -5px;
+	.header-service-item {
+		flex: 1 1 auto;
+		padding: 0 5px;
+	}
+}
+
+
+.header-service-card {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	font-weight: 300;
+	@media (max-width: 1199px) {
+		font-size: 14px;
+	}
+
+	a {
+		color: $main-color;
+	}
+
+	.header-service-thumbnail {
+		flex: 0 0 50px;
+		font-size: 40px;
+		color: $main-color;
+		i {
+			position: relative;
+			top: 3px;
+		}
+	}
+	.header-service-value {}
+}
+
+
+
+.header-contact {
+	flex: 0 0 auto;
+	padding: 5px 40px;
+	@media (max-width: 1199px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.header-contact-phone {
+		@extend .text-gradient;
+		display: block;
+		font-size: 25px;
+		font-weight: 500;
+	}
+}
+
+// header mobile
+.header-mobile {
+	display: none;
+	@media (max-width: 991px) {
+		display: block;
+	}
+
+	.header-mobile-aside,
+	.header-mobile-content {
+		min-height: 60px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.header-mobile-aside  {
+		border-right: 2px solid $light-gray;
+	}
+	.header-mobile-content {
+		text-align: right;
+	}
+}
+
+.header-mobile-logo {
+	.header-mobile-logo-img {
+		width: 120px;
+	}
+}
+
+.header-mobile-contact {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 15px;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 46px;
+	@media (max-width: 475px) {
+		margin-left: 8px;
+		margin-right: 8px;
+		font-size: 16px;
+	}
+
+	a {
+		@extend .text-gradient;
+	}
+}
+
+.header-mobile-toggle {
+	display: inline-block;
+	vertical-align: middle;
+	width: 32px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+	span {
+		display: block;
+		margin: 8px 0;
+		height: 2px;
+		background: $main-color;
+	}
+}
+
+// offcanvas
+.offcanvas {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	.offcanvas-header {
+		position: relative;
+		padding: 10px;
+		.offcanvas-close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 32px;
+			height: 32px;
+			padding: 0;
+			border: none;
+			border-radius: 50%;
+			background: url('../img/icons/icon-close.svg') no-repeat 0 0 ;
+			background-size: contain;
+		}
+		.offcanvas-logo {
+			.offcanvas-logo-img {
+				width: 120px;
+			}
+		}
+	}
+	.offcanvas-body {
+		padding: 10px;
+		.offcanvas-menu {
+			@extend .reset-list;
+			li {
+				border-bottom: 1px solid $light-gray;
+				a {
+					display: block;
+					padding: 8px 0;
+					font-size: 14px;
+					color: $main-color;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+	.offcanvas-footer {
+		padding: 10px;
+		text-align: center;
+
+		.offcanvas-contact {
+			@extend .text-gradient;
+			font-size: 25px;
+			font-weight: 500;
+		}
+
+		.offcanvas-social {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+
+
+
+
+
+
+

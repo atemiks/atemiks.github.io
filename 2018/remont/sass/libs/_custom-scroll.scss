@@ -1,0 +1,18 @@
+// portfolio scroll
+.mCustomScrollBox.dark-portfolio .mCSB_scrollTools_vertical {
+	opacity: 1 !important;
+	width: 14px;
+	margin: 0;
+	border-radius: 5px;
+	background-color: #ebebeb;
+}
+.mCustomScrollBox.dark-portfolio .mCSB_scrollTools_vertical .mCSB_draggerContainer .mCSB_dragger_bar {
+	width: 14px;
+	// margin: 3px 3px;
+	background: $secondary-color;
+}
+.mCustomScrollBox.dark-portfolio .mCSB_scrollTools_vertical .mCSB_draggerContainer .mCSB_draggerRail {
+	width: 14px;
+	margin: 0;
+	background: none;
+}
