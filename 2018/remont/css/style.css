@@ -2879,52 +2879,56 @@ button {
 
 .steps-grid {
   margin: 20px 0; }
-  @media (min-width: 768px) {
-    .steps-grid .step-item:nth-last-of-type(1) .step-card:after {
-      top: 120%;
-      right: 0;
-      -webkit-transform: translate(0%, -50%) rotate(90deg);
-          -ms-transform: translate(0%, -50%) rotate(90deg);
-              transform: translate(0%, -50%) rotate(90deg); } }
-  .steps-grid .row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+  .steps-grid .step-item {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     @media (min-width: 768px) {
-      .steps-grid .row:nth-child(2n+2) {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-        -webkit-flex-direction: row-reverse;
-            -ms-flex-direction: row-reverse;
-                flex-direction: row-reverse; } }
-    @media (min-width: 768px) {
-      .steps-grid .row:nth-child(2n+2) .step-item .step-card {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-        -webkit-flex-direction: row-reverse;
-            -ms-flex-direction: row-reverse;
-                flex-direction: row-reverse;
-        text-align: right; } }
-    @media (min-width: 768px) {
-      .steps-grid .row:nth-child(2n+2) .step-item .step-card:after {
-        left: -16px;
-        right: auto;
-        -webkit-transform: translate(0%, -50%) scaleX(-1);
-            -ms-transform: translate(0%, -50%) scaleX(-1);
-                transform: translate(0%, -50%) scaleX(-1); } }
-    @media (min-width: 768px) {
-      .steps-grid .row:nth-child(2n+2) .step-item:nth-last-of-type(1) .step-card:after {
-        left: 0;
-        right: auto;
+      .steps-grid .step-item:nth-last-of-type(1) .step-card:after {
+        top: 120%;
+        right: 0;
         -webkit-transform: translate(0%, -50%) rotate(90deg);
             -ms-transform: translate(0%, -50%) rotate(90deg);
                 transform: translate(0%, -50%) rotate(90deg); } }
-    .steps-grid .row:nth-last-of-type(1) .step-item:nth-last-of-type(1) .step-card:after {
-      display: none; }
+  @media (min-width: 768px) {
+    .steps-grid .row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
+  @media (min-width: 768px) {
+    .steps-grid .row:nth-child(2n+2) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; } }
+  @media (min-width: 768px) {
+    .steps-grid .row:nth-child(2n+2) .step-item .step-card {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      text-align: right; } }
+  @media (min-width: 768px) {
+    .steps-grid .row:nth-child(2n+2) .step-item .step-card:after {
+      left: -16px;
+      right: auto;
+      -webkit-transform: translate(0%, -50%) scaleX(-1);
+          -ms-transform: translate(0%, -50%) scaleX(-1);
+              transform: translate(0%, -50%) scaleX(-1); } }
+  @media (min-width: 768px) {
+    .steps-grid .row:nth-child(2n+2) .step-item:nth-last-of-type(1) .step-card:after {
+      left: 0;
+      right: auto;
+      -webkit-transform: translate(0%, -50%) rotate(90deg);
+          -ms-transform: translate(0%, -50%) rotate(90deg);
+              transform: translate(0%, -50%) rotate(90deg); } }
+  .steps-grid .row:nth-last-of-type(1) .step-item:nth-last-of-type(1) .step-card:after {
+    display: none; }
 
 .step-card {
   position: relative;
@@ -3148,6 +3152,7 @@ button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  width: 100%;
   margin: -20px 0 0; }
 
 .stage-card {
