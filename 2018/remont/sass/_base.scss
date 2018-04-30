@@ -280,6 +280,15 @@ input[type="checkbox"] + label .custom-check-value {
 }
 
 
+select {
+	display: block;
+	height: 50px;
+	padding: 0 18px;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+}
+
 button {
 	outline: none;
 }

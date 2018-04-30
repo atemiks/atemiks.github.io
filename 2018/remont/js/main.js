@@ -50,9 +50,13 @@ $( document ).ready(function() {
         $('.offcanvas').toggleClass('offcanvas-active');
     });
 
-    $('.custom-select').select2({
-        minimumResultsForSearch: Infinity
-    });
+
+    function customSelectInit() {
+        $('.custom-select').select2({
+            minimumResultsForSearch: Infinity
+        });
+    }
+    customSelectInit();
 
     // phone mask
 	$("input[type='tel']").mask("+7 (999) 999-99-99");
@@ -75,6 +79,10 @@ $( document ).ready(function() {
 
 
     // modals
+    $("#modalVideo").on('hidden.bs.modal', function (e) {
+        $("#modalVideo iframe").attr("src", $("#modalVideo iframe").attr("src"));
+    });
+
     $('#modalEstimate .estimate-back').on('click', function () {
         $('#modalEstimate').modal('hide');
     })
@@ -173,13 +181,22 @@ $( document ).ready(function() {
 
 
 
-    $( ".calc-controls .calc-control-delete" ).on( "click", function() {
-         $(this).closest( ".calc-row" ).remove();
+    // $( ".calc-controls .calc-control-delete" ).click(function() {
+    //     alert('hello');
+    //      $(this).closest( ".calc-row" ).remove();
+    // });
+
+    $('.form-calc').on('click','.calc-control-delete',function() {
+        $(this).closest('.calc-row').remove();
     });
 
-    // $( ".calc-control-add" ).on( "click", function() {
-    //     var calcRow = html()
-    // });
+    var text = '<div class="calc-row row"> <div class="calc-group calc-count col-xs-12 col-sm-1"></div> <div class="calc-group col-xs-12 col-sm-3"> <label for="calcType">Тип помещения</label> <select class="custom-select" name="calcType" style="width: 100%;" > <option value="Жилая комната"> Жилая комната</option> <option value="Кухня">Кухня</option> <option value="Ванная">Ванная</option> <option value="Туалет">Туалет</option> <option value="Балкон">Балкон</option> </select> </div> <div class="calc-group col-xs-12 col-sm-2"> <label for="calcLength">Длина, м</label> <input type="text" name="calcLength" > </div> <div class="calc-group col-xs-12 col-sm-2"> <label for="calcWidth">Ширина, м</label> <input type="text" name="calcWidth" > </div> <div class="calc-group col-xs-12 col-sm-2"> <label for="calcHeight">Высота, м</label> <input type="text" name="calcHeight" > </div> <div class="calc-controls col-xs-12 col-sm-2"> <button class="calc-control-delete"><i class="icon-trash" ></i></button> </div> </div>';
+
+    $( ".calc-control-add" ).on( "click", function() {
+        $('.form-calc').append(text);
+
+        customSelectInit();
+    });
 
 
 

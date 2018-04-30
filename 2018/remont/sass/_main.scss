@@ -352,7 +352,8 @@
 		background: linear-gradient(to right, rgba(21,3,28,1) 0%,rgba(108,41,90,1) 100%);
 	}
 
-	input {
+	input,
+	select {
 		border: 2px solid #fff;
 		background: rgba($main-color, .4);
 		color: #fff;
@@ -378,12 +379,24 @@
 	.calc-body {}
 	.calc-footer {
 		padding: 35px 0 30px;
+		@media (max-width: 767px) {
+			padding: 20px 0 15px;
+		}
 	}
 	.calc-footer-actions {
 		@extend .reset-list;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+
+		li {
+			@media (max-width: 767px) {
+				padding: 10px 0;
+			}
+		}
 	}
 	.calc-control-add {
 		display: inline-block;
