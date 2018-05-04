@@ -1,0 +1,72 @@
+.footer-box {
+	padding: 30px 0;
+	background: $main-color;
+	font-weight: 300;
+	color: $purple;
+	@media (max-width: 991px) {
+		text-align: center;
+	}
+}
+
+.footer-logo {
+	margin: 20px 0;
+	.footer-logo-img {
+		width: 100%;
+		max-width: 178px;
+	}
+}
+
+.footer-nav {
+	margin: 5px 0;
+	.footer-nav-list {
+		@extend .reset-list;
+		cursor: default;
+		margin: 0 -12px 0 -8px;
+		text-transform: uppercase;
+		letter-spacing: 0.45px;
+		line-height: 1;
+		@media (max-width: 767px) {
+			margin: 0;
+			text-align: left;
+		}
+
+		li {
+			position: relative;
+			display: inline-block;
+			padding: 0 12px 0 8px;
+			border-right: 1px solid #fff;
+			@media (max-width: 767px) {
+				display: block;
+				padding: 12px 0;
+				border: none;
+			}
+
+			&:last-child {
+				border: none;
+			}
+
+			a {
+				color: #fff;
+				&:hover {
+					color: darken(#fff, 10%);
+				}
+			}
+		}
+	}
+}
+
+.footer-address {
+	@media (max-width: 991px) {
+		margin: 20px 0;
+	}
+}
+
+
+.footer-contact {
+	.footer-contact-hint {
+		text-align: right;
+		@media (max-width: 991px) {
+			text-align: center;
+		}
+	}
+}

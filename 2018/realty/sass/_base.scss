@@ -1,0 +1,237 @@
+html,
+body {
+	height: 100%;
+	font-family: $base-font;
+	font-size: 18px;
+	font-weight: 400;
+	color: $default;
+	line-height: 1.25;
+}
+
+main {
+	overflow: hidden;
+}
+
+section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $default-heading;
+}
+
+
+h1,
+.h1 {
+	margin: 0.67em 0;
+	font-size: 56px;
+	font-weight: 700;
+	letter-spacing: 1.4px;
+	line-height: 1.6;
+	@media (max-width: 1199px) {
+		font-size: 48px;
+	}
+	@media (max-width: 991px) {
+		font-size: 36px;
+	}
+	@media (max-width: 767px) {
+		font-size: 28px;
+		line-height: 1.3;
+	}
+}
+
+h2,
+.h2 {
+	margin: 0.6em 0; 
+	font-size: 40px;
+	font-weight: 700;
+	@media (max-width: 991px) {
+		font-size: 30px;
+	}
+}
+
+h3,
+.h3 {
+	font-size: 36px;
+	font-weight: 400;
+	letter-spacing: 0.9px;
+	@media (max-width: 991px) {
+		font-size: 24px;
+	}
+}
+
+h4,
+.h4 {
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 0.6px;
+	@media (max-width: 991px) {
+		font-size: 20px;
+	}
+}
+
+h5,
+.h5 {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+h6,
+.h6 {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+p {
+	margin: 10px 0;
+}
+
+ins {
+	font-size: 36px;
+	font-weight: 700;
+	color: $main-color;
+	text-decoration: none;
+	line-height: 1;
+}
+
+a {
+	color: $main-color;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+img {
+	max-width: 100%;
+}
+
+
+// forms
+
+.form-group {
+	margin: 10px 0;
+}
+
+input {
+	outline: none;
+	display: block;
+	height: 60px;
+	width: 100%;
+	padding: 0 15px;
+	border: none;
+	background: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.45px;
+	color: $default;
+	&:placeholder {
+		color: $default;
+	}
+}
+
+// custom checkbox
+.custom-checkbox {
+	padding: 8px 0;
+}
+input[type="checkbox"] {
+    display: none !important;
+}
+input[type="checkbox"] + label {
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"] + label .custom-check-icon {
+    cursor: pointer;
+	position: relative;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+   	margin: 0 15px 0 0;
+   	border: 1px solid $light-gray;
+}
+
+input[type="checkbox"] + label .custom-check-icon:after {
+	@extend .transition;
+	opacity: 0;
+	font-family: 'icomoon';
+	content: '\e910';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 12px;
+	color: $main-color;
+	// background: url('../img/icons/icon-check.svg') no-repeat 0 0;
+	// background-size: contain;
+}
+
+input[type="checkbox"] + label .custom-check-icon {
+     background-color: #fff;
+}
+
+input[type="checkbox"]:checked + label .custom-check-icon:after {
+     opacity: 1;
+}
+
+input[type="checkbox"] + label .custom-check-icon,
+input[type="checkbox"]:checked + label .custom-check-icon {
+	@extend .transition;
+}
+
+
+input[type="checkbox"] + label .custom-check-value {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	font-size: 15px;
+	color: #e9f0f3;
+	line-height: 1.2;
+}
+
+
+button {
+	outline: none;
+}
+
+.btn {
+	@extend .transition;
+	display: inline-block;
+	min-width: 180px;
+	padding: 13px 10px 13px;
+	border: none;
+	border-radius: $global-radius;
+	background: $purple;
+	box-shadow: 0 2px 2px rgba(76, 46, 119, 0.3);
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	text-shadow: 0 2px 2px rgba(76, 46, 119, 0.3);
+	color: #fff;
+	letter-spacing: 0.6px;
+
+}
+.btn-block {
+	display: block;
+	min-width: 100%;
+	width: 100%;
+}
+
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
