@@ -2791,6 +2791,9 @@ button {
   @media (max-width: 767px) {
     .header-box {
       padding: 15px 0; } }
+  @media (max-width: 767px) {
+    .header-box .header-aside {
+      text-align: right; } }
 
 .header-logo {
   margin: 10px 0; }
@@ -2923,12 +2926,13 @@ button {
   .offcanvas .offcanvas-close {
     position: absolute;
     z-index: 99;
-    top: 10px;
+    top: -5px;
     right: 10px;
     padding: 0;
     border: none;
     background: none;
-    font-size: 34px;
+    font-size: 48px;
+    font-weight: 300;
     color: rgba(255, 255, 255, 0.8); }
   .offcanvas .offcanvas-body {
     padding: 15px; }
