@@ -1,0 +1,28 @@
+.header-box {
+	overflow: hidden;
+	padding: 12px 0;
+	background: rgba($dark, .9);
+	@media (max-width: 767px) {
+		padding: 6px 0;
+	}
+}
+
+.header-logo {
+	width: 78px;
+	@media (max-width: 767px) {
+		width: 50px;
+	}
+}
+
+.header-social {
+	text-align: right;
+	li {
+		a {
+			color: $light;
+			&:hover {
+				color: $warning;
+			}
+		}
+	}
+}
+

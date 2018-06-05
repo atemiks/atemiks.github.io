@@ -1,0 +1,39 @@
+.footer-box {
+	overflow: hidden;
+	padding: 12px 0;
+	background: $dark;
+	color: $light;
+	a {
+		color: inherit;
+		&:hover {
+			color: $warning;
+		}
+	}
+
+	.footer-side-left,
+	.footer-side-right {
+		@media (max-width: 767px) {
+			padding: 0 5px;
+		}
+	}
+}
+
+.footer-nav,
+.footer-copyright {
+	font-size: 17px;
+	@media (max-width: 767px) {
+		font-size: 9px;
+	}
+}
+
+.footer-nav {
+	text-align: right;
+}
+.footer-nav-list {
+	@extend .reset-list;
+	margin: 0 -12px;
+	li {
+		display: inline-block;
+		padding: 0 12px;
+	}
+}

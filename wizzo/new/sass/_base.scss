@@ -1,0 +1,134 @@
+html,
+body {
+	height: 100%;
+	font-size: 16px;
+	font-family: $base-font;
+	line-height: 1.2941176471;
+	color: $default;
+}
+
+section {
+	overflow: hidden;
+	padding: 20px 0 80px;
+	@media (max-width: 991px) {
+		padding: 20px 0 60px;
+	}
+	@media (max-width: 767px) {
+		padding: 20px 0;
+	}
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	
+
+}
+
+h1,
+.h1 {
+	font-size: 50px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	@media (min-width: 768px) and (max-width: 991px) {
+		font-size: 40px;
+	}
+	@media (max-width: 767px) {
+		font-size: 30px;
+	}
+}
+
+h2,
+.h2 {
+	font-size: 45px;
+	font-weight: 300;
+	margin-top: 24px;
+	margin-bottom: 14px;
+	@media (min-width: 768px) and (max-width: 991px) {
+		font-size: 40px;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	@media (max-width: 767px) {
+		margin-top: 14px;
+		font-size: 27px;
+	}
+}
+
+h3,
+.h3 {
+	font-size: 26px;
+	font-weight: 500;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	@media (max-width: 767px) {
+		font-size: 18px;
+	}
+}
+
+h4,
+.h4 {
+	font-size: 22px;
+	font-weight: 400;
+	@media (max-width: 767px) {
+		font-size: 14px;
+	}
+}
+
+h5,
+.h5 {
+	font-size: 20px;
+	font-weight: 400;
+	@media (max-width: 767px) {
+		font-size: 12px;
+	}
+}
+
+h6,
+.h6 {
+	font-size: 17px;
+	font-weight: 400;
+	@media (max-width: 767px) {
+		font-size: 12px;
+	}
+}
+
+p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 17px;
+	@media (max-width: 767px) {
+		font-size: 12px;
+	}
+}
+
+
+a {
+	@extend .transition;
+	color: $warning;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+img {
+	max-width: 100%;
+}
+
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}

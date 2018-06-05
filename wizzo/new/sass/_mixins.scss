@@ -1,0 +1,14 @@
+.reset-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.gradient-warning {
+	background-color: $warning;
+	background-image: linear-gradient(to right, rgba(255, 96, 0, 1) 0%, rgba(255, 120, 0, 1) 28%, rgba(255, 212, 0, 1) 100%);
+}
+
+.transition {
+	transition: 300ms ease;
+}
