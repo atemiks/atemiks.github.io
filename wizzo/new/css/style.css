@@ -1412,7 +1412,7 @@ img {
     width: 286px;
     height: 508px;
     margin: auto;
-    padding: 58px 11px 0 12px;
+    padding: 58px 11px 0 11px;
     background: url("../img/hero/hero-phone.png") no-repeat 0 0;
     -webkit-background-size: contain;
             background-size: contain; }
@@ -1466,11 +1466,7 @@ img {
             -ms-transform: translate(-20%, -50%);
                 transform: translate(-20%, -50%); }
     .hero-thumbnail-wrap .hero-phone #hero-video {
-      width: 264px;
-      -webkit-border-top-left-radius: 8px;
-              border-top-left-radius: 8px;
-      -webkit-border-top-right-radius: 8px;
-              border-top-right-radius: 8px; }
+      width: 266px; }
       @media (max-width: 767px) {
         .hero-thumbnail-wrap .hero-phone #hero-video {
           width: 242px; } }

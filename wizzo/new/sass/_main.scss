@@ -66,7 +66,7 @@
 		width: 286px;
 		height: 508px;
 		margin: auto;
-		padding: 58px 11px 0 12px;
+		padding: 58px 11px 0 11px;
 		background: url('../img/hero/hero-phone.png') no-repeat 0 0;
 		background-size: contain;
 		@media (max-width: 767px) {
@@ -115,9 +115,9 @@
 		}
 
 		#hero-video {
-			width: 264px;
-			border-top-left-radius: 8px;
-			border-top-right-radius: 8px;
+			width: 266px;
+			// border-top-left-radius: 6px;
+			// border-top-right-radius: 6px;
 			@media (max-width: 767px) {
 				width: 242px;
 			}
