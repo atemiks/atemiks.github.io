@@ -4,6 +4,14 @@ $( document ).ready(function() {
 	  AOS.init();
 	}, 100);
 
+	// video hero
+	var heroVideo = document.getElementById("hero-video"); 
+	$( ".hero-thumbnail-wrap .video-play" ).on( "click", function() {
+	        heroVideo.play(); 
+	        $(this).css('opacity', '0', 'visibility', 'hidden');
+	});
+	
+
 	// section presentation
 	 $('.slider-presentation').slick({
 	 	// autoplay: true,
