@@ -1,0 +1,58 @@
+.section-hero {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-color: $gray-300;
+
+	.hero-title,
+	.hero-description {
+		position: relative;
+		z-index: 8;
+		color: #fff;
+	}
+
+	.hero-description {
+		@extend .h4;
+	}
+
+	.hero-btn {
+		font-size: 1.5rem;
+		color: #fff;
+	}
+
+	.hero-scroll-link {
+		position: absolute;
+		z-index: 9;
+		left: 50%;
+		bottom: -50px;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background: rgba(#fff, .2);
+		transform: translateX(-50%);
+		font-size: 2rem;
+		color: #fff;
+		text-align: center;
+		line-height: 50px;
+	}
+}
+
+.section-feature {
+	.feature-aside {
+		display: flex;
+		flex-direction: column;
+		.feature-item {
+			flex: 1 1 auto;
+		}
+	}
+}
+
+
+// .block {
+// 	@include image-2x("logo2x.png", contain);
+
+// }
+

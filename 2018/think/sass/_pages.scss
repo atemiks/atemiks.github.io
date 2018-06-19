@@ -1,0 +1,50 @@
+.social-list {
+	@extend .reset-list;
+	.social-item {
+		.social-link {
+
+		}
+	}
+}
+
+
+.project-card {
+	overflow: hidden;
+	position: relative;
+	// height: 540px;
+	.project-overlay {
+		position: absolute;
+		top: -15px;
+		left: -15px;
+		right: -15px;
+		bottom: -15px;
+		filter: blur(30px);
+		background-position: center;
+		// background-size: cover;
+	}
+
+	.project-title,
+	.project-category,
+	.project-btn {
+		color: #fff;
+	}
+	.project-category {
+		font-family: $base-font;
+		text-transform: uppercase;
+	}
+}
+
+.article-card-highlights {
+	position: relative;
+	display: flex;
+	.article-title,
+	.article-category,
+	.article-btn {
+		color: #fff;
+	}
+
+	.article-btn  {
+		position: absolute;
+		bottom: 0;
+	}
+}

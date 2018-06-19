@@ -1,0 +1,115 @@
+html,
+body {
+	height: 100%;	
+	background: #fff;	
+	font-family: $base-font;
+	color: $default;
+}
+html {
+	font-size: 16px;
+}
+body {
+	font-size: 1.063rem;
+	line-height: 1.875rem;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.content {
+  	flex: 1 0 auto;
+}
+.footer {
+  	flex: 0 0 auto;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-family: $base-heading;
+	color: $heading;
+}
+
+
+h1,
+.h1 {
+	font-size: 3.125rem; 
+	line-height: 4.063rem;
+}
+
+h2,
+.h2 {
+	font-size: 2.5rem;
+	line-height: 3.438rem;
+}
+
+h3,
+.h3 {
+	font-size: 1.875rem;
+	line-height: 2.813rem;
+}
+
+h4,
+.h4 {
+	font-size: 1.25rem;
+	line-height: 1.875rem;
+}
+
+h5,
+.h5 {
+	font-size: 1.063rem;
+	font-weight: 300;
+	line-height: 1.875rem;
+}
+
+h6,
+.h6 {
+  font-size: 0.938rem;
+}
+
+p {
+
+}
+
+a {
+	text-decoration: none;
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+form {}
+
+input,
+textarea {}
+
+button {
+	outline: none;
+}
+
+
+
+.alert-cyan {
+	background-color: $cyan;
+}
+
+
