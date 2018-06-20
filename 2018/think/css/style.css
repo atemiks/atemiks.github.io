@@ -8412,16 +8412,19 @@ button {
     text-align: center;
     line-height: 50px; }
 
-.section-feature .feature-col {
+.feature-grids .feature-col {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  .feature-grids .feature-col .feature-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 3px solid transparent; }
 
-.section-feature .feature-item {
-  margin: 5px; }
-
-.section-feature .feature-aside {
+.feature-grids .feature-aside {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8431,7 +8434,7 @@ button {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .section-feature .feature-aside .feature-item {
+  .feature-grids .feature-aside .feature-item {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
@@ -8482,6 +8485,11 @@ button {
   overflow: hidden;
   position: relative;
   z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   padding-top: 25px;
   padding-bottom: 25px; }
   .project-card .project-overlay {
@@ -8496,6 +8504,11 @@ button {
     background-position: center;
     -webkit-background-size: cover;
             background-size: cover; }
+  .project-card .project-inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
   .project-card .project-content {
     padding-left: 30px;
     padding-right: 20px; }
@@ -8548,6 +8561,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  min-height: 200px;
   background: #f9f9fb; }
   .article-card .article-picture {
     background-position: center;

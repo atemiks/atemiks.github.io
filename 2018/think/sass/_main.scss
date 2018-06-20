@@ -41,13 +41,18 @@
 }
 
 .section-feature {
+
+}
+.feature-grids{
+
 	.feature-col {
 		display: flex;
+		.feature-item {
+			display: flex;
+			border: 3px solid transparent;
+		}
 	}
-	
-	.feature-item {
-		margin: 5px;
-	}
+
 
 	.feature-aside {
 		display: flex;

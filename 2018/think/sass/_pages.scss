@@ -35,6 +35,8 @@
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
+	display: flex;
+	width: 100%;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	// height: 540px;
@@ -48,6 +50,10 @@
 		filter: blur(30px);
 		background-position: center;
 		background-size: cover;
+	}
+
+	.project-inner {
+		display: flex;
 	}
 
 
@@ -115,6 +121,7 @@
 	position: relative;
 	display: flex;
 	width: 100%;
+	min-height: 200px;
 	background: $gray-200;
 	.article-picture {
 		background-position: center;
