@@ -1,9 +1,15 @@
 .header-box {
-
+	#header-navbar {
+		transition: background-color 300ms ease;
+	}
+	
 	.header-brand {
+		opacity: 1;
+		visibility: visible;
 		width: 68px;
 		height: 20px;
 		margin: 0;
+		transition: opacity 300ms ease, visibility 300ms ease;
 	}
 
 	.header-toggler {
@@ -17,6 +23,16 @@
 		.navbar-toggler-icon {
 			width: 2rem;
 			height: 2rem;
+		}
+	}
+
+
+
+	#header-navbar.navbar-scroll {
+		background: #fff;
+		.header-brand {
+			opacity: 0;
+			visibility: hidden;
 		}
 	}
 }

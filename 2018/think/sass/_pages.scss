@@ -35,6 +35,8 @@
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	// height: 540px;
 	.project-overlay {
 		position: absolute;
@@ -45,7 +47,14 @@
 		bottom: -15px;
 		filter: blur(30px);
 		background-position: center;
-		// background-size: cover;
+		background-size: cover;
+	}
+
+
+	.project-content {
+		padding-left: 30px;
+		padding-right: 20px;
+		// padding-right: 30px;
 	}
 
 	.project-title,
@@ -55,9 +64,49 @@
 		z-index: 9;
 		color: #fff;
 	}
+	.project-title {
+		min-height: 160px;
+	}
 	.project-category {
 		font-family: $base-font;
+		font-weight: 300;
 		text-transform: uppercase;
+		letter-spacing: 0.094rem;
+	}
+	.project-btn {
+		position: absolute;
+		left: 15px;
+		bottom: 30px;
+	}
+
+
+	.project-picture {
+		text-align: center;
+	}
+
+	&.project-higlight {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		.project-content {
+			padding-left: 60px;
+		}
+		.project-title {
+			min-height: auto;
+		}
+		.project-btn {
+			position: relative;
+			left: 0;
+			bottom: 0;
+		}
+	}
+}
+
+.articles-grid {
+	margin-left: -3px;
+	margin-right: -3px;
+	.article-item {
+		display: flex;
+		border: 3px solid transparent;
 	}
 }
 
@@ -65,6 +114,7 @@
 	overflow: hidden;
 	position: relative;
 	display: flex;
+	width: 100%;
 	background: $gray-200;
 	.article-picture {
 		background-position: center;
@@ -73,6 +123,9 @@
 
 	.article-content {
 		padding-bottom: 30px;
+	}
+	.article-title {
+		margin-bottom: 100px;
 	}
 	.article-category {
 		font-family: $base-font;

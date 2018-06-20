@@ -8099,6 +8099,9 @@ h6,
 .h6 {
   font-size: 0.938rem; }
 
+p {
+  margin-bottom: 40px; }
+
 a {
   color: #323a45;
   text-decoration: none; }
@@ -8298,10 +8301,20 @@ button {
   border-color: #b09ce4;
   background-color: #d0c4ef !important; }
 
+.header-box #header-navbar {
+  -webkit-transition: background-color 300ms ease;
+  -o-transition: background-color 300ms ease;
+  transition: background-color 300ms ease; }
+
 .header-box .header-brand {
+  opacity: 1;
+  visibility: visible;
   width: 68px;
   height: 20px;
-  margin: 0; }
+  margin: 0;
+  -webkit-transition: opacity 300ms ease, visibility 300ms ease;
+  -o-transition: opacity 300ms ease, visibility 300ms ease;
+  transition: opacity 300ms ease, visibility 300ms ease; }
 
 .header-box .header-toggler {
   padding: 0;
@@ -8315,6 +8328,12 @@ button {
   .header-box .header-toggler .navbar-toggler-icon {
     width: 2rem;
     height: 2rem; }
+
+.header-box #header-navbar.navbar-scroll {
+  background: #fff; }
+  .header-box #header-navbar.navbar-scroll .header-brand {
+    opacity: 0;
+    visibility: hidden; }
 
 .header-navbar-collpase {
   opacity: 0;
@@ -8393,6 +8412,12 @@ button {
     text-align: center;
     line-height: 50px; }
 
+.section-feature .feature-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 .section-feature .feature-item {
   margin: 5px; }
 
@@ -8456,7 +8481,9 @@ button {
 .project-card {
   overflow: hidden;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  padding-top: 25px;
+  padding-bottom: 25px; }
   .project-card .project-overlay {
     position: absolute;
     z-index: 0;
@@ -8466,16 +8493,52 @@ button {
     bottom: -15px;
     -webkit-filter: blur(30px);
             filter: blur(30px);
-    background-position: center; }
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .project-card .project-content {
+    padding-left: 30px;
+    padding-right: 20px; }
   .project-card .project-title,
   .project-card .project-category,
   .project-card .project-btn {
     position: relative;
     z-index: 9;
     color: #fff; }
+  .project-card .project-title {
+    min-height: 160px; }
   .project-card .project-category {
     font-family: "Work Sans", sans-serif;
-    text-transform: uppercase; }
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.094rem; }
+  .project-card .project-btn {
+    position: absolute;
+    left: 15px;
+    bottom: 30px; }
+  .project-card .project-picture {
+    text-align: center; }
+  .project-card.project-higlight {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .project-card.project-higlight .project-content {
+      padding-left: 60px; }
+    .project-card.project-higlight .project-title {
+      min-height: auto; }
+    .project-card.project-higlight .project-btn {
+      position: relative;
+      left: 0;
+      bottom: 0; }
+
+.articles-grid {
+  margin-left: -3px;
+  margin-right: -3px; }
+  .articles-grid .article-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 3px solid transparent; }
 
 .article-card {
   overflow: hidden;
@@ -8484,6 +8547,7 @@ button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   background: #f9f9fb; }
   .article-card .article-picture {
     background-position: center;
@@ -8491,6 +8555,8 @@ button {
             background-size: cover; }
   .article-card .article-content {
     padding-bottom: 30px; }
+  .article-card .article-title {
+    margin-bottom: 100px; }
   .article-card .article-category {
     font-family: "Work Sans", sans-serif;
     font-weight: 300;

@@ -41,6 +41,10 @@
 }
 
 .section-feature {
+	.feature-col {
+		display: flex;
+	}
+	
 	.feature-item {
 		margin: 5px;
 	}
