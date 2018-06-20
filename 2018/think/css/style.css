@@ -8429,8 +8429,11 @@ button {
   .service-card .service-body {
     font-weight: 300; }
 
-.section-projects .project-item {
-  margin: 3px; }
+.projects-grid {
+  margin-left: -3px;
+  margin-right: -3px; }
+  .projects-grid .project-item {
+    border: 3px solid transparent; }
 
 @media (min-width: 1440px) {
   .container {
