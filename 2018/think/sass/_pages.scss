@@ -1,3 +1,26 @@
+.container {
+	@media (min-width: 1440px) {
+		max-width: 1410px;
+	}
+}
+
+
+.section-jumbotron {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.jumbotron {
+	padding: 0;
+	border-radius: 0;
+	color: #fff;
+	.jumbotron-title,
+	.jumbotron-description,
+	.jumbotron-link {
+		color: inherit;
+	}
+}
+
+
 .social-list {
 	@extend .reset-list;
 	.social-item {
@@ -11,9 +34,11 @@
 .project-card {
 	overflow: hidden;
 	position: relative;
+	z-index: 1;
 	// height: 540px;
 	.project-overlay {
 		position: absolute;
+		z-index: 0;
 		top: -15px;
 		left: -15px;
 		right: -15px;
@@ -26,6 +51,8 @@
 	.project-title,
 	.project-category,
 	.project-btn {
+		position: relative;
+		z-index: 9;
 		color: #fff;
 	}
 	.project-category {
@@ -34,17 +61,35 @@
 	}
 }
 
-.article-card-highlights {
+.article-card {
+	overflow: hidden;
 	position: relative;
 	display: flex;
-	.article-title,
-	.article-category,
-	.article-btn {
-		color: #fff;
+	background: $gray-200;
+	.article-picture {
+		background-position: center;
+		background-size: cover;
+	}
+
+	.article-content {
+		padding-bottom: 30px;
+	}
+	.article-category {
+		font-family: $base-font;
+		font-weight: 300;
+		letter-spacing: $default-spacing;
 	}
 
 	.article-btn  {
 		position: absolute;
-		bottom: 0;
+		bottom: 30px;
+	}
+}
+
+.article-card-highlights {
+	.article-title,
+	.article-category,
+	.article-btn {
+		color: #fff;
 	}
 }
