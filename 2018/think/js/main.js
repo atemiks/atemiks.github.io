@@ -1,5 +1,24 @@
 $( document ).ready(function() {
 
+    // sticky header
+    window.onscroll = function() {myFunction()};
+
+    // Get the header
+    var header = document.getElementById("header-navbar");
+    var heightHeader = $('#header-navbar').height();
+
+    // Get the offset position of the navbar
+    var sticky = 200;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("navbar-scroll");
+      } else {
+        header.classList.remove("navbar-scroll");
+      }
+    }
+
     // smooth scroll
     // Select all links with hashes
     $('a[href*="#"]')
@@ -21,49 +40,51 @@ $( document ).ready(function() {
             // Only prevent default if animation is actually gonna happen
             event.preventDefault();
             $('html, body').animate({
-              scrollTop: target.offset().top
+              scrollTop: target.offset().top - heightHeader
             }, 300);
           }
         }
       });
 
 
-    // sticky header
-    window.onscroll = function() {myFunction()};
-
-    // Get the header
-    var header = document.getElementById("header-navbar");
-
-    // Get the offset position of the navbar
-    var sticky = 200;
-
-    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        header.classList.add("navbar-scroll");
-      } else {
-        header.classList.remove("navbar-scroll");
-      }
-    }
+    
 
 
     // float labels
-    //This code is a bit rudimentary.
-    //This is more of a proof of concept than code for production.
-    //The only thing it needs to do, however, is to check if the field has any value. The rest is done with CSS
-
-    $(document).ready(function(){
-      function updateText(event){
+    function updateText(event){
         var input=$(this);
         setTimeout(function(){
-          var val=input.val();
-          if(val!="")
-            input.parent().addClass("floating-placeholder-float");
-          else
-            input.parent().removeClass("floating-placeholder-float");
+            var val=input.val();
+            if (val != "")
+                input.parent().addClass("floating-placeholder-float");
+            else
+                input.parent().removeClass("floating-placeholder-float");
         },1)
-      }
-      $(".floating-placeholder input").keydown(updateText);
-      $(".floating-placeholder input").change(updateText);
+    }
+    $(".floating-placeholder input, .floating-placeholder textarea").keydown(updateText);
+    $(".floating-placeholder input, .floating-placeholder textarea").change(updateText);
+
+    // grow textarea
+    function autosize(){
+        console.log('function');
+      var el = this;
+      setTimeout(function(){
+        el.style.cssText = 'height:auto; padding:0';
+        // for box-sizing other than "content-box" use:
+        // el.style.cssText = '-moz-box-sizing:content-box';
+        el.style.cssText = 'height:' + el.scrollHeight + 'px';
+      },0);
+    }
+    $('textarea').keydown(autosize);
+    $('textarea').change(autosize);
+    
+
+    // section hero
+    var video = document.getElementById("hero-video");
+
+    //Check if video can play, and play it
+    video.addEventListener( "canplay", function() {
+        video.play();
     });
+
 });

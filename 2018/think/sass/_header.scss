@@ -1,18 +1,27 @@
 .header-box {
+	position: relative;
 	#header-navbar {
+		padding: 1.55rem 2rem;
 		transition: background-color 300ms ease;
 	}
-	
+
 	.header-brand {
 		opacity: 1;
 		visibility: visible;
 		width: 68px;
 		height: 20px;
 		margin: 0;
+		padding: 0;
 		transition: opacity 300ms ease, visibility 300ms ease;
+		.navbar-brand-img {
+			width: inherit;
+			height: inherit;
+			vertical-align: top;
+		}
 	}
 
 	.header-toggler {
+		min-height: 32px;
 		padding: 0;
 		border: none;
 		border-radius: 0;
@@ -23,7 +32,16 @@
 		.navbar-toggler-icon {
 			width: 2rem;
 			height: 2rem;
+			background: none;
+			font-size: 2rem;
 		}
+
+		.navbar-toggler-text {
+			font-size: 0.938rem;
+			font-weight: 400;
+			letter-spacing: 0.094rem;
+		}
+
 	}
 
 
@@ -33,6 +51,13 @@
 		.header-brand {
 			opacity: 0;
 			visibility: hidden;
+		}
+
+		.header-navbar-header {
+			.header-brand {
+				opacity: 1;
+				visibility: visible;
+			}
 		}
 	}
 }
@@ -57,6 +82,14 @@
 	&.show {
 		opacity: 1;
 		visibility: visible;
+	}
+
+	.header-navbar-header {
+		width: 100%;
+		padding: 1.55rem 2rem;
+		.header-brand {
+			margin-right: -32px;
+		}
 	}
 }
 .header-nav {

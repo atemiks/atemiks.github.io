@@ -1,0 +1,84 @@
+.footer-box {
+	overflow: hidden;
+	position: relative;
+	padding-top: 7.5rem;
+	padding-bottom: 6rem;
+	background: #fff;
+	font-family: $secondary-font;
+	font-size: 0.688rem;
+	font-weight: 400;
+	line-height: 1.25rem;
+	text-align: center;
+	color: $gray-500;
+}
+
+.section-contact {
+	padding-top: 9.5rem;
+	padding-bottom: 7rem
+}
+.contact-block {
+	.contact-title {
+		margin: 0;
+		text-transform: uppercase;
+	}
+	.contact-lead {
+		margin: 1rem 0;
+		line-height: 3.8rem;
+	}
+}
+.form-contact {
+	max-width: 670px;
+}
+
+
+
+.awwwords {
+	margin: 1.5rem 0;
+}
+
+.footer-social {
+	margin: 2rem 0;
+}
+
+.withLove {
+	margin: -0.7rem 0 1.5rem;
+}
+
+
+.copyright-list {
+	@extend .reset-list;
+	li {
+		position: relative;
+		display: inline-block;
+		padding: 0 10px;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			height: 10px;
+			width: 1px;
+			background: $gray-500;
+			transform: translate(-50%, -50%);
+		}
+		&:last-child:after {
+			display: none;
+		}
+	}
+}
+
+.footer-up {
+	position: absolute;
+	z-index: 9;
+	left: 50%;
+	bottom: -50px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: $gray-300;
+	font-size: 2rem;
+	color: #fff;
+	text-align: center;
+	line-height: 58px;
+	transform: translateX(-50%);
+}

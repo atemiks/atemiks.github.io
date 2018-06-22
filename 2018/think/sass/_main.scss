@@ -1,26 +1,34 @@
+// section hero
 .section-hero {
 	overflow: hidden;
 	position: relative;
 	display: flex;
-	min-height: 100vh;
+	// min-height: 100vh;
+	min-height: 950px;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	background-position: center;
 	background-size: cover;
 	background-color: $gray-300;
 
 	.hero-title,
-	.hero-description {
+	.hero-description,
+	.hero-btn {
 		position: relative;
 		z-index: 8;
 		color: #fff;
 	}
 
+	.hero-title {
+		margin: 2rem 0;
+	}
 	.hero-description {
 		@extend .h4;
+		margin: 1rem 0;
 	}
-
 	.hero-btn {
+		margin: 0.5rem 0;
 		font-size: 1.5rem;
-		color: #fff;
 	}
 
 	.hero-scroll-link {
@@ -36,12 +44,34 @@
 		font-size: 2rem;
 		color: #fff;
 		text-align: center;
-		line-height: 50px;
+		line-height: 58px;
+	}
+
+
+	.hero-video-wrapper {
+		position: absolute;
+	    left: 0;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    z-index: 1;
+	    background-size: cover;
+	    background-position: center;
+	    video {
+	    	width: 100%;
+		    height: 100%;
+		    -o-object-fit: cover;
+		    object-fit: cover;
+		    position: relative;
+		    z-index: 5;
+	    }
 	}
 }
 
+// section feature
 .section-feature {
-
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .feature-grids{
 
@@ -62,31 +92,56 @@
 			flex: 1 1 auto;
 		}
 	}
+
+
+	.project-card.project-higlight {
+		padding-top: 4rem;
+		padding-bottom: 2rem;
+		.project-inner {
+			.project-content {
+				padding-left: 3rem;
+			}
+		}
+
+		.project-btn {
+			margin: 1.3rem 0;
+		}
+	}
 }
 
-
+// sectino services
 .section-serivices {}
+.services-grid {
+	margin-bottom: -25px;
+}
 .service-card {
 	max-width: 470px;
-	margin: 0 auto 25px;
+	margin: 0 0 25px;
 	.service-header {
 		display: flex;
+		padding: 0.5rem 0;
 		.service-brand {
 			flex: 0 0 60px;
-			font-size: 30px;
+			padding: 5px 0;
+			font-size: 2.35rem;
+		}
+		.service-title {
+			margin: 0.3rem 0;
 		}
 	}
 
 	.service-body {
+		padding: 5px 0;
 		font-weight: 300;
 	}
-	.service-footer {}
+	.service-footer {
+		padding: 15px 0;
+	}
 }
 
 
-
-.section-projects {
-}
+// section projects
+.section-projects {}
 .projects-grid {
 	margin-left: -3px;
 	margin-right: -3px;
@@ -94,6 +149,30 @@
 		border: 3px solid transparent;
 	}
 }
+
+
+// section hihlights articles
+.section-highlights-articles {
+	padding-top: 0;
+}
+.highlights-articles-grid  {
+	.highlight-article-col {
+		display: flex;
+		.highlight-article-item {
+			display: flex;
+			width: 100%;
+			border: 3px solid transparent;
+		}
+	}
+	.highlight-article-aside {
+		display: flex;
+		flex-direction: column;
+		.highlight-article-item {
+			flex: 1 1 auto;
+		}
+	}
+}
+
 
 
 // .block {
