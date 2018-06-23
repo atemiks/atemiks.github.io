@@ -8707,26 +8707,6 @@ button {
   .container {
     max-width: 1410px; } }
 
-@media (max-width: 575.98px) {
-  .container {
-    padding-left: 0;
-    padding-right: 0; } }
-
-@media (max-width: 575.98px) {
-  .container > .row {
-    margin-left: 0;
-    margin-right: 0; } }
-
-@media (max-width: 575.98px) {
-  .container > .row [class*="col"] {
-    padding-left: 3.125rem;
-    padding-right: 3.125rem; } }
-
-@media (max-width: 575.98px) {
-  .container > .row [class*="col"] .row {
-    margin-left: -3.125rem;
-    margin-right: -3.125rem; } }
-
 .wrapper {
   display: -webkit-box;
   display: -webkit-flex;

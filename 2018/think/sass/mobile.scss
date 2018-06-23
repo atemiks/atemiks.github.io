@@ -1,0 +1,80 @@
+@import "bootstap/functions";
+@import "bootstap/variables";
+@import "bootstap/mixins";
+
+
+h1,
+.h1 {
+	@include media-breakpoint-down(md) {
+		font-size: 2.5rem;
+		line-height: 3.438rem;
+	}
+}
+
+h2,
+.h2 {
+	@include media-breakpoint-down(md) {
+		font-size: 1.875rem;
+		line-height: 2.813rem;
+	}
+}
+
+.container {
+	@include media-breakpoint-only(xs) {
+		padding-left: 3.125rem;
+		padding-right: 3.125rem;
+	}
+
+	// > .row {
+	// 	@include media-breakpoint-only(xs) {
+	// 		margin-left: 0;
+	// 		margin-right: 0;
+	// 	}
+
+	// 	[class*="col"] {
+	// 		@include media-breakpoint-only(xs) {
+	// 			padding-left: 3.125rem;
+	// 			padding-right: 3.125rem;
+	// 		}
+	// 		.row {
+	// 			@include media-breakpoint-only(xs) {
+	// 				margin-left: -3.125rem;
+	// 				margin-right: -3.125rem;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	.row {
+		@include media-breakpoint-only(xs) {
+			margin-left: -3.125rem;
+			margin-right: -3.125rem;
+		}
+	}
+
+	div[class*="col"] {
+		@include media-breakpoint-only(xs) {
+			padding-left: 3.125rem;
+			padding-right: 3.125rem;
+		}
+	}
+}
+
+
+// page home
+.feature-grids {
+	.feature-aside {
+		@include media-breakpoint-between(sm, md) {
+			flex-direction: row;
+		}
+		.feature-item {
+			@include media-breakpoint-between(sm, md) {
+				flex: 0 0 50%;
+			}
+		}
+	}
+}
+
+
+
+
