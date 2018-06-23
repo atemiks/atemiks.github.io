@@ -149,6 +149,7 @@ input[type="radio"] + label {
 	color: $heading;
 	text-transform: none;
 	letter-spacing: 0;
+    white-space: nowrap;
 }
 input[type="radio"] + label span {
     cursor: pointer;

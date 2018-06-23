@@ -8152,7 +8152,8 @@ input[type="radio"] + label {
   font-size: 1.25rem;
   color: #323a45;
   text-transform: none;
-  letter-spacing: 0; }
+  letter-spacing: 0;
+  white-space: nowrap; }
 
 input[type="radio"] + label span {
   cursor: pointer;
@@ -8426,6 +8427,10 @@ button {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
   background: #fff;
   text-align: center;
   -webkit-transition: visibility 300ms ease, opacity 300ms ease;
@@ -8540,6 +8545,8 @@ button {
   min-height: 950px;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -8747,10 +8754,7 @@ button {
   padding-bottom: 0; }
 
 .jumbotron {
-  margin: 0;
   padding: 0;
-  -webkit-border-radius: 0;
-          border-radius: 0;
   color: #fff; }
   .jumbotron .jumbotron-content {
     padding-top: 8rem;
@@ -8895,7 +8899,7 @@ button {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
   .article-card .article-content {
-    padding: 1.5rem 0.5rem 1.5rem 2rem; }
+    padding: 1.5rem 2rem; }
   .article-card .article-title {
     margin: 1rem 0 2.5rem; }
   .article-card .article-category {

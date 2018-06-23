@@ -42,9 +42,7 @@
 	padding-bottom: 0;
 }
 .jumbotron {
-	margin: 0;
 	padding: 0;
-	border-radius: 0;
 	color: #fff;
 	.jumbotron-content {
 		padding-top: 8rem;
@@ -210,7 +208,8 @@
 	}
 
 	.article-content {
-		padding: 1.5rem 0.5rem 1.5rem 2rem;
+		// padding: 1.5rem 0.5rem 1.5rem 2rem;
+		padding: 1.5rem 2rem;
 	}
 	.article-title {
 		margin: 1rem 0 2.5rem;
