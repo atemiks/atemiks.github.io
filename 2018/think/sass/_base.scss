@@ -130,6 +130,7 @@ textarea {
 	border-radius: 0;
 	border-bottom: 2px solid $gray-300;
 	background-color: transparent;
+	box-shadow: none;
 	transition: border-color 300ms ease;
 	&:focus {
 		border-bottom-color: $gray-500;

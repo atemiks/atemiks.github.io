@@ -1,6 +1,34 @@
 .container {
+	@include media-breakpoint-up(sm) {
+		max-width: calc(100% - 30px);
+	}
 	@media (min-width: 1440px) {
 		max-width: 1410px;
+	}
+
+	@include media-breakpoint-only(xs) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	> .row {
+		@include media-breakpoint-only(xs) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		[class*="col"] {
+			@include media-breakpoint-only(xs) {
+				padding-left: 3.125rem;
+				padding-right: 3.125rem;
+			}
+			.row {
+				@include media-breakpoint-only(xs) {
+					margin-left: -3.125rem;
+					margin-right: -3.125rem;
+				}
+			}
+		}
 	}
 }
 
@@ -15,6 +43,10 @@
 }
 .footer {
   	flex: 0 0 auto;
+}
+
+.offcanvas-open {
+	overflow: hidden;
 }
 
 

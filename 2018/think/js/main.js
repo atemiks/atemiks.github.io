@@ -18,6 +18,12 @@ $( document ).ready(function() {
         header.classList.remove("navbar-scroll");
       }
     }
+    
+
+    $( ".header-toggler" ).on( "click", function() {
+        $('body').toggleClass('offcanvas-open');
+    });
+
 
     // smooth scroll
     // Select all links with hashes
