@@ -90,6 +90,7 @@ $( document ).ready(function() {
 
     //Check if video can play, and play it
     video.addEventListener( "canplay", function() {
+      console.log('play');
         video.play();
     });
 
