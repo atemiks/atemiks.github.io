@@ -22,6 +22,10 @@
 
 .offcanvas-open {
 	overflow: hidden;
+	height: 100%;
+	.wrapper {
+		overflow: hidden;
+	}
 }
 
 

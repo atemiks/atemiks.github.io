@@ -8403,17 +8403,15 @@ button {
       visibility: visible; }
 
 .header-navbar-collpase {
+  z-index: 99;
   opacity: 0;
   visibility: hidden;
   position: fixed;
-  overflow: auto;
+  overflow: visible;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: auto !important;
-  min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8439,6 +8437,14 @@ button {
   .header-navbar-collpase.show {
     opacity: 1;
     visibility: visible; }
+  .header-navbar-collpase .header-navbar-collpase-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
   .header-navbar-collpase .header-navbar-header {
     width: 100%;
     padding: 1.55rem 2rem; }
@@ -8739,7 +8745,10 @@ button {
           flex: 0 0 auto; }
 
 .offcanvas-open {
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100%; }
+  .offcanvas-open .wrapper {
+    overflow: hidden; }
 
 .section-header {
   margin-bottom: 5.5rem;

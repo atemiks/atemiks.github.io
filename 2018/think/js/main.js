@@ -21,7 +21,7 @@ $( document ).ready(function() {
     
 
     $( ".header-toggler" ).on( "click", function() {
-        $('body').toggleClass('offcanvas-open');
+        $('body').toggleClass('modal-open');
     });
 
 
