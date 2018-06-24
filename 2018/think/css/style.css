@@ -8361,6 +8361,9 @@ button {
     -o-transition: background-color 300ms ease;
     transition: background-color 300ms ease; }
   .header-box .header-brand {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
     opacity: 1;
     visibility: visible;
     width: 68px;
@@ -8369,7 +8372,10 @@ button {
     padding: 0;
     -webkit-transition: opacity 300ms ease, visibility 300ms ease;
     -o-transition: opacity 300ms ease, visibility 300ms ease;
-    transition: opacity 300ms ease, visibility 300ms ease; }
+    transition: opacity 300ms ease, visibility 300ms ease;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
     .header-box .header-brand .navbar-brand-img {
       width: inherit;
       height: inherit;

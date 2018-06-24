@@ -6,6 +6,9 @@
 	}
 
 	.header-brand {
+		position: absolute;
+		z-index: 9;
+		left: 50%;
 		opacity: 1;
 		visibility: visible;
 		width: 68px;
@@ -13,6 +16,7 @@
 		margin: 0;
 		padding: 0;
 		transition: opacity 300ms ease, visibility 300ms ease;
+		transform: translateX(-50%);
 		.navbar-brand-img {
 			width: inherit;
 			height: inherit;

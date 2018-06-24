@@ -142,6 +142,12 @@ section {
 	}
 }
 
+.services-grid {
+	@include media-breakpoint-only(xs) {
+		flex-direction: column;
+	}
+}
+
 
 .projects-grid {
 	.project-item {
