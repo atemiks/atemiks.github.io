@@ -8554,15 +8554,36 @@ button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 950px;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
   background-color: #eeeeee; }
+  .section-hero .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 950px;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
   .section-hero .hero-title,
   .section-hero .hero-description,
   .section-hero .hero-btn {
