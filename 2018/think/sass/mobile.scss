@@ -98,6 +98,13 @@ section {
 			line-height: 1.688rem;
 		}
 	}
+
+	.article-picture  {
+		@include media-breakpoint-down(sm) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
 }
 
 .project-card {
@@ -257,11 +264,22 @@ section {
 		}
 	}
 }
+
+
+.section-feature  {
+	padding-top: 2px;
+}
 .feature-grids {
 	.feature-col {
 		@include media-breakpoint-down(sm) {
 			padding-left: 0;
 			padding-right: 0;
+		}
+		.feature-item {
+			@include media-breakpoint-down(sm) {
+				border-left: none;
+				border-right: none;
+			}
 		}
 	}
 	.feature-aside {
@@ -310,6 +328,7 @@ section {
 	}
 }
 
+
 .services-grid {
 	@include media-breakpoint-down(sm) {
 		flex-direction: column;
@@ -353,11 +372,7 @@ section {
 	}
 }
 
-section + .section-highlights-articles {
-	@include media-breakpoint-down(sm) {
-		// margin-top: $mobile-padding / 2;
-	}
-}
+
 .section-highlights-articles {
 	.highlight-article-col {
 		@include media-breakpoint-down(sm) {
