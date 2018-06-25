@@ -1,0 +1,12 @@
+// header
+.header-navbar-collpase {
+	.header-navbar-collpase-inner {
+		@include media-breakpoint-down(sm) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+.header-nav {
+	margin: 1.5rem 0 3rem;
+}
