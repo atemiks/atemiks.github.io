@@ -86,13 +86,13 @@ $( document ).ready(function() {
     
 
     // section hero
-    var video = document.getElementById("hero-video");
+    // var video = document.getElementById("hero-video");
 
-    //Check if video can play, and play it
-    video.addEventListener( "canplay", function() {
-      console.log('play');
-        video.play();
-    });
+    // //Check if video can play, and play it
+    // video.addEventListener( "canplay", function() {
+    //   console.log('play');
+    //     video.play();
+    // });
 
     // section contact
     $( ".section-contact .form-contact #radioCanterbury" ).on( "click", function() {
