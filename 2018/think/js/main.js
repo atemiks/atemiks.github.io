@@ -8,7 +8,7 @@ $( document ).ready(function() {
     var heightHeader = $('#header-navbar').height();
 
     // Get the offset position of the navbar
-    var sticky = 200;
+    var sticky = 80;
 
     // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
@@ -92,6 +92,21 @@ $( document ).ready(function() {
     video.addEventListener( "canplay", function() {
       console.log('play');
         video.play();
+    });
+
+    // section contact
+    $( ".section-contact .form-contact #radioCanterbury" ).on( "click", function() {
+        $('.section-contact .contact-info-block').removeClass('d-block');
+        $('.section-contact .contact-info-canterbury').addClass('d-block');
+    });
+    $( ".section-contact .form-contact #radioLondon" ).on( "click", function() {
+        $('.section-contact .contact-info-block').removeClass('d-block');
+        $('.section-contact .contact-info-london').addClass('d-block');
+    });
+
+    $( ".section-contact .form-contact button[type='submit']" ).on( "click", function() {
+        $('.section-contact .contact-wrapper').addClass('hidden');
+        $('.section-contact .contact-tnanks-wrapper').addClass('d-block');
     });
 
 });

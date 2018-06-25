@@ -1,6 +1,9 @@
 .container {
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(md) {
 		max-width: calc(100% - 30px);
+	}
+	@include media-breakpoint-down(sm) {
+		max-width: 100%;
 	}
 	@media (min-width: 1440px) {
 		max-width: 1410px;
@@ -46,6 +49,7 @@
 	padding-bottom: 0;
 }
 .jumbotron {
+	margin: 0;
 	padding: 0;
 	color: #fff;
 	.jumbotron-content {
@@ -191,8 +195,11 @@
 		position: relative;
 		background-position: center;
 		background-size: cover;
+		display: flex;
+		align-items: center;
 		.article-picture-overlay {
 			position: absolute;
+			z-index: 0;
 			top: -5px;
 			left: -5px;
 			right: -5px;
@@ -201,18 +208,14 @@
 			background-size: cover;
 			filter: $default-blur;
 		}
+
 		img {
-			position: absolute;
+			position: relative;
 			z-index: 1;
-			top: 50%;
-			left: 50%;
-			max-width: 90%;
-			transform: translate(-50%, -50%);
 		}
 	}
 
 	.article-content {
-		// padding: 1.5rem 0.5rem 1.5rem 2rem;
 		padding: 1.5rem 2rem;
 	}
 	.article-title {
@@ -248,12 +251,6 @@
 
 		.article-btn {
 			bottom: 3rem;
-		}
-	}
-
-	&.article-card-project {
-		.article-picture {
-			filler: $default-blur;
 		}
 	}
 }
@@ -309,6 +306,9 @@
 		padding: 0 10px;
 		.social-link {
 			color: $gray-500;
+			&:hover {
+				color: $heading;
+			}
 		}
 	}
 }
