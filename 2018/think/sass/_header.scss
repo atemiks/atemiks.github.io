@@ -1,8 +1,11 @@
 .header-box {
-	position: relative;
+	// position: relative;
+	background: #fff;
+	transition: background-color 300ms ease;
 	#header-navbar {
 		padding: 1.55rem 2rem;
 		transition: background-color 300ms ease;
+		background-color: transparent;
 	}
 
 
@@ -16,7 +19,6 @@
 		height: 20px;
 		margin: 0;
 		padding: 0;
-		transition: opacity 300ms ease, visibility 300ms ease;
 		transform: translateX(-50%);
 		.navbar-brand-img {
 			width: inherit;
@@ -35,6 +37,7 @@
 		font-size: 0.938rem;
 		font-weight: 400;
 		text-transform: uppercase;
+		color: $heading;
 		.navbar-toggler-icon {
 			width: 2rem;
 			height: 2rem;
@@ -47,36 +50,49 @@
 			font-weight: 400;
 			letter-spacing: 0.094rem;
 		}
-
 	}
 
-
-	#header-navbar.navbar-light {
-		.header-toggler {
-			color: #fff;
-		}
+	.header-back {
+		font-size: 1.75rem;
 	}
 
-
-	#header-navbar.navbar-scroll {
-		background: #fff;
+	&.header-sticky {
+		@extend .fixed-top;
+		animation:  header-animation 300ms;
 		.header-brand {
 			opacity: 0;
 			visibility: hidden;
 		}
-
+	}
+	&.fixed-top {
+		background: transparent;
+		.header-toggler {
+			color: #fff;
+		}
+	}
+	&.fixed-top.header-sticky {
+		background: #fff;
 		.header-toggler {
 			color: $heading;
 		}
-
-		.header-navbar-header {
-			.header-brand {
-				opacity: 1;
-				visibility: visible;
-			}
-		}
 	}
 }
+
+.header-box.header-sticky:not(.header-fixed) + .main {
+	padding-top: 82px;
+}
+
+@keyframes header-animation {
+  0%   { 
+  	opacity: 0;
+  	transform: translateY(-100%); 
+  }
+  100% { 
+  	opacity: 1;
+  	transform: translateY(0); 
+  }
+}
+
 
 .header-navbar-collpase {
 	z-index: 99;
@@ -116,6 +132,10 @@
 	.header-navbar-header {
 		width: 100%;
 		padding: 1.55rem 2rem;
+		.header-brand {
+			opacity: 1 !important;
+			visibility: visible !important;
+		}
 		.header-toggler {
 			color: $heading !important;
 		}

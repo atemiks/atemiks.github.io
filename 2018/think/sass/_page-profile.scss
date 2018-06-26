@@ -1,0 +1,81 @@
+.section-profile {
+	padding-top: 0;
+	padding-bottom: 0;
+	color: #fff;
+	.profile-content {
+		min-height: 540px;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	.profile-name,
+	.profile-position,
+	.profile-label {
+		color: inherit;
+	}
+	.profile-position,
+	.profile-label {
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	.profile-name {
+		margin: 0;
+	}
+	.profile-position {
+		margin: 1.9rem 0 1.75rem;
+		letter-spacing: 0.125rem;
+	}
+	.profile-label {
+		margin: 0.5rem 0;
+		letter-spacing: 0.094rem;
+	}
+
+	.profile-social {
+		@extend .reset-list;
+		margin-left: -3px;
+		margin-right: -3px;
+		li {
+			display: inline-block;
+			margin: 0.25rem 0;
+			padding: 0 3px;
+			a {
+				display: block;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background: #fff;
+				font-size: 1.125rem;
+				color: $heading;
+				text-align: center;
+				line-height: 42px;
+				&.linkedin {
+					background: #0077b5;
+					color: #fff;
+				}
+				&.skype {
+					background: #12a5f4;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.profile-picture {
+		text-align: right;	
+	}
+}
+
+
+.section-profile-posts {
+	.section-header {
+		margin-bottom: 2.5rem;
+		.section-title {
+			@extend .h3;
+			margin: 0.5rem 0;
+		}
+	}
+
+	.articles-grid {
+		margin-bottom: 0.8rem;
+	}
+}
+

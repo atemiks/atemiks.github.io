@@ -1,6 +1,6 @@
 
 .footer-box {
-	@include media-breakpoint-only(md) {
+	@include media-breakpoint-down(md) {
 	    padding-top: 4.9rem;
     	padding-bottom: 6.7rem;
 	}

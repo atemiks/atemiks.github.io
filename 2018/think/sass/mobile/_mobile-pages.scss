@@ -32,7 +32,14 @@
 	}
 }
 
-
+.articles-grid {
+	.article-item {
+		@include media-breakpoint-down(sm) {
+			border-left: none;
+			border-right: none;
+		}
+	}
+}
 .article-card {
 	@include media-breakpoint-down(sm) {
 		min-height: 250px;

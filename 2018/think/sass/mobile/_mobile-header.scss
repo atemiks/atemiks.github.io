@@ -1,4 +1,13 @@
 // header
+.header-box {
+	.header-toggler {
+		.navbar-toggler-text {
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+	}
+}
 .header-navbar-collpase {
 	.header-navbar-collpase-inner {
 		@include media-breakpoint-down(sm) {

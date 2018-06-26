@@ -305,7 +305,7 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1,
-.section-header .section-title, .h2, .h3, .h4, .section-hero .hero-description, .h5, .h6 {
+.section-header .section-title, .h2, .h3, .section-profile-posts .section-header .section-title, .h4, .section-hero .hero-description, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
@@ -318,7 +318,7 @@ h1, .h1, .section-header .section-title {
 h2, .h2 {
   font-size: 2rem; }
 
-h3, .h3 {
+h3, .h3, .section-profile-posts .section-header .section-title {
   font-size: 1.75rem; }
 
 h4, .h4, .section-hero .hero-description {
@@ -6607,7 +6607,7 @@ button.bg-dark:focus {
   position: -webkit-sticky !important;
   position: sticky !important; }
 
-.fixed-top {
+.fixed-top, .header-box.header-sticky {
   position: fixed;
   top: 0;
   right: 0;
@@ -8015,7 +8015,7 @@ a.text-dark:hover, a.text-dark:focus {
 .icon-facebook-official:before {
   content: "\f230"; }
 
-.reset-list, .copyright-list, .article-data, .social-list {
+.reset-list, .copyright-list, .article-data, .social-list, .section-profile .profile-social {
   cursor: default;
   margin: 0;
   padding: 0;
@@ -8047,6 +8047,7 @@ h2,
 .h2,
 h3,
 .h3,
+.section-profile-posts .section-header .section-title,
 h4,
 .h4,
 .section-hero .hero-description,
@@ -8069,7 +8070,8 @@ h2,
   line-height: 3.438rem; }
 
 h3,
-.h3 {
+.h3,
+.section-profile-posts .section-header .section-title {
   font-size: 1.875rem;
   line-height: 2.813rem; }
 
@@ -8083,7 +8085,7 @@ h5,
 .h5 {
   font-size: 1.063rem;
   font-weight: 300;
-  line-height: 1.875rem; }
+  line-height: 1.688rem; }
 
 h6,
 .h6 {
@@ -8358,12 +8360,16 @@ button {
   background-color: #d0c4ef !important; }
 
 .header-box {
-  position: relative; }
+  background: #fff;
+  -webkit-transition: background-color 300ms ease;
+  -o-transition: background-color 300ms ease;
+  transition: background-color 300ms ease; }
   .header-box #header-navbar {
     padding: 1.55rem 2rem;
     -webkit-transition: background-color 300ms ease;
     -o-transition: background-color 300ms ease;
-    transition: background-color 300ms ease; }
+    transition: background-color 300ms ease;
+    background-color: transparent; }
   .header-box .header-brand {
     position: absolute;
     z-index: 9;
@@ -8374,9 +8380,6 @@ button {
     height: 20px;
     margin: 0;
     padding: 0;
-    -webkit-transition: opacity 300ms ease, visibility 300ms ease;
-    -o-transition: opacity 300ms ease, visibility 300ms ease;
-    transition: opacity 300ms ease, visibility 300ms ease;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
@@ -8393,7 +8396,8 @@ button {
     background: none;
     font-size: 0.938rem;
     font-weight: 400;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #323a45; }
     .header-box .header-toggler .navbar-toggler-icon {
       width: 2rem;
       height: 2rem;
@@ -8403,18 +8407,45 @@ button {
       font-size: 0.938rem;
       font-weight: 400;
       letter-spacing: 0.094rem; }
-  .header-box #header-navbar.navbar-light .header-toggler {
-    color: #fff; }
-  .header-box #header-navbar.navbar-scroll {
-    background: #fff; }
-    .header-box #header-navbar.navbar-scroll .header-brand {
+  .header-box .header-back {
+    font-size: 1.75rem; }
+  .header-box.header-sticky {
+    -webkit-animation: header-animation 300ms;
+            animation: header-animation 300ms; }
+    .header-box.header-sticky .header-brand {
       opacity: 0;
       visibility: hidden; }
-    .header-box #header-navbar.navbar-scroll .header-toggler {
+  .header-box.fixed-top, .header-box.header-sticky {
+    background: transparent; }
+    .header-box.fixed-top .header-toggler, .header-box.header-sticky .header-toggler {
+      color: #fff; }
+  .header-box.fixed-top.header-sticky, .header-box.header-sticky {
+    background: #fff; }
+    .header-box.fixed-top.header-sticky .header-toggler, .header-box.header-sticky .header-toggler {
       color: #323a45; }
-    .header-box #header-navbar.navbar-scroll .header-navbar-header .header-brand {
-      opacity: 1;
-      visibility: visible; }
+
+.header-box.header-sticky:not(.header-fixed) + .main {
+  padding-top: 82px; }
+
+@-webkit-keyframes header-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes header-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 .header-navbar-collpase {
   z-index: 99;
@@ -8462,6 +8493,9 @@ button {
   .header-navbar-collpase .header-navbar-header {
     width: 100%;
     padding: 1.55rem 2rem; }
+    .header-navbar-collpase .header-navbar-header .header-brand {
+      opacity: 1 !important;
+      visibility: visible !important; }
     .header-navbar-collpase .header-navbar-header .header-toggler {
       color: #323a45 !important; }
   .header-navbar-collpase .header-nav {
@@ -8999,7 +9033,7 @@ button {
   .article-card .article-content {
     padding: 1.5rem 2rem; }
   .article-card .article-title {
-    margin: 1rem 0 2.5rem; }
+    margin: 0.5rem 0 2.5rem; }
   .article-card .article-category {
     margin: 0.5rem 0;
     font-family: "Work Sans", sans-serif;
@@ -9013,12 +9047,16 @@ button {
   .article-card[class*='bg'] .article-category,
   .article-card[class*='bg'] .article-btn {
     color: #fff; }
-  .article-card.article-higlight .article-content {
+  .article-card.article-hero .article-content {
     padding: 2.5rem 3rem; }
-    .article-card.article-higlight .article-content .article-title {
+    .article-card.article-hero .article-content .article-title {
       margin: 0.5rem 0 2rem; }
-  .article-card.article-higlight .article-btn {
+  .article-card.article-hero .article-btn {
     bottom: 3rem; }
+  .article-card.article-higlight .article-content {
+    padding: 1.5rem 0 1.5rem 2rem; }
+  .article-card.article-higlight .article-title {
+    margin-top: 1rem; }
 
 .article-data {
   margin: 1.5rem 0;
@@ -9066,3 +9104,62 @@ button {
       color: #a9afb7; }
       .social-list .social-item .social-link:hover {
         color: #323a45; }
+
+.section-profile {
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #fff; }
+  .section-profile .profile-content {
+    min-height: 540px;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+  .section-profile .profile-name,
+  .section-profile .profile-position,
+  .section-profile .profile-label {
+    color: inherit; }
+  .section-profile .profile-position,
+  .section-profile .profile-label {
+    font-weight: 400;
+    text-transform: uppercase; }
+  .section-profile .profile-name {
+    margin: 0; }
+  .section-profile .profile-position {
+    margin: 1.9rem 0 1.75rem;
+    letter-spacing: 0.125rem; }
+  .section-profile .profile-label {
+    margin: 0.5rem 0;
+    letter-spacing: 0.094rem; }
+  .section-profile .profile-social {
+    margin-left: -3px;
+    margin-right: -3px; }
+    .section-profile .profile-social li {
+      display: inline-block;
+      margin: 0.25rem 0;
+      padding: 0 3px; }
+      .section-profile .profile-social li a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        background: #fff;
+        font-size: 1.125rem;
+        color: #323a45;
+        text-align: center;
+        line-height: 42px; }
+        .section-profile .profile-social li a.linkedin {
+          background: #0077b5;
+          color: #fff; }
+        .section-profile .profile-social li a.skype {
+          background: #12a5f4;
+          color: #fff; }
+  .section-profile .profile-picture {
+    text-align: right; }
+
+.section-profile-posts .section-header {
+  margin-bottom: 2.5rem; }
+  .section-profile-posts .section-header .section-title {
+    margin: 0.5rem 0; }
+
+.section-profile-posts .articles-grid {
+  margin-bottom: 0.8rem; }

@@ -1,21 +1,21 @@
 $( document ).ready(function() {
 
     // sticky header
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {headerSticky()};
 
     // Get the header
-    var header = document.getElementById("header-navbar");
-    var heightHeader = $('#header-navbar').height();
+    var header = $(".header-box");
+    var heightHeader = $('.header-box').height();
 
     // Get the offset position of the navbar
-    var sticky = 80;
+    var sticky = 120;
 
     // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
+    function headerSticky() {
       if (window.pageYOffset >= sticky) {
-        header.classList.add("navbar-scroll");
+        header.addClass("header-sticky");
       } else {
-        header.classList.remove("navbar-scroll");
+        header.removeClass("header-sticky");
       }
     }
     

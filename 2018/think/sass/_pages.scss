@@ -219,7 +219,7 @@
 		padding: 1.5rem 2rem;
 	}
 	.article-title {
-		margin: 1rem 0 2.5rem;
+		margin: 0.5rem 0 2.5rem;
 	}
 	.article-category {
 		margin: 0.5rem 0;
@@ -241,7 +241,7 @@
 		}
 	}
 
-	&.article-higlight {
+	&.article-hero {
 		.article-content {
 			padding: 2.5rem 3rem;
 			.article-title {
@@ -251,6 +251,14 @@
 
 		.article-btn {
 			bottom: 3rem;
+		}
+	}
+	&.article-higlight {
+		.article-content {
+			padding: 1.5rem 0 1.5rem 2rem;
+		}
+		.article-title {
+			margin-top: 1rem;
 		}
 	}
 }
