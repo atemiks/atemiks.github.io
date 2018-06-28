@@ -147,11 +147,20 @@
 		margin: 7.9rem 0 3rem;
 		font-size: 1.063rem;
 		font-weight: 400;
+		text-transform: uppercase;
 		.nav-item {
 			.nav-link {
 				padding: 0.95rem 0;
-				color: $heading;
+				color: $gray-500;
 				letter-spacing: $default-spacing;
+				&:hover {
+					color: $heading;
+				}
+			}
+			&.active {
+				.nav-link {
+					color: $heading;
+				}
 			}
 		}
 	}

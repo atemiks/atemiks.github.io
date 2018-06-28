@@ -1,0 +1,119 @@
+.section-hero.section-hero-about {
+	.hero-logo {
+		@include media-breakpoint-down(sm) {
+			margin: 6.5rem -1.5rem 4rem;
+		}
+	}
+	.hero-partner {
+		@include media-breakpoint-down(sm) {
+			margin-top: 6rem;
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+.section-priority {
+	@include media-breakpoint-down(sm) {
+		padding-top: 2.3rem;
+	}
+	.section-header {
+		.section-title {
+			@include media-breakpoint-down(sm) {
+				font-size: 1.875rem;
+			}
+		}
+	}
+}
+.priority-grid {
+	@include media-breakpoint-down(sm) {
+		margin-top: 0.8rem;
+		margin-bottom: 7rem;
+	}
+}
+
+
+.section-expertise {
+	.section-header {
+		.section-title {
+			@include media-breakpoint-down(sm) {
+				font-size: 1.875rem;
+				line-height: 2.813rem;
+			}
+		}
+	}
+}
+.slider-expertise-wrapper {
+	@include media-breakpoint-down(sm) {
+		margin-top: -1.75rem;
+	}
+	.col {
+		@include media-breakpoint-down(sm) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+.slider-expertise {
+	.slide-item {
+		@include media-breakpoint-down(sm) {
+			width: 410px;
+		}
+	}
+}
+.expertise-card {
+	@include media-breakpoint-down(sm) {
+		min-height: 410px;
+		padding-bottom: 1rem;
+	}
+}
+
+
+.section-partners {
+	@include media-breakpoint-down(sm) {
+		padding-top: 5.5rem;
+		padding-bottom: 5.5rem;
+	}
+	.section-header {
+		.section-title {
+			@include media-breakpoint-down(sm) {
+				font-size: 1.875rem;
+				line-height: 2.813rem;
+			}
+		}
+	}
+}
+.partners-grid {
+	@include media-breakpoint-down(sm) {
+		margin-top: -2rem;
+		margin-bottom: 2rem;
+	}
+	.partner-item  {
+		@include media-breakpoint-down(sm) {
+			padding-top: 3.8rem;
+			padding-bottom: 3.8rem;
+		}
+		@include media-breakpoint-only(xs) {
+			display: none;
+		}
+		&:nth-child(4n+1) {
+			display: block;
+		}
+	}
+}
+.company-stats {
+	@include media-breakpoint-down(sm) {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: -1rem;
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+	}
+
+	.stat-item {
+		@include media-breakpoint-down(sm) {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+	}
+}

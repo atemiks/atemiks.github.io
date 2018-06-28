@@ -28,6 +28,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-collaboration:before {
+  content: "\e905";
+}
+.icon-communication:before {
+  content: "\e906";
+}
+.icon-outcomes:before {
+  content: "\e907";
+}
+.icon-relationships:before {
+  content: "\e908";
+}
+.icon-scroll-hand:before {
+  content: "\e909";
+}
 .icon-angle-left:before {
   content: "\f111";
 }
@@ -130,4 +145,3 @@
 .icon-facebook-official:before {
   content: "\f230";
 }
-

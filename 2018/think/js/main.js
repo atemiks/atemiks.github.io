@@ -109,4 +109,21 @@ $( document ).ready(function() {
         $('.section-contact .contact-tnanks-wrapper').addClass('d-block');
     });
 
+
+
+    // page about
+    $(".slider-expertise").owlCarousel({
+        loop: false,
+        margin: 6,
+        nav: true,
+        dots: false,
+        autoWidth: true,
+        center: false,
+        responsive: {
+          768 : {
+              margin: 10
+          }
+        }
+    });
+
 });

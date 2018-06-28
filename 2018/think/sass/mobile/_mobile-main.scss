@@ -3,7 +3,6 @@
 	.container {
 		@include media-breakpoint-down(sm) {
 			min-height: 735px;
-			padding-bottom: 14rem;
 		}
 	}
 
@@ -29,6 +28,16 @@
 	.hero-scroll-link {
 		@include media-breakpoint-down(sm) {
 			background: rgba($heading, .2);
+		}
+	}
+}
+
+.page-home {
+	.section-hero {
+		.container {
+			@include media-breakpoint-down(sm) {
+				padding-bottom: 14rem;
+			}
 		}
 	}
 }

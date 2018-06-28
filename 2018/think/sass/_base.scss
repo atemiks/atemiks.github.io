@@ -31,6 +31,7 @@ h5,
 .h5,
 h6,
 .h6 {
+	margin-bottom: 1.1em;
 	font-family: $base-heading;
 	color: $heading;
 }
@@ -77,7 +78,10 @@ h6,
 }
 
 p {
-	margin-bottom: 40px;
+	margin-bottom: 1.8em;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 a {
@@ -343,7 +347,10 @@ button {
 .bg-purple {
 	background-color: $purple !important;
 }
-.bg-ligght {
+.bg-beige {
+	background-color: $beige !important;
+}
+.bg-light {
 	background: $gray-200 !important;
 }
 
