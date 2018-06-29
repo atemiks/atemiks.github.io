@@ -77,7 +77,7 @@
 
             <main class="main">
                 <section class="section-profile bg-pink">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="profile-content col-6 col-md-4 col-lg-5 offset-md-1">
                                 <div class="profile-label">Team</div>
@@ -99,13 +99,13 @@
                 </section>
 
                 <section class="section-profile-posts">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row">
-                            <div class="section-header col">
+                            <div class="section-header header-sm col">
                                 <h2 class="section-title">Posts by Cameron...</h2>
                             </div>
                         </div>
-                        <div class="articles-grid no-gutters row row">
+                        <div class="articles-grid no-gutters row">
                             <div class="article-item col-12 col-sm-6 col-xl-4">
                                 <div class="article-card article-higlight flex-row-reverse bg-pink">
                                     <div class="article-picture align-self-end col-6" >
@@ -180,87 +180,83 @@
             <section class="section-contact bg-light">
                 <div class="container">
                     <div class="contact-wrapper row">
-                        <div class="col col-lg-10 offset-lg-1">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="contact-info-block contact-info-canterbury d-block">
-                                        <h6 class="contact-title" >CONTACT</h6>
-                                        <p class="contact-lead h1"><i>Hello</i> <br> Canterbury.</p>
-                                        <address>01227 808040 <br><br> 5 CASTLE STREET <br> CANTERBURY <br> KENT <br> CT1 2NR</address>
-                                        <a class="btn btn-link" href="#link" >VIEW MAP</a>
-                                    </div>
-                                    <div class="contact-info-block contact-info-london">
-                                        <h6 class="contact-title" >CONTACT</h6>
-                                        <p class="contact-lead h1"><i>Hello</i> <br> London.</p>
-                                        <address>01227 808040 <br><br> 5 CASTLE STREET <br> LONDON <br> KENT <br> CT1 2NR</address>
-                                        <a class="btn btn-link" href="#link" >VIEW MAP</a>
-                                    </div>
+                            <div class="col-md-4">
+                                <div class="contact-info-block contact-info-canterbury d-block">
+                                    <h6 class="contact-title" >CONTACT</h6>
+                                    <p class="contact-lead h1"><i>Hello</i> <br> Canterbury.</p>
+                                    <address>01227 808040 <br><br> 5 CASTLE STREET <br> CANTERBURY <br> KENT <br> CT1 2NR</address>
+                                    <a class="btn btn-link" href="#link" >VIEW MAP</a>
                                 </div>
-                                <div class="col-md-7 offset-md-1">
-                                    <form class="form-contact" onsubmit="return false">
-                                        <div class="row">
-                                            <div class="col-6 col-md-5">
-                                                <div class="form-group">
-                                                    <input type="radio" id="radioCanterbury" name="radio" checked >
-                                                    <label for="radioCanterbury"><span></span>Canterbury</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-5">
-                                                <div class="form-group">
-                                                    <input type="radio" id="radioLondon" name="radio" >
-                                                    <label for="radioLondon"><span></span>London</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="form-group floating-placeholder">
-                                                    <input id="contactCompany" name="contactCompany" type="text">
-                                                    <label for="contactCompany">Company</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7">
-                                                <div class="form-group floating-placeholder">
-                                                    <input id="contactName" name="contactName" type="text" >
-                                                    <label for="contactName">Name</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="form-group floating-placeholder">
-                                                    <input id="contactPhone" name="contactPhone" type="tel">
-                                                    <label for="contactPhone">Phone</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7">
-                                                <div class="form-group floating-placeholder">
-                                                    <input id="contactEmail" name="contactEmail" type="email" >
-                                                    <label for="contactEmail">Email</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="form-group floating-placeholder">
-                                                    <textarea id="contactMessage" name="contactMessage" rows="1" data-min-rows="1" ></textarea>
-                                                    <label for="contactMessage">Message</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
-                                                <button type="submit" class="btn btn-outline-dark btn-block"  >SEND</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                <div class="contact-info-block contact-info-london">
+                                    <h6 class="contact-title" >CONTACT</h6>
+                                    <p class="contact-lead h1"><i>Hello</i> <br> London.</p>
+                                    <address>01227 808040 <br><br> 5 CASTLE STREET <br> LONDON <br> KENT <br> CT1 2NR</address>
+                                    <a class="btn btn-link" href="#link" >VIEW MAP</a>
                                 </div>
                             </div>
-                        </div>
+                            <div class="col-md-7 offset-md-1">
+                                <form class="form-contact" onsubmit="return false">
+                                    <div class="row">
+                                        <div class="col-6 col-md-5">
+                                            <div class="form-group">
+                                                <input type="radio" id="radioCanterbury" name="radio" checked >
+                                                <label for="radioCanterbury"><span></span>Canterbury</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-5">
+                                            <div class="form-group">
+                                                <input type="radio" id="radioLondon" name="radio" >
+                                                <label for="radioLondon"><span></span>London</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group floating-placeholder">
+                                                <input id="contactCompany" name="contactCompany" type="text">
+                                                <label for="contactCompany">Company</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group floating-placeholder">
+                                                <input id="contactName" name="contactName" type="text" >
+                                                <label for="contactName">Name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group floating-placeholder">
+                                                <input id="contactPhone" name="contactPhone" type="tel">
+                                                <label for="contactPhone">Phone</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group floating-placeholder">
+                                                <input id="contactEmail" name="contactEmail" type="email" >
+                                                <label for="contactEmail">Email</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group floating-placeholder">
+                                                <textarea id="contactMessage" name="contactMessage" rows="1" data-min-rows="1" ></textarea>
+                                                <label for="contactMessage">Message</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="submit" class="btn btn-outline-dark btn-block"  >SEND</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                     </div>
                     <div class="contact-tnanks-wrapper row">
                         <div class="col">

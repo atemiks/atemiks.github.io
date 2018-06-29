@@ -1,0 +1,39 @@
+.post {
+	h3 {
+		margin: 0 0 40px;
+	}
+
+	h4 {
+		margin: 0 0 38px;
+		line-height: 2.188rem;
+	}
+
+	h5 {
+		margin: 0 0 27px;
+	}
+
+	h6 {
+		margin: 0 0 27px;
+	}
+
+	p {
+		margin: 0 0 30px;
+		word-spacing: 3px;
+	}
+
+	p + h3 {
+		margin-top: 75px;
+	}
+
+	p + h4 {
+		margin-top: 40px;
+	}
+
+	p + h6 {
+		margin-top: 90px;
+	}
+
+	.post-title {
+		margin: 0 0 90px;
+	}
+}

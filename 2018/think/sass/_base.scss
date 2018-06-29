@@ -31,7 +31,7 @@ h5,
 .h5,
 h6,
 .h6 {
-	margin-bottom: 1.1em;
+	margin: 50px 0;
 	font-family: $base-heading;
 	color: $heading;
 }
@@ -78,7 +78,8 @@ h6,
 }
 
 p {
-	margin-bottom: 1.8em;
+	margin: 0 0 30px;
+	word-spacing: $default-word-spacing;
 	&:last-child {
 		margin-bottom: 0;
 	}

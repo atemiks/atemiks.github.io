@@ -1,12 +1,17 @@
 .section-hero.section-hero-about {
 	.hero-logo {
 		@include media-breakpoint-down(sm) {
-			margin: 6.5rem -1.5rem 4rem;
+			margin: 7.5rem -1.5rem 4rem;
+		}
+	}
+	.hero-description {
+		@include media-breakpoint-down(sm) {
+			margin: 2rem 0 6rem;
 		}
 	}
 	.hero-partner {
 		@include media-breakpoint-down(sm) {
-			margin-top: 6rem;
+			margin-top: 5rem;
 			margin-bottom: 0;
 		}
 	}
@@ -15,38 +20,33 @@
 
 .section-priority {
 	@include media-breakpoint-down(sm) {
-		padding-top: 2.3rem;
-	}
-	.section-header {
-		.section-title {
-			@include media-breakpoint-down(sm) {
-				font-size: 1.875rem;
-			}
-		}
+		padding-top: 3.4rem;
+		padding-bottom: 3.4rem;
 	}
 }
 .priority-grid {
 	@include media-breakpoint-down(sm) {
-		margin-top: 0.8rem;
-		margin-bottom: 7rem;
+		margin-top: 2.5rem;
+		margin-bottom: 5.2rem;
 	}
 }
 
-
+.section-priority + .section-expertise  {
+	@include media-breakpoint-down(sm) {
+		margin-top: 0;
+		padding-top: 2.4rem;
+		padding-bottom: 5rem;
+	}
+}
 .section-expertise {
 	.section-header {
 		.section-title {
 			@include media-breakpoint-down(sm) {
-				font-size: 1.875rem;
-				line-height: 2.813rem;
 			}
 		}
 	}
 }
 .slider-expertise-wrapper {
-	@include media-breakpoint-down(sm) {
-		margin-top: -1.75rem;
-	}
 	.col {
 		@include media-breakpoint-down(sm) {
 			padding-left: 0;
@@ -57,36 +57,32 @@
 .slider-expertise {
 	.slide-item {
 		@include media-breakpoint-down(sm) {
-			width: 410px;
+			width: 405px;
 		}
 	}
 }
 .expertise-card {
 	@include media-breakpoint-down(sm) {
 		min-height: 410px;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 		padding-bottom: 1rem;
 	}
 }
 
 
+
 .section-partners {
 	@include media-breakpoint-down(sm) {
-		padding-top: 5.5rem;
-		padding-bottom: 5.5rem;
+		padding-top: 5.8rem;
+		padding-bottom: 5rem;
 	}
-	.section-header {
-		.section-title {
-			@include media-breakpoint-down(sm) {
-				font-size: 1.875rem;
-				line-height: 2.813rem;
-			}
-		}
-	}
+	
 }
 .partners-grid {
 	@include media-breakpoint-down(sm) {
-		margin-top: -2rem;
-		margin-bottom: 2rem;
+		margin-top: -5px;
+		margin-bottom: 2.5rem;
 	}
 	.partner-item  {
 		@include media-breakpoint-down(sm) {
@@ -114,6 +110,21 @@
 		@include media-breakpoint-down(sm) {
 			padding-top: 1rem;
 			padding-bottom: 1rem;
+		}
+	}
+}
+
+
+
+.section-together {
+	@include media-breakpoint-down(sm) {
+		padding-top: 5.5rem;
+	}
+	.section-header {
+		.section-title {
+			@include media-breakpoint-down(sm) {
+				font-size: 2.5rem;
+			}
 		}
 	}
 }

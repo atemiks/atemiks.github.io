@@ -305,7 +305,7 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1,
-.section-header .section-title, .h2, .h3, .section-hero.section-hero-about .hero-description, .section-profile-posts .section-header .section-title, .h4, .section-hero .hero-description, .h5, .h6 {
+.section-header .section-title, .h2, .h3, .section-header.header-sm .section-title, .section-hero.section-hero-about .hero-description, .h4, .section-hero .hero-description, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
@@ -318,7 +318,7 @@ h1, .h1, .section-header .section-title {
 h2, .h2 {
   font-size: 2rem; }
 
-h3, .h3, .section-hero.section-hero-about .hero-description, .section-profile-posts .section-header .section-title {
+h3, .h3, .section-header.header-sm .section-title, .section-hero.section-hero-about .hero-description {
   font-size: 1.75rem; }
 
 h4, .h4, .section-hero .hero-description {
@@ -8062,8 +8062,8 @@ h2,
 .h2,
 h3,
 .h3,
+.section-header.header-sm .section-title,
 .section-hero.section-hero-about .hero-description,
-.section-profile-posts .section-header .section-title,
 h4,
 .h4,
 .section-hero .hero-description,
@@ -8071,7 +8071,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-bottom: 1.1em;
+  margin: 50px 0;
   font-family: "Playfair Display", serif;
   color: #323a45; }
 
@@ -8088,8 +8088,8 @@ h2,
 
 h3,
 .h3,
-.section-hero.section-hero-about .hero-description,
-.section-profile-posts .section-header .section-title {
+.section-header.header-sm .section-title,
+.section-hero.section-hero-about .hero-description {
   font-size: 1.875rem;
   line-height: 2.813rem; }
 
@@ -8114,7 +8114,8 @@ h6,
   text-transform: uppercase; }
 
 p {
-  margin-bottom: 1.8em; }
+  margin: 0 0 30px;
+  word-spacing: 3px; }
   p:last-child {
     margin-bottom: 0; }
 
@@ -8679,7 +8680,7 @@ button {
   -webkit-background-size: cover;
           background-size: cover;
   background-color: #eeeeee; }
-  .section-hero .container {
+  .section-hero .container-fluid {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -8705,7 +8706,8 @@ button {
   .section-hero .hero-title {
     margin: 2rem 0; }
   .section-hero .hero-description {
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    line-height: 1.875rem; }
   .section-hero .hero-btn {
     margin: 0.5rem 0;
     font-size: 1.5rem; }
@@ -8800,7 +8802,7 @@ button {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 0.5rem 0; }
+    padding: 0.5rem 0 0.75rem; }
     .service-card .service-header .service-brand {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 60px;
@@ -8809,10 +8811,11 @@ button {
       padding: 5px 0;
       font-size: 2.35rem; }
     .service-card .service-header .service-title {
-      margin: 0.3rem 0; }
+      margin: 0; }
   .service-card .service-body {
     padding: 5px 0;
-    font-weight: 300; }
+    font-weight: 300;
+    word-spacing: 3px; }
   .service-card .service-footer {
     padding: 15px 0; }
 
@@ -8856,18 +8859,17 @@ button {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: -webkit-calc(100% - 30px);
-    max-width: calc(100% - 30px); } }
-
-@media (max-width: 767.98px) {
-  .container {
-    max-width: 100%; } }
+    max-width: 1200px; } }
 
 @media (min-width: 1440px) {
-  .container {
+  .container-fluid {
     max-width: 1410px; } }
+
+@media (min-width: 1200px) {
+  .container-block {
+    max-width: 100%; } }
 
 .wrapper {
   display: -webkit-box;
@@ -8903,9 +8905,15 @@ button {
   margin-bottom: 5.5rem;
   text-align: center; }
   .section-header .section-title {
-    margin: 1rem 0; }
+    line-height: 1.375;
+    margin: 0.25em 0 0.3em; }
   .section-header .section-description {
-    margin: -0.3rem 0 .3rem; }
+    margin: -0.3em 0 0.3em; }
+  .section-header.header-sm {
+    margin-bottom: 2.5rem; }
+    .section-header.header-sm .section-title {
+      line-height: 1.375;
+      margin: .3em 0; }
 
 .section-jumbotron {
   padding-top: 0;
@@ -8924,7 +8932,7 @@ button {
   .jumbotron .jumbotron-link {
     color: inherit; }
   .jumbotron .jumbotron-title {
-    margin: 0 0 2.5rem; }
+    margin: 0 0 2rem; }
     .jumbotron .jumbotron-title .jumbotron-icon {
       margin: 0 1.5rem 0 0;
       font-size: 3rem;
@@ -8983,6 +8991,7 @@ button {
   .project-card .project-title {
     margin: 1rem 0 2.5rem; }
   .project-card .project-category {
+    margin: 0;
     font-family: "Work Sans", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -9192,9 +9201,13 @@ button {
   .section-hero.section-hero-about .hero-partner {
     margin: 6rem 0 5rem; }
 
+.section-priority .priority-description .priority-title {
+  margin: 2rem 0;
+  line-height: 1.5; }
+
 .priority-grid {
   margin-top: 1.5rem;
-  margin-bottom: 7.5rem; }
+  margin-bottom: 5.5rem; }
   .priority-grid .priority-item {
     position: relative;
     max-width: 270px;
@@ -9330,10 +9343,11 @@ button {
       margin: 1rem 0;
       color: #fff; }
   .expertise-card .expertise-body {
-    padding: 0.5rem 0; }
+    padding: 0.5rem 0;
+    word-spacing: 3px; }
 
 .partners-grid {
-  margin-top: -4rem;
+  margin-top: -3.5rem;
   margin-bottom: 3rem; }
   .partners-grid .partner-item {
     padding-top: 3.4rem;
@@ -9416,10 +9430,34 @@ button {
   .section-profile .profile-picture {
     text-align: right; }
 
-.section-profile-posts .section-header {
-  margin-bottom: 2.5rem; }
-  .section-profile-posts .section-header .section-title {
-    margin: 0.5rem 0; }
-
 .section-profile-posts .articles-grid {
   margin-bottom: 0.8rem; }
+
+.post h3 {
+  margin: 0 0 40px; }
+
+.post h4 {
+  margin: 0 0 38px;
+  line-height: 2.188rem; }
+
+.post h5 {
+  margin: 0 0 27px; }
+
+.post h6 {
+  margin: 0 0 27px; }
+
+.post p {
+  margin: 0 0 30px;
+  word-spacing: 3px; }
+
+.post p + h3 {
+  margin-top: 75px; }
+
+.post p + h4 {
+  margin-top: 40px; }
+
+.post p + h6 {
+  margin-top: 90px; }
+
+.post .post-title {
+  margin: 0 0 90px; }
