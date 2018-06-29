@@ -441,7 +441,9 @@
 
 @media (max-width: 767.98px) {
   .slider-expertise .slide-item {
-    width: 405px; } }
+    width: -webkit-calc(100vw - 20px);
+    width: calc(100vw - 20px);
+    max-width: 405px; } }
 
 @media (max-width: 767.98px) {
   .expertise-card {
