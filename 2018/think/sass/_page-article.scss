@@ -22,6 +22,9 @@
 	p {
 		margin: 0 0 30px;
 		word-spacing: 3px;
+		span {
+			color: $heading;
+		}
 	}
 
 	p + h3 {
@@ -35,6 +38,7 @@
 	p + h6 {
 		margin-top: 90px;
 	}
+
 
 	.post-title {
 		margin: 0 0 90px;

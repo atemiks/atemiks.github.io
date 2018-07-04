@@ -656,6 +656,10 @@
             transform: translateY(0); } }
 
 @media (max-width: 767.98px) {
+  .section-hero.section-hero-project .hero-project-picture img {
+    max-height: 238px; } }
+
+@media (max-width: 767.98px) {
   .section-related-projects {
     display: none; } }
 

@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,400,500,600,800");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,800");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i");
 :root {
   --blue: #007bff;
@@ -8167,7 +8167,8 @@ figure {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 img {
   max-width: 100%; }
@@ -9603,6 +9604,12 @@ button {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
+    .section-hero.section-hero-project .hero-project-picture .hero-project-figure {
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+      width: 100%;
+      text-align: center; }
 
 .section-related-projects {
   padding-top: 5.7rem; }
@@ -9624,6 +9631,8 @@ button {
   .post p {
     margin: 0 0 30px;
     word-spacing: 3px; }
+    .post p span {
+      color: #323a45; }
   .post p + h3 {
     margin-top: 75px; }
   .post p + h4 {

@@ -33,6 +33,11 @@
 			padding-right: $mobile-padding / 1.8;
 			transform: translateY(0);
 		}
+		img {
+			@include media-breakpoint-down(sm) {
+				max-height: 238px;
+			}
+		}
 	}
 }
 
