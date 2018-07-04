@@ -1,0 +1,12 @@
+.post  {
+	@include media-breakpoint-down(sm) {
+		padding: 3.5rem 0 6rem;
+		border-bottom: none;
+	}
+
+	.post-title {
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 64px;
+		}
+	}
+}

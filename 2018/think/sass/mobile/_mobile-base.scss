@@ -14,6 +14,12 @@ h2,
 	}
 }
 
+figure {
+	@include media-breakpoint-down(sm) {
+		min-height: 140px;
+	}
+}
+
 .text-lead {
 	@include media-breakpoint-down(md) {
 		font-size: 1.063rem;

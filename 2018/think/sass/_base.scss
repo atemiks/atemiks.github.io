@@ -108,6 +108,22 @@ address {
 	color: $heading;
 }
 
+figure {
+	// display: table-cell;
+	// width: 1000px;
+	// vertical-align: middle;
+	// background: red;
+	// text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 540px;
+	margin: 3.125rem auto;
+	img {
+		flex-shrink: 0;
+	}
+}
 img {
 	max-width: 100%;
 }

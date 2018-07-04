@@ -84,13 +84,16 @@
 		}
 		.project-inner {
 			@include media-breakpoint-down(sm) {
+				min-height: 600px;
+				display: flex;
 				flex-direction: column;
+				justify-content: space-between;
 			}
 			.project-content {
 				@include media-breakpoint-down(sm) {
 					flex: 0 0 auto;
 					padding-top: 3rem;
-					padding-bottom: 3rem;
+					padding-bottom: 0;
 				}
 				@include media-breakpoint-down(sm) {
 					padding-left: $mobile-padding;
@@ -108,10 +111,18 @@
 
 		.project-picture  {
 			@include media-breakpoint-down(sm) {
-				padding-top: 2.7rem;
-				padding-bottom: 3.2rem;
+				display: flex;
+				flex: 0 0 314px;
+				align-items: center;
+				justify-content: center;
 				padding-left: $mobile-padding / 1.8;
 				padding-right: $mobile-padding / 1.8;
+			}
+
+			img {
+				@include media-breakpoint-down(sm) {
+					max-height: 238px;
+				}
 			}
 		}
 
@@ -183,6 +194,13 @@
 				}
 			}
 		}
+	}
+}
+
+
+.loader {
+	@include media-breakpoint-down(sm) {
+		margin-top: 4rem;
 	}
 }
 

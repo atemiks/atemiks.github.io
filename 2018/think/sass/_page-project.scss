@@ -1,0 +1,68 @@
+.section-hero.section-hero-project {
+	color: #fff;
+	.hero-project-overlay {
+		position: absolute;
+		top: -20px;
+		left: -20px;
+		right: -20px;
+		bottom: -20px;
+		filter: $default-blur;
+		background-size: cover;
+		background-position: center;
+	}
+	.container {
+		min-height: 820px;
+	}
+
+
+	.hero-project-title,
+	.hero-project-category,
+	.hero-project-description,
+	.hero-project-info {
+		color: inherit;
+	}
+
+	.hero-project-title {
+		margin: 0.3rem 0;
+	}
+	.hero-project-category {
+		margin: 0.5rem 0;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	.hero-project-description {
+		@extend .h4;
+		max-width: 470px;
+		margin: 1.7rem 0;
+		font-weight: 400;
+		word-spacing: $default-word-spacing;
+	}
+	.hero-project-info {
+		margin: 2rem 0 0.6rem;
+		font-size: 0.75rem;
+		font-weight: 400;
+		letter-spacing: 0.075rem;
+		text-transform: uppercase;
+	}
+
+	.hero-project-picture  {
+	    position: absolute;
+	    width: 50%;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	}
+}
+
+
+.section-related-projects {
+	padding-top: 5.7rem;
+	.projects-grid {
+		margin-bottom: 0.5rem;
+	}
+}
+

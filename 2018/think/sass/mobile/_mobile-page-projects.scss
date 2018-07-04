@@ -1,0 +1,32 @@
+.page-projects {
+	.section-projects {
+		@include media-breakpoint-down(sm) {
+			padding-top: 0;
+		}
+		.projects-grid {
+			.project-item {
+				&:nth-child(2n+2) {
+					.project-inner {
+						flex-direction: row-reverse;
+						@include media-breakpoint-down(sm) {
+							flex-direction: column;
+						}
+						.project-content {
+							@include media-breakpoint-down(sm) {
+								margin-left: 0;
+								margin-right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.projects-filter {
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+}

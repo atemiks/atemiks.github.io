@@ -134,16 +134,24 @@
 
 .projects-grid {
 	.project-item {
-		@include media-breakpoint-only(md) {
-			&:nth-child(n+4) {
-				display: none;
-			}
-		}
 		@include media-breakpoint-down(sm) {
 			border-left: 0;
 			border-right: 0;
-			&:nth-child(n+3) {
-				display: none;
+		}
+	}
+}
+.page-home {
+	.projects-grid {
+		.project-item {
+			@include media-breakpoint-only(md) {
+				&:nth-child(n+4) {
+					display: none;
+				}
+			}
+			@include media-breakpoint-down(sm) {
+				&:nth-child(n+3) {
+					display: none;
+				}
 			}
 		}
 	}

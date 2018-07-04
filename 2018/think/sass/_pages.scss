@@ -129,7 +129,6 @@
 	.project-inner {
 		display: flex;
 		width: calc(100% + 30px);
-		.project-picture {}
 		.project-content {
 			padding: 0 0 0 2rem;
 		}
@@ -148,7 +147,7 @@
 	.project-category {
 		margin: 0;
 		font-family: $base-font;
-		font-weight: 300;
+		font-weight: 400;
 		text-transform: uppercase;
 		letter-spacing: 0.094rem;
 	}
@@ -166,12 +165,14 @@
 	}
 
 	&.project-higlight {
-		min-height: 540px;
-		padding-top: 6rem;
-		padding-bottom: 6rem;
+		min-height: 546px;
+		padding-top: 0;
+		padding-bottom: 0;
+		// padding-top: 6rem;
+		// padding-bottom: 6rem;
 		.project-inner {
 			.project-content {
-				padding: 0;
+				padding: 6rem 0;
 			}
 		}
 		.project-title {
@@ -321,6 +322,24 @@
 	}
 }
 
+
+.check-list {
+	@extend .reset-list;
+	li {
+		position: relative;
+		padding: 0 0 0 1.7rem;
+		&:before {
+			font-family: 'icomoon';
+			content: '\f17b';
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 1.125rem;
+			color: $success;
+		}
+	}
+}
+
 .social-list {
 	@extend .reset-list;
 	font-size: 1.35rem;
@@ -336,6 +355,45 @@
 	}
 }
 
+
+.loader {
+	width: 56px;
+	height: 56px;
+	border-radius: 100%;
+	position: relative;
+	margin: 6.5rem auto 0;
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+		border: 5px solid transparent;
+		border-top-color: $warning;
+		border-left-color: $warning;
+		border-bottom-color: $warning;
+	}
+	&:before {
+		z-index: 100;
+  		animation: spin 1500ms infinite;
+	}
+	&:after {
+		border: 5px solid #fff;
+	}
+}
+
+@keyframes spin {
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
 
 .owl-carousel {
 	.owl-nav {
