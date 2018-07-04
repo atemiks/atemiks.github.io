@@ -108,18 +108,18 @@ address {
 	color: $heading;
 }
 
-figure {
-	// display: table-cell;
-	// width: 1000px;
-	// vertical-align: middle;
-	// background: red;
-	// text-align: center;
+
+.figure-wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	min-height: 540px;
 	margin: 3.125rem auto;
+}
+
+figure {
+	margin: 0;
 	img {
 		flex-shrink: 0;
 	}

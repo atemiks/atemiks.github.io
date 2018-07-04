@@ -8141,7 +8141,7 @@ address {
   text-transform: uppercase;
   color: #323a45; }
 
-figure {
+.figure-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8161,6 +8161,9 @@ figure {
           align-items: center;
   min-height: 540px;
   margin: 3.125rem auto; }
+
+figure {
+  margin: 0; }
   figure img {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;

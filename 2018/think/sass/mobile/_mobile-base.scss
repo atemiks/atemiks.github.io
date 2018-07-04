@@ -14,7 +14,7 @@ h2,
 	}
 }
 
-figure {
+.figure-wrapper {
 	@include media-breakpoint-down(sm) {
 		min-height: 140px;
 	}
