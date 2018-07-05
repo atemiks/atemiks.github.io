@@ -456,6 +456,7 @@ input[type="checkbox"]:checked + label span {
     margin: 5px 5px 0 5px;
 }
 .product-order .product-number input {
+    outline: none;
     float: left;
     width: 62px;
     height: 31px;
@@ -467,7 +468,6 @@ input[type="checkbox"]:checked + label span {
     font-family: "Neo Sans Pro";
     font-size: 13px;
     font-weight: 400;
-    line-height: 38px;
     background: #fff;
 }
 .product-order .product-number .button {
