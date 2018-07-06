@@ -559,6 +559,8 @@ input[type="checkbox"]:checked + label span {
     .filter .filter-side-left,
     .filter .filter-side-center,
     .filter .filter-side-right {
+        flex: 0 0 100%;
+        max-width: 100%;
         padding-top: 16px;
         padding-bottom: 16px;
         text-align: left;
