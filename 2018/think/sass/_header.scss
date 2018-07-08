@@ -54,6 +54,10 @@
 
 	.header-back {
 		font-size: 1.75rem;
+		a {
+			color: $heading;
+			text-decoration: none;
+		}
 	}
 
 	&.header-sticky {
@@ -143,6 +147,7 @@
 
 
 	.header-nav {
+		@extend .reset-list;
 		flex: 0 0 auto;
 		margin: 7.9rem 0 3rem;
 		font-size: 1.063rem;
@@ -153,6 +158,7 @@
 				padding: 0.95rem 0;
 				color: $gray-500;
 				letter-spacing: $default-spacing;
+				text-decoration: none;
 				&:hover {
 					color: $heading;
 				}

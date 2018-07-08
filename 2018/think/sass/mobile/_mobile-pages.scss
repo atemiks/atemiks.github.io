@@ -43,6 +43,13 @@
 	}
 }
 
+
+.separator {
+	@include media-breakpoint-down(sm) {
+		height: 0;
+	}
+}
+
 .articles-grid {
 	.article-item {
 		@include media-breakpoint-down(sm) {
@@ -113,6 +120,7 @@
 			@include media-breakpoint-down(sm) {
 				display: flex;
 				flex: 0 0 314px;
+				height: 314px;
 				align-items: center;
 				justify-content: center;
 				padding-left: $mobile-padding / 1.8;

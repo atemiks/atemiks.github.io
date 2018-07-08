@@ -19,6 +19,17 @@
 						}
 					}
 				}
+
+				@include media-breakpoint-only(md) {
+					&:nth-child(n+4) {
+						display: flex;
+					}
+				}
+				@include media-breakpoint-down(sm) {
+					&:nth-child(n+3) {
+						display: flex;
+					}
+				}
 			}
 		}
 	}

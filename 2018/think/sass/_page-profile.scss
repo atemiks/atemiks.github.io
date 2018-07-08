@@ -42,18 +42,28 @@
 				width: 40px;
 				height: 40px;
 				border-radius: 50%;
-				background: #fff;
+				background-color: #fff;
 				font-size: 1.125rem;
 				color: $heading;
 				text-align: center;
+				text-decoration: none;
 				line-height: 42px;
+				&:hover {
+					background-color: darken(#fff, 5%);
+				}
 				&.linkedin {
-					background: #0077b5;
+					background-color: #0077b5;
 					color: #fff;
+					&:hover {
+						background-color: darken(#0077b5, 5%);
+					}
 				}
 				&.skype {
-					background: #12a5f4;
+					background-color: #12a5f4;
 					color: #fff;
+					&:hover {
+						background-color: darken(#12a5f4, 5%);
+					}
 				}
 			}
 		}
@@ -75,7 +85,7 @@
 	}
 
 	.articles-grid {
-		margin-bottom: 0.8rem;
+		margin-bottom: -3px;
 	}
 }
 

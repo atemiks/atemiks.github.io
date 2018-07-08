@@ -17,6 +17,11 @@
 			display: none;
 		}
 	}
+	.contact-tnanks-wrapper  {
+		@include media-breakpoint-down(sm) {
+			left: $mobile-padding;
+		}
+	}
 }
 
 .contact-info-block {

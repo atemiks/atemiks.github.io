@@ -56,6 +56,10 @@
 		color: #fff;
 		text-align: center;
 		line-height: 58px;
+		text-decoration: none;
+		&:hover {
+			color: darken(#fff, 5%);
+		}
 	}
 
 

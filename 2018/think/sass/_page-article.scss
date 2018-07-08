@@ -1,9 +1,9 @@
 .post {
-	padding: 9.2rem 0 7.2rem;
+	padding: 9.2rem 0 5.325rem;
 	border-bottom: 1px solid $gray-300;
 	
 	h3 {
-		margin: 0 0 40px;
+		margin: 75px 0 40px;
 	}
 
 	h4 {
@@ -21,14 +21,13 @@
 
 	p {
 		margin: 0 0 30px;
-		word-spacing: 3px;
 		span {
 			color: $heading;
 		}
-	}
-
-	p + h3 {
-		margin-top: 75px;
+		a {
+			color: $heading;
+			text-decoration: underline;
+		}
 	}
 
 	p + h4 {
@@ -39,8 +38,28 @@
 		margin-top: 90px;
 	}
 
+	p + ul {
+		margin-top: -30px;
+		margin-bottom: 30px;
+	}
+
 
 	.post-title {
 		margin: 0 0 90px;
+	}
+
+	.btn-contact {
+		margin-top: 100px;
+	}
+
+	.related-links {
+		@extend .reset-list;
+		margin: 1rem 0;
+		li {
+			padding: 0.63rem 0;
+		}
+	}
+	h3 + .related-links {
+		margin: -1rem 0 2rem;
 	}
 }

@@ -19,6 +19,7 @@
 		position: absolute;
 		z-index: 9;
 		top: 50%;
+		left: 0;
 		width: 100%;
 		transform: translateY(-30%);
 		transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease;
@@ -114,6 +115,11 @@
 	font-size: 1.5rem;
 	color: #fff;
 	text-align: center;
+	text-decoration: none;
 	line-height: 58px;
 	transform: translateX(-50%);
+	&:hover,
+	&:focus {
+		color: darken(#fff, 5%);
+	}
 }

@@ -42,6 +42,10 @@
 			padding: 0.6rem 0.8rem;
 			a {
 				color: inherit;
+				text-decoration: none;
+				&:hover {
+					color: $heading;
+				}
 			}
 			&.active {
 				color: $heading;

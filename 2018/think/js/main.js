@@ -8,7 +8,7 @@ $( document ).ready(function() {
     var heightHeader = $('.header-box').height();
 
     // Get the offset position of the navbar
-    var sticky = 120;
+    var sticky = 82;
 
     // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function headerSticky() {
