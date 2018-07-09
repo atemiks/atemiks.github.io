@@ -110,6 +110,18 @@
 	height: 150px;
 }
 
+.ie-blur {
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba($gray-800, .8);
+	}
+}
 
 .project-card {
 	overflow: hidden;

@@ -9128,6 +9128,17 @@ button {
 .separator {
   height: 150px; }
 
+.ie-blur {
+  position: relative; }
+  .ie-blur:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(50, 58, 69, 0.8); }
+
 .project-card {
   overflow: hidden;
   position: relative;
