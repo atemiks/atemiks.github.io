@@ -112,6 +112,21 @@ ul {
 			left: 0;
 		}
 	}
+	&.disc-list {
+		margin: 30px 0 !important;
+		li {
+			margin: 1.9rem 0;
+			padding-left: 1rem;
+			&:before {
+				content: '';
+				top: 14px;
+				width: 4px;
+				height: 4px;
+				background: $default;
+				border-radius: 50%;
+			}
+		}
+	}
 }
 
 address {

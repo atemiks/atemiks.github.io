@@ -82,6 +82,27 @@
 		}
 	}
 }
+.article-data,
+.post-data {
+	@include media-breakpoint-down(sm) {
+		padding-left: 2.85rem;
+		line-height: 1.8;
+	}
+	li {
+		@include media-breakpoint-down(sm) {
+			padding: 0 1rem !important;
+		}
+	}
+
+	.article-author {
+		img {
+			@include media-breakpoint-down(sm) {
+				position: absolute;
+				left: -3.85rem;
+			}
+		}
+	}
+}
 
 .project-card {
 	&.project-higlight {
@@ -199,6 +220,25 @@
 					padding-left: $mobile-padding * 2;
 					padding-right: $mobile-padding * 1.5;
 					padding-bottom: 2.3rem;
+				}
+			}
+		}
+	}
+}
+
+
+.social-list {
+	&.social-lg  {
+		.social-item  {
+			@include media-breakpoint-down(sm) {
+				width: 86px;
+				margin: 13px;
+			}
+			.social-link {
+				@include media-breakpoint-down(sm) {
+					width: 86px;
+					height: 86px;
+					line-height: 86px;
 				}
 			}
 		}

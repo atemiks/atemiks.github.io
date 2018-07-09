@@ -3,66 +3,115 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
-	<title>Think / Project Cloud Space</title>
+	<title>Think / News Building Your Vision</title>
     
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
-<body class="page-project" >
+<body class="page-news" >
+    <!-- Modal -->
+    <div class="modal modal-fullview fade" id="modalShare" tabindex="-1" role="dialog" aria-labelledby="modalShareLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="header-toggler header-toggler-close ml-auto" data-dismiss="modal" aria-label="Close">
+                        <i class="navbar-toggler-icon icon-close" ></i>
+                    </button>
+                </div>
+                <div class="modal-body justify-content-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="modal-share">
+                                    <h6 class="share-title">SHARE</h6>
+                                    <ul class="share-list social-list social-lg">
+                                        <li class="social-item facebook"><a href="#link" class="social-link"><i class="icon-facebook-official"></i></a></li>
+                                        <li class="social-item twitter"><a href="#link" class="social-link"><i class="icon-twitter"></i></a></li>
+                                        <li class="social-item linkedin"><a href="#link" class="social-link"><i class="icon-linkedin"></i></a></li>
+                                        <li class="social-item instagram"><a href="#link" class="social-link"><i class="icon-instagram"></i></a></li>
+                                        <li class="social-item email"><a href="#link" class="social-link"><i class="icon-envelope"></i></a></li>
+                                    </ul>
+
+                                    <div class="row">
+                                        <div class="col col-md-8 col-lg-4 offset-md-2 offset-lg-4">
+                                            <form action="" class="form-share-email">
+                                                <div class="form-group floating-placeholder">
+                                                    <input id="contactEmail" name="contactEmail" type="email" >
+                                                    <label for="contactEmail">Email</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-outline-dark btn-block"  >SEND</button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
     <div class="wrapper" id="wrapper" >
         <div class="content">
             <header class="header-box" >
                 <nav class="navbar navbar-light" id="header-navbar" >
-                    <div class="header-back mr-auto">
-                        <a href="projects.html"><i class="icon-arrow-left" ></i></a>
-                    </div>
+                    <a class="header-toggler header-toggler-back mr-auto" href="page-news.html">
+                        <i class="navbar-toggler-icon icon-arrow-left" ></i>
+                    </a>
 
                     <a class="header-brand navbar-brand" href="index.html">
                         <img class="navbar-brand-img" src="img/logo-dark.png" srcset="img/logo-dark@2x.png 2x" alt="think">
                     </a>
 
-                    <button class="header-toggler navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-text" >Projects</span> <i class="navbar-toggler-icon icon-navicon"></i>
+                    <button class="header-toggler header-toggler-menu navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-text" >News</span> <i class="navbar-toggler-icon icon-navicon"></i>
                     </button>
 
                     <div class="header-navbar-collpase collapse navbar-collapse" id="navbarOffcanvas">
                         <div class="header-navbar-collpase-inner">
                             <div class="header-navbar-header d-flex align-items-center">
+                                <a class="header-toggler header-toggler-back mr-auto" href="page-news.html">
+                                    <i class="navbar-toggler-icon icon-arrow-left" ></i>
+                                </a>
+
                                 <a class="header-brand navbar-brand" href="index.html">
                                     <img class="navbar-brand-img" src="img/logo-dark.png" srcset="img/logo-dark@2x.png 2x" alt="think">
                                 </a>
 
-                                <button class="header-toggler navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="header-toggler header-toggler-close navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
                                     <i class="navbar-toggler-icon icon-close"></i>
                                 </button>
                             </div>
 
                             <ul class="header-nav navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-projects.html">PROJECTS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-brand.html">BRAND</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-digital.html">DIGITAL</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-pr.html">PR & MARKETING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-campaigns.html">CAMPAIGNS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-about.html">ABOUT</a>
+                                </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="projects.html">PROJECTS</a>
+                                    <a class="nav-link" href="page-news.html">NEWS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#link">BRAND</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">DIGITAL</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">PR & MARKETING</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">CAMPAIGNS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">ABOUT</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">NEWS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">CONTACT</a>
+                                    <a class="nav-link" href="page-contact.html">CONTACT</a>
                                 </li>
                             </ul>
 
@@ -75,124 +124,116 @@
                         </div>
                     </div>
                 </nav>
+
+                <progress value="0">
+                    <div class="progress-container">
+                        <span class="progress-bar"></span>
+                    </div>
+                </progress>
             </header>
 
             <main class="main">
-                <section class="section-hero section-hero-project">
-                    <div class="hero-project-overlay" style="background-image: url('img/pages/page-projects/page-project-cloudspace/section-hero/project-background-cloudspace.png')" ></div>
+                <section class="section-hero section-hero-news section-hero-sm ">
+                    <div class="hero-overlay" style="background-image: url('img/pages/page-news-building/section-hero/news-building-hero-background.png')" ></div>
                     <div class="container">
                         <div class="row">
-                            <div class="hero-project-content col-12 col-md-6">
-                                <p class="hero-project-category">PROJECTS</p>
-                                <h1 class="hero-project-title">Cloud Space</h1>
-                                <p class="hero-project-description font-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis tincidunt velit. Mauris tincidunt nisi quis blandit pellentesque.”</p>
-                                <p class="hero-project-info">CLIENT NAME, JOB TITLE</p>
-                            </div>
-                            <div class="hero-project-picture col-12 col-md-6">
-                                <div class="hero-project-figure">
-                                    <img src="img/pages/page-projects/page-project-cloudspace/section-hero/project-cloudspace.png" srcset="img/pages/page-projects/page-project-cloudspace/section-hero/project-cloudspace@2x.png 2x" alt="Cloud Space">
-                                </div>
+                            <div class="col col-lg-8 offset-lg-2">
+                                <div class="hero-news-figure" style="background-image: url('img/pages/page-news-building/section-hero/news-building-hero-picture.png')" ></div>
                             </div>
                         </div>
                     </div>
-                    <a class="hero-scroll-link" href="#article-post"><i class="icon-arrow-down" ></i></a>
+
                 </section>
 
                 <div class="container">
                     <div class="row">
                         <div class="col col-lg-8 offset-lg-2">
-                            <article class="post post-project" id="article-post" >
-                                <h3 class="post-title" >Brand transformation of a high-tech hosting business as it grows its international penetration.</h3>
-                                
-                                <h6>CHALLENGE</h6>
-                                <p>Looking to reposition its brand to match its increasing international focus, cloud, dedicated and co-location hosting business, CloudSpace commissioned Think Studio to deliver creativity, thinking and corporate media.</p>
-                                <p>The brief was to achieve a new level of distinctiveness and as a growing brand standout in what can be a homogenous marketplace.  Important was to heighten its ‘value advantage’ appeal to a diverse customer base, some with simple requirements, others very bespoke.  Customer research showed what customers appreciate most is the high-level of personalised customer service they receive 24/7/365.  </p>
-                                <p>In delivering the media, notably the website, the challenge was to forge a new identity that balanced personality to be distinctively attractive and interesting whilst also pitching enough technical and service detail to ensure credibility. </p>
-                                <div class="figure-wrapper">
-                                    <figure>
-                                        <img src="img/pages/page-projects/page-project-cloudspace/section-content/cloudspace-macphone.png" srcset="img/pages/page-projects/page-project-cloudspace/section-content/cloudspace-macphone@2x.png 2x" alt="cloudspace mac phone">
-                                    </figure>
-                                </div>
-                                <p>Beyond the delivery of the media, but still to be mindful of during design and build, was the introduction of new promotional campaigns across search and display, therefore strong measurement to optimise performance was imperative. </p>
+                            <article class="post post-news" id="article-news" >
+                                <header class="post-header">
+                                    <h6 class="post-category">INSIGHT</h6>
+                                    <h1 class="post-title" >Building Your Vision</h1>
+                                    <ul class="post-data">
+                                        <li>
+                                            <div class="article-author">
+                                                <img src="img/avatar.png" alt="ALEX RIDINGS">
+                                                BY <a href="#link">ALEX RIDINGS</a>
+                                            </div>
+                                        </li>
+                                        <li>2 DAYS AGO</li>
+                                        <li>3 MINUTE READ</li>
+                                        <li><a href="#share" data-toggle="modal" data-target="#modalShare" >SHARE <i class="icon-share" ></i></a></li>
+                                    </ul>
+                                </header>
 
-                                <h6>DELIVERY</h6>
-                                <p>Enrolling in Think’s <span>EnVisioning Programme</span>, input and insight was sought from CloudSpace’s customers, the customer service team and leadership helping clearly understand the underlying brand values and product attributes</p>
-                                <div class="figure-wrapper">
-                                    <figure>
-                                        <img src="img/pages/page-projects/page-project-cloudspace/section-content/cloudspace-plans.png" srcset="img/pages/page-projects/page-project-cloudspace/section-content/cloudspace-plans@2x.png 2x" alt="rloudspace plans">
-                                    </figure>
-                                </div>
-                                <p>The learning gained during the programme was exploited in the subsequent creative process as a new digital identity was created, one which is striking and engaging but which also delivers a high level of UX.  The same care and level of attention was also placed across the deeper order pages and which are as effective on mobile as on larger resolutions.</p>
-
-                                <h6>OUTCOMES</h6>
-                                <ul class="check-list">
-                                    <li>Impactful, distinctive and memorable site</li>
-                                    <li>Website bounce rate down to under 10% (from 50%+) </li>
-                                    <li>Powerful campaign graphics</li>
-                                    <li>Highly targeted international display campaign</li>
-                                    <li>A Partner (Affiliate) Programme, building a referral and partnership base</li>
+                                <h4>Building A Bold Vision Can Drive Your Team & Inspire Your Customers</h4>
+                                <p>It is not unusual to ask a CEO what his company vision is and be greeted by a should shrug.  “I am not sure that’s relevant to us”, “I don’t want to be held to it if our business changes”, “There is so much going on I am not sure I have the focus to come up with something good”, “I just don’t know where to start”, are all common responses.   When working with organisations, often in developing their brand, we regularly see concerted uncertainty and frustration from staff and management about where the business they are investing time into is going.  So why is it that so many people in strategic roles do not have this seemingly critical component squared in away and acting as their company’s beacon?</p>
+                                <p>Vision statements are generally expected from corporate businesses and organisations.  Smaller businesses, often sizeable in turnover and/or scope, largely do not feel it is appropriate or understand their worth and they can lack confidence in adopting them, and this is a mistake. Let us just look at the logic.  The premise here is that corporate ideals are not suited to smaller businesses.  Yes, corporate refers to large-scale organisations, but part of what sustains their size is often marketing control and confidence in their communications.  They have long-term plans, a common organisation wide vision, and work inexorably towards them.  Sure, blips and bumps arise, but whilst dealing with those it is their vision and direction that helps drive them forwards.</p>
+                                <p>That same logic should and can apply to smaller businesses and brands.  A vision that encapsulates your long-term direction, aspiration and core values can act as the core-marketing framework to your business and plans.</p>
+                                <p>Like corporate businesses, having that common sense of direction understood throughout your business can steer you in the good times and guide you when challenges arise. <br> Our advice would be to:</p>
+                                <ul class="disc-list" >
+                                    <li>Create short (50-60 words) vision statement which is directional rather than specifically detailed and which harnesses your ethos, culture and personality.</li>
+                                    <li>Invest time explaining this to your team, from top to bottom, as it is important everyone is pulling in the same direction</li>
+                                    <li>Incorporate it in your marketing media upfront and visible.</li>
+                                    <li>Do not be shy about it.  Be bold.  Confidence is critical to buy-in from all stakeholders.</li>
                                 </ul>
+
                             </article>
                         </div>
                     </div>
                 </div>
 
-
-                <section class="section-related-projects">
+                <section class="section-related-news">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="section-header header-sm col">
-                                <h2 class="section-title">Try these related projects…</h2>
+                                <h2 class="section-title">Try these related posts…</h2>
                             </div>
                         </div>
-                        <div class="projects-grid row no-gutters">
-                            <div class="project-item project-card col-sm-12 col-md-6 col-lg-4">
-                                <div class="project-overlay" style="background-image: url('img/pages/page-projects/page-project-cloudspace/section-related-projects/project-background-item-2.png');" ></div>
-                                <div class="project-inner">
-                                    <div class="project-content col-6">
-                                        <h6 class="project-category">RIFT</h6>
-                                        <h4 class="project-title">Brand direction, new campaign, assets and thinking.</h4>
-                                        <a class="project-btn btn btn-link" href="project-rift.html">READ MORE</a>
+                        <div class="articles-grid no-gutters row">
+                            <div class="article-item col-12 col-sm-12 col-md-6 col-xl-4">
+                                <div class="article-card article-higlight flex-row-reverse bg-pink">
+                                    <div class="article-picture align-self-end col-6" >
+                                        <img src="img/pages/page-news-post/section-related-news/news-related-item-1.png" alt="The latest addition to our growing team - Luke Besant">
                                     </div>
-                                    <div class="project-picture col-6">
-                                        <img src="img/pages/page-projects/page-project-cloudspace/section-related-projects/project-item-2.png" srcset="img/pages/page-projects/page-project-cloudspace/section-related-projects/project-item-2@2x.png 2x"  alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-item project-card col-sm-12 col-md-6 col-lg-4">
-                                <div class="project-overlay" style="background-image: url('img/pages/page-projects/page-project-cloudspace/section-related-projects/project-background-item-3.png');" ></div>
-                                <div class="project-inner">
-                                    <div class="project-content col-6">
-                                        <h6 class="project-category">CLOUD SPACE</h6>
-                                        <h4 class="project-title">Brand transformation for high-tech hosting.</h4>
-                                        <a class="project-btn btn btn-link" href="project-cloudspace.html">READ MORE</a>
-                                    </div>
-                                    <div class="project-picture text-right col-6">
-                                        <img src="img/pages/page-projects/page-project-cloudspace/section-related-projects/project-item-3.png" srcset="img/pages/page-projects/page-project-cloudspace/section-related-projects/project-item-3@2x.png 2x"  alt="">
+                                    <div class="article-content col-6">
+                                        <h6 class="article-category">NEWS</h6>
+                                        <h4 class="article-title">The latest addition to our growing team - Luke Besant</h4>
+                                        <a href="#link" class="article-btn btn btn-link">Read more</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="project-item project-card col-sm-12 col-md-6 col-lg-4">
-                                <div class="project-overlay" style="background-image: url('img/pages/page-projects/page-project-cloudspace/section-related-projects/project-background-item-4.png');" ></div>
-                                <div class="project-inner">
-                                    <div class="project-content col-6">
-                                        <h6 class="project-category">GRAYSHOTT HEALTH SPA</h6>
-                                        <h4 class="project-title">Award winning health spa brand and digital marketing.</h4>
-                                        <a class="project-btn btn btn-link" href="project-grayshott.html">READ MORE</a>
-                                    </div>
-                                    <div class="project-picture text-right col-6">
-                                        <img src="img/pages/page-projects/page-project-cloudspace/section-related-projects/project-item-4.png" srcset="img/pages/page-projects/page-project-cloudspace/section-related-projects/project-item-4@2x.png 2x"  alt="">
+
+                            <div class="article-item col-12 col-sm-12 col-md-6 col-xl-4">
+                                <div class="article-card">
+                                    <div class="article-picture col-6" style="background-image: url('img/pages/page-news-post/section-related-news/news-related-item-2.png');" ></div>
+                                    <div class="article-content col-6">
+                                        <h6 class="article-category">News</h6>
+                                        <h5 class="article-title">Amazing Views of Quarries from Above</h5>
+                                        <a href="#link" class="article-btn btn btn-link">Read more</a>
                                     </div>
                                 </div>
                             </div>
+
+                            
+                            <div class="article-item col-12 col-sm-12 col-md-6 col-xl-4">
+                                <div class="article-card">
+                                    <div class="article-picture col-6" style="background-image: url('img/pages/page-news-post/section-related-news/news-related-item-3.png');" ></div>
+                                    <div class="article-content col-6">
+                                        <h6 class="article-category">INSIGHT</h6>
+                                        <h5 class="article-title">Dream team success with new city platform to enrich Canterbury</h5>
+                                        <a href="#link" class="article-btn btn btn-link">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
                         </div>
                     </div>
                 </section>
-
             </main>
         </div>
         <div class="footer">
-            <section class="section-contact bg-light">
+            <section class="section-contact bg-light" id="section-contact" >
                 <div class="container">
                     <div class="contact-wrapper row">
                             <div class="col-md-4">

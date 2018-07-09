@@ -3,66 +3,115 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
-	<title>Think / Project Grayshott Health Spa</title>
+	<title>Think / News</title>
     
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
-<body class="page-project" >
+<body class="page-news" >
+    <!-- Modal -->
+    <div class="modal modal-fullview fade" id="modalShare" tabindex="-1" role="dialog" aria-labelledby="modalShareLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="header-toggler header-toggler-close ml-auto" data-dismiss="modal" aria-label="Close">
+                        <i class="navbar-toggler-icon icon-close" ></i>
+                    </button>
+                </div>
+                <div class="modal-body justify-content-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="modal-share">
+                                    <h6 class="share-title">SHARE</h6>
+                                    <ul class="share-list social-list social-lg">
+                                        <li class="social-item facebook"><a href="#link" class="social-link"><i class="icon-facebook-official"></i></a></li>
+                                        <li class="social-item twitter"><a href="#link" class="social-link"><i class="icon-twitter"></i></a></li>
+                                        <li class="social-item linkedin"><a href="#link" class="social-link"><i class="icon-linkedin"></i></a></li>
+                                        <li class="social-item instagram"><a href="#link" class="social-link"><i class="icon-instagram"></i></a></li>
+                                        <li class="social-item email"><a href="#link" class="social-link"><i class="icon-envelope"></i></a></li>
+                                    </ul>
+
+                                    <div class="row">
+                                        <div class="col col-md-8 col-lg-4 offset-md-2 offset-lg-4">
+                                            <form action="" class="form-share-email">
+                                                <div class="form-group floating-placeholder">
+                                                    <input id="contactEmail" name="contactEmail" type="email" >
+                                                    <label for="contactEmail">Email</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-outline-dark btn-block"  >SEND</button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
     <div class="wrapper" id="wrapper" >
         <div class="content">
             <header class="header-box" >
                 <nav class="navbar navbar-light" id="header-navbar" >
-                    <div class="header-back mr-auto">
-                        <a href="projects.html"><i class="icon-arrow-left" ></i></a>
-                    </div>
+                    <a class="header-toggler header-toggler-back mr-auto" href="page-news.html">
+                        <i class="navbar-toggler-icon icon-arrow-left" ></i>
+                    </a>
 
                     <a class="header-brand navbar-brand" href="index.html">
                         <img class="navbar-brand-img" src="img/logo-dark.png" srcset="img/logo-dark@2x.png 2x" alt="think">
                     </a>
 
-                    <button class="header-toggler navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-text" >Projects</span> <i class="navbar-toggler-icon icon-navicon"></i>
+                    <button class="header-toggler header-toggler-menu navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-text" >News</span> <i class="navbar-toggler-icon icon-navicon"></i>
                     </button>
 
                     <div class="header-navbar-collpase collapse navbar-collapse" id="navbarOffcanvas">
                         <div class="header-navbar-collpase-inner">
                             <div class="header-navbar-header d-flex align-items-center">
+                                <a class="header-toggler header-toggler-back mr-auto" href="page-news.html">
+                                    <i class="navbar-toggler-icon icon-arrow-left" ></i>
+                                </a>
+
                                 <a class="header-brand navbar-brand" href="index.html">
                                     <img class="navbar-brand-img" src="img/logo-dark.png" srcset="img/logo-dark@2x.png 2x" alt="think">
                                 </a>
 
-                                <button class="header-toggler navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="header-toggler header-toggler-close header-toggler-close navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
                                     <i class="navbar-toggler-icon icon-close"></i>
                                 </button>
                             </div>
 
                             <ul class="header-nav navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-projects.html">PROJECTS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-brand.html">BRAND</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-digital.html">DIGITAL</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-pr.html">PR & MARKETING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-campaigns.html">CAMPAIGNS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="page-about.html">ABOUT</a>
+                                </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="projects.html">PROJECTS</a>
+                                    <a class="nav-link" href="page-news.html">NEWS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#link">BRAND</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">DIGITAL</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">PR & MARKETING</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">CAMPAIGNS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">ABOUT</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">NEWS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#link">CONTACT</a>
+                                    <a class="nav-link" href="page-contact.html">CONTACT</a>
                                 </li>
                             </ul>
 
@@ -75,115 +124,112 @@
                         </div>
                     </div>
                 </nav>
+
+                <progress value="0">
+                    <div class="progress-container">
+                        <span class="progress-bar"></span>
+                    </div>
+                </progress>
             </header>
 
             <main class="main">
-                <section class="section-hero section-hero-project">
-                    <div class="hero-project-overlay" style="background-image: url('img/pages/page-projects/page-project-grayshott/section-hero/project-background-grayshott.png')" ></div>
+                <section class="section-hero section-hero-news section-hero-sm ">
+                    <div class="hero-overlay bg-warning"></div>
                     <div class="container">
                         <div class="row">
-                            <div class="hero-project-content col-12 col-md-6">
-                                <p class="hero-project-category">PROJECTS</p>
-                                <h1 class="hero-project-title">Grayshott Health Spa</h1>
-                                <p class="hero-project-description font-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis tincidunt velit. Mauris tincidunt nisi quis blandit pellentesque.”</p>
-                                <p class="hero-project-info">CLIENT NAME, JOB TITLE</p>
-                            </div>
-                            <div class="hero-project-picture col-12 col-md-6">
-                                <div class="hero-project-figure">
-                                    <img src="img/pages/page-projects/page-project-grayshott/section-hero/project-grayshott.png" srcset="img/pages/page-projects/page-project-grayshott/section-hero/project-grayshott@2x.png 2x" alt="Grayshott Health Spa">
-                                </div>
+                            <div class="col col-lg-8 offset-lg-2">
+                                <div class="hero-news-figure" style="background-image: url('img/pages/page-news-post/section-hero/news-post-hero-picture.png')" ></div>
                             </div>
                         </div>
                     </div>
-                    <a class="hero-scroll-link" href="#article-post"><i class="icon-arrow-down" ></i></a>
+
                 </section>
 
                 <div class="container">
                     <div class="row">
                         <div class="col col-lg-8 offset-lg-2">
-                            <article class="post post-project" id="article-post" >
-                                <h3 class="post-title" >Brand and digital marketing for international award winning UK health spa.</h3>
+                            <article class="post post-news" id="article-news" >
+                                <header class="post-header">
+                                    <h6 class="post-category">INSIGHT</h6>
+                                    <h1 class="post-title" >Suspendisse volutpat purus vel odio tristique, sed pellentesque odio venenatis</h1>
+                                    <ul class="post-data">
+                                        <li>
+                                            <div class="article-author">
+                                                <img src="img/avatar.png" alt="ALEX RIDINGS">
+                                                BY <a href="#link">ALEX RIDINGS</a>
+                                            </div>
+                                        </li>
+                                        <li>2 DAYS AGO</li>
+                                        <li>3 MINUTE READ</li>
+                                        <li><a href="#share" data-toggle="modal" data-target="#modalShare" >SHARE <i class="icon-share" ></i></a></li>
+                                    </ul>
+                                </header>
                                 
-                                <h6>CHALLENGE</h6>
-                                <p>For over 50 years, award winning (England’s Best Wellness Retreat – Best Spa Awards 2017) Grayshott Health Spa has been one of the UK’s most respected and sought after retreats for those looking to address health issues and improve their well-being.</p>
-                                <p>Following Grayshott Health Spa’s joint purchase by the ever-expanding Austria-based health and medical resort specialists, the Lanserhof Group, and real estate agency, London and Regional Partners, Think were appointed to build a new customer acquisition strategy: expanding digital reach, developing a customer community engagement strategy and to support the future spa’s expansion plans.</p>
+                                <p>With hundreds of projects, brands and plans delivered over the last 14 years, he has a unique level of experience having worked across industries and sectors as diverse as global maritime, hedge funds and hospitality; not to mention some truly amazing start-ups and not-for-profit organisations.</p>
+                                <p>Recent projects include; helping devise, design and develop the rebranding, website and digital presence of MJ Hudson, a specialist consultancy to the asset management industry; strategic brand alignment for <a href="#link">Viking Maritime</a> (including Viking Crew, Viking MSA and Chiltern Maritime ventures), a transworld maritime services group; the international brand expansion of leading workzone safety company, vertemax™; and the digital marketing transformation for award winning health and medical spa, Grayshott Health Spa. </p>
 
-                                <h6>DELIVERY</h6>
-                                <p>Understanding Grayshott’s unique proposition and the compelling stays, treatment and advice it offers, a new fit-for-purpose site has been carefully created.  Designed with greater guest engagement in mind, and to work harder for the business as part of a joined up digital marketing strategy, the site works in many news ways to attract fresh customers. </p>
-                                <div class="figure-wrapper">
-                                    <figure>
-                                        <img src="img/pages/page-projects/page-project-grayshott/section-content/grayshott-macphone.png" srcset="img/pages/page-projects/page-project-grayshott/section-content/grayshott-macphone@2x.png 2x" alt="grayshott mac phone">
-                                    </figure>
-                                </div>
-                                <p>Showcasing Grayshott’s ethos, the new website is clean, ‘calm’ and responsive, the site is also suitably commercial to help prospective guests find and choose from their range of regime or stay choices or take advantage of offers.</p>
-                                <p>With new display, email, search and social strategies employed, Think’s multi-channel campaign is delivering strong ROI.  The campaign is attracting new customers to Grayshott as well as showing the benefits of greater engagement with its past guest community.</p>
+                                <h4>Suspendisse volutpat purus vel odio tristique, sed pellentesque odio venenatis uspendisse volutpat purus vel odio tristique</h4>
 
-                                <h6>OUTCOMES</h6>
-                                <ul class="check-list">
-                                    <li>Enquiries growth X%</li>
-                                    <li>SEO results ???</li>
-                                </ul>
+                                <p>With hundreds of projects, brands and plans delivered over the last 14 years, he has a unique level of experience having worked across industries and sectors as diverse as global maritime, hedge funds and hospitality; not to mention some truly amazing start-ups and not-for-profit organisations.</p>
+                                <p>Recent projects include; helping devise, design and develop the rebranding, website and digital presence of MJ Hudson, a specialist consultancy to the asset management industry; strategic brand alignment for Viking Maritime (including Viking Crew, Viking MSA and Chiltern Maritime ventures), a transworld maritime services group; the international brand expansion of leading workzone safety company, vertemax™; and the digital marketing transformation for award winning health and medical spa, Grayshott Health Spa. </p>
+
                             </article>
                         </div>
                     </div>
                 </div>
 
-
-                <section class="section-related-projects">
+                <section class="section-related-news">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="section-header header-sm col">
-                                <h2 class="section-title">Try these related projects…</h2>
+                                <h2 class="section-title">Try these related posts…</h2>
                             </div>
                         </div>
-                        <div class="projects-grid row no-gutters">
-                            <div class="project-item project-card col-sm-12 col-md-6 col-lg-4">
-                                <div class="project-overlay" style="background-image: url('img/pages/page-projects/page-project-grayshott/section-related-projects/project-background-item-2.png');" ></div>
-                                <div class="project-inner">
-                                    <div class="project-content col-6">
-                                        <h6 class="project-category">RIFT</h6>
-                                        <h4 class="project-title">Brand direction, new campaign, assets and thinking.</h4>
-                                        <a class="project-btn btn btn-link" href="project-rift.html">READ MORE</a>
+                        <div class="articles-grid no-gutters row">
+                            <div class="article-item col-12 col-sm-12 col-md-6 col-xl-4">
+                                <div class="article-card article-higlight flex-row-reverse bg-pink">
+                                    <div class="article-picture align-self-end col-6" >
+                                        <img src="img/pages/page-news-post/section-related-news/news-related-item-1.png" alt="The latest addition to our growing team - Luke Besant">
                                     </div>
-                                    <div class="project-picture col-6">
-                                        <img src="img/pages/page-projects/page-project-grayshott/section-related-projects/project-item-2.png" srcset="img/pages/page-projects/page-project-grayshott/section-related-projects/project-item-2@2x.png 2x"  alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-item project-card col-sm-12 col-md-6 col-lg-4">
-                                <div class="project-overlay" style="background-image: url('img/pages/page-projects/page-project-grayshott/section-related-projects/project-background-item-3.png');" ></div>
-                                <div class="project-inner">
-                                    <div class="project-content col-6">
-                                        <h6 class="project-category">CLOUD SPACE</h6>
-                                        <h4 class="project-title">Brand transformation for high-tech hosting.</h4>
-                                        <a class="project-btn btn btn-link" href="project-cloudspace.html">READ MORE</a>
-                                    </div>
-                                    <div class="project-picture text-right col-6">
-                                        <img src="img/pages/page-projects/page-project-grayshott/section-related-projects/project-item-3.png" srcset="img/pages/page-projects/page-project-grayshott/section-related-projects/project-item-3@2x.png 2x"  alt="">
+                                    <div class="article-content col-6">
+                                        <h6 class="article-category">NEWS</h6>
+                                        <h4 class="article-title">The latest addition to our growing team - Luke Besant</h4>
+                                        <a href="#link" class="article-btn btn btn-link">Read more</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="project-item project-card col-sm-12 col-md-6 col-lg-4">
-                                <div class="project-overlay" style="background-image: url('img/pages/page-projects/page-project-grayshott/section-related-projects/project-background-item-4.png');" ></div>
-                                <div class="project-inner">
-                                    <div class="project-content col-6">
-                                        <h6 class="project-category">GRAYSHOTT HEALTH SPA</h6>
-                                        <h4 class="project-title">Award winning health spa brand and digital marketing.</h4>
-                                        <a class="project-btn btn btn-link" href="project-grayshott.html">READ MORE</a>
-                                    </div>
-                                    <div class="project-picture text-right col-6">
-                                        <img src="img/pages/page-projects/page-project-grayshott/section-related-projects/project-item-4.png" srcset="img/pages/page-projects/page-project-grayshott/section-related-projects/project-item-4@2x.png 2x"  alt="">
+
+                            <div class="article-item col-12 col-sm-12 col-md-6 col-xl-4">
+                                <div class="article-card">
+                                    <div class="article-picture col-6" style="background-image: url('img/pages/page-news-post/section-related-news/news-related-item-2.png');" ></div>
+                                    <div class="article-content col-6">
+                                        <h6 class="article-category">News</h6>
+                                        <h5 class="article-title">Amazing Views of Quarries from Above</h5>
+                                        <a href="#link" class="article-btn btn btn-link">Read more</a>
                                     </div>
                                 </div>
                             </div>
+
+                            
+                            <div class="article-item col-12 col-sm-12 col-md-6 col-xl-4">
+                                <div class="article-card">
+                                    <div class="article-picture col-6" style="background-image: url('img/pages/page-news-post/section-related-news/news-related-item-3.png');" ></div>
+                                    <div class="article-content col-6">
+                                        <h6 class="article-category">INSIGHT</h6>
+                                        <h5 class="article-title">Dream team success with new city platform to enrich Canterbury</h5>
+                                        <a href="#link" class="article-btn btn btn-link">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
                         </div>
                     </div>
                 </section>
-
             </main>
         </div>
         <div class="footer">
-            <section class="section-contact bg-light">
+            <section class="section-contact bg-light" id="section-contact" >
                 <div class="container">
                     <div class="contact-wrapper row">
                             <div class="col-md-4">

@@ -1,10 +1,8 @@
 // header
-.header-box {
-	.header-toggler {
-		.navbar-toggler-text {
-			@include media-breakpoint-down(sm) {
-				display: none;
-			}
+.header-toggler {
+	.navbar-toggler-text {
+		@include media-breakpoint-down(sm) {
+			display: none;
 		}
 	}
 }
@@ -17,5 +15,27 @@
 	}
 }
 .header-nav {
-	margin: 1.5rem 0 3rem;
+	@include media-breakpoint-down(sm) {
+		margin: 1.5rem 0 3rem;
+	}
+}
+
+
+.modal-share {
+	.share-title {
+		@include media-breakpoint-down(sm) {
+			margin: 0 0 1.6rem;
+		}
+	}
+}
+.share-list.social-list {
+	@include media-breakpoint-down(sm) {
+		margin-left: -23px;
+		margin-right: -23px;
+	}
+}
+.form-share-email {
+	@include media-breakpoint-down(sm)  {
+		margin: 0;
+	}
 }
