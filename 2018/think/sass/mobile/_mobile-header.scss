@@ -20,6 +20,15 @@
 	}
 }
 
+.header-social.social-list {
+	.social-item {
+		@media screen and (max-width: 375px) {
+			padding: 0 0.55rem;
+		}
+	}
+}
+
+
 
 .modal-share {
 	.share-title {

@@ -178,6 +178,12 @@
 }
 
 
+.section-higlights-services-grid {
+	@include media-breakpoint-down(sm) {
+		margin-top: -95px;
+	}
+}
+
 .timeline-block {
 	.timeline-block-title {
 		@include media-breakpoint-down(sm) {
@@ -188,7 +194,7 @@
 	}
 	.timeline-block-subtitle {
 		@include media-breakpoint-down(sm) {
-			margin: 1.6rem 0 1.7rem;
+			margin: 1.8rem 0 1.8rem;
 			font-size: 1.563rem;
 			line-height: 2.188rem;
 		}
@@ -196,9 +202,27 @@
 }
 
 
+.section-related-posts {
+	@include media-breakpoint-down(sm) {
+		padding-bottom: 0;
+	}
+	.section-header {
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 1rem;
+		}
+		.section-title {
+			@include media-breakpoint-down(sm) {
+				font-size: 1.5625rem;
+			}
+		}
+	}
+}
+
+
+
 .post.post-service {
 	@include media-breakpoint-down(sm) {
-		padding-bottom: 30px;
+		padding-bottom: 70px;
 	}
 	h3 {
 		@include media-breakpoint-down(sm) {
@@ -207,9 +231,19 @@
 			line-height: 2.188rem;
 		}
 	} 
+	h3.half {
+        margin-top: 42px;
+		margin-bottom: 45px;
+	}
+
+	h3 + h6 {
+		margin-top: 48px;
+	}
 
 	p + h6 {
-		margin-top: 46px;
+		@include media-breakpoint-down(sm) {
+			margin-top: 48px;
+		}
 	}
 
 	.post-title {
@@ -219,6 +253,13 @@
 			font-size: 1.563rem;
 			line-height: 2.188rem;
 		}
+	}
+
+	.check-list + h3 {
+		margin-top: 52px;
+	}
+	.check-list + h3.half {
+		margin-top: 44px;
 	}
 }
 

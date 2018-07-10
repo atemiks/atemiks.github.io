@@ -1,7 +1,7 @@
 .section-hero.section-hero-about {
 	.hero-logo {
 		@include media-breakpoint-down(sm) {
-			margin: 7.5rem -1.5rem 4rem;
+			margin: 3.8rem -1.5rem 4rem;
 		}
 	}
 	.hero-description {
@@ -34,8 +34,8 @@
 .section-priority + .section-expertise  {
 	@include media-breakpoint-down(sm) {
 		margin-top: 0;
-		padding-top: 2.4rem;
-		padding-bottom: 5rem;
+		padding-top: 0.5em;
+		padding-bottom: 6.5rem;
 	}
 }
 .section-expertise {

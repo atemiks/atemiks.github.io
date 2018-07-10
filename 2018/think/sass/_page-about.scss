@@ -91,7 +91,7 @@
 
 
 .section-priority + .section-expertise {
-	margin-top: -0.5rem;
+	margin-top: -2rem;
 	padding-top: 0;
 }
 .section-expertise {
@@ -99,13 +99,13 @@
 }
 .slider-expertise-wrapper {
 	position: relative;
-	margin-bottom: 90px;
+	margin-bottom: 70px;
 	&:after {
 		font-family: 'icomoon';
 		content: '\e909';
 		position: absolute;
 		left: 50%;
-		bottom: -80px;
+		bottom: -70px;
 		width: 37px;
 		height: 45px;
 		transform: translateX(-50%);
@@ -162,7 +162,7 @@
 .expertise-card {
 	position: relative;
 	min-height: 440px;
-	padding: 4rem 4.0625rem;
+	padding: 3.3rem 4.0625rem;
 	color: #fff;
 	text-align: center;
 	&:after {
@@ -184,7 +184,7 @@
 			font-size: 3rem;
 		}
 		.expertise-title {
-			margin: 1rem 0;
+			margin: 1.2rem 0;
 			color: #fff;
 		}
 	}
@@ -203,7 +203,7 @@
 	margin-bottom: 3rem;
 	.partner-item {
 		padding-top: 3.4rem;
-		padding-bottom: 3.4rem;
+		padding-bottom: 3.5rem;
 		text-align: center;
 	}
 }
@@ -211,10 +211,11 @@
 
 .company-stats {
 	margin-bottom: -3.5rem;
+	margin-bottom: -4rem;
 	border-top: 1px solid $gray-500;
 	.stat-item {
-		padding-top: 3.8rem;
-		padding-bottom: 3.8rem;
+		padding-top: 3.7rem;
+		padding-bottom: 3.7rem;
 		font-size: 0.938rem;
 		font-weight: 400;
 		color: $heading;

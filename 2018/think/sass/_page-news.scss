@@ -22,20 +22,40 @@
 
 .section-hero.section-hero-news {
 	background: #fff;
-	.container {
-		min-height: 540px;
-		padding-top: 0;
-		padding-bottom: 0;
+	.container-fluid {
+	    min-height: 870px;
+        padding-top: 7.7rem;
+        justify-content: flex-start;
 	}
-
 	.hero-news-figure {
 		min-height: 540px;
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+
+	.hero-scroll-link {
+		background-color: $gray-300;
+	}
+}
+.section-hero.section-hero-news.section-hero-sm {
+	.container {
+		min-height: 540px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 }
 
+
+.section-news {
+	.loader {
+		margin-bottom: -150px;
+	}
+}
+.section-related-news {
+	padding-top: 110px;
+	padding-bottom: 0;
+}
 
 .post.post-news {
 	padding-top: 100px;

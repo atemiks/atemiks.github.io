@@ -1,3 +1,15 @@
+.page-home {
+	.header-toggler {
+		color: #fff;
+	}
+	.header-nav {
+		.nav-item {
+			.nav-link {
+				color: $gray-800;
+			}
+		}
+	}
+}
 // section hero
 .section-hero {
 	overflow: hidden;
@@ -30,15 +42,15 @@
 	}
 
 	.hero-title {
-		margin: 2rem 0;
+		margin: 10px 0 2rem;
 	}
 	.hero-description {
 		@extend .h4;
-		margin: 1rem 0;
+		margin: 0 0 1.5rem;
 		line-height: 1.875rem;
 	}
 	.hero-btn {
-		margin: 0.5rem 0;
+		margin: 0;
 		font-size: 1.5rem;
 	}
 
@@ -116,6 +128,8 @@
 		padding-bottom: 2rem;
 		.project-inner {
 			.project-content {
+				padding-top: 0;
+				padding-bottom: 0;
 				padding-left: 3rem;
 			}
 		}
@@ -127,7 +141,10 @@
 }
 
 // sectino services
-.section-serivices {}
+.section-services {
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
 .services-grid {
 	margin-bottom: -25px;
 }
@@ -173,7 +190,7 @@
 .section-highlights-articles {
 	padding-top: 0;
 	.section-header {
-		margin-top: -1.5rem;
+		margin-top: -2.5rem;
 	}
 }
 .highlights-articles-grid  {

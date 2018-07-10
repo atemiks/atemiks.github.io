@@ -33,6 +33,12 @@
 			}
 		}
 	}
+
+	.projects-filter + .section-projects {
+		@include media-breakpoint-down(sm) {
+			margin-top: -6px;
+		}
+	}
 }
 
 

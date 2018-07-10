@@ -138,7 +138,7 @@
 
 
 .section-higlights-services-grid {
-	margin-top: -180px;
+	margin-top: -175px;
 	margin-bottom: 100px;
 	.section-higlights-services {
 		margin-bottom: 6px;
@@ -250,19 +250,45 @@
 	}
 }
 
+.section-related-posts {
+	padding-bottom: 100px;
+	.section-header {
+		margin-bottom: 2.5rem;
+	}
+}
+
 
 
 .post.post-service {
 	padding-bottom: 7.325rem;
 	border-bottom: none;
 	h3 {
+
 		margin-bottom: 42px;
+	}
+	h3.half {
+	    margin-top: 72px;
+		margin-bottom: 40px;
+	}
+
+	h3 + h6 {
+		margin-top: 98px;
 	}
 	p + h6 {
 		// margin-top: 50px;
-		margin-top: 94px;
+		margin-top: 92px;
+	}
+	p + h6.half {
+		margin-top: 48px;
 	}
 	.post-title {
 		margin-bottom: 90px;
+	}
+
+	.check-list + h3 {
+		margin-top: 92px;
+	}
+	.check-list + h3.half {
+		margin-top: 74px;
 	}
 }

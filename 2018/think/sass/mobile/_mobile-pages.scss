@@ -21,22 +21,23 @@
 
 
 .section-header {
-	@include media-breakpoint-down(md) {
+	@include media-breakpoint-down(sm) {
+		margin-top: 0;
 		margin-bottom: 2rem;
 	}
 	.section-title  {
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-down(sm) {
 			font-size: 1.875rem;
 		}
 	}
 	.section-description {
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-down(sm) {
 			margin: 0em 0 1.2em;
 		}
 	}
 	&.header-sm {
 		.section-title {
-			@include media-breakpoint-down(md) {
+			@include media-breakpoint-down(sm) {
 				font-size: 1.563rem;
 			}
 		}
@@ -60,7 +61,7 @@
 }
 .article-card {
 	@include media-breakpoint-down(sm) {
-		min-height: 250px;
+		min-height: 251px;
 	}
 	.article-content {
 		@include media-breakpoint-down(sm) {
@@ -120,7 +121,7 @@
 			.project-content {
 				@include media-breakpoint-down(sm) {
 					flex: 0 0 auto;
-					padding-top: 3rem;
+					padding-top: 3.7rem;
 					padding-bottom: 0;
 				}
 				@include media-breakpoint-down(sm) {

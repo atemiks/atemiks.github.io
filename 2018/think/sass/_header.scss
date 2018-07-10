@@ -111,7 +111,7 @@
 	}
 }
 
-
+.navbar-light .header-toggler,
 .header-toggler {
 	cursor: pointer;
 	display: inline-block;
@@ -124,7 +124,7 @@
 	font-weight: 400;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: $gray-800 !important;
+	color: $gray-800;
 	.navbar-toggler-icon {
 		width: 2rem;
 		height: 2rem;
