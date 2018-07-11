@@ -8870,10 +8870,12 @@ button {
       line-height: 1.375;
       margin: .3em 0; }
 
-.section-fullscreen .container,
-.section-fullscreen .container-fluid {
+.section-fullscreen {
   min-height: -webkit-calc(100vh - 82px) !important;
   min-height: calc(100vh - 82px) !important; }
+  .section-fullscreen .container,
+  .section-fullscreen .container-fluid {
+    min-height: 740px !important; }
 
 .section-jumbotron {
   padding-top: 0;

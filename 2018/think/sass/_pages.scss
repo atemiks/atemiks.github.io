@@ -61,9 +61,10 @@
 }
 
 .section-fullscreen {
+	min-height: calc(100vh - 82px) !important;
 	.container,
 	.container-fluid {
-		min-height: calc(100vh - 82px) !important;
+		min-height: 740px !important;
 	}
 }
 
