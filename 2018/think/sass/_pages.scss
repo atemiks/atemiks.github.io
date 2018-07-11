@@ -60,6 +60,13 @@
 	}
 }
 
+.section-fullscreen {
+	.container,
+	.container-fluid {
+		min-height: calc(100vh - 82px) !important;
+	}
+}
+
 .section-jumbotron {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -179,17 +186,21 @@
 
 
 	.project-picture {
+		display: flex;
+		min-height: 214px;
 		padding-left: 0;
 		padding-right: 0;
+		align-items: center;
 		text-align: center;
+		.project-mockup-wrapper  {
+			position: absolute;
+		}
 	}
 
 	&.project-higlight {
 		min-height: 546px;
 		padding-top: 0;
 		padding-bottom: 0;
-		// padding-top: 6rem;
-		// padding-bottom: 6rem;
 		.project-inner {
 			.project-content {
 				padding: 6rem 0;
@@ -207,6 +218,112 @@
 			left: 0;
 			bottom: 0;
 			margin: 2rem 0;
+		}
+
+		.project-picture {
+			padding: 0 15px;
+			.project-mockup-wrapper  {
+				position: relative;
+			}
+		}
+	}
+}
+
+
+.project-mockup-macbook {
+	position: relative;
+	width: 100%;
+	max-width: 588px;
+	margin: 0 auto;
+	.project-mockup {
+		position: relative;
+		width: 100%;
+		padding-bottom: 48%;
+		&:after {
+		    content: '';
+		    position: absolute;
+		    z-index: 9;
+		    top: -6%;
+		    left: -3.5%;
+		    right: -3.5%;
+		    bottom: -11%;
+		    background: url(../img/mockup-macbook.png) no-repeat center;
+		    -webkit-background-size: contain;
+		    background-size: contain;
+
+		}
+		.project-mockup-figure {
+		    content: '';
+		    position: absolute;
+		    width: 76%;
+		    height: 100%;
+		    left: 12%;
+		    background-repeat: no-repeat;
+		    background-position: top center;
+		    background-size: cover;
+		}
+	}
+
+	&.overflow {
+		width: 336px;
+		flex-shrink: 0;
+	}
+}
+.project-mockup-iphone {
+	position: relative;
+	width: 100%;
+	max-width: 208px;
+	margin: 0 auto;
+	.project-mockup {
+		position: relative;
+		width: 100%;
+		padding-bottom: 180%;
+		&:after {
+		    content: '';
+		    position: absolute;
+		    z-index: 9;
+	        top: -6.5%;
+		    left: -4.5%;
+		    right: -4.5%;
+		    bottom: -7%;
+		    background: url(../img/mockup-iphone.png) no-repeat center;
+		    -webkit-background-size: contain;
+		    background-size: contain;
+
+		}
+		.project-mockup-figure {
+		    content: '';
+		    position: absolute;
+	        width: 96%;
+		    height: 92%;
+		    top: 7%;
+		    left: 2%;
+		    background-repeat: no-repeat;
+		    background-position: top center;
+		    background-size: cover;
+		}
+	}
+
+	&.lg {
+		max-width: 328px;
+	}
+
+	&.sm {
+		max-width: 102px;
+		.project-mockup {
+			padding-bottom: 180%;
+			&:after {
+				top: -6%;
+			    left: -3.5%;
+			    right: -3.5%;
+			    bottom: -11%;
+			}
+			.project-mockup-figure {
+				width: 96%;
+			    height: 92%;
+			    top: 7%;
+			    left: 2%;
+			}
 		}
 	}
 }

@@ -22,6 +22,15 @@
 		margin: 6rem 0 5rem;
 	}
 }
+.page-about {
+	.section-hero.section-hero-about {
+		margin-top: -$height-header;
+		.container,
+		.container-fluid {
+			min-height: 100vh !important;
+		}
+	}
+}
 
 .section-priority {
 	.priority-description {

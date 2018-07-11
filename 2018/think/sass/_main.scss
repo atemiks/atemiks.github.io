@@ -54,26 +54,18 @@
 		font-size: 1.5rem;
 	}
 
-	.hero-scroll-link {
-		position: absolute;
-		z-index: 9;
-		left: 50%;
-		bottom: -50px;
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		background: rgba($gray-800, .05);
-		transform: translateX(-50%);
-		font-size: 1.5rem;
-		color: #fff;
-		text-align: center;
-		line-height: 58px;
-		text-decoration: none;
-		&:hover {
-			color: darken(#fff, 5%);
-		}
-	}
 
+	.hero-overlay {
+		position: absolute;
+		top: -50px;
+		left: -50px;
+		right: -50px;
+		bottom: -50px;
+		filter: $default-blur;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 	.hero-video-wrapper {
 		position: absolute;
@@ -95,8 +87,36 @@
 		    transform: translateX(-50%);
 	    }
 	}
-}
 
+	.hero-scroll-link {
+		position: absolute;
+		z-index: 9;
+		left: 50%;
+		bottom: -50px;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background: rgba($gray-800, .05);
+		transform: translateX(-50%);
+		font-size: 1.5rem;
+		color: #fff;
+		text-align: center;
+		line-height: 58px;
+		text-decoration: none;
+		&:hover {
+			color: darken(#fff, 5%);
+		}
+	}
+}
+.page-home {
+	.section-hero {
+		margin-top: -$height-header;
+		.container,
+		.container-fluid {
+			min-height: 100vh !important;
+		}
+	}
+}
 // section feature
 .section-feature {
 	padding-top: 5px;
@@ -136,6 +156,13 @@
 
 		.project-btn {
 			margin: 1.3rem 0;
+		}
+
+		.project-picture {
+			.project-mockup-macbook {
+	    		width: calc(100% - 2rem);
+				margin-bottom: 2.5rem;
+			}
 		}
 	}
 }
@@ -209,12 +236,9 @@
 			flex: 1 1 auto;
 		}
 	}
+
+	.project-mockup-macbook {
+		width: calc(100% - 30px);
+	}
 }
-
-
-
-// .block {
-// 	@include image-2x("logo2x.png", contain);
-
-// }
 

@@ -73,6 +73,13 @@
 
 @media (max-width: 767.98px) {
   .share-list.social-list {
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media screen and (max-width: 475px) {
+  .share-list.social-list {
+    max-width: none;
     margin-left: -23px;
     margin-right: -23px; } }
 
@@ -265,6 +272,33 @@
     margin: 0.5rem 0; } }
 
 @media (max-width: 767.98px) {
+  .project-mockup-macbook {
+    max-width: 346px; } }
+
+@media (max-width: 767.98px) {
+  .project-mockup-macbook .project-mockup {
+    padding-bottom: 57.4%; } }
+
+@media (max-width: 767.98px) {
+  .project-mockup-macbook .project-mockup .project-mockup-figure {
+    width: 83%;
+    height: 91%;
+    left: 8.5%;
+    top: 4.5%; } }
+
+@media (max-width: 767.98px) {
+  .project-mockup-iphone {
+    max-width: 114px; } }
+
+@media (max-width: 767.98px) {
+  .project-mockup-iphone.lg {
+    max-width: 114px; } }
+
+@media (max-width: 767.98px) {
+  .project-mockup-iphone.sm {
+    max-width: 95px; } }
+
+@media (max-width: 767.98px) {
   .section-jumbotron .jumbotron-fluid {
     overflow: hidden;
     margin-left: -3.125rem;
@@ -319,11 +353,24 @@
     width: 86px;
     margin: 13px; } }
 
+@media screen and (max-width: 375px) {
+  .social-list.social-lg .social-item {
+    width: 66px;
+    margin-left: 8px;
+    margin-right: 8px; } }
+
 @media (max-width: 767.98px) {
   .social-list.social-lg .social-item .social-link {
     width: 86px;
     height: 86px;
     line-height: 86px; } }
+
+@media screen and (max-width: 375px) {
+  .social-list.social-lg .social-item .social-link {
+    width: 66px;
+    height: 66px;
+    font-size: 1.25rem;
+    line-height: 66px; } }
 
 @media (max-width: 767.98px) {
   .loader {
@@ -427,6 +474,11 @@
     padding-right: 2rem; } }
 
 @media (max-width: 767.98px) {
+  .feature-grids .project-card.project-higlight .project-picture .project-mockup-macbook {
+    width: 100%;
+    margin-bottom: 0; } }
+
+@media (max-width: 767.98px) {
   .section-services {
     padding-top: 90px;
     padding-bottom: 45px; } }
@@ -466,6 +518,10 @@
     border-right: 0; }
     .projects-grid .project-item:nth-child(n+3) {
       display: none; } }
+
+@media (max-width: 767.98px) {
+  .projects-grid .project-mockup-macbook {
+    margin-bottom: 1.5rem; } }
 
 @media (max-width: 767.98px) {
   .section-highlights-articles {
@@ -764,8 +820,9 @@
             transform: translateY(0); } }
 
 @media (max-width: 767.98px) {
-  .section-hero.section-hero-project .hero-project-picture img {
-    max-height: 238px; } }
+  .section-hero.section-hero-project .hero-project-picture .project-mockup-macbook {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px); } }
 
 @media (max-width: 767.98px) {
   .section-related-projects {

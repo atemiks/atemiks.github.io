@@ -6,20 +6,6 @@
 	}
 }
 
-.section-hero {
-	.hero-overlay {
-		position: absolute;
-		top: -50px;
-		left: -50px;
-		right: -50px;
-		bottom: -50px;
-		filter: $default-blur;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-}
-
 .section-hero.section-hero-news {
 	background: #fff;
 	.container-fluid {

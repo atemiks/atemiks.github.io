@@ -106,6 +106,12 @@
 				padding-left: 2rem;
 				padding-right: 2rem;
 			}
+			.project-mockup-macbook {
+	    		@include media-breakpoint-down(sm) {
+	    			width: 100%;
+	    			margin-bottom: 0;
+	    		}
+			}
 		}
 	}
 }
@@ -156,6 +162,13 @@
 			&:nth-child(n+3) {
 				display: none;
 			}
+		}
+	}
+
+
+	.project-mockup-macbook {
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 1.5rem;
 		}
 	}
 }

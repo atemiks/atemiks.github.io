@@ -163,6 +163,41 @@
 		}
 	}
 }
+.project-mockup-macbook {
+	@include media-breakpoint-down(sm) {
+		max-width: 346px;
+	}
+	.project-mockup {
+		@include media-breakpoint-down(sm) {
+			padding-bottom: 57.4%;
+		}
+		.project-mockup-figure {
+			@include media-breakpoint-down(sm) {
+		        width: 83%;
+			    height: 91%;
+			    left: 8.5%;
+			    top: 4.5%;
+			}
+		}
+	}
+}
+.project-mockup-iphone {
+	@include media-breakpoint-down(sm) {
+		max-width: 114px;
+	}
+
+	&.lg {
+		@include media-breakpoint-down(sm) {
+			max-width: 114px;
+		}
+	}
+
+	&.sm {
+		@include media-breakpoint-down(sm) {
+			max-width: 95px;
+		}
+	}
+}
 
 .section-jumbotron {
 	.jumbotron-fluid {
@@ -235,11 +270,22 @@
 				width: 86px;
 				margin: 13px;
 			}
+			@media screen and (max-width: 375px) {
+				width: 66px;
+				margin-left: 8px;
+				margin-right: 8px;
+			}
 			.social-link {
 				@include media-breakpoint-down(sm) {
 					width: 86px;
 					height: 86px;
 					line-height: 86px;
+				}
+				@media screen and (max-width: 375px) {
+					width: 66px;
+					height: 66px;
+					font-size: 1.25rem;
+					line-height: 66px;
 				}
 			}
 		}
