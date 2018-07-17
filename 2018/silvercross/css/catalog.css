@@ -1,0 +1,118 @@
+.section-display {
+    min-height: 348px;
+    background-color: #f4f4f4;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center right;
+}
+
+.display-title {
+    color: #40444e;
+    font-family: "Proxima Nova";
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 7px;
+}
+
+.display-description {
+    color: #3c3c3c;
+    font-family: "Quiza Pro";
+    font-size: 16px;
+    font-style: italic;
+    line-height: 28px;
+}
+
+.subcategory-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subcategory-list .subcategory-item {
+    position: relative;
+    display: inline-block;
+}
+
+
+.subcategory-card {
+    position: relative;
+    z-index: 1;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.subcategory-card:before {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 16px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: 300ms opacity ease;
+}
+
+.subcategory-card .subcategory-link {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.subcategory-card .subcategory-title {
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    color: #40444e;
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 3px;
+    transition: border-color 300ms ease;
+}
+
+.subcategory-card .subcategory-thumbnail {
+    flex: 0 0 auto;
+    margin: 0 14px 0 0;
+}
+
+
+.subcategory-card:hover:before,
+.subcategory-list .subcategory-item.active .subcategory-card:before {
+    opacity: 1;
+}
+.subcategory-card:hover .subcategory-title,
+.subcategory-list .subcategory-item.active .subcategory-card .subcategory-title  {
+    border-bottom-color: #000;
+}
+
+
+
+.section-catalog {
+    padding: 30px 0;
+}
+.section-catalog .section-header  {
+    margin-bottom: 30px;
+}
+.section-catalog .section-header .section-title {
+    margin: 0;
+    color: #40444e;
+    font-family: "Proxima Nova";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 6px;
+}
+

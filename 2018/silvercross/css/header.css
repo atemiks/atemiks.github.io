@@ -1,0 +1,89 @@
+.header-logo {
+    width: 159px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+.header-logo .header-logo-img {
+    width: inherit;
+    height: inherit;
+}
+
+.header-status-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-status-menu li {
+    display: inline-block;
+}
+
+.header-status-menu li a {
+    display: inline-block;
+    color: #40444e;
+    font-family: "Quiza Pro";
+    font-size: 14px;
+    font-style: italic;
+    line-height: 25px;
+    text-decoration: none;
+}
+.header-status-menu li.selected a {
+    color: #c84b4b;
+}
+
+
+
+.header-contact {}
+.header-contact .header-contact-phone a {
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #646873;
+    letter-spacing: 3.6px;
+    text-decoration: none;
+}
+
+
+.header-user-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-user-menu li {
+    display: inline-block;
+}
+
+.header-user-menu li a {
+    text-decoration: none;
+}
+
+
+.header-nav {}
+.header-nav-list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-nav-list li {
+    flex: 1 1 auto;
+}
+
+.header-nav-list li a {
+    color: #40444e;
+    font-family: "Proxima Nova";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    text-decoration: none;
+}
