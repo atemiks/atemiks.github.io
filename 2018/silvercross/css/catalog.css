@@ -1,5 +1,7 @@
 .section-display {
     min-height: 348px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #f4f4f4;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -8,6 +10,7 @@
 }
 
 .display-title {
+    margin: 23px 0;
     color: #40444e;
     font-family: "Proxima Nova";
     font-size: 35px;
@@ -17,6 +20,7 @@
 }
 
 .display-description {
+    margin: 35px 0 10px;
     color: #3c3c3c;
     font-family: "Quiza Pro";
     font-size: 16px;
@@ -33,6 +37,10 @@
 .subcategory-list .subcategory-item {
     position: relative;
     display: inline-block;
+    min-width: 180px;
+    max-width: 225px;
+    margin-right: 10px;
+    padding: 17px 0;
 }
 
 
@@ -53,13 +61,14 @@
     content: '';
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: 50%;
     left: 16px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background: #ffffff;
     transition: 300ms opacity ease;
+    transform: translateY(-50%);
 }
 
 .subcategory-card .subcategory-link {
@@ -84,8 +93,9 @@
 }
 
 .subcategory-card .subcategory-thumbnail {
-    flex: 0 0 auto;
+    flex: 0 0 50px;
     margin: 0 14px 0 0;
+    text-align: right;
 }
 
 
@@ -101,8 +111,12 @@
 
 
 .section-catalog {
-    padding: 30px 0;
+    padding: 70px 0;
 }
+.section-catalog + .section-catalog {
+    padding-top: 20px;
+}
+
 .section-catalog .section-header  {
     margin-bottom: 30px;
 }
@@ -115,4 +129,452 @@
     line-height: 25px;
     letter-spacing: 6px;
 }
+
+.form-catalog-filter {
+    margin: -2px 0;
+}
+
+.form-catalog-filter .form-catalog-title {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    color: #40444e;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.9px;
+}
+
+.form-catalog-filter .form-catalog-group {
+    cursor: default;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form-catalog-filter .filter-checkbox {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+
+.filter-checkbox {
+    position: relative;
+}
+
+.filter-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.filter-checkbox input[type="checkbox"] + label {
+    display: inline-block;
+}
+
+.filter-checkbox input[type="checkbox"] + label span {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 6px 15px 4px;
+    color: #8b8b8b;
+    font-family: "Quiza Pro";
+    font-size: 18px;
+    font-style: italic;
+    line-height: 26px;
+}
+.filter-checkbox input[type="checkbox"] + label span:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #a9adb1;
+    border-radius: 30px;
+    transition: border-color 300ms ease;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + label span {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    color: #40444e;
+}
+.filter-checkbox input[type="checkbox"]:checked + label span:after {
+    border-radius: 0;
+    border-color: transparent;
+    border-bottom: 2px solid #40444e;
+}
+
+.filter-checkbox input[type="checkbox"] + label span,
+.filter-checkbox input[type="checkbox"]:checked + label span,
+.filter-checkbox input[type="checkbox"] + label span:after {
+    transition: color 300ms ease, padding 300ms ease;
+}
+
+
+
+.products-grid {
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-bottom: -35px;
+}
+.products-grid .product-item {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.product-card {
+    position: relative;
+    margin: 35px 0;
+}
+
+.product-card .product-header {}
+.product-card .product-body {}
+.product-card .product-footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.product-card .product-gallery {
+    position: relative;
+    padding-bottom: 104.2%;
+}
+
+.product-card .product-gallery  .product-picture {
+    opacity: 0;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    transition: 300ms opacity ease, 300ms visibility ease;
+}
+
+.product-card .product-gallery  .product-picture.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-card .product-title {
+    margin: 14px 0 8px;
+    color: #40444e;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 3.6px;
+}
+
+
+.product-card .product-description {
+    margin: 0;
+    color: #525252;
+    font-family: "Quiza Pro";
+    font-size: 14px;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.product-card .product-colors {
+    cursor: default;
+    margin: 4px 0;
+    padding: 0;
+    list-style: none;
+}
+.product-card .product-colors .product-color-item {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 4px 3px;
+    border-radius: 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+.product-card .product-colors .product-color-item:before {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    z-index: 9;
+    top: -4px;   
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 300ms ease;
+}
+.product-card .product-colors .product-color-item.sale:after {
+    content: '%';
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 22px;
+    color: #e8e8e9;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+.product-card .product-colors .product-color-item.active:before {
+    opacity: 1;
+}
+
+/* color stripe */
+.color-stripe-black-gray {
+    background-image: url('../images/colors/color-stripe-black-gray.png')
+}
+.color-stripe-brown-gray {
+    background-image: url('../images/colors/color-stripe-brown-gray.png')
+}
+.color-stripe-pink-black {
+    background-image: url('../images/colors/color-stripe-pink-black.png')
+}
+/*  color fill   */
+.color-blue {
+    background-image: url('../images/colors/color-blue.png')
+}
+.color-black {
+    background-image: url('../images/colors/color-black.png')
+}
+.color-gray {
+    background-image: url('../images/colors/color-gray.png')
+}
+
+.product-card .product-price {
+    margin: 0 20px 0 0;
+}
+
+.product-price {}
+.product-price ins {
+    position: relative;
+    z-index: 1;
+    display: block;
+    color: #40444e;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+.product-price ins:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: -8px;
+    right: 30px;
+    bottom: 0;
+    height: 11px;
+    background: #e8e8e9;
+}
+.product-price del {
+    display: block;
+    color: #c84b4b;
+    font-family: "Quiza Pro";
+    font-size: 13px;
+    font-style: italic;
+    line-height: 25px;
+    text-decoration: line-through;
+}
+
+
+
+
+/*.product-color {
+    position: relative;
+}
+
+.product-color input[type="radio"] {
+    display: none;
+}
+
+.product-color input[type="radio"] + label {
+    display: block;
+    height: 22px;
+}
+
+.product-color input[type="radio"] + label span {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.product-color input[type="radio"] + label span:before {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    z-index: 9;
+    top: -4px;   
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 300ms ease;
+}
+.product-card .product-colors .product-color-item.sale .product-color input[type="radio"] + label span:after {
+    content: '%';
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 22px;
+    color: #e8e8e9;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+ color fill  
+.product-color.color-blue input[type="radio"] + label span {
+    background-image: url('../images/colors/color-blue.png')
+}
+.product-color.color-black input[type="radio"] + label span {
+    background-image: url('../images/colors/color-black.png')
+}
+.product-color.color-gray input[type="radio"] + label span {
+    background-image: url('../images/colors/color-gray.png')
+}
+
+/* color stripe */
+/*.product-color.color-stripe-black-gray input[type="radio"] + label span {
+    background-image: url('../images/colors/color-stripe-black-gray.png')
+}
+.product-color.color-stripe-brown-gray input[type="radio"] + label span {
+    background-image: url('../images/colors/color-stripe-brown-gray.png')
+}
+.product-color.color-stripe-pink-black input[type="radio"] + label span {
+    background-image: url('../images/colors/color-stripe-pink-black.png')
+}
+*/
+/*.product-color input[type="radio"]:checked + label span:before {
+    opacity: 1;
+}*/
+
+
+/*.product-color input[type="radio"] + label span,
+.product-color input[type="radio"]:checked + label span,
+.product-color input[type="radio"] + label span:before {
+    transition: background-color 300ms linear;
+}*/
+
+
+.product-helptext {
+    margin: 8px 0;
+    padding: 0 10px 0 6px;
+    background-color: #e8e8e9;
+    color: #464646;
+    font-family: "Quiza Pro";
+    font-size: 13px;
+    font-style: italic;
+    line-height: 25px;
+    line-height: 1.8;
+}
+
+.product-promotions {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 8px 0;
+    padding: 10px 12px;
+    background-color: #e8e8e9;
+}
+
+.product-promotions .product-promotions-thumbnail {
+    flex: 0 0 40px;
+    width: 40px;
+    margin: 0 10px 0 0;
+}
+.product-promotions .product-promotions-thumbnail img {
+    display: block;
+}
+
+.product-promotions .product-promotions-text {
+    flex: 1 1 auto;
+    color: #464646;
+    font-family: "Quiza Pro";
+    font-size: 13px;
+    font-style: italic;
+    line-height: 25px;
+}
+.product-promotions .product-promotions-text a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+
+.section-article-higlight {
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+.article-higlights {}
+.article-higlights .article-higlights-content {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.article-higlights .article-higlights-title {
+    color: #40444e;
+    font-family: "Proxima Nova";
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 7px;
+}
+.article-higlights .article-higlights-description {
+    color: #3c3c3c;
+    font-family: "Quiza Pro";
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+}
+.article-higlights .article-higlights-description p {
+    margin: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

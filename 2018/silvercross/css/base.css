@@ -19,8 +19,8 @@ body {
 }
 
 .container-fluid {
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 8.3%;
+    padding-right: 8.3%;
 }
 
 /*[class*="col"] {
@@ -51,10 +51,16 @@ img {
     max-width: 100%;
 }
 
+button {
+    cursor: pointer;
+    outline: none;
+}
+
 .btn {
     position: relative;
     display: inline-block;
-    padding: 12px 25px;
+    min-width: 120px;
+    padding: 12px 22px;
     border: 1px solid transparent;
     border-radius: 30px;
     font-family: "Proxima Nova";
@@ -94,7 +100,7 @@ img {
 
 
 .breadcrumb {
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
     list-style: none;
     color: #a7a7a7;
