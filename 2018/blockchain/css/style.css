@@ -2731,7 +2731,7 @@ input[type="checkbox"]:checked + label span:after {
   -o-transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease;
   transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease;
   transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease, -webkit-transform 300ms ease; }
-  .offcanvas.offcanvas-open {
+  .offcanvas.offcanvas-visible {
     visibility: visible;
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
@@ -2769,6 +2769,9 @@ input[type="checkbox"]:checked + label span:after {
     text-align: center; }
     .offcanvas .offcanvas-lang li {
       padding: 0 10px; }
+
+body.offcanvas-open {
+  overflow: hidden; }
 
 .container,
 .container-fluid {

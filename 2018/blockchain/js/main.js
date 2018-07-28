@@ -1,6 +1,11 @@
 $( document ).ready(function() {
+	setTimeout(function(){
+	  AOS.init();
+	}, 100);
+
     $( ".header-toggler, .offcanvas-close" ).on( "click", function() {
-	  	$(".offcanvas").toggleClass('offcanvas-open');
+	  	$(".offcanvas").toggleClass('offcanvas-visible');
+	  	$('body').toggleClass("offcanvas-open");
 	});
 
 
