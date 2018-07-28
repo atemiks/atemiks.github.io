@@ -2696,6 +2696,9 @@ input[type="checkbox"]:checked + label span:after {
   -webkit-border-radius: 0;
           border-radius: 0;
   background-color: transparent; }
+  @media (min-width: 768px) {
+    .header-toggler {
+      display: none; } }
   .header-toggler span {
     display: block;
     height: 3px;

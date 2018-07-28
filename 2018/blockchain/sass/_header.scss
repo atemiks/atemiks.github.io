@@ -121,6 +121,10 @@
 	border: none;
 	border-radius: 0;
 	background-color: transparent;
+	@include media-breakpoint-up(md)  {
+		display: none;
+	}
+
 	span {
 		display: block;
 		height: 3px;
