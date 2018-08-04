@@ -1,0 +1,54 @@
+.section-ico {
+	position: relative;
+	z-index: 1;
+	min-height: 580px;
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 50px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		clip-path: polygon(0 110px, 72% 0, 100% 65px, 100% 100%, 0 100%);
+		background-color: #f2f4f6;
+	}
+
+	.ico-description {
+		margin: 30px 0 40px;
+		color: #000000;
+		font-size: 19px;
+		font-weight: 500;
+		line-height: 38px;
+	}
+
+	.ico-aside-img {
+		position: absolute;
+		bottom: 0;
+		@include media-breakpoint-down(sm) {
+			position: relative;
+		}
+	}
+}
+
+
+.section-feedback {
+	padding-top: 50px;
+	.feedback-description {
+		color: #000000;
+		font-size: 19px;
+		font-weight: 500;
+		line-height: 38px;
+	}
+}
+
+
+.section-ico-projects {
+	min-height: 740px;
+	margin-top: -80px;
+	padding-top: 120px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	clip-path: polygon(0 110px, 72% 0, 100% 65px, 100% 100%, 0 100%);
+}

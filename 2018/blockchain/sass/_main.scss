@@ -8,40 +8,11 @@
 	padding-bottom: 210px;
 	background-position: center;
 	background-size: cover;
+	clip-path: polygon(0 0, 100% 0, 100% 86.667%, 79% 100%, 0 89.68%);
 	@include media-breakpoint-down(lg) {
 		min-height: 400px;
 		padding-top: 140px;
 		padding-bottom: 140px;
-	}
-
-	&:before {
-		content: '';
-		position: absolute;
-		bottom: -70px;
-		right: 20%;
-		width: 80%;
-		height: 100px;
-		background: #fff;
-		transform: rotate(2deg);
-	    transform-origin: center;
-	}
-	&:after {
-		content: '';
-		position: absolute;
-		bottom: -55px;
-		right: -1%;
-		width: 22%;
-		height: 100px;
-		background: #fff;
-		transform: rotate(-12deg);
-	    transform-origin: center;
-	    @include media-breakpoint-down(lg) {
-    		bottom: -60px;
-    	}
-    	@include media-breakpoint-down(md) {
-    		width: 50%;
-    		right: -10%;
-    	}
 	}
 
 	.hero-title {
@@ -102,35 +73,6 @@
     	background-image: none !important;
     }
 
-    &:before {
-    	content: '';
-    	position: absolute;
-    	right: 25%;
-    	bottom: -10px;
-    	height: 100px;
-    	width: 100%;
-    	background: #f2f4f6;
-    	transform: rotate(-3deg);
-    	transform-origin: right;
-    }
-    &:after {
-    	content: '';
-    	position: absolute;
-    	left: 74.5%;
-    	bottom: -10px;
-    	height: 100px;
-    	width: 100%;
-    	background: #f2f4f6;
-    	transform: rotate(8deg);
-    	transform-origin: left;
-    	@include media-breakpoint-down(lg) {
-    		left: 73.5%;
-    	}
-    	@include media-breakpoint-down(sm) {
-    		left: 70.5%;
-    	}
-    }
-
     .services-btn {
 		position: relative;
 		top: -12px;
@@ -183,8 +125,11 @@
 
 
 .section-research {
+	margin-top: -100px;
+	padding-top: 120px;
 	padding-bottom: 75px;
 	background-color: #f2f4f6;
+	clip-path: polygon(0 110px, 72% 0, 100% 65px, 100% 100%, 0 100%);
 }
 
 .research-block-title {

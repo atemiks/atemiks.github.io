@@ -28,7 +28,8 @@ section {
 }
 
 
-h1 {
+h1,
+.h1 {
 	font-family: Montserrat;
 	font-size: 85px;
 	font-weight: 700;
@@ -42,7 +43,8 @@ h1 {
 	}
 }
 
-h2 {
+h2,
+.h2 {
 	font-size: 55px;
 	font-weight: 600;
 	@include media-breakpoint-down(md) {
@@ -53,19 +55,23 @@ h2 {
 	}
 }
 
-h3 {
+h3,
+.h3 {
 	font-size: 21px;
 }
 
-h4 {
+h4,
+.h4 {
 	font-size: 19px;
 }
 
-h5 {
+h5,
+.h5 {
 	font-size: 17px;
 }
 
-h6 {
+h6,
+.h6 {
 	font-size: 16px;
 }
 
@@ -82,6 +88,16 @@ img {
 }
 
 form {
+
+	label {
+		display: block;
+		margin: 30px 0 5px;
+		color: #b9c9d1;
+		font-size: 21px;
+		font-weight: 500;
+		line-height: 34px;
+	}
+
 	input,
 	button {
 		margin-top: 35px;
@@ -121,7 +137,10 @@ textarea {
 
 textarea {
 	resize: none;
-	height: 220px;
+	height: 175px;
+	margin-bottom: 15px;
+	padding: 15px;
+	border: 5px solid #eef1f3;
 }
 
 
@@ -167,6 +186,7 @@ input[type="checkbox"]:checked + label span:after {
 .custom-checkbox label {
 	display: flex;
 	align-items: center;
+	margin: 0;
 	span {
 		flex: 0 0 20px;
 		max-width: 20px;
@@ -206,7 +226,7 @@ input[type="checkbox"]:checked + label span:after {
 		right: 4px;
 		bottom: 4px;
 		box-shadow: 0 2px 2px rgba(173, 19, 39, 0.71);
-		border-radius: 26px;
+		border-radius: 30px;
 		border: 2px solid #ffffff;
 	}
 
@@ -253,9 +273,13 @@ input[type="checkbox"]:checked + label span:after {
 }
 
 .btn-link {
+	cursor: pointer;
 	outline: none;
 	position: relative;
 	display: inline-block;
+	padding: 0;
+	border: none;
+	background-color: transparent;
 	font-size: 19px;
 	font-weight: 600;
 	text-decoration: none;

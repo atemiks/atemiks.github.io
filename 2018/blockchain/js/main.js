@@ -49,4 +49,28 @@ $( document ).ready(function() {
 			}
 		}
 	});
+
+
+	// page trading
+	 var swiperResearch = new Swiper('.swiper-team', {
+    	slidesPerView: 'auto',
+    	freeMode: true,
+	
+		scrollbar: {
+			el: '.swiper-scrollbar',
+			hide: false,
+		},
+
+		// breakpoints: {
+		// 	576: {
+		// 		slidesPerView: 1
+		// 	},
+		// 	767: {
+		// 		slidesPerView: 2
+		// 	},
+		// 	1024: {
+		// 		slidesPerView: 3
+		// 	}
+		// }
+	});
 });

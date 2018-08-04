@@ -1,0 +1,50 @@
+.section-contact {
+	padding-top: 40px;
+}
+
+.contact-box {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-top: 4px solid $danger;
+	border-bottom: 4px solid $danger;
+	@include media-breakpoint-down(sm) {
+		margin-top: 30px;
+		margin-bottom: -20px;
+	}
+}
+
+.contact-block {
+	margin: 10px 0;
+	.contact-title {
+		margin: 10px 0;
+		color: #b9c9d1;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 34px;
+		text-transform: uppercase;
+		letter-spacing: 0.4px;
+	}
+
+	.contact-text {
+		margin: 0;
+		color: #000000;
+		font-size: 18px;
+		font-weight: 500;
+		a {
+			color: inherit;
+			text-decoration: none;
+			&:hover {
+				color: $danger;
+			}
+		}
+	}
+}
+
+
+.contact-hint {
+	margin: 45px 0 -10px;
+	color: #000000;
+	font-size: 19px;
+	font-weight: 500;
+	line-height: 38px;
+}

@@ -1,0 +1,64 @@
+.section-become-parnter {
+	.become-partner-description {
+		color: #000000;
+		font-size: 19px;
+		font-weight: 500;
+		line-height: 38px;
+	}
+}
+
+
+.section-team {
+	position: relative;
+	z-index: 1;
+	margin-top: -15px;
+	padding-bottom: 0;
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 70px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #f2f4f6;
+		clip-path: polygon(0 110px, 72% 0, 100% 65px, 100% 100%, 0 100%);
+	}
+}
+
+.swiper-team {
+	margin: 30px -10px 50px;
+	padding-bottom: 50px;
+	.swiper-slide {
+		width: 300px;
+		padding: 0 10px;
+	}
+}
+
+.team-card {
+	width: 280px;
+	.team-thumbnail {
+		border-radius: 30px;
+		border-bottom-left-radius: 0;
+		padding-bottom: 105%;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.team-name {
+		margin: 15px 0;
+		color: #000000;
+		font-size: 21px;
+		font-weight: 400;
+	}
+
+	.team-position {
+		margin: 0;
+		color: #000000;
+		font-size: 16px;
+		font-style: italic;
+	}
+}
+
+
