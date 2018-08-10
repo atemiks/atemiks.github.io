@@ -1,0 +1,40 @@
+.reset-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.gradient-purple {
+	background-image: linear-gradient(to right, #665675 0%, #776184 100%);
+}
+
+.gradient-pink {
+	background-image: linear-gradient(to right, #b7677f 0%, #cb7e95 100%);
+}
+.gradient-vertical-pink {
+	background-image: linear-gradient(to bottom, #b7677f 0%, #cb7e95 100%)
+}
+.text-gradient-purple {
+	color: $purple;
+	background-image: -webkit-linear-gradient(left, #665675 0%, #776184 100%);
+	background-image: -o-linear-gradient(left, #665675 0%, #776184 100%);
+	background-image: -moz-linear-gradient(to right, #665675 0%, #776184 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.text-gradient-pink {
+	color: $dark-pink;
+	background-image: -webkit-linear-gradient(left, #b7677f 0%, #cb7e95 100%);
+	background-image: -o-linear-gradient(left, #b7677f 0%, #cb7e95 100%);
+	background-image: -moz-linear-gradient(to right, #b7677f 0%, #cb7e95 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.transition {
+	transition: 300ms ease;
+}
