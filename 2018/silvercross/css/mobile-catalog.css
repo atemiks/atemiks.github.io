@@ -1,0 +1,170 @@
+@media screen and (max-width: 1440px) {
+	.product-footer {
+		padding-top: 16px;
+		padding-bottom: 5px;
+	}
+
+	.product-title {
+		font-size: 16px;
+		line-height: 23px;
+		letter-spacing: 3.2px;
+	}
+
+	.product-description {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+
+	.product-compare .col {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.product-compare-title {
+		margin: 25px 0 5px;
+		font-size: 15px;
+	}
+
+	.product-compare-list  {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+
+
+	.product-price ins {
+		font-size: 17px;
+		letter-spacing: 3.4px;
+	}
+	.product-price ins:before {
+		right: 10px;
+	}
+
+	.product-price del {
+		font-size: 13px;
+	}
+
+	.product-price .product-price-hint {
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.product-price.lg ins {
+		margin: 20px 0 10px;
+		font-size: 32px;
+		letter-spacing: 6.4px;
+	}
+
+	.product-price.lg ins:before {
+		right: -20px;
+	}
+
+
+
+	.product-order {
+		min-width: 97px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		font-size: 15px;
+	}
+
+	.product-order i {
+		width: 23px;
+		height: 23px;
+		margin-right: 5px;
+		font-size: 12px;
+		line-height: 23px;
+	}
+
+	.product-order.btn-lg {
+		min-width: 141px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		font-size: 17px;
+	}
+
+	.product-order.btn-lg i {
+		width: 30px;
+		height: 30px;
+		margin-right: 12px;
+		line-height: 30px;
+	}
+}
+
+
+@media screen and (max-width: 1199px) {
+	.product-price.lg ins {
+		font-size: 30px;
+		line-height: 26px;
+		letter-spacing: 6px;
+	}
+
+	.product-price.lg ins:before {
+		right: -5px;
+		bottom: -3px;
+	}
+
+	.product-order.btn-lg {
+		min-width: 124px;
+		padding: 10px;
+		font-size: 16px;
+	}
+
+	.product-order.btn-lg i {
+		margin-right: 9px;
+	}
+}
+
+
+@media screen and (max-width: 991px) {
+	.product-colors.lg .product-color-item {
+		width: 31px;
+		height: 31px;
+		margin: 4px;
+	}
+
+	.product-colors.lg .product-color-item.sale:after {
+		line-height: 31px;
+	}
+
+	.product-price.lg ins {
+		font-size: 25px;
+		line-height: 26px;
+		letter-spacing: 5px;
+	}
+
+	.product-price.lg del {
+		font-size: 14px;
+	}
+}
+
+
+@media screen and (max-width: 425px) {
+	.product-price.lg ins {
+		font-size: 22px;
+		letter-spacing: 4.4px;
+	}
+	
+	.product-order.btn-lg {
+		font-size: 15px;
+	}
+	
+	.product-order.btn-lg {
+		min-width: 105px;
+		padding-left: 8px;
+		padding-right: 8px;
+		font-size: 15px;
+	}
+
+	.product-order.btn-lg i {
+		width: 26px;
+		height: 26px;
+		margin-right: 5px;
+		line-height: 26px;
+	}
+}
+
+
+
+
+

@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html,
 body {
     height: 100%;
+    background: #fff;
 }
 .wrapper {
     display: flex;
@@ -19,6 +21,7 @@ body {
 }
 
 .container-fluid {
+    max-width: 2000px;
     padding-left: 8.3%;
     padding-right: 8.3%;
 }
@@ -80,6 +83,30 @@ button {
     border-radius: 30px;
     
 }
+
+.btn-lg {
+    min-width: 141px;
+    padding: 16px 14px;
+    font-family: "Quiza Pro";
+    font-size: 17px;
+    font-style: italic;
+    line-height: 26px;
+}
+.btn-lg:after {
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-width: 2px;
+    border-radius: 50px;
+}
+
+.btn-lg i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
 .btn-light {
     color:  #000;
     border-color: #c5c5c8;
@@ -98,9 +125,52 @@ button {
     border-color: #40444e;;
 }
 
+.btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+.btn-play:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+.btn-play:after {
+    font-family: 'icomoon';
+    content: '\e917';
+}
+
+.btn-play.lg {
+    width: 150px;
+    height: 150px;
+    font-size: 64px;
+    line-height: 150px;
+}
+
+
+.btn-play.light {
+    color: #40444e;
+    background-color: #fff;
+}
+.btn-play.light:before {
+    border-color: #fff;
+}
+
 
 .breadcrumb {
-    margin: 10px 0;
+    margin: 7px 0;
     padding: 0;
     list-style: none;
     color: #a7a7a7;
@@ -113,12 +183,53 @@ button {
 .breadcrumb li {
     position: relative;
     display: inline-block;
+    color: #a7a7a7;
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 26px;
 }
 .breadcrumb li:after {
-    content: '-'
+    font-family: 'icomoon';
+    content: '\e916';
+    display: inline-block;
+    margin: 0 8px 0 12px;
+    font-size: 8px;
+}
+.breadcrumb li:last-child:after {
+    display: none;
 }
 
 .breadcrumb li a {
     color: inherit;
     text-decoration: none;
+}
+
+.breadcrumb li.prev {
+    width: 27px;
+    height: 27px;
+    margin: 0 8px 0 0;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #9b9b9b;
+    text-align: center;
+    line-height: 28px;
+}
+.breadcrumb li.prev:after {
+    display: none;
+}
+
+.breadcrumb .page-item.active {
+    color: #444444;
+}
+
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
 }

@@ -1,0 +1,1088 @@
+.section-product {
+	min-height: 742px;
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: #e8e8e9;
+}
+
+
+.section-product .breadcrumb {
+	margin: 24px 0;
+}
+
+
+.section-product  .product-content {
+	flex: 1 1 auto;
+	max-width: calc(100% - 265px);
+}
+.section-product  .product-aside {
+	flex: 0 0 265px;
+	max-width: 265px;
+}
+
+
+.section-product .col-info {
+	flex: 0 0 36%;
+	max-width: 36%;
+	padding-bottom: 30px;
+}
+.section-product .col-picture {
+	flex: 0 0 59%;
+	max-width: 59%;
+}
+
+
+
+.section-product .product-title {
+	margin: 25px 0 20px;
+	color: #40444e;
+	font-family: "Proxima Nova";
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: 6.4px;
+}
+
+
+.section-product .product-type {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.section-product .product-type .product-type-item {
+	display: inline-block;
+	padding: 0 20px;
+	vertical-align: middle;
+}
+
+
+.section-product .product-type .product-type-item a {
+	display: inline-block;
+	padding: 8px 15px;
+	border: 1px solid #8b8b8b;
+	border-radius: 30px;
+	color: #8b8b8b;
+	font-family: "Quiza Pro";
+	font-size: 18px;
+	font-style: italic;
+	text-decoration: none;
+	line-height: 1;
+}
+
+.section-product .product-type .product-type-item.active {
+	display: inline-block;
+	margin: 6px 0;
+	padding: 2px 0;
+	border-bottom: 2px solid #40444e;
+	color: #40444e;
+	font-family: "Quiza Pro";
+	font-size: 18px;
+	font-style: italic;
+	line-height: 26px;
+}
+
+
+.section-product .product-description {
+	color: #62656c;
+	font-family: "Quiza Pro";
+	font-size: 18px;
+	font-style: italic;
+	line-height: 30px;
+}
+
+
+.section-product .product-colors {
+	margin-top: 38px;
+	margin-bottom: 38px;
+}
+
+.section-product .product-footer {
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+	justify-content: space-between;
+	-webkit-flex-wrap: nowrap;
+	-moz-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	-o-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	max-width: 425px;
+	padding-top: 0;
+	padding-bottom: 15px;
+}
+
+.section-product .product-order {
+	margin: 15px 0;
+}
+
+
+.product-feature {
+	margin: -10px 0 -20px;
+	padding: 0;
+	list-style: none;
+}
+
+.product-feature .product-feature-item {
+	position: relative;
+	padding: 27px 0 28px;
+	color: #40444e;
+	font-family: "Proxima Nova";
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
+}
+.product-feature .product-feature-item:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 19px;
+	height: 2px;
+	background: #fff;
+}
+.product-feature .product-feature-item:last-child:after {
+	display: none;
+}
+
+.product-actions {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.product-actions .product-action-item {
+	margin: 30px 0;
+}
+
+.product-action-card {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	max-width: 170px;
+	text-decoration: none;
+}
+.product-action-card .product-action-thumbnail {
+	position: relative;
+	flex: 0 0 59px;
+	width: 59px;
+	height: 59px;
+	margin: 0 18px 0 0;
+	border-radius: 50%;
+	background: #fff;
+	font-size: 24px;
+	color: #4f4f4f;
+	line-height: 62px;
+	text-align: center;
+} 
+.product-action-card .product-action-thumbnail:after {
+	content: '';
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	right: -8px;
+	bottom: -8px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+.product-action-card .product-action-thumbnail.dark {
+	background-color: #40444e;
+	color: #fff;
+}
+.product-action-card .product-action-thumbnail.dark:after {
+	border-color: #40444e;
+}
+.product-action-card .product-action-title {
+	color: #363636;
+	font-family: "Quiza Pro";
+	font-size: 15px;
+	font-style: italic;
+	line-height: 20px;
+} 
+
+
+.section-product .slider-product-wrapper {
+	flex: 1 1 auto;
+	max-width: calc(100% - 140px);
+}
+.section-product .slider-product-nav-wrapper {
+	flex: 0 0 140px;
+	max-width: 140px;
+}
+
+
+.slider-product .slide-item {}
+
+.slider-product .product-card {
+	position: relative;
+	margin: 0;
+	padding-bottom: 100%;
+}
+
+.slider-product .product-card:after {
+	font-family: 'icomoon';
+	content: '\e90e';
+	position: absolute;
+	top: 20px;
+	right: 14px;
+	font-size: 30px;
+	color: #8b8b8b;
+}
+
+.slider-product .product-card a {
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
+
+.slider-product .product-card a img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
+
+
+
+.slider-product-nav-wrapper {
+	position: relative;
+	height: 470px;
+}
+
+.slider-product-nav {
+	height: 440px;
+	width: 110px;
+	margin: 35px auto;
+}
+
+.slider-product-nav .swiper-wrapper {
+	/*margin: 25px 0;*/
+}
+
+.slider-product-nav .slide-item {
+	cursor: pointer;
+	position: relative;
+	height: 100px;
+	width: 100px;
+	margin: 5px;
+}
+.slider-product-nav .slide-item.active  .product-nav-card:after {
+	border-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.slider-product-nav .product-nav-card {
+	position: relative;
+	width: 100px;
+	border-radius: 50%;
+	padding-bottom: 100px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.slider-product-nav .product-nav-card:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 4px solid transparent;
+	border-radius: 50%;
+	transition: border-color 300ms ease, box-shadow 300ms ease;
+}
+
+
+.slider-product-nav-wrapper .swiper-button-prev,
+.slider-product-nav-wrapper .swiper-button-next {
+	width: 12px;
+	height: 12px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	font-size: 0;
+	color: #767a83;
+}
+.slider-product-nav-wrapper .swiper-button-prev {
+	top: 48px;
+	bottom: auto;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.slider-product-nav-wrapper .swiper-button-next {
+	top: auto;
+	bottom: -70px;
+	right: 50%;
+	transform: translateX(50%);
+}
+.slider-product-nav-wrapper .swiper-button-prev:after,
+.slider-product-nav-wrapper .swiper-button-next:after {
+	font-size: 14px;
+}
+
+.slider-product-nav-wrapper .swiper-button-prev:after {
+	content: '\e901';
+}
+.slider-product-nav-wrapper .swiper-button-next:after {
+	content: '\e914';
+}
+
+.slider-product-nav-wrapper .swiper-custom-pagination-fraction {
+	margin: 15px 0;
+}
+
+
+.section-product-timeline {
+	overflow: hidden;
+	padding-top: 46px;
+	padding-bottom: 44px;
+	border-bottom: 1px solid #e4e4e4;
+	background: #fff;
+}
+
+.timeline-grid .timeline-item {
+	flex: 0 0 auto;
+}
+.timeline-grid .timeline-item:nth-child(4n+4) .timeline-card:after {
+	display: none;
+}
+
+.timeline-card {
+	position: relative;
+	z-index: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	max-width: 320px;
+	margin: 10px 0;
+	white-space: nowrap;
+}
+
+.timeline-card:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 100%;
+	width: 100%;
+	border-bottom: 1px solid #a8abae;
+}
+
+.timeline-card .timeline-thumbnail {
+	flex: 0 0 65px;
+	background-color: #fff;
+	color: #52565f;
+	text-align: center;
+}
+
+.timeline-card .icon-factory {
+	font-size: 46px;
+}
+
+.timeline-card .icon-production {
+	font-size: 38px;
+}
+
+.timeline-card .icon-doc {
+	font-size: 40px;
+}
+
+.timeline-card .icon-lorry {
+	position: relative;
+	top: -5px;
+	font-size: 50px;
+}
+
+.timeline-card .timeline-title {
+	margin: 0;
+	padding: 0 30px 0 0;
+	background-color: #fff;
+	color: #494949;
+	font-family: "Quiza Pro";
+	font-size: 15px;
+	font-style: italic;
+	line-height: 18px;
+}
+
+
+.section-product-advantages {
+	/*padding-top: 60px;
+	padding-bottom: 60px;*/
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+
+.product-advantages-card {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-position: center;
+}
+
+.product-advantages-card .product-advantages-picutre {
+	position: relative;
+	flex-shrink: 0;
+	width: 100%;
+	text-align: right;
+}
+
+.product-advantages-card .product-advantages-title {
+	margin: 40px 0 20px -40px;
+	color: #40444e;
+	font-family: "Proxima Nova";
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 50px;
+	letter-spacing: 7px;
+}
+.product-advantages-card .product-advantages-subtitle {
+	position: relative;
+	margin: 0 0 0 -40px;
+	color: #40444e;
+	font-family: "Quiza Pro";
+	font-size: 30px;
+	font-style: italic;
+	line-height: 25px;
+}
+.product-advantages-card .product-advantages-subtitle:before {
+	content: '';
+	position: absolute;
+	top: 12px;
+	left: -43px;
+	width: 23px;
+	height: 2px;
+	background-color: #40444e;
+}
+.product-advantages-card .product-advantages-description {
+	margin-bottom: 35px;
+	color: #393939;
+	font-family: "Quiza Pro";
+	font-size: 18px;
+	font-style: italic;
+	line-height: 30px;
+}
+
+.product-advantages-card .product-advantages-description p {
+	margin: 0 0 30px;
+	color: inherit;
+}
+.product-advantages-card .product-advantages-description p:last-child {
+	margin-bottom: 0;
+}
+
+
+.section-product-advantages.fullview {
+	overflow: hidden;
+	position: relative;
+}
+
+.section-product-advantages.fullview + section {
+	margin-top: -85px;
+}
+
+.section-product-advantages.fullview .product-advantages-card  {
+	min-height: 930px;
+}
+
+.section-product-advantages.fullview .product-advantages-aside {
+	position: absolute;
+	width: 50%;
+	top: 0;
+	right: 0;
+	bottom: 85px;
+}
+
+.section-product-advantages.fullview .product-advantages-aside .product-advantages-picutre img {
+	max-width: none;
+}
+
+.section-product-advantages .advantages-btn {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+
+.section-customers {
+	padding-top: 120px;
+	padding-bottom: 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-color: #e8e8e9;
+}
+
+.section-customers + section {
+	margin-top: 12.5%;
+}
+
+.section-customers .section-header {
+	max-width: 240px;
+	padding-top: 30px;
+	padding-left: 30px;
+	text-align: left;
+}
+
+
+.customers-gallery-grid {
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: -130px;
+	margin-bottom: calc(-12.5% + 2px);
+	padding-left: 17px;
+	padding-right: 17px;
+}
+
+.customers-gallery-grid .customer-gallery-col {
+	width: 12.5%;
+}
+.customers-gallery-grid .customer-gallery-col.large {
+	width: 25%;
+}
+.customers-gallery-grid .customer-gallery-col:first-child {
+	padding-top: 12.5%;
+}
+
+.customers-gallery-grid .customer-gallery-item {
+	position: relative;
+	float: right;
+	width: 100%;
+	border: 3px solid transparent;
+}
+.customers-gallery-grid .customer-gallery-item:before,
+.customers-gallery-grid .customer-gallery-item:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.customers-gallery-grid .customer-gallery-item.half {
+	width: 50%;
+	margin-left: auto;
+}
+
+
+
+.customers-gallery-grid .customer-gallery-card {
+	padding-bottom: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+}
+
+.customers-gallery-grid .customer-gallery-item.color.gray-800 .customer-gallery-card {
+	background-color: #40444e;
+}
+.customers-gallery-grid .customer-gallery-item.color.gray-300 .customer-gallery-card {
+	background-color: #a8abae;
+}
+.customers-gallery-grid .customer-gallery-item.color.white .customer-gallery-card {
+	background-color: #fff;
+}
+
+
+.section-product-tagline {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.section-product-tagline img {
+	display: block;
+	width: 100%;
+}
+
+.section-product-tagline .section-header {
+	text-align: center;
+}
+
+.section-product-tagline .product-tagline-text {
+	max-width: 490px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: #4b4b4b;
+	font-family: "Quiza Pro";
+	font-size: 18px;
+	font-style: italic;
+	line-height: 30px;
+}
+
+
+.section-product-reliability {
+    padding-top: 70px;
+    padding-bottom: 55px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center top;
+	background-color: #f3eeeb;
+}
+
+.section-product-reliability .product-reliability-title {
+	margin: 0 0 20px 70px;
+	color: #40444e;
+	font-family: "Proxima Nova";
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 50px;
+	letter-spacing: 7px;
+}
+.section-product-reliability .product-reliability-description {
+	max-width: 460px;
+	margin: 0 0 45px 110px;
+	color: #4b4b4b;
+	font-family: "Quiza Pro";
+	font-size: 18px;
+	font-style: italic;
+	line-height: 30px;
+}
+.section-product-reliability .product-reliability-description span {
+	color: #000000;
+}
+
+
+.section-product-gallery {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: -140px;
+	padding-top: 140px;
+	padding-bottom: 140px;
+	background-color: #231f20;
+	color: #fff;
+}
+
+.section-product-gallery .col {
+	position: static;
+}
+
+.slider-product-gallery {
+    overflow: visible;
+    position: static;
+}
+.slider-product-gallery:after {
+	content: '';
+	position: absolute;
+	z-index: 8;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 20%;
+	background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
+
+}
+.slider-product-gallery .swiper-slide {
+	width: 377px;
+}
+
+.slider-product-gallery .swiper-button-next {
+	right: 8.333%;
+}
+
+.slider-product-gallery .slide-product-gallery {
+	padding-bottom: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.section-product-promo {
+	padding-top: 190px;
+	padding-bottom: 115px;
+	background-color: #231f20;
+	color: #fff;
+}
+
+.section-product-promo .product-advantages-card {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.section-product-promo .product-advantages-card .product-advantages-title,
+.section-product-promo .product-advantages-card .product-advantages-subtitle {
+	color: #fff;
+}
+.section-product-promo .product-advantages-card .product-advantages-description {
+	color: #d8d7d7;
+}
+.section-product-promo .product-advantages-card .product-advantages-subtitle:before {
+	background-color: #fff;
+}
+
+
+.section-product-characteristics {
+	padding-top: 130px;
+	padding-bottom: 20px;
+}
+
+.section-product-characteristics .characteristics-btn {
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+.characteristics-grid-wrapper {
+	overflow: hidden;
+}
+.characteristics-grid {
+	position: relative;
+	left: -1px;
+	right: -1px;
+	width: calc(100% + 32px);
+	margin-top: 35px;
+	margin-bottom: -1px;
+}
+.characteristics-grid .characteristics-item {
+	border: 1px solid #e6e9ea;
+	border-top: none;
+	border-right: none;
+}
+
+.characteristics-card {
+	max-width: 250px;
+	margin: 50px 40px 45px;
+}
+.characteristics-card .characteristics-q {
+	margin: 5px 0;
+	color: #000000;
+	font-family: "Proxima Nova";
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 25px;
+}
+.characteristics-card .characteristics-a {
+	margin: 0;
+	color: #40444e;
+	font-family: "Proxima Nova";
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+}
+
+
+.section-product-options {
+	padding-top: 27px;
+	padding-bottom: 27px;
+}
+.product-options-grid,
+.slider-product-options {
+	position: static;
+	margin-top: -5px;
+	margin-left: -30px;
+	margin-right: -30px;
+}
+.product-options-grid .product-option-item,
+.slider-product-options .product-option-item  {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.slider-product-options .swiper-button-prev {
+	left: -8.333%;
+}
+.slider-product-options .swiper-button-next {
+	right: -8.333%;
+}
+
+.product-card.product-option-card .product-thumbnail {
+	position: relative;
+	margin-bottom: 23px;
+	padding-bottom: 100%;
+}
+
+.product-card.product-option-card .product-price {
+	max-width: 45%;
+	margin: 0;
+}
+
+
+.section-product-accessories {
+	padding-top: 27px;
+	padding-bottom: 40px;
+}
+
+.slider-product-accessories {
+	position: static;
+	margin: 48px -65px 98px;
+}
+
+.slider-product-accessories .product-accessories-item {
+	border-right: 1px solid #e6e9ea;
+}
+.slider-product-accessories .product-accessories-item.swiper-slide-next {
+	border-right-color: transparent;
+}
+
+.slider-product-accessories .swiper-button-prev {
+	left: -8.333%;
+}
+.slider-product-accessories .swiper-button-next {
+	right: -8.333%;
+}
+
+.slider-product-accessories .swiper-pagination {
+	bottom: 32px;
+}
+
+.product-card.product-accessories-card {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin: 0;
+	padding: 0 65px;
+}
+
+.product-card.product-accessories-card .product-thumbnail {
+
+}
+
+.product-card.product-accessories-card .product-aside,
+.product-card.product-accessories-card .product-content {
+	flex: 0 0 50%;
+}
+.product-card.product-accessories-card .product-content {
+	padding-left: 15px;
+}
+
+.product-card.product-accessories-card .product-thumbnail {
+	padding-bottom: 90%;
+}
+
+
+.section-product-testimonials {
+	padding-top: 70px;
+	padding-bottom: 85px;
+	background-color: #e8e8e9;
+}
+
+.slider-product-testimonials {
+	position: static;
+	margin-top: 30px;
+}
+
+.slider-product-testimonials .swiper-button-prev {
+	left: -8.333%;
+}
+.slider-product-testimonials .swiper-button-next {
+	right: -8.333%;
+}
+
+.testimonial-card {
+	width: 100%;
+}
+.testimonial-card .testimonial-aside {}
+.testimonial-card .testimonial-content {}
+
+.testimonial-card .testimonial-title {
+	margin: 0 0 10px;
+	color: #40444e;
+	font-family: "Proxima Nova";
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 4.8px;
+}
+.testimonial-card .testimonial-info {
+	margin: 0 0 15px;
+	color: #7a7a7a;
+	font-family: "Quiza Pro";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+}
+.testimonial-card .testimonial-description {
+	max-width: 530px;
+	margin-bottom: 25px;
+	color: #393939;
+	font-family: "Quiza Pro";
+	font-size: 18px;
+	font-style: italic;
+	line-height: 30px;
+}
+
+.testimonial-card  .testimonial-thumbnail-wrapper {
+	width: 84%;
+	max-width: 540px;
+	margin: auto;
+	padding-top: 5.5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background: url('../images/page-product/section-testimonials/testimonial-item-bg.png') no-repeat 0 0;
+	-webkit-background-size: contain;
+	background-size: contain;
+    box-sizing: border-box;
+}
+
+.testimonial-card  .testimonial-thumbnail {
+	position: relative;
+	padding-bottom: 100%;
+	margin: auto;
+	border-radius: 50%;
+}
+.testimonial-card  .testimonial-thumbnail:before {
+	content: '';
+	position: absolute;
+	z-index: 10;
+	top: 33px;
+	right: -8px;
+	width: 103px;
+	height: 73px;
+	background: url('../images/page-product/section-testimonials/testimonial-item-quote.png') no-repeat 0 0;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.testimonial-card  .testimonial-thumbnail:after {
+	content: '';
+	position: absolute;
+	z-index: 9;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border: 10px solid #fff;
+	border-radius: 50%;
+}
+
+.testimonial-card  .testimonial-thumbnail .testimonial-picture {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	border-radius: 50%;
+}
+
+
+.testimonial-card .testimonial-btn {
+	margin: 7px 0;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	font-family: "Quiza Pro";
+	font-size: 16px;
+	color: #636363;
+}
+
+
+.section-product-similar {
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+
+.slider-product-similar {
+	position: static;
+	margin: 15px -30px 38px;
+}
+.slider-product-similar  .product-similar-item {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.slider-product-similar .swiper-button-prev {
+	left: -8.333%;
+}
+.slider-product-similar .swiper-button-next {
+	right: -8.333%;
+}
+
+.slider-product-similar .swiper-pagination {
+	bottom: 0;
+}
+
+.product-card.product-similar-card  {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.product-card.product-similar-card .product-thumbnail {
+	margin-bottom: -5px;
+}
+.product-card.product-similar-card .product-title {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 3.6px;
+}
+
+
+.product-card.product-similar-card  .product-body {
+	max-width: 95%;
+}
+
+.product-card.product-similar-card  .product-price ins {
+	font-size: 25px;
+	white-space: nowrap;
+}
+.product-card.product-similar-card  .product-price ins:before {
+	right: 0;
+}
+
+.product-card.product-similar-card  .product-price del {
+	font-size: 15px;
+}
+
+
+.section-product-higlights {
+	padding-top: 27px;
+	padding-bottom: 87px;
+}
+.slider-product-higlights {
+	position: static;
+	margin: 15px -30px 0;
+}
+.slider-product-higlights  .product-higlights-item {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.slider-product-higlights .swiper-button-prev {
+	left: -8.333%;
+}
+.slider-product-higlights .swiper-button-next {
+	right: -8.333%;
+}
+
+.product-card.product-higlights-card .product-title {
+	margin: 14px 0 13px;
+}
+
+.product-card.product-higlights-card .product-footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+

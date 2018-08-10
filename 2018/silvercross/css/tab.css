@@ -1,0 +1,69 @@
+.nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-link {
+    display: block;
+    border-bottom: 2px solid transparent;
+    color: #9a9a9a;
+    font-family: "Quiza Pro";
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    text-decoration: none;
+    transition: color 300ms ease, border-color 300ms ease;
+}
+
+.nav-link:hover {
+    color: #40444e;
+}
+
+.nav-link.active {
+    color: #40444e;
+    border-bottom-color: #40444e;
+}
+
+
+.nav-fill .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+
+.nav-justified .nav-item {
+	flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.tab-content > .tab-pane {
+	display: none;
+}
+.tab-content > .active {
+	display: block;
+}
+
+
+@media screen and (max-width: 1199px) {
+    .nav {
+        margin: 15px 0;
+    }
+}

@@ -41,6 +41,7 @@
     max-width: 225px;
     margin-right: 10px;
     padding: 17px 0;
+    text-decoration: none;
 }
 
 
@@ -69,15 +70,6 @@
     background: #ffffff;
     transition: 300ms opacity ease;
     transform: translateY(-50%);
-}
-
-.subcategory-card .subcategory-link {
-    position: absolute;
-    z-index: 9;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
 }
 
 .subcategory-card .subcategory-title {
@@ -119,6 +111,7 @@
 
 .section-catalog .section-header  {
     margin-bottom: 30px;
+    text-align: left;
 }
 .section-catalog .section-header .section-title {
     margin: 0;
@@ -231,9 +224,9 @@
     margin: 35px 0;
 }
 
-.product-card .product-header {}
-.product-card .product-body {}
-.product-card .product-footer {
+.product-header {}
+.product-body {}
+.product-footer {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -244,14 +237,22 @@
     padding: 8px 0;
 }
 
-.product-card .product-gallery {
+.product-footer {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.product-gallery,
+.product-thumbnail {
     position: relative;
     padding-bottom: 104.2%;
 }
 
-.product-card .product-gallery  .product-picture {
-    opacity: 0;
-    visibility: visible;
+.product-gallery  .product-picture,
+.product-thumbnail .product-picture {
     position: absolute;
     top: 0;
     left: 0;
@@ -260,15 +261,21 @@
     margin: auto;
     max-width: 100%;
     max-height: 100%;
+    margin: auto;
     transition: 300ms opacity ease, 300ms visibility ease;
 }
 
-.product-card .product-gallery  .product-picture.active {
+.product-gallery  .product-picture {
+    opacity: 0;
+    visibility: visible;
+}
+
+.product-gallery  .product-picture.active {
     opacity: 1;
     visibility: visible;
 }
 
-.product-card .product-title {
+.product-title {
     margin: 14px 0 8px;
     color: #40444e;
     font-family: "Proxima Nova";
@@ -279,7 +286,7 @@
 }
 
 
-.product-card .product-description {
+.product-description {
     margin: 0;
     color: #525252;
     font-family: "Quiza Pro";
@@ -288,13 +295,58 @@
     line-height: 25px;
 }
 
-.product-card .product-colors {
+
+.product-compare {}
+.product-compare-title {
+    margin: 10px 0;
+    color: #373737;
+    font-family: "Quiza Pro";
+    font-size: 17px;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.product-compare-list {
+    margin: 0 0 5px;
+    padding: 0;
+    list-style: none;
+    color: #414141;
+    font-family: "Quiza Pro";
+    font-size: 14px;
+    font-style: italic;
+    line-height: 20px;
+}
+.product-compare-list li {
+    position: relative;
+    padding: 10px 0 10px 40px;
+}
+.product-compare-list li:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+.product-compare-list.positive li:before {
+    content: '\e910';
+    color: #44a251;
+}
+.product-compare-list.negative li:before {
+    content: '\e90a';
+    color: #c74c4b;
+}
+
+
+.product-colors {
     cursor: default;
     margin: 4px 0;
     padding: 0;
     list-style: none;
 }
-.product-card .product-colors .product-color-item {
+.product-colors .product-color-item {
+    cursor: pointer;
     position: relative;
     display: inline-block;
     width: 22px;
@@ -305,7 +357,7 @@
     background-size: cover;
 
 }
-.product-card .product-colors .product-color-item:before {
+.product-colors .product-color-item:before {
     opacity: 0;
     content: '';
     position: absolute;
@@ -314,17 +366,18 @@
     left: -4px;
     right: -4px;
     bottom: -4px;
+    border: 4px solid #fff;
     border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     transition: opacity 300ms ease;
 }
-.product-card .product-colors .product-color-item.sale:after {
+.product-colors .product-color-item.sale:after {
     content: '%';
     position: absolute;
     z-index: 9;
     top: 0;
     left: 0;
-    width: 22px;
+    width: 100%;
     color: #e8e8e9;
     font-family: "Proxima Nova";
     font-size: 14px;
@@ -333,32 +386,31 @@
     text-align: center;
 }
 
-.product-card .product-colors .product-color-item.active:before {
+.product-colors.lg {}
+
+.product-colors.lg .product-color-item {
+    width: 40px;
+    height: 40px;
+    margin: 6px;
+}
+
+.product-colors.lg .product-color-item:before {
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+    border-width: 7px;
+}
+
+.product-colors.lg .product-color-item.sale:after {
+    line-height: 40px;
+}
+
+.product-colors .product-color-item.active:before {
     opacity: 1;
 }
 
-/* color stripe */
-.color-stripe-black-gray {
-    background-image: url('../images/colors/color-stripe-black-gray.png')
-}
-.color-stripe-brown-gray {
-    background-image: url('../images/colors/color-stripe-brown-gray.png')
-}
-.color-stripe-pink-black {
-    background-image: url('../images/colors/color-stripe-pink-black.png')
-}
-/*  color fill   */
-.color-blue {
-    background-image: url('../images/colors/color-blue.png')
-}
-.color-black {
-    background-image: url('../images/colors/color-black.png')
-}
-.color-gray {
-    background-image: url('../images/colors/color-gray.png')
-}
-
-.product-card .product-price {
+.product-price {
     margin: 0 20px 0 0;
 }
 
@@ -374,6 +426,7 @@
     line-height: 25px;
     letter-spacing: 4px;
     text-decoration: none;
+    white-space: nowrap;
 }
 .product-price ins:before {
     content: '';
@@ -386,13 +439,90 @@
     background: #e8e8e9;
 }
 .product-price del {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
     color: #c84b4b;
     font-family: "Quiza Pro";
     font-size: 13px;
     font-style: italic;
     line-height: 25px;
     text-decoration: line-through;
+    white-space: nowrap;
+}
+
+.product-price .product-price-label {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 52px;
+    margin: 0 10px 0 0;
+    border-radius: 20px;
+    background-color: #bb5757;
+    color: #ffffff;
+    font-family: "Quiza Pro";
+    font-size: 14px;
+    font-style: italic;
+    line-height: 25px;
+    text-align: center;
+}
+
+.product-price .product-price-hint {
+    position: relative;
+    top: 5px;
+    margin: 0;
+    color: #7e7e7e;
+    font-family: "Quiza Pro";
+    font-size: 13px;
+    font-style: italic;
+    line-height: 15px;
+}
+
+.product-price.lg ins {
+    margin: 30px 0 10px;
+    font-size: 34px;
+    line-height: 26px;
+    letter-spacing: 6.8px;
+}
+
+.product-price.lg ins:before {
+    right: 0;
+    height: 23px;
+    background-color: #fff;
+}
+
+.product-price.lg del {
+    font-size: 17px;
+    line-height: 16px;
+}
+
+
+.product-order {
+    /*min-width: 124px;*/
+    padding-left: 9px;
+    padding-right: 9px;
+    text-align: left;
+}
+.product-order.btn-lg {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.product-order i {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    background: #fff;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #40444e;
+    text-align: center;
+    line-height: 26px;
+}
+.product-order.btn-lg i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
 }
 
 
@@ -487,6 +617,7 @@
 
 
 .product-helptext {
+    display: inline-block;
     margin: 8px 0;
     padding: 0 10px 0 6px;
     background-color: #e8e8e9;

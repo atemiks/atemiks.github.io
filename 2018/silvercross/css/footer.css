@@ -23,19 +23,16 @@
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	/*-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
-	flex-wrap: wrap;*/
     justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    height: 80px;
 	margin: 0;
-	padding: 20px 0 15px;
+	padding: 0;
 	list-style: none;
 }
 
 .footer-statusbar-list li {
-	display: inline-block;
 	flex: 0 1 auto;
 	padding: 10px 5px;
 }
@@ -79,20 +76,30 @@
 
 
 .footer-contact {
+	margin-left: 20px;
 	white-space: nowrap;
+	text-align: center;
 }
 .footer-contact .footer-contact-phone,
 .footer-contact .footer-contact-order {
 	display: inline-block;
 }
 .footer-contact .footer-contact-phone {
-	margin: 0 14px 0 0;
+	margin: 0 25px 0 0;
 	font-family: "Proxima Nova";
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 25px;
 	letter-spacing: 3.6px;
 }
+
+.footer-contact .footer-contact-phone i {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    font-size: 26px;
+}
+
 .footer-contact .footer-contact-order .btn {
 	padding: 6px 22px;
 	font-family: "Proxima Nova";
@@ -107,8 +114,10 @@
 	font-size: 14px;
 	font-style: italic;
 	line-height: 20px;
+	text-align: right;
 }
 .footer-developer img {
+	margin: 0 25px 0 0;
 	vertical-align: middle;
 }
 
