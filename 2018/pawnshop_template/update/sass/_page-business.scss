@@ -263,6 +263,11 @@
 	flex-wrap: wrap;
 	.businness-product-item {
 		flex: 1;
+		@media screen and (max-width: 767px) {
+			flex: 1 1 auto;
+			margin-bottom: 80px;
+		}
+
 		.btn {
 			position: relative;
 			z-index: 9;
@@ -460,6 +465,7 @@
 		text-align: center;
 		@media screen and (max-width: 767px) {
 			margin-bottom: 40px;
+			flex: 1 1 auto;
 		}
 
 		.btn-link {
@@ -475,6 +481,7 @@
 	@extend.gradient-pink;
 	position: relative;
 	display: flex;
+	width: 100%;
 	min-height: 300px;
 	margin: 0 auto 30px;
 	padding: 3px;

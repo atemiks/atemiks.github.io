@@ -3467,6 +3467,13 @@ button {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
+    @media screen and (max-width: 767px) {
+      .businness-products-gird .businness-product-item {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+        margin-bottom: 80px; } }
     .businness-products-gird .businness-product-item .btn {
       position: relative;
       z-index: 9;
@@ -3637,7 +3644,11 @@ button {
     text-align: center; }
     @media screen and (max-width: 767px) {
       .business-steps-grid .business-step-item {
-        margin-bottom: 40px; } }
+        margin-bottom: 40px;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto; } }
     .business-steps-grid .business-step-item .btn-link {
       display: inline-block;
       margin-top: 20px;
@@ -3649,6 +3660,7 @@ button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   min-height: 300px;
   margin: 0 auto 30px;
   padding: 3px;
