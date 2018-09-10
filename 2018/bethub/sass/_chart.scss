@@ -1,0 +1,205 @@
+@mixin circle($size) {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: calc(50% - #{$size/2});
+    top: calc(50% - #{$size/2});
+    width: $size;
+    height: $size;
+}
+
+$size: 76px;
+$size-sm: 48px;
+
+.user-pie-chart {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    background-color: #2a3039;
+    position: relative;
+    .ppc-progress {
+        @include circle($size);
+        clip: rect(0, $size, $size, #{$size/2});
+        .ppc-progress-fill {
+            @include circle($size);
+            clip: rect(0, #{$size/2}, $size, 0);
+            background: #475462;
+            transform: rotate(60deg);
+        }
+    }
+    
+    &.gt-50 {
+        background-color: #475462;
+        .ppc-progress {
+            clip: rect(0, #{$size/2}, $size, 0);
+            .ppc-progress-fill {
+                clip: rect(0, $size, $size, #{$size/2});
+                background: #1e2227;
+            }
+        }
+    }
+}
+
+
+.ppc-content {
+    position: relative;
+    padding: 8px;
+    .ppc-thumbnail {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .ppc-level {
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        margin: 0;
+        min-width: 35px;
+        padding: 2px 5px;
+        border: 4px solid #1d2127;
+        border-radius: 15px;
+        background-color: #475462;
+        transform: translate(-50%, 0%);
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1.29px;
+        line-height: 1;
+        text-align: center;
+    }
+}
+
+.user-pie-chart.sm {
+    width: $size-sm;
+    height: $size-sm;
+    .ppc-progress {
+        @include circle($size-sm);
+        clip: rect(0, $size-sm, $size-sm, #{$size-sm/2});
+        .ppc-progress-fill {
+            @include circle($size-sm);
+            clip: rect(0, #{$size-sm/2}, $size-sm, 0);
+        }
+    }
+
+    &.gt-50 {
+        background-color: #475462;
+        .ppc-progress {
+            clip: rect(0, #{$size-sm/2}, $size-sm, 0);
+            .ppc-progress-fill {
+                clip: rect(0, $size-sm, $size-sm, #{$size-sm/2});
+            }
+        }
+    }
+
+
+    .ppc-content {
+        padding: 5px;
+        .ppc-thumbnail {
+            width: 39px;
+            height: 39px;
+        }
+        .ppc-level {
+            min-width: 35px;
+            border: 2px solid #242b33;
+            padding: 3px 5px;
+            border-radius: 10px;
+            font-size: 8px;
+            font-weight: 700;
+            letter-spacing: 1.29px;
+        }
+    }
+}
+
+.user-pie-chart.admin {
+    .ppc-progress {
+        .ppc-progress-fill  {
+            background: $danger;
+        }
+    }
+
+    &.gt-50 {
+        background-color: $danger;
+        .ppc-progress {
+            .ppc-progress-fill {
+                background: #1e2227;
+            }
+        }
+    }
+
+    .ppc-level {
+        background-color: $danger;
+    }
+}
+
+
+.user-pie-chart.moderator,
+.user-pie-chart.rare {
+        .ppc-progress {
+            .ppc-progress-fill  {
+                background: $primary;
+            }
+        }
+
+        &.gt-50 {
+            background-color: $primary;
+            .ppc-progress {
+                .ppc-progress-fill {
+                    background: #1e2227;
+                }
+            }
+        }
+
+        .ppc-level {
+            background-color: $primary;
+        }
+}
+
+.user-pie-chart.success {
+    .ppc-progress {
+        .ppc-progress-fill  {
+            background: #1be254;
+        }
+    }
+
+    &.gt-50 {
+        background-color: #1be254;
+        .ppc-progress {
+            .ppc-progress-fill {
+                background: #1e2227;
+            }
+        }
+    }
+
+    .ppc-level {
+        background-color: #1be254;
+    }
+}
+
+
+.user-pie-chart.legendary {
+    .ppc-progress {
+        .ppc-progress-fill  {
+            background: #f2c40b;
+        }
+    }
+
+    &.gt-50 {
+        background-color: #f2c40b;
+        .ppc-progress {
+            .ppc-progress-fill {
+                background: #1e2227;
+            }
+        }
+    }
+
+    .ppc-level {
+        background-color: #f2c40b;
+    }
+}
+
+
+.pcc-percents-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}

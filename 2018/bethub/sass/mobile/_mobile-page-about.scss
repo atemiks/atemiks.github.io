@@ -1,0 +1,131 @@
+.section-hero.section-hero-about {
+	.hero-logo {
+		@include media-breakpoint-down(sm) {
+			margin: 3.8rem -1.5rem 4rem;
+		}
+	}
+	.hero-description {
+		@include media-breakpoint-down(sm) {
+			margin: 2rem 0 6rem;
+		}
+	}
+	.hero-partner {
+		@include media-breakpoint-down(sm) {
+			margin-top: 5rem;
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+.section-priority {
+	@include media-breakpoint-down(sm) {
+		padding-top: 3.4rem;
+		padding-bottom: 3.4rem;
+	}
+}
+.priority-grid {
+	@include media-breakpoint-down(sm) {
+		margin-top: 2.5rem;
+		margin-bottom: 5.2rem;
+	}
+}
+
+.section-priority + .section-expertise  {
+	@include media-breakpoint-down(sm) {
+		margin-top: 0;
+		padding-top: 0.5em;
+		padding-bottom: 6.5rem;
+	}
+}
+.section-expertise {
+	.section-header {
+		.section-title {
+			@include media-breakpoint-down(sm) {
+			}
+		}
+	}
+}
+.slider-expertise-wrapper {
+	.col {
+		@include media-breakpoint-down(sm) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+.slider-expertise {
+	.slide-item {
+		@include media-breakpoint-down(sm) {
+			width: calc(100vw - 20px);
+			max-width: 405px;
+		}
+	}
+}
+.expertise-card {
+	@include media-breakpoint-down(sm) {
+		min-height: 410px;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		padding-bottom: 1rem;
+	}
+}
+
+
+
+.section-partners {
+	@include media-breakpoint-down(sm) {
+		padding-top: 5.8rem;
+		padding-bottom: 5rem;
+	}
+	
+}
+.partners-grid {
+	@include media-breakpoint-down(sm) {
+		margin-top: -5px;
+		margin-bottom: 2.5rem;
+	}
+	.partner-item  {
+		@include media-breakpoint-down(sm) {
+			padding-top: 3.8rem;
+			padding-bottom: 3.8rem;
+		}
+		@include media-breakpoint-only(xs) {
+			display: none;
+		}
+		&:nth-child(4n+1) {
+			display: block;
+		}
+	}
+}
+.company-stats {
+	@include media-breakpoint-down(sm) {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: -1rem;
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+	}
+
+	.stat-item {
+		@include media-breakpoint-down(sm) {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+	}
+}
+
+
+
+.section-together {
+	@include media-breakpoint-down(sm) {
+		padding-top: 5.5rem;
+	}
+	.section-header {
+		.section-title {
+			@include media-breakpoint-down(sm) {
+				font-size: 2.5rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+// header
+.header-toggler {
+	.navbar-toggler-text {
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+	}
+}
+.header-navbar-collpase {
+	.header-navbar-collpase-inner {
+		@include media-breakpoint-down(sm) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+.header-nav {
+	@include media-breakpoint-down(sm) {
+		margin: 1.5rem 0 3rem;
+	}
+}
+
+.header-social.social-list {
+	.social-item {
+		@media screen and (max-width: 375px) {
+			padding: 0 0.55rem;
+		}
+	}
+}
+
+
+
+.modal-share {
+	.share-title {
+		@include media-breakpoint-down(sm) {
+			margin: 0 0 1.6rem;
+		}
+	}
+}
+.share-list.social-list {
+	@include media-breakpoint-down(sm) {
+		max-width: 345px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@media screen and (max-width: 475px) {
+		max-width: none;
+		margin-left: -23px;
+		margin-right: -23px;
+	}
+}
+.form-share-email {
+	@include media-breakpoint-down(sm)  {
+		margin: 0;
+	}
+}

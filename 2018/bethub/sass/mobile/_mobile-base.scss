@@ -1,0 +1,81 @@
+section {
+	@include media-breakpoint-down(sm) {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+	&:last-child {
+		@include media-breakpoint-down(sm) {
+			padding-bottom: 3px;
+		}
+	}
+}
+
+h1,
+.h1 {
+	@include media-breakpoint-down(md) {
+		font-size: 2.5rem;
+		line-height: 3.438rem;
+	}
+}
+
+h2,
+.h2 {
+	@include media-breakpoint-down(md) {
+		font-size: 1.875rem;
+		line-height: 2.813rem;
+	}
+}
+
+h3,
+.h3 {
+	@include media-breakpoint-down(md) {
+		font-size: 1.875rem;
+	}
+}
+
+
+ul {
+	&.disc-list {
+		li {
+			@include media-breakpoint-down(sm) {
+				margin: 1rem 0;
+			}
+		}
+	}
+}
+
+
+.text-lead {
+	@include media-breakpoint-down(md) {
+		font-size: 1.063rem;
+		line-height: 1.875rem;
+	}
+}
+
+
+form {
+	button {
+		@include media-breakpoint-down(sm) {
+			margin: 1.1rem 0;
+		}
+	}
+}
+.form-group {
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 2.3rem;
+	}
+}
+
+
+.figure-wrapper {
+	@include media-breakpoint-down(sm) {
+		min-height: 140px;
+	}
+	&.figure-promo {
+		@include media-breakpoint-down(sm) {
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+	}
+}
+
