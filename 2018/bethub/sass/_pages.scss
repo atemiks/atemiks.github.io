@@ -14,11 +14,12 @@
 
 .container {
 	position: relative;
-	margin-left: 0;
-	margin-right: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	transition: left 300ms ease, transform 300ms ease;
+	// margin-left: 0;
+	// margin-right: 0;
+	// left: 50%;
+	// transform: translateX(-50%);
+	// transition: left 300ms ease, transform 300ms ease;
+	transition: all 300ms ease;
 }
 
 
@@ -35,33 +36,58 @@
 }
 
 
+.main-content {
+	margin-left: 0;
+	margin-right: 0;
+	transition:  all 300ms ease;
+}
+
+.navigation-open,
+.chat-open {
+	@media screen and (min-width: 1440px) {
+		.container {
+			max-width: 1140px !important;
+		}
+	}
+	@media screen and (min-width: 1680px) {
+		.container {
+			max-width: 1355px !important;
+		}
+	}
+}
+
 .navigation-open {
-	.main-content > .container,
-	.main-content > .container-fluid {
-	    left: 100%;
-	    transform: translateX(-100%);
+	// .main-content > .container,
+	// .main-content > .container-fluid {
+	//     left: 100%;
+	//     transform: translateX(-100%);
+	// }
+
+	.main-content {
+		margin-left: 280px;
 	}
 }
 
 .chat-open {
 	.chat-toggler {
-		right: 335px;
+		right: 332px;
 		&:after {
-			transform: rotate(180deg) translate(50%, -50%);
+			transform: rotate(180deg) translate(50%, 50%);
 		}
 	}
-	.main-content > .container,
-	.main-content > .container-fluid {
-	    // transform: translateX(-380px);
-	    left: 0;
-	    transform: translateX(0%);
+	// .main-content > .container,
+	// .main-content > .container-fluid {
+	//     // transform: translateX(-380px);
+	//     left: 0;
+	//     transform: translateX(0%);
+	// }
+
+	.main-content {
+		margin-right: 200px;
 	}
 }
 
 
-.main-content {
-	transition:  transform 300ms ease;
-}
 
 
 .badge {

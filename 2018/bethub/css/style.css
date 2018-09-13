@@ -8882,17 +8882,9 @@ textarea {
 
 .container {
   position: relative;
-  margin-left: 0;
-  margin-right: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: left 300ms ease, -webkit-transform 300ms ease;
-  transition: left 300ms ease, -webkit-transform 300ms ease;
-  -o-transition: left 300ms ease, transform 300ms ease;
-  transition: left 300ms ease, transform 300ms ease;
-  transition: left 300ms ease, transform 300ms ease, -webkit-transform 300ms ease; }
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
 
 @media screen and (min-width: 1440px) {
   .container {
@@ -8902,33 +8894,35 @@ textarea {
   .container {
     max-width: 1455px !important; } }
 
-.navigation-open .main-content > .container,
-.navigation-open .main-content > .container-fluid {
-  left: 100%;
-  -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%); }
+.main-content {
+  margin-left: 0;
+  margin-right: 0;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+
+@media screen and (min-width: 1440px) {
+  .navigation-open .container,
+  .chat-open .container {
+    max-width: 1140px !important; } }
+
+@media screen and (min-width: 1680px) {
+  .navigation-open .container,
+  .chat-open .container {
+    max-width: 1355px !important; } }
+
+.navigation-open .main-content {
+  margin-left: 280px; }
 
 .chat-open .chat-toggler {
-  right: 335px; }
+  right: 332px; }
   .chat-open .chat-toggler:after {
-    -webkit-transform: rotate(180deg) translate(50%, -50%);
-        -ms-transform: rotate(180deg) translate(50%, -50%);
-            transform: rotate(180deg) translate(50%, -50%); }
+    -webkit-transform: rotate(180deg) translate(50%, 50%);
+        -ms-transform: rotate(180deg) translate(50%, 50%);
+            transform: rotate(180deg) translate(50%, 50%); }
 
-.chat-open .main-content > .container,
-.chat-open .main-content > .container-fluid {
-  left: 0;
-  -webkit-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-          transform: translateX(0%); }
-
-.main-content {
-  -webkit-transition: -webkit-transform 300ms ease;
-  transition: -webkit-transform 300ms ease;
-  -o-transition: transform 300ms ease;
-  transition: transform 300ms ease;
-  transition: transform 300ms ease, -webkit-transform 300ms ease; }
+.chat-open .main-content {
+  margin-right: 200px; }
 
 .badge {
   font-family: "SFUI Display";
