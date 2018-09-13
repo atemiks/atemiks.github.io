@@ -10,7 +10,7 @@ $( document ).ready(function() {
 	  	$('.navigation-wrapper').toggleClass('visible');
 	});
 
-	// chat
+
 	$( ".chat-toggler" ).on( "click", function() {
 		$('body').removeClass('navigation-open');
 		$('body').toggleClass('chat-open');
@@ -23,6 +23,15 @@ $( document ).ready(function() {
 	 	axis:"y"
 	});
 	$('.chat-body').mCustomScrollbar("scrollTo", 'bottom');
+
+
+
+	$( ".chat-hint" ).on( "click", ".close", function() {
+		$( ".chat-hint" ).slideUp();
+	});
+
+
+
 
 	// content
 	$( ".hero-banner" ).on( "click", ".close", function() {
@@ -38,7 +47,18 @@ $( document ).ready(function() {
 	$('.game-active-members-slider').slick({
 		infinite: true,
   		slidesToShow: 11,
-  		slidesToScroll: 6
+  		slidesToScroll: 6,
+  		responsive: [
+	    {
+	      breakpoint: 1200,
+	      settings: {
+	        slidesToShow: 8,
+	        slidesToScroll: 6,
+	        infinite: true,
+	        dots: false
+	      }
+	    }
+	  ]
 	});
 
 	$('.bid-products-slider').slick({
