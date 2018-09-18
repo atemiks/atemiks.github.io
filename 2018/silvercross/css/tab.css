@@ -29,7 +29,7 @@
     font-style: italic;
     line-height: 26px;
     text-decoration: none;
-    transition: color 300ms ease, border-color 300ms ease;
+    transition: color 300ms ease;
 }
 
 .nav-link:hover {
@@ -39,6 +39,38 @@
 .nav-link.active {
     color: #40444e;
     border-bottom-color: #40444e;
+}
+
+
+.nav-pills  {
+    justify-content: flex-start;
+}
+
+.nav-pills .nav-item {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.nav-pills .nav-item .nav-link {
+    padding: 6px 15px 4px;
+    border: 1px solid #a9adb1;
+    border-radius: 30px;
+    color: #8b8b8b;
+    font-family: "Quiza Pro";
+    font-size: 18px;
+    font-style: italic;
+    line-height: 26px;
+}
+
+.nav-pills .nav-item .nav-link.active {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-color: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid #40444e;
+    color: #40444e;
 }
 
 

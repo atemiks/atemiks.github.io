@@ -4,31 +4,228 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
-        <link rel="stylesheet" href="vendor/swiper.min.css">
-        <link rel="stylesheet" href="vendor/jquery.fancybox.min.css">
-
-        <link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/tab.css">
-
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/pages.css">
-        <link rel="stylesheet" href="css/catalog.css">
-        <link rel="stylesheet" href="css/product.css">
-        <link rel="stylesheet" href="css/footer.css">
-
-        <link rel="stylesheet" href="css/mobile-base.css">
-        <link rel="stylesheet" href="css/mobile-header.css">
-        <link rel="stylesheet" href="css/mobile-pages.css">
-        <link rel="stylesheet" href="css/mobile-catalog.css">
-        <link rel="stylesheet" href="css/mobile-product.css">
-        <link rel="stylesheet" href="css/mobile-footer.css">
-
+        <link rel="stylesheet" href="css/style.css">
 
         <title>Silver Cross / Продукт</title>
     </head>
-    <body>
+    <body class="page-product" >
+        <!-- Modal -->
+        <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-header-content">
+                            <div class="modal-title">Перезвоните мне</div>
+                            <div class="modal-subtitle">Укажите свои контактные данные и наш специалист свяжется с Вами в ближайшее время</div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon-close-thin" ></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="" class="form-modal">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="formProductLiveName">Ваше имя <sup>*</sup></label>
+                                            <input name="formProductLiveName" type="text" required >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="formProductLivePhone">Телефон <sup>*</sup></label>
+                                            <input name="formProductLivePhone" type="tel" placeholder="+7 (___) ___-__-__" required >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <button class="btn btn-italic btn-lg btn-dark" type="submit" >Перезвоните мне</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProductLive" tabindex="-1" role="dialog" aria-labelledby="modalProductLiveLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-header-aside">
+                            <div class="modal-thumbnail">
+                                <i class="icon-watch" ></i>
+                            </div>
+                        </div>
+                        <div class="modal-header-content">
+                            <div class="modal-title">Посмотреть вживую</div>
+                            <div class="modal-subtitle">Укажите свои контактные данные, наш специалист свяжется с Вами в ближайшее время и передаст информацию где и когда Вы сможете посмотреть данный товар вживую</div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon-close-thin" ></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="" class="form-modal">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="formProductLiveName">Ваше имя <sup>*</sup></label>
+                                            <input name="formProductLiveName" type="text" required >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="formProductLivePhone">Телефон <sup>*</sup></label>
+                                            <input name="formProductLivePhone" type="tel" placeholder="+7 (___) ___-__-__" required >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <button class="btn btn-italic btn-lg btn-dark" type="submit" >Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProductView" tabindex="-1" role="dialog" aria-labelledby="modalProductViewLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-content-left">
+                        <div class="modal-header">
+                            <div class="modal-header-aside">
+                                <div class="modal-thumbnail">
+                                    <i class="icon-play" ></i>
+                                </div>
+                            </div>
+                            <div class="modal-header-content">
+                                <div class="modal-title">Обзорное видео</div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <i class="icon-close-thin" ></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RhtI-nXrgLw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                            <div class="embed-responsive-play">
+                                                <i class="icon-play" ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-content-right">
+                        <div class="product-card modal-product">
+                            <div class="product-header">
+                                <div class="product-thumbnail">
+                                    <img src="images/uploads/page-product/modal/modal-product-item-1.png" alt="Коляска 2-в-1 Silver Cross Sleepover 3" class="product-picture" >
+                                </div>
+                                <p class="product-title">Коляска 2-в-1 Silver Cross Sleepover 3</p>
+                            </div>
+
+                            <div class="product-footer">
+                                <div class="product-price lg">
+                                    <ins>79 000&nbsp;₽</ins>
+                                </div>
+                                <a href="#link" class="product-order btn btn-italic btn-lg btn-dark" ><i class="icon-plus"></i>Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProductOrder" tabindex="-1" role="dialog" aria-labelledby="modalProductOrderLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-header-content">
+                            <div class="modal-title">Ваш товар добавлен в корзину</div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon-close-thin" ></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="shopping-grid">
+                                <div class="shopping-item">
+                                    <div class="left">
+                                        <div class="shopping-thumbnail">
+                                            <img src="images/uploads/page-product/modal/modal-product-item-1.png" alt="Silver Cross Balmoral" class="shopping-picture">
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <div class="shopping-summary">
+                                            <p class="shopping-title">Silver Cross Balmoral</p>
+                                            <ul class="shopping-info">
+                                                <li class="shopping-info-item"><img src="images/colors/color-black.png" alt="color black" class="shopping-info-color" >Цвет основания: черный</li>
+                                                <li class="shopping-info-item">Цвет шасси: белый</li>
+                                            </ul>
+
+                                            <div class="shopping-promotions">
+                                                <div class="shopping-promotions-thumbnail">
+                                                    <img src="images/uploads/page-product/modal/modal-promotion-item-1.png" alt="" class="shopping-promotions-picture">
+                                                </div>
+                                                <div class="shopping-promotions-text">Чехол на коляску <a href="#link">thebrandname</a> в подарок</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="shopping-order">
+                                            <div class="shopping-order-number">
+                                                <input type="text" value="1 шт.">
+                                            </div>
+                                            <div class="shopping-order-price">
+                                                <ins>350 000&nbsp;₽</ins>
+                                                <del>450 000&nbsp;₽</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <a href="#link" class="btn btn-italic btn-lg btn-gray" >Продолжить покупки</a>
+                        <a href="#link" class="btn btn-italic btn-lg btn-secondary" >Оформить заказ</a>
+                        <a href="#link" class="btn btn-italic btn-lg btn-dark" >Купить сейчас</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
         <div class="offcanvas">
             <div class="offcanvas-header">
                 <ul class="offcanvas-header-menu">
@@ -84,7 +281,7 @@
 
                 <ul class="offcanvas-submenu">
                     <li class="offcanvas-submenu-item">
-                        <a class="offcanvas-submenu-link" href="#link">Оплата и доставка        </a>
+                        <a class="offcanvas-submenu-link" href="#link">Оплата и доставка</a>
                     </li>
                     <li class="offcanvas-submenu-item">
                         <a class="offcanvas-submenu-link" href="#link">Контакты</a>
@@ -105,7 +302,7 @@
                     <div class="container-fluid">
                         <div class="header-upper row align-items-center">
                             <div class="header-side-left col">
-                                <button class="header-toggler header-toggler-offcanvas">
+                                <button class="header-toggler header-toggler-offcanvas ssm-toggle-nav">
                                     <i class="header-toggler-icon icon-bars" ></i>
                                     <span class="header-toggler-text">Меню / каталог</span>
                                 </button>
@@ -134,7 +331,7 @@
                                         <a href="tel:+74955893731"><i class="icon-phone" ></i><span>+7 (495) 589-37-31</span></a>
                                    </div>
                                    <div class="header-contact-order">
-                                       <button class="btn btn-light" >Перезвоните мне</button>
+                                       <button class="btn btn-italic btn-light" data-toggle="modal" data-target="#modalCallback" >Перезвоните мне</button>
                                    </div>
                                 </div>
                                 
@@ -152,7 +349,93 @@
                                <div class="col">
                                     <nav class="header-nav" aria-label="header-nav-list" >
                                         <ul class="header-nav-list">
-                                            <li class="header-nav-item active" ><a href="#link">Silver Cross </a></li>
+                                            <li class="header-nav-item has-children active" >
+                                                <a href="#link">Silver Cross </a>
+
+                                                <div class="mega-menu">
+                                                    <div class="side-left">
+                                                        <ul class="mega-menu-list">
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-1.png" alt="Коляски">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Коляски</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-2.png" alt="Постельные принадлежности">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Постельные принадлежности</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-3.png" alt="Автокресло">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Автокресло</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-4.png" alt="Игрушки">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Игрушки</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-5.png" alt="Мебель">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Мебель</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-6.png" alt="Аксессуары">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Аксессуары</p>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="side-right">
+                                                        <div class="product-card mega-product horizontal">
+                                                            <div class="product-aside">
+                                                                <div class="product-thumbnail">
+                                                                    <img src="images/uploads/header/mega-product/mega-product-item-1.png" alt="Silver Cross Kensington" class="product-picture">
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-content">
+                                                                <div class="product-header">
+                                                                    <p class="product-title">Silver Cross Kensington</p>
+                                                                </div>
+                                                                <div class="product-body">
+                                                                    <p class="product-description">Неповторимый стиль английской королевской семьи</p>
+                                                                </div>
+                                                                <div class="product-footer">
+                                                                    <div class="product-price">
+                                                                        <ins>350 000&nbsp;₽</ins>
+                                                                        <del>450 000&nbsp;₽</del>
+                                                                    </div>
+                                                                    <a href="#link" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
                                             <li class="header-nav-item" ><a href="#link">Детские конверты и спальные мешки Aro и Uzturre</a></li>
                                             <li class="header-nav-item" ><a href="#link">Стульчики Peg-perego </a></li>
                                             <li class="header-nav-item" ><a href="#link">OK Baby </a></li>
@@ -161,6 +444,27 @@
                                         </ul>
                                     </nav>
                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="header-search-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="header-search col">
+                                    <div class="header-search-title">
+                                        <i class="icon-search" ></i>
+                                        Искать на Silver Cross  |
+                                    </div>
+                                    <form action="" class="form-header-search">
+                                        <input type="search">
+                                    </form>
+
+                                    <button class="header-search-close" >
+                                        <i class="icon-close-thin" ></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -185,173 +489,195 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="product-content col col-lg-10">
+                            <ul class="nav nav-pills nav-tabs product-type" role="tablist">
+                                <li class="nav-item product-type-item">
+                                    <a class="nav-link active" href="#product-classic-tab" aria-controls="product-classic-tab" role="tab" data-toggle="tab" >Классическая</a>
+                                </li>
+                                <li class="nav-item product-type-item">
+                                    <a class="nav-link" href="#product-vintage-tab" aria-controls="product-vintage-tab" role="tab" data-toggle="tab" >Aston Martin</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade active" role="tabpanel" id="product-classic-tab" >
                                     <div class="row">
-                                        <div class="col-info col">
-                                            <div class="product-header">
-                                                <ul class="product-type">
-                                                    <li class="product-type-item active">Классическая</li>
-                                                    <li class="product-type-item"><a href="#link">Vintage</a></li>
-                                                </ul>
-                                                <h1 class="product-title">Коляска для новорожденных Silver Cross Balmoral</h1>
-                                            </div>
-                                            <div class="product-body">
-                                                <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                                <ul class="product-colors lg">
-                                                    <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                                    <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                                    <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                                    <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                                    <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                                    <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-footer">
-                                                <div class="product-price lg">
-                                                    <ins>350 000 ₽</ins>
-                                                    <span class="product-price-label" >-25%</span><del>450 000 ₽</del>
+                                        <div class="product-content col col-lg-10">
+                                            <div class="row">
+                                                <div class="col-info col">
+                                                    <div class="product-header">
+                                                        <!-- <ul class="product-type">
+                                                            <li class="product-type-item active">Классическая</li>
+                                                            <li class="product-type-item"><a href="#link">Vintage</a></li>
+                                                        </ul> -->
+                                                        <h1 class="product-title">Коляска для новорожденных Silver&nbsp;Cross&nbsp;Balmoral</h1>
+                                                    </div>
+                                                    <div class="product-body">
+                                                        <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                        <ul class="product-colors lg">
+                                                            <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                            <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                            <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                            <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                            <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                            <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-footer">
+                                                        <div class="product-price lg">
+                                                            <ins>350 000&nbsp;₽</ins>
+                                                            <span class="product-price-label" >-25%</span><del>450 000&nbsp;₽</del>
+                                                        </div>
+                                                        <a href="product.html" class="product-order btn btn-italic btn-dark btn-lg" data-toggle="modal" data-target="#modalProductOrder" ><i class="icon-plus" ></i>Купить</a>
+                                                    </div>
                                                 </div>
-                                                <a href="product.html" class="product-order btn btn-dark btn-lg"><i class="icon-plus" ></i>Купить</a>
-                                            </div>
-                                        </div>
 
-                                        <div class="col-picture col">
-                                            <div class="product-preview-wrapper">
-                                                <div class="row">
-                                                    <div class="slider-product-wrapper col">
-                                                        <div class="slider-product swiper-container">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-card">
-                                                                        <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                            <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                        </a>
+                                                <div class="col-picture col">
+                                                    <div class="product-preview-wrapper">
+                                                        <div class="row">
+                                                            <div class="slider-product-wrapper col">
+                                                                <div class="slider-product swiper-container">
+                                                                    <div class="swiper-wrapper">
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-card">
+                                                                                <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                    <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-card">
+                                                                                <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                    <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-card">
+                                                                                <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                    <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-card">
+                                                                                <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                    <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-card">
+                                                                                <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                    <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-card">
+                                                                                <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                    <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        
                                                                     </div>
                                                                 </div>
-
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-card">
-                                                                        <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                            <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-card">
-                                                                        <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                            <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-card">
-                                                                        <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                            <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-card">
-                                                                        <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                            <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-card">
-                                                                        <a data-fancybox="gallery" href="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                            <img src="images/uploads/page-product/section-product/product-gallery/product-gallery-item-1.png">
-                                                                        </a>
-                                                                    </div>
+                                                            </div>
+                                                           
+                                                            <div class="slider-product-nav-wrapper col">
+                                                                <button class="swiper-button-prev swiper-product-nav-prev"></button>
+                                                                <button class="swiper-button-next swiper-product-nav-next"></button>
+                                                                <div class="swiper-custom-pagination-fraction ">
+                                                                    <span class="swiper-custom-pagination-current" >1 /</span>
+                                                                    <span class="swiper-custom-pagination-total" >6</span>
+                                                                    фото
                                                                 </div>
                                                                 
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                   
-                                                    <div class="slider-product-nav-wrapper col">
-                                                        <button class="swiper-button-prev swiper-product-nav-prev"></button>
-                                                        <button class="swiper-button-next swiper-product-nav-next"></button>
-                                                        <div class="swiper-custom-pagination-fraction ">
-                                                            <span class="swiper-custom-pagination-current" >1 /</span>
-                                                            <span class="swiper-custom-pagination-total" >6</span>
-                                                            фото
-                                                        </div>
-                                                        
-                                                        <div class="slider-product-nav swiper-container">
-                                                            <div class="swiper-wrapper">
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-1.png')" ></div>
-                                                                </div>
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-2.png')" ></div>
-                                                                </div>
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-3.png')" ></div>
-                                                                </div>
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-4.png')" ></div>
-                                                                </div>
+                                                                <div class="slider-product-nav swiper-container">
+                                                                    <div class="swiper-wrapper">
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-1.png')" ></div>
+                                                                        </div>
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-2.png')" ></div>
+                                                                        </div>
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-3.png')" ></div>
+                                                                        </div>
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-4.png')" ></div>
+                                                                        </div>
 
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-1.png')" ></div>
-                                                                </div>
-                                                                <div class="slide-item swiper-slide">
-                                                                    <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-2.png')" ></div>
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-1.png')" ></div>
+                                                                        </div>
+                                                                        <div class="slide-item swiper-slide">
+                                                                            <div class="product-nav-card" style="background-image: url('images/uploads/page-product/section-product/product-gallery-nav/product-gallery-nav-item-2.png')" ></div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="product-aside col col-lg-2">
+                                            <ul class="product-feature">
+                                                <li class="product-feature-item">
+                                                    не складывается
+                                                </li>
+                                                <li class="product-feature-item">
+                                                    для детей от рождения и до трех лет, для крупных детей
+                                                </li>
+                                                <li class="product-feature-item">
+                                                    для жителей загородных домов и элитных районов города
+                                                </li>
+                                                <li class="product-feature-item">
+                                                    Подходит для сна
+                                                </li>
+                                            </ul>
+
+                                            <ul class="product-actions">
+                                                <li class="product-action-item" >
+                                                    <a href="#link" class="product-action-card" data-toggle="modal" data-target="#modalProductLive" >
+                                                        <div class="product-action-thumbnail"><i class="icon-watch" ></i></div>
+                                                        <p class="product-action-title">Посмотреть вживую</p>
+                                                    </a>
+                                                </li>
+                                                <li class="product-action-item" >
+                                                    <a href="#link" class="product-action-card" data-toggle="modal" data-target="#modalProductView">
+                                                        <div class="product-action-thumbnail dark"><i class="icon-play" ></i></div>
+                                                        <p class="product-action-title">Обзорное видео</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-aside col col-lg-2">
-                                    <ul class="product-feature">
-                                        <li class="product-feature-item">
-                                            не складывается
-                                        </li>
-                                        <li class="product-feature-item">
-                                            для детей от рождения и до трех лет, для крупных детей
-                                        </li>
-                                        <li class="product-feature-item">
-                                            для жителей загородных домов и элитных районов города
-                                        </li>
-                                        <li class="product-feature-item">
-                                            Подходит для сна
-                                        </li>
-                                    </ul>
-
-                                    <ul class="product-actions">
-                                        <li class="product-action-item" >
-                                            <a href="#link" class="product-action-card">
-                                                <div class="product-action-thumbnail"><i class="icon-watch" ></i></div>
-                                                <p class="product-action-title">Посмотреть вживую</p>
-                                            </a>
-                                        </li>
-                                        <li class="product-action-item" >
-                                            <a href="#link" class="product-action-card">
-                                                <div class="product-action-thumbnail dark"><i class="icon-play" ></i></div>
-                                                <p class="product-action-title">Обзорное видео</p>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <div class="tab-pane fade" role="tabpanel" id="product-vintage-tab" >
+                                    <div class="row">
+                                        <div class="col">
+                                            2
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
                         </div>
                     </section>
 
 
                     <section class="section-product-timeline">
                         <div class="container-fluid">
-                            <div class="timeline-grid row justify-content-between">
-                                <div class="timeline-item col-6 col-md-3 col-lg-auto">
+                            <div class="timeline-grid row">
+                                <div class="timeline-item col-6 col-md-3 col-lg-3">
                                     <div class="timeline-card">
                                         <div class="timeline-thumbnail">
                                             <i class="icon-factory" ></i>
@@ -360,7 +686,7 @@
                                     </div>
                                 </div>
 
-                                <div class="timeline-item col-6 col-md-3 col-lg-auto">
+                                <div class="timeline-item col-6 col-md-3 col-lg-3">
                                     <div class="timeline-card">
                                         <div class="timeline-thumbnail">
                                             <i class="icon-production" ></i>
@@ -369,7 +695,7 @@
                                     </div>
                                 </div>
 
-                                <div class="timeline-item col-6 col-md-3 col-lg-auto">
+                                <div class="timeline-item col-6 col-md-3 col-lg-3">
                                     <div class="timeline-card">
                                         <div class="timeline-thumbnail">
                                             <i class="icon-doc" ></i>
@@ -378,7 +704,7 @@
                                     </div>
                                 </div>
 
-                                <div class="timeline-item col-6 col-md-3 col-lg-auto">
+                                <div class="timeline-item col-6 col-md-3 col-lg-3">
                                     <div class="timeline-card">
                                         <div class="timeline-thumbnail">
                                             <i class="icon-lorry" ></i>
@@ -391,50 +717,64 @@
                     </section>
 
                     <section class="section-product-advantages">
+
+                        <div class="product-advantages-card">
+                            <div class="container-fluid">
+                                <div class="row align-items-center ">
+                                    <div class="product-advantages-content col col-lg-4 offset-lg-1">
+                                        <p class="product-advantages-subtitle">Идеальна для ребенка</p>
+                                        <p class="product-advantages-title">Невероятно вместительная люлька</p>
+                                        <div class="product-advantages-description">
+                                            <p>Вам больше не нужно беспокоиться, если у вас крупный малыш, или что из-за большого количества теплой одежды ребенку будет неудобно лежать в коляске зимой. Мы все предусмотрели и предлагаем вам одну из самых вместительных люлек в своем классе!</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-advantages-aside col col-lg-6 offset-lg-1">
+                                        <div class="product-advantages-picutre">
+                                            <img src="images/uploads/page-product/section-advantages/product-advantages-item-1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="product-advantages-card">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="product-advantages-aside col col-lg-6">
+                                        <div class="product-advantages-picutre">
+                                            <img src="images/uploads/page-product/section-advantages/product-advantages-item-2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-advantages-content col col-lg-4 offset-lg-1">
+                                        <p class="product-advantages-title">Спит в коляске, лучше чем в кроватке</p>
+                                        <div class="product-advantages-description">
+                                            <p>Вы можете не перекладывать малыша из коляски в кроватку после вечерней прогулки: мягчайший хлопковый матрасик позволяет малышу чувствовать себя как в кроватке, а уникальная амортизация на основе запатентованной системы C-Spring позволит без труда укачать малыша, если он проснется.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-advantages-card ">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="product-advantages-content col col-lg-4 offset-lg-1">
+                                        <p class="product-advantages-title">Никаких болезней</p>
+                                        <div class="product-advantages-description">
+                                            <p>Сон вашего ребенка ничто не сможет потревожить. Цельная металлическая люлька исключает задувание внутрь коляски; в комплекте есть дождевик, очень удобный зонтик от солнечных лучей, большой капор, который может полностью закрывать коляску, а также накидка на ножки, которая надежно фиксируется.</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-advantages-aside col col-lg-6 offset-lg-1">
+                                        <div class="product-advantages-picutre">
+                                            <img src="images/uploads/page-product/section-advantages/product-advantages-item-3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="container-fluid">
-                            <div class="product-advantages-card row align-items-center">
-                                <div class="product-advantages-content col col-lg-4 offset-lg-1">
-                                    <p class="product-advantages-subtitle">Идеальна для ребенка</p>
-                                    <p class="product-advantages-title">Невероятно вместительная люлька</p>
-                                    <div class="product-advantages-description">
-                                        <p>Вам больше не нужно беспокоиться, если у вас крупный малыш, или что из-за большого количества теплой одежды ребенку будет неудобно лежать в коляске зимой. Мы все предусмотрели и предлагаем вам одну из самых вместительных люлек в своем классе!</p>
-                                    </div>
-                                </div>
-                                <div class="product-advantages-aside col col-lg-6 offset-lg-1">
-                                    <div class="product-advantages-picutre">
-                                        <img src="images/page-product/section-advantages/product-advantages-item-1.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product-advantages-card row align-items-center">
-                                <div class="product-advantages-aside col col-lg-6">
-                                    <div class="product-advantages-picutre">
-                                        <img src="images/page-product/section-advantages/product-advantages-item-2.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="product-advantages-content col col-lg-4 offset-lg-1">
-                                    <p class="product-advantages-title">Спит в коляске, лучше чем в кроватке</p>
-                                    <div class="product-advantages-description">
-                                        <p>Вы можете не перекладывать малыша из коляски в кроватку после вечерней прогулки: мягчайший хлопковый матрасик позволяет малышу чувствовать себя как в кроватке, а уникальная амортизация на основе запатентованной системы C-Spring позволит без труда укачать малыша, если он проснется.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product-advantages-card row align-items-center">
-                                <div class="product-advantages-content col col-lg-4 offset-lg-1">
-                                    <p class="product-advantages-title">Никаких болезней</p>
-                                    <div class="product-advantages-description">
-                                        <p>Сон вашего ребенка ничто не сможет потревожить. Цельная металлическая люлька исключает задувание внутрь коляски; в комплекте есть дождевик, очень удобный зонтик от солнечных лучей, большой капор, который может полностью закрывать коляску, а также накидка на ножки, которая надежно фиксируется.</p>
-                                    </div>
-                                </div>
-                                <div class="product-advantages-aside col col-lg-6 offset-lg-1">
-                                    <div class="product-advantages-picutre">
-                                        <img src="images/page-product/section-advantages/product-advantages-item-3.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="row">
                                 <div class="col text-center">
                                     <a href="#link" class="advantages-btn btn btn-light" >Подробнее о характеристиках</a>
@@ -459,7 +799,7 @@
                                     <div class="customers-gallery-grid">
                                         <div class="customer-gallery-col">
                                             <div class="customer-gallery-item"  >
-                                                <div class="customer-gallery-card" style="background-image: url('images/uploads/page-product/section-customers/customer-item-1.png')" ></div>
+                                                <a href="images/uploads/page-product/section-customers/customer-item-1.png" class="customer-gallery-card" data-fancybox="gallery-instagram" data-caption='Автор: Имя Фамилия, Профиль: <a href="http://instagram.com"  target="_blank">instagram profile</a>' style="background-image: url('images/uploads/page-product/section-customers/customer-item-1.png')" ></a>
                                             </div>
                                             <div class="customer-gallery-item color gray-800 "  >
                                                 <div class="customer-gallery-card" ></div>
@@ -468,43 +808,43 @@
 
                                         <div class="customer-gallery-col large">
                                             <div class="customer-gallery-item half"  >
-                                                <div class="customer-gallery-card" style="background-image: url('images/uploads/page-product/section-customers/customer-item-2.png')" ></div>
+                                                <a href="images/uploads/page-product/section-customers/customer-item-2.png" class="customer-gallery-card" data-fancybox="gallery-instagram" data-caption='Автор: Имя Фамилия, Профиль: <a href="http://instagram.com"  target="_blank">instagram profile</a>' style="background-image: url('images/uploads/page-product/section-customers/customer-item-2.png')" ></a>
                                             </div>
                                             <div class="customer-gallery-item"  >
-                                                <div class="customer-gallery-card" style="background-image: url('images/uploads/page-product/section-customers/customer-item-3.png')" ></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="customer-gallery-col">
-                                            <div class="customer-gallery-item"  >
-                                                <div class="customer-gallery-card" style="background-image: url('images/uploads/page-product/section-customers/customer-item-4.png')" ></div>
-                                            </div>
-                                            <div class="customer-gallery-item"  >
-                                                <div class="customer-gallery-card" style="background-image: url('images/uploads/page-product/section-customers/customer-item-5.png')" ></div>
-                                            </div>
-                                            <div class="customer-gallery-item"  >
-                                                <div class="customer-gallery-card" style="background-image: url('images/uploads/page-product/section-customers/customer-item-6.png')" ></div>
+                                                <a href="images/uploads/page-product/section-customers/customer-item-3.png" class="customer-gallery-card" data-fancybox="gallery-instagram" data-caption='Автор: Имя Фамилия, Профиль: <a href="http://instagram.com"  target="_blank">instagram profile</a>' style="background-image: url('images/uploads/page-product/section-customers/customer-item-3.png')" ></a>
                                             </div>
                                         </div>
 
                                         <div class="customer-gallery-col">
                                             <div class="customer-gallery-item"  >
-                                                <div class="customer-gallery-card" style="background-image: url('images/uploads/page-product/section-customers/customer-item-7.png')" ></div>
+                                                <a href="images/uploads/page-product/section-customers/customer-item-4.png" class="customer-gallery-card" data-fancybox="gallery-instagram" data-caption='Автор: Имя Фамилия, Профиль: <a href="http://instagram.com"  target="_blank">instagram profile</a>' style="background-image: url('images/uploads/page-product/section-customers/customer-item-4.png')" ></a>
                                             </div>
                                             <div class="customer-gallery-item"  >
-                                                <div class="customer-gallery-card" style="background-image: url('images/uploads/page-product/section-customers/customer-item-8.png')" ></div>
+                                                <a href="images/uploads/page-product/section-customers/customer-item-5.png" class="customer-gallery-card" data-fancybox="gallery-instagram" data-caption='Автор: Имя Фамилия, Профиль: <a href="http://instagram.com"  target="_blank">instagram profile</a>' style="background-image: url('images/uploads/page-product/section-customers/customer-item-5.png')" ></a>
+                                            </div>
+                                            <div class="customer-gallery-item"  >
+                                                <a href="images/uploads/page-product/section-customers/customer-item-6.png" class="customer-gallery-card" data-fancybox="gallery-instagram" data-caption='Автор: Имя Фамилия, Профиль: <a href="http://instagram.com"  target="_blank">instagram profile</a>' style="background-image: url('images/uploads/page-product/section-customers/customer-item-6.png')" ></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="customer-gallery-col">
+                                            <div class="customer-gallery-item"  >
+                                                <a href="images/uploads/page-product/section-customers/customer-item-7.png" class="customer-gallery-card" data-fancybox="gallery-instagram" data-caption='Автор: Имя Фамилия, Профиль: <a href="http://instagram.com"  target="_blank">instagram profile</a>' style="background-image: url('images/uploads/page-product/section-customers/customer-item-7.png')" ></a>
+                                            </div>
+                                            <div class="customer-gallery-item"  >
+                                                <a href="images/uploads/page-product/section-customers/customer-item-8.png" class="customer-gallery-card" data-fancybox="gallery-instagram" data-caption='Автор: Имя Фамилия, Профиль: <a href="http://instagram.com"  target="_blank">instagram profile</a>' style="background-image: url('images/uploads/page-product/section-customers/customer-item-8.png')" ></a>
                                             </div>
                                         </div>
 
                                         <div class="customer-gallery-col large">
                                             <div class="customer-gallery-item half"  >
-                                                <div class="customer-gallery-card" style="background-image: url('images/uploads/page-product/section-customers/customer-item-9.png')" ></div>
+                                                <a href="images/uploads/page-product/section-customers/customer-item-9.png" class="customer-gallery-card" data-fancybox="gallery-instagram" data-caption='Автор: Имя Фамилия, Профиль: <a href="http://instagram.com"  target="_blank">instagram profile</a>' style="background-image: url('images/uploads/page-product/section-customers/customer-item-9.png')" ></a>
                                             </div>
                                             <div class="customer-gallery-item half color gray-300 "  >
                                                 <div class="customer-gallery-card" ></div>
                                             </div>
                                             <div class="customer-gallery-item"  >
-                                                <div class="customer-gallery-card" style="background-image: url('images/uploads/page-product/section-customers/customer-item-10.png')" ></div>
+                                                <a href="images/uploads/page-product/section-customers/customer-item-10.png" class="customer-gallery-card" data-fancybox="gallery-instagram" data-caption='Автор: Имя Фамилия, Профиль: <a href="http://instagram.com"  target="_blank">instagram profile</a>' style="background-image: url('images/uploads/page-product/section-customers/customer-item-10.png')" ></a>
                                             </div>
                                         </div>
 
@@ -513,7 +853,7 @@
                                                 <div class="customer-gallery-card" ></div>
                                             </div>
                                             <div class="customer-gallery-item"  >
-                                                <div class="customer-gallery-card" style="background-image: url('images/uploads/page-product/section-customers/customer-item-11.png')" ></div>
+                                                <a href="images/uploads/page-product/section-customers/customer-item-11.png" class="customer-gallery-card" data-fancybox="gallery-instagram" data-caption='Автор: Имя Фамилия, Профиль: <a href="http://instagram.com"  target="_blank">instagram profile</a>' style="background-image: url('images/uploads/page-product/section-customers/customer-item-11.png')" ></a>
                                             </div>
                                         </div>
                                     </div>
@@ -523,18 +863,20 @@
                     </section>
 
                     <section class="section-product-advantages fullview">
-                        <div class="container-fluid">
-                            <div class="product-advantages-card row align-items-center">
-                                <div class="product-advantages-content col col-lg-4 offset-lg-1">
-                                    <p class="product-advantages-subtitle">Идеальна для родителей</p>
-                                    <p class="product-advantages-title">Управление одним мизинцем</p>
-                                    <div class="product-advantages-description">
-                                        <p>За счет больших и узких колес, а также за счет высокой подвески коляска Balmoral с легкостью проедет даже через снег. Именно поэтому коляска подойдет для владельцев загородных домов и прогулок в центре города.</p>
+                        <div class="product-advantages-card">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="product-advantages-content col col-lg-4 offset-lg-1">
+                                        <p class="product-advantages-subtitle">Идеальна для родителей</p>
+                                        <p class="product-advantages-title">Управление одним мизинцем</p>
+                                        <div class="product-advantages-description">
+                                            <p>За счет больших и узких колес, а также за счет высокой подвески коляска Balmoral с легкостью проедет даже через снег. Именно поэтому коляска подойдет для владельцев загородных домов и прогулок в центре города.</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product-advantages-aside col col-lg-6 offset-lg-1">
-                                    <div class="product-advantages-picutre">
-                                        <img src="images/page-product/section-advantages/product-advantages-item-4.png" alt="">
+                                    <div class="product-advantages-aside col col-lg-6 offset-lg-1">
+                                        <div class="product-advantages-picutre">
+                                            <img src="images/uploads/page-product/section-advantages/product-advantages-item-4.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -566,7 +908,7 @@
                         </div>
 
                         <div class="text-center">
-                            <img src="images/page-product/section-tagline/product-tagline-img.png" alt="Спит малыш — отдыхает мама">
+                            <img src="images/uploads/page-product/section-tagline/product-tagline-img.png" alt="Спит малыш — отдыхает мама">
                         </div>
                     </section>
 
@@ -577,7 +919,7 @@
                                     <div class="row align-items-center">
                                         <div class="product-reliability-aside col-lg-6">
                                             <div class="product-reliability-picture">
-                                                <img src="images/page-product/section-reliability/product-reliability-img.png" alt="">
+                                                <img src="images/uploads/page-product/section-reliability/product-reliability-img.png" alt="">
                                             </div>
                                         </div>
                                         <div class="product-reliability-content col-lg-6">
@@ -635,53 +977,64 @@
                     </section>
 
                     <section class="section-product-promo">
-                        <div class="container-fluid">
-                            <div class="product-advantages-card row align-items-center">
-                                <div class="product-advantages-content col col-lg-4 offset-lg-1">
-                                    <p class="product-advantages-subtitle">Безупречный стиль</p>
-                                    <p class="product-advantages-title">Подчеркните свой статус</p>
-                                    <div class="product-advantages-description">
-                                        <p>Вы хотите произвести впечатление на жителей самого центра города или соседей вашего загородного дома? Тогда эта коляска для вас! Статусная, большая, эффектная, стильная! Это не просто коляска – это лайнер для вашего ребенка.</p>
-                                        <p>Хромированная подвеска; колеса, наполненные воздухом; йоркширская роза – символ Англии на капоре; деревянная вставка на ручке коляски, ручная сборка. Все это формирует ваш безупречный стиль и имидж.</p>
+                        <div class="product-advantages-card">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="product-advantages-content col col-lg-4 offset-lg-1">
+                                        <p class="product-advantages-subtitle">Безупречный стиль</p>
+                                        <p class="product-advantages-title">Подчеркните свой статус</p>
+                                        <div class="product-advantages-description">
+                                            <p>Вы хотите произвести впечатление на жителей самого центра города или соседей вашего загородного дома? Тогда эта коляска для вас! Статусная, большая, эффектная, стильная! Это не просто коляска – это лайнер для вашего ребенка.</p>
+                                            <p>Хромированная подвеска; колеса, наполненные воздухом; йоркширская роза – символ Англии на капоре; деревянная вставка на ручке коляски, ручная сборка. Все это формирует ваш безупречный стиль и имидж.</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product-advantages-aside col col-lg-6 offset-lg-1">
-                                    <div class="product-advantages-picutre">
-                                        <img src="images/page-product/section-advantages/product-advantages-item-5.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product-advantages-card row align-items-center">
-                                <div class="product-advantages-aside col col-lg-6">
-                                    <div class="product-advantages-picutre">
-                                        <img src="images/page-product/section-advantages/product-advantages-item-6.png" alt="">
-                                        <a href="#link" class="btn-play lg light"></a>
-                                    </div>
-                                </div>
-                                <div class="product-advantages-content col col-lg-4 offset-lg-1">
-                                    <p class="product-advantages-title">Полностью ручная сборка</p>
-                                    <div class="product-advantages-description">
-                                        <p>Коляска производится уже 130 лет и ее конструкция с тех пор не претерпела существенных изменений, а секреты производства передаются из поколения в поколение. Сборка осуществляется вручную, что позволяет достичь идеального исполнения!</p>
+                                    <div class="product-advantages-aside col col-lg-6 offset-lg-1">
+                                        <div class="product-advantages-picutre">
+                                            <img src="images/uploads/page-product/section-advantages/product-advantages-item-5.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="product-advantages-card row align-items-center" style="background-image: url(images/page-product/section-advantages/product-advantages-item-7-bg.png)" >
-                                <div class="product-advantages-content col col-lg-4 offset-lg-1">
-                                    <p class="product-advantages-title">Королевская семья и десятки знаменитостей не могут ошибаться!</p>
-                                    <div class="product-advantages-description">
-                                        <p>В колясках Balmoral выросло ни одно поколение королевской семьи. Вот уже 150 лет коляска остается иконой стиля не только для англичан, но и для знаменитостей по всему миру. В их числе:…. Вступайте в клуб ценителей Balmoral!</p>
-                                    </div>
-                                </div>
-                                <div class="product-advantages-aside col col-lg-6 offset-lg-1">
-                                    <div class="product-advantages-picutre">
-                                        <img src="images/page-product/section-advantages/product-advantages-item-7.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+
+                        <div class="product-advantages-card">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="product-advantages-aside col col-lg-6">
+                                        <div class="product-advantages-picutre">
+                                            <img src="images/uploads/page-product/section-advantages/product-advantages-item-6.png" alt="">
+                                            <a href="#link" class="btn-play lg light"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-advantages-content col col-lg-4 offset-lg-1">
+                                        <p class="product-advantages-title">Полностью ручная сборка</p>
+                                        <div class="product-advantages-description">
+                                            <p>Коляска производится уже 130 лет и ее конструкция с тех пор не претерпела существенных изменений, а секреты производства передаются из поколения в поколение. Сборка осуществляется вручную, что позволяет достичь идеального исполнения!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-advantages-card" style="background-image: url(images/uploads/page-product/section-advantages/product-advantages-item-7-bg.png)" >
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="product-advantages-content col col-lg-4 offset-lg-1">
+                                        <p class="product-advantages-title">Королевская семья и десятки знаменитостей не могут ошибаться!</p>
+                                        <div class="product-advantages-description">
+                                            <p>В колясках Balmoral выросло ни одно поколение королевской семьи. Вот уже 150 лет коляска остается иконой стиля не только для англичан, но и для знаменитостей по всему миру. В их числе:…. Вступайте в клуб ценителей Balmoral!</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-advantages-aside col col-lg-6 offset-lg-1">
+                                        <div class="product-advantages-picutre">
+                                            <img src="images/uploads/page-product/section-advantages/product-advantages-item-7.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      
                     </section>
 
 
@@ -779,7 +1132,7 @@
                                                     </div>
                                                     <div class="product-footer">
                                                         <div class="product-price">
-                                                            <ins>4 500 ₽</ins>
+                                                            <ins>4 500&nbsp;₽</ins>
                                                             <p class="product-price-hint">При покупке отдельно</p>
                                                         </div>
                                                         <a href="#link" class="product-order btn btn-dark" ><i class="icon-plus" ></i>Купить</a>
@@ -790,16 +1143,16 @@
                                                 <div class="product-card product-option-card">
                                                     <div class="product-header">
                                                         <div class="product-thumbnail">
-                                                            <img src="images/uploads/page-product/section-product-option/product-option-item-2.png" alt="Хлопковое белье, с вышивкой шелковой нитью" class="product-picture">
+                                                            <img src="images/uploads/page-product/section-product-option/product-option-item-2.png" alt="Хлопковое белье с вышивкой шелковой нитью" class="product-picture">
                                                         </div>
-                                                        <p class="product-title">Хлопковое белье, с вышивкой шелковой нитью</p>
+                                                        <p class="product-title">Хлопковое белье с вышивкой шелковой нитью</p>
                                                     </div>
                                                     <div class="product-body">
                                                         <div class="product-description">Уютное, мягкое и теплое для малыша. Еще одна стильная деталь коляски.</div>
                                                     </div>
                                                     <div class="product-footer">
                                                         <div class="product-price">
-                                                            <ins>4 500 ₽</ins>
+                                                            <ins>4 500&nbsp;₽</ins>
                                                             <p class="product-price-hint">При покупке отдельно</p>
                                                         </div>
                                                         <a href="#link" class="product-order btn btn-dark" ><i class="icon-plus" ></i>Купить</a>
@@ -819,7 +1172,7 @@
                                                     </div>
                                                     <div class="product-footer">
                                                         <div class="product-price">
-                                                            <ins>4 500 ₽</ins>
+                                                            <ins>4 500&nbsp;₽</ins>
                                                             <p class="product-price-hint">При покупке отдельно</p>
                                                         </div>
                                                         <a href="#link" class="product-order btn btn-dark" ><i class="icon-plus" ></i>Купить</a>
@@ -839,7 +1192,7 @@
                                                     </div>
                                                     <div class="product-footer">
                                                         <div class="product-price">
-                                                            <ins>4 500 ₽</ins>
+                                                            <ins>4 500&nbsp;₽</ins>
                                                             <p class="product-price-hint">При покупке отдельно</p>
                                                         </div>
                                                         <a href="#link" class="product-order btn btn-dark" ><i class="icon-plus" ></i>Купить</a>
@@ -871,16 +1224,16 @@
                             </div>
                             <div class="row">
                                 <div class="content-block col-lg-10 offset-lg-1">
-                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <ul class="nav nav-tabs" id="accessoris-tabs" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Рекомендуем</a>
+                                            <a class="nav-link active" id="accessoris-main-tab" data-toggle="tab" href="#accessoris-main" role="tab" aria-controls="accessoris-main" aria-selected="true">Рекомендуем</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Прочие</a>
+                                            <a class="nav-link" id="accessories-other-tab" data-toggle="tab" href="#accessories-other" role="tab" aria-controls="accessories-other" aria-selected="false">Прочие</a>
                                         </li>
                                     </ul>
-                                    <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="tab-content" id="accessories-content">
+                                        <div class="tab-pane fade show active" id="accessoris-main" role="tabpanel" aria-labelledby="accessoris-main-tab">
                                             <div class="slider-product-accessories slider-products swiper-container">
                                                 <div class="swiper-wrapper">
                                                     <div class="product-accessories-item swiper-slide">
@@ -899,8 +1252,8 @@
                                                                 </div>
                                                                 <div class="product-footer">
                                                                     <div class="product-price">
-                                                                        <ins>10 000 ₽</ins>
-                                                                        <del>20 000 ₽</del>
+                                                                        <ins>10 000&nbsp;₽</ins>
+                                                                        <del>20 000&nbsp;₽</del>
                                                                     </div>
                                                                     <a href="product.html" class="product-order btn btn-dark" ><i class="icon-plus" ></i>Купить</a>
                                                                 </div>
@@ -924,8 +1277,8 @@
                                                                 </div>
                                                                 <div class="product-footer">
                                                                     <div class="product-price">
-                                                                        <ins>10 000 ₽</ins>
-                                                                        <del>20 000 ₽</del>
+                                                                        <ins>10 000&nbsp;₽</ins>
+                                                                        <del>20 000&nbsp;₽</del>
                                                                     </div>
                                                                     <a href="product.html" class="product-order btn btn-dark" ><i class="icon-plus" ></i>Купить</a>
                                                                 </div>
@@ -949,8 +1302,8 @@
                                                                 </div>
                                                                 <div class="product-footer">
                                                                     <div class="product-price">
-                                                                        <ins>10 000 ₽</ins>
-                                                                        <del>20 000 ₽</del>
+                                                                        <ins>10 000&nbsp;₽</ins>
+                                                                        <del>20 000&nbsp;₽</del>
                                                                     </div>
                                                                     <a href="product.html" class="product-order btn btn-dark" ><i class="icon-plus" ></i>Купить</a>
                                                                 </div>
@@ -974,8 +1327,8 @@
                                                                 </div>
                                                                 <div class="product-footer">
                                                                     <div class="product-price">
-                                                                        <ins>10 000 ₽</ins>
-                                                                        <del>20 000 ₽</del>
+                                                                        <ins>10 000&nbsp;₽</ins>
+                                                                        <del>20 000&nbsp;₽</del>
                                                                     </div>
                                                                     <a href="product.html" class="product-order btn btn-dark" ><i class="icon-plus" ></i>Купить</a>
                                                                 </div>
@@ -990,7 +1343,7 @@
                                                 <div class="swiper-button-next"></div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="tab-pane fade" id="accessories-other" role="tabpanel" aria-labelledby="accessories-other-tab">
                                             Tab 2
                                         </div>
                                     </div>
@@ -1033,7 +1386,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="testimonial-footer">
-                                                                <a href="#link" class="testimonial-btn btn btn-light" >Смотреть полный отзыв</a>
+                                                                <a href="#link" class="testimonial-btn btn btn-italic btn-light" >Смотреть полный отзыв</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1061,7 +1414,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="testimonial-footer">
-                                                                <a href="#link" class="testimonial-btn btn btn-light" >Смотреть полный отзыв</a>
+                                                                <a href="#link" class="testimonial-btn btn btn-italic btn-light" >Смотреть полный отзыв</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1123,8 +1476,8 @@
                                                     </div>
                                                     <div class="product-footer">
                                                        <div class="product-price">
-                                                           <ins>180 000 ₽</ins>
-                                                           <del>20 000 ₽</del>
+                                                           <ins>180 000&nbsp;₽</ins>
+                                                           <del>20 000&nbsp;₽</del>
                                                        </div>
                                                        <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
                                                    </div>
@@ -1161,8 +1514,8 @@
                                                     </div>
                                                     <div class="product-footer">
                                                        <div class="product-price">
-                                                           <ins>180 000 ₽</ins>
-                                                           <del>20 000 ₽</del>
+                                                           <ins>180 000&nbsp;₽</ins>
+                                                           <del>20 000&nbsp;₽</del>
                                                        </div>
                                                        <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
                                                    </div>
@@ -1199,8 +1552,8 @@
                                                     </div>
                                                     <div class="product-footer">
                                                        <div class="product-price">
-                                                           <ins>180 000 ₽</ins>
-                                                           <del>20 000 ₽</del>
+                                                           <ins>180 000&nbsp;₽</ins>
+                                                           <del>20 000&nbsp;₽</del>
                                                        </div>
                                                        <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
                                                    </div>
@@ -1237,8 +1590,8 @@
                                                     </div>
                                                     <div class="product-footer">
                                                        <div class="product-price">
-                                                           <ins>180 000 ₽</ins>
-                                                           <del>20 000 ₽</del>
+                                                           <ins>180 000&nbsp;₽</ins>
+                                                           <del>20 000&nbsp;₽</del>
                                                        </div>
                                                        <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
                                                    </div>
@@ -1283,8 +1636,8 @@
                                                     </div>
                                                     <div class="product-footer">
                                                        <div class="product-price">
-                                                           <ins>50 000 ₽</ins>
-                                                           <del>20 000 ₽</del>
+                                                           <ins>50 000&nbsp;₽</ins>
+                                                           <del>20 000&nbsp;₽</del>
                                                        </div>
                                                        <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
                                                    </div>
@@ -1304,8 +1657,8 @@
                                                     </div>
                                                     <div class="product-footer">
                                                        <div class="product-price">
-                                                           <ins>4 500 ₽</ins>
-                                                           <del>20 000 ₽</del>
+                                                           <ins>4 500&nbsp;₽</ins>
+                                                           <del>20 000&nbsp;₽</del>
                                                        </div>
                                                        <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
                                                    </div>
@@ -1325,8 +1678,8 @@
                                                     </div>
                                                     <div class="product-footer">
                                                        <div class="product-price">
-                                                           <ins>200 000 ₽</ins>
-                                                           <del>20 000 ₽</del>
+                                                           <ins>200 000&nbsp;₽</ins>
+                                                           <del>20 000&nbsp;₽</del>
                                                        </div>
                                                        <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
                                                    </div>
@@ -1346,8 +1699,8 @@
                                                     </div>
                                                     <div class="product-footer">
                                                        <div class="product-price">
-                                                           <ins>17 200 ₽</ins>
-                                                           <del>20 000 ₽</del>
+                                                           <ins>17 200&nbsp;₽</ins>
+                                                           <del>20 000&nbsp;₽</del>
                                                        </div>
                                                        <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
                                                    </div>
@@ -1367,8 +1720,8 @@
                                                     </div>
                                                     <div class="product-footer">
                                                        <div class="product-price">
-                                                           <ins>200 000 ₽</ins>
-                                                           <del>20 000 ₽</del>
+                                                           <ins>200 000&nbsp;₽</ins>
+                                                           <del>20 000&nbsp;₽</del>
                                                        </div>
                                                        <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
                                                    </div>
@@ -1434,7 +1787,7 @@
                                             <a href="tel:+74955893731"><i class="icon-phone" ></i>+7 (495) 589-37-31</a>
                                         </div>
                                         <div class="footer-contact-order">
-                                            <button class="btn btn-light" >Перезвоните мне</button>
+                                            <button class="btn btn-light" data-toggle="modal" data-target="#modalCallback" >Перезвоните мне</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1450,11 +1803,19 @@
             </footer>
         </div>
 
+        <div class="ssm-overlay ssm-toggle-nav"></div>
+
         <script src="vendor/jquery-3.3.1.min.js" ></script>
         <script src="vendor/swiper.min.js" ></script>
         <script src="vendor/jquery.fancybox.min.js" ></script>
+
+        <script src="vendor/jquery.touchSwipe.min.js" ></script>
+        <script src="vendor/jquery.slideandswipe.min.js" ></script>
+
         <script src="vendor/util.js" ></script>
         <script src="vendor/tab.js" ></script>
+        <script src="vendor/modal.js" ></script>
+        <script src="vendor/mask.js" ></script>
         <script src="js/main.js" ></script>
     </body>
 </html>

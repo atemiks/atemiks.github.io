@@ -1,0 +1,303 @@
+.page-catalog .section-display  {
+    min-height: 348px;
+}
+
+.subcategory-list {
+    margin: 17px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subcategory-list .subcategory-item {
+    position: relative;
+    display: inline-block;
+    min-width: 180px;
+    max-width: 225px;
+    margin: 0 10px 0 0;
+    text-decoration: none;
+}
+
+
+.subcategory-card {
+    position: relative;
+    z-index: 1;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.subcategory-card:before {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 16px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: 300ms opacity ease;
+    transform: translateY(-50%);
+}
+
+.subcategory-card .subcategory-title {
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    color: #40444e;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 3px;
+    transition: border-color 300ms ease;
+}
+
+.subcategory-card .subcategory-thumbnail {
+    flex: 0 0 50px;
+    max-width: 50px;
+    margin: 0 14px 0 0;
+    text-align: right;
+}
+
+
+.subcategory-card:hover:before,
+.subcategory-list .subcategory-item.active .subcategory-card:before {
+    opacity: 1;
+}
+.subcategory-card:hover .subcategory-title,
+.subcategory-list .subcategory-item.active .subcategory-card .subcategory-title  {
+    border-bottom-color: #000;
+}
+
+
+
+.section-catalog {
+    padding: 70px 0;
+}
+.section-catalog + .section-catalog {
+    padding-top: 20px;
+}
+
+.section-catalog .section-header  {
+    margin-bottom: 30px;
+    text-align: left;
+}
+.section-catalog .section-header .section-title {
+    margin: 0;
+    color: #40444e;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 6px;
+}
+.section-catalog .section-header .section-overhead {
+    position: relative;
+    margin: 0 0 30px;
+    color: #40444e;
+    font-family: "Quiza Pro";
+    font-size: 30px;
+    font-style: italic;
+    line-height: 25px;
+    letter-spacing: 6px;
+}
+
+.section-catalog .section-header .section-overhead:before,
+.section-catalog .section-header .section-overhead:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 23px;
+    height: 2px;
+    background-color: #40444e;
+}
+
+.section-catalog .section-header .section-overhead:before {
+    margin: 0 30px 0 0;
+}
+
+.section-catalog .section-header .section-overhead:after {
+    margin: 0 0 0 30px;
+}
+
+.product-gallery-nav {
+    margin: -2px 0;
+}
+
+.product-gallery-nav .product-gallery-nav-title {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    color: #40444e;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.9px;
+}
+
+.product-gallery-nav .nav {
+    cursor: default;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*.roduct-gallery-nav .filter-checkbox {
+    display: inline-block;
+    margin: 0 4px;
+}*/
+
+
+.filter-checkbox {
+    position: relative;
+}
+
+.filter-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.filter-checkbox input[type="checkbox"] + label {
+    display: inline-block;
+}
+
+.filter-checkbox input[type="checkbox"] + label span {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 6px 15px 4px;
+    color: #8b8b8b;
+    font-family: "Quiza Pro";
+    font-size: 18px;
+    font-style: italic;
+    line-height: 26px;
+}
+.filter-checkbox input[type="checkbox"] + label span:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #a9adb1;
+    border-radius: 30px;
+    transition: border-color 300ms ease;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + label span {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    color: #40444e;
+}
+.filter-checkbox input[type="checkbox"]:checked + label span:after {
+    border-radius: 0;
+    border-color: transparent;
+    border-bottom: 2px solid #40444e;
+}
+
+.filter-checkbox input[type="checkbox"] + label span,
+.filter-checkbox input[type="checkbox"]:checked + label span,
+.filter-checkbox input[type="checkbox"] + label span:after {
+    transition: color 300ms ease, padding 300ms ease;
+}
+
+
+
+.products-grid {
+    /*margin-left: -38px;*/
+    /*margin-right: -38px;*/
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: -35px;
+}
+.products-grid .product-item {
+    /*padding-left: 38px;*/
+    /*padding-right: 38px;*/
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.products-grid .product-item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.products-grid .product-item .product-card {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+.products-grid .product-item .product-card .product-body {
+    max-width: 320px;
+    flex: 1 1 auto;
+}
+
+.products-grid .product-item .product-card .product-title {
+    margin-top: 0;
+}
+
+
+
+.section-article-higlight {
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+.article-higlights {}
+.article-higlights .article-higlights-content {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.article-higlights .article-higlights-title {
+    color: #40444e;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 7px;
+}
+.article-higlights .article-higlights-description {
+    color: #3c3c3c;
+    font-family: "Quiza Pro";
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+}
+.article-higlights .article-higlights-description p {
+    margin: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

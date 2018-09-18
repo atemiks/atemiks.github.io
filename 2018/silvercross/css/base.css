@@ -34,16 +34,62 @@ body {
 }*/
 
 
-h1 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    color: #40444e;
+    font-family: "Proxima Nova", sans-serif;
+    font-style: normal;
     font-size: 35px;
+    line-height: 1.3;
+    font-weight: 700;
 }
 
-h2 {
+
+h1,
+.h1 {
+    font-size: 35px;
+    letter-spacing: 7px;
+}
+
+h2,
+.h2 {
     font-size: 30px;
+    letter-spacing: 6px;
 }
 
-h3 {
-    
+h3,
+.h3 {
+    font-size: 28px;
+    letter-spacing: 5.6px;
+}
+
+h4,
+.h4 {
+
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+h5,
+.h5 {
+    font-size: 22px;
+    letter-spacing: 4.4px;
+}
+
+h6,
+.h6 {
+    font-size: 20px;
+    letter-spacing: 4px;
 }
 
 a {
@@ -52,6 +98,164 @@ a {
 
 img {
     max-width: 100%;
+    /*image-rendering: -webkit-optimize-contrast;*/
+}
+
+
+table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    color: #393939;
+    font-family: "Quiza Pro";
+    font-size: inherit;
+    font-style: italic;
+    line-height: 30px;
+}
+
+table th {
+    height: 69px;
+    padding: 10px 30px;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    text-align: left;
+}
+
+table td {
+    height: 69px;
+    padding: 10px 30px;
+    border-bottom: 1px solid #e8e8e9;
+}
+
+
+table .thead-dark {
+    background-color: #40444e;
+}
+
+table .thead-dark th {
+    color: #ffffff;
+}
+
+
+label {
+    color: #40444e;
+    font-family: "Quiza Pro";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+label a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+label a:hover {
+    text-decoration: none;
+}
+
+label sup,
+label sub {
+    color: #d26d6d;
+}
+
+input,
+textarea {
+    display: block;
+    outline: none;
+    height: 45px;
+    width: 100%;
+    padding: 0 18px;
+    border: 1px solid #40444e;
+    border-radius: 30px;
+    color: #6f7279;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    color: #40444e;
+    font-family: "Quiza Pro";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+input[type="checkbox"] + label span {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    margin: 0 8px 0 0;
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+input[type="checkbox"] + label span:after {
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: #e8e8e9;
+    transform: translate(-50%, -50%);
+    transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+input[type="checkbox"] + label span {
+    background-color: #292321;
+}
+
+input[type="checkbox"]:checked + label span:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+input[type="checkbox"] + label span,
+input[type="checkbox"]:checked + label span {
+    -webkit-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear;
+}
+
+
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+textarea {
+    resize: none;
+    height: 200px;
 }
 
 button {
@@ -63,10 +267,11 @@ button {
     position: relative;
     display: inline-block;
     min-width: 120px;
+    margin: 7px;
     padding: 12px 22px;
     border: 1px solid transparent;
     border-radius: 30px;
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", sans-serif;
     font-size: 17px;
     font-weight: 300;
     text-decoration: none;
@@ -84,12 +289,17 @@ button {
     
 }
 
+.btn-italic {
+    font-family: "Quiza Pro";
+    font-style: italic !important;
+}
+
 .btn-lg {
     min-width: 141px;
+    margin: 10px;
     padding: 16px 14px;
     font-family: "Quiza Pro";
     font-size: 17px;
-    font-style: italic;
     line-height: 26px;
 }
 .btn-lg:after {
@@ -124,6 +334,25 @@ button {
 .btn-dark:after {
     border-color: #40444e;;
 }
+
+.btn-secondary {
+    border-color: #41454e;
+    background: #41454e;
+    color: #fff;
+}
+.btn-secondary:after {
+    border-color: #41454e;;
+}
+
+.btn-gray {
+    border-color: #e8e8e9;
+    background: #e8e8e9;
+    color: #40444e;;
+}
+.btn-gray:after {
+    border-color: #e8e8e9;;
+}
+
 
 .btn-play {
     position: absolute;
@@ -169,12 +398,22 @@ button {
 }
 
 
+.form-group .form-group-hint {
+    margin: 5px 0;
+    color: #888888;
+    font-family: "Quiza Pro";
+    font-size: 14px;
+    font-style: italic;
+    line-height: 25px;
+}
+
+
 .breadcrumb {
     margin: 7px 0;
     padding: 0;
     list-style: none;
     color: #a7a7a7;
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", sans-serif;
     font-size: 12px;
     font-weight: 300;
     line-height: 26px;
@@ -184,7 +423,7 @@ button {
     position: relative;
     display: inline-block;
     color: #a7a7a7;
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", sans-serif;
     font-size: 12px;
     font-weight: 300;
     line-height: 26px;
@@ -232,4 +471,27 @@ button {
 }
 .text-right {
     text-align: right;
+}
+
+.alert {
+    padding: 20px 70px 30px 30px;
+    font-family: "Proxima Nova", sans-serif;
+    font-style: normal;
+    font-size: inherit;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.9px;
+}
+
+.alert.alert-secondary {
+    background-color: #e8e8e9;
+    color: #40444e;
+}
+
+
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
 }

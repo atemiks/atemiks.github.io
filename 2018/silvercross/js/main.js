@@ -1,20 +1,51 @@
 $(document).ready(function() {
-    /******* HEADER *******/
+    /******* DEFAULT *******/
 
-    // open and close offcanvas
-    $( ".header-toggler-offcanvas,  .offcanvas-close" ).on( "click",function() {
-        $('body').toggleClass('offcanvas-open');
-        $('.offcanvas').toggleClass('active');
+    // phone mask
+    $("input[type='tel']").mask("+7 (999) 999-99-99");
+
+    // custom input number
+    $(".shopping-order .shopping-order-number").append('<div class="inc button"><i class="icon-plus" ></i></div><div class="dec button"><i class="icon-minus" ></i></div>');
+    
+    $(".shopping-order .shopping-order-number .button").on("click", function() {
+      var $button = $(this);
+      var oldValue = $button.parent().find("input").val();
+
+      if ($button.hasClass('inc')) {
+          var newVal = parseFloat(oldValue) + 1;
+        } else {
+        if (oldValue > 0) {
+          var newVal = parseFloat(oldValue) - 1;
+        } else {
+          newVal = 0;
+        }
+      }
+      $button.parent().find("input").val(newVal);
     });
 
-    // close offcanvas outside
-    $(document).click(function(event) { 
-        if(!$(event.target).closest('.offcanvas, .header-toggler-offcanvas').length) {
-            if($('.offcanvas').is(":visible")) {
-                $('body').removeClass('offcanvas-open');
-                $('.offcanvas').removeClass('active');
-            }
-        }        
+
+    // $( ".embed-responsive, .embed-responsive-item" ).on( "click", function(e) {
+    //     console.log('click');
+    //     var currentParent = $(e.currentTarget).closest('.embed-responsive');
+    //     $(currentParent).find('.embed-responsive-play').addClass('hidden');
+    // })
+
+
+
+
+
+    /******* HEADER *******/
+
+    /******* HEADER SEARCH *******/ 
+    $( ".header-nav-item.search, .header-search-close" ).on( "click",function() {
+       $('.header-search-wrapper').toggleClass('visible');
+    });
+
+    /******* HEADER OFFCANVAS  ******/
+    $('.offcanvas').slideAndSwipe();
+
+    $( ".offcanvas-close" ).on( "click",function() {
+       $('.ssm-overlay.ssm-toggle-nav.ssm-nav-visible').click();
     });
 
     /******* PAGE CATALOG *******/
@@ -37,7 +68,10 @@ $(document).ready(function() {
         $(currentParent).find(".product-price ins").text(currentPrice + ' ₽');
 
         // change active old price
-        $(currentParent).find(".product-price del").text(currentOldPrice + ' ₽');
+        if ( currentOldPrice != undefined ) 
+            $(currentParent).find(".product-price del").text(currentOldPrice + ' ₽');
+        else
+            $(currentParent).find(".product-price del").text('');
     });
 
 
@@ -209,6 +243,7 @@ $(document).ready(function() {
         var currentIndex = $(e.currentTarget).attr('data-index');
         var currentPrice = $(e.currentTarget).attr('data-price');
         var currentOldPrice = $(e.currentTarget).attr('data-old-price');
+        console.log(currentOldPrice);
 
         // change active color
         $(currentParent).find('.product-color-item ').removeClass('active');
@@ -222,8 +257,10 @@ $(document).ready(function() {
         $(currentParent).find(".product-price ins").text(currentPrice + ' ₽');
 
         // change active old price
-        $(currentParent).find(".product-price del").text(currentOldPrice + ' ₽');
-
+        if( currentOldPrice != undefined )
+            $(currentParent).find(".product-price del").text(currentOldPrice + ' ₽');
+        else
+            $(currentParent).find(".product-price del").text('');
     });
 
     function productPictureOffset() {
@@ -234,8 +271,6 @@ $(document).ready(function() {
             var offsetProductHeader = $(productHeader).offset();
             var productHeaderHeight = $(productHeader).height();
 
-            console.log(offsetProductHeader.top);
-
             $(productPicture).css('top', offsetProductHeader.top + productHeaderHeight);
         }
         else {
@@ -244,12 +279,17 @@ $(document).ready(function() {
 
         $(productPicture).addClass('visible');
     }
-    productPictureOffset();
+
+    if( $('body').hasClass('page-product') ) {
+        productPictureOffset();
+    }
 
      $(window).resize(function () {
-        setTimeout(function () {
-            productPictureOffset();
-        }, 50);
+        if( $('body').hasClass('page-product') ) {
+            setTimeout(function () {
+                productPictureOffset();
+            }, 50);
+        }
     });
 
 
@@ -429,5 +469,32 @@ $(document).ready(function() {
     });
 
 
+    /******* PAGE SHOPPING CART *******/
+    $( ".ordering-choose-group" ).on( "click", ".ordering-choose" ,function(e) {
+
+        var currentParent = $(e.currentTarget).closest('.ordering-choose-group');
+
+        // change active element
+        $(currentParent).find('.ordering-choose').removeClass('active');
+        $(e.currentTarget).addClass('active');
+
+    });
+
+
+    function moveShoppingTotal() {
+        var windowWidth = window.outerWidth;
+        if( windowWidth <= 991 ) {
+            $(' .shopping-grid').after( $('.shopping-cart-aside')) ;
+        } else {
+            $(' .shopping-cart-content').after( $('.shopping-cart-aside')) ;
+        }
+    }
+
+    moveShoppingTotal();
+
+
+    $( window ).resize(function() {
+         moveShoppingTotal();
+    });
 
 });

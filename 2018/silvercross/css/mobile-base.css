@@ -20,6 +20,21 @@
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	.table-responsive {
+	    display: block;
+	    width: 100%;
+	    overflow-x: auto;
+	    -webkit-overflow-scrolling: touch;
+	    -ms-overflow-style: -ms-autohiding-scrollbar;
+	}
+
+	.table-responsive .table tr,
+	.table-responsive .table td {
+		white-space: nowrap;
+	}
+}
+
 @media screen and (max-width: 991px) {
 	.container-fluid {
 		padding-left: 25px;
@@ -35,15 +50,26 @@
 	}
 
 	.breadcrumb {
-		width: calc(100vw - 25px);
+		width: calc(100vw - 20px);
 		height: 30px;
 		overflow-x: auto;
 		white-space: nowrap;
 	}
+
+	.alert {
+		padding: 20px 30px 30px 30px;
+	}
+
 } 
 
 
 @media screen and (max-width: 425px) {
+	input[type="checkbox"] + label {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+
 	.btn-play.lg {
 		width: 72px;
 		height: 72px;

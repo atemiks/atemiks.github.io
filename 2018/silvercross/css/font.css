@@ -20,12 +20,34 @@
 }
 @font-face {
     font-family: 'Proxima Nova';
+    src:  url('../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot');
+    src:  url('../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff') format('woff'),
+        url('../fonts/ProximaNova-Semibold/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
     src:  url('../fonts/ProximaNova-Bold/ProximaNova-Bold.eot');
     src:  url('../fonts/ProximaNova-Bold/ProximaNova-Bold.eot#iefix') format('embedded-opentype'),
         url('../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf') format('truetype'),
         url('../fonts/ProximaNova-Bold/ProximaNova-Bold.woff') format('woff'),
         url('../fonts/ProximaNova-Bold/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
     font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Quiza Pro';
+    src:  url('../fonts/QuizaPro-Regular/QuizaPro-Regular.eot');
+    src:  url('../fonts/QuizaPro-Regular/QuizaPro-Regular.eot#iefix') format('embedded-opentype'),
+        url('../fonts/QuizaPro-Regular/QuizaPro-Regular.ttf') format('truetype'),
+        url('../fonts/QuizaPro-Regular/QuizaPro-Regular.woff') format('woff'),
+        url('../fonts/QuizaPro-Regular/QuizaPro-Regular.svg#QuizaPro-Regular') format('svg');
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -67,12 +89,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.icon-close-thin:before {
+  content: "\e91e";
+}
+.icon-minus:before {
+  content: "\e908";
+}
+.icon-home-advantages-icon-1:before {
+  content: "\e91a";
+}
+.icon-home-advantages-icon-2:before {
+  content: "\e91b";
+}
+.icon-home-advantages-icon-3:before {
+  content: "\e91c";
+}
+.icon-home-advantages-icon-4:before {
+  content: "\e91d";
+}
+.icon-phone:before {
+  content: "\e909";
+}
 .icon-play:before {
   content: "\e917";
 }
 .icon-bars:before {
   content: "\e918";
+  color: #41454f;
 }
 .icon-close:before {
   content: "\e919";
@@ -115,9 +158,11 @@
 }
 .icon-doc:before {
   content: "\e903";
+  color: #41454f;
 }
 .icon-factory:before {
   content: "\e904";
+  color: #41464e;
 }
 .icon-gift:before {
   content: "\e905";
@@ -127,9 +172,6 @@
 }
 .icon-percent:before {
   content: "\e907";
-}
-.icon-phone:before {
-  content: "\e908";
 }
 .icon-production:before {
   content: "\e90c";

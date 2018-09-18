@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="Ru-ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <title>Silver Cross / Статья</title>
+    </head>
+    <body class="page-article" >
+        <!-- Modal -->
+        <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-header-content">
+                            <div class="modal-title">Перезвоните мне</div>
+                            <div class="modal-subtitle">Укажите свои контактные данные и наш специалист свяжется с Вами в ближайшее время</div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon-close-thin" ></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="" class="form-modal">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="formProductLiveName">Ваше имя <sup>*</sup></label>
+                                            <input name="formProductLiveName" type="text" required >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="formProductLivePhone">Телефон <sup>*</sup></label>
+                                            <input name="formProductLivePhone" type="tel" placeholder="+7 (___) ___-__-__" required >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <button class="btn btn-italic btn-lg btn-dark" type="submit" >Перезвоните мне</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="offcanvas">
+            <div class="offcanvas-header">
+                <ul class="offcanvas-header-menu">
+                    <li class="offcanvas-header-menu-item">
+                        <button class="offcanvas-header-menu-link offcanvas-close">
+                            <span class="offcanvas-header-menu-icon">
+                                <i class="icon-close" ></i>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li class="offcanvas-header-menu-item">
+                        <a class="offcanvas-header-menu-link" href="#link">
+                            <span class="offcanvas-header-menu-icon ">
+                                <i class="icon-search" ></i>
+                            </span>
+                            <span class="offcanvas-header-menu-text" >Поиск</span>
+                        </a>
+                    </li>
+
+                    <li class="offcanvas-header-menu-item">
+                        <a class="offcanvas-header-menu-link" href="#link">
+                            <span class="offcanvas-header-menu-icon ">
+                                <i class="icon-bag" ></i>
+                                <span class="offcanvas-header-menu-badge" >3</span>
+                            </span>
+                            <span class="offcanvas-header-menu-text" >Мои покупки</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="offcanvas-menu">
+                    <li class="offcanvas-menu-item has-children">
+                        <a class="offcanvas-menu-link" href="#link">Silver Cross</a>
+                    </li>
+                    <li class="offcanvas-menu-item has-children">
+                        <a class="offcanvas-menu-link" href="#link">Детские конверты и спальные мешки Aro и Uzturre</a>
+                    </li>
+                    <li class="offcanvas-menu-item has-children">
+                        <a class="offcanvas-menu-link" href="#link">Стульчики Peg-perego</a>
+                    </li>
+                    <li class="offcanvas-menu-item has-children">
+                        <a class="offcanvas-menu-link" href="#link">OK Baby</a>
+                    </li>
+                    <li class="offcanvas-menu-item selected">
+                        <a class="offcanvas-menu-link" href="#link">
+                            <i class="icon-gift" ></i>
+                            Идеи для подарков
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="offcanvas-submenu">
+                    <li class="offcanvas-submenu-item">
+                        <a class="offcanvas-submenu-link" href="#link">Оплата и доставка</a>
+                    </li>
+                    <li class="offcanvas-submenu-item">
+                        <a class="offcanvas-submenu-link" href="#link">Контакты</a>
+                    </li>
+                    <li class="offcanvas-submenu-item">
+                        <a class="offcanvas-submenu-link" href="#link">О компании</a>
+                    </li>
+                    <li class="offcanvas-submenu-item">
+                        <a class="offcanvas-submenu-link" href="#link"><i class="icon-percent" ></i>Акции </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <div class="content">
+                <header class="header">
+                    <div class="container-fluid">
+                        <div class="header-upper row align-items-center">
+                            <div class="header-side-left col">
+                                <button class="header-toggler header-toggler-offcanvas ssm-toggle-nav">
+                                    <i class="header-toggler-icon icon-bars" ></i>
+                                    <span class="header-toggler-text">Меню / каталог</span>
+                                </button>
+
+                                <button class="header-toggler header-toggler-search">
+                                    <i class="header-toggler-icon icon-search" ></i>
+                                </button>
+
+                                <ul class="header-status-menu">
+                                    <li><a href="#link">Оплата и доставка</a></li>
+                                    <li><a href="#link">Контакты</a></li>
+                                    <li><a href="#link">О компании</a></li>
+                                    <li class="selected" ><a href="#link"><i class="icon-percent" ></i>Акции</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-side-center col">
+                                <div class="header-logo">
+                                    <a href="index.html">
+                                        <img class="header-logo-img" src="images/logo.png" alt="Silver Cross">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-side-right col">
+                                <div class="header-contact">
+                                   <div class="header-contact-phone">
+                                        <a href="tel:+74955893731"><i class="icon-phone" ></i><span>+7 (495) 589-37-31</span></a>
+                                   </div>
+                                   <div class="header-contact-order">
+                                       <button class="btn btn-italic btn-light" data-toggle="modal" data-target="#modalCallback" >Перезвоните мне</button>
+                                   </div>
+                                </div>
+                                
+                                <ul class="header-user-menu">
+                                    <li>
+                                        <a href="#link"><i class="icon-bag" ></i><span class="user-menu-badge" >3</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-nav-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                               <div class="col">
+                                    <nav class="header-nav" aria-label="header-nav-list" >
+                                        <ul class="header-nav-list">
+                                            <li class="header-nav-item has-children active" >
+                                                <a href="#link">Silver Cross </a>
+
+                                                <div class="mega-menu">
+                                                    <div class="side-left">
+                                                        <ul class="mega-menu-list">
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-1.png" alt="Коляски">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Коляски</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-2.png" alt="Постельные принадлежности">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Постельные принадлежности</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-3.png" alt="Автокресло">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Автокресло</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-4.png" alt="Игрушки">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Игрушки</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-5.png" alt="Мебель">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Мебель</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-6.png" alt="Аксессуары">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Аксессуары</p>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="side-right">
+                                                        <div class="product-card mega-product horizontal">
+                                                            <div class="product-aside">
+                                                                <div class="product-thumbnail">
+                                                                    <img src="images/uploads/header/mega-product/mega-product-item-1.png" alt="Silver Cross Kensington" class="product-picture">
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-content">
+                                                                <div class="product-header">
+                                                                    <p class="product-title">Silver Cross Kensington</p>
+                                                                </div>
+                                                                <div class="product-body">
+                                                                    <p class="product-description">Неповторимый стиль английской королевской семьи</p>
+                                                                </div>
+                                                                <div class="product-footer">
+                                                                    <div class="product-price">
+                                                                        <ins>350 000&nbsp;₽</ins>
+                                                                        <del>450 000&nbsp;₽</del>
+                                                                    </div>
+                                                                    <a href="#link" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div
+                                            </li>
+                                            <li class="header-nav-item" ><a href="#link">Детские конверты и спальные мешки Aro и Uzturre</a></li>
+                                            <li class="header-nav-item" ><a href="#link">Стульчики Peg-perego </a></li>
+                                            <li class="header-nav-item" ><a href="#link">OK Baby </a></li>
+                                            <li class="header-nav-item selected" ><a href="#link"><i class="icon-gift" ></i>Идеи для подарков</a></li>
+                                            <li class="header-nav-item search" ><a href="#link"><i class="icon-search" ></i></a></li>
+                                        </ul>
+                                    </nav>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-search-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="header-search col">
+                                    <div class="header-search-title">
+                                        <i class="icon-search" ></i>
+                                        Искать на Silver Cross  |
+                                    </div>
+                                    <form action="" class="form-header-search">
+                                        <input type="search">
+                                    </form>
+
+                                    <button class="header-search-close" >
+                                        <i class="icon-close-thin" ></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                
+                <main class="main">
+                    <section class="section-display">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <nav aria-label="breadcrumb">
+                                        <ul class="breadcrumb">
+                                            <li class="page-item prev" ><a href="#link"><i class="icon-arrow-left" ></i></a></li>
+                                            <li class="page-item" ><a href="#link">Главная</a></li>
+                                            <li class="page-item" ><a href="#link">Silver Cross</a></li>
+                                            <li class="page-item active" >Коляски</li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <p class="display-title">Типовая текстовая страница</p>
+                                    <p class="display-description">Дополнительный текст под основным заголовком страницы. Активным современным родителям подойдет функциональная прогулочная коляска Reflex, путешествующим-самая легкая коляска-трость Fizz, а приверженцам классики -трансформер Sleepover Elegance, как у принца Джорджа. Silver Cross также известны колясками 2 в 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-article">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <article class="article" >
+                                        <p class="h1">Заголовок первого уровня</p>
+                                        <p>Silver Cross - лучшее начало жизни, больше, <u>чем первый транспорт малыша.</u> Silver Cross станет <a href="#link">наведение на ссылку</a>. В Англии к коляскам особое отношение, их передают по наследству. Модельный ряд Silver Cross широк и разнообразен по категориям, цветовой палитре, комплектации, цене.</p>
+                                        
+                                        <p>Активным современным родителям подойдет функциональная прогулочная коляска Reflex, путешествующим-самая легкая коляска-трость Fizz, а приверженцам классики -трансформер <img src="images/uploads/page-article/article-img-1.png" alt="article img" class="pull-left" > Sleepover Elegance, как у принца Джорджа. Silver Cross также известны колясками 2 в 1, такими как Surf и Pioneer. Balmoral -  королева среди колясок. А коляска Aston Martin, созданная на базе Silver Cross Surf, подчеркнет статус.</p>
+                                        <p>Expedition - лимитированная линейка колясок 2017 года от культового британского бренда Silver Cross. Коллекция, представленная для моделей Surf и Pioneer, посвящена экзотическим путешествиям, открытиям и духу британского авантюризма, отделка и ткани коляски заимствованы у предметов багажа первого класса. Красивая рама бронзового оттенка, ручка и бампер из шоколадной эко-кожи с плетением, стильная ткань в оригинальном дизайне. Козырек на капоре защищает от солнца, а сеточка на капоре помогает регулировать температуру внутри коляски; смотровое окошко на капоре закрывается с помощью магнитика.</p>
+                                        <p>Люлька подходит для ночного сна, матрасик и обивка из бамбуковой ткани гарантирует комфортное пребывание в коляске во время сна и путешествий. Реверсивный прогулочный блок с регулировкой спинки включает пятиточечный ремень безопасности,  позволяет малышу сидеть лицом к Вам, или лицом к дороге. Наклон спинки в трех положениях гарантирует комфорт. Шикарный матрасик мягкий и приятный на ощупь, выгодно смотрится в сочетании с тканью коляски Лак нанесенный на раму бронзового цвета подчеркивает стиль изделия. Плетеная ткань сдержанного оттенка напоминает о золотом веке открытий и экзотических путешествий.</p>
+
+                                        <p class="h2">Заголовок второго уровня</p>
+                                        <p>Вам больше не нужно беспокоиться, если у вас крупный малыш, или что из-за большого количества теплой одежды ребенку будет неудобно лежать в коляске зимой. Мы все предусмотрели и предлагаем вам одну из самых вместительных люлек в своем классе!</p>
+
+                                        <ul>
+                                            <li>Легкая рама Special Edition Expedition компактно складывается, выполнена в бронзовом цвете и покрыта лаком, а ручка из шоколадной эко кожи.</li>
+                                            <li>
+                                                Люлька горизонтальной спинкой для ночного сна.
+                                                <ul>
+                                                    <li>Прогулочный блок регулируется в трех положениях, включая горизонтальное. Одним движением устанавливается лицом к дороге и лицом к маме.</li>
+                                                </ul>
+                                            </li>
+                                            <li>Капор и накидка на ножки из мягкой ткани, подходят для люльки и для прогулочного блока.</li>
+                                        </ul>
+
+                                        <p>Вам больше не нужно беспокоиться, если у вас крупный малыш, или что из-за большого количества теплой одежды ребенку будет неудобно лежать в коляске зимой. Мы все предусмотрели и предлагаем вам одну из самых вместительных люлек в своем классе!</p>
+
+                                        <ol>
+                                            <li>Легкая рама Special Edition Expedition компактно складывается, выполнена в бронзовом цвете и покрыта лаком, а ручка из шоколадной эко кожи.</li>
+                                            <li>
+                                                Люлька горизонтальной спинкой для ночного сна.
+                                                <ol>
+                                                    <li>Прогулочный блок регулируется в трех положениях, включая горизонтальное. Одним движением устанавливается лицом к дороге и лицом к маме.</li>
+                                                </ol>
+                                            </li>
+                                            <li>Капор и накидка на ножки из мягкой ткани, подходят для люльки и для прогулочного блока.</li>
+                                        </ol>
+
+
+                                        <p class="h3">Заголовок третьего уровня</p>
+                                        <p>Вам больше не нужно беспокоиться, если у вас крупный малыш, или что из-за большого количества теплой одежды ребенку будет неудобно лежать в коляске зимой. Мы все предусмотрели и предлагаем вам одну из самых вместительных люлек в своем классе!</p>
+
+                                        <p class="alert alert-secondary">Козырек на капоре защищает от солнца, а сеточка на капоре помогает регулировать температуру внутри коляски; смотровое окошко на капоре закрывается с помощью магнитика. Люлька подходит для ночного сна, матрасик и обивка из бамбуковой ткани гарантирует комфортное пребывание в коляске во время сна и путешествий.</p>
+
+                                        <p>Реверсивный прогулочный блок с регулировкой спинки включает пятиточечный ремень безопасности,  позволяет малышу сидеть лицом к Вам, или лицом к дороге. Наклон спинки в трех положениях гарантирует комфорт.</p>
+                                        <p>Шикарный матрасик мягкий и приятный на ощупь, выгодно смотрится в сочетании с тканью коляски</p>
+
+
+                                        <p class="h4">Заголовок четвертого уровня</p>
+                                        <p>При заказе детской коляски трансформера Silver Cross Sleepover Sport на сайте или по телефону, а также в магазине ЦДМ на Лубянке, предоставляем скидку 20%!</p>
+
+                                        <div class="table-responsive">
+                                            <table class="table" >
+                                                <thead class="thead-dark" >
+                                                    <tr>
+                                                        <th scope="col">Производитель</th>
+                                                        <th scope="col">Название</th>
+                                                        <th scope="col">Старая цена, руб.</th>
+                                                        <th scope="col">Скидка</th>
+                                                        <th scope="col">Новая цена, руб.</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Silver Cross</td>
+                                                        <td>Sleepover Sport Charcoal Ha Pame Linear</td>
+                                                        <td>29 500&nbsp;₽</td>
+                                                        <td>20%</td>
+                                                        <td>23 600&nbsp;₽</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Silver Cross</td>
+                                                        <td>Sleepover Sport Charcoal Ha Pame Linear</td>
+                                                        <td>29 500&nbsp;₽</td>
+                                                        <td>20%</td>
+                                                        <td>23 600&nbsp;₽</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Silver Cross</td>
+                                                        <td>Sleepover Sport Charcoal Ha Pame Linear</td>
+                                                        <td>29 500&nbsp;₽</td>
+                                                        <td>20%</td>
+                                                        <td>23 600&nbsp;₽</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Silver Cross</td>
+                                                        <td>Sleepover Sport Charcoal Ha Pame Linear</td>
+                                                        <td>29 500&nbsp;₽</td>
+                                                        <td>20%</td>
+                                                        <td>23 600&nbsp;₽</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <p>Реверсивный прогулочный блок с регулировкой спинки включает пятиточечный ремень безопасности,  позволяет малышу сидеть лицом к Вам, или лицом к дороге. Наклон спинки в трех положениях гарантирует комфорт.</p>
+
+                                        <p class="h5">Заголовок пятого уровня</p>
+
+                                        <p class="h6">Заголовок шестого уровня</p>
+
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </main>
+            </div>
+            
+           
+            
+            <footer class="footer">
+                <div class="footer-statusbar">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="content-block col-lg-11 offset-lg-1">
+                                <nav class="footer-statusbar-nav" aria-label="footer-statusbar-list" >
+                                    <ul class="footer-statusbar-list">
+                                        <li><a href="#link">Silver Cross</a></li>                                 
+                                        <li><a href="#link">Детские конверты и спальные мешки Aro и Uzturre</a></li>
+                                        <li><a href="#link">Стульчики Peg-perego</a></li>
+                                        <li><a href="#link">OK Baby</a></li>
+                                        <li><a href="#link">Идеи для подарков</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="content-block col-lg-11 offset-lg-1">
+                            <div class="row">
+                                <div class="col-md-4  col-lg-3 col-xl-3">
+                                    <div class="footer-copytight">
+                                        <p>&copy; 2018 Silver Cross</p>
+                                        <p>Официальный представитель, интернет-магазин детских колясок и аксессуаров</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xl-2 d-none d-lg-block">
+                                    <ul class="footer-menu-list">
+                                        <li><a href="#link">Оплата и доставка</a></li>
+                                        <li><a href="#link">Контакты</a></li>
+                                        <li><a href="#link">О компании</a></li>
+                                        <li><a href="#link">Акции </a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5 col-lg-4 col-xl-4">
+                                    <div class="footer-contact">
+                                        <div class="footer-contact-phone">
+                                            <a href="tel:+74955893731"><i class="icon-phone" ></i>+7 (495) 589-37-31</a>
+                                        </div>
+                                        <div class="footer-contact-order">
+                                            <button class="btn btn-light" data-toggle="modal" data-target="#modalCallback" >Перезвоните мне</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-xl-3">
+                                    <div class="footer-developer">
+                                        <a href="#link"><img src="images/logo-diol.png" alt="Diol"> Разработка сайта</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        <div class="ssm-overlay ssm-toggle-nav"></div>
+
+        <script src="vendor/jquery-3.3.1.min.js" ></script>
+        <script src="vendor/swiper.min.js" ></script>
+        <script src="vendor/jquery.fancybox.min.js" ></script>
+
+        <script src="vendor/jquery.touchSwipe.min.js" ></script>
+        <script src="vendor/jquery.slideandswipe.min.js" ></script>
+
+        <script src="vendor/util.js" ></script>
+        <script src="vendor/tab.js" ></script>
+        <script src="vendor/modal.js" ></script>
+        <script src="vendor/mask.js" ></script>
+        <script src="js/main.js" ></script>
+    </body>
+</html>

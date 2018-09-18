@@ -1,0 +1,218 @@
+.article {
+	padding-bottom: 115px;
+	font-family: "Quiza Pro";
+	font-size: 18px;
+	font-style: italic;
+	color: #393939;
+	line-height: 30px;
+}
+
+
+.article h1,
+.article .h1 {
+	margin: 45px 0 30px;
+}
+
+.article h2,
+.article .h2 {
+	margin: 20px 0 20px;
+}
+
+.article h3,
+.article .h3 {
+	margin: 30px 0 25px;
+}
+
+.article h4,
+.article .h4 {
+	margin: 25px 0 20px;
+}
+
+.article h5,
+.article .h5 {
+	margin: 20px 0 20px;
+}
+
+.article h6,
+.article .h6 {
+	margin: 20px 0 20px;
+}
+
+
+.article [class^="h"] + p {
+	margin-top: 20px;
+}
+
+
+.article p:not([class^="h"]),
+.article a,
+.article ul,
+.article ol {
+	font-size: inherit;
+}
+
+.article p {
+	margin: 32px 0;
+	color: inherit;
+}
+
+.article p + h1,
+.article ul + h1,
+.article ol + h1,
+.article p + .h1,
+.article ul + .h1,
+.article ol + .h1 {
+	margin-top: 80px;
+}
+
+.article p + h2,
+.article ul + h2,
+.article ol + h2,
+.article p + .h2,
+.article ul + .h2,
+.article ol + .h2 {
+	margin-top: 70px;
+}
+
+.article p + h3,
+.article ul + h3,
+.article ol + h3,
+.article p + .h3,
+.article ul + .h3,
+.article ol + .h3 {
+	margin-top: 80px;
+}
+
+.article p + h4,
+.article ul + h4,
+.article ol + h4,
+.article p + .h4,
+.article ul + .h4,
+.article ol + .h4 {
+	margin-top: 75px;
+}
+
+.article p + h5,
+.article ul + h5,
+.article ol + h5,
+.article p + .h5,
+.article ul + .h5,
+.article ol + .h5 {
+	margin-top: 60px;
+}
+
+.article p + h6,
+.article ul + h6,
+.article ol + h6,
+.article p + .h6,
+.article ul + .h6,
+.article ol + .h6 {
+	margin-top: 60px;
+}
+
+.article p + .alert {
+	margin: -10px 0;
+}
+
+.article [class^="h"] + [class^="h"] {
+    margin: 40px 0;
+}
+
+
+.article a {
+	color: #425481;
+    font-family: "Quiza Pro";
+    font-style: italic;
+    text-decoration: none;
+}
+
+.article a:hover {
+	text-decoration: underline;
+}
+
+
+.article ul {
+	position: relative;
+	margin: 0 0 40px;
+	padding: 0;
+	list-style: none;
+}
+
+.article ul li {
+	position: relative;
+	margin: 30px 0;
+	padding: 0 0 0 38px;
+}
+.article ul li:before {
+	content: '';
+	position: absolute;
+	top: 13px;
+	left: 0;
+	width: 25px;
+	height: 2px;
+	background-color: #40444e;
+}
+
+.article ul li ul {
+	margin-bottom: 0;
+}
+
+.article ul li ul li {
+	padding: 0 0 0 20px;
+}
+.article ul li ul li:before {
+	width: 13px;
+	height: 2px;
+}
+
+.article ol {
+	counter-reset: item;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-position: inside;
+}
+
+.article ol li {
+	position: relative;
+	margin: 30px 0;
+	padding: 0 0 0 38px;
+}
+
+.article ol li:before {
+	position: absolute;
+	top: -2px;
+	left: 0;
+	content: counter(item) ") ";
+	counter-increment: item;
+	font-family: "Proxima Nova";
+	font-style: normal;
+	font-weight: 700;
+}
+
+.article > ol > li {
+	margin: 28px 0;
+}
+
+.article > ol > li ol li {
+	padding: 0 0 0 18px;
+}
+
+.article > ol > li ol li:before {
+	content: counter(item) ". ";
+	font-weight: normal;
+}
+
+
+.article img.pull-left {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.article img.pull-right {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+

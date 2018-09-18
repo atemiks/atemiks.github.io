@@ -1,0 +1,196 @@
+@media screen and (max-width: 1440px) {
+	h1,
+	.h1 {
+		font-size: 34px;
+	}
+
+	h2,
+	.h2 {
+		font-size: 28px;
+	}
+
+	h3,
+	.h3 {
+		font-size: 26px;
+	}
+
+	h4,
+	.h4 {
+		font-size: 23px;
+	}
+
+	h5,
+	.h5 {
+		font-size: 20px;
+	}
+
+	h6,
+	.h6 {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	h1,
+	.h1 {
+		font-size: 32px;
+		letter-spacing: 6.4px;
+	}
+
+	h2,
+	.h2 {
+		font-size: 26px;
+		letter-spacing: 5.4px;
+	}
+
+	h3,
+	.h3 {
+		font-size: 24px;
+		letter-spacing: 5px;
+	}
+
+	h4,
+	.h4 {
+		font-size: 21px;
+		letter-spacing: 4.4px;
+	}
+
+	h5,
+	.h5 {
+		font-size: 18px;
+		letter-spacing: 3.8px;
+	}
+
+	h6,
+	.h6 {
+		font-size: 16px;
+		letter-spacing: 3.4px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.article {
+		font-size: 16px;
+	}
+
+	h1,
+	.h1 {
+		font-size: 30px;
+		letter-spacing: 5.8px;
+	}
+
+	h2,
+	.h2 {
+		font-size: 24px;
+		letter-spacing: 4.8px;
+	}
+
+	h3,
+	.h3 {
+		font-size: 22px;
+		letter-spacing: 4.4px;
+	}
+
+	h4,
+	.h4 {
+		font-size: 20px;
+		letter-spacing: 3.8px;
+	}
+
+	h5,
+	.h5 {
+		font-size: 18px;
+		letter-spacing: 3.2px;
+	}
+
+	h6,
+	.h6 {
+		font-size: 16px;
+		letter-spacing: 2.8px;
+	}
+
+
+	.article img.pull-left,
+	.article img.pull-right {
+		max-width: 40%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	h1,
+	.h1 {
+		font-size: 28px;
+		letter-spacing: 5.2px;
+	}
+
+	h2,
+	.h2 {
+		font-size: 22px;
+		letter-spacing: 4.2px;
+	}
+
+	h3,
+	.h3 {
+		font-size: 20px;
+		letter-spacing: 3.8px;
+	}
+
+	h4,
+	.h4 {
+		font-size: 18px;
+		letter-spacing: 3.2px;
+	}
+
+	h5,
+	.h5 {
+		font-size: 16px;
+		letter-spacing: 2.6px;
+	}
+
+	h6,
+	.h6 {
+		font-size: 14px;
+		letter-spacing: 2.2px;
+	}
+
+	.article img.pull-left,
+	.article img.pull-right {
+		float: none !important;
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	h1,
+	.h1 {
+		letter-spacing: 4.6px;
+	}
+
+	h2,
+	.h2 {
+		letter-spacing: 3.6px;
+	}
+
+	h3,
+	.h3 {
+		letter-spacing: 3.2px;
+	}
+
+	h4,
+	.h4 {
+		letter-spacing: 2.6px;
+	}
+
+	h5,
+	.h5 {
+		letter-spacing: 2px;
+	}
+
+	h6,
+	.h6 {
+		letter-spacing: 1.6px;
+	}
+
+}

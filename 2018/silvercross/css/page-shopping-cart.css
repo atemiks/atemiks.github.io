@@ -1,0 +1,489 @@
+.section-shopping-cart {
+	/*overflow: hidden;*/
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.section-shopping-cart .shopping-cart-content {
+	position: relative;
+	z-index: 2;
+	padding-right: calc(8.33333% + 15px);
+	padding-bottom: 90px;
+	background-color: #fff;
+}
+
+.section-shopping-cart .shopping-cart-aside {
+	position: static;
+	/*position: relative;
+	z-index: 1;*/
+	/*height: 100%;*/
+	padding: 50px 15px 50px 40px;
+	background-color: #231f20;
+	color: #fefefe;
+}
+.section-shopping-cart .shopping-cart-aside:after {
+	content: '';
+	position: absolute;
+	/*z-index: -1;*/
+	top: 0;
+	/*left: 100%;*/
+	right: 0;
+	bottom: 0;
+	width: 50vw;
+	background-color: #231f20;
+}
+
+.section-shopping-cart .shopping-cart-aside .shopping-cart-aside-inner {
+	position: sticky;
+	z-index: 2;
+	top: 50px;
+	align-self: flex-start;
+}
+
+.shopping-item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 15px 0 30px;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.shopping-item:last-child {
+	border-bottom: none;
+}
+
+.shopping-item .left,
+.shopping-item .right {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.shopping-item .left {
+	flex: 0 0 auto;
+}
+
+.shopping-item .right {
+	flex: 1 1 auto;
+}
+
+.shopping-item .shopping-thumbnail {
+	position: relative;
+	flex: 0 0 159px;
+	max-width: 159px;
+	width: 159px;
+	padding-bottom: 153px;
+}
+
+.shopping-item .shopping-thumbnail .shopping-picture {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
+
+
+
+.shopping-item .shopping-content {
+	flex: 1 1 auto;
+	
+} 
+
+
+.shopping-item .shopping-summary {
+	flex: 1 1 auto;
+	padding: 0 40px;
+}
+
+.shopping-item .shopping-title {
+	margin: 0 0 5px;
+	color: #40444e;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 3.6px;
+}
+
+.shopping-item .shopping-title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.shopping-item .shopping-description {
+	max-width: 430px;
+	color: #525252;
+	font-family: "Quiza Pro";
+	font-size: 14px;
+	font-style: italic;
+	line-height: 25px;
+}
+
+.shopping-item .shopping-info {
+	cursor: default;
+	margin: 0 -8px 15px;
+	padding: 0;
+	list-style: none;
+	color: #464646;
+	font-family: "Quiza Pro";
+	font-size: 13px;
+	font-style: italic;
+	line-height: 25px;
+}
+
+.shopping-item .shopping-info  .shopping-info-item {
+	position: relative;
+	display: inline-block;
+	padding: 0 8px;
+}
+
+.shopping-item .shopping-info .shopping-info-item .shopping-info-color {
+	display: inline-block;
+	vertical-align: middle;
+	width: 22px;
+	height: 22px;
+	margin: 0 10px 0 0;
+	border-right: 50%;
+}
+
+
+.shopping-item .shopping-promotions {
+	flex: 0 0 325px;
+	max-width: 325px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 10px;
+	background-color: #e8e8e9;
+	color: #464646;
+	font-family: "Quiza Pro";
+	font-size: 13px;
+	font-style: italic;
+	line-height: 25px;
+}
+
+.shopping-item .shopping-promotions a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.shopping-item .shopping-promotions .shopping-promotions-thumbnail {
+	flex: 0 0 40px;
+	max-width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+.shopping-item .shopping-promotions .shopping-promotions-text {}
+
+
+
+.shopping-item .shopping-order {
+	flex: 0 0 320px;
+	max-width: 320px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+}
+
+.shopping-item .shopping-order-number {
+	flex: 0 0 160px;
+	max-width: 160px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.shopping-item .shopping-order-number input {
+	width: 92px;
+	height: 40px;
+	margin: 0 8px;
+	color: #707070;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: center;
+}
+
+.shopping-item .shopping-order-number .button {
+	cursor: pointer;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+	border: none;
+	border-radius: 50%;
+	background-color: #41454e;
+	font-size: 14px;
+	color: #fff;
+}
+
+.shopping-item .shopping-order-number .button.dec {
+	order: -1;
+}
+
+
+.shopping-item .shopping-order-price {
+	flex: 0 0 210px;
+	max-width: 210px;
+	padding: 0 25px;
+}
+
+.shopping-item .shopping-order-price ins {
+	color: #40444e;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 4px;
+	text-decoration: none;
+}
+
+.shopping-item .shopping-order-price del {
+	display: block;
+	color: #c84b4b;
+	font-family: "Quiza Pro";
+	font-size: 13px;
+	font-style: italic;
+	line-height: 25px;
+	text-decoration: line-through;
+}
+
+.shopping-item .shopping-order-hint {
+	color: #c84b4b;
+	font-family: "Quiza Pro";
+	font-size: 13px;
+	font-style: italic;
+	line-height: 25px;
+}
+
+
+
+.shopping-item .shopping-actions {
+	flex: 0 0 14%;
+	max-width: 14%;
+	text-align: right;
+}
+
+.shopping-item .shopping-action {
+	cursor: pointer;
+	border: none;
+	border-radius: 0;
+	background: none;
+	font-size: 24px;
+	color: #c5c7ca;
+	transition: color 300ms ease;
+}
+
+.shopping-item .shopping-action:hover {
+	color: #000;
+}
+
+
+.section-ordering {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.section-ordering-title {
+	margin: 33px 0 65px;
+	color: #40444e;
+	font-family: "Proxima Nova";
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 6px;
+}
+
+.ordering-unit-title {
+	margin: 55px 0 15px;
+	color: #40444e;
+	font-family: "Proxima Nova";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 4px;
+}
+
+.ordering-choose-group {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 0 0 25px;
+}
+.ordering-choose {
+	cursor: pointer;
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    min-height: 130px;
+    padding: 20px 33px 10px 30px;
+	border: 1px solid transparent;
+	border-radius: 15px;
+	background-color: #e8e8e9;
+	box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.15);
+	transition: background-color 300ms ease;
+}
+
+.ordering-choose + .ordering-choose {
+	margin-left: -10px;
+}
+
+
+.ordering-choose .ordering-choose-title {
+	margin: 0 0 7px;
+	color: #40444e;
+	font-family: "Proxima Nova";
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 3.6px;
+}
+
+.ordering-choose .ordering-choose-description {
+	max-width: 425px;
+	margin: 0 0 5px;
+	color: #6a6d74;
+	font-family: "Quiza Pro";
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 25px;
+}
+.ordering-choose .ordering-choose-description span {
+	color: #d67878;
+}
+
+.ordering-choose.active {
+	z-index: 1;
+	border-color: #40444e;;
+	background-color: #fff;
+	box-shadow: none;
+}
+
+
+.form-ordering .form-group {
+	margin-bottom: 15px;
+}
+
+.form-ordering .custom-control {
+	margin: 5px 0;
+}
+
+.form-ordering button[type="submit"] {
+	min-width: 200px;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+
+.order-total-block {
+
+}
+
+.order-total-title {
+	margin: 0 0 35px;
+	color: inherit;
+	font-family: "Proxima Nova";
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 6px;
+}
+
+.order-total-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: inherit;
+}
+
+.order-total-list .order-item {
+	margin-bottom: 25px;
+}
+
+.order-total-list .order-title {
+	color: inherit;
+	font-family: "Quiza Pro";
+	font-size: 16px;
+	font-style: italic;
+	line-height: 20px;
+}
+
+.order-total-list .order-value {
+	color: inherit;
+	font-family: "Proxima Nova";
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 3.4px;
+}
+
+
+
+.page-shopping-cart .shopping-grid {
+	margin-top: 30px;
+}
+
+.page-shopping-cart .shopping-grid  .shopping-item {
+	padding: 25px 0 30px;
+}
+
+.page-shopping-cart .shopping-grid  .shopping-item:last-child {
+	border-bottom: 1px solid #e4e4e4;
+}
+
+
+.page-shopping-cart .timeline-grid  {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+

@@ -1,0 +1,313 @@
+.section-hero {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	min-height: 600px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: #121620;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.section-hero:after{
+	content:'';
+	min-height:inherit;
+	font-size:0;
+}
+
+.section-hero .hero-title {
+	margin: 0 0 20px;
+	color: #ffffff;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 50px;
+	letter-spacing: 8px;
+}
+
+.section-hero .hero-title span {
+	display: inline-block;
+	background: linear-gradient(
+	  to bottom,
+	  transparent 50%,
+	  #40444e 50%
+	);
+	background-size: 100% 54px;
+}
+
+.section-hero .hero-subtitle {
+	margin: 0 0 30px;
+	color: #aeb1ba;
+	font-family: "Quiza Pro";
+	font-size: 25px;
+	font-style: italic;
+	line-height: 30px;
+}
+
+
+.section-shop-advantages {
+	position: relative;
+	overflow: hidden;
+	padding: 30px 0;
+	background-color: #e8e8e9;
+}
+
+.section-shop-advantages .timeline-grid {
+	position: relative;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.section-shop-advantages .timeline-grid:before,
+.section-shop-advantages .timeline-grid:after {
+	content: '';
+    position: absolute;
+    top: 50%;
+    width: 40vw;
+    border-top: 1px solid #a8abae;
+    transform: translateY(-100%);
+}
+
+.section-shop-advantages .timeline-grid:before {
+	right: 100%;
+}
+
+.section-shop-advantages .timeline-grid:after {
+	left: calc(100% - 15px);
+}
+
+.section-shop-advantages .timeline-grid .timeline-item:nth-child(4n+4) .timeline-card:after {
+	display: block;
+}
+
+
+.section-shop-advantages .timeline-grid .timeline-card .timeline-thumbnail {
+	font-size: 64px;
+	color: #40444e;
+	line-height: 1;
+}
+
+.shop-advantage-card .shop-advantage-title {
+	margin: 0;
+	padding: 0 20px 0 0;
+	background-color: #e8e8e9;
+	color: #40444e;
+	font-family: "Quiza Pro";
+	font-size: 18px;
+	font-style: italic;
+	line-height: 25px;
+}
+
+
+
+
+
+.page-home .section-news {
+	margin: -15px 0;
+	background-color: #e8e8e9;
+}
+
+.news-grid {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.news-grid .col {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.news-grid .col.news-col-right {
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+
+.news-card {
+	position: relative;
+	z-index: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	width: 100%;
+	min-height: 240px;
+	padding: 40px;
+	border: 15px solid transparent;
+	background-position: right center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+    background-clip: padding-box;
+}
+
+.news-card:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.news-card .news-title,
+.news-card .news-description {
+	max-width: 405px;
+}
+
+.news-card .news-title {
+	margin: 0 0 16px;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 35px;
+	letter-spacing: 5.6px;
+}
+
+.news-card .news-description {
+	margin: 0 0 12px;
+	font-family: "Quiza Pro";
+	font-size: 17px;
+	font-style: italic;
+	color: #595c64;
+	line-height: 30px;
+}
+
+.news-card .news-action {
+	display: inline-block;
+	min-width: 125px;
+	padding: 12px 10px 10px;
+	border: 1px solid transparent;
+	border-radius: 30px;
+	color: #40444e;
+	font-family: "Quiza Pro";
+	font-size: 16px;
+	font-style: italic;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+.news-card.dark:after {
+	background: rgba(0,0,0,.1);
+}
+.news-card.secondary:after {
+	background: -webkit-linear-gradient(bottom left, rgba(198,198,196,0.65) 0%, rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(bottom left, rgba(198,198,196,0.65) 0%, rgba(0,0,0,0) 100%);
+	background: linear-gradient(to top right, rgba(198,198,196,0.65) 0%, rgba(0,0,0,0) 100%);
+}
+
+.news-card.dark .news-title,
+.news-card.dark .news-description {
+	color: #fff;
+}
+
+.news-card.dark .news-action,
+.news-card.secondary .news-action  {
+	background-color: #fff;
+}
+
+.news-card.light .news-action {
+	border-color: #ced0d2;
+	color: #40444e;
+}
+
+
+.page-home .section-categories {
+	padding: 50px 0;
+	background-color: #e8e8e9;
+}
+
+
+.category-card {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+.category-card .category-thumbnail {
+	position: relative;
+	padding-bottom: 100%;
+}
+
+.category-card .category-thumbnail img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto auto 0;
+}
+
+.category-card .category-title {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	min-height: 42px;
+	margin: 25px 0 20px;
+	color: #40444e;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 3.6px;
+}
+
+/* flexbox min-height ie fix */
+.category-card .category-title:after  {
+	content:'';
+	min-height:inherit;
+	font-size:0;
+}
+
+
+.page-home .section-catalog .section-header,
+.page-home .section-catalog .product-gallery-nav {
+	text-align: center;
+}
+
+.page-home .section-catalog .section-header {
+	margin-bottom: 20px;
+}
+
+/*.page-home .section-catalog .section-header .section-title {
+	font-size: 35px;
+	letter-spacing: 7px;
+}
+*/
+.page-home .products-grid {
+	justify-content: center;
+}
+
+@media screen and (min-width: 1441px) {
+	.page-home .section-article-higlight {
+		padding-bottom: 95px;
+	}
+}

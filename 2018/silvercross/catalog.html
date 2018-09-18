@@ -4,22 +4,61 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
-        <link rel="stylesheet" href="vendor/swiper.min.css">
-        <link rel="stylesheet" href="vendor/jquery.fancybox.min.css">
-
-        <link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/pages.css">
-        <link rel="stylesheet" href="css/catalog.css">
-        <link rel="stylesheet" href="css/product.css">
-        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/style.css">
 
 
         <title>Silver Cross / Каталог</title>
     </head>
-    <body>
+    <body class="page-catalog" >
+        <!-- Modal -->
+        <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-header-content">
+                            <div class="modal-title">Перезвоните мне</div>
+                            <div class="modal-subtitle">Укажите свои контактные данные и наш специалист свяжется с Вами в ближайшее время</div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <i class="icon-close-thin" ></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="" class="form-modal">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="formProductLiveName">Ваше имя <sup>*</sup></label>
+                                            <input name="formProductLiveName" type="text" required >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="formProductLivePhone">Телефон <sup>*</sup></label>
+                                            <input name="formProductLivePhone" type="tel" placeholder="+7 (___) ___-__-__" required >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <button class="btn btn-italic btn-lg btn-dark" type="submit" >Перезвоните мне</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="offcanvas">
             <div class="offcanvas-header">
                 <ul class="offcanvas-header-menu">
@@ -75,7 +114,7 @@
 
                 <ul class="offcanvas-submenu">
                     <li class="offcanvas-submenu-item">
-                        <a class="offcanvas-submenu-link" href="#link">Оплата и доставка        </a>
+                        <a class="offcanvas-submenu-link" href="#link">Оплата и доставка</a>
                     </li>
                     <li class="offcanvas-submenu-item">
                         <a class="offcanvas-submenu-link" href="#link">Контакты</a>
@@ -96,7 +135,7 @@
                     <div class="container-fluid">
                         <div class="header-upper row align-items-center">
                             <div class="header-side-left col">
-                                <button class="header-toggler header-toggler-offcanvas">
+                                <button class="header-toggler header-toggler-offcanvas ssm-toggle-nav">
                                     <i class="header-toggler-icon icon-bars" ></i>
                                     <span class="header-toggler-text">Меню / каталог</span>
                                 </button>
@@ -125,7 +164,7 @@
                                         <a href="tel:+74955893731"><i class="icon-phone" ></i><span>+7 (495) 589-37-31</span></a>
                                    </div>
                                    <div class="header-contact-order">
-                                       <button class="btn btn-light" >Перезвоните мне</button>
+                                       <button class="btn btn-italic btn-light" data-toggle="modal" data-target="#modalCallback" >Перезвоните мне</button>
                                    </div>
                                 </div>
                                 
@@ -143,7 +182,93 @@
                                <div class="col">
                                     <nav class="header-nav" aria-label="header-nav-list" >
                                         <ul class="header-nav-list">
-                                            <li class="header-nav-item active" ><a href="#link">Silver Cross </a></li>
+                                            <li class="header-nav-item has-children active" >
+                                                <a href="#link">Silver Cross </a>
+
+                                                <div class="mega-menu">
+                                                    <div class="side-left">
+                                                        <ul class="mega-menu-list">
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-1.png" alt="Коляски">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Коляски</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-2.png" alt="Постельные принадлежности">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Постельные принадлежности</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-3.png" alt="Автокресло">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Автокресло</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-4.png" alt="Игрушки">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Игрушки</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-5.png" alt="Мебель">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Мебель</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="mega-menu-item">
+                                                                <a href="#link" class="mega-category">
+                                                                    <div class="mega-category-thumbnail">
+                                                                        <img src="images/uploads/header/menu/menu-category/menu-category-item-6.png" alt="Аксессуары">
+                                                                    </div>
+                                                                    <p class="mega-category-title">Аксессуары</p>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="side-right">
+                                                        <div class="product-card mega-product horizontal">
+                                                            <div class="product-aside">
+                                                                <div class="product-thumbnail">
+                                                                    <img src="images/uploads/header/mega-product/mega-product-item-1.png" alt="Silver Cross Kensington" class="product-picture">
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-content">
+                                                                <div class="product-header">
+                                                                    <p class="product-title">Silver Cross Kensington</p>
+                                                                </div>
+                                                                <div class="product-body">
+                                                                    <p class="product-description">Неповторимый стиль английской королевской семьи</p>
+                                                                </div>
+                                                                <div class="product-footer">
+                                                                    <div class="product-price">
+                                                                        <ins>350 000&nbsp;₽</ins>
+                                                                        <del>450 000&nbsp;₽</del>
+                                                                    </div>
+                                                                    <a href="#link" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div
+                                            </li>
                                             <li class="header-nav-item" ><a href="#link">Детские конверты и спальные мешки Aro и Uzturre</a></li>
                                             <li class="header-nav-item" ><a href="#link">Стульчики Peg-perego </a></li>
                                             <li class="header-nav-item" ><a href="#link">OK Baby </a></li>
@@ -155,10 +280,30 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="header-search-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="header-search col">
+                                    <div class="header-search-title">
+                                        <i class="icon-search" ></i>
+                                        Искать на Silver Cross  |
+                                    </div>
+                                    <form action="" class="form-header-search">
+                                        <input type="search">
+                                    </form>
+
+                                    <button class="header-search-close" >
+                                        <i class="icon-close-thin" ></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </header>
                 
                 <main class="main">
-                    <section class="section-display" style="background-image: url('images/page-catalog/section-display/catalog-display-background.png')" >
+                    <section class="section-display" style="background-image: url('images/uploads/page-catalog/section-display/catalog-display-background.png')" >
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col">
@@ -176,55 +321,55 @@
                                 <div class="col">
                                    <nav aria-label="subcategory-list" >
                                         <ul class="subcategory-list">
-                                            <a href="#link" class="subcategory-item active" >
+                                            <a href="catalog.html" class="subcategory-item active" >
                                                 <div class="subcategory-card">
                                                     <div class="subcategory-thumbnail">
-                                                        <img src="images/page-catalog/section-display/subcategory/subcategory-item-1.png" alt="Коляски">
+                                                        <img src="images/uploads/page-catalog/section-display/subcategory/subcategory-item-1.png" alt="Коляски">
                                                     </div>
                                                     <p class="subcategory-title">Коляски</p>
                                                 </div>
                                             </a>
                                             
-                                            <a href="#link" class="subcategory-item" >
+                                            <a href="catalog.html" class="subcategory-item" >
                                                 <div class="subcategory-card">
                                                     <div class="subcategory-thumbnail">
-                                                        <img src="images/page-catalog/section-display/subcategory/subcategory-item-2.png" alt="Автокресло">
+                                                        <img src="images/uploads/page-catalog/section-display/subcategory/subcategory-item-2.png" alt="Автокресло">
                                                     </div>
                                                     <p class="subcategory-title">Автокресло</p>
                                                 </div>
                                             </a>
                                             
-                                            <a href="#link" class="subcategory-item" >
+                                            <a href="catalog.html" class="subcategory-item" >
                                                 <div class="subcategory-card">
                                                     <div class="subcategory-thumbnail">
-                                                        <img src="images/page-catalog/section-display/subcategory/subcategory-item-3.png" alt="Мебель">
+                                                        <img src="images/uploads/page-catalog/section-display/subcategory/subcategory-item-3.png" alt="Мебель">
                                                     </div>
                                                     <p class="subcategory-title">Мебель</p>
                                                 </div>
                                             </a>
                                             
-                                            <a href="#link" class="subcategory-item" >
+                                            <a href="catalog.html" class="subcategory-item" >
                                                 <div class="subcategory-card">
                                                     <div class="subcategory-thumbnail">
-                                                        <img src="images/page-catalog/section-display/subcategory/subcategory-item-4.png" alt="Постельные принадлежности">
+                                                        <img src="images/uploads/page-catalog/section-display/subcategory/subcategory-item-4.png" alt="Постельные принадлежности">
                                                     </div>
                                                     <p class="subcategory-title">Постельные принадлежности</p>
                                                 </div>
                                             </a>
                                             
-                                            <a href="#link" class="subcategory-item" >
+                                            <a href="catalog.html" class="subcategory-item" >
                                                 <div class="subcategory-card">
                                                     <div class="subcategory-thumbnail">
-                                                        <img src="images/page-catalog/section-display/subcategory/subcategory-item-5.png" alt="Игрушки">
+                                                        <img src="images/uploads/page-catalog/section-display/subcategory/subcategory-item-5.png" alt="Игрушки">
                                                     </div>
                                                     <p class="subcategory-title">Игрушки</p>
                                                 </div>
                                             </a>
                                             
-                                            <a href="#link" class="subcategory-item" >
+                                            <a href="catalog.html" class="subcategory-item" >
                                                 <div class="subcategory-card">
                                                     <div class="subcategory-thumbnail">
-                                                        <img src="images/page-catalog/section-display/subcategory/subcategory-item-6.png" alt="Аксессуары">
+                                                        <img src="images/uploads/page-catalog/section-display/subcategory/subcategory-item-6.png" alt="Аксессуары">
                                                     </div>
                                                     <p class="subcategory-title">Аксессуары</p>
                                                 </div>
@@ -252,124 +397,135 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <form action="" class="form-catalog-filter">
-                                        <p class="form-catalog-title">Выберите серию:</p>
-                                        <div class="form-catalog-group">
-                                           <div class="filter-checkbox custom-control custom-checkbox">
-                                                <input type="checkbox" id="filterCheck01" name="checkbox" checked />
-                                                <label for="filterCheck01"><span>Классические</span></label>
-                                           </div>
-                                           <div class="filter-checkbox custom-control custom-checkbox">
-                                                <input type="checkbox" id="filterCheck02" name="checkbox" />
-                                                <label for="filterCheck02"><span>Aston Martin</span></label>
-                                           </div>
-                                           <div class="filter-checkbox custom-control custom-checkbox">
-                                                <input type="checkbox" id="filterCheck03" name="checkbox" />
-                                                <label for="filterCheck03"><span>Timeless</span></label>
-                                           </div>
-                                           <div class="filter-checkbox custom-control custom-checkbox">
-                                                <input type="checkbox" id="filterCheck04" name="checkbox" />
-                                                <label for="filterCheck04"><span>Expedition</span></label>
-                                           </div>
-                                           <div class="filter-checkbox custom-control custom-checkbox">
-                                                <input type="checkbox" id="filterCheck05" name="checkbox" />
-                                                <label for="filterCheck05"><span>Eton Gray</span></label>
-                                           </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="products-grid row">
-                               <div class="product-item col col-sm-6 col-md-3">
-                                   <div class="product-card">
-                                       <div class="product-header">
+                                    <div class="product-gallery-nav">
+                                        <p class="product-gallery-nav-title">Выберите серию:</p>
+                                        <ul class="nav nav-pills nav-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#product-classic-tab" aria-controls="product-classic-tab" role="tab" data-toggle="tab" >Классические</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-aston-tab" aria-controls="product-aston-tab" role="tab" data-toggle="tab" >Aston Martin</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-timeless-tab" aria-controls="product-timeless-tab" role="tab" data-toggle="tab" >Timeless</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-expedition-tab" aria-controls="product-expedition-tab" role="tab" data-toggle="tab" >Expedition</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-eton-tab" aria-controls="product-eton-tab" role="tab" data-toggle="tab" >Eton Gray</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" >
+                                        <div class="tab-pane fade show active" role="tabpanel" id="product-classic-tab" >
+                                            <div class="products-grid row">
+                                               <div class="product-item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                                   <div class="product-card">
+                                                       <div class="product-header">
 
-                                           <div class="product-gallery">
-                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="1" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="2" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="3" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="4" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="5" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="6" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="7" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="8" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="9" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="10" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="11" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="12" >
-                                           </div>
-                                           <p class="product-title">Silver Cross Balmoral</p>
-                                       </div>
-                                       <div class="product-body">
-                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                           <ul class="product-colors">
-                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                               
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="7" data-price="378 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="8" data-price="305 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="9" data-price="309 999" data-old-price="430 000"></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-blue.png')" data-index="10" data-price="399 999" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-black.png')" data-index="11" data-price="299 999" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="12" data-price="400 000" data-old-price="430 000" ></li>
-                                           </ul>
+                                                           <div class="product-gallery">
+                                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="1" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="2" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="3" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="4" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="5" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="6" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="7" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="8" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="9" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="10" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Balmoral" data-index="11" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Balmoral" data-index="12" >
+                                                           </div>
+                                                           <p class="product-title">Silver Cross Balmoral</p>
+                                                       </div>
+                                                       <div class="product-body">
+                                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                           <ul class="product-colors">
+                                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                               
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="7" data-price="378 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="8" data-price="305 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="9" data-price="309 999" data-old-price="430 000"></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-blue.png')" data-index="10" data-price="399 999" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-black.png')" data-index="11" data-price="299 999" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="12" data-price="400 000" data-old-price="430 000" ></li>
+                                                           </ul>
 
-                                           <div class="product-helptext">Выставочный образец!</div>
-                                       </div>
-                                       <div class="product-footer">
-                                           <div class="product-price">
-                                               <ins>350 000 ₽</ins>
-                                               <del>450 000 ₽</del>
-                                           </div>
-                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
-                                       </div>
-                                   </div>
-                               </div>
-                                   
-                               <div class="product-item col col-sm-6 col-md-3">
-                                   <div class="product-card">
-                                       <div class="product-header">
-                                           <div class="product-gallery">
-                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Kensington" data-index="1">
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Kensington" data-index="2">
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Kensington" data-index="3">
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Kensington" data-index="4">
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Kensington" data-index="5">
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Kensington" data-index="6">
-                                           </div>
-                                           <p class="product-title">Silver Cross Kensington</p>
-                                       </div>
-                                       <div class="product-body">
-                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                           <ul class="product-colors">
-                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                           </ul>
-
-                                           <div class="product-promotions">
-                                               <div class="product-promotions-thumbnail">
-                                                   <img src="images/uploads/page-catalog/products-promotions/product-promotions-item-1.png" alt="Чехол" class="product-promotions-picture">
+                                                           <div class="product-helptext">Выставочный образец!</div>
+                                                       </div>
+                                                       <div class="product-footer">
+                                                           <div class="product-price">
+                                                               <ins>350 000&nbsp;₽</ins>
+                                                               <del>450 000&nbsp;₽</del>
+                                                           </div>
+                                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                       </div>
+                                                   </div>
                                                </div>
-                                               <div class="product-promotions-text">Чехол на коляску <a href="#link">thebrandname</a> в подарок</div>
-                                           </div>
-                                       </div>
-                                       <div class="product-footer">
-                                           <div class="product-price">
-                                               <ins>350 000 ₽</ins>
-                                               <del>450 000 ₽</del>
-                                           </div>
-                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
-                                       </div>
-                                   </div>
-                               </div>
+                                                   
+                                               <div class="product-item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                                   <div class="product-card">
+                                                       <div class="product-header">
+                                                           <div class="product-gallery">
+                                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Kensington" data-index="1">
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Kensington" data-index="2">
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Kensington" data-index="3">
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Kensington" data-index="4">
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-2.png" alt="Silver Cross Kensington" data-index="5">
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-heritage/product-heritage-item-1.png" alt="Silver Cross Kensington" data-index="6">
+                                                           </div>
+                                                           <p class="product-title">Silver Cross Kensington</p>
+                                                       </div>
+                                                       <div class="product-body">
+                                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                           <ul class="product-colors">
+                                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                           </ul>
+
+                                                           <div class="product-promotions">
+                                                               <div class="product-promotions-thumbnail">
+                                                                   <img src="images/uploads/page-catalog/products-promotions/product-promotions-item-1.png" alt="Чехол" class="product-promotions-picture">
+                                                               </div>
+                                                               <div class="product-promotions-text">Чехол на коляску <a href="#link">thebrandname</a> в подарок</div>
+                                                           </div>
+                                                       </div>
+                                                       <div class="product-footer">
+                                                           <div class="product-price">
+                                                               <ins>350 000&nbsp;₽</ins>
+                                                               <del>450 000&nbsp;₽</del>
+                                                           </div>
+                                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-aston-tab" >
+                                            2
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-timeless-tab" >
+                                            3
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-expedition-tab" >
+                                            4
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-eton-tab" >
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -383,7 +539,176 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <form action="" class="form-catalog-filter">
+                                    <div class="product-gallery-nav">
+                                        <p class="product-gallery-nav-title">Выберите серию:</p>
+                                        <ul class="nav nav-pills nav-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#product-classic-2-tab" aria-controls="product-classic-2-tab" role="tab" data-toggle="tab" >Классические</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-aston-2-tab" aria-controls="product-aston-2-tab" role="tab" data-toggle="tab" >Aston Martin</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-timeless-2-tab" aria-controls="product-timeless-2-tab" role="tab" data-toggle="tab" >Timeless</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-expedition-2-tab" aria-controls="product-expedition-2-tab" role="tab" data-toggle="tab" >Expedition</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-eton-2-tab" aria-controls="product-eton-2-tab" role="tab" data-toggle="tab" >Eton Gray</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" >
+                                        <div class="tab-pane fade show active" role="tabpanel" id="product-classic-2-tab" >
+                                            <div class="products-grid row">
+                                               <div class="product-item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                                   <div class="product-card">
+                                                       <div class="product-header">
+                                                           <div class="product-gallery">
+                                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-1.png" alt="Silver Cross Wave" data-index="1" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
+                                                           </div>
+                                                           <p class="product-title">Silver Cross Wave</p>
+                                                       </div>
+                                                       <div class="product-body">
+                                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                           <ul class="product-colors">
+                                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                           </ul>
+                                                       </div>
+                                                       <div class="product-footer">
+                                                           <div class="product-price">
+                                                               <ins>350 000&nbsp;₽</ins>
+                                                               <del>450 000&nbsp;₽</del>
+                                                           </div>
+                                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                                   
+                                               <div class="product-item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                                   <div class="product-card">
+                                                       <div class="product-header">
+                                                           <div class="product-gallery">
+                                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-2.png" alt="Silver Cross Pioner" data-index="1" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
+                                                           </div>
+                                                           <p class="product-title">Silver Cross Pioner</p>
+                                                       </div>
+                                                       <div class="product-body">
+                                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                           <ul class="product-colors">
+                                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                           </ul>
+                                                       </div>
+                                                       <div class="product-footer">
+                                                           <div class="product-price">
+                                                               <ins>350 000&nbsp;₽</ins>
+                                                               <del>450 000&nbsp;₽</del>
+                                                           </div>
+                                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+
+                                               <div class="product-item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                                   <div class="product-card">
+                                                       <div class="product-header">
+                                                           <div class="product-gallery">
+                                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-3.png" alt="Silver Cross Surf" data-index="1" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
+                                                           </div>
+                                                           <p class="product-title">Silver Cross Surf</p>
+                                                       </div>
+                                                       <div class="product-body">
+                                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                           <ul class="product-colors">
+                                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                           </ul>
+                                                       </div>
+                                                       <div class="product-footer">
+                                                           <div class="product-price">
+                                                               <ins>350 000&nbsp;₽</ins>
+                                                               <del>450 000&nbsp;₽</del>
+                                                           </div>
+                                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+
+                                               <div class="product-item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                                   <div class="product-card">
+                                                       <div class="product-header">
+                                                           <div class="product-gallery">
+                                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-4.png" alt="Silver Cross Wayfarer" data-index="1" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
+                                                           </div>
+                                                           <p class="product-title">Silver Cross Wayfarer</p>
+                                                       </div>
+                                                       <div class="product-body">
+                                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                           <ul class="product-colors">
+                                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                           </ul>
+                                                       </div>
+                                                       <div class="product-footer">
+                                                           <div class="product-price">
+                                                               <ins>350 000&nbsp;₽</ins>
+                                                               <del>450 000&nbsp;₽</del>
+                                                           </div>
+                                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-aston-2-tab" >
+                                            2
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-timeless-2-tab" >
+                                            3
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-expedition-2-tab" >
+                                            4
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-eton-2-tab" >
+                                            5
+                                        </div>
+                                    </div>
+                                    <!-- <form action="" class="form-catalog-filter">
                                         <p class="form-catalog-title">Выберите серию:</p>
                                         <div class="form-catalog-group">
                                            <div class="filter-checkbox custom-control custom-checkbox">
@@ -407,141 +732,8 @@
                                                 <label for="filterCheck15"><span>Eton Gray</span></label>
                                            </div>
                                         </div>
-                                    </form>
+                                    </form> -->
                                 </div>
-                            </div>
-                            <div class="products-grid row">
-                               <div class="product-item col col-sm-6 col-md-3">
-                                   <div class="product-card">
-                                       <div class="product-header">
-                                           <div class="product-gallery">
-                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-1.png" alt="Silver Cross Wave" data-index="1" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
-                                           </div>
-                                           <p class="product-title">Silver Cross Wave</p>
-                                       </div>
-                                       <div class="product-body">
-                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                           <ul class="product-colors">
-                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                           </ul>
-                                       </div>
-                                       <div class="product-footer">
-                                           <div class="product-price">
-                                               <ins>350 000 ₽</ins>
-                                               <del>450 000 ₽</del>
-                                           </div>
-                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
-                                       </div>
-                                   </div>
-                               </div>
-                                   
-                               <div class="product-item col col-sm-6 col-md-3">
-                                   <div class="product-card">
-                                       <div class="product-header">
-                                           <div class="product-gallery">
-                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-2.png" alt="Silver Cross Pioner" data-index="1" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
-                                           </div>
-                                           <p class="product-title">Silver Cross Pioner</p>
-                                       </div>
-                                       <div class="product-body">
-                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                           <ul class="product-colors">
-                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                           </ul>
-                                       </div>
-                                       <div class="product-footer">
-                                           <div class="product-price">
-                                               <ins>350 000 ₽</ins>
-                                               <del>450 000 ₽</del>
-                                           </div>
-                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
-                                       </div>
-                                   </div>
-                               </div>
-
-                               <div class="product-item col col-sm-6 col-md-3">
-                                   <div class="product-card">
-                                       <div class="product-header">
-                                           <div class="product-gallery">
-                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-3.png" alt="Silver Cross Surf" data-index="1" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
-                                           </div>
-                                           <p class="product-title">Silver Cross Surf</p>
-                                       </div>
-                                       <div class="product-body">
-                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                           <ul class="product-colors">
-                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                           </ul>
-                                       </div>
-                                       <div class="product-footer">
-                                           <div class="product-price">
-                                               <ins>350 000 ₽</ins>
-                                               <del>450 000 ₽</del>
-                                           </div>
-                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
-                                       </div>
-                                   </div>
-                               </div>
-
-                               <div class="product-item col col-sm-6 col-md-3">
-                                   <div class="product-card">
-                                       <div class="product-header">
-                                           <div class="product-gallery">
-                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-4.png" alt="Silver Cross Wayfarer" data-index="1" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
-                                           </div>
-                                           <p class="product-title">Silver Cross Wayfarer</p>
-                                       </div>
-                                       <div class="product-body">
-                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                           <ul class="product-colors">
-                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                           </ul>
-                                       </div>
-                                       <div class="product-footer">
-                                           <div class="product-price">
-                                               <ins>350 000 ₽</ins>
-                                               <del>450 000 ₽</del>
-                                           </div>
-                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
-                                       </div>
-                                   </div>
-                               </div>
                             </div>
                         </div>
                     </section>
@@ -556,7 +748,77 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <form action="" class="form-catalog-filter">
+                                    <div class="product-gallery-nav">
+                                        <p class="product-gallery-nav-title">Выберите серию:</p>
+                                        <ul class="nav nav-pills nav-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#product-classic-3-tab" aria-controls="product-classic-3-tab" role="tab" data-toggle="tab" >Классические</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-aston-3-tab" aria-controls="product-aston-3-tab" role="tab" data-toggle="tab" >Aston Martin</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-timeless-3-tab" aria-controls="product-timeless-3-tab" role="tab" data-toggle="tab" >Timeless</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-expedition-3-tab" aria-controls="product-expedition-3-tab" role="tab" data-toggle="tab" >Expedition</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-eton-3-tab" aria-controls="product-eton-3-tab" role="tab" data-toggle="tab" >Eton Gray</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" >
+                                        <div class="tab-pane fade show active" role="tabpanel" id="product-classic-3-tab" >
+                                            <div class="products-grid row">
+                                               <div class="product-item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                                   <div class="product-card">
+                                                       <div class="product-header">
+                                                           <div class="product-gallery">
+                                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-transfrom/product-transfrom-item-1.png" alt="Silver Cross Wayfarer" data-index="1" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
+                                                           </div>
+                                                           <p class="product-title">Silver Cross Wayfarer</p>
+                                                       </div>
+                                                       <div class="product-body">
+                                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                           <ul class="product-colors">
+                                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                           </ul>
+                                                       </div>
+                                                       <div class="product-footer">
+                                                           <div class="product-price">
+                                                               <ins>350 000&nbsp;₽</ins>
+                                                               <del>450 000&nbsp;₽</del>
+                                                           </div>
+                                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-aston-3-tab" >
+                                            2
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-timeless-3-tab" >
+                                            3
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-expedition-3-tab" >
+                                            4
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-eton-3-tab" >
+                                            5
+                                        </div>
+                                    </div>
+                                    <!-- <form action="" class="form-catalog-filter">
                                         <p class="form-catalog-title">Выберите серию:</p>
                                         <div class="form-catalog-group">
                                            <div class="filter-checkbox custom-control custom-checkbox">
@@ -580,45 +842,8 @@
                                                 <label for="filterCheck25"><span>Eton Gray</span></label>
                                            </div>
                                         </div>
-                                    </form>
+                                    </form> -->
                                 </div>
-                            </div>
-                            <div class="products-grid row">
-                               <div class="product-item col col-sm-6 col-md-3">
-                                   <div class="product-card">
-                                       <div class="product-header">
-                                           <div class="product-gallery">
-                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-transfrom/product-transfrom-item-1.png" alt="Silver Cross Wayfarer" data-index="1" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
-                                           </div>
-                                           <p class="product-title">Silver Cross Wayfarer</p>
-                                       </div>
-                                       <div class="product-body">
-                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                           <ul class="product-colors">
-                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                           </ul>
-                                       </div>
-                                       <div class="product-footer">
-                                           <div class="product-price">
-                                               <ins>350 000 ₽</ins>
-                                               <del>450 000 ₽</del>
-                                           </div>
-                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
-                                       </div>
-                                   </div>
-                               </div>
-                          
-
-                               
                             </div>
                         </div>
                     </section>
@@ -633,7 +858,176 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <form action="" class="form-catalog-filter">
+                                    <div class="product-gallery-nav">
+                                        <p class="product-gallery-nav-title">Выберите серию:</p>
+                                        <ul class="nav nav-pills nav-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#product-classic-4-tab" aria-controls="product-classic-4-tab" role="tab" data-toggle="tab" >Классические</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-aston-4-tab" aria-controls="product-aston-4-tab" role="tab" data-toggle="tab" >Aston Martin</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-timeless-4-tab" aria-controls="product-timeless-4-tab" role="tab" data-toggle="tab" >Timeless</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-expedition-4-tab" aria-controls="product-expedition-4-tab" role="tab" data-toggle="tab" >Expedition</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#product-eton-4-tab" aria-controls="product-eton-4-tab" role="tab" data-toggle="tab" >Eton Gray</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" >
+                                        <div class="tab-pane fade show active" role="tabpanel" id="product-classic-4-tab" >
+                                            <div class="products-grid row">
+                                               <div class="product-item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                                   <div class="product-card">
+                                                       <div class="product-header">
+                                                           <div class="product-gallery">
+                                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-1.png" alt="Silver Cross Wave" data-index="1" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
+                                                           </div>
+                                                           <p class="product-title">Silver Cross Wave</p>
+                                                       </div>
+                                                       <div class="product-body">
+                                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                           <ul class="product-colors">
+                                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                           </ul>
+                                                       </div>
+                                                       <div class="product-footer">
+                                                           <div class="product-price">
+                                                               <ins>350 000&nbsp;₽</ins>
+                                                               <del>450 000&nbsp;₽</del>
+                                                           </div>
+                                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                                   
+                                               <div class="product-item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                                   <div class="product-card">
+                                                       <div class="product-header">
+                                                           <div class="product-gallery">
+                                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-2.png" alt="Silver Cross Pioner" data-index="1" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
+                                                           </div>
+                                                           <p class="product-title">Silver Cross Pioner</p>
+                                                       </div>
+                                                       <div class="product-body">
+                                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                           <ul class="product-colors"> 
+                                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                           </ul>
+                                                       </div>
+                                                       <div class="product-footer">
+                                                           <div class="product-price">
+                                                               <ins>350 000&nbsp;₽</ins>
+                                                               <del>450 000&nbsp;₽</del>
+                                                           </div>
+                                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+
+                                               <div class="product-item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                                   <div class="product-card">
+                                                       <div class="product-header">
+                                                           <div class="product-gallery">
+                                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-3.png" alt="Silver Cross Surf" data-index="1" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
+                                                           </div>
+                                                           <p class="product-title">Silver Cross Surf</p>
+                                                       </div>
+                                                       <div class="product-body">
+                                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                           <ul class="product-colors">
+                                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                           </ul>
+                                                       </div>
+                                                       <div class="product-footer">
+                                                           <div class="product-price">
+                                                               <ins>350 000&nbsp;₽</ins>
+                                                               <del>450 000&nbsp;₽</del>
+                                                           </div>
+                                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+
+                                               <div class="product-item col-12 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                                   <div class="product-card">
+                                                       <div class="product-header">
+                                                           <div class="product-gallery">
+                                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-4.png" alt="Silver Cross Wayfarer" data-index="1" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
+                                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
+                                                           </div>
+                                                           <p class="product-title">Silver Cross Wayfarer</p>
+                                                       </div>
+                                                       <div class="product-body">
+                                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
+                                                           <ul class="product-colors">
+                                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
+                                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
+                                                           </ul>
+                                                       </div>
+                                                       <div class="product-footer">
+                                                           <div class="product-price">
+                                                               <ins>350 000&nbsp;₽</ins>
+                                                               <del>450 000&nbsp;₽</del>
+                                                           </div>
+                                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-aston-4-tab" >
+                                            2
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-timeless-4-tab" >
+                                            3
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-expedition-4-tab" >
+                                            4
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="product-eton-4-tab" >
+                                            5
+                                        </div>
+                                    </div>
+                                    <!-- <form action="" class="form-catalog-filter">
                                         <p class="form-catalog-title">Выберите серию:</p>
                                         <div class="form-catalog-group">
                                            <div class="filter-checkbox custom-control custom-checkbox">
@@ -657,142 +1051,10 @@
                                                 <label for="filterCheck35"><span>Eton Gray</span></label>
                                            </div>
                                         </div>
-                                    </form>
+                                    </form> -->
                                 </div>
                             </div>
-                            <div class="products-grid row">
-                               <div class="product-item col col-sm-6 col-md-3">
-                                   <div class="product-card">
-                                       <div class="product-header">
-                                           <div class="product-gallery">
-                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-1.png" alt="Silver Cross Wave" data-index="1" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
-                                           </div>
-                                           <p class="product-title">Silver Cross Wave</p>
-                                       </div>
-                                       <div class="product-body">
-                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                           <ul class="product-colors">
-                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                           </ul>
-                                       </div>
-                                       <div class="product-footer">
-                                           <div class="product-price">
-                                               <ins>350 000 ₽</ins>
-                                               <del>450 000 ₽</del>
-                                           </div>
-                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
-                                       </div>
-                                   </div>
-                               </div>
-                                   
-                               <div class="product-item col col-sm-6 col-md-3">
-                                   <div class="product-card">
-                                       <div class="product-header">
-                                           <div class="product-gallery">
-                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-2.png" alt="Silver Cross Pioner" data-index="1" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
-                                           </div>
-                                           <p class="product-title">Silver Cross Pioner</p>
-                                       </div>
-                                       <div class="product-body">
-                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                           <ul class="product-colors"> 
-                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                           </ul>
-                                       </div>
-                                       <div class="product-footer">
-                                           <div class="product-price">
-                                               <ins>350 000 ₽</ins>
-                                               <del>450 000 ₽</del>
-                                           </div>
-                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
-                                       </div>
-                                   </div>
-                               </div>
-
-                               <div class="product-item col col-sm-6 col-md-3">
-                                   <div class="product-card">
-                                       <div class="product-header">
-                                           <div class="product-gallery">
-                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-3.png" alt="Silver Cross Surf" data-index="1" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
-                                           </div>
-                                           <p class="product-title">Silver Cross Surf</p>
-                                       </div>
-                                       <div class="product-body">
-                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                           <ul class="product-colors">
-                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                           </ul>
-                                       </div>
-                                       <div class="product-footer">
-                                           <div class="product-price">
-                                               <ins>350 000 ₽</ins>
-                                               <del>450 000 ₽</del>
-                                           </div>
-                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
-                                       </div>
-                                   </div>
-                               </div>
-
-                               <div class="product-item col col-sm-6 col-md-3">
-                                   <div class="product-card">
-                                       <div class="product-header">
-                                           <div class="product-gallery">
-                                               <img class="product-picture active"  src="images/uploads/page-catalog/products-2-in-1/product-2-in-1-item-4.png" alt="Silver Cross Wayfarer" data-index="1" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-1.png" alt="Silver Cross Wave" data-index="2" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="3" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-3.png" alt="Silver Cross Wave" data-index="4" >
-                                               <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-4.png" alt="Silver Cross Wave" data-index="5" > <img class="product-picture"  src="images/uploads/page-catalog/products-walk/product-walk-item-2.png" alt="Silver Cross Wave" data-index="6" >
-                                           </div>
-                                           <p class="product-title">Silver Cross Wayfarer</p>
-                                       </div>
-                                       <div class="product-body">
-                                           <div class="product-description">Неповторимый стиль английской королевской семьи</div>
-                                           <ul class="product-colors">
-                                               <li class="product-color-item active" style="background-image: url('images/colors/color-stripe-black-gray.png')" data-index="1" data-price="350 000" data-old-price="450 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-brown-gray.png')" data-index="2" data-price="375 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-stripe-pink-black.png')" data-index="3" data-price="400 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-blue.png')" data-index="4" data-price="220 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item sale" style="background-image: url('images/colors/color-black.png')" data-index="5" data-price="390 000" data-old-price="430 000" ></li>
-                                               <li class="product-color-item" style="background-image: url('images/colors/color-gray.png')" data-index="6" data-price="299 990" data-old-price="430 000" ></li>
-                                           </ul>
-                                       </div>
-                                       <div class="product-footer">
-                                           <div class="product-price">
-                                               <ins>350 000 ₽</ins>
-                                               <del>450 000 ₽</del>
-                                           </div>
-                                           <a href="product.html" class="product-order btn btn-dark"><i class="icon-plus" ></i>Купить</a>
-                                       </div>
-                                   </div>
-                               </div>
-                            </div>
+                            
                         </div>
                     </section>
 
@@ -803,10 +1065,10 @@
                                 <div class="col">
                                     <article class="article-higlights">
                                         <div class="row">
-                                            <div class="article-higlights-aside col-12 col-sm-5">
+                                            <div class="article-higlights-aside col-12 col-md-12 col-lg-5 ">
                                                 <img class="article-higlights-picture" src="images/uploads/page-catalog/section-article-higlights/article-higlights-picture.png" alt="Silver Cross – детские коляски, мебель, автокресла, игрушки от официального представителя">
                                             </div>
-                                            <div class="article-higlights-content col-12 col-sm-7">
+                                            <div class="article-higlights-content col-12 col-md-12 col-lg-7 ">
                                                 <h1 class="article-higlights-title">Silver Cross – детские коляски, мебель, автокресла, игрушки от официального представителя</h1>
                                                 <div class="article-higlights-description">
                                                     <p>Silver Cross - лучшее начало жизни, больше, чем первый транспорт малыша. Silver Cross станет семейной традицией. В Англии к коляскам особое отношение, их передают по наследству. Модельный ряд Silver Cross широк и разнообразен по категориям, цветовой палитре, комплектации, цене.</p>
@@ -868,7 +1130,7 @@
                                             <a href="tel:+74955893731"><i class="icon-phone" ></i>+7 (495) 589-37-31</a>
                                         </div>
                                         <div class="footer-contact-order">
-                                            <button class="btn btn-light" >Перезвоните мне</button>
+                                            <button class="btn btn-light" data-toggle="modal" data-target="#modalCallback" >Перезвоните мне</button>
                                         </div>
                                     </div>
                                 </div>
@@ -884,9 +1146,20 @@
             </footer>
         </div>
 
+
+        <div class="ssm-overlay ssm-toggle-nav"></div>
+
         <script src="vendor/jquery-3.3.1.min.js" ></script>
         <script src="vendor/swiper.min.js" ></script>
         <script src="vendor/jquery.fancybox.min.js" ></script>
+
+        <script src="vendor/jquery.touchSwipe.min.js" ></script>
+        <script src="vendor/jquery.slideandswipe.min.js" ></script>
+
+        <script src="vendor/util.js" ></script>
+        <script src="vendor/tab.js" ></script>
+        <script src="vendor/modal.js" ></script>
+        <script src="vendor/mask.js" ></script>
         <script src="js/main.js" ></script>
     </body>
 </html>
