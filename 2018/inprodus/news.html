@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="vendor/css/flipclock.css">
+        <link rel="stylesheet" href="vendor/css/slick.css">
+        <link rel="stylesheet" href="vendor/css/slick-theme.css">
+        <link rel="stylesheet" href="vendor/css/select2.min.css">
+        <link rel="stylesheet" href="vendor/css/aos.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <title>Инпродас / Блог</title>
+    </head>
+
+    <body>
+
+        <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCallbackLabel">Заказать обратный звонок</h5>
+                        <h6 class="modal-subtitle">Перезвоним через 2 минуты!</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon-close" ></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-modal">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Имя:</label>
+                                        <input type="text" required >
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Телефон:</label>
+                                        <input type="tel" required >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="modalCallbackPrivacy" checked required>
+                                        <label class="custom-control-label" for="modalCallbackPrivacy">Я согласен на обработку моих <a href="#link">персональных данных</a></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn btn-primary btn-block" >Отправить заявку</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalCost" tabindex="-1" role="dialog" aria-labelledby="modalCostLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCostLabel">Отправьте данные на расчет стоимости</h5>
+                        <h6 class="modal-subtitle">Перезвоним через 2 минуты!</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon-close" ></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-modal">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Имя:</label>
+                                        <input type="text" required >
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Телефон:</label>
+                                        <input type="tel" required >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="">Приложить файл:</label>
+                                        <div class="custom-control custom-file">
+                                            <button type="button">Обзор</button>
+                                            <div>Файл не выбран</div>
+                                            <input type="file" required >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="modalCostPrivacy" checked required>
+                                        <label class="custom-control-label" for="modalCostPrivacy">Я согласен на обработку моих <a href="#link">персональных данных</a></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn btn-primary btn-block" >Отправить заявку</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="offcanvas">
+            <div class="offcanvas-header">
+                <button class="close">
+                    <i class="icon-close" ></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="offcanvas-menu">
+                    <li class="offcanvas-nav-item"><a href="#link" class="offcanvas-nav-link">О нас</a></li>
+                    <li class="offcanvas-nav-item"><a href="#link" class="offcanvas-nav-link">Услуги</a></li>
+                    <li class="offcanvas-nav-item"><a href="#link" class="offcanvas-nav-link">Продукция</a></li>
+                    <li class="offcanvas-nav-item active"><a href="#link" class="offcanvas-nav-link">Блог</a></li>
+                    <li class="offcanvas-nav-item"><a href="#link" class="offcanvas-nav-link">партнерам</a></li>
+                    <li class="offcanvas-nav-item"><a href="#link" class="offcanvas-nav-link">фотогалерея</a></li>
+                    <li class="offcanvas-nav-item"><a href="#link" class="offcanvas-nav-link">контакты</a></li>
+                </ul>
+            </div>
+            <div class="offcanvas-footer">
+                <div class="offcanvas-contact">
+                    <a href="tel:+7 (495) 255-22-45">+7 (495) 255-22-45</a>
+                </div>
+
+                <div class="offcanvas-address">
+                    Офис: г. Москва, БП Румянцево, Корпус В <br>
+                    Производство: г. Климовск, Бережковский проезд, 14
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="content">
+                <header class="header-box" data-aos="fade-up" >
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="side-left col">
+                                <div class="header-address">
+                                    <div class="address-thumbnail">
+                                        <i class="icon-location-lg" ></i>
+                                    </div>
+                                    <div class="address-value">
+                                        <div>Офис: г. Москва, БП Румянцево, Корпус В <a href="#section-contact">На карте</a></div>
+                                        <div>Производство: г. Климовск, Бережковский проезд, 14 </div>
+                                    </div>
+                                </div>
+
+                                <ul class="header-nav-list left">
+                                    <li class="header-nav-item"><a href="#link" class="header-nav-link">О нас</a></li>
+                                    <li class="header-nav-item"><a href="#link" class="header-nav-link">Услуги</a></li>
+                                    <li class="header-nav-item"><a href="#link" class="header-nav-link">Продукция</a></li>
+                                    <li class="header-nav-item active"><a href="#link" class="header-nav-link">Блог</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="side-center col-auto">
+                                <div class="header-logo">
+                                    <a href="index.html"><img src="images/logo.png" alt="Инпродас" class="logo" ></a>
+                                </div>
+                            </div>
+
+                            <div class="side-right col">
+                                <div class="header-contact">
+                                    <a href="tel:+7 (495) 255-22-45">+7 (495) 255-22-45</a>
+                                    <a href="#order" class="btn-order btn btn-primary btn-sm" data-toggle="modal" data-target="#modalCallback" ><i class="icon-phone" ></i>Заказать звонок</a>
+                                </div>
+
+                                <ul class="header-nav-list right">
+                                    <li class="header-nav-item"><a href="#link" class="header-nav-link">партнерам</a></li>
+                                    <li class="header-nav-item"><a href="#link" class="header-nav-link">фотогалерея</a></li>
+                                    <li class="header-nav-item"><a href="#link" class="header-nav-link">контакты</a></li>
+                                </ul>
+
+                                <button class="header-toggler offcanvas-toggler">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav aria-label="breadcrumb" data-aos="fade-up">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Блог</li>
+                                </ul>
+                            </nav>
+
+
+                            <div class="display-header">
+                                <h1 class="display-title" data-aos="fade-up">Блог</h1>
+                            </div>
+
+
+                            <div class="news-grid row">
+                                <div class="news-item col-md-12 col-lg-6" data-aos="fade-up" >
+                                    <div class="news-card">
+                                        <div class="news-thumbnail" style="background-image: url('images/page-news/section-news/news-item-1.png')" ></div>
+                                        <div class="news-inner">
+                                            <div class="news-header">
+                                                <h6 class="news-title">Австралия вышла на первое место в мире по добыче лития</h6>
+                                                <time datetime="2018-06-20" class="news-date">20.06.2018</time>
+                                            </div>
+                                            <div class="news-body">
+                                                В 2017 г. в мире было добыто около 43 тыс. т лития — сверхлегкого металла, соединения которого используются, прежде всего, в производстве литийионных аккумуляторов.
+                                            </div>
+                                            <div class="news-footer">
+                                                <a href="#link" class="btn-link" >Читать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-item col-md-12 col-lg-6" data-aos="fade-up" data-aos-delay="100" >
+                                    <div class="news-card">
+                                        <div class="news-thumbnail" style="background-image: url('images/page-news/section-news/news-item-2.png')" ></div>
+                                        <div class="news-inner">
+                                            <div class="news-header">
+                                                <h6 class="news-title">Стойленский ГОК увеличит добычу железной руды на 10%</h6>
+                                                <time datetime="2018-06-20" class="news-date">20.06.2018</time>
+                                            </div>
+                                            <div class="news-body">
+                                                Стойленский ГОК начал добычу кварцитов на южной залежи Стойленского месторождения. Разработка этого участка и общая активизация работ в карьере позволят в 2018 г. 
+                                            </div>
+                                            <div class="news-footer">
+                                                <a href="#link" class="btn-link" >Читать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-item col-md-12 col-lg-6" data-aos="fade-up" >
+                                    <div class="news-card">
+                                        <div class="news-thumbnail" style="background-image: url('images/page-news/section-news/news-item-3.png')" ></div>
+                                        <div class="news-inner">
+                                            <div class="news-header">
+                                                <h6 class="news-title">Индийский импорт черного лома за полгода вырос на 8,1%</h6>
+                                                <time datetime="2018-06-20" class="news-date">20.06.2018</time>
+                                            </div>
+                                            <div class="news-body">
+                                                Согласно данным таможенной статистики, Индия в январе-июне 2018 года импортировала 2,42 млн. тонн лома черных металлов при росте показателей на 8,1%. 
+                                            </div>
+                                            <div class="news-footer">
+                                                <a href="#link" class="btn-link" >Читать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-item col-md-12 col-lg-6" data-aos="fade-up" data-aos-delay="100" >
+                                    <div class="news-card">
+                                        <div class="news-thumbnail" style="background-image: url('images/page-news/section-news/news-item-4.png')" ></div>
+                                        <div class="news-inner">
+                                            <div class="news-header">
+                                                <h6 class="news-title">Японский импорт стали в июле вырос на 4,7%</h6>
+                                                <time datetime="2018-06-20" class="news-date">20.06.2018</time>
+                                            </div>
+                                            <div class="news-body">
+                                                Согласно данным таможенной статистики, Индия в январе-июне 2018 года импортировала 2,42 млн. тонн лома черных металлов при росте показателей на 8,1%. 
+                                            </div>
+                                            <div class="news-footer">
+                                                <a href="#link" class="btn-link" >Читать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-item col-md-12 col-lg-6" data-aos="fade-up" >
+                                    <div class="news-card">
+                                        <div class="news-thumbnail" style="background-image: url('images/page-news/section-news/news-item-1.png')" ></div>
+                                        <div class="news-inner">
+                                            <div class="news-header">
+                                                <h6 class="news-title">Австралия вышла на первое место в мире по добыче лития</h6>
+                                                <time datetime="2018-06-20" class="news-date">20.06.2018</time>
+                                            </div>
+                                            <div class="news-body">
+                                                В 2017 г. в мире было добыто около 43 тыс. т лития — сверхлегкого металла, соединения которого используются, прежде всего, в производстве литийионных аккумуляторов.
+                                            </div>
+                                            <div class="news-footer">
+                                                <a href="#link" class="btn-link" >Читать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-item col-md-12 col-lg-6" data-aos="fade-up" data-aos-delay="100" >
+                                    <div class="news-card">
+                                        <div class="news-thumbnail" style="background-image: url('images/page-news/section-news/news-item-2.png')" ></div>
+                                        <div class="news-inner">
+                                            <div class="news-header">
+                                                <h6 class="news-title">Стойленский ГОК увеличит добычу железной руды на 10%</h6>
+                                                <time datetime="2018-06-20" class="news-date">20.06.2018</time>
+                                            </div>
+                                            <div class="news-body">
+                                                Стойленский ГОК начал добычу кварцитов на южной залежи Стойленского месторождения. Разработка этого участка и общая активизация работ в карьере позволят в 2018 г. 
+                                            </div>
+                                            <div class="news-footer">
+                                                <a href="#link" class="btn-link" >Читать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-item col-md-12 col-lg-6" data-aos="fade-up" >
+                                    <div class="news-card">
+                                        <div class="news-thumbnail" style="background-image: url('images/page-news/section-news/news-item-5.png')" ></div>
+                                        <div class="news-inner">
+                                            <div class="news-header">
+                                                <h6 class="news-title">В Приморье открылось предприятие по сборке тяжелой техники</h6>
+                                                <time datetime="2018-06-20" class="news-date">20.06.2018</time>
+                                            </div>
+                                            <div class="news-body">
+                                                В Артеме запустили первую линию нового сборочного производства тяжелой техники. 
+                                            </div>
+                                            <div class="news-footer">
+                                                <a href="#link" class="btn-link" >Читать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-item col-md-12 col-lg-6" data-aos="fade-up" data-aos-delay="100" >
+                                    <div class="news-card">
+                                        <div class="news-thumbnail" style="background-image: url('images/page-news/section-news/news-item-6.png')" ></div>
+                                        <div class="news-inner">
+                                            <div class="news-header">
+                                                <h6 class="news-title">Венесуэла национализировала рынок металлолома</h6>
+                                                <time datetime="2018-06-20" class="news-date">20.06.2018</time>
+                                            </div>
+                                            <div class="news-body">
+                                                Власти Венесуэлы объявили о национализации рынка металлолома страны, как следует из государственного декрета, опубликованного в Gaceta Oficial. 
+                                            </div>
+                                            <div class="news-footer">
+                                                <a href="#link" class="btn-link" >Читать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <ul class="pagination" data-aos="fade-up">
+                                <li class="page-item"><a class="page-link" href="#link">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#link">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#link">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#link">4</a></li>
+                                <li class="page-item">...</li>
+                                <li class="page-item"><a class="page-link" href="#link">10</a></li>
+                                <li class="page-item previous"><a class="page-link" href="#link"><< Предыдущая</a></li>
+                                <li class="page-item next"><a class="page-link" href="#link">Следующая >></a></li>
+                            </ul>
+
+                            <div class="social-box" data-aos="fade-up">
+                                <p class="social-title">Следите за нашими новостями в социальных сетях:</p>
+                                <ul class="social-list">
+                                    <li class="social-item"><a href="#link" class="social-link"><i class="icon-instagram" ></i></a></li>
+                                    <li class="social-item"><a href="#link" class="social-link"><i class="icon-twitter" ></i></a></li>
+                                    <li class="social-item"><a href="#link" class="social-link"><i class="icon-vk" ></i></a></li>
+                                    <li class="social-item"><a href="#link" class="social-link"><i class="icon-youtube" ></i></a></li>
+                                    <li class="social-item"><a href="#link" class="social-link"><i class="icon-facebook" ></i></a></li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider">&nbsp;</div>
+
+                <section class="section-form bg-primary">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-header col" data-aos="fade-up" >
+                                <h3 class="section-title">Оставьте заявку и мы перезвоним вам уже через 2 минуты!</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <form class="form-feedback form-light" data-aos="fade-up" data-aos-delay="100" >
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group">
+                                                <label for="">Имя:</label>
+                                                <input type="text" required >
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group">
+                                                <label for="">Телефон:</label>
+                                                <input type="tel" required >
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-lg-4 align-self-end">
+                                            <button type="submit" class="btn btn-info btn-block" >Отправить заявку</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="formFeedbackPrivacy" checked required >
+                                                <label class="custom-control-label" for="formFeedbackPrivacy">Я согласен на обработку моих <a href="#link">персональных данных</a></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section-contact" id="section-contact" >
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="map-box" id="map" data-aos="fade-up" data-aos-delay="100" ></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="contact-grid row">
+                            <div class="contact-item col-md-6 col-lg-4" data-aos="fade-up" >
+                                <div class="contact-card">
+                                    <div class="contact-thumbnail">
+                                        <i class="contact-icon icon-phone" ></i>
+                                    </div>
+                                    <p class="contact-title">
+                                        Звоните: <br> 
+                                        <a href="tel:+74952552245">+7 (495) 255-22-45</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" >
+                                <div class="contact-card">
+                                    <div class="contact-thumbnail">
+                                        <i class="contact-icon icon-location" ></i>
+                                    </div>
+                                    <p class="contact-title">
+                                        Приезжайте: <b>г. Москва, БП&nbsp;Румянцево, Корпус&nbsp;В</b>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" >
+                                <div class="contact-card">
+                                    <div class="contact-thumbnail">
+                                        <i class="contact-icon icon-mail" ></i>
+                                    </div>
+                                    <p class="contact-title">
+                                        Пишите: <br>
+                                        <a href="mailto:inprodas.info@gmail.com">inprodas.info@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="side-left col">
+                                <ul class="footer-nav-list">
+                                    <li class="footer-nav-item"><a href="#link" class="footer-nav-link">О нас</a></li>
+                                    <li class="footer-nav-item"><a href="#link" class="footer-nav-link">Услуги</a></li>
+                                    <li class="footer-nav-item"><a href="#link" class="footer-nav-link">Продукция</a></li>
+                                    <li class="footer-nav-item active"><a href="#link" class="footer-nav-link">Блог</a></li>
+                                </ul>
+                            </div>
+                            <div class="side-center col-auto">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="images/logo.png" alt="Инпродас" class="logo"></a>
+                                </div>
+                            </div>
+                            <div class="side-right col">
+                                <ul class="footer-nav-list">
+                                    <li class="footer-nav-item"><a href="#link" class="footer-nav-link">партнерам</a></li>
+                                    <li class="footer-nav-item"><a href="#link" class="footer-nav-link">фотогалерея</a></li>
+                                    <li class="footer-nav-item"><a href="#link" class="footer-nav-link">контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-order-col col-md-7">
+                                <div class="footer-order">
+                                    <p class="footer-order-title">Перезвоним через 2 минуты!</p>
+                                    <button class="footer-order-btn btn btn-primary btn-sm" data-toggle="modal" data-target="#modalCallback" ><i class="icon-phone" ></i>Заказать звонок</button>
+                                </div>
+                            </div>
+                      
+                            <div class="footer-contact-col col-md-5">
+                                <div class="footer-contact">
+                                    <div class="footer-contact-phone">
+                                        <a href="tel:+74952552245">+7 (495) 255-22-45</a>
+                                    </div>
+                                    <div class="footer-contact-time">
+                                        <i class="icon-time" ></i>9:30-19:00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="footer-copyright-col col-md-7">
+                                <div class="footer-copyright">
+                                    &copy; 2018 «Название компании». Эксперты в области металлобработки <br>
+                                    Производство: г. Климовск, Бережковский проезд,14. Отгрузка: с 10.00 до 16.30</div>
+                            </div>
+                            <div class="footer-address-col col-md-5">
+                                <div class="footer-address">
+                                    <i class="footer-address-icon icon-location-lg"></i>
+                                    Офис компании: Москва, БП Румянцево, Корпус В. <br>
+                                    Необходимо предварительно заказать пропуск
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="vendor/js/jquery-3.3.1.min.js" ></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC_6dU-jxCoGgjMBEQCAByXL2ec-Ld_k0"></script>
+        <script src="vendor/js/popper.min.js" ></script>
+        <script src="vendor/js/jquery.hypher.js" ></script>
+        <script src="vendor/js/ru.js" ></script>
+        <script src="vendor/js/slick.min.js" ></script>
+        <script src="vendor/js/select2.min.js" ></script>
+        <script src="vendor/js/mask.js" ></script>
+        <script src="vendor/js/aos.js" ></script>
+        <script src="vendor/js/bootstrap.min.js" ></script>
+        <script src="js/main.js" ></script>
+
+    </body>
+
+</html>

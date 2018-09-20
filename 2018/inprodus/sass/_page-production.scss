@@ -1,0 +1,54 @@
+.production-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	.production-header {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.production-body {
+		flex: 0 0 auto;
+		padding: 10px 0;
+		line-height: 1.15;
+		text-align: justify;
+	}
+	.production-footer {
+		flex: 0 0 auto;
+	}
+
+	.production-title {
+		flex: 1 1 auto;
+		margin: 0 0 20px;
+		line-height: 1;
+	}
+
+	.production-thumbnail {
+		padding-bottom: 72%;
+		background-color: $light-gray;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.production-price {
+		margin: 0;
+		color: $danger;
+		font-size: 22px;
+		font-weight: 700;
+	}
+
+	.production-order {
+		margin: 20px 0;
+	}
+
+}
+
+.production-grid {
+	margin-top: 35px;
+	margin-bottom: 60px;
+	.production-item {
+		display: flex;
+		margin-bottom: 25px;
+	}
+}
