@@ -1,0 +1,426 @@
+.inventory-toggler {
+	cursor: pointer;
+	outline: none !important;
+	position: absolute;
+	top: 50%;
+	right: calc(100% - 5px);
+	z-index: 99;
+	width: 21px;
+	height: 167px;
+	border: none;
+	border-radius: 0;
+	background: url('../images/chat/chat-button.png') no-repeat 0 0;
+	background-color: transparent;
+	background-size: contain;
+	transition: right 300ms ease;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 11px;
+		height: 15px;
+		background: url('../images/chat/chat-arrow.png') no-repeat 0 0 ;
+	    transform: rotate(180deg) translate(50%, 50%);
+	}
+}
+
+.inventory-wrapper {
+	position: fixed;
+	z-index: 999;
+	top: 80px;
+	right: -940px;
+	bottom: 0;
+	display: flex;
+	width: 920px;
+	background-color: #242b33;
+	transition: right 300ms ease;
+	&.visible {
+		right: 0;
+	}
+
+	input {
+		height: 40px;
+		border: 1px solid $primary;
+		font-size: 15px;
+		font-weight: 400;
+		color: $primary;
+		&::placeholder {
+			color: #2f3741;
+		}
+	}
+
+	.side-left,
+	.side-right {
+		padding: 40px 20px;
+	}
+
+	.side-left {
+		flex: 0 0 310px;
+		max-width: 310px;
+		background-color: #1c2127;
+	}
+
+	.side-right {
+		flex: 1;
+	}
+
+
+
+	.dropdown-toggle {
+		outline: none;
+		cursor: pointer;
+		padding: 0;
+		border: none;
+		border-radius: 0;
+		background-color: transparent;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 1;
+		color: $primary;
+	}
+}
+
+
+.inventory-bid {
+	overflow: hidden;
+	margin: 0 0 30px;
+	.form-inventory-bid {
+		margin: 35px 0 0;
+		input,
+		button {
+			height: 45px;
+			margin: 20px 0;
+			border-radius: 10px;
+		}
+
+		input {
+			border-width: 2px;
+		}
+	}
+
+	.inventory-bid-total {
+		display: flex;
+		justify-content: space-between;
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1;
+		span {
+			font-weight: 600;
+			color: $success;
+		}
+	}
+
+	.inventory-bid-hint,
+	.inventory-bid-goods {
+		color: #516070;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 1;
+		span {
+			color: $success;
+		}
+	}
+
+	.inventory-bid-hint {
+		float: left;
+	}
+
+	.inventory-bid-goods {
+		float: right;
+		span {
+			color: $primary;
+		}
+	}
+}
+
+
+
+.inventory-filter {
+	display: flex;
+	margin: 45px 0 25px;
+	.left,
+	.right {
+		flex: 1 1 auto;
+	}
+	.center {
+		flex: 0 0 auto;
+	}
+
+	.inventory-filter-reload {
+		cursor: pointer;
+		display: block;
+		width: 30px;
+		height: 30px;
+		margin: 0 0 0 auto;
+		padding: 0;
+		border: none;
+		border-radius: $global-radius;
+		background-color: $primary;
+		line-height: 30px;
+		text-align: center;
+		img {
+			height: 16px;
+		}
+	}
+}
+
+.inventory-filter-list {
+	cursor: default;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	.inventory-filter-item {
+		display: inline-block;
+		padding: 0 4px;
+		.inventory-filter-link {
+			display: block;
+			position: relative;
+			min-width: 80px;
+			height: 28px;
+			padding: 0 15px;
+			border: 1px solid #424c58;
+			border-radius: $global-radius;
+			background-color: #1f2326;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 26px;
+			text-decoration: none;
+			text-align: center;
+			color: #fff;
+			transition: border-color 300ms ease;
+			&:hover {
+				border-color: $primary;
+			}
+
+			.inventory-filter-img {
+				height: 22px;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+
+
+.inventory-card {
+	cursor: pointer;
+	position: relative;
+	padding: 0 0 14px;
+	border: 2px solid transparent;
+	border-radius: $global-radius * 2;
+	background: #242b33;
+	transition: border-color 300ms ease;
+	text-align: center;
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: 9;
+		left: -2px;
+		right: -2px;
+		bottom: -2px;
+		height: 9px;
+		border-bottom-left-radius: $global-radius * 2;
+		border-bottom-right-radius: $global-radius * 2;
+		transition: opacity 300ms ease, visibility 300ms ease; 
+	}
+
+	.inventory-card-inner {
+		position: relative;
+		overflow: hidden;
+		border-radius: $global-radius * 2;
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			transition: opacity 300ms ease, visibility 300ms ease;
+		}
+		&:before {
+			opacity: 0;
+			visibility: hidden;
+			z-index: 8;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(#1e2329, .8);
+		}
+		&:after {
+			opacity: 0;
+			visibility: hidden;
+			z-index: 9;
+			top: 50%;
+			left: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 30px;
+			height: 30px;
+			border-radius: 5px;
+			background: url('../images/icons/icon-close.png') no-repeat center center  $primary;
+
+			transform: translate(-50%, -50%);
+			font-size: 30px;
+			color: #fff;
+		}
+	}
+
+	.inventory-thumbnail {
+		position: relative;
+		height: 100px;
+		border: 10px solid transparent;
+		.inventory-picture {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			max-width: 100%;
+			max-height: 100%;
+			margin: auto;
+		}
+	}
+
+	.inventory-title {
+		margin: 0;
+		color: #455260;
+		font-size: 19px;
+		font-weight: 400;
+	}
+
+	.inventory-price {
+		margin: 0;
+		color: $success;
+		font-size: 19px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.inventory-label {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		color: #455260;
+		font-size: 17px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+
+	&.success {
+		&:after {
+			background-color: $success;
+		}
+	}
+	&.warning {
+		&:after {
+			background-color: $warning;
+		}
+	}
+	&.danger {
+		&:after {
+			background-color: $danger;
+		}
+	}
+	&.primary {
+		&:after {
+			background-color: $primary;
+		}
+	}
+
+
+	&:hover {
+		border-color: $primary;
+		&:after {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.inventory-card-inner {
+			&:before,
+			&:after {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+
+
+.inventory-grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -2px;
+	margin-right: -2px;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #1c2127;
+	.inventory-item {
+		display: flex;
+		flex: 0 0 33.333%;
+		max-width: 33.3333%;
+		margin: 0 0 10px;
+		padding: 0 2px;
+		.inventory-card {
+			display: flex;
+			width: 100%;
+			.inventory-card-inner {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				text-align: center;
+				.inventory-title {
+					margin-top: auto;
+				}
+			}
+		}
+	}
+
+	&.sm {
+		padding: 0;
+		.inventory-item {
+			flex: 0 0 50%;
+			max-width: 50%;
+			.inventory-card {
+				&:after {
+					height: 7px;
+				}
+
+				.inventory-thumbnail {
+					height: 75px;
+				}
+
+				.inventory-title {
+					font-size: 14px;
+				}
+
+				.inventory-price {
+					font-size: 14px;
+				}
+
+				.inventory-label {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

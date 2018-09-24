@@ -20,6 +20,256 @@
 
     <body>
 
+        <div class="inventory-wrapper">
+            <button class="inventory-toggler"></button>
+
+            <div class="side-left">
+                <div class="inventory-bid">
+                    <div class="inventory-bid-total">
+                        Сумма:                            
+                        <span>17 800 BP</span>
+                    </div>
+
+                    <form action="" class="form-inventory-bid">
+                        <input type="number" placeholder="Введите сумму ставки" >
+                        <button class="btn btn-primary btn-block" >СДЕЛАТЬ СТАВКУ</button>
+                    </form>
+
+                    <div class="inventory-bid-hint">Мин.ставка: <span>10 BP</span></div>
+                    <div class="inventory-bid-goods">Предметов: <span>7 / 15</span></div>
+                </div>
+
+                <div class="inventory-grid sm">
+                    <div class="inventory-item">
+                        <div class="inventory-card danger">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-1.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <span class="inventory-label">FT</span>
+                                <p class="inventory-title">AK-47 | Bloodsport</p>
+                                <p class="inventory-price">1 708 BP</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory-item">
+                        <div class="inventory-card danger">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-2.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <p class="inventory-title">Sticker | Crown</p>
+                                <p class="inventory-price">170 000 BP</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory-item">
+                        <div class="inventory-card danger">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-3.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <p class="inventory-title">M9 Bayonet | Case</p>
+                                <p class="inventory-price">340 000 BP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory-item">
+                        <div class="inventory-card primary">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-4.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <p class="inventory-title">UMP-45 | Indigo</p>
+                                <p class="inventory-price">1 708 BP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory-item">
+                        <div class="inventory-card warning">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-5.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <p class="inventory-title">Desert Eagle | Blaz</p>
+                                <p class="inventory-price">65 000 BP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory-item">
+                        <div class="inventory-card success">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-6.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <p class="inventory-title">CZ-75 | Tiger</p>
+                                <p class="inventory-price">17 800 BP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="side-right">
+                <form action="" class="form-inventory-search">
+                    <input type="search" placeholder="Введите название скина" required >
+                </form>
+
+                <div class="inventory-filter">
+                    <div class="left">
+                        <button class="dropdown-toggle" type="button" id="inventoryFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Цена
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="inventoryFilter">
+                            <a class="dropdown-item" href="#link">
+                                Цена
+                            </a>
+                            <a class="dropdown-item" href="#link">
+                                Цена
+                            </a>
+                            <a class="dropdown-item" href="#link">
+                                Цена
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="center">
+                        <ul class="inventory-filter-list">
+
+                            <li class="inventory-filter-item">
+                                <a href="#link" class="inventory-filter-link" >
+                                    <img src="images/page-home/inventory/inventory-filter-csgo.png" alt="cs go" class="inventory-filter-img">
+                                </a>
+                            </li>
+
+                            <li class="inventory-filter-item">
+                                <a href="#link" class="inventory-filter-link" >
+                                    <img src="images/page-home/inventory/inventory-filter-dota-2.png" alt="dota 2" class="inventory-filter-img">
+                                </a>
+                            </li>
+
+                            <li class="inventory-filter-item">
+                                <a href="#link" class="inventory-filter-link" >
+                                    VGO
+                                </a>
+                            </li>
+
+                            <li class="inventory-filter-item">
+                                <a href="#link" class="inventory-filter-link" >
+                                    КАРТОЧКИ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="right">
+                        <button class="inventory-filter-reload">
+                            <img src="images/icons/icon-reload.png" alt="reload">
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="inventory-grid">
+                    <div class="inventory-item">
+                        <div class="inventory-card danger">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-1.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <span class="inventory-label">FT</span>
+                                <p class="inventory-title">AK-47 | Bloodsport</p>
+                                <p class="inventory-price">1 708 BP</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory-item">
+                        <div class="inventory-card danger">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-2.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <p class="inventory-title">Sticker | Crown</p>
+                                <p class="inventory-price">170 000 BP</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory-item">
+                        <div class="inventory-card danger">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-3.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <p class="inventory-title">M9 Bayonet | Case</p>
+                                <p class="inventory-price">340 000 BP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory-item">
+                        <div class="inventory-card primary">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-4.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <p class="inventory-title">UMP-45 | Indigo</p>
+                                <p class="inventory-price">1 708 BP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory-item">
+                        <div class="inventory-card warning">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-5.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <p class="inventory-title">Desert Eagle | Blaz</p>
+                                <p class="inventory-price">65 000 BP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory-item">
+                        <div class="inventory-card success">
+                            <div class="inventory-card-inner">
+                                <div class="inventory-thumbnail">
+                                    <img src="images/uploads/inventory/inventory-item-6.png" alt="inventory item name" class="inventory-picture">
+                                </div>
+
+                                <p class="inventory-title">CZ-75 | Tiger</p>
+                                <p class="inventory-price">17 800 BP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         <div class="navigation-wrapper">
             <div class="navigation-top">
                 <ul class="navigation-menu navigation-main">
@@ -520,7 +770,7 @@
 
 
                                                     <div class="col">
-                                                        <button class="btn btn-xl btn-block btn-primary" >ВНЕСТИ СКИНЫ</button>
+                                                        <button class="btn-inventory btn btn-xl btn-block btn-primary" >ВНЕСТИ СКИНЫ</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -839,7 +1089,7 @@
                                             </div>
 
                                             <div class="active-games">
-                                                <div class="active-game-card" style="background-image: url('images/page-home/section-active-games/active-games-bg.png')" >
+                                                <div class="active-game-card start" style="background-image: url('images/page-home/section-active-games/active-games-bg.png')" >
                                                     <div class="row align-items-center">
                                                         <div class="aside col-lg-3">
                                                             <div class="active-game-thumbnail">
@@ -848,7 +1098,22 @@
                                                         </div>
                                                         <div class="content col-lg-9">
                                                             <p class="active-game-title">Игра началась! Вносите свои депозиты</p>
-                                                            <div class="active-game-status">ЧЕСТНАЯ ИГРА</div>
+                                                            <button class="active-game-status" data-toggle="modal" data-target="#modalActiveGame" >ЧЕСТНАЯ ИГРА</button>
+                                                            <div class="active-game-hash">Хэш раунда: j2451jhg34afmcx3nmxx83oxzne43459dxtsd93as3xc760d</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="active-game-card done" style="background-image: url('images/page-home/section-active-games/active-games-bg-success.png')" >
+                                                    <div class="row align-items-center">
+                                                        <div class="aside col-lg-3">
+                                                            <div class="active-game-thumbnail">
+                                                                <img src="images/uploads/section-active-games/active-game-logo.png" alt="" class="game-active-picture" >
+                                                            </div>
+                                                        </div>
+                                                        <div class="content col-lg-9">
+                                                            <p class="active-game-title">Игра завершилась! Новая начнется совсем скоро</p>
+                                                            <button class="active-game-status" data-toggle="modal" data-target="#modalActiveGame" >Проверить</button>
                                                             <div class="active-game-hash">Хэш раунда: j2451jhg34afmcx3nmxx83oxzne43459dxtsd93as3xc760d</div>
                                                         </div>
                                                     </div>
@@ -871,48 +1136,47 @@
                         <div class="row">
                             <div class="col">
                                 <div class="winners-grid row">
-                                    <div class="winner-item col">
-                                        <div class="winner-card">
-                                            <div class="winner-header">
-                                                <p class="winner-title">Последний победитель</p>
+                                    <div class="winner-item col-sm-6 col-md-4">
+                                        <a href="#link" class="winner-card" style="background-image: url('images/page-home/section-winner/winner-card-item-1-bg.png')" >
+                                            <div class="winner-media">
                                                 <div class="winner-thumbnail">
                                                     <img src="images/uploads/section-winners/winner-item-1.png" alt="Verner2k" class="winner-picture">
                                                 </div>
-                                                <p class="winner-name">Verner2k</p>
                                             </div>
 
-                                            <div class="winner-body">
+                                            <div class="winner-content">
+                                                <p class="winner-name">Verner2k</p>
+                                                <p class="winner-title">Последний победитель</p>
                                                 <div class="winner-details">
-                                                    <p class="winner-details-title">ВЫИГРЫШ</p>
-                                                    <ul class="winner-details-list">
+                                                    <ul class="winner-details-list success">
                                                         <li class="winner-detail-item">
-                                                            Сумма: <span>$28.03</span>
+                                                            Выигрыш: <span>$28.03</span>
                                                         </li>
                                                         <li class="winner-detail-item">
                                                             Шанс: <span>15.03%</span>
                                                         </li>
                                                     </ul>
                                                 </div>
+                                                
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
 
-                                    <div class="winner-item col">
-                                        <div class="winner-card">
-                                            <div class="winner-header">
-                                                <p class="winner-title">Счастливчик дня</p>
+                                    <div class="winner-item col-sm-6 col-md-4">
+                                        <a href="#link" class="winner-card" style="background-image: url('images/page-home/section-winner/winner-card-item-2-bg.png')"  >
+                                            <div class="winner-media">
                                                 <div class="winner-thumbnail">
                                                     <img src="images/uploads/section-winners/winner-item-2.png" alt="EnjoyMaloy" class="winner-picture">
                                                 </div>
-                                                <p class="winner-name">EnjoyMaloy</p>
                                             </div>
 
-                                            <div class="winner-body">
+                                            <div class="winner-content">
+                                                <p class="winner-name">EnjoyMaloy</p>
+                                                <p class="winner-title">Счастливчик дня</p>
                                                 <div class="winner-details">
-                                                    <p class="winner-details-title">ВЫИГРЫШ</p>
-                                                    <ul class="winner-details-list">
+                                                    <ul class="winner-details-list warning">
                                                         <li class="winner-detail-item">
-                                                            Сумма: <span>$196.38</span>
+                                                            Выигрыш: <span>$196.38</span>
                                                         </li>
                                                         <li class="winner-detail-item">
                                                             Шанс: <span>1.47%</span>
@@ -920,31 +1184,32 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </div>
+
+                                        </a>
                                     </div>
 
 
-                                    <div class="winner-item col">
-                                        <div class="winner-card">
-                                            <div class="winner-header">
-                                                <p class="winner-title">Наибольшая ставка</p>
+                                    <div class="winner-item col-sm-6 col-md-4">
+                                        <a href="#link" class="winner-card" style="background-image: url('images/page-home/section-winner/winner-card-item-3-bg.png')"  >
+                                            <div class="winner-media">
                                                 <div class="winner-thumbnail">
                                                     <img src="images/uploads/section-winners/winner-item-3.png" alt="RanD0m_Guy" class="winner-picture">
                                                 </div>
-                                                <p class="winner-name">RanD0m_Guy</p>
                                             </div>
 
-                                            <div class="winner-body">
+                                            <div class="winner-content">
+                                                <p class="winner-name">RanD0m_Guy</p>
+                                                <p class="winner-title">Наибольшая ставка</p>
                                                 <div class="winner-details">
-                                                    <p class="winner-details-title">СТАВКА</p>
-                                                    <ul class="winner-details-list">
+                                                    <ul class="winner-details-list success">
                                                         <li class="winner-detail-item">
-                                                            Сумма: <span>$410.02</span>
+                                                            Рекордная сумма: <span>$410.02</span>
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </div>
+
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -953,8 +1218,72 @@
                 </main>
             </div>
 
-            <div class="footer">
-                lorem
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalActiveGame" tabindex="-1" role="dialog" aria-labelledby="modalActiveGameLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title" id="modalActiveGameLabel">Честная игра</p>
+                        <p class="active-game-number">#834257</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="active-game-details">
+                            <div class="active-game-detail">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="active-game-detail-title">Хэш раунда</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" value="g4325jhadsf81233asdfj1230dfsadkj541234h4hjkhdasf8213jskdah" >
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="active-game-detail-btn" >СКОПИРОВАТЬ</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="active-game-detail">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="active-game-detail-title">Соль хэша</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" value="hidden" >
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="active-game-detail-btn" >СКОПИРОВАТЬ</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="active-game-detail">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="active-game-detail-title">Секрет раунда</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" value="0.54968345698349875634567045624174324454" >
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="active-game-detail-btn" >СКОПИРОВАТЬ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

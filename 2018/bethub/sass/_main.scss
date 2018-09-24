@@ -563,14 +563,15 @@
 
 
 .active-games {
-
+	margin-bottom: -35px;
 }
 
 .active-game-card {
 	overflow: hidden;
-	border-radius: $global-radius;
+	margin-bottom: 35px;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	border-radius: $global-radius;
 	background-size: cover;
 	background-position: center;
 	background-color: #1c2127;
@@ -602,10 +603,12 @@
 	}
 
 	.active-game-status {
+		cursor: pointer;
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0;
 		padding: 5px 15px;
+		border: none;
 		border-radius: 10px;
 		background-color: $primary;
 		font-family: "SFUI Display";
@@ -625,6 +628,12 @@
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 1;
+	}
+
+	&.done {
+		.active-game-status {
+			background-color: $success;
+		}
 	}
 }
 
@@ -693,124 +702,108 @@
 
 .winners-grid {
 	justify-content: space-between;
-	.winner-item {
-		flex: 0 0 364px;
-		max-width: 364px;
-		@media screen and (max-width: 1199px) {
-			flex: 0 0 320px;
-			max-width: 320px;
-		}
-	}
 }
 
 .winner-card {
 	position: relative;
-	max-width: 364px;
-	min-height: 492px;
+	display: flex;
 	margin: 35px 0;
-	border: 5px solid #242b33;
+	padding: 30px 10px 30px 20px;
+	border: 2px solid transparent;
 	border-radius: $global-radius;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: contain;
 	background-color: #242b33;
-	text-align: center;
+	transition: border-color 300ms ease;
+	text-decoration: none;
+	.winner-media {
+		flex: 0 0 140px;
+		max-width: 140px;
+		margin-right: 30px;
+	}
+	.winner-content {
+	    align-self: center;
+	}
 
-	.winner-header {
+	.winner-thumbnail {
 		position: relative;
-		height: 290px;
-		background: url('../images/page-home/section-winner/winner-card-bg.png') no-repeat center center;
-		background-size: cover;
-		.winner-title {
+		z-index: 1;
+		width: 140px;
+		height: 120px;
+		padding: 12px 18px;
+		&:after {
+			content: '';
 			position: absolute;
-			top: -5px;
-			left: 50%;
-			width: 284px;
-			height: 34px;
-			margin: 0;
-			padding: 5px 5px;
-			background: url('../images/page-home/section-winner/winner-card-notch.png') no-repeat center top ;
-			transform: translateX(-50%);
-			color: #ffffff;
-			font-size: 16px;
-			font-weight: 700;
-			line-height: 1;
-			text-align: center;
-		}
-
-		.winner-name {
-			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			right: 0;
 			bottom: 0;
-			left: 50%;
-			min-width: 220px;
-			margin: 0;
-			padding: 8px 15px;
-			border: 5px solid #242b33;
-			border-radius: 15px;
-			background-color: $primary;
-			transform: translate(-50%, 50%);
-			color: #ffffff;
-			font-size: 24px;
-			font-weight: 700;
-			line-height: 1;
-			text-align: center;
+			background: url('../images/page-home/section-winner/winner-card-thumnbail-bg.png') no-repeat center top ;
+			background-size: contain;
 		}
 
-		.winner-thumbnail {
-			position: absolute;
-			z-index: 9;
-			top: 50%;
-			left: 50%;
-			width: 174px;
-			height: 152px;
-			padding: 14px 18px;
-			transform: translate(-50%, -50%);
-			&:after {
-				content: '';
-				position: absolute;
-				z-index: 1;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background: url('../images/page-home/section-winner/winner-card-thumnbail-bg.png') no-repeat center top ;
-			}
-
-			.winner-picture {
-				position: relative;
-				z-index: -1;
-				width: 138px;
-				height: 120px;
-				-webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
-				clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
-			}
+		.winner-picture {
+			position: relative;
+			z-index: -1;
+			width: 120px;
+			height: 94px;
+			-webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+			clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
 		}
 	}
 
-	.winner-body {
-		padding: 60px 20px 20px;
+
+	.winner-title {
+		margin: 0 0 10px;
+		color: #455260;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1;
 	}
 
-	.winner-details-title {
-		margin: 0 0 25px;
+	.winner-name {
+		margin: 0 0 10px;
 		color: #ffffff;
-		font-size: 25px;
-		font-weight: 900;
-		line-height: 13.01px;
-		text-transform: uppercase;
+		font-size: 27px;
+		font-weight: 700;
+		line-height: 1;
 	}
+
+
 
 	.winner-details-list {
 		margin: 0;
-		padding: 0;
+		padding: 5px;
 		list-style: none;
-		font-size: 20px;
-		font-weight: 500;
+		border-radius: $global-radius;
+		background-color: #1c2127;
+		font-size: 14px;
+		font-weight: 400;
 		color: #455260;
 		.winner-detail-item {
-			padding: 1px 0;
+			display: inline-block;
+			padding: 0 5px;
+		}
+
+		&.success {
 			span {
-				color: #36af46;
+				color: $success;
 			}
 		}
+		&.warning {
+			span {
+				font-weight: 600;
+				color: #f1bf0f;
+			}
+		}
+	}
+
+	&:hover {
+		border-color: $primary;
+		text-decoration: none;
 	}
 }
 

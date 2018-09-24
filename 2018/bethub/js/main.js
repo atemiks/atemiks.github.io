@@ -3,6 +3,7 @@ $( document ).ready(function() {
 	var header = $('.header-box');
 	var navigation = $('.navigation-wrapper');
 	var chat = $('.chat-wrapper');
+	var inventory = $('.inventory-wrapper');
 	
 
 	function getElHeight(el) {
@@ -48,6 +49,20 @@ $( document ).ready(function() {
 
 	$( ".chat-hint" ).on( "click", ".close", function() {
 		$( ".chat-hint" ).slideUp();
+	});
+
+
+	// inventory
+	function initInventory() {
+		$(inventory).css('top', getElHeight(header))
+	}
+	initInventory();
+
+	$( ".btn-inventory" ).on( "click", function() {
+		$(inventory).addClass('visible');
+	});
+	$( ".inventory-toggler" ).on( "click", function() {
+		$(inventory).removeClass('visible');
 	});
 
 
@@ -109,9 +124,22 @@ $( document ).ready(function() {
 	});
 
 
+	// modal
+    $( ".active-game-detail" ).on( "click", ".active-game-detail-btn" ,function(e) {
+
+        var currentParent = $(e.currentTarget).closest('.active-game-detail');
+
+        var currentInput = $(currentParent).find('input');
+        currentInput.select();
+        document.execCommand('copy');
+
+    });
+
+
 
 	$( window ).resize(function() {
 		initNavigation();
 		initChat();
+		initInventory();
 	});
 });
