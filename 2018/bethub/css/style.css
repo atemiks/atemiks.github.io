@@ -9897,6 +9897,7 @@ textarea {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   min-height: 107px;
   padding: 20px 30px;
   -webkit-border-radius: 10px;
@@ -10375,6 +10376,7 @@ textarea {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   margin: 35px 0;
   padding: 30px 10px 30px 20px;
   border: 2px solid transparent;
