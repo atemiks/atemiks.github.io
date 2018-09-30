@@ -34,6 +34,7 @@
 	display: flex;
 	width: 920px;
 	background-color: #242b33;
+	box-shadow: -2px 0 32px rgba(23, 26, 31, 0.35);
 	transition: right 300ms ease;
 	&.visible {
 		right: 0;
@@ -150,7 +151,9 @@
 
 	.inventory-filter-reload {
 		cursor: pointer;
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 30px;
 		height: 30px;
 		margin: 0 0 0 auto;
@@ -158,11 +161,11 @@
 		border: none;
 		border-radius: $global-radius;
 		background-color: $primary;
-		line-height: 30px;
+		font-size: 28px;
+		color: #fff;
+		line-height: 1;
 		text-align: center;
-		img {
-			height: 16px;
-		}
+		
 	}
 }
 
@@ -207,10 +210,13 @@
 .inventory-card {
 	cursor: pointer;
 	position: relative;
-	padding: 0 0 14px;
+	// overflow: hidden;
 	border: 2px solid transparent;
 	border-radius: $global-radius * 2;
+	// border-bottom-left-radius: 0;
+	// border-bottom-right-radius: 0;
 	background: #242b33;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
 	transition: border-color 300ms ease;
 	text-align: center;
 	&:after {
@@ -220,15 +226,17 @@
 		left: -2px;
 		right: -2px;
 		bottom: -2px;
-		height: 9px;
+		height: 20px;
 		border-bottom-left-radius: $global-radius * 2;
 		border-bottom-right-radius: $global-radius * 2;
 		transition: opacity 300ms ease, visibility 300ms ease; 
+		background-size: 40px 40px;
 	}
 
 	.inventory-card-inner {
 		position: relative;
 		overflow: hidden;
+		padding: 0 0 14px;
 		border-radius: $global-radius * 2;
 		&:before,
 		&:after {
@@ -269,7 +277,8 @@
 	.inventory-thumbnail {
 		position: relative;
 		height: 100px;
-		border: 10px solid transparent;
+		width: 80%;
+		margin: 0 auto;
 		.inventory-picture {
 			position: absolute;
 			top: 0;
@@ -278,7 +287,7 @@
 			bottom: 0;
 			max-width: 100%;
 			max-height: 100%;
-			margin: auto;
+			margin: auto auto 0;
 		}
 	}
 
@@ -310,22 +319,22 @@
 
 	&.success {
 		&:after {
-			background-color: $success;
+			background-image: linear-gradient(180deg, transparent 25%, $success 25%, $success 50%, transparent 50%, transparent 75%, $success 75%, $success 100%);
 		}
 	}
 	&.warning {
 		&:after {
-			background-color: $warning;
+			background-image: linear-gradient(180deg, transparent 25%, $warning 25%, $warning 50%, transparent 50%, transparent 75%, $warning 75%, $warning 100%);
 		}
 	}
 	&.danger {
 		&:after {
-			background-color: $danger;
+			background-image: linear-gradient(180deg, transparent 25%, $danger 25%, $danger 50%, transparent 50%, transparent 75%, $danger 75%, $danger 100%);
 		}
 	}
 	&.primary {
 		&:after {
-			background-color: $primary;
+			background-image: linear-gradient(180deg, transparent 25%, $primary 25%, $primary 50%, transparent 50%, transparent 75%, $primary 75%, $primary 100%);
 		}
 	}
 
@@ -385,7 +394,8 @@
 			max-width: 50%;
 			.inventory-card {
 				&:after {
-					height: 7px;
+					height: 28px;
+					background-size: 28px 86px;
 				}
 
 				.inventory-thumbnail {

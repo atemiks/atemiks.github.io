@@ -4,6 +4,7 @@ $( document ).ready(function() {
 	var navigation = $('.navigation-wrapper');
 	var chat = $('.chat-wrapper');
 	var inventory = $('.inventory-wrapper');
+	var bg0 = $('.bg0');
 	
 
 	function getElHeight(el) {
@@ -19,10 +20,11 @@ $( document ).ready(function() {
 	initNavigation() ;
 
 	$( ".header-navigation-toggler" ).on( "click", function() {
-		$('body').removeClass('chat-open')
 		$('body').toggleClass('navigation-open');
-		$(chat).removeClass('visible');
 	  	$(navigation).toggleClass('visible');
+	  	$(bg0).toggleClass('visible');
+		// $('body').removeClass('chat-open')
+		// $(chat).removeClass('visible');
 	});
 
 
@@ -33,10 +35,10 @@ $( document ).ready(function() {
 	initChat();
 
 	$( ".chat-toggler" ).on( "click", function() {
-		$('body').removeClass('navigation-open');
 		$('body').toggleClass('chat-open');
-		$(navigation).removeClass('visible');
 	  	$(chat).toggleClass('visible');
+		// $('body').removeClass('navigation-open');
+		// $(navigation).removeClass('visible');
 	});
 
 	$(".chat-body").mCustomScrollbar({
@@ -60,10 +62,18 @@ $( document ).ready(function() {
 
 	$( ".btn-inventory" ).on( "click", function() {
 		$(inventory).addClass('visible');
+		$(bg0).addClass('visible');
 	});
 	$( ".inventory-toggler" ).on( "click", function() {
 		$(inventory).removeClass('visible');
+		$(bg0).removeClass('visible');
 	});
+
+
+	// bg0
+	// $( bg0 ).on( "click", function() {
+	// 	$( ".hero-banner" ).slideUp();
+	// });
 
 
 

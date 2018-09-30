@@ -87,25 +87,74 @@
 }
 
 
-// @font-face {
-//     font-family: 'SF UI Display';
-//     src:  url('../fonts/SFUIDisplay-Regular/SFUIDisplay-Regular.eot');
-//     src:  url('../fonts/SFUIDisplay-Regular/SFUIDisplay-Regular.eot#iefix') format('embedded-opentype'),
-//         url('../fonts/SFUIDisplay-Regular/SFUIDisplay-Regular.ttf') format('truetype'),
-//         url('../fonts/SFUIDisplay-Regular/SFUIDisplay-Regular.woff') format('woff'),
-//         url('../fonts/SFUIDisplay-Regular/SFUIDisplay-Regular.svg#SFUIDisplay-Regular') format('svg');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon/icomoon.eot');
+    src:  url('../fonts/icomoon/icomoon.eot#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon/icomoon.woff') format('woff'),
+        url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
-// @font-face {
-//     font-family: 'icomoon';
-//     src:  url('../fonts/icomoon/icomoon.eot');
-//     src:  url('../fonts/icomoon/icomoon.eot#iefix') format('embedded-opentype'),
-//         url('../fonts/icomoon/icomoon.ttf') format('truetype'),
-//         url('../fonts/icomoon/icomoon.woff') format('woff'),
-//         url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-smile:before {
+  content: "\e900";
+}
+.icon-time:before {
+  content: "\e901";
+}
+.icon-users:before {
+  content: "\e902";
+}
+.icon-volume-off:before {
+  content: "\e903";
+}
+.icon-volume-on:before {
+  content: "\e904";
+}
+.icon-warning:before {
+  content: "\e905";
+}
+.icon-fighting-game:before {
+  content: "\e906";
+}
+.icon-crown:before {
+  content: "\e907";
+}
+.icon-chest:before {
+  content: "\e908";
+}
+.icon-chip:before {
+  content: "\e909";
+}
+.icon-info:before {
+  content: "\e90a";
+}
+.icon-settings:before {
+  content: "\e90b";
+}
+.icon-stat:before {
+  content: "\e90c";
+}
+.icon-reload:before {
+  content: "\e90d";
+}
