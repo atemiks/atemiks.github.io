@@ -712,6 +712,9 @@
 
 .winners-grid {
 	justify-content: space-between;
+	.winner-item {
+		display: flex;
+	}
 }
 
 .winner-card {
