@@ -1,0 +1,157 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer-box {
+	flex: 0 0 auto;
+}
+
+
+.container {
+	@media (min-width: 1240px) {
+		max-width: 1200px;
+	}
+}
+
+
+.section-header {
+	.section-title {
+		margin: 30px 0;
+		color: $purple;
+		font-weight: 700;
+		@include media-breakpoint-down(md) {
+			margin: 15px 0;
+		}
+	}
+	.section-subtitle {
+		margin: 0;
+		color: #5d6c7a;
+		font-size: 18px;
+		font-style: italic;
+		font-weight: 500;
+	}
+}
+
+
+
+.modal {
+	.modal-dialog {
+		max-width: 400px;
+		.modal-content {
+			border: none;
+			border-radius: 0;
+			background-color: #f4f7f9;
+		}
+	}
+
+	.close {
+		cursor: pointer;
+		opacity: 1;
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		line-height: 1;
+		img {
+			width: 15px;
+		}
+	}
+
+	.modal-header {
+		padding-top: 40px;
+		border-bottom: none;
+		.modal-title {
+			@extend .h2;
+			color: $default-heading;
+		}
+	}
+}
+
+.form-modal {
+
+	input {
+		border: 3px solid #ebebeb;
+	}
+
+	.custom-control {
+		max-width: 255px;
+		margin-top: 20px;
+	}
+
+	.custom-checkbox .custom-control-label a {
+		border-bottom-color: $purple;
+		color: $purple;
+	}
+}
+
+.modal-advantages {
+	@extend .reset-list;
+	.modal-advantage {
+		padding: 5px 0;
+	}
+}
+
+.modal-advantage {
+	display: flex;
+	align-items: center;
+	.advantage-media {
+		@extend .warning-gradient;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 0 0 60px;
+		max-width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		margin-right: 12px;
+		img {
+			height: 35px;
+		}
+	}
+	.advantage-content {
+		color: #5d6c7a;
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
+
+
+
+.rangeslider {
+	border-radius: 0;
+	background-color: #d7d7d7;
+	box-shadow: none;
+	.rangeslider__fill {
+		border-radius: 0;
+		background-color: #6d283d;
+		background-image: linear-gradient(to left, #c73c59 0%, #922569 100%);
+	}
+
+	.rangeslider__handle {
+		width: 24px;
+		height: 24px;
+		border: none;
+		border-radius: 0;
+		background: $warning;
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.rangeslider--horizontal {
+	height: 10px;
+	.rangeslider__handle {
+		top: -7px;
+	}
+}

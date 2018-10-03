@@ -1,0 +1,16 @@
+.reset-list {
+	cursor: default;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.danger-gradient {
+	background-color: #6d283d;
+	background-image: linear-gradient(to top, #c73c59 0%, #922569 100%);
+}
+
+.warning-gradient {
+	background-color: #6d283d;
+	background-image: linear-gradient(to top, #c73c59 0%, #f9951f 100%);
+}

@@ -1,0 +1,291 @@
+.header-statusbar {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
+
+.statubar-menu {
+	@extend .reset-list;
+	.statusbar-menu-item {
+		display: inline-block;
+		margin-right: 23px;
+		&:last-child {
+			margin-right: 0;
+		}
+
+		.statusbar-menu-link {
+			color: #5d6c7a;
+			font-size: 16px;
+			font-weight: 300;
+			text-decoration: none;
+			&:hover {
+				color: darken(#5d6c7a, 15%);
+			}
+		}
+	}
+}
+
+
+.form-search {
+	position: relative;
+	.form-search-input {
+		width: 295px;
+		height: 24px;
+		padding: 0 25px 0 10px;
+		border: 3px solid #f4f7f9;
+		font-size: 14px;
+	}
+	.form-search-button {
+		cursor: pointer;
+		position: absolute;
+		z-index: 9;
+		width: 12px;
+		height: 12px;
+		top: -2px;
+		right: 5px;
+		margin: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+	}
+}
+
+
+.header {
+	@extend .danger-gradient;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+
+.header-logo {
+	width: 180px;
+	@include media-breakpoint-down(sm) {
+		width: 65px;
+	}
+
+	.header-logo-link {
+		display: flex;
+		align-items: center;
+		text-decoration: none !important;
+		.header-logo-icon {
+			flex: 0 0 65px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 65px;
+			height: 65px;
+			border-radius: 50%;
+			margin-right: 15px;
+			background-color: #fff;
+			@include media-breakpoint-down(sm) {
+				margin-right: 0;
+			}
+		}
+		.header-logo-value {
+			color: #ffffff;
+			font-size: 24px;
+			font-weight: 600;
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+	}
+}
+
+
+.header-nav-list {
+	@extend .reset-list;
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+
+	.header-nav-item {
+		display: inline-block;
+		margin-right: 22px;
+		&:last-child {
+			margin-right: 0;
+		}
+
+		.header-nav-link {
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 500;
+		}
+	}
+}
+
+
+.header-address {
+	margin: 5px 0 0;
+	color: $warning;
+	font-size: 16px;
+	font-weight: 500;
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
+
+.header-contact {
+	display: inline-block;
+	vertical-align: middle;
+	.header-contact-phone {
+		color: #ffffff;
+		font-size: 33px;
+		font-weight: 700;
+		@include media-breakpoint-down(sm) {
+			font-size: 15px;
+		}
+
+		span {
+			color: $warning;
+		}
+
+		&:hover {
+			color: $warning;
+			text-decoration: none;
+		}
+	}
+
+	.header-contact-actions {
+		@extend .reset-list;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+
+		.header-contact-action {
+			> a,
+			> button {
+				cursor: pointer;
+				margin: 0;
+				padding: 0;
+				border: none;
+				border-bottom: 1px dotted $warning;
+				background-color: transparent;
+				color: $warning;
+				font-size: 16px;
+				font-weight: 500;
+				&:hover {
+					border-bottom-color: transparent;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			right: 0;
+		}
+	}
+}
+
+
+.header-offcanvas-toggler {
+	cursor: pointer;
+	display: none;
+	outline: none;
+	width: 30px;
+	margin: 0 0 0 15px;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	@include media-breakpoint-down(md) {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	span {
+		display: block;
+		height: 2px;
+		margin: 8px 0;
+		background-color: #fff;
+	}
+}
+
+.offcanvas {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+	background-color: #f4f7f9;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(100%);
+	transition: 300ms ease;
+	&.visible {
+		opacity: 1;
+		visibility: visible;
+	    transform: translateX(0);
+	}
+
+	.offcanvas-close {
+		outline: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40px;
+		height: 40px;
+		margin: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		img {
+			width: 15px;
+		}
+	}
+
+	.offcanvas-header {
+		position: relative;
+		padding: 15px 15px;
+	}
+
+	.offcanvas-body {
+		padding: 15px;
+	}
+
+	.offcanvas-footer {
+		padding: 15px;
+	}
+
+	.offcanvas-menu {
+		@extend .reset-list;
+		li {
+			border-bottom: 1px solid rgba($purple, .2);
+			a {
+				display: block;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				font-size: 18px;
+				color: $purple;
+			}
+
+			&.active,
+			&:hover {
+				a {
+					color: $warning;
+				}
+			}
+		}
+	}
+
+	.offcanvas-contact {
+		margin-bottom: 25px;
+		a {
+			font-size: 18px;
+			font-weight: 700;
+		}
+	}
+}
+
+
+
