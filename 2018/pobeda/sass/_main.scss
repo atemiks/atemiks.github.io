@@ -92,6 +92,7 @@
 	.hero-type-button {
 		position: relative;
 		z-index: 1;
+		display: block;
 		margin: 20px 0;
 		padding: 18px 15px;
 		background-color: $purple;
@@ -137,6 +138,10 @@
 			@include media-breakpoint-down(sm) {
 				border-radius: 16px;
 			}
+		}
+
+		&:hover {
+			text-decoration: none;
 		}
 
 	}
@@ -796,10 +801,13 @@
 }
 
 #map {
-	height: 400px;
+	height: 780px;
 	margin-left: -15px;
 	margin-right: -15px;
 	background-color: $gray;
+	@include media-breakpoint-down(md) {
+		height: 400px;
+	}
 	@include media-breakpoint-down(sm) {
 		height: 280px;
 	}
