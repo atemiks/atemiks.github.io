@@ -8140,6 +8140,11 @@ input {
           border-radius: 0;
   background-color: #fff; }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
 button {
   outline: none; }
 
@@ -8406,6 +8411,12 @@ button {
     font-weight: 700; }
     @media (max-width: 767.98px) {
       .header-contact .header-contact-phone {
+        font-size: 30px; } }
+    @media screen and (max-width: 475px) {
+      .header-contact .header-contact-phone {
+        font-size: 22px; } }
+    @media screen and (max-width: 375px) {
+      .header-contact .header-contact-phone {
         font-size: 15px; } }
     .header-contact .header-contact-phone span {
       color: #f9951f; }
@@ -8599,6 +8610,7 @@ button {
   padding-top: 40px;
   border-bottom: none; }
   .modal .modal-header .modal-title {
+    margin: 0 0 -10px;
     color: #6d283d; }
 
 .form-modal input {

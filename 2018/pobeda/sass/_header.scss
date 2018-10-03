@@ -142,6 +142,12 @@
 		font-size: 33px;
 		font-weight: 700;
 		@include media-breakpoint-down(sm) {
+			font-size: 30px;
+		}
+		@media screen and (max-width: 475px) {
+			font-size: 22px;
+		}
+		@media screen and (max-width: 375px) {
 			font-size: 15px;
 		}
 

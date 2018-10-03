@@ -72,6 +72,7 @@
 		border-bottom: none;
 		.modal-title {
 			@extend .h2;
+			margin: 0 0 -10px;
 			color: $default-heading;
 		}
 	}
