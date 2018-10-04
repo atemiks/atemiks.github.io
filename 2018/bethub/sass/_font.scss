@@ -116,6 +116,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-user:before {
+  content: "\e90e";
+}
+.icon-layers:before {
+  content: "\e90f";
+}
+.icon-grid:before {
+  content: "\e910";
+}
+.icon-settings-lg:before {
+  content: "\e911";
+}
+.icon-briefcase:before {
+  content: "\e912";
+}
+.icon-power:before {
+  content: "\e913";
+}
 .icon-smile:before {
   content: "\e900";
 }

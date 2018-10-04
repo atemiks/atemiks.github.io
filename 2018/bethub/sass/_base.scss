@@ -45,3 +45,135 @@ textarea {
 		color: #2f3741;
 	}
 }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none; 
+	margin: 0; 
+}
+
+
+.badge {
+	font-family: "SFUI Display";
+	font-size: 10px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	&.badge-danger {
+		background-color: $danger;
+		box-shadow: 0 0 5px rgba(219, 37, 37, 0.25);
+		color: #ffffff;
+	}
+}
+
+
+.btn {
+	display: inline-block;
+	border: none;
+	border-radius: 15px;
+	background-color: #242b33;
+	color: #fefefe;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1;
+	transitition: background-color 300ms ease;
+	&.btn-xs {
+		padding: 8px 14px;
+		font-size: 13px;
+	}
+	&.btn-xl {
+		padding: 35px 25px;
+		border-radius: $global-radius;
+		box-shadow: 0 0 32px rgba(25, 144, 234, 0.15);
+		font-size: 36px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&.btn-block {
+		display: block;
+		width: 100%;
+		min-width: 100%;
+	}
+
+
+	&.btn-success {
+		background-color: $success;
+	}
+	&.btn-primary {
+		background-color: $primary;
+	}
+}
+
+
+.table-hover tbody tr:hover,
+.table-hover tbody tr.active {
+	background-color: #2a313b;
+}
+
+
+.dropdown-menu {
+	padding: 15px 0;
+	border: 0;
+	border-radius: 0;
+	background-color: #1c2127;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+	.dropdown-item {
+		position: relative;
+		margin: 0;
+		padding: 10px 15px;
+		color: #475462;
+		font-size: 14px;
+		font-weight: 400;
+		&:hover {
+			background-color: transparent;
+			color: $primary;
+		}
+	}
+}
+
+
+.nav.nav-tabs {
+	border: none;
+	background-color: #1c2127;
+	.nav-item {
+		margin: 0 22px;
+		i {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 12px 25px 18px 0;
+			font-size: 24px;
+		}
+
+		.nav-link {
+			display: inline-block;
+			margin: 0;
+			padding: 16px 0 12px;
+			border: none;
+			border-bottom: 2px solid transparent;
+			border-radius: 0;
+			font-size: 18px;
+			font-weight: 400;
+			color: #c1c1c2;
+			&:hover {
+				color: $primary;
+			}
+
+			&.active {
+				border-bottom-color: $primary;
+				background-color: transparent;
+				color: $primary;
+			}
+		}
+	}
+}
+
+.tab-content {
+	overflow: hidden;
+	padding: 35px 25px;
+	border-bottom-left-radius: $global-radius;
+	border-bottom-right-radius: $global-radius;
+	background-color: #242b33;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+	color: #516070;
+}

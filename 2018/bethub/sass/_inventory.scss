@@ -319,22 +319,22 @@
 
 	&.success {
 		&:after {
-			background-image: linear-gradient(180deg, transparent 25%, $success 25%, $success 50%, transparent 50%, transparent 75%, $success 75%, $success 100%);
+			background-image: linear-gradient(180deg, transparent 25%, $success 25%, $success 50%, transparent 50%, transparent 75%, $success 75%, transparent 100%);
 		}
 	}
 	&.warning {
 		&:after {
-			background-image: linear-gradient(180deg, transparent 25%, $warning 25%, $warning 50%, transparent 50%, transparent 75%, $warning 75%, $warning 100%);
+			background-image: linear-gradient(180deg, transparent 25%, $warning 25%, $warning 50%, transparent 50%, transparent 75%, $warning 75%, transparent 100%);
 		}
 	}
 	&.danger {
 		&:after {
-			background-image: linear-gradient(180deg, transparent 25%, $danger 25%, $danger 50%, transparent 50%, transparent 75%, $danger 75%, $danger 100%);
+			background-image: linear-gradient(180deg, transparent 25%, $danger 25%, $danger 50%, transparent 50%, transparent 75%, $danger 75%, transparent 100%);
 		}
 	}
 	&.primary {
 		&:after {
-			background-image: linear-gradient(180deg, transparent 25%, $primary 25%, $primary 50%, transparent 50%, transparent 75%, $primary 75%, $primary 100%);
+			background-image: linear-gradient(180deg, transparent 25%, $primary 25%, $primary 50%, transparent 50%, transparent 75%, $primary 75%, transparent 100%);
 		}
 	}
 
@@ -400,18 +400,58 @@
 
 				.inventory-thumbnail {
 					height: 75px;
+					.inventory-picture {
+						max-height: 50px;
+					}
 				}
 
-				.inventory-title {
-					font-size: 14px;
-				}
-
+				.inventory-title,
 				.inventory-price {
 					font-size: 14px;
 				}
 
 				.inventory-label {
 					font-size: 13px;
+				}
+			}
+		}
+	}
+
+	&.xs {
+		.inventory-item {
+			flex: 0 0 104px;
+			max-width: 104px;
+			.inventory-card {
+				width: 104px;
+				border-radius: $global-radius;
+				box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+				&:after {
+					height: 28px;
+					background-size: 28px 86px;
+					border-radius: $global-radius;
+				}
+
+				.inventory-thumbnail {
+					height: 45px;
+					.inventory-picture {
+						max-height: 35px;
+					}
+				}
+
+				.inventory-title,
+				.inventory-price {
+					font-size: 11px;
+				}
+
+				.inventory-title {
+					margin: 5px 0;
+					white-space: nowrap;
+				}
+
+				.inventory-label {
+					top: 5px;
+					right: 5px;
+					font-size: 8px;
 				}
 			}
 		}
