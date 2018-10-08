@@ -8614,6 +8614,9 @@ button {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.45px; }
+    @media (max-width: 991.98px) {
+      .section-header .section-subtitle {
+        max-width: 100%; } }
 
 .modal .modal-dialog {
   max-width: 968px; }
@@ -8833,6 +8836,13 @@ button {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.45px; }
+  @media (max-width: 767.98px) {
+    .range-sum-value-left,
+    .range-sum-value-right,
+    .range-time-value-left,
+    .range-time-value-right {
+      top: auto;
+      bottom: -25px; } }
 
 .range-slider-wrap {
   position: relative; }
@@ -8922,25 +8932,46 @@ button {
     margin-bottom: 30px; }
 
 .section-calc {
-  opacity: 0;
+  overflow: hidden;
   padding-top: 90px;
   padding-bottom: 80px; }
+  @media (max-width: 991.98px) {
+    .section-calc {
+      padding-bottom: 20px; } }
   .section-calc .section-header {
     margin-bottom: 15px; }
   .section-calc .calc-content {
     position: relative;
-    padding: 40px 90px;
+    padding: 40px 80px 20px;
     -webkit-border-radius: 10px;
             border-radius: 10px;
     background-color: #e8e8e8; }
+    @media (max-width: 1199.98px) {
+      .section-calc .calc-content {
+        padding-left: 40px;
+        padding-right: 40px; } }
+    @media (max-width: 767.98px) {
+      .section-calc .calc-content {
+        padding-left: 15px;
+        padding-right: 15px; } }
     .section-calc .calc-content:before {
       content: '';
       position: absolute;
+      z-index: -1;
+      top: -180px;
+      left: -90px;
       width: 388px;
       height: 388px;
-      background: url("../images/page-home/"); }
+      background: url("../images/page-home/section-calc/calc-circle.png") no-repeat 0 0;
+      -webkit-background-size: contain;
+              background-size: contain; }
   .section-calc .calc-type-list {
     margin-bottom: 25px; }
+    @media (max-width: 767.98px) {
+      .section-calc .calc-type-list {
+        overflow-y: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch; } }
     .section-calc .calc-type-list li {
       cursor: pointer;
       display: inline-block;
@@ -8952,6 +8983,8 @@ button {
       transition: border-color 300ms ease; }
       .section-calc .calc-type-list li.active, .section-calc .calc-type-list li:hover {
         border-bottom-color: #ffd051; }
+  .section-calc .range-time-box {
+    margin-bottom: 50px; }
   .section-calc .range-field {
     display: -webkit-box;
     display: -webkit-flex;
@@ -8963,6 +8996,10 @@ button {
             align-items: flex-end;
     height: 50px;
     margin: 0 0 20px; }
+    @media (max-width: 767.98px) {
+      .section-calc .range-field {
+        display: block;
+        margin-bottom: 35px; } }
     .section-calc .range-field .range-title {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 135px;
@@ -8973,6 +9010,9 @@ button {
       font-size: 18px;
       font-weight: 500;
       letter-spacing: 0.45px; }
+      @media (max-width: 767.98px) {
+        .section-calc .range-field .range-title {
+          margin: 0 0 15px; } }
     .section-calc .range-field .range-slider-wrap {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
@@ -8980,11 +9020,14 @@ button {
               flex: 1;
       margin-bottom: 10px; }
   .section-calc .result-block {
-    padding: 25px 15px;
+    padding: 45px 15px 30px;
     background-color: #e8e8e8;
     -webkit-border-radius: 10px;
             border-radius: 10px;
     text-align: center; }
+    @media (max-width: 991.98px) {
+      .section-calc .result-block {
+        margin: 25px -15px 0; } }
     .section-calc .result-block .result-title {
       max-width: 240px;
       margin: 0 auto;
@@ -8996,6 +9039,16 @@ button {
       font-size: 72px;
       font-weight: 500;
       letter-spacing: 1.8px; }
+      @media (max-width: 1199.98px) {
+        .section-calc .result-block .result {
+          font-size: 40px; } }
+  .section-calc .form-calc input {
+    height: 45px;
+    border: 3px solid #fff;
+    padding: 0 20px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: transparent; }
   .section-calc .form-calc .form-group {
     display: -webkit-box;
     display: -webkit-flex;

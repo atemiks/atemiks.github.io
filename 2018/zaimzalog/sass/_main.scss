@@ -69,9 +69,13 @@
 
 
 .section-calc {
-	opacity: 0;
+	overflow: hidden;
 	padding-top: 90px;
 	padding-bottom: 80px;
+	@include media-breakpoint-down(md) {
+		padding-bottom: 20px;
+	}
+
 	.section-header {
 		margin-bottom: 15px;
 	}
@@ -79,15 +83,28 @@
 
 	.calc-content {
 		position: relative;
-		padding: 40px 90px;
+		padding: 40px 80px 20px;
 		border-radius: 10px;
 		background-color: $gray;
+		@include media-breakpoint-down(lg) {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		@include media-breakpoint-down(sm) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
+			z-index: -1;
+			top: -180px;
+			left: -90px;
 			width: 388px;
 			height: 388px;
-			background: url('../images/page-home/');
+			background: url('../images/page-home/section-calc/calc-circle.png')  no-repeat 0 0;
+			background-size: contain;
 		}
 	}
 
@@ -95,6 +112,12 @@
 	.calc-type-list {
 		@extend .reset-list;
 		margin-bottom: 25px;
+		@include media-breakpoint-down(sm) {
+			overflow-y: auto;
+			white-space: nowrap;
+			 -webkit-overflow-scrolling: touch;
+		}
+
 		li {
 			cursor: pointer;
 			display: inline-block;
@@ -110,11 +133,21 @@
 	}
 
 
+	.range-time-box  {
+		margin-bottom: 50px;
+	}
+
+
 	.range-field {
 		display: flex;
 		align-items: flex-end;
 		height: 50px;
 		margin: 0 0 20px;
+		@include media-breakpoint-down(sm) {
+			display: block;
+			margin-bottom: 35px;
+		}
+
 		.range-title {
 			flex: 0 0 135px;
 			max-width: 135px;
@@ -122,6 +155,9 @@
 			font-size: 18px;
 			font-weight: 500;
 			letter-spacing: 0.45px;
+			@include media-breakpoint-down(sm) {
+				margin: 0 0 15px;
+			}
 		}
 		.range-slider-wrap {
 			flex: 1;
@@ -130,10 +166,14 @@
 	}
 
 	.result-block {
-		padding: 25px 15px;
+		padding: 45px 15px 30px;
 		background-color: $gray;
 		border-radius: 10px;
 		text-align: center;
+		@include media-breakpoint-down(md) {
+			margin: 25px -15px 0;
+		}
+
 		.result-title {
 			max-width: 240px;
 			margin: 0 auto;
@@ -147,11 +187,22 @@
 			font-size: 72px;
 			font-weight: 500;
 			letter-spacing: 1.8px;
+			@include media-breakpoint-down(lg) {
+				font-size: 40px;
+			}
 		}
 	}
 
 
 	.form-calc {
+		input {
+			height: 45px;
+			border: 3px solid #fff;
+			padding: 0 20px;
+			box-shadow: none;
+			background-color: transparent;
+		}
+
 		.form-group {
 			display: flex;
 			align-items: center;
