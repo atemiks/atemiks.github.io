@@ -8249,15 +8249,29 @@ button {
 
 .custom-checkbox.lg {
   padding: 0 0 0 60px; }
+  @media (max-width: 767.98px) {
+    .custom-checkbox.lg {
+      padding: 0 0 0 20px; } }
   .custom-checkbox.lg .custom-control-label:before, .custom-checkbox.lg .custom-control-label:after {
     left: -60px;
     width: 50px;
     height: 40px; }
+    @media (max-width: 767.98px) {
+      .custom-checkbox.lg .custom-control-label:before, .custom-checkbox.lg .custom-control-label:after {
+        width: 20px;
+        height: 15px; } }
   .custom-checkbox.lg.reverse {
     padding: 0 60px 0 0; }
+    @media (max-width: 767.98px) {
+      .custom-checkbox.lg.reverse {
+        padding: 0 0 0 20px; } }
     .custom-checkbox.lg.reverse .custom-control-label:before, .custom-checkbox.lg.reverse .custom-control-label:after {
       left: auto;
       right: -60px; }
+      @media (max-width: 767.98px) {
+        .custom-checkbox.lg.reverse .custom-control-label:before, .custom-checkbox.lg.reverse .custom-control-label:after {
+          right: auto;
+          left: -20px; } }
     .custom-checkbox.lg.reverse .custom-control-input:checked ~ .custom-control-label::after {
       top: 8px;
       right: -55px;
@@ -8267,6 +8281,12 @@ button {
       background: url("../images/icons/icon-check-lg.png") no-repeat 0 0 !important;
       -webkit-background-size: contain;
               background-size: contain; }
+      @media (max-width: 767.98px) {
+        .custom-checkbox.lg.reverse .custom-control-input:checked ~ .custom-control-label::after {
+          top: 0;
+          width: 22px;
+          height: 16px;
+          background: url("../images/icons/icon-check.png") no-repeat 0 0 !important; } }
 
 .btn {
   position: relative;
@@ -9058,6 +9078,9 @@ button {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 767.98px) {
+      .section-calc .form-calc .form-group {
+        display: block; } }
   .section-calc .calc-btn {
     margin-top: 40px;
     margin-bottom: 40px; }
@@ -9380,7 +9403,7 @@ button {
     @media (max-width: 991.98px) {
       .examples-slider .slide-item {
         width: 320px; } }
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767.98px) {
       .examples-slider .slide-item {
         -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
