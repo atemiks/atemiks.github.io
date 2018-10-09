@@ -1,16 +1,7 @@
 .section-hero {
-	min-height: 770px;
-	padding-top: 220px;
-	padding-bottom: 160px;
+	padding-top: 0;
+	padding-bottom: 0;
 	background-color: #e8e3e2;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	@include media-breakpoint-down(lg) {
-		min-height: 560px;
-		padding-top: 140px;
-	}
-
 	.hero-title {
 		margin: 0 0 45px;
 		span {
@@ -29,6 +20,68 @@
 		}
 	}
 
+
+	.hero-slider {
+		margin: 0;
+		.slide-item {
+			min-height: 770px;
+			padding-top: 220px;
+			padding-bottom: 160px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			@include media-breakpoint-down(lg) {
+				min-height: 560px;
+				padding-top: 140px;
+			}
+		}
+
+		.slick-dots {
+			@extend .container;
+			z-index: 1;
+			left: 50%;
+			bottom: 140px;
+			transform: translateX(-50%);
+			text-align: left;
+			li {
+				vertical-align: bottom;
+				width: 8.5%;
+				height: 3px;
+				margin: 0;
+				button {
+					width: 100%;
+					height: inherit;
+					margin: 0;
+					padding: 0;
+					background-color: #000;
+					font-size: 0;
+					&:before {
+						display: none;
+					}
+				}
+
+				&.slick-active {
+					height: 5px;
+				}
+			}
+
+			span {
+				position: relative;
+				bottom: -10px;
+				display: inline-block;
+				vertical-align: bottom;
+				font-size: 18px;
+				&:first-child {
+					bottom: -14px;
+					margin-right: 5px;
+					font-size: 24px;
+				}
+				&:last-child {
+					margin-left: 5px;
+				}
+			}
+		}
+	}
 }
 
 

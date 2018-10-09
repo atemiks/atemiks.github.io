@@ -39,6 +39,17 @@ $( document ).ready(function() {
 	});
 
 
+    // hero
+    $('.hero-slider').slick({
+        slidesToShow: 1,
+        dots: true,
+        arrows: false
+    });
+
+    var heroPagination = $('.hero-slider .slick-dots');
+    heroPagination.prepend('<span>01</span>');
+    heroPagination.append('<span>02</span>');
+
     // examples
     $('.examples-slider').slick({
         slidesToShow: 2,

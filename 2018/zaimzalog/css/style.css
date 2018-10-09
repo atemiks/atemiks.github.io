@@ -451,23 +451,23 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container {
+.container, .section-hero .hero-slider .slick-dots {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
-    .container {
+    .container, .section-hero .hero-slider .slick-dots {
       max-width: 540px; } }
   @media (min-width: 768px) {
-    .container {
+    .container, .section-hero .hero-slider .slick-dots {
       max-width: 720px; } }
   @media (min-width: 992px) {
-    .container {
+    .container, .section-hero .hero-slider .slick-dots {
       max-width: 960px; } }
   @media (min-width: 1200px) {
-    .container {
+    .container, .section-hero .hero-slider .slick-dots {
       max-width: 1140px; } }
 
 .container-fluid {
@@ -3522,7 +3522,7 @@ input[type="button"].btn-block {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.5rem 1rem; }
-  .navbar > .container,
+  .navbar > .container, .section-hero .hero-slider .navbar > .slick-dots,
   .navbar > .container-fluid {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3613,7 +3613,7 @@ input[type="button"].btn-block {
           background-size: 100% 100%; }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container,
+  .navbar-expand-sm > .container, .section-hero .hero-slider .navbar-expand-sm > .slick-dots,
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3640,7 +3640,7 @@ input[type="button"].btn-block {
       .navbar-expand-sm .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-sm > .container,
+    .navbar-expand-sm > .container, .section-hero .hero-slider .navbar-expand-sm > .slick-dots,
     .navbar-expand-sm > .container-fluid {
       -webkit-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
@@ -3657,7 +3657,7 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 767.98px) {
-  .navbar-expand-md > .container,
+  .navbar-expand-md > .container, .section-hero .hero-slider .navbar-expand-md > .slick-dots,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3684,7 +3684,7 @@ input[type="button"].btn-block {
       .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-md > .container,
+    .navbar-expand-md > .container, .section-hero .hero-slider .navbar-expand-md > .slick-dots,
     .navbar-expand-md > .container-fluid {
       -webkit-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
@@ -3701,7 +3701,7 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 991.98px) {
-  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container, .section-hero .hero-slider .navbar-expand-lg > .slick-dots,
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3728,7 +3728,7 @@ input[type="button"].btn-block {
       .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-lg > .container,
+    .navbar-expand-lg > .container, .section-hero .hero-slider .navbar-expand-lg > .slick-dots,
     .navbar-expand-lg > .container-fluid {
       -webkit-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
@@ -3745,7 +3745,7 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container,
+  .navbar-expand-xl > .container, .section-hero .hero-slider .navbar-expand-xl > .slick-dots,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3772,7 +3772,7 @@ input[type="button"].btn-block {
       .navbar-expand-xl .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-xl > .container,
+    .navbar-expand-xl > .container, .section-hero .hero-slider .navbar-expand-xl > .slick-dots,
     .navbar-expand-xl > .container-fluid {
       -webkit-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
@@ -3798,7 +3798,7 @@ input[type="button"].btn-block {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
-  .navbar-expand > .container,
+  .navbar-expand > .container, .section-hero .hero-slider .navbar-expand > .slick-dots,
   .navbar-expand > .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -3813,7 +3813,7 @@ input[type="button"].btn-block {
     .navbar-expand .navbar-nav .nav-link {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .navbar-expand > .container,
+  .navbar-expand > .container, .section-hero .hero-slider .navbar-expand > .slick-dots,
   .navbar-expand > .container-fluid {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
@@ -7865,7 +7865,7 @@ a.text-dark:hover, a.text-dark:focus {
     size: a3; }
   body {
     min-width: 992px !important; }
-  .container {
+  .container, .section-hero .hero-slider .slick-dots {
     min-width: 992px !important; }
   .navbar {
     display: none; }
@@ -8333,7 +8333,8 @@ button {
   .btn:hover {
     top: -3px;
     -webkit-box-shadow: 10px 7px 28px 7px rgba(164, 163, 163, 0.41);
-            box-shadow: 10px 7px 28px 7px rgba(164, 163, 163, 0.41); }
+            box-shadow: 10px 7px 28px 7px rgba(164, 163, 163, 0.41);
+    color: #020202; }
   .btn.btn-lg, .btn-group-lg > .btn {
     min-width: 225px;
     padding-top: 24px;
@@ -8605,7 +8606,7 @@ button {
           flex: 0 0 auto; }
 
 @media (min-width: 1280px) {
-  .container {
+  .container, .section-hero .hero-slider .slick-dots {
     max-width: 1230px; } }
 
 .section-header {
@@ -8891,18 +8892,9 @@ button {
   display: none; }
 
 .section-hero {
-  min-height: 770px;
-  padding-top: 220px;
-  padding-bottom: 160px;
-  background-color: #e8e3e2;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover; }
-  @media (max-width: 1199.98px) {
-    .section-hero {
-      min-height: 560px;
-      padding-top: 140px; } }
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #e8e3e2; }
   .section-hero .hero-title {
     margin: 0 0 45px; }
     .section-hero .hero-title span {
@@ -8917,6 +8909,56 @@ button {
         bottom: 10px;
         height: 55%;
         background: #ffd051; }
+  .section-hero .hero-slider {
+    margin: 0; }
+    .section-hero .hero-slider .slide-item {
+      min-height: 770px;
+      padding-top: 220px;
+      padding-bottom: 160px;
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
+      @media (max-width: 1199.98px) {
+        .section-hero .hero-slider .slide-item {
+          min-height: 560px;
+          padding-top: 140px; } }
+    .section-hero .hero-slider .slick-dots {
+      z-index: 1;
+      left: 50%;
+      bottom: 140px;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      text-align: left; }
+      .section-hero .hero-slider .slick-dots li {
+        vertical-align: bottom;
+        width: 8.5%;
+        height: 3px;
+        margin: 0; }
+        .section-hero .hero-slider .slick-dots li button {
+          width: 100%;
+          height: inherit;
+          margin: 0;
+          padding: 0;
+          background-color: #000;
+          font-size: 0; }
+          .section-hero .hero-slider .slick-dots li button:before {
+            display: none; }
+        .section-hero .hero-slider .slick-dots li.slick-active {
+          height: 5px; }
+      .section-hero .hero-slider .slick-dots span {
+        position: relative;
+        bottom: -10px;
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: 18px; }
+        .section-hero .hero-slider .slick-dots span:first-child {
+          bottom: -14px;
+          margin-right: 5px;
+          font-size: 24px; }
+        .section-hero .hero-slider .slick-dots span:last-child {
+          margin-left: 5px; }
 
 .section-advantages {
   position: relative;
