@@ -79,6 +79,11 @@ $( document ).ready(function() {
 
 
     // calculator
+    $('.calc-type-list').on( "click", 'li', function() {
+        $('.calc-type-list li').removeClass('active');
+        $(this).addClass('active');
+    });
+
     var $rangeSumSlider = $('#range-sum-slider');
     var $rangeSumImport = $('#range-sum-input');
 
