@@ -83,6 +83,10 @@ $( document ).ready(function() {
     $('.result-box .result-sum').text(resultSum.toFixed(2));
     $('.result-box .result').text(resultCalc.toFixed(2));
 
+
+    var $rangeSumHandler,
+        $rangeTimeHandler;
+
     // range sum
     $rangeSumSlider
         .rangeslider({
@@ -92,6 +96,9 @@ $( document ).ready(function() {
             $rangeSumImport[0].value = this.value;
             getSum = $('#range-sum-input').val();
             getTime = $('#range-time-input').val();
+
+            $rangeSumHandler = $('.range-sum-slider-wrap .rangeslider__handle');
+            $rangeSumHandler.html('<div class="rangeslider__handle__value" >' + getSum + '</div>');
 
             if(getSum != 0 && getTime != 0 ) {
             	resultSum = getSum * .9;
@@ -125,6 +132,10 @@ $( document ).ready(function() {
             getSum = $('#range-sum-input').val();
             getTime = $('#range-time-input').val();
 
+
+            $rangeTimeHandler = $('.range-time-slider-wrap .rangeslider__handle');
+            $rangeTimeHandler.html('<div class="rangeslider__handle__value" >' + getTime + '</div>');
+
             if(getSum != 0 && getTime != 0 ) {
                 resultCalc = getSum / getTime;
                 $('.result-box .result').text(resultCalc.toFixed(2));
@@ -145,9 +156,15 @@ $( document ).ready(function() {
 
     });
 
-    var $rangeSumHandler = $('.range-sum-slider-wrap .rangeslider__handle');
 
-    var $rangeTimeHandler = $('.range-time-slider-wrap .rangeslider__handle');
+    // put current value into handler
+    $rangeSumHandler = $('.range-sum-slider-wrap .rangeslider__handle');
+    $rangeSumHandler.html('<div class="rangeslider__handle__value" >' + getSum + '</div>');
+    $rangeTimeHandler = $('.range-time-slider-wrap .rangeslider__handle');
+    $rangeTimeHandler.html('<div class="rangeslider__handle__value" >' + getTime + '</div>');
+
+    
+
 
     // get data from sliders
     $('.range-sum-value-left').text($('#range-sum-slider').attr('min'));

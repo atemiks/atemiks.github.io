@@ -260,6 +260,7 @@
 	}
 
 	.rangeslider__handle {
+		position: relative;
 		cursor: pointer;
 		width: 30px;
 		height: 30px;
@@ -269,6 +270,19 @@
 		box-shadow: 11px 9px 38px 5px rgba(55, 55, 55, 0.15);
 		&:after {
 			display: none;
+		}
+
+		.rangeslider__handle__value {
+			position: absolute;
+			left: 50%;
+			bottom: -25px;
+			font-size: 18px;
+			font-weight: 700;
+			letter-spacing: 0.45px;
+			transform: translateX(-50%);
+			@include media-breakpoint-down(sm) {
+				bottom: -30px;
+			}
 		}
 	}
 }
