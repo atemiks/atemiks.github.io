@@ -5,7 +5,7 @@
 	left: 0;
 	right: 0;
 	background-color: #171a1f;
-	box-shadow: 0 12px 32px rgb(22, 25, 30);
+	box-shadow: 0 2px 32px rgba(2, 3, 3, 0.35);
 	.header-col {
 		display: flex;
 		align-items: center;
@@ -267,9 +267,15 @@
 
 			i {
 				display: inline-block;
+				position: relative;
 				vertical-align: middle;
-				margin-right: 25px;
+				width: 45px;;
+				// margin-right: 25px;
 				font-size: 20px;
+			}
+			i.icon-power {
+				left: -5px;
+				font-size: 32px;
 			}
 
 			&:hover {
@@ -370,8 +376,23 @@
 		max-width: 58px;
 		margin: 0 30px 0 0;
 		transition: background-color 300ms ease, border-radius 300ms ease;
-		font-size: 20px;
+		font-size: 24px;
 		color: #d4d4d4;
+		i.icon-crown {
+			font-size: 26px;
+		}
+		i.icon-chip {
+			font-size: 50px;
+		}
+		i.icon-stat {
+			font-size: 40px;
+		}
+		i.icon-settings {
+			font-size: 44px;
+		}
+		i.icon-info {
+			font-size: 44px;
+		}
 
 		.badge {
 			position: absolute;
