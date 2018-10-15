@@ -336,7 +336,8 @@
 			flex: 0 0 104px;
 			max-width: 104px;
 			.inventory-card {
-				width: 104px;
+				width: 100%;
+				max-width: 104px;
 				border-radius: $global-radius;
 				box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
 				&:after {

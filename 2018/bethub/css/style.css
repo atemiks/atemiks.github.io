@@ -8817,7 +8817,8 @@ a.text-dark:hover, a.text-dark:focus {
             flex: 0 0 104px;
     max-width: 104px; }
     .inventory-grid.xs .inventory-item .inventory-card {
-      width: 104px;
+      width: 100%;
+      max-width: 104px;
       -webkit-border-radius: 10px;
               border-radius: 10px;
       -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
@@ -10670,7 +10671,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .history-inventory-wrapper {
   max-height: 390px;
-  margin-bottom: -30px; }
+  margin-bottom: 0; }
   .history-inventory-wrapper .inventory-grid {
     margin: -20px -25px 0;
     -webkit-border-radius: 0;

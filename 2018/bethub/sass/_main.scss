@@ -823,7 +823,8 @@
 
 .history-inventory-wrapper {
 	max-height: 390px;
-	margin-bottom: -30px;
+	margin-bottom: 0;
+	// margin-bottom: -30px;
 	.inventory-grid {
 		margin: -20px -25px 0;
 		border-radius: 0;
