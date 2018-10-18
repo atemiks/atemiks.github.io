@@ -1,5 +1,6 @@
 .inventory-bid {
 	overflow: hidden;
+	flex: 0 0 auto;
 	margin: 0 0 30px;
 	.form-inventory-bid {
 		margin: 35px 0 0;
@@ -109,6 +110,7 @@
 			transition: border-color 300ms ease;
 			&:hover {
 				border-color: $primary;
+				box-shadow: 0 0 18px rgba(25, 144, 234, 0.15);
 			}
 
 			.inventory-filter-img {
@@ -278,14 +280,14 @@
 	margin-left: -2px;
 	margin-right: -2px;
 	padding: 20px;
-	border-radius: 20px;
-	background-color: #1c2127;
 	.inventory-item {
 		display: flex;
 		flex: 0 0 33.333%;
 		max-width: 33.3333%;
-		margin: 0 0 10px;
-		padding: 0 2px;
+		margin: 0 0 4px;
+		padding: 0;
+		border: 2px solid #1c2127;
+		border-radius: $global-radius * 2;
 		.inventory-card {
 			display: flex;
 			width: 100%;
@@ -304,8 +306,9 @@
 	&.sm {
 		padding: 0;
 		.inventory-item {
-			flex: 0 0 50%;
-			max-width: 50%;
+			flex: 0 0 134px;
+			max-width: 134px;
+			height: 134px;
 			.inventory-card {
 				&:after {
 					height: 28px;
@@ -434,38 +437,77 @@
 
 	.side-left,
 	.side-right {
-		padding: 40px 20px;
+		padding: 40px 20px 15px;
 		display: flex;
 		flex-direction: column;
 		align-content: flex-start;
+
+		.body {
+			flex: 1 1 auto;
+			align-content: flex-start;
+			.mCSB_scrollTools {
+				opacity: 0 !important;
+			}
+			.mCSB_inside>.mCSB_container {
+				margin-right: 0;
+			}
+			.mCSB_scrollTools .mCSB_dragger {
+				display: none !important;
+			}
+		}
 	}
 
 	.side-left {
 		flex: 0 0 310px;
 		max-width: 310px;
+		padding-bottom: 0;
 		background-color: #1c2127;
-	}
+		.header {
+			flex: 0 0 228px;
+			height: 228px;
+		}
 
-	
-	.inventory-grid {
-		flex: 1 1 auto;
-	    align-content: flex-start;
-		.inventory-item {
-			height: 174px;
+		.body {
+			height: calc(100% - 228px);
+		}
+
+		.inventory-grid {
+			.inventory-item {
+				background-color: #171b20;
+			}
 		}
 	}
 
-	.inventory-grid.sm {
-		.inventory-item {
-			height: 135px;
+	.side-right {
+		.header {
+			flex: 0 0 140px;
+			height: 140px;
+		}
+
+		.footer {
+			flex: 0 0 0;
+			height: 0;
+		}
+
+		.body {
+			height: calc(100% - 140px);
+			padding-bottom: 100px;
+			border-radius: 20px;
+			background-color: #1c2127;
+		}
+
+		.inventory-grid {
+			padding: 15px 18px;
 		}
 	}
+
 
 
 	.inventory-pagination {
-		flex: 0 0 auto;
+		position: relative;
+		z-index: 9;
+		top: -55px;
 	}
-
 
 
 	.dropdown-toggle {

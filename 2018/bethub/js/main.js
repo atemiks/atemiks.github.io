@@ -67,6 +67,12 @@ $( document ).ready(function() {
 	});
 
 
+	$(".inventory-wrapper .body").mCustomScrollbar({
+	 	theme:"dark dark-chat",
+	 	axis:"y"
+	});
+
+
 	// content
 	$( ".hero-banner" ).on( "click", ".close", function() {
 		$( ".hero-banner" ).slideUp();
