@@ -8130,7 +8130,7 @@ a.text-dark:hover, a.text-dark:focus {
       color: inherit;
       font-weight: 500;
       line-height: 29px; }
-    .pagination .page-item:hover .page-link, .pagination .page-item.prev .page-link, .pagination .page-item.next .page-link, .pagination .page-item.active .page-link {
+    .pagination .page-item.prev .page-link, .pagination .page-item.next .page-link, .pagination .page-item.active .page-link {
       background-color: #242b33;
       color: #1990ea; }
     .pagination .page-item.prev {
@@ -8140,6 +8140,8 @@ a.text-dark:hover, a.text-dark:focus {
     .pagination .page-item.active .page-link {
       -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
               box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15); }
+    .pagination .page-item:hover .page-link {
+      color: #1990ea; }
 
 .header-navigation-toggler {
   outline: none !important;

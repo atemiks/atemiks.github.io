@@ -23,7 +23,7 @@
 			font-weight: 500;
 			line-height: 29px;
 		}
-		&:hover,
+		
 		&.prev,
 		&.next,
 		&.active {
@@ -43,6 +43,12 @@
 		&.active {
 			.page-link {
 			    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+			}
+		}
+
+		&:hover {
+			.page-link {
+				color: #1990ea;
 			}
 		}
 	}

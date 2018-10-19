@@ -170,6 +170,16 @@ $( document ).ready(function() {
 
     });
 
+    //
+    $( bg0 ).on( "click", function() {
+    	$('body').removeClass('navigation-open');
+	  	$(navigation).removeClass('visible');
+
+		$(inventory).removeClass('visible');
+
+		$(bg0).removeClass('visible');
+	});
+
 
 
 	$( window ).resize(function() {
