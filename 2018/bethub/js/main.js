@@ -39,6 +39,7 @@ $( document ).ready(function() {
 	});
 
 	$(".chat-body").mCustomScrollbar({
+		scrollInertia: 300,
 	 	theme:"dark dark-chat",
 	 	axis:"y"
 	});
