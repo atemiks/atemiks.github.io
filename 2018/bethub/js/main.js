@@ -69,6 +69,7 @@ $( document ).ready(function() {
 
 
 	$(".inventory-wrapper .body").mCustomScrollbar({
+		scrollInertia: 300,
 	 	theme:"dark dark-chat",
 	 	axis:"y"
 	});
