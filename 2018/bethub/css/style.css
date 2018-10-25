@@ -9850,10 +9850,6 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
     margin-right: 10px;
     padding: 0 25px 15px 25px;
     height: -webkit-calc(100vh - 440px);
@@ -9918,7 +9914,8 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 16px;
         vertical-align: middle; }
   .chat-wrapper .chat-messages {
-    width: 100%; }
+    width: 100%;
+    margin-top: auto; }
   .chat-wrapper .chat-message {
     display: -webkit-box;
     display: -webkit-flex;
