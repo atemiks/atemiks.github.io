@@ -51,9 +51,12 @@
 		background-color: #1c2127;
 	}
 	.chat-body {
+		overflow-y: scroll;
 		position: relative;
 		flex: 1 0 auto;
-		padding: 0 8px 15px 25px;
+		display: flex;
+		margin-right: 10px;
+		padding: 0 25px 15px 25px;
 		height: calc(100vh - 440px);
 		&:before,
 		&:after {

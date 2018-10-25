@@ -38,12 +38,13 @@ $( document ).ready(function() {
 	  	$(chat).toggleClass('visible');
 	});
 
-	$(".chat-body").mCustomScrollbar({
-		scrollInertia: 300,
-	 	theme:"dark dark-chat",
-	 	axis:"y"
-	});
-	$('.chat-body').mCustomScrollbar("scrollTo", 'bottom');
+	// $(".chat-body").mCustomScrollbar({
+	// 	scrollInertia: 300,
+	//  	theme:"dark dark-chat",
+	//  	axis:"y"
+	// });
+	// $('.chat-body').mCustomScrollbar("scrollTo", 'bottom');
+	$(".chat-body").scrollTop($(".chat-body")[0].scrollHeight);
 
 
 

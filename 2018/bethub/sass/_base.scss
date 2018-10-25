@@ -18,6 +18,21 @@ body {
 	padding-top: 120px;
 }
 
+
+::-webkit-scrollbar {
+	width: 5px;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #1990ea;
+}
+::-webkit-scrollbar-track-piece {
+	background-color: #1f252c;
+}
+
+
+
 a {
 	transition: color 300ms ease;
 }

@@ -8159,6 +8159,19 @@ body {
   overflow-x: hidden;
   padding-top: 120px; }
 
+::-webkit-scrollbar {
+  width: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #1990ea; }
+
+::-webkit-scrollbar-track-piece {
+  background-color: #1f252c; }
+
 a {
   -webkit-transition: color 300ms ease;
   -o-transition: color 300ms ease;
@@ -9822,12 +9835,18 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 12px 40px 12px 25px;
     background-color: #1c2127; }
   .chat-wrapper .chat-body {
+    overflow-y: scroll;
     position: relative;
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
-    padding: 0 8px 15px 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+    padding: 0 25px 15px 25px;
     height: -webkit-calc(100vh - 440px);
     height: calc(100vh - 440px); }
     .chat-wrapper .chat-body:before, .chat-wrapper .chat-body:after {
