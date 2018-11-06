@@ -1,0 +1,59 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-arrow {
+    width: 101px;
+    height: 34px;
+    background-position: -15px -15px;
+}
+
+.sprite-icon-arrow-left {
+    width: 36px;
+    height: 26px;
+    background-position: -146px -15px;
+}
+
+.sprite-icon-arrow-left-inactive {
+    width: 36px;
+    height: 26px;
+    background-position: -146px -71px;
+}
+
+.sprite-icon-arrow-right {
+    width: 36px;
+    height: 26px;
+    background-position: -15px -127px;
+}
+
+.sprite-icon-arrow-right-inactive {
+    width: 36px;
+    height: 26px;
+    background-position: -81px -127px;
+}
+
+.sprite-icon-clock {
+    width: 26px;
+    height: 26px;
+    background-position: -147px -127px;
+}
+
+.sprite-icon-more {
+    width: 22px;
+    height: 16px;
+    background-position: -15px -183px;
+}
+
+.sprite-icon-pencil {
+    width: 73px;
+    height: 76px;
+    background-position: -212px -15px;
+}
+
+.sprite-icon-phone {
+    width: 72px;
+    height: 72px;
+    background-position: -212px -121px;
+}

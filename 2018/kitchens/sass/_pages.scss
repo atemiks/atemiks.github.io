@@ -1,0 +1,163 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer-box {
+	flex: 0 0 auto;
+}
+
+
+.container {
+	@media screen and (min-width: 1280px) {
+		max-width: 1230px;
+	}
+}
+
+.section-header {
+	.section-title {
+		position: relative;
+		z-index: 1;
+		margin: 0;
+		&:before {
+			z-index: -1;
+		}
+	}
+	.section-subtitle {
+		max-width: 680px;
+		margin: 25px 0 0;
+		font-size: 16px;
+		letter-spacing: 0.4px;
+		line-height: 1.5;
+	}
+}
+
+
+.section-promo {
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	min-height: 320px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	@include media-breakpoint-down(lg) {
+		min-height: 280px;
+	}
+
+	&:before {
+		content: '';
+		opacity: 0.87;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #2b2a2d;
+	}
+	&:after {
+		content: '';
+		min-height: inherit;
+		display: table;
+	}
+
+	.section-header {
+		margin-top: 25px;
+		margin-bottom: 30px;
+		.section-title,
+		.section-subtitile {
+			color: #fff;
+		}
+
+		.section-title {
+			font-weight: 400;
+			letter-spacing: 1.2px;
+			span {
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					z-index: -1;
+					top: -25px;
+					left: -25px;
+					width: 75px;
+					height: 75px;
+					background: url('../images/square.png') no-repeat center ;
+					background-size: contain;
+				}
+			}
+		}
+	}
+
+	&.section-promo-feedback {
+		.section-header .section-title span:before {
+			top: -40px;
+			left: -30px;
+			background-image: url('../images/square-half.png');
+		}
+	}
+}
+
+
+
+// modal
+.modal {
+	.modal-dialog {
+		max-width: 770px;
+		.modal-content {
+			border: none;
+			border-radius: 0;
+			.modal-header {
+
+			}
+		}
+	}
+}
+
+
+// slider
+.slick-slider {
+	outline: none;
+	* {
+		outline: none;
+	}
+}
+
+
+.slick-prev,
+.slick-next {
+	@extend .sprite;
+	&:before {
+		display: none;
+	}
+
+	&:hover,
+	&:active {
+		@extend .sprite;
+	}
+}
+.slick-prev {
+	@extend .sprite-icon-arrow-left;
+	background-color: transparent !important;
+	&:hover,
+	&:active {
+		@extend .sprite-icon-arrow-left;
+	}
+}
+.slick-next {
+	@extend .sprite-icon-arrow-right;
+	&:hover,
+	&:active {
+		@extend .sprite-icon-arrow-right;
+	}
+}

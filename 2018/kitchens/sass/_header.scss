@@ -1,0 +1,268 @@
+.header-box {
+	position: relative;
+	z-index: 99;
+	.header-top {
+		border-bottom: 1px solid #7f7e81;
+	}
+}
+
+.header-logo {
+	margin: 25px 0;
+	.header-logo-link {
+		color: #f7bd4c;
+		font-family: 'Lato', sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: 0.4px;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+}
+
+
+.header-nav {
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
+
+.header-nav-list {
+	cursor: default;
+	margin: 25px auto;
+	padding: 0 0 0 10%;
+	list-style: none;
+	@media screen and (max-width: 1280px) {
+		padding: 0 0 0 5%;
+	}
+
+	.header-nav-item {
+		display: inline-block;
+		margin: 0 10px;
+		color: #fefefe;
+		font-family: 'Lato', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0.4px;
+		.header-nav-link {
+			color: inherit;
+			text-decoration: none;
+		}
+		
+		&:hover,
+		&.active {
+			color: #f7bd4c;
+		}
+	}
+}
+
+
+.header-time {
+	margin: 20px 0;
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+
+	i {
+		margin: 0 10px 0 0;
+	}
+}
+.header-time-list {
+	cursor: default;
+	opacity: 0.52;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	color: #fdfdfd;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.4px;
+	list-style: none;
+	text-transform: uppercase;
+	.header-time-item {
+		display: inline-block;
+		padding: 0 4px;
+	}
+}
+
+
+.header-contact {
+	text-align: right;
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+	
+	i {
+		margin: 0 -10px 0 0;
+	}
+
+	.header-contact-phone {
+		color: #fefeff;
+		font-family: 'Lato', sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.333;
+		letter-spacing: 0.9px;
+	}
+
+	.header-contact-action {
+		opacity: 0.52;
+		display: block;
+		margin: -25px 0 0 auto;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		color: #fefeff;
+		font-family: 'Lato', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0.4px;
+	}
+}
+
+
+.header-actions {
+	display: inline-block;
+	vertical-align: middle;
+	.header-action {
+		margin: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		color: #fdfeff;
+		font-family: 'Lato', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
+		color: #f7bd4c;
+		letter-spacing: 0.4px;
+		i {
+			margin: 0 -10px 0 0;
+		}
+
+		span {
+			@include media-breakpoint-down(lg) {
+				display: none;
+			}
+		}
+	}
+}
+
+
+// offcanvas
+.offcanvas-toggler {
+	display: none;
+	vertical-align: middle;
+	width: 30px;
+	margin: 0 0 0 15px;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	@include media-breakpoint-down(md) {
+		display: inline-block;
+	}
+
+	span {
+		display: block;
+		height: 2px;
+		margin: 8px 0;
+		background-color: $warning;
+	}
+}
+
+.offcanvas {
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+	transform: translateX(100%);
+	transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease;
+	.offcanvas-header {
+		position: relative;
+		padding: 15px;
+	}
+	.offcanvas-body {
+		padding: 0 15px;
+	}
+	.offcanvas-footer {
+		padding: 0 15px;
+		text-align-last: center;
+	}
+
+	.close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40px;
+		height: 40px;
+		margin: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	.offcanvas-nav {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		.offcanvas-nav-item {
+			.offcanvas-nav-link {
+				display: block;
+				padding: 12px 0;
+				border-bottom: 1px solid rgba(#000,.15);
+				color: $secondary;
+				&:hover {
+					color: $warning;
+					text-decoration: none;
+				}
+			}
+
+			&.active {
+				.offcanvas-nav-link {
+					color: $warning;
+				}
+			}
+		}
+	}
+
+	.offcanvas-contact {
+		margin: 35px 0 25px;
+		font-size: 18px;
+		font-weight: 700;
+		.offcanvas-contact-phone {
+			color: $default;
+		}
+	}
+
+	.offcanvas-time-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-transform: uppercase;
+	}
+
+	&.visible {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+	}
+}
+
+
+.offcanvas-open {
+	overflow: hidden;
+}

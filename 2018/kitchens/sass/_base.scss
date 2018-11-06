@@ -1,0 +1,168 @@
+html,
+body {
+  	height: 100%;
+	font-family: $font;
+  	color: $default;
+  	line-height: 1.5;
+}
+
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-family: $heading;
+}
+
+h1,
+.h1 {
+	font-weight: 700;
+	font-size: 43px;
+	letter-spacing: 2.15px;
+	@include media-breakpoint-down(sm) {
+		font-size: 30px;
+	}
+}
+
+h2 {
+	font-size: 33px;
+	font-weight: 700;
+	letter-spacing: 1.65px;
+	@include media-breakpoint-down(md) {
+		font-size: 30px;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 26px;
+	}
+}
+
+h3 {
+	font-size: 28px;
+	@include media-breakpoint-down(sm) {
+		font-size: 24px;
+	}
+}
+
+h4 {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+
+input,
+textarea {
+	outline: none;
+	display: block;
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	color: #fdfcfc;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 0.4px;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label {
+	cursor: pointer;
+	position: relative;
+	margin: 0;
+	padding: 0 0 0 20px;
+	// color: #ffffff;
+	color: $secondary;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0.6px;
+	text-align: left;
+}
+input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 14px;
+    height: 14px;
+    // border: 1px solid #fff;
+    border: 1px solid $secondary;
+}
+input[type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 14px;
+    background: url('../images/icons/icon-checked-dark.png') no-repeat 0 0 ;
+    background-size: contain;
+}
+
+
+textarea {
+	resize: none;
+}
+
+
+button {
+	cursor: pointer;
+	outline: none !important;
+}
+
+
+.form-group {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+.custom-field {
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: $warning;
+		box-shadow: 0 5px 26px 3px rgba(247, 189, 76, 0.59);
+	}
+}
+
+
+.btn {
+	cursor: pointer;
+	outline: none;
+	display: inline-block;
+	min-width: 225px;
+	margin: 0;
+	padding: 16px 30px;
+	border: 1px solid #edb64c;
+	background-color: $warning;
+	box-shadow: 0 5px 26px 3px rgba(247, 189, 76, 0.59);
+	color: #2b2a2d;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 0.4px;
+	@include media-breakpoint-down(md) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
