@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="vendor/css/aos.css">
+		<link rel="stylesheet" href="vendor/css/slick.css">
+		<link rel="stylesheet" href="vendor/css/slick-theme.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		
+		<title>Кухни / Блог</title>
+	</head>
+	<body>
+
+		<!-- Modal -->
+		<div class="modal fade" id="modalMaster" tabindex="-1" role="dialog" aria-labelledby="modalMasterLabel" aria-hidden="true">
+		    <div class="modal-dialog" role="document">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <h5 class="modal-title" id="modalMasterLabel">Запись на бесплатный замер</h5>
+		                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+		            </div>
+		            <div class="modal-body">
+		                <form method="post" class="form-modal">
+		                	<div class="row">
+		                		<div class="col-sm-6">
+		                			<div class="form-group">
+		                				<div class="custom-field">
+		                					<input type="tel" name="modalMasterPhone" placeholder="Телефон" required >
+		                				</div>
+		                			</div>
+		                		</div>
+		                		<div class="col-sm-6">
+		                			<div class="form-group">
+		                				<div class="custom-field">
+		                					<input type="text" name="modalMasterAddress" placeholder="Адрес" >
+		                				</div>
+		                			</div>
+		                		</div>
+		                	</div>
+
+		                	<div class="row">
+		                		<div class="col-sm-6">
+		                			<div class="form-group">
+		                				<div class="custom-field">
+		                					<input type="date" name="modalMasterDate" placeholder="Удобная дата для замера" >
+		                				</div>
+		                			</div>
+		                		</div>
+		                		<div class="col-sm-6">
+		                			<div class="form-group">
+		                				<div class="custom-field">
+		                					<input type="time" name="modalMasterTime" placeholder="Удобное время для замера" >
+		                				</div>
+		                			</div>
+		                		</div>
+		                	</div>
+
+		                	<div class="row">
+		                		<div class="col">
+		                			<div class="form-group">
+			                			<div class="custom-checkbox">
+											<input type="checkbox" id="checkbox01" name="checkbox" checked required />
+											<label for="checkbox01">Я согласен(-на) на обработку личных данных</label>
+										</div>
+		                			</div>
+		                		</div>
+		                		<div class="col-auto ml-auto">
+		                			<div class="form-group">
+		                				<button type="submit" class="btn" >Оформить заявку</button>
+		                			</div>
+		                		</div>
+		                	</div>
+		                </form>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+		<div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+		    <div class="modal-dialog" role="document">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <h5 class="modal-title" id="modalCallbackLabel">Заказать обратный звонок</h5>
+		                <p class="modal-subtitle">Перезвоним через 2 минуты!</p>
+		                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+		            </div>
+		            <div class="modal-body">
+		                <form method="post" class="form-modal">
+		                	<div class="row">
+		                		<div class="col-sm-6">
+		                			<div class="form-group">
+		                				<div class="custom-field">
+		                					<input type="text" name="modalCallbackName" placeholder="Имя" required >
+		                				</div>
+		                			</div>
+		                		</div>
+		                		<div class="col-sm-6">
+		                			<div class="form-group">
+		                				<div class="custom-field">
+		                					<input type="tel" name="modalCallbackPhone" placeholder="Телефон" required >
+		                				</div>
+		                			</div>
+		                		</div>
+		                	</div>
+
+		                	<div class="row">
+		                		<div class="col">
+		                			<div class="form-group">
+			                			<div class="custom-checkbox">
+											<input type="checkbox" id="checkbox02" name="checkbox" checked required />
+											<label for="checkbox02">Я согласен(-на) на обработку личных данных</label>
+										</div>
+		                			</div>
+		                		</div>
+		                		<div class="col-auto ml-auto">
+		                			<div class="form-group">
+		                				<button type="submit" class="btn" >Заказать</button>
+		                			</div>
+		                		</div>
+		                	</div>
+		                </form>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+		<div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel" aria-hidden="true">
+		    <div class="modal-dialog" role="document">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <h5 class="modal-title" id="modalOrderLabel">Оформление заказа</h5>
+		                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+		            </div>
+		            <div class="modal-body">
+		                <form method="post" class="form-modal">
+		                	<div class="row">
+		                		<div class="col-sm-6">
+		                			<div class="form-group">
+		                				<div class="custom-field">
+		                					<input type="tel" name="modalOrderPhone" placeholder="Телефон" required >
+		                				</div>
+		                			</div>
+		                		</div>
+		                		<div class="col-sm-6">
+		                			<div class="form-group">
+		                				<div class="custom-field">
+		                					<input type="text" name="modalOrderAddress" placeholder="Адрес" required >
+		                				</div>
+		                			</div>
+		                		</div>
+		                	</div>
+
+		                	<div class="row">
+		                		<div class="col">
+		                			<div class="form-group">
+			                			<div class="custom-checkbox">
+											<input type="checkbox" id="checkbox03" name="checkbox" checked required />
+											<label for="checkbox03">Я согласен(-на) на обработку личных данных</label>
+										</div>
+		                			</div>
+		                		</div>
+		                		<div class="col-auto ml-auto">
+		                			<div class="form-group">
+		                				<button type="submit" class="btn" >Оформить заявку</button>
+		                			</div>
+		                		</div>
+		                	</div>
+		                </form>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+		<div class="offcanvas">
+			<div class="offcanvas-header">
+				<button class="close">&times;</button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="offcanvas-nav">
+					<li class="offcanvas-nav-item active"><a href="#section-portfolio" class="offcanvas-nav-link">Наши работы</a></li>
+					<li class="offcanvas-nav-item"><a href="#section-" class="offcanvas-nav-link">Кухни</a></li>
+					<li class="offcanvas-nav-item"><a href="#section-" class="offcanvas-nav-link">Шкафы</a></li>
+					<li class="offcanvas-nav-item"><a href="#section-calc" class="offcanvas-nav-link">Расчет стоимости</a></li>
+					<li class="offcanvas-nav-item"><a href="#section-testimonials" class="offcanvas-nav-link">Отзывы</a></li>
+					<li class="offcanvas-nav-item"><a href="#" class="offcanvas-nav-link">Блог</a></li>
+				</ul>
+			</div>
+			<div class="offcanvas-footer">
+				<div class="offcanvas-contact">
+					<a href="tel:+79999999999" class="offcanvas-contact-phone">+7 (999) 999-99-99</a>
+				</div>
+
+				<ul class="offcanvas-time-list">
+					<li class="offcanvas-time-item">
+						ПН-ПТ 10:00 - 20:00;  
+					</li>
+					<li class="offcanvas-time-item">
+						СБ-ВС 11:00 - 19:00
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="wrapper">
+			<div class="content">
+				<header class="header-box">
+					<div class="header-top" data-aos="fade-in" >
+						<div class="container">
+							<div class="row">
+								<div class="col-auto">
+									<div class="header-logo">
+										<a href="index.html" class="header-logo-link">ЛОГОТИП</a>
+									</div>
+								</div>
+
+								<div class="col d-none d-md-block">
+									<nav class="header-nav">
+										<ul class="header-nav-list">
+											<li class="header-nav-item active"><a href="#section-portfolio" class="header-nav-link">Наши работы</a></li>
+											<li class="header-nav-item"><a href="#section-" class="header-nav-link">Кухни</a></li>
+											<li class="header-nav-item"><a href="#section-" class="header-nav-link">Шкафы</a></li>
+											<li class="header-nav-item"><a href="#section-calc" class="header-nav-link">Расчет стоимости</a></li>
+											<li class="header-nav-item"><a href="#section-testimonials" class="header-nav-link">Отзывы</a></li>
+											<li class="header-nav-item"><a href="#section-news" class="header-nav-link">Блог</a></li>
+										</ul>
+									</nav>
+								</div>
+
+								<div class="col col-auto ml-auto">
+									<div class="header-actions">
+										<button class="header-action" data-toggle="modal" data-target="#modalMaster" ><i class="sprite sprite-icon-pencil" ></i> Записаться <span>на бесплатный замер</span></button>
+									</div>
+
+									<button class="offcanvas-toggler">
+										<span></span>
+										<span></span>
+										<span></span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-bottom" data-aos="fade-in" >
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="header-time">
+										<i class="sprite sprite-icon-clock" ></i>
+										<ul class="header-time-list">
+											<li class="header-time-item">
+												ПН-ПТ 10:00 - 20:00;  
+											</li>
+											<li class="header-time-item">
+												СБ-ВС 11:00 - 19:00
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col">
+									<div class="header-contact">
+										<i class="sprite sprite-icon-phone" ></i>
+										<a href="tel:+79999999999" class="header-contact-phone">+7 (999) 999-99-99</a>
+										<button class="header-contact-action"  data-toggle="modal" data-target="#modalCallback" >Обратный звонок</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<main class="main">
+
+					<section class="section-content">
+						<div class="container">
+							<div class="row">
+								<div class="col" data-aos="fade-up" >
+									<nav aria-label="breadcrumb" >
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item">
+												<a href="#link" class="breadcrumb-link">Главная</a>
+											</li>
+											<li class="breadcrumb-item">
+												Блог
+											</li>
+										</ol>
+									</nav>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="section-header col" data-aos="fade-up" data-aos-delay="100" >
+									<h1 class="section-title">Блог</h1>
+								</div>
+							</div>
+
+							<div class="news-grid row">
+								<div class="news-item col-md-6 col-lg-4" data-aos="fade-up" >
+									<div class="news-card">
+										<div class="news-header">
+											<div class="news-thumbnail" style="background-image: url('images/page-blog//news-item-1.png');" ></div>
+											<div class="news-info">
+												<time class="news-date" datetime="2018-07-23" >23/07/18</time>
+												<h4 class="news-title">Заголовок статьи</h4>
+											</div>
+										</div>
+
+										<div class="news-body">
+											Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи
+										</div>
+										<div class="news-footer">
+											<a href="article.html" class="news-action" >Читать <i class="icon-arrow-right" ></i></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="news-item col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" >
+									<div class="news-card">
+										<div class="news-header">
+											<div class="news-thumbnail" style="background-image: url('images/page-blog//news-item-1.png');" ></div>
+											<div class="news-info">
+												<time class="news-date" datetime="2018-07-23" >23/07/18</time>
+												<h4 class="news-title">Заголовок статьи</h4>
+											</div>
+										</div>
+
+										<div class="news-body">
+											Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи
+										</div>
+										<div class="news-footer">
+											<a href="article.html" class="news-action" >Читать <i class="icon-arrow-right" ></i></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="news-item col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" >
+									<div class="news-card">
+										<div class="news-header">
+											<div class="news-thumbnail" style="background-image: url('images/page-blog//news-item-1.png');" ></div>
+											<div class="news-info">
+												<time class="news-date" datetime="2018-07-23" >23/07/18</time>
+												<h4 class="news-title">Заголовок статьи</h4>
+											</div>
+										</div>
+
+										<div class="news-body">
+											Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи
+										</div>
+										<div class="news-footer">
+											<a href="article.html" class="news-action" >Читать <i class="icon-arrow-right" ></i></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="news-item col-md-6 col-lg-4" data-aos="fade-up" >
+									<div class="news-card">
+										<div class="news-header">
+											<div class="news-thumbnail" style="background-image: url('images/page-blog//news-item-1.png');" ></div>
+											<div class="news-info">
+												<time class="news-date" datetime="2018-07-23" >23/07/18</time>
+												<h4 class="news-title">Заголовок статьи</h4>
+											</div>
+										</div>
+
+										<div class="news-body">
+											Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи
+										</div>
+										<div class="news-footer">
+											<a href="article.html" class="news-action" >Читать <i class="icon-arrow-right" ></i></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="news-item col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" >
+									<div class="news-card">
+										<div class="news-header">
+											<div class="news-thumbnail" style="background-image: url('images/page-blog//news-item-1.png');" ></div>
+											<div class="news-info">
+												<time class="news-date" datetime="2018-07-23" >23/07/18</time>
+												<h4 class="news-title">Заголовок статьи</h4>
+											</div>
+										</div>
+
+										<div class="news-body">
+											Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи
+										</div>
+										<div class="news-footer">
+											<a href="article.html" class="news-action" >Читать <i class="icon-arrow-right" ></i></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="news-item col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" >
+									<div class="news-card">
+										<div class="news-header">
+											<div class="news-thumbnail" style="background-image: url('images/page-blog//news-item-1.png');" ></div>
+											<div class="news-info">
+												<time class="news-date" datetime="2018-07-23" >23/07/18</time>
+												<h4 class="news-title">Заголовок статьи</h4>
+											</div>
+										</div>
+
+										<div class="news-body">
+											Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи
+										</div>
+										<div class="news-footer">
+											<a href="article.html" class="news-action" >Читать <i class="icon-arrow-right" ></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col" data-aos="fade-up" >
+									<nav aria-label="blog pagination">
+										<ul class="pagination">
+											<li class="page-item prev"><a class="page-link" href="#link"><i class="icon-arrow-left" ></i></a></li>
+											<li class="page-item">...</li>
+											<li class="page-item"><a class="page-link" href="#link">4</a></li>
+											<li class="page-item"><a class="page-link" href="#link">5</a></li>
+											<li class="page-item active"><a class="page-link" href="#link">6</a></li>
+											<li class="page-item"><a class="page-link" href="#link">7</a></li>
+											<li class="page-item"><a class="page-link" href="#link">8</a></li>
+											<li class="page-item">...</li>
+											<li class="page-item next"><a class="page-link" href="#link"><i class="icon-arrow-right" ></i></a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section class="section-promo section-promo-feedback" style="background-image: url('images/page-blog/section-promo/promo-bg.png')" >
+						<div class="container">
+							<div class="row">
+								<div class="section-header col-md-10 col-xl-8 offset-md-1 offset-xl-2" data-aos="fade-up" >
+									<h4 class="section-title"><span>Оставьте</span> заявку на бесплатный замер, <br> чтобы получить проект кухни по вашим размерам</h4>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-10 col-xl-8 offset-md-1 offset-xl-2" data-aos="fade-up" data-aos-delay="100" >
+									<form method="post" class="form-promo">
+										<div class="row">
+											<div class="col-md-8">
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group">
+															<div class="custom-field">
+																<input type="text" name="formPromoName" placeholder="Ваше имя" required >
+															</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<div class="custom-field">
+																<input type="tel" name="formPromoPhone" placeholder="Ваш телефон" required >
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-md-4">
+												<div class="form-group">
+													<button class="btn" >Записаться на замер</button>
+												</div>
+												<div class="custom-checkbox">
+													<input type="checkbox" id="checkbox04" name="checkbox" checked >
+													<label for="checkbox04">Я согласен(-на) с политикой обработки персональных данных</label>
+												</div>
+											</div>
+											
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</main>
+			</div>
+
+			<footer class="footer-box">
+				<div class="footer-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-auto">
+								<div class="footer-logo">
+									<a href="index.html" class="footer-logo-link">ЛОГОТИП</a>
+								</div>
+							</div>
+
+							<div class="col-md-12 col-lg order-md-3 order-lg-0">
+								<div class="footer-nav">
+									<ul class="footer-nav-list">
+										<li class="footer-nav-item active"><a href="#section-" class="footer-nav-link">Наши работы</a></li>
+										<li class="footer-nav-item"><a href="#section-" class="footer-nav-link">Кухни</a></li>
+										<li class="footer-nav-item"><a href="#section-" class="footer-nav-link">Шкафы</a></li>
+										<li class="footer-nav-item"><a href="#section-" class="footer-nav-link">Расчет стоимости</a></li>
+										<li class="footer-nav-item"><a href="#section-" class="footer-nav-link">Отзывы</a></li>
+										<li class="footer-nav-item"><a href="#section-" class="footer-nav-link">Блог</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col col-sm-12 col-md-auto ml-auto">
+								<div class="footer-actions">
+									<button class="footer-action" data-toggle="modal" data-target="#modalMaster" ><i class="sprite sprite-icon-pencil" ></i> Записаться <span>на бесплатный замер</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-auto">
+								<div class="copyright">
+									2018  Все права защищены <br>
+									<a href="#link">Политика конфиденциальности</a>
+								</div>
+							</div>
+
+							<div class="col-auto ml-md-auto">
+								<div class="footer-time">
+									<i class="sprite sprite-icon-clock"></i>
+									<ul class="footer-time-list">
+										<li class="footer-time-item">ПН-ПТ 10:00 - 20:00</li>
+										<li class="footer-time-item">СБ-ВС 11:00 - 19:00</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-auto">
+								<div class="footer-contact">
+									<i class="sprite sprite-icon-phone"></i>
+									<a href="tel:+79999999999" class="footer-contact-phone">+7 (999) 999-99-99</a>
+									<button class="footer-contact-action" data-toggle="modal" data-target="#modalCallback" >Обратный звонок</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="vendor/js/bootstrap.min.js" ></script>
+		<script src="vendor/js/slick.min.js" ></script>
+		<script src="vendor/js/mask.js" ></script>
+		<script src="vendor/js/aos.js" ></script>
+		<script src="js/main.js" ></script>
+	</body>
+</html>

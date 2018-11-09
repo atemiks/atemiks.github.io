@@ -66,6 +66,11 @@
 		font-weight: 700;
 		letter-spacing: 0.8px;
 		color: $default;
+		i {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 24px;
+		}
 	}
 }
 

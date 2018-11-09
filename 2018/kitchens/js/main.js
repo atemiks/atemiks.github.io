@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+    // animation
+    setTimeout(function(){
+      AOS.init();
+    }, 100);
+
+
     // Smooth scroll
     $('a[href*="#"]')
       // Remove links that don't actually link to anything
@@ -26,11 +32,20 @@ $( document ).ready(function() {
     });
 
     // phone mask
-    // $("input[type='tel']").mask("+7 (999) 999-99-99");
+    $("input[type='tel']").mask("+7 (999) 999-99-99");
 
+    // header
+    $( ".offcanvas-toggler" ).on( "click", function() {
+        $('body').toggleClass('offcanvas-open');
+        $('.offcanvas').toggleClass('visible');
+    });
+    $( ".offcanvas .close, .offcanvas-nav a" ).on( "click", function() {
+        $('body').removeClass('offcanvas-open');
+        $('.offcanvas').removeClass('visible');
+    });
 
-
-     $('.slider-portfolio').slick({
+    // page home
+    $('.slider-portfolio').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.slider-portfolio-nav',
@@ -81,7 +96,21 @@ $( document ).ready(function() {
         arrows: true,
         dots: false
     });
+
+
+    // page catalog
     
+    $('#modalCatalog').on('shown.bs.modal', function (event) {
+        $('.slider-modal-media').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false
+        });
+
+        setTimeout(function() {
+            $('.slider-modal-media').css({'visibility': 'visible', 'opacity': '1'});
+        }, 300);
+    })
 
     // calculator
     var currentUnitIndex = $( ".calc-unit.active" ).index();

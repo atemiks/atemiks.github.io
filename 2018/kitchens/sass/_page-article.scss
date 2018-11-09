@@ -1,0 +1,61 @@
+.post {
+	font-size: 16px;
+	letter-spacing: 0.4px;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 20px 0 10px;
+	}
+
+	p {
+		margin: 10px 0;
+		font-size: inherit;
+	}
+
+	.post-title {
+		@extend .h3;
+		margin: 10px 0 40px;
+		font-weight: 700;
+		letter-spacing: 1.4px;
+	}
+
+	.post-poster {
+		margin: 35px 0;
+		.post-poster-img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.post-actions {
+	cursor: default;
+	margin: 30px 0 -10px;
+	padding: 0;
+	list-style: none;
+	> li {
+		display: inline-block;
+	}
+
+	.post-action {
+		font-size: 16px;
+		font-weight: 700;
+		color: $default;
+		letter-spacing: 0.8px;
+		i {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 15px;
+			font-size: 30px;
+		}
+
+		&:hover {
+			color: $warning;
+			text-decoration: none;
+		}
+	}
+}

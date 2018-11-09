@@ -30,6 +30,15 @@
 	}
 
 	.form-hero {
+		input,
+		input[type="checkbox"] + label,
+		input[type="checkbox"]:checked + label:after {
+			color: #9c9c9e;
+		}
+		input[type="checkbox"] + label:before {
+			border-color: #9c9c9e;
+		}
+		
 		.form-title {
 			margin: 0 0 -5px;
 			font-size: 18px;
@@ -347,22 +356,27 @@
 
 	.slide-prev,
 	.slide-next {
-		@extend .sprite;
+		@extend .slick-arrow;
+		display: inline-block;
+		vertical-align: middle;
 		outline: none;
 		cursor: pointer;
+		width: 36px;
+		height: 26px;
 		margin: 0 15px;
 		padding: 0;
 		border: none;
 		border-radius: 0;
+		line-height: .5;
 		@include media-breakpoint-down(sm) {
 			display: none;
 		}
 	}
 	.slide-prev {
-		@extend .sprite-icon-arrow-left;
+		@extend .slick-prev;
 	}
 	.slide-next {
-		@extend .sprite-icon-arrow-right;
+		@extend .slick-next;
 	}
 
 	.slide-order {
@@ -384,7 +398,6 @@
 			&:before {
 				content: '';
 				position: absolute;
-				z-index: 1;
 				top: -15px;
 				left: -35px;
 				width: 75px;
@@ -418,7 +431,7 @@
 		font-size: 18px;
 	}
 	@include media-breakpoint-down(sm) {
-		padding-bottom: 66.666%;
+		padding-bottom: 340px;
 	}
 
 	.navigation-inner {
@@ -747,28 +760,27 @@
 
 	.calc-prev,
 	.calc-next {
-		@extend .sprite;
+		@extend .slick-arrow;
 		cursor: pointer;
 		outline: none;
 		display: inline-block;
 		vertical-align: middle;
+		height: 26px;
+		width: 36px;
 		margin: 0 15px;
 		padding: 0;
 		border: none;
 		border-radius: 0;
+		&:disabled {
+			opacity: .3;
+		}
 	}
 
 	.calc-prev {
-		@extend .sprite-icon-arrow-left;
-		&:disabled {
-			@extend .sprite-icon-arrow-left-inactive;
-		}
+		@extend .slick-prev;
 	}
 	.calc-next {
-		@extend .sprite-icon-arrow-right;
-		&:disabled {
-			@extend .sprite-icon-arrow-right-inactive;
-		}
+		@extend .slick-next;
 	}
 }
 

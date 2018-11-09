@@ -94,7 +94,7 @@
 	@include media-breakpoint-down(md) {
 		display: none;
 	}
-	
+
 	i {
 		margin: 0 -10px 0 0;
 	}
@@ -111,7 +111,7 @@
 	.header-contact-action {
 		opacity: 0.52;
 		display: block;
-		margin: -25px 0 0 auto;
+		margin: -25px 0 15px auto;
 		padding: 0;
 		border: none;
 		background-color: transparent;
@@ -142,6 +142,9 @@
 		letter-spacing: 0.4px;
 		i {
 			margin: 0 -10px 0 0;
+			@include media-breakpoint-down(sm) {
+				margin: 0 -20px;
+			}
 		}
 
 		span {
@@ -265,4 +268,25 @@
 
 .offcanvas-open {
 	overflow: hidden;
+}
+
+
+body:not(.page-home) {
+	.header-box {
+		background: url('../images/page-home/section-hero/hero-bg.png') no-repeat center top ;
+		background-size: cover;
+		.header-top {
+			background-color: #fff;
+		}
+
+		.header-nav-list {
+			.header-nav-item {
+				color: $default;
+				&:hover,
+				&.active {
+					color: $warning;
+				}
+			}
+		}
+	}
 }
