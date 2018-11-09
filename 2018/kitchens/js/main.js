@@ -59,8 +59,6 @@ $( document ).ready(function() {
                     fade: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    variableWidth: true,
-                    infinite: true,
                     dots: false,
                     arrows: false
                 }
@@ -74,6 +72,14 @@ $( document ).ready(function() {
         dots: false,
         focusOnSelect: true
     });
+
+    $('.slider-project-media').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false
+    });
+
 
     $('.slider-portfolio-controls .slide-prev').click(function() {
         $('.slider-portfolio').slick('slickPrev');
@@ -171,19 +177,19 @@ $( document ).ready(function() {
 
         if( currentValue == "Прямая" ) {
             selectedShapeName.text('Прямая');
-            selectedShapeMedia.css('background-image', 'url("/images/page-home/section-calc/step-shape/shape-type-1.png")');
+            selectedShapeMedia.css('background-image', 'url("./images/page-home/section-calc/step-shape/shape-type-1.png")');
         }
         else if( currentValue == "Угловая" ) {
             selectedShapeName.text('Угловая');
-            selectedShapeMedia.css('background-image', 'url("/images/page-home/section-calc/step-shape/shape-type-2.png")');
+            selectedShapeMedia.css('background-image', 'url("./images/page-home/section-calc/step-shape/shape-type-2.png")');
         }
         else if( currentValue == "Островная" ) {
             selectedShapeName.text('Островная');
-            selectedShapeMedia.css('background-image', 'url("/images/page-home/section-calc/step-shape/shape-type-3.png")');
+            selectedShapeMedia.css('background-image', 'url("./images/page-home/section-calc/step-shape/shape-type-3.png")');
         }
         else if( currentValue == "Другая" ) {
             selectedShapeName.text('Другая');
-            selectedShapeMedia.css('background-image', 'url("/images/page-home/section-calc/step-shape/shape-type-4.png")');
+            selectedShapeMedia.css('background-image', 'url("./images/page-home/section-calc/step-shape/shape-type-4.png")');
         }
     });
 

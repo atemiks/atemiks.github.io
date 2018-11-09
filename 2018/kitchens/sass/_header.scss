@@ -121,6 +121,9 @@
 		font-weight: 400;
 		line-height: 24px;
 		letter-spacing: 0.4px;
+		&:hover {
+			opacity: 1;
+		}
 	}
 }
 
@@ -138,7 +141,7 @@
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 1.5;
-		color: #f7bd4c;
+		color: $warning;
 		letter-spacing: 0.4px;
 		i {
 			margin: 0 -10px 0 0;
@@ -151,6 +154,10 @@
 			@include media-breakpoint-down(lg) {
 				display: none;
 			}
+		}
+
+		&:hover {
+			color: darken($warning, 5%);
 		}
 	}
 }

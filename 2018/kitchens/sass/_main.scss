@@ -56,7 +56,7 @@
 	color: #fefeff;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 700;
 	color: #7f7e81;
 	line-height: 24px;
 	letter-spacing: 0.4px;
@@ -126,10 +126,6 @@
 	position: relative;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	@include media-breakpoint-down(sm) {
-		width: 340px;
-	}
-
 	.project-media {
 		position: relative;
 	    align-self: center;
@@ -272,22 +268,28 @@
 	}
 }
 
+.slider-project-media {
+	.slide-item {
+		position: relative;
+	}
+
+	.slick-arrow {
+		&:before {
+			color: #fff;
+		}
+	}
+	.slick-prev {
+		left: 0;
+	}
+	.slick-next {
+		right: 0;
+	}
+}
+
 
 .slider-portfolio {
 	margin-top: 30px;
 	margin-bottom: 30px;
-
-	.slick-list {
-		@include media-breakpoint-down(sm) {
-			overflow: visible;
-		}
-	}
-
-	.slide-item {
-		@include media-breakpoint-down(sm) {
-			margin-right: 15px;
-		}
-	}
 }
 
 .slider-portfolio-nav {
@@ -349,7 +351,7 @@
 		position: relative;
 		left: 0;
 		bottom: 0;
-		width: 295px;
+		width: 100%;
 		margin-top: -40px;
 		padding-right: 15px;
 	}
@@ -522,6 +524,7 @@
 	
 	.calc-hint,
 	.calc-order {
+		width: 100%;
 		max-width: 405px;
 		margin: auto;
 		@include media-breakpoint-down(md) {
@@ -601,6 +604,9 @@
 		opacity: 0;
 		visibility: hidden;
 		position: absolute;
+	    flex-direction: column;
+        justify-content: space-between;
+		min-height: 373px;
 		top: 30px;
 		left: 50%;
 		transition: opacity 300ms ease, visibility 300ms ease, top 300ms ease;
@@ -640,6 +646,7 @@
 	.calc-choose-grid {
 		display: flex;
 		flex-wrap: wrap;
+		width: 100%;
 		max-width: 405px;
 		margin: auto;
 		@include media-breakpoint-between(sm, md) {
@@ -672,6 +679,7 @@
 
 	.calc-selected-shape {
 		position: relative;
+		width: 100%;
 		max-width: 405px;
 		min-height: 265px;
 		margin: auto;
@@ -739,23 +747,24 @@
 			opacity: 1;
 			visibility: visible;
 			top: 0;
-			display: block;
+			display: flex;
 		}
 	}
 }
 
 .calc-controls {
-	position: absolute;
-	left: 50%;
-	bottom: -10px;
-	@include media-breakpoint-down(md) {
-		display: none;
+	@include media-breakpoint-down(md)  {
+		margin: -30px 0 20px;
 	}
 
 	.calc-controls-inner {
+		width: 100%;
 		max-width: 405px;
 		margin: auto;
 		text-align: right;
+		@include media-breakpoint-down(md) {
+			text-align: center;
+		}
 	}
 
 	.calc-prev,
