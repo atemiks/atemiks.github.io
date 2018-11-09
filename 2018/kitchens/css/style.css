@@ -7162,7 +7162,8 @@ body:not(.page-home) .header-box {
     .calc-unit .calc-content {
       display: none;
       position: relative;
-      left: 0; } }
+      left: 0;
+      min-height: auto; } }
 
 .calc-unit .calc-choose {
   cursor: pointer;
@@ -7290,7 +7291,7 @@ body:not(.page-home) .header-box {
 
 @media (max-width: 991.98px) {
   .calc-controls {
-    margin: -30px 0 20px; } }
+    margin: 0 0 20px; } }
 
 .calc-controls .calc-controls-inner {
   width: 100%;
@@ -7317,6 +7318,10 @@ body:not(.page-home) .header-box {
   .calc-controls .calc-prev:disabled,
   .calc-controls .calc-next:disabled {
     opacity: .3; }
+  @media (max-width: 991.98px) {
+    .calc-controls .calc-prev,
+    .calc-controls .calc-next {
+      height: 40px; } }
 
 .section-testimonials {
   padding-top: 50px;
