@@ -11070,8 +11070,6 @@ input[type=number]::-webkit-outer-spin-button {
   height: 117px; }
   .lottery-line ul {
     width: 100%;
-    position: absolute;
-    left: 20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -11079,10 +11077,10 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .lottery-line ul li {
       list-style: none;
       width: 78px;
@@ -11091,7 +11089,18 @@ input[type=number]::-webkit-outer-spin-button {
       -webkit-flex: 0 0 78px;
           -ms-flex: 0 0 78px;
               flex: 0 0 78px;
-      padding-top: 16px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       -webkit-border-radius: 10px;
               border-radius: 10px;
       font-size: 30px;
@@ -11250,6 +11259,8 @@ input[type=number]::-webkit-outer-spin-button {
       width: 100%;
       margin: 0 auto;
       padding: 13px 0 9px;
+      position: relative;
+      z-index: 2;
       outline: none;
       border: none;
       cursor: pointer;
@@ -11261,6 +11272,22 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 22px;
         font-weight: 700;
         color: #ffffff; }
+      .win-lot_red .red-title:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        background-color: transparent; }
+      .win-lot_red .red-title:hover:before {
+        background-color: rgba(0, 0, 0, 0.3); }
     .win-lot_red .biggest-bet {
       display: -webkit-box;
       display: -webkit-flex;
@@ -11378,6 +11405,8 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     margin: 0 auto;
     padding: 13px 0 9px;
+    position: relative;
+    z-index: 2;
     outline: none;
     border: none;
     cursor: pointer;
@@ -11389,6 +11418,22 @@ input[type=number]::-webkit-outer-spin-button {
       font-size: 22px;
       font-weight: 700;
       color: #ffffff; }
+    .win-lot_green .green-title:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      background-color: transparent; }
+    .win-lot_green .green-title:hover:before {
+      background-color: rgba(0, 0, 0, 0.3); }
   .win-lot_green .biggest-bet {
     display: -webkit-box;
     display: -webkit-flex;
@@ -11469,6 +11514,8 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     margin: 0 auto;
     padding: 13px 0 9px;
+    position: relative;
+    z-index: 2;
     outline: none;
     border: none;
     cursor: pointer;
@@ -11480,6 +11527,22 @@ input[type=number]::-webkit-outer-spin-button {
       font-size: 22px;
       font-weight: 700;
       color: #ffffff; }
+    .win-lot_black .black-title:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      background-color: transparent; }
+    .win-lot_black .black-title:hover:before {
+      background-color: rgba(0, 0, 0, 0.3); }
   .win-lot_black .biggest-bet {
     display: -webkit-box;
     display: -webkit-flex;
@@ -11585,13 +11648,6 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 0 60px; }
     .scroll-history_nums ul li:nth-of-type(n+2) {
       margin-left: 10px; }
-  .lottery-line ul {
-    left: -90px; }
-    .lottery-line ul li {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1 0 78px;
-          -ms-flex: 1 0 78px;
-              flex: 1 0 78px; }
   .bet-amount_cost input {
     width: 85%; }
   .bet-amount_choice {
@@ -11608,7 +11664,5 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: 15px; } }
 
 @media (max-width: 1439px) {
-  .lottery-line ul {
-    left: -140px; }
   .bet-amount_choice button {
     margin-bottom: 10px; } }
