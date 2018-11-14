@@ -238,7 +238,7 @@
 			max-width: 302px;
 			background-color: #242b33;
 			font-size: 18px;
-			color: #2f3741;
+			color: #fff;
 			height: 42px;
 		}
 	}
@@ -321,6 +321,9 @@
 			width: 100%;
 			margin: 0 auto;
 			padding: 13px 0 9px;
+			outline: none;
+			border: none;
+			cursor: pointer;
 			border-radius: $global-radius;
 			text-align: center;
 			background-color: #e74141;
@@ -442,6 +445,9 @@
 			width: 100%;
 			margin: 0 auto;
 			padding: 13px 0 9px;
+			outline: none;
+			border: none;
+			cursor: pointer;
 			border-radius: $global-radius;
 			text-align: center;
 			background-color: #36af46;
@@ -525,6 +531,9 @@
 			width: 100%;
 			margin: 0 auto;
 			padding: 13px 0 9px;
+			outline: none;
+			border: none;
+			cursor: pointer;
 			border-radius: $global-radius;
 			text-align: center;
 			background-color: #31363c;
