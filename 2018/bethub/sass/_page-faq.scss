@@ -1,0 +1,234 @@
+.faq-title{
+	flex: 2 2;
+	padding: 12px 0 0 27px;
+	img{
+		display: inline-block;
+		margin-right: 15px;
+	}
+	p{
+		font-family: $base-font;
+		font-size: 18px;
+		color: #c1c1c2;
+		display: inline-block;
+	}
+}
+
+.faq-support{
+	flex: 1 1;
+	text-align: right;
+	padding-right: 25px;
+}
+
+.faq-content{
+	display: flex;
+	align-items: flex-start;
+	font-family: $base-font;
+	&_sections{
+		flex: 0 1 229px;
+		width: 229px;
+		background-color: #1c2127;
+		border-radius: $global-radius;
+		padding: 36px 26px 27px;
+		h2{
+			font-size: 14px;
+			color: #ffffff;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		ul{
+			list-style: none;
+			margin-bottom: 22px;
+			li{
+				transition: 0.3s;
+				a{
+					text-decoration: none;
+					font-size: 14px;
+					color: #455260;
+					position: relative;
+					&:before{
+						content: '';
+						position: absolute;
+						top: 5px;
+						left: -14px;
+						width: 5px;
+						height: 5px;
+						border-radius: 50%;
+						box-shadow: 0 0 5px rgba(25, 144, 234, 0.15);
+						background-color: #1990ea;
+						opacity: 0;
+					}
+					&:hover{
+						color: #1990ea;
+						&:before{
+							opacity: 1;
+						}
+					}
+				}
+				&:nth-of-type(n+2){
+					margin-top: 9px;
+				}
+			}
+			.active{
+				a{
+					color: #1990ea;
+					&:before{
+						opacity: 1;
+					}
+				}
+			}
+			&:after{
+				content: '';
+				display: block;
+				width: 100%;
+				height: 1px;
+				margin-top: 26px;
+				background: url(../images/page-faq/line.png) no-repeat center;
+			}
+		}
+		button{
+			width: 177px;
+			height: 35px;
+			outline: none;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 21px rgba(25, 144, 234, 0.15);
+			background-color: #1990ea;
+			text-align: center;
+			font-size: 12px;
+			color: #ffffff;
+			cursor: pointer;
+		}
+	}
+	&_regulations{
+		flex: 3 3;
+		border-radius: $global-radius;
+		background-color: #1c2127;
+		margin-left: 26px;
+		padding: 26px;
+		.faq-nav{
+			border-radius: $global-radius;
+			background-color: #242b33;
+			display: flex;
+			padding: 11px 26px 9px;
+			&_breadcrumb{
+				flex: 2 2;
+				.breadcrumb{
+					padding: 0;
+					margin: 0;
+					background-color: transparent;
+					.breadcrumb-item{
+						color: #455260;
+						font-size: 14px;
+						a{
+							text-decoration: none;
+							font-size: 14px;
+							color: #455260;
+						}
+						&:nth-of-type(n+2){
+							padding-left: 15px;
+							&:before{
+								content: '>';
+								color: #455260;
+							}
+						}
+					}
+					.first-item{
+						a{
+							color: #ffffff !important;
+						}
+					}
+				}
+			}
+			&_search{
+				position: relative;
+				input{
+					width: 144px;
+					height: 26px;
+					margin-top: 0;
+					font-size: 12px;
+					padding: 0 0 0 8px;
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					top: 7px;
+					right: 8px;
+					width: 11px;
+					height: 11px;
+					background: url(../images/page-faq/search.png);
+				}
+			}
+		}
+		.faq-info{
+			margin-top: 26px;
+			background-color: #242b33;
+			border-radius: $global-radius;
+			padding: 26px;
+			&_question{
+				width: 100%;
+				margin-bottom: 6px;
+				.question-title{
+					width: 100%;
+					background-color: #1c2127;
+					border-radius: $global-radius;
+					padding: 7px 19px 7px;
+					position: relative;
+					cursor: pointer;
+					span{
+						color: #ffffff;
+						font-size: 14px;
+						margin-bottom: 0;
+					}
+					i{
+						position: absolute;
+						top: 16px;
+						right: 19px;
+						width: 10px;
+						height: 7px;
+						background: url(../images/page-faq/accordion-arrow.png);
+					}
+				}
+				.question-answer{
+					background-color: #171a1f;
+					border-radius: $global-radius;
+					margin-top: 6px;
+					padding: 17px 19px;
+					&_description{
+						border-left: 2px solid #1990ea;
+						padding-left: 18px;
+						padding-bottom: 2px;
+						p{
+							max-width: 90%;
+							font-size: 14px;
+							color: #455260;
+							margin-bottom: 0;
+							line-height: 1.2;
+							&:nth-of-type(1){
+								margin-bottom: 18px;
+							}
+							span{
+								color: #1990ea;
+							}
+							a{
+								color: #36af46;
+								text-decoration: underline;
+							}
+						}
+						img{
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.active-accordion{
+	span{
+		color: #1990ea !important;
+	}
+	i{
+		background: url(../images/page-faq/accordion-active-arrow.png) !important;
+	}
+}

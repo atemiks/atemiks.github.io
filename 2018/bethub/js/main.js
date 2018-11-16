@@ -190,4 +190,15 @@ $( document ).ready(function() {
 		initChat();
 		initInventory();
 	});
+
+	// faq accorfion
+	/*$('.question-title span').click(function() {
+		$('.question-title').removeClass('active-accordion')
+		$(this).parent().addClass('active-accordion');
+	});*/
+	$('.question-answer').hide();
+	$('.question-title').click(function() {
+		$(this).next().slideToggle(400);
+		$(this).toggleClass('active-accordion');
+	});
 });

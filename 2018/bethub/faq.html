@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+        <!-- <meta name="viewport" content="initial-scale=0.1"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="vendor/css/flipclock.css">
+        <link rel="stylesheet" href="vendor/css/slick.css">
+        <link rel="stylesheet" href="vendor/css/slick-theme.css">
+        <link rel="stylesheet" href="vendor/css/jquery.mCustomScrollbar.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <title>BetHub</title>
+    </head>
+    <body>
+
+        <div class="navigation-wrapper">
+            <div class="navigation-top">
+                <ul class="navigation-menu navigation-main">
+                    <li class="navigation-item">
+                        <a href="index.html" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-crown" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Jackpot</span>
+                                <span class="navigation-subtitle">Играй по крупному</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="navigation-item active">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <span class="badge badge-danger">4</span>
+                                <i class="icon-chip" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Coinflip</span>
+                                <span class="navigation-subtitle">Подбрось монетку</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-fighting-game" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Duels</span>
+                                <span class="navigation-subtitle">Сражайся и побеждай</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-chest" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Opencase</span>
+                                <span class="navigation-subtitle">Испытай свою удачу</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navigation-menu navigation-main">
+                    <li class="navigation-item">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-stat" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Статистика</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navigation-bottom">
+                <ul class="navigation-menu">
+                    <li class="navigation-item active">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-settings" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Настройки</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-info" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Информация</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- /.navigation-wrapper -->
+        <button class="chat-toggler"></button>
+
+        <div class="chat-wrapper">
+            <div class="chat-header">
+                <div class="left">
+                    <div class="chat-online">
+                        Чат <span class="chat-online-count" >113</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="chat-lang">
+                        <button class="dropdown-toggle" type="button" id="chatLangMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/icons/icon-flag-ru.png" alt="">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="chatLangMenu">
+                            <a class="dropdown-item" href="#link">
+                                <img src="images/icons/icon-flag-ru.png" alt="">
+                            </a>
+                            <a class="dropdown-item" href="#link">
+                                <img src="images/icons/icon-flag-ru.png" alt="">
+                            </a>
+                            <a class="dropdown-item" href="#link">
+                                <img src="images/icons/icon-flag-ru.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="chat-channel">
+                        <button class="dropdown-toggle" type="button" id="chatChannelMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jackpot</button>
+                        <div class="dropdown-menu" aria-labelledby="chatChannelMenu">
+                            <a class="dropdown-item" href="#link">Jackpot</a>
+                            <a class="dropdown-item" href="#link">History</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-body" >
+                <div class="chat-messages" id="chat-messages" >
+                    <div class="chat-message success">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart success sm" data-percent="60">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-1.png" alt="" class="ppc-thumbnail">
+                                    <p class="ppc-level">639</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">Zhora228</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:24</p>
+                            </div>
+                            <div class="chat-message-text">Привет работягам! Как дела? <br> 
+                                У меня вот так себе ибо батя отпиздил как пришел пьяным с работы. Вот так. Скиньте <span>100 ВР</span> плиз на лечение. Ибо подорожник хуево помогает</div>
+                        </div>
+                    </div>
+
+                    <div class="chat-message">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart default sm" data-percent="100">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-2.png" alt="HaroldHidePain" class="ppc-thumbnail">
+                                    <p class="ppc-level">347</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">HaroldHidePain</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:23</p>
+                            </div>
+                            <div class="chat-message-text">Пацаны, как скрыть боль так, чтобы никто этого не заметил? А то мамка постоянно по моему лицу понимает когда я снова слил тут все бабки((9(</div>
+                        </div>
+                    </div>
+
+                    <div class="chat-message">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart sm" data-percent="30">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-3.png" alt="Perez_invest" class="ppc-thumbnail">
+                                    <p class="ppc-level">11</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">Perez_invest</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:18</p>
+                            </div>
+                            <div class="chat-message-text">Steam trade not again!!1!</div>
+                        </div>
+                    </div>
+
+                    <div class="chat-message moderator">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart rare sm" data-percent="90">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-4.png" alt="Perez_invest" class="ppc-thumbnail">
+                                    <p class="ppc-level">847</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">Verner2k</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:16</p>
+                            </div>
+                            <div class="chat-message-text">Запомни, брат, простую фразу: профит - будет, но не сразу.</div>
+                        </div>
+                    </div>
+
+                    <div class="chat-message warning">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart legendary sm" data-percent="40">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-5.png" alt="Perez_invest" class="ppc-thumbnail">
+                                    <p class="ppc-level">999</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">EnjoyMaloy</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:16</p>
+                            </div>
+                            <div class="chat-message-text">Переход по моей волшебной ссылке магическим образом увеличивает ваш член и  ает целых <span>130 ВР</span> на ваш баланс. Ссылка: <a href="#link">https://bethub.gg/ref/enjoymaloy</a></div>
+                        </div>
+                    </div>
+
+                    <div class="chat-message admin">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart admin sm" data-percent="80">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-6.png" alt="Perez_invest" class="ppc-thumbnail">
+                                    <p class="ppc-level">ADMIN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">Mawis</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:16</p>
+                            </div>
+                            <div class="chat-message-text">Кстати, мы запустили конкурс в пабе ВК. Кому интересно - бегом туда. Также пофиксили кучу всяких багов которые вы нашли. Но так и не смогли ускорить парсер csgo500 на беке за что просим огромное извенений у всех обитателей чата. И дальше идет какой-то непонятный текст чтобы заполнить место. И еще полотно какого-то несвязного и не ясного текста для заполнения пустого пространства.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="chat-footer">
+                <div class="chat-hint">
+                    <button class="close">
+                        <img src="images/icons/icon-close.png" alt="">
+                    </button>
+
+                    <div class="chat-hint-thumbnail">
+                        <img src="images/icons/icon-hint.png" alt="подсказка">
+                    </div>
+                    <div class="chat-hint-text">
+                        При общении в <span>чате</span> не используйте
+                        ругательств, не рекламируйте сайты 
+                        и не злоупотребляйте капс локом
+                        дабы вас не настиг <span>банхаммер</span>
+                    </div>
+                </div>
+                <div class="chat-leave-message">
+                    <textarea name="" placeholder="Напишите сообщение..." ></textarea>
+                    <button class="chat-leave-smile"></button>
+                </div>
+                <p class="chat-leave-message-hint">Не забывай про <a href="#lnik">правила чата</a>!</p>
+            </div>
+        </div><!-- /.chat-wrapper -->
+
+        <div class="wrapper">
+            <div class="content">
+                <header class="header-box">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="header-col side-left col">
+                                <button class="header-navigation-toggler">
+                                    <img src="images/icons/icon-burger.png" alt="burger">
+                                </button>
+
+                                <div class="header-logo">
+                                    <a href="index.html">
+                                        <img src="images/logo.png" alt="BetHub">
+                                    </a>
+                                </div>
+
+                                <nav class="header-nav">
+                                    <ul class="header-nav-list">
+                                        <li class="header-nav-item active"><a href="#link" class="header-nav-link">Честная игра</a></li>
+                                        <li class="header-nav-item"><a href="#link" class="header-nav-link">Поддержка</a></li>
+                                        <li class="header-nav-item"><a href="#link" class="header-nav-link">FAQ</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-col side-right col-auto">
+                                <ul class="header-profile-info">
+                                    <li class="header-profile-info-item">
+                                        <a href="#link" class="btn btn-xs btn-primary" >ПОПОЛНИТЬ</a>
+                                    </li>
+                                    <li class="header-profile-info-item">
+                                        <a href="#link" class="btn btn-xs btn-success" >ВЫВЕСТИ</a>
+                                    </li>
+                                    <li class="header-profile-info-item">
+                                        БАЛАНС: <span>473 BP</span>
+                                    </li>
+                                </ul>
+
+                                <div class="header-lang">
+                                     <button class="dropdown-toggle" type="button" id="headerDropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="images/icons/icon-flag-ru.png" alt="ru">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="headerDropdownLang">
+                                        <a class="dropdown-item" href="#link">
+                                            <img src="images/icons/icon-flag-ru.png" alt="ru">
+                                        </a>
+                                        <a class="dropdown-item" href="#link">
+                                            <img src="images/icons/icon-flag-ru.png" alt="ru">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <button class="header-volume">
+                                    <i class="icon-volume-on" ></i>
+                                    <!-- <img src="images/icons/icon-volume.png" alt="volume"> -->
+                                </button>
+
+                                <div class="header-user dropdown" style="background-image: url('images/header/header-user-bg.png')" >
+                                    <button class="dropdown-toggle" type="button" id="headerDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user-pie-chart rare sm" data-percent="40">
+                                            <div class="ppc-progress">
+                                                <div class="ppc-progress-fill"></div>
+                                            </div>
+                                            <div class="ppc-content">
+                                                <img src="images/uploads/header/header-user/header-user-img.png" alt="Verner2k" class="ppc-thumbnail">
+                                                <p class="ppc-level">347</p>
+                                            </div>
+                                        </div>
+
+                                        <span class="header-user-name">Verner2k</span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="headerDropdownProfile">
+                                        <a class="dropdown-item" href="#link"><i class="icon-user" ></i>Профиль</a>
+                                        <a class="dropdown-item" href="#link"><i class="icon-briefcase" ></i>Инвентарь</a>
+                                        <a class="dropdown-item" href="#link"><i class="icon-layers" ></i>История игр</a>
+                                        <a class="dropdown-item" href="#link"><i class="icon-grid" ></i>История платежей</a>
+                                        <a class="dropdown-item" href="#link"><i class="icon-settings-lg" ></i>Настройки</a>
+                                        <a class="dropdown-item" href="#link"><i class="icon-power" ></i>Выход</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <main class="main-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="game-content-wrapper">
+                                    <div class="game-header">
+                                        <div class="faq-title">
+                                            <img src="images/icons/question-mark.png" alt="question-mark">
+                                            <p>FAQ</p>
+                                        </div><!-- /.faq-title -->
+                                        <div class="faq-support">
+                                            <a href="#link" class="btn btn-xs btn-primary">ПОДДЕРЖКА</a>
+                                        </div><!-- /.faq-support -->
+                                    </div><!-- /.game-header -->
+                                    <div class="game-content tab-content">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="faq-content">
+                                                    <div class="faq-content_sections">
+                                                        <h2>Разделы</h2>
+                                                        <ul>
+                                                            <li class="active"><a href="">Основные правила</a></li>
+                                                            <li><a href="">Вопросы по ставкам</a></li>
+                                                            <li><a href="">Получение выигрыша</a></li>
+                                                            <li><a href="">Партнерская программа</a></li>
+                                                            <li><a href="">Особенности Jackpot</a></li>
+                                                            <li><a href="">Особенности Double</a></li>
+                                                            <li><a href="">Магазин</a></li>
+                                                            <li><a href="">Комиссия сервиса</a></li>
+                                                            <li><a href="">Правила чата</a></li>
+                                                            <li><a href="">Конфиденциальность</a></li>
+                                                        </ul>
+                                                        <button>НАПИСАТЬ В ПОДДЕРЖКУ</button>
+                                                    </div><!-- /.faq-content_sections -->
+                                                    <div class="faq-content_regulations">
+                                                        <div class="faq-nav">
+                                                        	<div class="faq-nav_breadcrumb">
+                                                        		<nav aria-label="breadcrumb">
+                                                        			<ol class="breadcrumb">
+                                                        				<li class="breadcrumb-item first-item"><a href="#">Основные правила</a></li>
+                                                        				<li class="breadcrumb-item"><a href="#">Какие игры есть на сайте?</a></li>
+                                                        				<li class="breadcrumb-item" aria-current="page">Jackpot</li>
+                                                        			</ol>
+                                                        		</nav>
+                                                        	</div><!-- /.faq-nav_breadcrumb -->
+                                                        	<div class="faq-nav_search">
+                                                        		<input type="text" placeholder="Введите слово...">
+                                                        	</div><!-- /.faq-nav_search -->
+                                                        </div><!-- /.faq-nav -->
+                                                        <div class="faq-info">
+                                                        	<div class="faq-info_question">
+                                                                <div class="question-title">
+                                                                    <span>
+                                                                        1.1 Какие игры есть на сайте?
+                                                                    </span>
+                                                                    <i></i>
+                                                                </div><!-- /.question-title -->
+                                                                <div class="question-answer">
+                                                                    <div class="question-answer_description">
+                                                                        <p><span>Jackpot</span> - режим игры для тех, кто любит играть по-крупному! Желающие испытать удачу вносят ставки на общий депозит, который разыгрывается среди участников в конце раунда.</p>
+                                                                        <p><span>Double Game</span> - режим игры, в котором вы можете заработать монеты (валюта сервиса) и обменять их на скины из <a href="">магазина</a>. Угадайте победный цвет и верните свою ставку в 2х или 14ти кратном размере.</p>
+                                                                    </div><!-- /.question-answer_description -->
+                                                                </div><!-- /.question-answer -->
+                                                            </div><!-- /.faq-info_question -->
+                                                            <div class="faq-info_question">
+                                                                <div class="question-title">
+                                                                    <span>
+                                                                        1.2 Как принять участие в игре?
+                                                                    </span>
+                                                                    <i></i>
+                                                                </div><!-- /.question-title -->
+                                                                <div class="question-answer">
+                                                                    <div class="question-answer_description">
+                                                                        <p><span>Jackpot</span> - режим игры для тех, кто любит играть по-крупному! Желающие испытать удачу вносят ставки на общий депозит, который разыгрывается среди участников в конце раунда.</p>
+                                                                        <p><span>Double Game</span> - режим игры, в котором вы можете заработать монеты (валюта сервиса) и обменять их на скины из <a href="">магазина</a>. Угадайте победный цвет и верните свою ставку в 2х или 14ти кратном размере.</p>
+                                                                    </div><!-- /.question-answer_description -->
+                                                                </div><!-- /.question-answer -->
+                                                            </div><!-- /.faq-info_question -->
+                                                            <div class="faq-info_question">
+                                                                <div class="question-title">
+                                                                    <span>
+                                                                       1.3 Как сделать ставку?
+                                                                    </span>
+                                                                    <i></i>
+                                                                </div><!-- /.question-title -->
+                                                                <div class="question-answer">
+                                                                    <div class="question-answer_description">
+                                                                        <p><span>Jackpot</span> - режим игры для тех, кто любит играть по-крупному! Желающие испытать удачу вносят ставки на общий депозит, который разыгрывается среди участников в конце раунда.</p>
+                                                                        <p><span>Double Game</span> - режим игры, в котором вы можете заработать монеты (валюта сервиса) и обменять их на скины из <a href="">магазина</a>. Угадайте победный цвет и верните свою ставку в 2х или 14ти кратном размере.</p>
+                                                                    </div><!-- /.question-answer_description -->
+                                                                </div><!-- /.question-answer -->
+                                                            </div><!-- /.faq-info_question -->
+                                                            <div class="faq-info_question">
+                                                                <div class="question-title">
+                                                                    <span>
+                                                                       1.4 Что принимается в виде ставки?
+                                                                    </span>
+                                                                    <i></i>
+                                                                </div><!-- /.question-title -->
+                                                                <div class="question-answer">
+                                                                    <div class="question-answer_description">
+                                                                        <p><span>Jackpot</span> - режим игры для тех, кто любит играть по-крупному! Желающие испытать удачу вносят ставки на общий депозит, который разыгрывается среди участников в конце раунда.</p>
+                                                                        <p><span>Double Game</span> - режим игры, в котором вы можете заработать монеты (валюта сервиса) и обменять их на скины из <a href="">магазина</a>. Угадайте победный цвет и верните свою ставку в 2х или 14ти кратном размере.</p>
+                                                                    </div><!-- /.question-answer_description -->
+                                                                </div><!-- /.question-answer -->
+                                                            </div><!-- /.faq-info_question -->
+                                                            <div class="faq-info_question">
+                                                                <div class="question-title">
+                                                                    <span>
+                                                                       1.5 Какая минимальная и максимальная ставки?
+                                                                    </span>
+                                                                    <i></i>
+                                                                </div><!-- /.question-title -->
+                                                                <div class="question-answer">
+                                                                    <div class="question-answer_description">
+                                                                        <p><span>Jackpot</span> - режим игры для тех, кто любит играть по-крупному! Желающие испытать удачу вносят ставки на общий депозит, который разыгрывается среди участников в конце раунда.</p>
+                                                                        <p><span>Double Game</span> - режим игры, в котором вы можете заработать монеты (валюта сервиса) и обменять их на скины из <a href="">магазина</a>. Угадайте победный цвет и верните свою ставку в 2х или 14ти кратном размере.</p>
+                                                                    </div><!-- /.question-answer_description -->
+                                                                </div><!-- /.question-answer -->
+                                                            </div><!-- /.faq-info_question -->
+                                                             <div class="faq-info_question">
+                                                                <div class="question-title">
+                                                                    <span>
+                                                                       1.6 Сколько скинов принимается в одной ставке?
+                                                                    </span>
+                                                                    <i></i>
+                                                                </div><!-- /.question-title -->
+                                                                <div class="question-answer">
+                                                                    <div class="question-answer_description">
+                                                                        <p><span>Jackpot</span> - режим игры для тех, кто любит играть по-крупному! Желающие испытать удачу вносят ставки на общий депозит, который разыгрывается среди участников в конце раунда.</p>
+                                                                        <p><span>Double Game</span> - режим игры, в котором вы можете заработать монеты (валюта сервиса) и обменять их на скины из <a href="">магазина</a>. Угадайте победный цвет и верните свою ставку в 2х или 14ти кратном размере.</p>
+                                                                    </div><!-- /.question-answer_description -->
+                                                                </div><!-- /.question-answer -->
+                                                            </div><!-- /.faq-info_question -->
+                                                             <div class="faq-info_question">
+                                                                <div class="question-title">
+                                                                    <span>
+                                                                      1.7 Сколько ставок можно сделать в одном раунде?
+                                                                    </span>
+                                                                    <i></i>
+                                                                </div><!-- /.question-title -->
+                                                                <div class="question-answer">
+                                                                    <div class="question-answer_description">
+                                                                        <p><span>Jackpot</span> - режим игры для тех, кто любит играть по-крупному! Желающие испытать удачу вносят ставки на общий депозит, который разыгрывается среди участников в конце раунда.</p>
+                                                                        <p><span>Double Game</span> - режим игры, в котором вы можете заработать монеты (валюта сервиса) и обменять их на скины из <a href="">магазина</a>. Угадайте победный цвет и верните свою ставку в 2х или 14ти кратном размере.</p>
+                                                                    </div><!-- /.question-answer_description -->
+                                                                </div><!-- /.question-answer -->
+                                                            </div><!-- /.faq-info_question -->
+                                                            <div class="faq-info_question">
+                                                                <div class="question-title">
+                                                                    <span>
+                                                                        1.8 Какое максимальное колличество скинов в раунде?
+                                                                    </span>
+                                                                    <i></i>
+                                                                </div><!-- /.question-title -->
+                                                                <div class="question-answer">
+                                                                    <div class="question-answer_description">
+                                                                        <p>Максимальное количество скинов на депозите раунда в <span>Jackpot</span> (если оно предусмотрено) ограничивается количеством в <span>100</span> штук за одну ставку. При депозите вы увидите ползунок (скриншот ниже) на котором в режиме реального времени будет показываться число скинов которые вы можете добавить к текущему депозиту.</p>
+                                                                        <img src="images/page-faq/screen-1.png" alt="img">
+                                                                        <img src="images/page-faq/screen-2.png" alt="img">
+                                                                    </div><!-- /.question-answer_description -->
+                                                                </div><!-- /.question-answer -->
+                                                            </div><!-- /.faq-info_question -->
+                                                        </div><!-- /.faq-content -->
+                                                    </div><!-- /.faq-content_regulations -->
+                                                </div><!-- /.faq-content -->
+                                            </div><!-- /.col -->
+                                        </div><!-- /.row -->
+                                    </div><!-- /.game-content -->
+                                </div><!-- /.game-content-wrapper -->
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </main>
+            </div><!-- /.content -->
+        </div><!-- /.wrapper -->
+    
+
+
+
+
+    <script src="vendor/js/jquery-3.3.1.min.js" ></script>
+    <script src="vendor/js/popper.min.js" ></script>
+    <script src="vendor/js/flipclock.min.js" ></script>
+    <script src="vendor/js/slick.min.js" ></script>
+    <script src="vendor/js/jquery.mCustomScrollbar.concat.min.js" ></script>
+    <script src="vendor/js/bootstrap.min.js" ></script>
+    <script src="js/main.js" ></script>
+    </body>
+</html>
