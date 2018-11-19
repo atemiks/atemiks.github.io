@@ -273,6 +273,13 @@ $( document ).ready(function() {
 		$('.blur-wrapper').removeClass('active-blur');
 	});
 
+	$(document).mouseup(function (e) {
+	    var container = $('.modal-content');
+	    if (container.has(e.target).length === 0){
+	        $('.blur-wrapper').removeClass('active-blur');
+	    }
+	});
+
 });
 
 /*var elemWidth = document.getElementById('items').offsetWidth;
