@@ -11796,16 +11796,26 @@ input[type=number]::-webkit-outer-spin-button {
             -ms-flex: 2 2;
                 flex: 2 2; }
         .faq-content_regulations .faq-nav_breadcrumb .breadcrumb {
-          padding: 0;
+          padding: 3px 0 0 0;
           margin: 0;
           background-color: transparent; }
           .faq-content_regulations .faq-nav_breadcrumb .breadcrumb .breadcrumb-item {
             color: #455260;
-            font-size: 14px; }
+            font-size: 14px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+            .faq-content_regulations .faq-nav_breadcrumb .breadcrumb .breadcrumb-item:hover {
+              color: #fff; }
             .faq-content_regulations .faq-nav_breadcrumb .breadcrumb .breadcrumb-item a {
               text-decoration: none;
               font-size: 14px;
-              color: #455260; }
+              color: #455260;
+              -webkit-transition: 0.3s;
+              -o-transition: 0.3s;
+              transition: 0.3s; }
+              .faq-content_regulations .faq-nav_breadcrumb .breadcrumb .breadcrumb-item a:hover {
+                color: #fff; }
             .faq-content_regulations .faq-nav_breadcrumb .breadcrumb .breadcrumb-item:nth-of-type(n+2) {
               padding-left: 15px; }
               .faq-content_regulations .faq-nav_breadcrumb .breadcrumb .breadcrumb-item:nth-of-type(n+2):before {
@@ -11846,6 +11856,14 @@ input[type=number]::-webkit-outer-spin-button {
           padding: 7px 19px 7px;
           position: relative;
           cursor: pointer; }
+          .faq-content_regulations .faq-info_question .question-title:hover {
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+            .faq-content_regulations .faq-info_question .question-title:hover span {
+              color: #1990ea !important; }
+            .faq-content_regulations .faq-info_question .question-title:hover i {
+              background: url(../images/page-faq/accordion-active-arrow.png) !important; }
           .faq-content_regulations .faq-info_question .question-title span {
             color: #ffffff;
             font-size: 14px;
@@ -11888,3 +11906,835 @@ input[type=number]::-webkit-outer-spin-button {
 
 .active-accordion i {
   background: url(../images/page-faq/accordion-active-arrow.png) !important; }
+
+.game-content-wrapper {
+  background-color: #242b33;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+
+.deposit-title {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2 2;
+      -ms-flex: 2 2;
+          flex: 2 2;
+  padding: 12px 0 14px 27px; }
+  .deposit-title img {
+    float: left;
+    margin-right: 19px; }
+  .deposit-title p {
+    font-family: "SFUI Display", sans-serif;
+    font-size: 18px;
+    color: #c1c1c2;
+    margin-bottom: 0; }
+
+.deposit-faq {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  text-align: right;
+  padding: 14px 25px 14px 0; }
+  .deposit-faq a {
+    margin-top: -6px;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    padding: 6px 14px !important; }
+
+.deposit-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px;
+  padding: 0 25px 26px;
+  font-family: "SFUI Display", sans-serif; }
+  .deposit-content_settings {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 229px;
+        -ms-flex: 0 1 229px;
+            flex: 0 1 229px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #1c2127;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    padding: 35px 26px 26px;
+    position: relative; }
+    .deposit-content_settings .select-game h4 {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #ffffff;
+      position: relative;
+      cursor: pointer; }
+      .deposit-content_settings .select-game h4 i {
+        color: #455260;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 9px;
+        height: 5px;
+        background: url(../images/page-deposit/down-arrow.png) no-repeat;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+    .deposit-content_settings .game-radio .radio {
+      display: block;
+      margin-bottom: 14px; }
+      .deposit-content_settings .game-radio .radio input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        margin: 10px 0 0 7px; }
+    .deposit-content_settings .game-radio .radio__text {
+      position: relative;
+      padding: 0 0 0 37px;
+      font-size: 14px;
+      color: #455260;
+      cursor: pointer; }
+      .deposit-content_settings .game-radio .radio__text:before {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 19px;
+        height: 19px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        background-color: #242b33; }
+      .deposit-content_settings .game-radio .radio__text:after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 5px;
+        width: 9px;
+        height: 9px;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        background-color: #1990ea;
+        -webkit-box-shadow: 0 0 5px rgba(25, 144, 234, 0.15);
+                box-shadow: 0 0 5px rgba(25, 144, 234, 0.15);
+        opacity: 0;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+    .deposit-content_settings .game-radio .radio input:checked + .radio__text:after {
+      opacity: 1; }
+    .deposit-content_settings .game-radio .radio input:focus + .radio__text:before {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .deposit-content_settings .rotate {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .deposit-content_settings .name-search {
+      margin-top: 40px;
+      margin-bottom: 45px;
+      position: relative; }
+      .deposit-content_settings .name-search h4 {
+        font-size: 14px;
+        color: #ffffff;
+        margin-bottom: 25px; }
+      .deposit-content_settings .name-search input {
+        width: 100%;
+        height: 24px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        background-color: #242b33;
+        padding: 0 0 0 7px; }
+      .deposit-content_settings .name-search:after {
+        content: '';
+        position: absolute;
+        bottom: 7px;
+        right: 5px;
+        width: 11px;
+        height: 11px;
+        background: url(../images/icons/search.png) no-repeat; }
+    .deposit-content_settings .deposit-cost h4 {
+      font-size: 14px;
+      color: #ffffff;
+      margin-bottom: 25px; }
+    .deposit-content_settings .deposit-cost #slider {
+      width: 177px; }
+    .deposit-content_settings .deposit-cost .ui-slider {
+      position: relative; }
+    .deposit-content_settings .deposit-cost .ui-slider .ui-slider-handle {
+      position: absolute;
+      z-index: 2;
+      width: 13px;
+      height: 9px;
+      background: url(../images/page-deposit/slider.png) no-repeat;
+      cursor: pointer; }
+    .deposit-content_settings .deposit-cost .ui-slider .ui-slider-range {
+      position: absolute;
+      z-index: 1;
+      font-size: .7em;
+      display: block;
+      border: 0;
+      overflow: hidden; }
+    .deposit-content_settings .deposit-cost .ui-slider-horizontal {
+      height: 3px; }
+    .deposit-content_settings .deposit-cost .ui-slider-horizontal .ui-slider-handle {
+      top: -3px;
+      margin-left: -5	px; }
+    .deposit-content_settings .deposit-cost .ui-slider-horizontal .ui-slider-range {
+      top: 0;
+      height: 100%; }
+    .deposit-content_settings .deposit-cost .ui-slider-horizontal .ui-slider-range-min {
+      left: 0; }
+    .deposit-content_settings .deposit-cost .ui-slider-horizontal .ui-slider-range-max {
+      right: 0; }
+    .deposit-content_settings .deposit-cost .ui-widget-content {
+      background: #242b33; }
+    .deposit-content_settings .deposit-cost .ui-widget-header {
+      background: #1990ea; }
+    .deposit-content_settings .deposit-cost .ui-corner-all {
+      -webkit-border-radius: 4px;
+              border-radius: 4px; }
+    .deposit-content_settings .deposit-cost .from, .deposit-content_settings .deposit-cost .to {
+      margin-top: 16px;
+      display: inline-block; }
+      .deposit-content_settings .deposit-cost .from span, .deposit-content_settings .deposit-cost .to span {
+        font-size: 12px;
+        color: #2f3741;
+        margin-right: 6px;
+        float: left; }
+      .deposit-content_settings .deposit-cost .from input, .deposit-content_settings .deposit-cost .to input {
+        padding: 0;
+        width: 60px;
+        height: 18px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        background-color: #242b33;
+        text-align: center; }
+    .deposit-content_settings .deposit-cost .to {
+      margin-left: 15px; }
+    .deposit-content_settings .deposit-sorting {
+      margin-top: 42px;
+      margin-bottom: 187px; }
+      .deposit-content_settings .deposit-sorting h4 {
+        margin-bottom: 21px;
+        font-size: 14px;
+        color: #ffffff;
+        position: relative;
+        cursor: pointer; }
+        .deposit-content_settings .deposit-sorting h4 i {
+          color: #455260;
+          position: absolute;
+          top: 5px;
+          right: 0;
+          width: 9px;
+          height: 5px;
+          background: url(../images/page-deposit/down-arrow.png) no-repeat;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+      .deposit-content_settings .deposit-sorting_radio .radio {
+        display: block;
+        margin-bottom: 14px; }
+        .deposit-content_settings .deposit-sorting_radio .radio input {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+          margin: 10px 0 0 7px; }
+        .deposit-content_settings .deposit-sorting_radio .radio:nth-of-type(n+2) {
+          margin-bottom: 12px; }
+      .deposit-content_settings .deposit-sorting_radio .radio__text {
+        position: relative;
+        padding: 0 0 0 37px;
+        font-size: 14px;
+        color: #455260;
+        cursor: pointer; }
+        .deposit-content_settings .deposit-sorting_radio .radio__text:before {
+          content: '';
+          position: absolute;
+          top: 1px;
+          left: 0;
+          width: 19px;
+          height: 19px;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px;
+          background-color: #242b33; }
+        .deposit-content_settings .deposit-sorting_radio .radio__text:after {
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: 5px;
+          width: 9px;
+          height: 9px;
+          -webkit-border-radius: 2px;
+                  border-radius: 2px;
+          background-color: #1990ea;
+          -webkit-box-shadow: 0 0 5px rgba(25, 144, 234, 0.15);
+                  box-shadow: 0 0 5px rgba(25, 144, 234, 0.15);
+          opacity: 0;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s; }
+      .deposit-content_settings .deposit-sorting_radio .radio input:checked + .radio__text:after {
+        opacity: 1; }
+      .deposit-content_settings .deposit-sorting_radio .radio input:focus + .radio__text:before {
+        -webkit-box-shadow: none;
+                box-shadow: none; }
+    .deposit-content_settings .update-inventory {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      width: 177px;
+      position: absolute;
+      bottom: 27px; }
+      .deposit-content_settings .update-inventory button {
+        width: 100%;
+        height: 35px;
+        -webkit-box-shadow: 0 0 21px rgba(25, 144, 234, 0.15);
+                box-shadow: 0 0 21px rgba(25, 144, 234, 0.15);
+        background-color: #1990ea;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 13px;
+        font-weight: 700;
+        color: #ffffff;
+        cursor: pointer; }
+  .deposit-content_items {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 785px;
+        -ms-flex: 0 1 785px;
+            flex: 0 1 785px;
+    background-color: #1c2127;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    margin: 0 25px;
+    padding: 18px 37px 13px;
+    text-align: center; }
+    .deposit-content_items .items-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-align-content: flex-start;
+          -ms-flex-line-pack: start;
+              align-content: flex-start;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .deposit-content_items .items-list .item {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 136px;
+            -ms-flex: 0 1 136px;
+                flex: 0 1 136px;
+        margin-top: 8px;
+        margin-left: 5px;
+        height: 137px;
+        position: relative;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+        background-color: #242b33;
+        text-align: center; }
+        .deposit-content_items .items-list .item span {
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          font-size: 14px;
+          color: #455260;
+          text-transform: uppercase; }
+        .deposit-content_items .items-list .item img {
+          margin: 18px auto 0;
+          max-height: 60px; }
+        .deposit-content_items .items-list .item p {
+          font-size: 15px;
+          color: #455260;
+          margin-top: -2px;
+          margin-bottom: 0px; }
+        .deposit-content_items .items-list .item b {
+          font-size: 15px;
+          font-weight: 700;
+          color: #36af46;
+          text-transform: uppercase; }
+        .deposit-content_items .items-list .item:after {
+          content: '';
+          position: absolute;
+          z-index: 9;
+          left: -2px;
+          right: -2px;
+          bottom: -2px;
+          height: 17px;
+          -webkit-border-bottom-right-radius: 20px;
+                  border-bottom-right-radius: 20px;
+          -webkit-border-bottom-left-radius: 20px;
+                  border-bottom-left-radius: 20px;
+          -webkit-background-size: 40px 40px;
+                  background-size: 40px 40px; }
+        .deposit-content_items .items-list .item.rare:after {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, #db2525), color-stop(50%, #db2525), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #db2525), to(transparent));
+          background-image: -webkit-linear-gradient(top, transparent 25%, #db2525 25%, #db2525 50%, transparent 50%, transparent 75%, #db2525 75%, transparent 100%);
+          background-image: -o-linear-gradient(top, transparent 25%, #db2525 25%, #db2525 50%, transparent 50%, transparent 75%, #db2525 75%, transparent 100%);
+          background-image: linear-gradient(180deg, transparent 25%, #db2525 25%, #db2525 50%, transparent 50%, transparent 75%, #db2525 75%, transparent 100%); }
+        .deposit-content_items .items-list .item.primary:after {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, #1990ea), color-stop(50%, #1990ea), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #1990ea), to(transparent));
+          background-image: -webkit-linear-gradient(top, transparent 25%, #1990ea 25%, #1990ea 50%, transparent 50%, transparent 75%, #1990ea 75%, transparent 100%);
+          background-image: -o-linear-gradient(top, transparent 25%, #1990ea 25%, #1990ea 50%, transparent 50%, transparent 75%, #1990ea 75%, transparent 100%);
+          background-image: linear-gradient(180deg, transparent 25%, #1990ea 25%, #1990ea 50%, transparent 50%, transparent 75%, #1990ea 75%, transparent 100%); }
+        .deposit-content_items .items-list .item.succes:after {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, #36af46), color-stop(50%, #36af46), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #36af46), to(transparent));
+          background-image: -webkit-linear-gradient(top, transparent 25%, #36af46 25%, #36af46 50%, transparent 50%, transparent 75%, #36af46 75%, transparent 100%);
+          background-image: -o-linear-gradient(top, transparent 25%, #36af46 25%, #36af46 50%, transparent 50%, transparent 75%, #36af46 75%, transparent 100%);
+          background-image: linear-gradient(180deg, transparent 25%, #36af46 25%, #36af46 50%, transparent 50%, transparent 75%, #36af46 75%, transparent 100%); }
+        .deposit-content_items .items-list .item.warning:after {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, #ffc107), color-stop(50%, #ffc107), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #ffc107), to(transparent));
+          background-image: -webkit-linear-gradient(top, transparent 25%, #ffc107 25%, #ffc107 50%, transparent 50%, transparent 75%, #ffc107 75%, transparent 100%);
+          background-image: -o-linear-gradient(top, transparent 25%, #ffc107 25%, #ffc107 50%, transparent 50%, transparent 75%, #ffc107 75%, transparent 100%);
+          background-image: linear-gradient(180deg, transparent 25%, #ffc107 25%, #ffc107 50%, transparent 50%, transparent 75%, #ffc107 75%, transparent 100%); }
+        .deposit-content_items .items-list .item.epic:after {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, #a216d1), color-stop(50%, #a216d1), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #a216d1), to(transparent));
+          background-image: -webkit-linear-gradient(top, transparent 25%, #a216d1 25%, #a216d1 50%, transparent 50%, transparent 75%, #a216d1 75%, transparent 100%);
+          background-image: -o-linear-gradient(top, transparent 25%, #a216d1 25%, #a216d1 50%, transparent 50%, transparent 75%, #a216d1 75%, transparent 100%);
+          background-image: linear-gradient(180deg, transparent 25%, #a216d1 25%, #a216d1 50%, transparent 50%, transparent 75%, #a216d1 75%, transparent 100%); }
+    .deposit-content_items .pagination {
+      margin: 33px auto 0;
+      display: inline-block; }
+      .deposit-content_items .pagination .back {
+        width: 32px;
+        height: 32px;
+        float: left;
+        margin-right: 25px;
+        margin-left: 55px;
+        background: #242b33 url(../images/page-deposit/pagination-arrow.png) no-repeat center center;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        cursor: pointer; }
+      .deposit-content_items .pagination .next {
+        width: 32px;
+        height: 32px;
+        float: left;
+        margin-right: 32px;
+        background: #242b33 url(../images/page-deposit/pagination-arrow2.png) no-repeat center center;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        cursor: pointer; }
+      .deposit-content_items .pagination-num {
+        padding-top: 2px;
+        float: left;
+        margin-right: 32px; }
+        .deposit-content_items .pagination-num ul {
+          list-style: none; }
+          .deposit-content_items .pagination-num ul li {
+            display: inline-block;
+            padding: 3px 9px;
+            margin-left: 0px; }
+            .deposit-content_items .pagination-num ul li a {
+              text-decoration: none;
+              font-size: 15px;
+              color: #414d5b; }
+              .deposit-content_items .pagination-num ul li a:hover {
+                color: #1990ea; }
+        .deposit-content_items .pagination-num .active {
+          background-color: #242b33;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px; }
+          .deposit-content_items .pagination-num .active a {
+            color: #1990ea; }
+  .deposit-content_list {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 307px;
+        -ms-flex: 0 1 307px;
+            flex: 0 1 307px;
+    background-color: #1c2127;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    padding: 26px 10px 26px 26px; }
+    .deposit-content_list .deposit-info {
+      background-color: #242b33;
+      padding: 10px 9px 12px 10px;
+      margin-right: 16px;
+      margin-bottom: 20px;
+      -webkit-border-radius: 10px;
+              border-radius: 10px; }
+      .deposit-content_list .deposit-info_sum {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .deposit-content_list .deposit-info_sum p {
+          -webkit-box-flex: 2;
+          -webkit-flex: 2 2;
+              -ms-flex: 2 2;
+                  flex: 2 2;
+          font-size: 12px;
+          color: #45515f;
+          margin-bottom: 5px; }
+        .deposit-content_list .deposit-info_sum b {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1 1;
+              -ms-flex: 1 1;
+                  flex: 1 1;
+          text-align: right;
+          font-size: 12px;
+          color: #36af46;
+          font-weight: 600; }
+      .deposit-content_list .deposit-info_selected {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .deposit-content_list .deposit-info_selected p {
+          -webkit-box-flex: 2;
+          -webkit-flex: 2 2;
+              -ms-flex: 2 2;
+                  flex: 2 2;
+          font-size: 12px;
+          color: #45515f;
+          margin-bottom: 5px; }
+        .deposit-content_list .deposit-info_selected b {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1 1;
+              -ms-flex: 1 1;
+                  flex: 1 1;
+          text-align: right;
+          font-size: 12px;
+          color: #1990ea;
+          font-weight: 600; }
+      .deposit-content_list .deposit-info_progres {
+        width: 100%;
+        height: 6px;
+        background-color: #1c2127;
+        -webkit-border-radius: 10px;
+                border-radius: 10px; }
+        .deposit-content_list .deposit-info_progres .progres-line {
+          width: 47%;
+          height: 6px;
+          margin-left: 1px;
+          -webkit-border-radius: 10px;
+                  border-radius: 10px;
+          -webkit-box-shadow: 0 0 13px rgba(25, 144, 234, 0.15);
+                  box-shadow: 0 0 13px rgba(25, 144, 234, 0.15);
+          background-color: #1990ea; }
+    .deposit-content_list .items-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-align-content: flex-start;
+          -ms-flex-line-pack: start;
+              align-content: flex-start;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 630px;
+      position: relative;
+      overflow-y: scroll;
+      padding-right: 16px;
+      right: 0px; }
+      .deposit-content_list .items-list .item {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 122px;
+            -ms-flex: 0 1 122px;
+                flex: 0 1 122px;
+        margin-top: 8px;
+        margin-left: 3px;
+        height: 122px;
+        position: relative;
+        border: 2px solid transparent;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+        background-color: #242b33;
+        text-align: center;
+        cursor: pointer;
+        -webkit-transition: opacity 300ms ease, visibility 300ms ease;
+        -o-transition: opacity 300ms ease, visibility 300ms ease;
+        transition: opacity 300ms ease, visibility 300ms ease; }
+        .deposit-content_list .items-list .item span {
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          font-size: 14px;
+          color: #455260;
+          text-transform: uppercase; }
+        .deposit-content_list .items-list .item img {
+          margin: 18px auto 0;
+          max-height: 48px; }
+        .deposit-content_list .items-list .item p {
+          font-size: 14px;
+          color: #455260;
+          margin-top: 2px;
+          margin-bottom: 0px; }
+        .deposit-content_list .items-list .item b {
+          font-size: 15px;
+          font-weight: 700;
+          color: #36af46;
+          text-transform: uppercase; }
+        .deposit-content_list .items-list .item-close {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -15px;
+          margin-left: -15px;
+          z-index: 10;
+          width: 30px;
+          height: 30px;
+          -webkit-border-radius: 10px;
+                  border-radius: 10px;
+          -webkit-box-shadow: 0 0 21px rgba(25, 144, 234, 0.25);
+                  box-shadow: 0 0 21px rgba(25, 144, 234, 0.25);
+          background: #1990ea url(../images/page-deposit/close.png) no-repeat center center;
+          cursor: pointer; }
+        .deposit-content_list .items-list .item:after {
+          content: '';
+          position: absolute;
+          z-index: 9;
+          left: -2px;
+          right: -2px;
+          bottom: -5px;
+          height: 19px;
+          -webkit-border-bottom-right-radius: 20px;
+                  border-bottom-right-radius: 20px;
+          -webkit-border-bottom-left-radius: 20px;
+                  border-bottom-left-radius: 20px;
+          -webkit-background-size: 40px 40px;
+                  background-size: 40px 40px; }
+        .deposit-content_list .items-list .item:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          visibility: hidden;
+          z-index: 8;
+          top: 0;
+          left: 0;
+          -webkit-border-radius: 10px;
+                  border-radius: 10px;
+          background: rgba(30, 35, 41, 0.8); }
+        .deposit-content_list .items-list .item:hover {
+          border: 2px solid #1990ea; }
+          .deposit-content_list .items-list .item:hover .item-close {
+            display: block; }
+          .deposit-content_list .items-list .item:hover:before {
+            opacity: 1;
+            visibility: visible; }
+          .deposit-content_list .items-list .item:hover:after {
+            display: none; }
+        .deposit-content_list .items-list .item.rare:after {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, #db2525), color-stop(50%, #db2525), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #db2525), to(transparent));
+          background-image: -webkit-linear-gradient(top, transparent 25%, #db2525 25%, #db2525 50%, transparent 50%, transparent 75%, #db2525 75%, transparent 100%);
+          background-image: -o-linear-gradient(top, transparent 25%, #db2525 25%, #db2525 50%, transparent 50%, transparent 75%, #db2525 75%, transparent 100%);
+          background-image: linear-gradient(180deg, transparent 25%, #db2525 25%, #db2525 50%, transparent 50%, transparent 75%, #db2525 75%, transparent 100%); }
+        .deposit-content_list .items-list .item.primary:after {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, #1990ea), color-stop(50%, #1990ea), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #1990ea), to(transparent));
+          background-image: -webkit-linear-gradient(top, transparent 25%, #1990ea 25%, #1990ea 50%, transparent 50%, transparent 75%, #1990ea 75%, transparent 100%);
+          background-image: -o-linear-gradient(top, transparent 25%, #1990ea 25%, #1990ea 50%, transparent 50%, transparent 75%, #1990ea 75%, transparent 100%);
+          background-image: linear-gradient(180deg, transparent 25%, #1990ea 25%, #1990ea 50%, transparent 50%, transparent 75%, #1990ea 75%, transparent 100%); }
+        .deposit-content_list .items-list .item.succes:after {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, #36af46), color-stop(50%, #36af46), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #36af46), to(transparent));
+          background-image: -webkit-linear-gradient(top, transparent 25%, #36af46 25%, #36af46 50%, transparent 50%, transparent 75%, #36af46 75%, transparent 100%);
+          background-image: -o-linear-gradient(top, transparent 25%, #36af46 25%, #36af46 50%, transparent 50%, transparent 75%, #36af46 75%, transparent 100%);
+          background-image: linear-gradient(180deg, transparent 25%, #36af46 25%, #36af46 50%, transparent 50%, transparent 75%, #36af46 75%, transparent 100%); }
+        .deposit-content_list .items-list .item.warning:after {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, #ffc107), color-stop(50%, #ffc107), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #ffc107), to(transparent));
+          background-image: -webkit-linear-gradient(top, transparent 25%, #ffc107 25%, #ffc107 50%, transparent 50%, transparent 75%, #ffc107 75%, transparent 100%);
+          background-image: -o-linear-gradient(top, transparent 25%, #ffc107 25%, #ffc107 50%, transparent 50%, transparent 75%, #ffc107 75%, transparent 100%);
+          background-image: linear-gradient(180deg, transparent 25%, #ffc107 25%, #ffc107 50%, transparent 50%, transparent 75%, #ffc107 75%, transparent 100%); }
+        .deposit-content_list .items-list .item.epic:after {
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, #a216d1), color-stop(50%, #a216d1), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #a216d1), to(transparent));
+          background-image: -webkit-linear-gradient(top, transparent 25%, #a216d1 25%, #a216d1 50%, transparent 50%, transparent 75%, #a216d1 75%, transparent 100%);
+          background-image: -o-linear-gradient(top, transparent 25%, #a216d1 25%, #a216d1 50%, transparent 50%, transparent 75%, #a216d1 75%, transparent 100%);
+          background-image: linear-gradient(180deg, transparent 25%, #a216d1 25%, #a216d1 50%, transparent 50%, transparent 75%, #a216d1 75%, transparent 100%); }
+      .deposit-content_list .items-list .item-empty {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 122px;
+            -ms-flex: 0 1 122px;
+                flex: 0 1 122px;
+        margin-top: 8px;
+        margin-left: 3px;
+        height: 122px;
+        position: relative;
+        border: 2px solid transparent;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        background-color: #171b20; }
+    .deposit-content_list .deposit-btn {
+      margin-top: 20px;
+      margin-right: 16px; }
+      .deposit-content_list .deposit-btn button {
+        width: 100%;
+        height: 46px;
+        background-color: #36af46;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        cursor: pointer; }
+
+.active-blur {
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  height: 100%; }
+
+.deposit-wrapper {
+  width: 404px; }
+  .deposit-wrapper .deposit-content {
+    height: 230px;
+    -webkit-border-radius: 10px !important;
+            border-radius: 10px !important; }
+    .deposit-wrapper .deposit-content h5 {
+      margin: 0 auto 5px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff; }
+    .deposit-wrapper .deposit-content p {
+      margin: 0 auto;
+      font-size: 12px;
+      color: #455260; }
+    .deposit-wrapper .deposit-content .option {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      margin-top: 20px; }
+      .deposit-wrapper .deposit-content .option-inventory {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 106px;
+            -ms-flex: 0 1 106px;
+                flex: 0 1 106px;
+        height: 106px;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        background-color: #1c2127;
+        text-align: center;
+        padding: 15px 0 0;
+        cursor: pointer;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .deposit-wrapper .deposit-content .option-inventory span {
+          display: block;
+          margin: 0 auto;
+          width: 60px;
+          height: 54px;
+          background: url(../images/page-deposit/icon-1-inactive.png) no-repeat center center; }
+        .deposit-wrapper .deposit-content .option-inventory p {
+          margin-top: 10px;
+          font-size: 12px;
+          color: #ffffff; }
+        .deposit-wrapper .deposit-content .option-inventory:hover {
+          -webkit-box-shadow: 0 0 21px rgba(25, 144, 234, 0.15);
+                  box-shadow: 0 0 21px rgba(25, 144, 234, 0.15); }
+          .deposit-wrapper .deposit-content .option-inventory:hover span {
+            -webkit-box-shadow: 0 0 21px rgba(25, 144, 234, 0.15);
+                    box-shadow: 0 0 21px rgba(25, 144, 234, 0.15);
+            background: url(../images/page-deposit/icon-1.png) no-repeat center center; }
+          .deposit-wrapper .deposit-content .option-inventory:hover p {
+            color: #1990ea; }
+      .deposit-wrapper .deposit-content .option-bp {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 106px;
+            -ms-flex: 0 1 106px;
+                flex: 0 1 106px;
+        height: 106px;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        background-color: #1c2127;
+        text-align: center;
+        padding: 10px 0 0;
+        cursor: pointer; }
+        .deposit-wrapper .deposit-content .option-bp p {
+          margin-top: 10px;
+          font-size: 12px;
+          color: #ffffff; }
+        .deposit-wrapper .deposit-content .option-bp span {
+          display: block;
+          margin: 0 auto;
+          width: 50px;
+          height: 60px;
+          background: url(../images/page-deposit/icon-2-inactive.png) no-repeat center center; }
+        .deposit-wrapper .deposit-content .option-bp:hover {
+          -webkit-box-shadow: 0 0 21px rgba(25, 144, 234, 0.15);
+                  box-shadow: 0 0 21px rgba(25, 144, 234, 0.15); }
+          .deposit-wrapper .deposit-content .option-bp:hover p {
+            color: #1990ea; }
+          .deposit-wrapper .deposit-content .option-bp:hover span {
+            -webkit-box-shadow: 0 0 21px rgba(25, 144, 234, 0.15);
+                    box-shadow: 0 0 21px rgba(25, 144, 234, 0.15);
+            background: url(../images/page-deposit/icon-2.png) no-repeat center center; }
+  .deposit-wrapper .close {
+    padding: 0 !important;
+    outline: none; }
+    .deposit-wrapper .close img {
+      position: absolute;
+      top: 10px;
+      right: 10px; }
+
+@media (max-width: 1679px) {
+  .deposit-content {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .deposit-content_items .items-list {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .deposit-content_items .items-list .item {
+        margin-top: 15px; }
+    .deposit-content_list .items-list {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+@media (max-width: 1439px) {
+  .deposit-content_items .pagination {
+    margin: 33px 0 0; }
+    .deposit-content_items .pagination .back {
+      margin-left: 0; } }
+
+@media (max-width: 1199px) {
+  .deposit-content_items .pagination {
+    margin: 33px 0 0; }
+    .deposit-content_items .pagination .back {
+      float: none; }
+  .deposit-content_list .deposit-info_sum {
+    margin-bottom: 10px;
+    display: block; }
+    .deposit-content_list .deposit-info_sum p {
+      margin-bottom: 0; }
+  .deposit-content_list .deposit-info_selected {
+    margin-bottom: 10px;
+    display: block; }
+    .deposit-content_list .deposit-info_selected p {
+      margin-bottom: 0; } }

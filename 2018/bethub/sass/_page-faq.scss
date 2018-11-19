@@ -113,16 +113,24 @@
 			&_breadcrumb{
 				flex: 2 2;
 				.breadcrumb{
-					padding: 0;
+					padding: 3px 0 0 0;
 					margin: 0;
 					background-color: transparent;
 					.breadcrumb-item{
 						color: #455260;
 						font-size: 14px;
+						transition: 0.3s;
+						&:hover{
+							color: #fff;
+						}
 						a{
 							text-decoration: none;
 							font-size: 14px;
 							color: #455260;
+							transition: 0.3s;
+							&:hover{
+								color: #fff;
+							}
 						}
 						&:nth-of-type(n+2){
 							padding-left: 15px;
@@ -174,6 +182,15 @@
 					padding: 7px 19px 7px;
 					position: relative;
 					cursor: pointer;
+					&:hover{
+						transition: 0.3s;
+						span{
+							color: #1990ea !important;
+						}
+						i{
+							background: url(../images/page-faq/accordion-active-arrow.png) !important;
+						}
+					}
 					span{
 						color: #ffffff;
 						font-size: 14px;
