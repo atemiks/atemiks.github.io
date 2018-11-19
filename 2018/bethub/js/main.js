@@ -274,7 +274,7 @@ $( document ).ready(function() {
 	});
 
 	$(document).mouseup(function (e) {
-	    var container = $('.modal-content');
+	    var container = $('.modal');
 	    if (container.has(e.target).length === 0){
 	        $('.blur-wrapper').removeClass('active-blur');
 	    }
