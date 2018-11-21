@@ -8873,6 +8873,108 @@ input[type=number]::-webkit-outer-spin-button {
     .game-active-display {
       padding: 15px; } }
 
+.winner-line {
+  overflow: hidden;
+  position: relative;
+  background-color: #1c2127;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 20px 10px;
+  z-index: 1;
+  font-family: "SFUI Display", sans-serif;
+  height: 117px; }
+  .winner-line ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .winner-line ul li {
+      list-style: none;
+      width: 74px;
+      height: 74px;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 74px;
+          -ms-flex: 0 0 74px;
+              flex: 0 0 74px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      font-size: 30px;
+      color: #ffffff;
+      text-align: center;
+      position: relative; }
+      .winner-line ul li:nth-of-type(n+2) {
+        margin-left: 16px; }
+      .winner-line ul li img {
+        -o-object-fit: cover;
+           object-fit: cover;
+        width: 100%;
+        height: 100%;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        position: absolute; }
+  .winner-line:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: -webkit-gradient(linear, left top, right top, from(#1c2127), to(transparent));
+    background: -webkit-linear-gradient(left, #1c2127 0%, transparent 100%);
+    background: -o-linear-gradient(left, #1c2127 0%, transparent 100%);
+    background: linear-gradient(to right, #1c2127 0%, transparent 100%);
+    width: 10%;
+    height: 100%; }
+  .winner-line:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -3px;
+    z-index: 2;
+    background: -webkit-gradient(linear, right top, left top, from(#1c2127), to(transparent));
+    background: -webkit-linear-gradient(right, #1c2127 0%, transparent 100%);
+    background: -o-linear-gradient(right, #1c2127 0%, transparent 100%);
+    background: linear-gradient(to left, #1c2127 0%, transparent 100%);
+    width: 10%;
+    height: 100%; }
+
+.win-arrow_top {
+  position: absolute;
+  z-index: 2;
+  top: -15px;
+  left: 50%;
+  margin-left: -20px; }
+
+.win-arrow_bottom {
+  position: absolute;
+  z-index: 2;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -20px; }
+
+.top-indent {
+  margin-top: 35px;
+  margin-bottom: 35px; }
+
 .game-active-user {
   position: relative;
   display: -webkit-box;
@@ -8974,6 +9076,142 @@ input[type=number]::-webkit-outer-spin-button {
           flex: 0 0 auto;
   padding: 0 15px; }
 
+.round-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 107px;
+  padding: 10px 25px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #1c2127;
+  font-family: "SFUI Display", sans-serif; }
+  .round-info .round-info_thumbnail {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 101px;
+        -ms-flex: 0 0 101px;
+            flex: 0 0 101px;
+    max-width: 100%;
+    margin-right: 31px; }
+  .round-info .round-info_text h5 {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff; }
+  .round-info .round-info_text p {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #b6b6b6;
+    line-height: 1.3; }
+    .round-info .round-info_text p span {
+      color: #36af46;
+      font-weight: 600; }
+
+.prize-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 107px;
+  padding: 0 12px;
+  -webkit-box-shadow: 0 0 21px rgba(241, 191, 15, 0.15);
+          box-shadow: 0 0 21px rgba(241, 191, 15, 0.15);
+  border: 1px solid #f1bf0f;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #1c2127 url(../images/page-home/winner-line/bg.png) no-repeat;
+  font-family: "SFUI Display", sans-serif; }
+  .prize-info .prize-info_thumbnail {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 112px;
+        -ms-flex: 0 0 112px;
+            flex: 0 0 112px;
+    max-width: 100%;
+    margin-right: 15px; }
+  .prize-info .prize-info_text p {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #516070; }
+    .prize-info .prize-info_text p span {
+      color: #f1bf0f;
+      font-weight: 600; }
+
+.win-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 107px;
+  padding: 22px 30px 18px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #1c2127;
+  font-family: "SFUI Display", sans-serif; }
+  .win-info .win-info_thumbnail {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 48px;
+        -ms-flex: 0 0 48px;
+            flex: 0 0 48px;
+    max-width: 100%;
+    margin-right: 27px; }
+  .win-info .win-info_text p {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #516070;
+    line-height: 1.3; }
+    .win-info .win-info_text p span {
+      color: #1990ea;
+      font-weight: 600; }
+
+.game-time {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 107px;
+  padding: 15px 18px 15px 29px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #1c2127;
+  font-family: "SFUI Display", sans-serif; }
+  .game-time_text {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #516070;
+    line-height: 1.2;
+    font-weight: 400; }
+  .game-time_left {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 185px;
+        -ms-flex: 0 1 185px;
+            flex: 0 1 185px;
+    margin-left: auto; }
+
 .active-game-hint {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9000,7 +9238,8 @@ input[type=number]::-webkit-outer-spin-button {
   .active-game-hint b {
     font-weight: 600; }
   .active-game-hint span {
-    color: #36af46; }
+    color: #36af46;
+    font-weight: 600; }
   .active-game-hint .game-hint-thumbnail {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 48px;
@@ -9462,7 +9701,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin: 35px 0;
+  margin: -10px 0 35px;
   padding: 30px 10px 30px 20px;
   border: 2px solid transparent;
   -webkit-border-radius: 10px;
@@ -9550,6 +9789,51 @@ input[type=number]::-webkit-outer-spin-button {
     background-image: url("../images/page-home/section-winner/winner-card-thumnbail-selected-bg.png"); }
   .winner-card.selected:hover {
     border-color: #f1c230; }
+
+@media (max-width: 1679px) {
+  .round-info {
+    min-height: 140px; }
+    .round-info_text span {
+      display: block; }
+  .prize-info {
+    min-height: 140px;
+    -webkit-background-size: cover;
+            background-size: cover; }
+    .prize-info_text span {
+      display: block; }
+  .win-info {
+    min-height: 140px; }
+  .game-time {
+    min-height: 107px;
+    padding: 10px; }
+    .game-time_text {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1;
+          -ms-flex: 1 1;
+              flex: 1 1; }
+    .game-time_left {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 180px;
+          -ms-flex: 0 1 180px;
+              flex: 0 1 180px; } }
+
+@media (max-width: 1439px) {
+  .round-info .round-info_text h5 {
+    font-size: 22px; }
+  .round-info .round-info_text p {
+    font-size: 16px; }
+    .round-info .round-info_text p span {
+      font-size: 16px; }
+  .win-info .win-info_text p {
+    font-size: 16px; }
+  .game-time {
+    min-height: 124px; }
+    .game-time .game-time_text {
+      font-size: 16px; }
+  .winner-card {
+    padding: 20px 5px 20px 10px; }
+    .winner-card .winner-media {
+      margin-right: 10px; } }
 
 .header-navigation-toggler {
   outline: none !important;
@@ -10762,7 +11046,8 @@ input[type=number]::-webkit-outer-spin-button {
 .history-wrapper {
   position: relative;
   height: 900px;
-  margin: -35px -15px -35px -25px; }
+  margin: -35px -15px -35px -25px;
+  overflow-y: scroll; }
   .history-wrapper:after {
     content: '';
     opacity: 1;
@@ -10864,7 +11149,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .history-inventory-wrapper {
   max-height: 390px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden; }
   .history-inventory-wrapper .inventory-grid {
     margin: -20px -25px 0;
     -webkit-border-radius: 0;
@@ -12236,6 +12523,7 @@ input[type=number]::-webkit-outer-spin-button {
           -ms-flex-pack: center;
               justify-content: center; }
       .deposit-content_items .items-list .item {
+        cursor: pointer;
         -webkit-box-flex: 0;
         -webkit-flex: 0 1 136px;
             -ms-flex: 0 1 136px;
@@ -12244,6 +12532,7 @@ input[type=number]::-webkit-outer-spin-button {
         margin-left: 5px;
         height: 137px;
         position: relative;
+        border: 2px solid transparent;
         -webkit-border-radius: 10px;
                 border-radius: 10px;
         -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
@@ -12270,6 +12559,22 @@ input[type=number]::-webkit-outer-spin-button {
           font-weight: 700;
           color: #36af46;
           text-transform: uppercase; }
+        .deposit-content_items .items-list .item-close {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -15px;
+          margin-left: -15px;
+          z-index: 10;
+          width: 30px;
+          height: 30px;
+          -webkit-border-radius: 10px;
+                  border-radius: 10px;
+          -webkit-box-shadow: 0 0 21px rgba(25, 144, 234, 0.25);
+                  box-shadow: 0 0 21px rgba(25, 144, 234, 0.25);
+          background: #1990ea url(../images/page-deposit/close.png) no-repeat center center;
+          cursor: pointer; }
         .deposit-content_items .items-list .item:after {
           content: '';
           position: absolute;
@@ -12284,6 +12589,28 @@ input[type=number]::-webkit-outer-spin-button {
                   border-bottom-left-radius: 20px;
           -webkit-background-size: 40px 40px;
                   background-size: 40px 40px; }
+        .deposit-content_items .items-list .item:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          visibility: hidden;
+          z-index: 8;
+          top: 0;
+          left: 0;
+          -webkit-border-radius: 10px;
+                  border-radius: 10px;
+          background: rgba(30, 35, 41, 0.8); }
+        .deposit-content_items .items-list .item:hover {
+          border: 2px solid #1990ea; }
+          .deposit-content_items .items-list .item:hover .item-close {
+            display: block; }
+          .deposit-content_items .items-list .item:hover:before {
+            opacity: 1;
+            visibility: visible; }
+          .deposit-content_items .items-list .item:hover:after {
+            display: none; }
         .deposit-content_items .items-list .item.rare:after {
           background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(25%, #db2525), color-stop(50%, #db2525), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #db2525), to(transparent));
           background-image: -webkit-linear-gradient(top, transparent 25%, #db2525 25%, #db2525 50%, transparent 50%, transparent 75%, #db2525 75%, transparent 100%);

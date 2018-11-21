@@ -92,6 +92,88 @@
 	}
 }
 
+.winner-line{
+	overflow: hidden;
+	position: relative;
+	background-color: #1c2127;
+	border-radius: $global-radius;
+	padding: 20px 10px;
+	z-index: 1;
+	font-family: $base-font;
+	height: 117px;
+	ul{
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		li{
+			list-style: none;
+			width: 74px;
+			height: 74px;
+			flex: 0 0 74px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: $global-radius;
+			font-size: 30px;
+			color: #ffffff;
+			text-align: center;
+			position: relative;
+			&:nth-of-type(n+2){
+				margin-left: 16px;
+			}
+			img{
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				border-radius: $global-radius;
+				position: absolute;
+			}
+		}
+	}
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		background: linear-gradient(to right, #1c2127 0%, transparent 100%);
+		width: 10%;
+		height: 100%;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -3px;
+		z-index: 2;
+		background: linear-gradient(to left, #1c2127 0%, transparent 100%);
+		width: 10%;
+		height: 100%;
+	}
+}
+
+.win-arrow_top{
+	position: absolute;
+	z-index: 2;
+	top: -15px;
+	left: 50%;
+	margin-left: -20px;
+}
+
+.win-arrow_bottom{
+	position: absolute;
+	z-index: 2;
+	bottom: -10px;
+	left: 50%;
+	margin-left: -20px;
+}
+
+
+.top-indent{
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
 
 .game-active-user {
 	position: relative;
@@ -194,6 +276,123 @@
 	padding: 0 15px;
 }
 
+.round-info {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: 107px;
+	padding: 10px 25px;
+	border-radius: $global-radius;
+	background-color: #1c2127;
+	font-family: $base-font;
+	.round-info_thumbnail {
+		flex: 0 0 101px;
+		max-width: 100%;
+		margin-right: 31px;
+	}
+
+	.round-info_text {
+		h5{
+			margin-bottom: 0;
+			font-size: 24px;
+			font-weight: 700;
+			color: #ffffff;
+		}
+		p{
+			margin-bottom: 0;
+			font-size: 18px;
+			color: #b6b6b6;
+			line-height: 1.3;
+			span{
+				color: #36af46;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.prize-info {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: 107px;
+	padding: 0 12px;
+	box-shadow: 0 0 21px rgba(241, 191, 15, 0.15);
+	border: 1px solid #f1bf0f;
+	border-radius: $global-radius;
+	background: #1c2127 url(../images/page-home/winner-line/bg.png) no-repeat;
+	font-family: $base-font;
+	.prize-info_thumbnail {
+		flex: 0 0 112px;
+		max-width: 100%;
+		margin-right: 15px;
+	}
+
+	.prize-info_text {
+		p{
+			margin-bottom: 0;
+			font-size: 18px;
+			color: #516070;
+			span{
+				color: #f1bf0f;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.win-info {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: 107px;
+	padding: 22px 30px 18px;
+	border-radius: $global-radius;
+	background-color: #1c2127;
+	font-family: $base-font;
+	.win-info_thumbnail {
+		flex: 0 0 48px;
+		max-width: 100%;
+		margin-right: 27px;
+	}
+
+	.win-info_text {
+		p{
+			margin-bottom: 0;
+			font-size: 18px;
+			color: #516070;
+			line-height: 1.3;
+			span{
+				color: #1990ea;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.game-time {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 107px;
+	padding: 15px 18px 15px 29px;
+	border-radius: $global-radius;
+	background-color: #1c2127;
+	font-family: $base-font;
+	&_text{
+		flex: 1 1;
+		margin-bottom: 0;
+		font-size: 18px;
+		color: #516070;
+		line-height: 1.2;
+		font-weight: 400;
+	}
+	&_left{
+		flex: 0 1 185px;
+		margin-left: auto;
+	}
+}
+
 
 .active-game-hint {
 	display: flex;
@@ -217,6 +416,7 @@
 	}
 	span {
 		color: $success;
+		font-weight: 600;
 	}
 
 	.game-hint-thumbnail {
@@ -725,7 +925,7 @@
 	position: relative;
 	display: flex;
 	width: 100%;
-	margin: 35px 0;
+	margin: -10px 0 35px;
 	padding: 30px 10px 30px 20px;
 	border: 2px solid transparent;
 	border-radius: $global-radius;
@@ -839,7 +1039,74 @@
 
 
 
+@media (max-width: 1679px){
+	.round-info{
+		min-height: 140px;
+		&_text{
+			span{
+				display: block;
+			}
+		}
+	}
+	.prize-info{
+		min-height: 140px;
+		background-size: cover;
+		&_text{
+			span{
+				display: block;
+			}
+		}
+	}
+	.win-info{
+		min-height: 140px;
+	}
+	.game-time{
+		min-height: 107px;
+		padding: 10px;
+		&_text{
+			flex: 1 1;
+		}
+		&_left{
+			flex: 0 1 180px;
+		}
+	}
+}
 
+@media (max-width: 1439px){
+	.round-info{
+		.round-info_text{
+			h5{
+				font-size: 22px;
+			}
+			p{
+				font-size: 16px;
+				span{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.win-info{
+		.win-info_text{
+			p{
+				font-size: 16px;
+			}
+		}
+	}
+	.game-time{
+		min-height: 124px;
+		.game-time_text{
+			font-size: 16px;
+		}
+	}
+
+	.winner-card{
+		padding: 20px 5px 20px 10px;
+		.winner-media{
+			margin-right: 10px;
+		}
+	}
+}
 
 
 

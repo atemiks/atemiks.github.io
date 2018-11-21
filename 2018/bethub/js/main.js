@@ -140,7 +140,7 @@ $( document ).ready(function() {
 		$(currentRow).next().slideToggle();
 	});
 
-	$(".history-wrapper").mCustomScrollbar({
+	/*$(".history-wrapper").mCustomScrollbar({
 	 	theme:"dark dark-chat",
 	 	axis:"y",
 	 	callbacks:{
@@ -154,12 +154,12 @@ $( document ).ready(function() {
 	            }
 	        }
 	    }
-	});
+	}); */
 
-	$(".history-inventory-wrapper").mCustomScrollbar({
+	/* $(".history-inventory-wrapper").mCustomScrollbar({
 	 	theme:"dark dark-chat",
 	 	axis:"y"
-	});
+	}); */
 
 
 	// modal

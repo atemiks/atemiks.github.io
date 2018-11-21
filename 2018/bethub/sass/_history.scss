@@ -4,6 +4,7 @@
 	position: relative;
 	height: 900px;
 	margin: -35px -15px -35px -25px;
+	overflow-y: scroll;
 	&:after {
 		content: '';
 		opacity: 1;
@@ -110,6 +111,8 @@
 .history-inventory-wrapper {
 	max-height: 390px;
 	margin-bottom: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	.inventory-grid {
 		margin: -20px -25px 0;
 		border-radius: 0;
