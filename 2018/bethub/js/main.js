@@ -265,7 +265,7 @@ $( document ).ready(function() {
 		$(this).parent().addClass('active');
 	});
 
-	$('.deposit-btn').click(function(event) {
+	/*$('.deposit-btn').click(function(event) {
 		$('.blur-wrapper').addClass('active-blur');
 	});
 
@@ -278,12 +278,5 @@ $( document ).ready(function() {
 	    if (container.has(e.target).length === 0){
 	        $('.blur-wrapper').removeClass('active-blur');
 	    }
-	});
-
+	}); */
 });
-
-/*var elemWidth = document.getElementById('items').offsetWidth;
-var chat = document.querySelector('.chat-toggler');
-chat.addEventListener('click', function(argument) {
-	alert(elemWidth);
-}); */
