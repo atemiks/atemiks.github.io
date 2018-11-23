@@ -8033,6 +8033,9 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-border-radius: 20px;
             border-radius: 20px;
     background-color: #242b33; }
+    .modal .modal-dialog .modal-content input {
+      font-family: "SFUI Display", sans-serif;
+      font-size: 16px; }
     .modal .modal-dialog .modal-content input,
     .modal .modal-dialog .modal-content button {
       display: block;
@@ -8040,7 +8043,8 @@ a.text-dark:hover, a.text-dark:focus {
       height: 45px;
       border: none;
       -webkit-border-radius: 10px;
-              border-radius: 10px; }
+              border-radius: 10px;
+      outline: none; }
     .modal .modal-dialog .modal-content button {
       cursor: pointer;
       padding: 0 25px;
@@ -8096,6 +8100,21 @@ a.text-dark:hover, a.text-dark:focus {
       font-size: 18px;
       font-weight: 400;
       line-height: 1; }
+
+.check-btn {
+  text-align: center; }
+  .check-btn button {
+    width: 231px !important;
+    height: 58px !important;
+    margin: 40px auto 0;
+    background-color: #36af46 !important;
+    -webkit-box-shadow: 0 0 21px rgba(54, 175, 70, 0.15);
+            box-shadow: 0 0 21px rgba(54, 175, 70, 0.15);
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    font-size: 21px !important;
+    font-weight: 700;
+    color: #ffffff; }
 
 .pagination {
   -webkit-box-align: center;
@@ -11046,9 +11065,10 @@ input[type=number]::-webkit-outer-spin-button {
 .history-wrapper {
   position: relative;
   height: 900px;
+  padding-top: 75px;
   margin: -35px -15px -35px -25px;
   overflow-y: scroll; }
-  .history-wrapper:after {
+  .history-wrapper .history-shadow {
     content: '';
     opacity: 1;
     visibility: visible;
@@ -11105,6 +11125,23 @@ input[type=number]::-webkit-outer-spin-button {
 
 .history-table {
   background-color: #242b33; }
+
+.tr-fixed {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #242b33; }
+  .tr-fixed th:nth-of-type(1) {
+    padding-left: 65px !important;
+    padding-right: 40px !important; }
+  .tr-fixed th:nth-of-type(3) {
+    padding-left: 360px !important;
+    padding-right: 95px !important; }
+  .tr-fixed th:nth-of-type(5) {
+    padding-left: 95px !important;
+    padding-right: 85px !important; }
+  .tr-fixed th:nth-of-type(7) {
+    padding-left: 120px !important; }
 
 .history-table th,
 .history-table td {
@@ -11175,22 +11212,6 @@ input[type=number]::-webkit-outer-spin-button {
             visibility: visible; }
           .history-inventory-wrapper .inventory-grid .inventory-item .inventory-card:hover .inventory-card-inner:before, .history-inventory-wrapper .inventory-grid .inventory-item .inventory-card:hover .inventory-card-inner:after {
             display: none; }
-
-.history-wrapper .mCSB_scrollTools {
-  width: 24px;
-  top: 50px;
-  bottom: 50px; }
-
-.history-wrapper .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  width: 12px; }
-
-.history-wrapper .history-inventory-wrapper .mCSB_scrollTools {
-  width: 12px;
-  top: 0;
-  bottom: 0; }
-
-.history-wrapper .history-inventory-wrapper .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  width: 6px; }
 
 .icon-double {
   background-image: url(../images/icons/icon-double.png);
