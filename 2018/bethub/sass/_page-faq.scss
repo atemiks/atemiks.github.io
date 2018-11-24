@@ -188,7 +188,8 @@
 							color: #1990ea !important;
 						}
 						i{
-							background: url(../images/page-faq/accordion-active-arrow.png) !important;
+							background: url(../images/page-faq/accordion-active-arrow.png);
+							transform: rotate(180deg);
 						}
 					}
 					span{

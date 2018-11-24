@@ -12171,7 +12171,10 @@ input[type=number]::-webkit-outer-spin-button {
             .faq-content_regulations .faq-info_question .question-title:hover span {
               color: #1990ea !important; }
             .faq-content_regulations .faq-info_question .question-title:hover i {
-              background: url(../images/page-faq/accordion-active-arrow.png) !important; }
+              background: url(../images/page-faq/accordion-active-arrow.png);
+              -webkit-transform: rotate(180deg);
+                  -ms-transform: rotate(180deg);
+                      transform: rotate(180deg); }
           .faq-content_regulations .faq-info_question .question-title span {
             color: #ffffff;
             font-size: 14px;
