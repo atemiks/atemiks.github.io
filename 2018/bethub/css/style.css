@@ -11213,6 +11213,60 @@ input[type=number]::-webkit-outer-spin-button {
           .history-inventory-wrapper .inventory-grid .inventory-item .inventory-card:hover .inventory-card-inner:before, .history-inventory-wrapper .inventory-grid .inventory-item .inventory-card:hover .inventory-card-inner:after {
             display: none; }
 
+@media (max-width: 1679px) {
+  .tr-fixed {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #242b33; }
+    .tr-fixed th:nth-of-type(1) {
+      padding-left: 65px !important;
+      padding-right: 50px !important; }
+    .tr-fixed th:nth-of-type(3) {
+      padding-left: 250px !important;
+      padding-right: 75px !important; }
+    .tr-fixed th:nth-of-type(5) {
+      padding-left: 70px !important;
+      padding-right: 65px !important; }
+    .tr-fixed th:nth-of-type(7) {
+      padding-left: 75px !important; } }
+
+@media (max-width: 1439px) {
+  .tr-fixed {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #242b33; }
+    .tr-fixed th:nth-of-type(1) {
+      padding-left: 50px !important;
+      padding-right: 35px !important; }
+    .tr-fixed th:nth-of-type(3) {
+      padding-left: 230px !important;
+      padding-right: 65px !important; }
+    .tr-fixed th:nth-of-type(5) {
+      padding-left: 60px !important;
+      padding-right: 55px !important; }
+    .tr-fixed th:nth-of-type(7) {
+      padding-left: 70px !important; } }
+
+@media (max-width: 1199px) {
+  .tr-fixed {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #242b33; }
+    .tr-fixed th:nth-of-type(1) {
+      padding-left: 50px !important;
+      padding-right: 35px !important; }
+    .tr-fixed th:nth-of-type(3) {
+      padding-left: 150px !important;
+      padding-right: 45px !important; }
+    .tr-fixed th:nth-of-type(5) {
+      padding-left: 40px !important;
+      padding-right: 35px !important; }
+    .tr-fixed th:nth-of-type(7) {
+      padding-left: 50px !important; } }
+
 .icon-double {
   background-image: url(../images/icons/icon-double.png);
   width: 30px;
