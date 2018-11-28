@@ -10993,6 +10993,7 @@ input[type=number]::-webkit-outer-spin-button {
       -webkit-flex: 1 1 auto;
           -ms-flex: 1 1 auto;
               flex: 1 1 auto;
+      padding-top: 20px;
       -webkit-align-content: flex-start;
           -ms-flex-line-pack: start;
               align-content: flex-start; }
@@ -11044,7 +11045,7 @@ input[type=number]::-webkit-outer-spin-button {
             border-radius: 20px;
     background-color: #1c2127; }
   .inventory-wrapper .side-right .inventory-grid {
-    padding: 15px 18px; }
+    padding: 0 18px 15px; }
   .inventory-wrapper .inventory-pagination {
     position: relative;
     z-index: 9;

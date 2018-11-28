@@ -444,6 +444,7 @@
 
 		.body {
 			flex: 1 1 auto;
+			padding-top: 20px;
 			align-content: flex-start;
 			.mCSB_scrollTools {
 				opacity: 0 !important;
@@ -497,7 +498,7 @@
 		}
 
 		.inventory-grid {
-			padding: 15px 18px;
+			padding: 0 18px 15px;
 		}
 	}
 
