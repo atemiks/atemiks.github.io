@@ -88,8 +88,10 @@
 		i.icon-crown {
 			font-size: 26px;
 		}
-		i.icon-chip {
-			font-size: 50px;
+		i.icone-chips {
+			width: 35px;
+			height: 35px;
+			background: url(../images/icons/icon-chip.svg);
 		}
 		i.icon-stat {
 			font-size: 40px;
@@ -174,6 +176,9 @@
 					background-color: $primary;
 					box-shadow: 0 0 9px rgba(25, 144, 234, 0.25);
 					color: #fff;
+					i.icone-chips {
+						background: url(../images/icons/icon-chip-active.svg);
+					}
 				}
 			}
 		}

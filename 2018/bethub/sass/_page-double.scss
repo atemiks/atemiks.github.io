@@ -1,5 +1,5 @@
 .icon-double {
-	background-image: url(../images/icons/icon-double.png);
+	//background-image: url(../images/icons/icon-double.png);
 	width: 30px;
 	height: 30px;
 	margin: 12px 25px 15px 0 !important;
@@ -71,9 +71,8 @@
 		margin: 0 auto;
 		position: relative;
 		z-index: 2;
-		i{
+		img{
 			display: inline-block;
-			background-image: url(../images/icons/send-time.png);
 			width: 12px;
 			height: 14px;
 			margin-right: 13px;

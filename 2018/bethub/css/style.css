@@ -9978,8 +9978,10 @@ input[type=number]::-webkit-outer-spin-button {
     color: #d4d4d4; }
     .navigation-card .navigation-thumbnail i.icon-crown {
       font-size: 26px; }
-    .navigation-card .navigation-thumbnail i.icon-chip {
-      font-size: 50px; }
+    .navigation-card .navigation-thumbnail i.icone-chips {
+      width: 35px;
+      height: 35px;
+      background: url(../images/icons/icon-chip.svg); }
     .navigation-card .navigation-thumbnail i.icon-stat {
       font-size: 40px; }
     .navigation-card .navigation-thumbnail i.icon-settings {
@@ -10051,6 +10053,8 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-box-shadow: 0 0 9px rgba(25, 144, 234, 0.25);
           box-shadow: 0 0 9px rgba(25, 144, 234, 0.25);
   color: #fff; }
+  .navigation-menu.navigation-main .navigation-item:hover .navigation-card .navigation-thumbnail i.icone-chips, .navigation-menu.navigation-main .navigation-item.active .navigation-card .navigation-thumbnail i.icone-chips {
+    background: url(../images/icons/icon-chip-active.svg); }
 
 .navigation-menu.navigation-main .navigation-item.active .navigation-card:before {
   opacity: 1;
@@ -11269,7 +11273,6 @@ input[type=number]::-webkit-outer-spin-button {
       padding-left: 50px !important; } }
 
 .icon-double {
-  background-image: url(../images/icons/icon-double.png);
   width: 30px;
   height: 30px;
   margin: 12px 25px 15px 0 !important; }
@@ -11340,9 +11343,8 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0 auto;
     position: relative;
     z-index: 2; }
-    .start-betting p i {
+    .start-betting p img {
       display: inline-block;
-      background-image: url(../images/icons/send-time.png);
       width: 12px;
       height: 14px;
       margin-right: 13px;
