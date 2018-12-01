@@ -1,0 +1,124 @@
+.contacts
+	width: 620px
+	height: 70vh
+	margin: 0 auto
+	padding: 49px 0 0 23px
+	&-social
+		position: absolute
+		top: 11px
+		right: 19px
+		img
+			margin-bottom: 8px
+	&-title
+		margin-bottom: 56px
+		h1
+			@include page-titles
+			letter-spacing: 2.4px
+	&-phone
+		display: flex
+		align-items: flex-start
+		margin-bottom: 33px
+		p
+			@include text(12px)
+			letter-spacing: 0.6px
+			margin-top: 10px
+			margin-right: 19px
+		&_numbers
+			a
+				@include text(30px)
+				letter-spacing: 1.5px
+				display: block
+				margin-bottom: 5px
+				b
+					font-weight: 900
+	&-mail
+		display: flex
+		align-items: flex-start
+		p
+			@include text(12px)
+			letter-spacing: 0.6px
+			margin-top: 10px
+			margin-right: 15px
+		a
+			@include text(24px)
+			text-decoration: underline
+			letter-spacing: 1.2px
+	&-time
+		margin-top: 40px
+		p
+			@include text(16px)
+			letter-spacing: 0.9px
+	&-address
+		display: flex
+		align-items: flex-start
+		margin-top: 52px
+		p
+			@include text(12px)
+			letter-spacing: 0.6px
+			margin-right: 15px
+			margin-top: 10px
+		&_info
+			b
+				@include text(24px)
+				letter-spacing: 0.9px
+			a
+				font-size: 14px
+				text-decoration: underline
+				letter-spacing: 0.7px
+
+@media (max-width: 1410px)
+	.contacts
+		height: 71vh !important
+
+@media (max-width: 991px)
+	.contacts
+		margin: 0
+		padding-left: 0 !important
+		height: 467px !important
+		&-title
+			text-align: center
+
+@media (max-width: 767px)
+	.contacts
+		width: 100%
+		height: 420px !important
+		&-social
+			position: static
+			text-align: right
+			margin-bottom: 20px
+			a
+				display: inline-block
+				margin-right: 10px
+			img
+				margin-bottom: 0
+		&-title
+			margin-bottom: 40px
+			h1
+				font-size: 32px
+		&-phone
+			margin-bottom: 20px
+			&_numbers
+				a
+					font-size: 26px
+		&-mail
+			a
+				font-size: 22px
+		&-time
+			margin-top: 30px
+		&-address
+			margin-top: 20px
+			&_info
+				b
+					font-size: 22px
+
+@media (max-width: 575px)
+	.contacts
+		width: 100%
+		height: 100% !important
+		padding-bottom: 50px
+
+
+
+@media (max-height: 730px)
+	.contacts
+		height: 65vh

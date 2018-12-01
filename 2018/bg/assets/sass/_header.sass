@@ -1,0 +1,242 @@
+header
+	padding-top: 30px
+	flex: 0 0 auto
+	position: relative
+	z-index: 10
+	.header-logo
+		display: flex
+		img
+			margin-right: 21px
+		p
+			@include text(24px)
+			letter-spacing: 1.1px
+			margin-top: 18px
+	nav
+		margin-top: 24px
+		ul
+			li
+				display: inline-block
+				position: relative
+				&:hover
+					&>a
+						background-color: rgba(255,255,255, .3)
+				&:nth-child(n+2)
+					margin-left: -4px
+					&:after
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						width: 1px
+						height: 20px
+						background-color: $white
+					ul
+						width: 330px
+				&:nth-child(n+3)
+					a
+						border-radius: $border
+				a
+					@include text(16px)
+					letter-spacing: 1px
+					padding: 10px 15px 11px 15px
+					transition: 0.4s
+					border-top-left-radius: $border
+					border-top-right-radius: $border
+					&:hover
+						background-color: rgba(255,255,255, .3)
+				ul
+					display: none
+					position: absolute
+					top: 28px
+					left: 0
+					width: 450px
+					background-color: rgba(255,255,255, .3)
+					border-top-right-radius: $border
+					border-bottom-right-radius: $border
+					border-bottom-left-radius: $border
+					z-index: 5
+					li
+						display: inline-block
+						padding: 12px 0 12px 19px
+						&:hover
+							&>a
+								background: none
+						&:nth-child(n+2)
+							padding-right: 0
+							margin-left: 0
+							&:after
+								display: none
+						a
+							@include text(12px)
+							letter-spacing: 0.3px
+							padding: 0
+							&:hover
+								background: none
+	
+	.header-icons
+		display: flex
+		margin-top: 20px
+		margin-left: -52px
+		.map
+			width: 29px
+			height: 27px
+			border: 1px solid $text-color
+			border-radius: $border
+			background: url(../../img/icons/gps-icon.png) no-repeat center center
+		.phone
+			width: 29px
+			height: 27px
+			border: 1px solid $text-color
+			border-radius: $border
+			margin-left: 12px
+			background: url(../../img/icons/call.png) no-repeat center center
+	.header-contacts
+		text-align: right
+		margin-top: 19px
+		p
+			@include text(18px)
+			letter-spacing: 1px
+			b
+				font-family: $Rubik-med
+			&:nth-of-type(1)
+				margin-bottom: 3px
+				letter-spacing: 1.3px
+
+.active-nav
+	background-color: rgba(255,255,255, .3) !important
+
+@media (max-width: 1410px)
+	header
+		padding-top: 10px
+		.header-logo
+			p
+				font-size: 22px
+		nav
+			margin-top: 20px
+			ul
+				margin-left: -20px
+				li
+					a
+						font-size: 14px
+						padding: 5px 10px 6px 13px
+					ul
+						top: 22px
+						left: 20px
+		.header-contacts
+			margin-left: -20px
+			p
+				font-size: 16px
+		.header-icons
+			margin-left: 0
+
+@media (max-width: 1199px)
+	header
+		.header-logo
+			align-items: flex-start
+			p
+				margin-top: 10px
+				font-size: 18px
+		nav
+			margin-top: 18px
+			ul
+				width: 480px
+				margin-left: -50px
+				li
+					a
+						font-size: 14px
+						padding: 5px 10px 6px 13px
+					ul
+						top: 22px
+						left: 50px
+		.header-contacts
+			p
+				font-size: 14px
+		.header-icons
+			margin-left: -20px
+
+@media (max-width: 991px)
+	header
+		.mob-header
+			display: flex
+			.header-logo
+				p
+					margin-top: 20px
+			.burger-menu
+				width: 40px
+				margin-top: 15px
+				margin-left: auto
+				&_line
+					width: 30px
+					height: 3px
+					border-radius: $border
+					background-color: $white
+					margin-bottom: 5px
+		.mob-nav
+			display: none
+			width: 100vw
+			height: 100%
+			position: fixed
+			top: 0
+			left: 0
+			padding-top: 10px
+			z-index: 999
+			background-color: rgb(78,78,126)
+			text-align: center
+			.close
+				width: 32px
+				height: 32px
+				margin-left: auto
+				margin-right: 20px
+				font-size: 36px
+			.nav-logo
+				img
+					margin: 0 auto
+				p
+					@include text(20px)
+					letter-spacing: 1.1px
+					margin-top: 10px
+			nav
+				ul
+					width: 100%
+					margin-left: 0
+					li
+						display: block
+						margin-bottom: 10px
+						padding: 5px 0
+						position: relative
+						&:before
+							content: ''
+							position: absolute
+							top: 0
+							right: 50px
+							width: 12px
+							height: 23px
+							background: url(../../img/icons/right-arrow.png) no-repeat
+							transform: rotate(90deg)
+						&:hover
+							&>a
+								background-color: transparent
+						@include text(16px)
+						font-size: 18px
+						a
+							font-size: 18px
+							&:hover
+								background-color: transparent
+						ul
+							position: static
+							max-width: 186px
+							margin: 10px auto 0
+							background-color: transparent
+							li
+								padding: 0
+								margin-bottom: 15px
+								&:before
+									display: none
+			.header-contacts
+				text-align: center
+				p
+					font-size: 16px
+					margin-bottom: 10px
+			.header-icons
+				justify-content: center
+				margin-left: 0

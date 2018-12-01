@@ -1,0 +1,56 @@
+@mixin text ($size)
+	font-family: $Lato
+	font-size: $size
+	color: $text-color
+
+@mixin content-text ($size)
+	font-family: $Lato
+	font-size: $size
+	color: $content-color
+	font-weight: 600
+
+@mixin main-title
+	font-family: $Lato
+	font-size: 15px
+	color: $text-color
+	text-transform: uppercase
+	letter-spacing: 0.75px
+
+@mixin object($width, $height)
+	width: $width
+	height: $height
+	border-radius: 8px
+	background-size: cover
+	display: flex
+	align-items: flex-end
+	cursor: pointer
+
+@mixin objects-title
+	width: 100%
+	padding: 18px 0 18px 31px
+	background: rgba(173,176,180, .9)
+	border-bottom-left-radius: 8px
+	border-bottom-right-radius: 8px
+
+@mixin foter-text($color, $opacity)
+	font-family: $Lato
+	font-size: 12px
+	letter-spacing: 0.3px
+	line-height: 18px
+	color: $color
+	opacity: $opacity
+
+@mixin page-titles
+	font-family: $Playfair
+	font-size: 36px
+	color: $text-color
+	font-weight: 700
+	letter-spacing: 1.8px
+
+@mixin pop-up ($size, $weight, $spacing)
+	font-family: $Lato
+	color: $pop-up
+	font-size: $size
+	font-weight: $weight
+	letter-spacing: $spacing
+

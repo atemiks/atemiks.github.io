@@ -1,0 +1,247 @@
+.services
+	&-title
+		margin-bottom: 28px
+		h3
+			@include page-titles
+			letter-spacing: 2.4px
+	&-block
+		flex: 0 1 271px
+		@include object(271px, 205px)
+		position: relative
+		z-index: 1
+		margin-left: 18px
+		margin-bottom: 26px
+		transition: 0.5s
+		&:nth-of-type(n+2)
+			margin-left: 28px
+		&_title
+			@include objects-title
+			p
+				@include content-text(16px)
+				font-weight: 400
+		&_description
+			display: none
+			position: absolute
+			width: 100%
+			height: 100%
+			padding: 17px 25px 15px 25px
+			z-index: 2
+			background: rgba(173,176,180, .9)
+			border-radius: $border
+			h6
+				@include content-text(16px)
+				margin-bottom: 8px
+				letter-spacing: 0.4px
+			p
+				@include content-text(12px)
+				margin-bottom: 12px
+				line-height: 18px
+				letter-spacing: 0.3px
+			a
+				@include content-text(12px)
+				letter-spacing: 0.3px
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					top: 3px
+					right: -23px
+					width: 15px
+					height: 11px
+					background: url(../../img/icons/purple-arrow.png) no-repeat
+		&:hover
+			.services-block_description
+				display: block
+
+.accounting
+	padding-left: 100px
+	&-title
+		margin-bottom: 25px
+		h3
+			@include page-titles
+			letter-spacing: 2.4px
+			margin-bottom: 26px
+		p
+			@include text(12px)
+			line-height: 18px
+			letter-spacing: 0.4px
+	&-table
+		h4
+			@include text(15px)
+			text-transform: uppercase
+			letter-spacing: 0.75px
+			margin-bottom: 20px
+		p
+			@include text(15px)
+			letter-spacing: 0.4px
+			margin-left: 87px
+			&:before
+				content: ''
+				display: block
+				float: left
+				margin-top: 5px
+				margin-right: 12px
+				width: 6px
+				height: 6px
+				border-radius: 50%
+				background-color: $white
+		table
+			width: 532px
+			margin-top: 15px
+			margin-left: 87px
+			tr
+				border-radius: 10px
+				text-align: center
+				&:nth-of-type(odd)
+					background-color: rgba(255, 255, 255, .3)
+					td
+						&:nth-of-type(1)
+							border-top-left-radius: 10px
+							border-bottom-left-radius: 10px
+						&:nth-of-type(2)
+							border-top-right-radius: 10px
+							border-bottom-right-radius: 10px
+				td
+					width: 50%
+					padding: 10px 0
+					@include text(16px)
+	&-form
+		margin-top: 100px
+		h4
+			@include text(15px)
+			text-transform: uppercase
+			letter-spacing: 0.75px
+			margin-bottom: 20px
+		form
+			input
+				width: 266px
+				border-bottom: 2px solid $text-color
+				margin-right: 30px
+				color: $text-color 
+				padding-bottom: 15px
+				@include text(16px)
+				&::placeholder
+					opacity: 0.52
+			button
+				width: 205px
+				height: 55px
+				border-radius: 10px
+				background-color: rgba(255, 255, 255, .3)
+				text-align: center
+				@include text(16px)
+			.checkbox
+				width: 225px
+				margin: 15px 0 20px auto
+				input[type="checkbox"]
+					display: none
+					&:checked
+						&+label
+							&:before
+								content: ''
+								background: url(../../img/icons/checked.png) no-repeat top center
+								border: none
+				label
+					padding-left: 0px
+					@include text(12px)
+					letter-spacing: 0.4px
+					opacity: 0.52
+					&:before
+						content: ''
+						display: block
+						float: left
+						width: 16px
+						height: 14px
+						border: 1px solid #9c97a8
+						margin: 3px 10px 20px 0
+						transition: 0.2s
+						cursor: pointer
+						position: relative
+
+@media (max-width: 1410px)
+	.services
+		&-block
+			margin-left: 0
+			&:nth-of-type(n+2)
+				margin-left: 0
+			&:nth-of-type(even)
+				margin-left: 30px !important
+
+	.accounting
+		padding-left: 0
+		&-form
+			form
+				input
+					width: 236px
+				button
+					width: 185px
+				.checkbox
+					margin: 15px 30px 20px auto
+
+@media (max-width: 1199px)
+	.accounting
+		&-table
+			p
+				margin-left: 20px
+			table
+				margin-left: 20px
+		&-form
+			margin-top: 70px
+			form
+				input
+					width: 206px
+					margin-right: 20px
+				button
+					width: 175px
+					height: 45px
+				.checkbox
+					margin: 15px 30px 20px auto
+
+
+@media (max-width: 767px)
+	.services
+		&-title
+			text-align: center
+		&-block
+			&:nth-of-type(even)
+				margin-left: 0 !important
+
+	.accounting
+		&-table
+			table
+				width: 432px
+		&-form
+			form
+				input
+					display: block
+					margin: 0 0 20px
+					width: 240px
+				.checkbox
+					margin: 20px 0 0
+
+@media (max-width: 575px)
+	.accounting
+		&-table
+			table
+				width: 300px
+				margin-left: 0
+
+	.new-menu
+		margin-left: 10px !important
+		ul
+			li
+				a
+					font-size: 14px !important
+
+
+@media (max-width: 420px)
+	.services
+		padding: 0 20px
+		&-block
+			margin-left: 0 !important
+			width: 100%
+			flex: 1 0 100%
+			margin-left: 20px
+			&:nth-of-type(even)
+				margin-left: 0
+			&:nth-of-type(n+2)
+				margin-left: 0

@@ -1,0 +1,30 @@
+.investoram
+	margin-top: -8px
+	&-title
+		margin-bottom: 33px
+		h1
+			@include page-titles
+			margin-bottom: 24px
+		p
+			@include text(12px)
+			font-weight: 700
+			line-height: 18px
+			letter-spacing: 0.3px
+			max-width: 680px
+	&-objects
+		.objects-big
+			@include object(99%, 260px)
+			background: url(../../img/main-page/object-big.png) no-repeat
+			margin-bottom: 28px
+			&_title
+				@include objects-title
+				p
+					@include content-text(16px)
+					letter-spacing: 0.4px
+
+@media (max-width: 991px)
+	.investoram
+		margin-top: 0
+		&-title
+			h1
+				text-align: center

@@ -1,0 +1,66 @@
+footer
+	flex: 0 0 auto
+	border-top: 1px solid $white
+	padding-top: 20px
+	position: relative
+	z-index: 6
+
+.footer
+	&-info
+		p
+			@include foter-text(#fdfdfd, .5)
+	&-pay
+		margin-left: 64px
+		p
+			@include foter-text(#fefefe, .5)
+	&-contacts
+		margin-left: 65px
+		p
+			@include foter-text(#fbfdfe, 1)
+			&:nth-of-type(2)
+				letter-spacing: 0.5px
+			em
+				text-decoration: underline
+	&-time
+		display: flex
+		align-items: flex-start
+		p
+			@include foter-text(#fcfdfd, 1)
+			margin-left: 45px
+			margin-right: 15px
+
+@media (max-width: 1410px)
+	.footer
+		&-time
+			p
+				margin-left: 0
+
+@media (max-width: 1199px)
+	.footer
+		&-pay, &-contacts
+			margin-left: 0
+		&-time
+			margin-left: -10px
+
+@media (max-width: 991px)
+	.footer
+		&-time
+			display: block
+			p
+				margin-right: 0
+				margin-bottom: 10px
+			img
+				margin: 0 auto
+
+@media (max-width: 767px)
+	.footer-info, .footer-pay, .footer-contacts
+		margin-bottom: 10px
+
+	.footer-time
+		margin-left: 0
+		display: flex
+		p
+			margin-right: 20px
+		img
+			margin: 5px 0 0
+	

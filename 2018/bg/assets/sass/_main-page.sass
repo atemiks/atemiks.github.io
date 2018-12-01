@@ -1,0 +1,279 @@
+main
+	flex: 1 0 auto
+	margin-top: 68px
+
+.main-title_sum
+	h2
+		@include text(55px)
+		font-family: $Playfair
+		font-weight: 700;
+		margin-bottom: 19px
+		letter-spacing: 2.88px
+		span
+			font-size: 36px
+	p
+		@include text(18px)
+		text-transform: uppercase
+		line-height: 26px
+		letter-spacing: 0.45px
+
+.main-title_dedescription
+	margin-left: -10px
+	h1
+		@include text(46px)
+		font-family: $Playfair
+		font-weight: 700
+		letter-spacing: 2.3px
+		margin-top: 5px
+		margin-bottom: 26px
+		span
+			margin: 0 5px -8px
+			padding: 0px 10px 2px 8px
+			display: inline-block
+			border-radius: $border
+			background-color: $white
+			color: rgba(78,78,126, .9)
+			overflow: hidden
+		small
+			font-size: 17px;
+			font-family: $Lato
+			font-weight: 400
+			letter-spacing: 0.42px
+	p
+		@include text(12px)
+		letter-spacing: 0.4px
+		line-height: 18px
+		margin-bottom: 13px
+	a
+		@include text(12px)
+		font-weight: 700
+		letter-spacing: 0.6px
+		opacity: 0.5
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 3px
+			right: -23px
+			width: 15px
+			height: 11px
+			background: url(../../img/icons/arrow.png) no-repeat
+
+.main-projects
+	margin-top: 50px
+	margin-bottom: 50px
+	&_title
+		margin-bottom: 30px
+		h3
+			@include main-title
+	&_realized
+		.med-project
+			@include object(467px, 285px)
+			background: url(../../img/main-page/object-medium.png) no-repeat
+			margin-left: 2px
+			&_title
+				@include objects-title
+				p
+					@include content-text(16px)
+					letter-spacing: 0.6px
+		.small-project
+			@include object(398px, 205px)
+			background: url(../../img/main-page/object-small.png) no-repeat
+			margin-left: -46px
+			margin-bottom: 28px
+			&_title
+				@include objects-title
+				p
+					@include content-text(16px)
+					letter-spacing: 0.5px
+
+.objects-rent
+	&_title
+		margin-bottom: 27px
+		h3
+			@include main-title
+	.big-project
+		@include object(898px, 258px)
+		background: url(../../img/main-page/object-big.png) no-repeat
+		position: relative
+		margin-bottom: 29px
+		&_title
+			@include objects-title
+			p
+				@include content-text(16px)
+				letter-spacing: 0.6px
+		&_cost
+			width: 231px
+			position: absolute
+			top: 0
+			right: 0
+			text-align: center
+			padding: 17px 0
+			background: rgba(173,176,180, .9)
+			background-size: cover
+			border-top-right-radius: 8px
+			border-bottom-left-radius: 8px
+			p
+				@include content-text(16px)
+				letter-spacing: 0.4px
+
+.main-services
+	margin-top: 20px
+	&_title
+		margin-bottom: 29px
+		h3
+			@include main-title
+	.services-block
+		flex: 0 1 271px
+		@include object(271px, 205px)
+		position: relative
+		z-index: 1
+		margin-left: 18px
+		margin-bottom: 26px
+		transition: 0.5s
+		&:nth-of-type(n+2)
+			margin-left: 28px
+		&_title
+			@include objects-title
+			p
+				@include content-text(16px)
+				font-weight: 400
+		&_description
+			display: none
+			position: absolute
+			width: 100%
+			height: 100%
+			padding: 17px 25px 15px 25px
+			z-index: 2
+			background: rgba(173,176,180, .9)
+			border-radius: $border
+			h6
+				@include content-text(16px)
+				margin-bottom: 8px
+				letter-spacing: 0.4px
+			p
+				@include content-text(12px)
+				margin-bottom: 12px
+				line-height: 18px
+				letter-spacing: 0.3px
+			a
+				@include content-text(12px)
+				letter-spacing: 0.3px
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					top: 3px
+					right: -23px
+					width: 15px
+					height: 11px
+					background: url(../../img/icons/purple-arrow.png) no-repeat
+		&:hover
+			.services-block_description
+				display: block
+
+@media (max-width: 1410px)
+	main
+		margin-top: 30px
+
+	.main-title_sum
+		h2
+			font-size: 48px
+		p
+			font-size: 20px
+
+	.main-title_dedescription
+		h1
+			font-size: 36px
+			margin-top: 10px
+			small
+				font-size: 15px
+
+	.main-projects
+		&_realized
+			.med-project
+				width: 100%
+			.small-project
+				width: 100%
+				margin-left: 0
+
+	.objects-rent
+		.big-project
+			width: 100%
+
+	.content-center
+		justify-content: center
+
+	.main-services
+		.services-block
+			margin-left: 0
+			&:nth-of-type(n+2)
+				margin-left: 0
+			&:nth-of-type(even)
+				margin-left: 30px !important
+
+@media (max-width: 1199px)
+	.main-title_sum
+		h2
+			font-size: 46px
+		p
+			font-size: 18px
+
+	.main-title_dedescription
+		margin-left: -20px
+		h1
+			font-size: 32px
+			margin-top: 13px
+			small
+				font-size: 14px
+			span
+				margin: 0 2px -8px
+				padding: 0 5px 2px 6px
+
+	.main-projects
+		margin-bottom: 15px
+
+@media (max-width: 767px)
+	.main-title_dedescription
+		margin-left: 0
+
+	.main-projects_realized
+		.med-project
+			width: 467px
+			margin: 0 auto 30px
+		.small-project
+			width: 100%
+			margin: 0 0 28px
+			background-size: cover
+
+	.main-services
+		.services-block
+			margin-left: 10px
+			&:nth-of-type(even)
+				margin-left: 10px !important
+			&:nth-of-type(n+2)
+				margin-left: 10px
+
+@media (max-width: 575px)
+	.main-projects_realized
+		.med-project
+			width: 100%
+
+@media (max-width: 420px)
+	.main-projects_realized
+		.small-project
+			width: 100%
+
+	.content-center
+		justify-content: flex-start
+
+	.main-services
+		.services-block
+			width: 60%
+			flex: 1 0 60%
+			margin: 10px 20px !important
+			background-size: cover !important
+			&:nth-of-type(even)
+				margin-left: 20px !important
+			&:nth-of-type(n+2)
+				margin-left: 20px

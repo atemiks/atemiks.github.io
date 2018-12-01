@@ -1,0 +1,455 @@
+.objects
+	&-realized
+		&_title
+			margin-bottom: 29px
+			h3
+				@include page-titles
+				letter-spacing: 2.4px
+		.realized-big
+			@include object(467px, 280px)
+			position: relative
+			z-index: 1
+			transition: 0.5s
+			margin-bottom: 28px
+			overflow: hidden
+			&_description
+				position: absolute
+				@include objects-title
+				width: 100%
+				height: 50px
+				z-index: 2
+				background: rgba(173,176,180, .9)
+				border-radius: $border
+				h5
+					@include content-text(16px)
+					font-weight: 700
+					letter-spacing: 0.8px
+					margin-bottom: 10px
+				p
+					@include content-text(16px)
+					font-weight: 400
+					letter-spacing: 0.4px
+					line-height: 24px
+					span
+						font-weight: 700
+			&:hover
+				.realized-big_description
+					height: 60%
+		.realized-small
+			@include object(390px, 200px)
+			position: relative
+			z-index: 1
+			transition: 0.5s
+			margin-left: -30px
+			margin-bottom: 28px
+			overflow: hidden
+			&_description
+				position: absolute
+				@include objects-title
+				width: 100%
+				height: 50px
+				z-index: 2
+				background: rgba(173,176,180, .9)
+				border-radius: $border
+				h5
+					@include content-text(16px)
+					font-weight: 700
+					letter-spacing: 0.8px
+					margin-bottom: 10px
+				p
+					@include content-text(16px)
+					font-weight: 400
+					letter-spacing: 0.4px
+					line-height: 24px
+					span
+						font-weight: 700
+			&:hover
+				.realized-small_description
+					height: 100%
+	&-lease
+		margin-top: 50px
+		&_title
+			margin-bottom: 28px
+			h3
+				@include page-titles
+				letter-spacing: 2.4px
+		.big-project
+			@include object(898px, 258px)
+			background: url(../../img/main-page/object-big.png) no-repeat
+			position: relative
+			z-index: 1
+			transition: 0.5s
+			margin-bottom: 29px
+			overflow: hidden
+			&_cost
+				width: 231px
+				position: absolute
+				top: 0
+				right: 0
+				text-align: center
+				padding: 17px 0
+				background: rgba(173,176,180, .9)
+				background-size: cover
+				border-top-right-radius: 8px
+				border-bottom-left-radius: 8px
+				p
+					@include content-text(16px)
+					letter-spacing: 0.4px
+			&_description
+				position: absolute
+				@include objects-title
+				width: 100%
+				height: 50px
+				z-index: 2
+				background: rgba(173,176,180, .9)
+				border-radius: $border
+				h5
+					@include content-text(16px)
+					font-weight: 700
+					letter-spacing: 0.6px
+					margin-bottom: 10px
+				p
+					@include content-text(16px)
+					font-weight: 400
+					letter-spacing: 0.4px
+					line-height: 24px
+					display: inline-block
+					margin-right: 50px
+					span
+						font-weight: 700
+			&:hover
+				.big-project_description
+					height: 40%
+	&-sale
+		margin-top: 50px
+		&_title
+			margin-bottom: 29px
+			h3
+				@include page-titles
+				letter-spacing: 2.4px
+	.sale-small
+		@include object(390px, 200px)
+		position: relative
+		z-index: 1
+		transition: 0.5s
+		margin-bottom: 28px
+		overflow: hidden
+		&_description
+			position: absolute
+			@include objects-title
+			width: 100%
+			height: 50px
+			z-index: 2
+			background: rgba(173,176,180, .9)
+			border-radius: $border
+			h5
+				@include content-text(16px)
+				font-weight: 700
+				letter-spacing: 0.8px
+				margin-bottom: 10px
+			p
+				@include content-text(16px)
+				font-weight: 400
+				letter-spacing: 0.4px
+				line-height: 24px
+				span
+					font-weight: 700
+		&:hover
+			.sale-small_description
+				height: 100%
+	.sale-big
+		@include object(467px, 280px)
+		position: relative
+		z-index: 1
+		margin-left: auto
+		transition: 0.5s
+		margin-bottom: 28px
+		overflow: hidden
+		&_description
+			position: absolute
+			@include objects-title
+			width: 100%
+			height: 50px
+			z-index: 2
+			background: rgba(173,176,180, .9)
+			border-radius: $border
+			h5
+				@include content-text(16px)
+				font-weight: 700
+				letter-spacing: 0.8px
+				margin-bottom: 10px
+			p
+				@include content-text(16px)
+				font-weight: 400
+				letter-spacing: 0.4px
+				line-height: 24px
+				span
+					font-weight: 700
+		&:hover
+			.sale-big_description
+				height: 60%
+
+.object-page
+	&_gallery
+		h3
+			@include page-titles
+			letter-spacing: 0.9px
+			&:before
+				content: ''
+				display: block
+				float: left
+				width: 23px
+				height: 31px
+				margin-right: 23px
+				background: url(../../img/objects-page/gps.png) no-repeat
+		.object-info
+			margin-top: 43px
+			margin-bottom: 44px
+			display: flex
+			&_square
+				margin-right: 125px
+				p
+					@include text(15px)
+					text-transform: uppercase
+					letter-spacing: 0.4px
+					margin-bottom: 25px
+					position: relative
+					&:after
+						content: ''
+						position: absolute
+						top: 7px
+						left: 100px
+						width: 56px
+						height: 1px
+						background-color: $white
+				b
+					@include text(48px)
+					letter-spacing: 1.2px
+					span
+						text-transform: uppercase
+			&_cost
+				p
+					@include text(15px)
+					text-transform: uppercase
+					letter-spacing: 0.4px
+					margin-bottom: 25px
+					position: relative
+					&:after
+						content: ''
+						position: absolute
+						top: 7px
+						left: 100px
+						width: 56px
+						height: 1px
+						background-color: $white
+				b
+					@include text(48px)
+					letter-spacing: 1.2px
+					span
+						text-transform: uppercase
+		h4
+			@include text(15px)
+			text-transform: uppercase
+			letter-spacing: 0.4px
+			margin-bottom: 28px
+		.object-slider
+			.slick-arrow_left
+				position: absolute
+				z-index: 10
+				bottom: -40px
+				right: 72px
+				cursor: pointer
+			.slick-arrow_right
+				position: absolute
+				z-index: 10
+				bottom: -40px
+				right: 30px
+				cursor: pointer
+			.slick-dots
+				text-align: right
+				padding-right: 160px
+				margin-bottom: -9px
+				li
+					width: 10px
+					height: 10px
+					margin-right: 20px
+					button
+						width: 10px
+						height: 10px
+						padding: 0
+						background: url(../../img/icons/dot.png)
+						&:before
+							display: none
+				.slick-active
+					background: url(../../img/icons/dot-active.png) !important
+	&_specifications
+		margin: 50px 0
+		h4
+			@include text(15px)
+			text-transform: uppercase
+			letter-spacing: 0.4px
+			margin-bottom: 27px
+		.specifications-table
+			display: flex
+			table
+				width: 371px
+				margin-right: 28px
+				tr
+					border-radius: 10px
+					&:nth-of-type(odd)
+						background-color: rgba(255, 255, 255, .3)
+						td
+							&:nth-of-type(1)
+								border-top-left-radius: 10px
+								border-bottom-left-radius: 10px
+							&:nth-of-type(2)
+								border-top-right-radius: 10px
+								border-bottom-right-radius: 10px
+					td
+						width: 60%
+						padding: 15px 0 15px 23px
+						@include text(14px)
+						&:nth-of-type(1)
+							text-transform: uppercase
+						&:nth-of-type(2)
+							@include text(16px)
+							width: 40%
+	&_description
+		margin-bottom: 50px
+		h4
+			@include text(15px)
+			text-transform: uppercase
+			letter-spacing: 0.4px
+			margin-bottom: 21px
+		p
+			@include text(12px)
+			line-height: 18px
+			letter-spacing: 0.4px
+
+.presentation-btn
+	margin-top: 38px
+	button
+		width: 181px
+		height: 54px
+		border-radius: 10px
+		background-color: rgba(255, 255, 255, .3)
+		padding-left: 25px
+		@include text(14px)
+		letter-spacing: 0.35px
+		position: relative
+		&:after
+			content: ''
+			width: 31px
+			height: 34px
+			position: absolute
+			top: 10px
+			right: 27px
+			background: url(../../img/objects-page/pdf.png) no-repeat
+
+
+@media (max-width: 1410px)
+	.objects
+		&-realized
+			.realized-big
+				width: 100%
+				height: 240px
+			.realized-small
+				width: 100%
+				height: 180px
+				margin-left: 0
+				&_description
+					padding-left: 10px
+		&-lease
+			.big-project
+				width: 100%
+		.sale-small
+			width: 100%
+			height: 180px
+			&_description
+				padding-left: 10px
+		.sale-big
+			width: 90%
+			height: 240px
+			margin-left: 0
+
+@media (max-width: 1199px)
+	.objects
+		&-realized
+			.realized-small
+				height: 210px
+				&_description
+		&-lease
+			.big-project
+				&:hover
+					.big-project_description
+						height: 70%
+		.sale-small
+			height: 210px
+			&_description
+
+	.object-page
+		&_gallery 
+			.object-info
+				&_square, &_cost
+					b
+						font-size: 40px
+		&_specifications
+			.specifications-table
+				flex-direction: column
+				table
+					margin: 0 auto
+
+@media (max-width: 767px)
+	.object-page
+		&_gallery
+			h3
+				font-size: 28px
+			.object-info
+				&_square, &_cost
+					b
+						font-size: 28px
+
+	.objects
+		&-realized
+			.realized-small, .realized-big
+				background-size: cover !important
+		.sale-small, .sale-big
+			background-size: cover !important
+
+@media (max-width: 575px)
+	.objects
+		&-realized
+			.realized-small
+				margin-left: 0
+			.realized-big
+				&_description
+					padding-left: 10px
+		&-lease
+			.big-project
+				&_description
+					padding-left: 10px
+		.sale-big
+			&_description
+					padding-left: 10px
+
+	.object-page
+		&_gallery 
+			.object-info
+				flex-direction: column
+				&_square
+					margin-bottom: 40px
+				&_square, &_cost
+					p
+						margin-bottom: 10px
+					b
+						font-size: 40px
+		&_specifications
+			.specifications-table
+				table
+					width: 300px
+					tr
+						td
+							font-size: 14px !important
+							width: 70%
+							&:nth-of-type(2)
+								width: 30%
