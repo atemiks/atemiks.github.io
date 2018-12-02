@@ -188,6 +188,7 @@ header
 				margin-left: auto
 				margin-right: 20px
 				font-size: 36px
+				color: $white
 			.nav-logo
 				img
 					margin: 0 auto
@@ -204,15 +205,16 @@ header
 						margin-bottom: 10px
 						padding: 5px 0
 						position: relative
-						&:before
-							content: ''
-							position: absolute
-							top: 0
-							right: 50px
-							width: 12px
-							height: 23px
-							background: url(../../img/icons/right-arrow.png) no-repeat
-							transform: rotate(90deg)
+						&:nth-of-type(-n+2)
+							&:before
+								content: ''
+								position: absolute
+								top: 0
+								right: 50px
+								width: 12px
+								height: 23px
+								background: url(../../img/icons/right-arrow.png) no-repeat
+								transform: rotate(90deg)
 						&:hover
 							&>a
 								background-color: transparent

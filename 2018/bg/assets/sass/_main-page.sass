@@ -131,25 +131,23 @@ main
 		margin-left: 18px
 		margin-bottom: 26px
 		transition: 0.5s
+		overflow: hidden
 		&:nth-of-type(n+2)
 			margin-left: 28px
-		&_title
-			@include objects-title
-			p
-				@include content-text(16px)
-				font-weight: 400
 		&_description
-			display: none
+			display: block
 			position: absolute
 			width: 100%
-			height: 100%
-			padding: 17px 25px 15px 25px
+			height: 50px
+			@include objects-title
+			padding: 10px 25px 15px 25px
 			z-index: 2
 			background: rgba(173,176,180, .9)
 			border-radius: $border
 			h6
 				@include content-text(16px)
-				margin-bottom: 8px
+				font-weight: 400
+				margin-bottom: 20px
 				letter-spacing: 0.4px
 			p
 				@include content-text(12px)
@@ -170,7 +168,7 @@ main
 					background: url(../../img/icons/purple-arrow.png) no-repeat
 		&:hover
 			.services-block_description
-				display: block
+				height: 100%
 
 @media (max-width: 1410px)
 	main
@@ -239,8 +237,9 @@ main
 
 	.main-projects_realized
 		.med-project
-			width: 467px
+			width: 100%
 			margin: 0 auto 30px
+			background-size: cover
 		.small-project
 			width: 100%
 			margin: 0 0 28px

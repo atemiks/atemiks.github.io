@@ -1,25 +1,21 @@
-var menu_selector = "#right-menu";
+/* var menu_selector = "#right-menu";
 var menuLink = $("#right-menu a");
 $(".nano-content").scroll(function() {
 	menuLink.each(function() {
 		var scroll_top = $(".nano-content").scrollTop();
 		var hash = $(this).attr("href");
 		var target = $(hash);
-		if (target.position().top <= scroll_top && target.position().top + target.outerHeight(true) > scroll_top) {
-			//alert(target.outerHeight(true));
+		if (target.offset().top <= scroll_top && target.offset().top + target.outerHeight() > scroll_top) {
 			$(menu_selector + " a.active").removeClass("active");
 			$(this).addClass("active");
 		} else {
 			$(this).removeClass("active");
 		}
 	});
-});
-function onScroll(){
-	
-}
+}); */
 
 $("#right-menu a").click(function(event) {
-	$(menu_selector + " a.active").removeClass("active");
+	$("#right-menu a").removeClass("active");
 	$(this).addClass("active");
 });
 /*$(document).ready(function () {
