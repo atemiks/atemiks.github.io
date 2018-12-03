@@ -984,6 +984,8 @@ main {
           background: url(../../img/icons/purple-arrow.png) no-repeat; }
     .main-services .services-block:hover .services-block_description {
       height: 100%; }
+      .main-services .services-block:hover .services-block_description h6 {
+        font-weight: 600; }
 
 @media (max-width: 1410px) {
   main {
@@ -1755,6 +1757,8 @@ main {
         background: url(../../img/icons/purple-arrow.png) no-repeat; }
   .services-block:hover .services-block_description {
     height: 100%; }
+    .services-block:hover .services-block_description h6 {
+      font-weight: 600; }
 
 .accounting {
   padding-left: 100px; }
