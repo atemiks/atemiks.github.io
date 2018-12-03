@@ -795,7 +795,7 @@ main {
         font-family: "Lato", sans-serif;
         font-size: 16px;
         color: #1f1746;
-        font-weight: 600;
+        font-weight: 400;
         letter-spacing: 0.6px; }
   .main-projects_realized .small-project {
     width: 398px;
@@ -828,7 +828,7 @@ main {
         font-family: "Lato", sans-serif;
         font-size: 16px;
         color: #1f1746;
-        font-weight: 600;
+        font-weight: 400;
         letter-spacing: 0.5px; }
 
 .objects-rent_title {
@@ -871,7 +871,7 @@ main {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       color: #1f1746;
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 0.6px; }
   .objects-rent .big-project_cost {
     width: 231px;
@@ -891,7 +891,7 @@ main {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       color: #1f1746;
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 0.4px; }
 
 .main-services {
@@ -955,7 +955,7 @@ main {
         font-family: "Lato", sans-serif;
         font-size: 16px;
         color: #1f1746;
-        font-weight: 600;
+        font-weight: 400;
         font-weight: 400;
         margin-bottom: 20px;
         letter-spacing: 0.4px; }
@@ -963,7 +963,7 @@ main {
         font-family: "Lato", sans-serif;
         font-size: 12px;
         color: #1f1746;
-        font-weight: 600;
+        font-weight: 400;
         margin-bottom: 12px;
         line-height: 18px;
         letter-spacing: 0.3px; }
@@ -971,7 +971,7 @@ main {
         font-family: "Lato", sans-serif;
         font-size: 12px;
         color: #1f1746;
-        font-weight: 600;
+        font-weight: 400;
         letter-spacing: 0.3px;
         position: relative; }
         .main-services .services-block_description a:after {
@@ -1131,7 +1131,8 @@ main {
         font-family: "Lato", sans-serif;
         font-size: 16px;
         color: #1f1746;
-        font-weight: 600;
+        font-weight: 400;
+        font-weight: 400;
         letter-spacing: 0.4px; }
 
 @media (max-width: 991px) {
@@ -1728,7 +1729,7 @@ main {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       color: #1f1746;
-      font-weight: 600;
+      font-weight: 400;
       font-weight: 400;
       margin-bottom: 20px;
       letter-spacing: 0.4px; }
@@ -1736,7 +1737,7 @@ main {
       font-family: "Lato", sans-serif;
       font-size: 12px;
       color: #1f1746;
-      font-weight: 600;
+      font-weight: 400;
       margin-bottom: 12px;
       line-height: 18px;
       letter-spacing: 0.3px; }
@@ -1744,7 +1745,7 @@ main {
       font-family: "Lato", sans-serif;
       font-size: 12px;
       color: #1f1746;
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 0.3px;
       position: relative; }
       .services-block_description a:after {
@@ -1787,7 +1788,7 @@ main {
     margin-bottom: 20px; }
   .accounting-table p {
     font-family: "Lato", sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     color: #fbfcfc;
     letter-spacing: 0.4px;
     margin-left: 87px; }
@@ -2025,15 +2026,15 @@ main {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       color: #1f1746;
-      font-weight: 600;
-      font-weight: 700;
+      font-weight: 400;
+      font-weight: 400;
       letter-spacing: 0.8px;
       margin-bottom: 10px; }
     .objects-realized .realized-big_description p {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       color: #1f1746;
-      font-weight: 600;
+      font-weight: 400;
       font-weight: 400;
       letter-spacing: 0.4px;
       line-height: 24px; }
@@ -2041,6 +2042,8 @@ main {
         font-weight: 700; }
   .objects-realized .realized-big:hover .realized-big_description {
     height: 60%; }
+    .objects-realized .realized-big:hover .realized-big_description h5 {
+      font-weight: 700; }
 
 .objects-realized .realized-small {
   width: 390px;
@@ -2085,15 +2088,15 @@ main {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       color: #1f1746;
-      font-weight: 600;
-      font-weight: 700;
+      font-weight: 400;
+      font-weight: 400;
       letter-spacing: 0.8px;
       margin-bottom: 10px; }
     .objects-realized .realized-small_description p {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       color: #1f1746;
-      font-weight: 600;
+      font-weight: 400;
       font-weight: 400;
       letter-spacing: 0.4px;
       line-height: 24px; }
@@ -2101,6 +2104,8 @@ main {
         font-weight: 700; }
   .objects-realized .realized-small:hover .realized-small_description {
     height: 100%; }
+    .objects-realized .realized-small:hover .realized-small_description h5 {
+      font-weight: 700; }
 
 .objects-lease {
   margin-top: 50px; }
@@ -2155,7 +2160,7 @@ main {
         font-family: "Lato", sans-serif;
         font-size: 16px;
         color: #1f1746;
-        font-weight: 600;
+        font-weight: 400;
         letter-spacing: 0.4px; }
     .objects-lease .big-project_description {
       position: absolute;
@@ -2176,15 +2181,15 @@ main {
         font-family: "Lato", sans-serif;
         font-size: 16px;
         color: #1f1746;
-        font-weight: 600;
-        font-weight: 700;
+        font-weight: 400;
+        font-weight: 400;
         letter-spacing: 0.6px;
         margin-bottom: 10px; }
       .objects-lease .big-project_description p {
         font-family: "Lato", sans-serif;
         font-size: 16px;
         color: #1f1746;
-        font-weight: 600;
+        font-weight: 400;
         font-weight: 400;
         letter-spacing: 0.4px;
         line-height: 24px;
@@ -2194,6 +2199,8 @@ main {
           font-weight: 700; }
     .objects-lease .big-project:hover .big-project_description {
       height: 40%; }
+      .objects-lease .big-project:hover .big-project_description h5 {
+        font-weight: 700; }
 
 .objects-sale {
   margin-top: 50px; }
@@ -2249,15 +2256,15 @@ main {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       color: #1f1746;
-      font-weight: 600;
-      font-weight: 700;
+      font-weight: 400;
+      font-weight: 400;
       letter-spacing: 0.8px;
       margin-bottom: 10px; }
     .objects .sale-small_description p {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       color: #1f1746;
-      font-weight: 600;
+      font-weight: 400;
       font-weight: 400;
       letter-spacing: 0.4px;
       line-height: 24px; }
@@ -2265,6 +2272,8 @@ main {
         font-weight: 700; }
   .objects .sale-small:hover .sale-small_description {
     height: 100%; }
+    .objects .sale-small:hover .sale-small_description h5 {
+      font-weight: 700; }
 
 .objects .sale-big {
   width: 467px;
@@ -2309,15 +2318,15 @@ main {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       color: #1f1746;
-      font-weight: 600;
-      font-weight: 700;
+      font-weight: 400;
+      font-weight: 400;
       letter-spacing: 0.8px;
       margin-bottom: 10px; }
     .objects .sale-big_description p {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       color: #1f1746;
-      font-weight: 600;
+      font-weight: 400;
       font-weight: 400;
       letter-spacing: 0.4px;
       line-height: 24px; }
@@ -2325,6 +2334,8 @@ main {
         font-weight: 700; }
   .objects .sale-big:hover .sale-big_description {
     height: 60%; }
+    .objects .sale-big:hover .sale-big_description h5 {
+      font-weight: 700; }
 
 .object-page_gallery h3 {
   font-family: "Playfair Display", serif;
