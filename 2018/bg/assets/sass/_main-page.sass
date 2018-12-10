@@ -26,14 +26,6 @@ main
 		letter-spacing: 2.3px
 		margin-top: 5px
 		margin-bottom: 26px
-		span
-			margin: 0 5px -8px
-			padding: 0px 10px 2px 8px
-			display: inline-block
-			border-radius: $border
-			background-color: $white
-			color: rgba(78,78,126, .9)
-			overflow: hidden
 		small
 			font-size: 17px;
 			font-family: $Lato
@@ -69,7 +61,6 @@ main
 	&_realized
 		.med-project
 			@include object(467px, 285px)
-			background: url(../../img/main-page/object-medium.png) no-repeat
 			margin-left: 2px
 			&_title
 				@include objects-title
@@ -78,7 +69,6 @@ main
 					letter-spacing: 0.6px
 		.small-project
 			@include object(398px, 205px)
-			background: url(../../img/main-page/object-small.png) no-repeat
 			margin-left: -46px
 			margin-bottom: 28px
 			&_title
@@ -94,7 +84,6 @@ main
 			@include main-title
 	.big-project
 		@include object(898px, 258px)
-		background: url(../../img/main-page/object-big.png) no-repeat
 		position: relative
 		margin-bottom: 29px
 		&_title
@@ -191,7 +180,8 @@ main
 		h2
 			font-size: 48px
 		p
-			font-size: 20px
+			font-size: 18px
+			line-height: 24px
 
 	.main-title_dedescription
 		h1
@@ -204,6 +194,7 @@ main
 		&_realized
 			.med-project
 				width: 100%
+				background-size: cover
 			.small-project
 				width: 100%
 				margin-left: 0
@@ -226,6 +217,7 @@ main
 			&_description
 				h6
 					margin-bottom: 20px
+					font-size: 14px
 				p
 					margin-bottom: 8px
 			&:hover
@@ -297,6 +289,7 @@ main
 	.main-projects_realized
 		.small-project
 			width: 100%
+			background-size: cover
 
 	.content-center
 		justify-content: flex-start
@@ -306,7 +299,8 @@ main
 			width: 60%
 			flex: 1 0 60%
 			margin: 10px 20px !important
-			background-size: cover !important
+			img
+				width: 100%
 			&:nth-of-type(even)
 				margin-left: 20px !important
 			&:nth-of-type(n+2)
