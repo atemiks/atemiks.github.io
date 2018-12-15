@@ -37,6 +37,35 @@
 }
 
 
+.display-header {
+	.display-title {
+		margin: 30px 0 25px;
+		font-size: 32px;
+		font-weight: 700;
+		color: #6d283d;
+	}
+}
+
+.section-content {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.breadcrumb {
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	&-item {
+		color: #5d6c7a;
+		font-size: 14px;
+		font-weight: 300;
+		a {
+			color: inherit;
+		}
+	}
+}
+
+
 
 .modal {
 	.modal-dialog {
@@ -81,7 +110,7 @@
 .form-modal {
 
 	input {
-		border: 3px solid #ebebeb;
+		border: 3px solid #6d283d;
 	}
 
 	.custom-control {

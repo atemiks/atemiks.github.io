@@ -1,14 +1,24 @@
 .header-box {
-	position: relative;
+	position: fixed;
 	z-index: 9;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
 }
 
 .header-statusbar {
+	position: relative;
+	z-index: 9;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	background-color: #fff;
 	@include media-breakpoint-down(md) {
 		display: none;
+	}
+
+	.dropdown-menu  {
+		top: calc(100% +  5px) !important;
 	}
 }
 
@@ -19,9 +29,14 @@
 		margin-right: 23px;
 		&:last-child {
 			margin-right: 0;
+			.dropdown-menu {
+				left: auto !important;
+				right: 0 !important;
+			}
 		}
 
 		.statusbar-menu-link {
+			padding: 10px 0;
 			color: #5d6c7a;
 			font-size: 16px;
 			font-weight: 300;
@@ -104,20 +119,22 @@
 
 .header-nav-list {
 	@extend .reset-list;
+	margin-left: -10px;
+	margin-right: -10px;
 	@include media-breakpoint-down(md) {
 		display: none;
 	}
 
 	.header-nav-item {
 		display: inline-block;
-		margin-right: 22px;
+		margin-right: 5px;
 		&:last-child {
 			margin-right: 0;
 		}
 
 		.header-nav-link {
 			color: #ffffff;
-			font-size: 18px;
+			font-size: 17px;
 			font-weight: 500;
 		}
 	}

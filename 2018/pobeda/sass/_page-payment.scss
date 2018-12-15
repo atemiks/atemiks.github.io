@@ -1,0 +1,22 @@
+.form-payment-wrapper {
+    padding-top: 85px;
+    padding-bottom: 85px;
+	background-position: center;
+	background-size: cover;
+	@include media-breakpoint-down(md) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+.form-payment {
+	padding: 45px;
+    background-color: rgba(42, 9, 46, 0.6);
+    @include media-breakpoint-down(sm) {
+		padding: 25px;
+	}
+
+    label {
+    	color: #fff;
+    }
+}

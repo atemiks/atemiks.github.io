@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="ru">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="vendor/aos.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Победа</title>
+    </head>
+
+    <body>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCallbackLabel">Онлайн заявка</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="images/icons/icon-close.svg" alt="закрыть">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" class="form-modal">
+                            <div class="form-group">
+                                <label for="formModalName">Ваше имя:</label>
+                                <input type="text" name="formModalName" required >
+                            </div>
+                            <div class="form-group">
+                                <label for="formModalPhone">Телефон:</label>
+                                <input type="tel" name="formModalPhone" required >
+                            </div>
+                            <ul class="modal-advantages">
+                                <li class="modal-advantage">
+                                    <div class="advantage-media">
+                                        <img src="images/icons/icon-modal-1.svg" alt="">
+                                    </div>
+                                    <div class="advantage-content">Оцениваем в среднем на 15% дороже, чем другие ломбарды</div>
+                                </li>
+                                <li class="modal-advantage">
+                                    <div class="advantage-media">
+                                        <img src="images/icons/icon-modal-2.svg" alt="">
+                                    </div>
+                                    <div class="advantage-content">Выдаем деньги за 30 минут</div>
+                                </li>
+                            </ul>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked required>
+                                    <label class="custom-control-label" for="customCheck1">Я согласен(а) на обработку моих <a href="#link">персональных данных</a></label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn" >Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="offcanvas">
+            <div class="offcanvas-header">
+                <button class="offcanvas-close">
+                    <img src="images/icons/icon-close.svg" alt="закрыть">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="offcanvas-menu">
+                    <li><a href="/about/about-the-pawnshop/">О компании</a></li>
+                    <li><a href="/partners/investors/">Партнерам</a></li>
+                </ul>
+            </div>
+            <div class="offcanvas-footer">
+                <div class="offcanvas-contact">
+                    <a href="tel:+74954321412">+7 (495) 432-14-12</a>
+                </div>
+
+                <div class="offcanvas-address">Москва, ул.&nbsp;Горбунова, д.&nbsp;12 к.&nbsp;2 стр.&nbsp;8. <br> Работаем без выходных, 24 часа</div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="content">
+                <header class="header-box">
+                    <!-- <div class="header-statusbar container-fluid">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-auto ml-auto" data-aos="fade-in">
+                                        <ul class="statubar-menu">
+                                            <li class="statusbar-menu-item"><a href="#link" class="statusbar-menu-link">О компании</a></li>
+                                            <li class="statusbar-menu-item"><a href="#link" class="statusbar-menu-link">Акции</a></li>
+                                            <li class="statusbar-menu-item"><a href="#link" class="statusbar-menu-link">Партнерам</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-auto" data-aos="fade-in">
+                                        <div class="header-search">
+                                            <form action="" class="form-search">
+                                                <input class="form-search-input" type="search">
+                                                <button class="form-search-button" >
+                                                    <img src="images/icons/icon-search.svg" alt="icon search">
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="header container-fluid" >
+                        <div class="row">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-auto col-md-3 col-lg-auto" data-aos="fade-in">
+                                        <div class="header-logo">
+                                            <a href="index.html" class="header-logo-link">
+                                                <span class="header-logo-icon">
+                                                    <img src="images/logo.svg" alt="" class="header-logo-img">
+                                                </span>
+                                                <span class="header-logo-value">Победа</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-none d-md-block col" data-aos="fade-in" data-aos-delay="100">
+
+                                        <nav class="header-nav">
+                                            <ul class="header-nav-list">
+                                                <li class="header-nav-item"><a href="/about/about-the-pawnshop/" class="header-nav-link">О компании</a></li>
+                                                <li class="header-nav-item"><a href="#link" class="header-nav-link">Деньги под авто</a></li>
+                                                <li class="header-nav-item"><a href="/partners/investors/" class="header-nav-link">Партнёрам</a></li>
+                                                <li class="header-nav-item"><a href="/contacts/" class="header-nav-link">Контакты</a></li>
+                                            </ul>
+                                        </nav>
+
+                                        <!-- <div class="header-address">Москва, ул. Горбунова, 12/2. Работаем без выходных, 24 часа</div> -->
+
+                                    </div>
+
+                                    <div class="col-auto ml-auto" data-aos="fade-in" data-aos-delay="200">
+                                        <div class="header-contact">
+                                            <a href="tel:+74954321412" class="header-contact-phone"><span>+7 (495)</span> 432-14-12</a>
+                                            <ul class="header-contact-actions">
+                                                <li class="header-contact-action"><a href="#order" data-toggle="modal" data-target="#modalCallback" >Заказать звонок</a></li>
+                                                <li class="header-contact-action">
+                                                    <button class="dropdown-toggle" type="button" id="dropdownHeaderLocation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Выбрать офис
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownHeaderLocation">
+                                                        <a class="dropdown-item" href="#map">Г. МОСКВА, ГАМСОНОВСКИЙ ПЕРЕУЛОК, Д.2, СТР.1, ОФИС 112 (БЦ ЦЕНТР-Т) М.&nbsp;ТУЛЬСКАЯ</a>
+                                                        <a class="dropdown-item" href="#map">Г. МОСКВА, УЛ. ГОРБУНОВА, Д.12, КОРП.2 СТР.8, ОФИС А215А 2Й ЭТАЖ М.&nbsp;МОЛОДЕЖНАЯ</a>
+                                                        <a class="dropdown-item" href="#map" >Г. МОСКВА, ПРОЕЗД СЕРЕБРЯКОВА Д.6 (ТЦ СЕРЕБРЯКОВА) М.&nbsp;БОТАНИЧЕСКИЙ САД</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <button class="header-offcanvas-toggler">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+                <main>
+
+                    <section class="section-content">
+                        <div class="container">
+                            <div class="about-grid row">
+                                <div class="about-item col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="about-card" style="background-image: url('/images/page-about/about-img-1.JPG')" ></div>
+                                </div>
+
+                                <div class="about-item col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="about-card" style="background-image: url('/images/page-about/about-img-2.JPG')" ></div>
+                                </div>
+
+                                <div class="about-item col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="about-card" style="background-image: url('/images/page-about/about-img-3.JPG')" ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-contact" id="section-contact" >
+                        <div class="container">
+                            <div class="contact-grid">
+                                <div class="row">
+                                    <div class="contact-item col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" >
+                                        <div class="contact-card">
+                                            <p class="contact-title">Есть вопросы? Позвоните нам:</p>
+                                            <a href="tel:+74954321412">+7 (495) 432-14-12</a> <br>
+                                            <a href="#order" data-toggle="modal" data-target="#modalCallback">Заказать звонок</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item col-sm-6 col-lg-4" data-aos="fade-up" >
+                                        <div class="contact-card">
+                                            <p class="contact-title">Режим работы:</p>
+                                            Работаем без обеда <br>
+                                            и без выходных, 24&nbsp;часа
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" >
+                                        <div class="contact-card">
+                                            <p class="contact-title">Вы также можете написать нам</p>
+                                            <a href="mailto:info@ptszaim.ru">info@ptszaim.ru</a> <br>
+                                            Или оставить заявку <a href="#order" data-toggle="modal" data-target="#modalCallback" >онлайн</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="contact-item col-sm-6 col-lg-4" data-aos="fade-up" >
+                                        <div class="contact-card">
+                                            <p class="contact-title">Наши филиалы в Москве:</p>
+                                            Гамсоновский переулок,&nbsp;2, стр.&nbsp;1, <br>
+                                            офис&nbsp;112 (БЦ&nbsp;Центр-Т), м.&nbsp;Тульская
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" >
+                                        <div class="contact-card">
+                                            <p class="contact-title">&nbsp;</p>
+                                            проезд Серебрякова,&nbsp;6 <br>
+                                            (ТЦ&nbsp;Серебрякова), м.&nbsp;Ботанический сад
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" >
+                                        <div class="contact-card">
+                                            <p class="contact-title">&nbsp;</p>
+                                            ул.&nbsp;Горбунова,&nbsp;12, корп.&nbsp;2, стр.&nbsp;8, <br>
+                                            офис&nbsp;А-215А, 2&nbsp;этаж, м.&nbsp;Млодежная
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <div id="map"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+            </div>
+            <footer class="footer-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-aside col-md-3 col-lg-2">
+                            <div class="footer-logo">
+                                <a href="/" class="footer-logo-link">
+                                    <img src="/images/logo.svg" alt="Победа" class="footer-logo-img">
+                                    Победа
+                                </a>
+                            </div>
+
+                            <div class="footer-tagline">Деньги под авто <br> и под ПТС</div>
+
+                            <div class="footer-hint">Отправляя данные, вы соглашаетесь с <a href="#link">политикой конфиденциальности</a> этого сайта</div>
+
+                            <a href="https://www.hostcms.ru" target="_blank">HostCMS</a>
+                        </div>
+
+                        <div class="footer-col-content col-md-9 col-lg-10">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="footer-menu-list">
+                                        <li class="footer-menu-item">
+                                            <a href="/about/about-the-pawnshop/" class="footer-menu-link">О компании</a>
+                                        </li>
+
+                                        <li class="footer-menu-item">
+                                            <a href="#link" class="footer-menu-link">Деньги под авто</a>
+                                        </li>
+                                        <li class="footer-menu-item">
+                                            <a href="//partners/investors/" class="footer-menu-link">Партнёрам и инвесторам</a>
+                                        </li>
+                                        <li class="footer-menu-item">
+                                            <a href="/contacts/" class="footer-menu-link">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="order-last order-sm-first col">
+                                    <div class="footer-info">
+                                        <p>Информация для заемщиков:</p>
+
+                                        <p>- Финансирование предоставляется в размере 10000 руб. – 20000000 руб. годовой процент за пользование (с учетом требований ФЗ №353-ФЗ) – 0,1%-82,139%. Окончательные условия получения будут предложены в индивидуальном порядке.</p>
+
+                                        <p>- Пример расчета: вы берете 30 000 рублей на 3 месяца с процентной ставкой 4,5% в месяц переплата за весь срок составит 4050 рублей. Итого вы возвращаете 34050 рублей.</p>
+
+                                        <p>- Срок от 60 до 365 дней. Возможно как продление, так и его досрочного погашение. При досрочном погашении комиссия за использование будет пересчитана пропорционально сроку пользования деньгами.</p>
+
+                                        <p>Cовершая звонок в компанию, я даю согласие на обработку моих персональных данных в соответствии с Законом "О персональных данных" №152-ФЗ от 27.07.2006</p>
+
+                                        <p>Запрещено копирование и переписывание информации с сайта, в том числе частичное, без согласия администрации сайта и указания прямой индексируемой ссылки на первоисточник. Любое нарушение авторских прав контролируется и преследуется по закону согласно статьям 1253, 1301, 1311, 1472, 1515, 1537 законодательства Гражданского кодека РФ.</p>
+                                    </div>
+
+                                    <ul class="payment-systems-list">
+                                        <li class="payment-system-item">
+                                            <img src="images/footer/logo-paykeeper.png" alt="paykeeper">
+                                        </li>
+                                        <li class="payment-system-item">
+                                            <img src="images/footer/logo-mastercard-visa.png" alt="mastercard visa">
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-auto">
+                                    <ul class="footer-actions">
+                                        <li class="footer-action-item">
+                                            <a class="footer-action-link" href="#order" data-toggle="modal" data-target="#modalCallback">Оставить заявку</a>
+                                        </li>
+                                        <li class="footer-action-item">
+                                            <a class="footer-action-link" href="#order" data-toggle="modal" data-target="#modalCallback">Заказать звонок</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC_6dU-jxCoGgjMBEQCAByXL2ec-Ld_k0"></script>
+        <script src="vendor/bootstrap.min.js" ></script>
+        <script src="vendor/aos.js" ></script>
+        <script src="vendor/rangeslider.js" ></script>
+        <script src="vendor/mask.js" ></script>
+        <script src="js/main.js" ></script>
+    </body>
+
+</html>
