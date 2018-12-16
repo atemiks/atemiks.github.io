@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+        <!-- <meta name="viewport" content="initial-scale=0.1"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="vendor/css/flipclock.css">
+        <link rel="stylesheet" href="vendor/css/slick.css">
+        <link rel="stylesheet" href="vendor/css/slick-theme.css">
+        <link rel="stylesheet" href="vendor/css/jquery.mCustomScrollbar.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <title>BetHub</title>
+    </head>
+    <body>
+
+        <div class="navigation-wrapper">
+            <div class="navigation-top">
+                <ul class="navigation-menu navigation-main">
+                    <li class="navigation-item">
+                        <a href="index.html" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-crown" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Jackpot</span>
+                                <span class="navigation-subtitle">Играй по крупному</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="navigation-item active">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <span class="badge badge-danger">4</span>
+                                <i class="icone-chips" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Coinflip</span>
+                                <span class="navigation-subtitle">Подбрось монетку</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="navigation-item">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-fighting-game" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Duels</span>
+                                <span class="navigation-subtitle">Сражайся и побеждай</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-chest" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Opencase</span>
+                                <span class="navigation-subtitle">Испытай свою удачу</span>
+                            </span>
+                        </a>
+                    </li> -->
+                </ul>
+
+                <!-- <ul class="navigation-menu navigation-main">
+                    <li class="navigation-item">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-stat" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Статистика</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul> -->
+            </div>
+
+            <div class="navigation-bottom">
+                <ul class="navigation-menu">
+                    <li class="navigation-item active">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-settings" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Настройки</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#link" class="navigation-card">
+                            <span class="navigation-thumbnail">
+                                <i class="icon-info" ></i>
+                            </span>
+                            <span class="navigation-content">
+                                <span class="navigation-title">Информация</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- /.navigation-wrapper -->
+        <button class="chat-toggler"></button>
+
+        <div class="chat-wrapper">
+            <div class="chat-header">
+                <div class="left">
+                    <div class="chat-online">
+                        Чат <span class="chat-online-count" >113</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="chat-lang">
+                        <button class="dropdown-toggle" type="button" id="chatLangMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/icons/icon-flag-ru.png" alt="">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="chatLangMenu">
+                            <a class="dropdown-item" href="#link">
+                                <img src="images/icons/icon-flag-ru.png" alt="">
+                            </a>
+                            <a class="dropdown-item" href="#link">
+                                <img src="images/icons/icon-flag-ru.png" alt="">
+                            </a>
+                            <a class="dropdown-item" href="#link">
+                                <img src="images/icons/icon-flag-ru.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="chat-channel">
+                        <button class="dropdown-toggle" type="button" id="chatChannelMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jackpot</button>
+                        <div class="dropdown-menu" aria-labelledby="chatChannelMenu">
+                            <a class="dropdown-item" href="#link">Jackpot</a>
+                            <a class="dropdown-item" href="#link">History</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-body" >
+                <div class="chat-messages" id="chat-messages" >
+                    <div class="chat-message success">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart success sm" data-percent="60">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-1.png" alt="" class="ppc-thumbnail">
+                                    <p class="ppc-level">639</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">Zhora228</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:24</p>
+                            </div>
+                            <div class="chat-message-text">Привет работягам! Как дела? <br> 
+                                У меня вот так себе ибо батя отпиздил как пришел пьяным с работы. Вот так. Скиньте <span>100 ВР</span> плиз на лечение. Ибо подорожник хуево помогает</div>
+                        </div>
+                    </div>
+
+                    <div class="chat-message">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart default sm" data-percent="100">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-2.png" alt="HaroldHidePain" class="ppc-thumbnail">
+                                    <p class="ppc-level">347</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">HaroldHidePain</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:23</p>
+                            </div>
+                            <div class="chat-message-text">Пацаны, как скрыть боль так, чтобы никто этого не заметил? А то мамка постоянно по моему лицу понимает когда я снова слил тут все бабки((9(</div>
+                        </div>
+                    </div>
+
+                    <div class="chat-message">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart sm" data-percent="30">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-3.png" alt="Perez_invest" class="ppc-thumbnail">
+                                    <p class="ppc-level">11</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">Perez_invest</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:18</p>
+                            </div>
+                            <div class="chat-message-text">Steam trade not again!!1!</div>
+                        </div>
+                    </div>
+
+                    <div class="chat-message moderator">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart rare sm" data-percent="90">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-4.png" alt="Perez_invest" class="ppc-thumbnail">
+                                    <p class="ppc-level">847</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">Verner2k</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:16</p>
+                            </div>
+                            <div class="chat-message-text">Запомни, брат, простую фразу: профит - будет, но не сразу.</div>
+                        </div>
+                    </div>
+
+                    <div class="chat-message warning">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart legendary sm" data-percent="40">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-5.png" alt="Perez_invest" class="ppc-thumbnail">
+                                    <p class="ppc-level">999</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">EnjoyMaloy</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:16</p>
+                            </div>
+                            <div class="chat-message-text">Переход по моей волшебной ссылке магическим образом увеличивает ваш член и  ает целых <span>130 ВР</span> на ваш баланс. Ссылка: <a href="#link">https://bethub.gg/ref/enjoymaloy</a></div>
+                        </div>
+                    </div>
+
+                    <div class="chat-message admin">
+                        <div class="chat-message-media">
+                            <div class="user-pie-chart admin sm" data-percent="80">
+                                <div class="ppc-progress">
+                                    <div class="ppc-progress-fill"></div>
+                                </div>
+                                <div class="ppc-content">
+                                    <img src="images/uploads/chat/chat-user-6.png" alt="Perez_invest" class="ppc-thumbnail">
+                                    <p class="ppc-level">ADMIN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message-content">
+                            <div class="chat-message-header">
+                                <p class="chat-message-name">Mawis</p>
+                                <p class="chat-message-time"><i class="icon-time" ></i>19:16</p>
+                            </div>
+                            <div class="chat-message-text">Кстати, мы запустили конкурс в пабе ВК. Кому интересно - бегом туда. Также пофиксили кучу всяких багов которые вы нашли. Но так и не смогли ускорить парсер csgo500 на беке за что просим огромное извенений у всех обитателей чата. И дальше идет какой-то непонятный текст чтобы заполнить место. И еще полотно какого-то несвязного и не ясного текста для заполнения пустого пространства.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="chat-footer">
+                <div class="chat-hint">
+                    <button class="close">
+                        <img src="images/icons/icon-close.png" alt="">
+                    </button>
+
+                    <div class="chat-hint-thumbnail">
+                        <img src="images/icons/icon-hint.png" alt="подсказка">
+                    </div>
+                    <div class="chat-hint-text">
+                        При общении в <span>чате</span> не используйте
+                        ругательств, не рекламируйте сайты 
+                        и не злоупотребляйте капс локом
+                        дабы вас не настиг <span>банхаммер</span>
+                    </div>
+                </div>
+                <div class="chat-leave-message">
+                    <textarea name="" placeholder="Напишите сообщение..." ></textarea>
+                    <button class="chat-leave-smile"></button>
+                </div>
+                <p class="chat-leave-message-hint">Не забывай про <a href="#lnik">правила чата</a>!</p>
+            </div>
+        </div><!-- /.chat-wrapper -->
+
+        <div class="wrapper">
+            <div class="content">
+                <header class="header-box">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="header-col side-left col">
+                                <button class="header-navigation-toggler">
+                                    <img src="images/icons/icon-burger.png" alt="burger">
+                                </button>
+
+                                <div class="header-logo">
+                                    <a href="index.html">
+                                        <img src="images/logo.png" alt="BetHub">
+                                    </a>
+                                </div>
+
+                                <nav class="header-nav">
+                                    <ul class="header-nav-list">
+                                        <li class="header-nav-item active"><a href="#link" class="header-nav-link">Честная игра</a></li>
+                                        <li class="header-nav-item"><a href="#link" class="header-nav-link">Поддержка</a></li>
+                                        <li class="header-nav-item"><a href="#link" class="header-nav-link">FAQ</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-col side-right col-auto">
+                                <ul class="header-profile-info">
+                                    <li class="header-profile-info-item">
+                                        <a href="#link" class="btn btn-xs btn-primary" >ПОПОЛНИТЬ</a>
+                                    </li>
+                                    <li class="header-profile-info-item">
+                                        <a href="#link" class="btn btn-xs btn-success" >ВЫВЕСТИ</a>
+                                    </li>
+                                    <li class="header-profile-info-item">
+                                        БАЛАНС: <span>473 BP</span>
+                                    </li>
+                                </ul>
+
+                                <div class="header-lang">
+                                     <button class="dropdown-toggle" type="button" id="headerDropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="images/icons/icon-flag-ru.png" alt="ru">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="headerDropdownLang">
+                                        <a class="dropdown-item" href="#link">
+                                            <img src="images/icons/icon-flag-ru.png" alt="ru">
+                                        </a>
+                                        <a class="dropdown-item" href="#link">
+                                            <img src="images/icons/icon-flag-ru.png" alt="ru">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <button class="header-volume">
+                                    <i class="icon-volume-on" ></i>
+                                    <!-- <img src="images/icons/icon-volume.png" alt="volume"> -->
+                                </button>
+
+                                <div class="header-user dropdown" style="background-image: url('images/header/header-user-bg.png')" >
+                                    <button class="dropdown-toggle" type="button" id="headerDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user-pie-chart rare sm" data-percent="40">
+                                            <div class="ppc-progress">
+                                                <div class="ppc-progress-fill"></div>
+                                            </div>
+                                            <div class="ppc-content">
+                                                <img src="images/uploads/header/header-user/header-user-img.png" alt="Verner2k" class="ppc-thumbnail">
+                                                <p class="ppc-level">347</p>
+                                            </div>
+                                        </div>
+
+                                        <span class="header-user-name">Verner2k</span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="headerDropdownProfile">
+                                        <a class="dropdown-item" href="#link"><i class="icon-user" ></i>Профиль</a>
+                                        <a class="dropdown-item" href="#link"><i class="icon-briefcase" ></i>Инвентарь</a>
+                                        <a class="dropdown-item" href="#link"><i class="icon-layers" ></i>История игр</a>
+                                        <a class="dropdown-item" href="#link"><i class="icon-grid" ></i>История платежей</a>
+                                        <a class="dropdown-item" href="#link"><i class="icon-settings-lg" ></i>Настройки</a>
+                                        <a class="dropdown-item" href="#link"><i class="icon-power" ></i>Выход</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <main class="main-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="game-content-wrapper">
+                                    <div class="game-header">
+                                        <div class="headline-title">
+                                            <img src="images/icons/icon-profile.png" alt="Иконка профиля">
+                                            <p>Профиль</p>
+                                        </div>
+                                        <ul class="headline-actions">
+                                            <li class="headline-action">
+                                                <a href="transactions.html" class="headline-action-link btn btn-xs btn-primary">ИСТОРИЯ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="game-content tab-content">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="profile-display">
+                                                    <div class="profile-main">
+                                                        <div class="profile-media">
+                                                            <div class="profile-avatar" style="background-image: url('images/page-profile/profile-avatar.png')" ></div>
+                                                        </div>
+                                                        <div class="profile-info">
+                                                            <div class="profile-name">Verner2k</div>
+                                                            <div class="profile-id">STEAM ID: 345634257832467567</div>
+
+                                                            <div class="profile-lvl">
+                                                                <div class="profile-lvl-title">Уровень и опыт:</div>
+                                                                
+                                                                <div class="profile-lvl-progress">
+                                                                    <div class="profile-lvl-current">lvl&nbsp;1</div>
+                                                                    <div class="profile-lvl-bar">
+                                                                        <div class="progress"></div>
+                                                                    </div>
+                                                                    <div class="profile-lvl-next">lvl&nbsp;2</div>
+                                                                </div>
+
+                                                                <div class="profile-lvl-hint">Сейчас у вас <span class="text-primary">342</span> опыта. Заработайте еще <span class="text-primary">658</span> единиц чтобы достигнуть <span class="text-success">2</span> уровня. Чем выше уровень - тем больше бонусов!</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="profile-aside">
+                                                        <div class="profile-trade">
+                                                            <div class="trade-title">
+                                                                Введите ваш Opskins Trade URL:
+                                                                <a href="#link">Не знаешь где взять трейд ссылку?</a>
+                                                            </div>
+                                                            <form action="" class="form-trade">
+                                                                <input type="text" placeholder="https://trade.opskins.com/t/1947337/x..." required >
+                                                                <button type="submit" class="btn btn-success btn-block" >ПОДТВЕРДИТЬ</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.col -->
+                                        </div><!-- /.row -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="profile-actions-wrapper">
+                                                    <div class="row">
+                                                        <div class="profile-action-col col">
+                                                            <div class="profile-action">
+                                                                <div class="profile-action-title">Реферальная ссылка:</div>
+                                                                <form action="" class="form-profile-action">
+                                                                    <input type="text" placeholder="https://bethub.gg/r/verner2k" required  >
+                                                                    <button type="submit" class="btn btn-primary"  >СКОПИРОВАТЬ</button>
+                                                                </form>
+                                                                <div class="profile-action-description">Когда кто-то переходит по вашей ссылке и регистрируется по ней, то он становится вашим рефералом. Ввод вашего когда имеет аналоги такой же механизм действия.</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="profile-action-col col">
+                                                            <div class="profile-action">
+                                                                <div class="profile-action-title">Ваш код:</div>
+                                                                <form action="" class="form-profile-action">
+                                                                    <input type="text" placeholder="VERNER2K" required  >
+                                                                    <button type="submit" class="btn btn-primary"  >ОБНОВИТЬ</button>
+                                                                </form>
+                                                                <div class="profile-action-description">Каждый раз когда кто-то вводит этот код - он становится вашим рефералом. Также вы можете сменить этот код, при желании, на новый.</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="profile-action-col col">
+                                                            <div class="profile-action">
+                                                                <div class="profile-action-title">Получить бонус:</div>
+                                                                <form action="" class="form-profile-action">
+                                                                    <input type="text" placeholder="Введите бонусный код..." required  >
+                                                                    <button type="submit" class="btn btn-success"  >ПОДТВЕРДИТЬ</button>
+                                                                </form>
+                                                                <div class="profile-action-description">Вы можете получить бонус если введете сюда реферальный код. Размер бонуса с кода будет зависеть напрямую от уровня реферальной системы человека, который вам его дал.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="profile-stats-wrapper">
+                                                    <div class="row justify-content-between">
+                                                        <div class="profile-stats-col col">
+                                                            <div class="profile-stats">
+                                                                <div class="profile-stats-title">Колличество:</div>
+                                                                <div class="profile-stats-value">43</div>
+                                                                <div class="profile-stats-description">Число людей зарегистрировавшихся по вашей ссылке или которые ввели бонусный код</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="profile-stats-col col-auto lg">
+                                                            <div class="profile-stats success">
+                                                                <div class="profile-stats-title">Общий заработок:</div>
+                                                                <div class="profile-stats-value">350 123</div>
+                                                                <div class="profile-stats-description">Здесь показано общее число <span class="text-success">BP</span> которое вы заработали за все время с реферальной системы нашего сайта</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="profile-stats-col col">
+                                                            <div class="profile-stats success">
+                                                                <div class="profile-stats-title">Текущий доход:</div>
+                                                                <div class="profile-stats-value">873</div>
+                                                                <a href="#link" class="profile-stats-action btn btn-primary">СОБРАТЬ</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.game-content -->
+                                </div><!-- /.game-content-wrapper -->
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </main>
+            </div><!-- /.content -->
+        </div><!-- /.wrapper -->
+    
+        <script src="vendor/js/jquery-3.3.1.min.js" ></script>
+        <script src="vendor/js/popper.min.js" ></script>
+        <script src="vendor/js/flipclock.min.js" ></script>
+        <script src="vendor/js/jquery.mCustomScrollbar.concat.min.js" ></script>
+        <script src="vendor/js/slick.min.js" ></script>
+        <script src="vendor/js/bootstrap.min.js" ></script>
+        <script src="js/main.js" ></script>
+    </body>
+</html>

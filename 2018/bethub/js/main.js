@@ -280,16 +280,16 @@ $( document ).ready(function() {
 	        $('.blur-wrapper').removeClass('active-blur');
 	    }
 	}); */
-	var history = document.querySelector('.history-wrapper');
-	var historyShadow = document.querySelector('.history-shadow');
-	var fixTr = document.querySelector('.tr-fixed');
-	history.onscroll = function() {
-		fixTr.style.top = this.scrollTop + 'px';
-		if (this.scrollHeight - this.scrollTop === this.clientHeight) {
-			historyShadow.style.display = 'none';
-		} else {
-			historyShadow.style.display = 'block';
-			historyShadow.style.bottom = '-' + this.scrollTop + 'px';
-		}
-	}	
+	// var history = document.querySelector('.history-wrapper');
+	// var historyShadow = document.querySelector('.history-shadow');
+	// var fixTr = document.querySelector('.tr-fixed');
+	// history.onscroll = function() {
+	// 	fixTr.style.top = this.scrollTop + 'px';
+	// 	if (this.scrollHeight - this.scrollTop === this.clientHeight) {
+	// 		historyShadow.style.display = 'none';
+	// 	} else {
+	// 		historyShadow.style.display = 'block';
+	// 		historyShadow.style.bottom = '-' + this.scrollTop + 'px';
+	// 	}
+	// }	
 });

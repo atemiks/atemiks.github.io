@@ -1,0 +1,240 @@
+.profile-display {
+	display: flex;
+	margin: 0 0 25px;
+	padding: 25px;
+	border-radius: $global-radius;
+	background: url('../images/page-profile/profile-main-bg.png') no-repeat center right #1c2127;
+    background-size: contain;
+	.profile-main {
+		display: flex;
+	}
+	.profile-aside {
+		flex: 1 0 300px;
+		align-self: center;
+		max-width: 300px;
+		margin-left: auto;
+	}
+}
+
+.profile-avatar {
+	flex: 0 0 215px;
+	width: 215px;
+	max-width: 215px;
+	height: 215px;
+	margin-right: 50px;
+	border-radius: $global-radius;
+	background-position: center;
+	background-size: cover;
+}
+
+.profile-info {
+	flex: 1 0 485px;
+	max-width: 485px;
+	padding: 5px 0;
+}
+
+.profile-name {
+	margin: 0;
+	color: #ffffff;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.profile-id {
+	margin: 0;
+	color: #3b404a;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.profile-lvl {
+	font-size: 17px;
+	font-weight: 500;
+	color: #4c5a69;
+	.profile-lvl-title {
+		margin: 12px 0;
+		font-size: 17px;
+		font-weight: 500;
+		color: #fff;
+	}
+
+	.profile-lvl-progress {
+		display: flex;
+		align-items: center;
+		margin-left: -15px;
+		margin-right: -15px;
+		.profile-lvl-current,
+		.profile-lvl-next {
+			flex: 0 0 auto;
+			padding: 0 15px;
+		}
+
+		.profile-lvl-bar {
+			position: relative;
+			flex: 1 1 auto;
+			height: 8px;
+			border-radius: $global-radius;
+			background-color: #242b33;
+			.progress {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: inherit;
+				width: 20%;
+				border-radius: inherit;
+				background: rgb(25,145,233);
+				background: -moz-linear-gradient(left, rgba(25,145,233,1) 0%, rgba(30,179,192,1) 100%);
+				background: -webkit-linear-gradient(left, rgba(25,145,233,1) 0%,rgba(30,179,192,1) 100%);
+				background: linear-gradient(to right, rgba(25,145,233,1) 0%,rgba(30,179,192,1) 100%);
+				box-shadow: 0 0 5px rgba(#1b9dda, .5);
+			}
+		}
+	}
+
+	.profile-lvl-hint {
+		margin: 10px 0;
+		font-size: 15px;
+		font-weight: 500;
+		color: #373c46;
+		line-height: 1.2;
+	}
+}
+
+
+.profile-trade {
+	.trade-title {
+		font-size: 16px;
+		font-weight: 400;
+		color: #ffffff;
+		a {
+			display: block;
+			font-size: 14px;
+			color: #1990ea;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.form-trade {
+		input {
+			height: 42px;
+			margin: 15px 0;
+			background-color: #242b33;
+		}
+
+		.btn {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-radius: $global-radius / .95;
+			font-size: 21px;
+			font-weight: 700;
+		}
+	}
+}
+
+
+.profile-actions-wrapper {
+	margin: 0 0 25px;
+	padding: 15px 25px;
+	border-radius: $global-radius;
+	background-color: #1c2127;
+}
+
+.profile-action {
+	&-title {
+		margin: 5px 0 10px;
+		color: #ffffff;
+		font-size: 15px;
+		font-weight: 400;
+	}
+	&-description {
+		color: #373c46;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.2;
+	}
+
+	.form-profile-action {
+		display: flex;
+		margin: 5px 0 15px;
+		input {
+			flex: 1;
+			height: 34px;
+			width: auto;
+			margin-right: 15px;
+			border-radius: $global-radius / 2;
+			background-color: #242b33;
+		}
+
+		.btn {
+			flex: 0 0 125px;
+			max-width: 125px;
+			padding: 11px 5px;
+			border-radius: $global-radius / 2;
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+
+.profile-stats-wrapper {
+	padding: 25px;
+	border-radius: $global-radius;
+	background: url('../images/page-profile/profile-stats-bg.png') no-repeat center right #1c2127;
+    background-size: contain;
+    .profile-stats-col {
+    	flex: 1 0 315px;
+    	max-width: 315px;
+    	&.lg {
+    		flex: 1 1 425px;
+    		max-width: 425px;
+    	}
+    }
+}
+
+.profile-stats {
+	text-align: center;
+	&-title {
+		margin: 5px 0;
+		color: #414e5b;
+		font-size: 25px;
+		font-weight: 400;
+	}
+	&-value {
+		margin: 10px 0;
+		font-size: 109px;
+		font-weight: 900;
+		color: #fff;
+		line-height: 1;
+		white-space: nowrap;
+	}
+	&-description {
+		margin: 20px 0;
+		color: #43505d;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1;
+	}
+	&-action {
+		margin: 10px 0;
+		padding: 11px 30px;
+		font-size: 28px;
+	}
+
+
+	&.success {
+		.profile-stats-value {
+			color: $success;
+		}
+	}
+}
+
+
+
+

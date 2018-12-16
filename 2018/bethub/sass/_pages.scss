@@ -38,6 +38,69 @@
 }
 
 
+.display-header {
+	margin-bottom: 25px;
+	padding: 15px;
+	border-radius: $global-radius;
+	background-color: #1c2127;
+	color: #fff;
+	text-align: center;
+	p {
+		margin: 0;
+	}
+	a {
+		color: #1990ea;
+		text-decoration: none;
+	}
+
+	.display-title {
+		margin: 0 0 15px;
+		font-size: 39px;
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: -0.83px;
+	}
+	.display-description {
+		margin: 0 0 15px;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1;
+		letter-spacing: -0.33px;
+		
+	}
+}
+
+.headline-title{
+	flex: 2 2;
+	img{
+		display: inline-block;
+		vertical-align: sub;
+		margin-right: 15px;
+	}
+	p {
+		display: inline-block;
+		margin: 0;
+		font-family: $base-font;
+		font-size: 18px;
+		color: #c1c1c2;
+	}
+}
+
+.headline-actions {
+	cursor: default;
+	margin: 0 -8px;
+	padding: 0;
+	list-style: none;
+	.headline-action {
+		display: inline-block;
+		padding-left: 8px;
+		padding-right: 8px;
+		&-link {
+			border-radius: $global-radius / 2;
+		}
+	}
+}
+
 .chat-open {
 	@media screen and (min-width: 1440px) {
 		.container {
@@ -79,8 +142,6 @@
 }
 
 // plugins
-
-
 .slick-slider {
 	.slick-list {
 		margin-left: 60px;

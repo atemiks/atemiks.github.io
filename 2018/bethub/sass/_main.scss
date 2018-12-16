@@ -45,12 +45,11 @@
 }
 
 
-.game-content-wrapper {}
-
 .game-header {
 	overflow: hidden;
 	display: flex;
 	align-items: center;
+	padding: 14px 25px;
 	border-top-left-radius: $global-radius;
 	border-top-right-radius: $global-radius;
 	background-color: #1c2127;
@@ -58,6 +57,7 @@
 	font-weight: 400;
 	color: #b6b6b6;
 	.game-tabs {
+		margin: -14px -25px;
 		flex: 1 1 auto;
 	}
 
