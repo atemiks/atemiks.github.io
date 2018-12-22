@@ -1,0 +1,22 @@
+.article {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.25;
+	p {
+		margin: 10px 0;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	a {
+		border-bottom: 1px dotted $main-color;
+		font-style: italic;
+		font-weight: 600;
+		color: $main-color;
+		text-decoration: none;
+		&:hover {
+			border-bottom-color: transparent;
+		}
+	}
+}

@@ -1,0 +1,110 @@
+.footer {
+	color: #feffff;
+	&-statusbar {
+		background-color: $secondary-color;
+		.btn {
+			@include media-breakpoint-down(lg) {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	&-content {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		background-color: $main-color;
+	}
+
+	&-logo {
+		margin-bottom: 35px;
+	}
+
+	&-headline {
+		@extend .header-headline;
+		margin-bottom: 35px;
+	}
+
+	&-contact {
+		a {
+			color: inherit;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		&-tel {
+			@extend .h3;
+			font-weight: 700;
+		}
+		&-actions {
+			@extend .reset-list;
+			display: flex;
+			justify-content: space-between;
+			margin: 10px -10px;
+			font-size: 13px;
+			font-style: italic;
+			.footer-contact-action {
+				padding: 5px 10px;
+				a {
+					border-bottom: 1px dotted $secondary-color;
+					color: $secondary-color;
+					&:hover {
+						border-bottom-color: transparent;
+					}
+				}
+			}
+		}
+	}
+
+	&-info,
+	&-copyright {
+		color: #9fa6b0;
+		font-size: 13px;
+		font-weight: 400;
+	}
+	&-info {
+		padding-left: 10px;
+		padding-right: 10px;
+		@include media-breakpoint-down(sm) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	&-copyright {
+		white-space: nowrap;
+	}
+}
+
+.footer-nav-list {
+	@extend .header-nav-list;
+	@include media-breakpoint-down(lg) {
+		display: block;
+	}
+
+	.footer-nav-item {
+		@extend .header-nav-item;
+		@include media-breakpoint-down(sm) {
+			display: block;
+		}
+
+		.footer-nav-link {
+			@extend .header-nav-link;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			@include media-breakpoint-down(lg) {
+				display: inline-block;
+				padding: 12px 8px;
+			}
+			@include media-breakpoint-down(sm) {
+				display: block;
+			}
+		}
+
+		&.active {
+			.header-nav-link {
+				background-color: #fff;
+				color: $main-color;
+			}
+		}
+	}
+}

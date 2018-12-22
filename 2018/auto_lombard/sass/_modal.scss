@@ -1,0 +1,64 @@
+.close {
+	cursor: pointer;
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	right: 0;
+	min-width: auto;
+	margin: 0;
+	padding: 5px;
+	width: 36px;
+	height: 36px;
+	border: none;
+	background-color: transparent;
+	line-height: 26px;
+	text-align: center;
+	img {
+		width: 26px;
+	}
+}
+.modal-dialog {
+	max-width: 385px;
+	min-height: 390px;
+}
+.modal-content {
+	border: none;
+	border-radius: 0;
+	background-color: $main-color;
+	color: #fff;
+}
+.modal-header {
+	position: relative;
+	display: block;
+	padding-top: 30px;
+	border-bottom: none;
+	text-align: center;
+	.close {
+		margin: 0;
+		padding: 0;
+	}
+}
+.modal-title {
+	margin: 20px 0;
+	font-family: $heading-font;
+	font-size: 43px;
+	font-weight: 400;
+	color: inherit;
+}
+.modal-subtitle {
+	margin: 5px 0;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.modal-body {
+	padding: 0 30px;
+	.form-modal {
+		margin-top: -30px;
+	}
+	.form-group {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
