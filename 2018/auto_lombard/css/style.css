@@ -5495,6 +5495,12 @@ body.offcanvas-open {
     .form-promo {
       padding-top: 10px;
       padding-bottom: 15px; } }
+  @media (max-width: 767.98px) {
+    .form-promo {
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-left: 15px;
+      padding-right: 15px; } }
   .form-promo .row {
     margin-left: -10px;
     margin-right: -10px;
@@ -5592,6 +5598,9 @@ body.offcanvas-open {
 .pull-right {
   float: right !important; }
 
+.slick-dots li:before {
+  display: none; }
+
 .rangeslider {
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -5625,12 +5634,18 @@ body.offcanvas-open {
           background-size: cover; }
   .section-hero + section {
     padding-top: 110px; }
+    @media (max-width: 575.98px) {
+      .section-hero + section {
+        padding-top: 315px; } }
   .section-hero .breadcrumb {
     margin-top: 0; }
   .section-hero .hero-title {
     margin: 0 0 60px;
     font-family: "Pacifico", cursive;
     line-height: 1.1; }
+    @media (max-width: 575.98px) {
+      .section-hero .hero-title {
+        margin: 0 0 30px; } }
     .section-hero .hero-title span {
       display: block;
       text-align: right; }
@@ -5645,17 +5660,11 @@ body.offcanvas-open {
     @media (max-width: 991.98px) {
       .section-hero .hero-list {
         font-size: 18px; } }
-    @media (max-width: 767.98px) {
-      .section-hero .hero-list {
-        font-size: 16px; } }
     .section-hero .hero-list img {
       display: inline-block;
       vertical-align: middle;
       max-width: 45px;
       height: 40px; }
-      @media (max-width: 767.98px) {
-        .section-hero .hero-list img {
-          height: 30px; } }
     .section-hero .hero-list-item {
       display: -webkit-box;
       display: -webkit-flex;
@@ -5678,22 +5687,26 @@ body.offcanvas-open {
         margin-right: 25px; }
         @media (max-width: 991.98px) {
           .section-hero .hero-list-item .icon {
-            margin-right: 15px; } }
-        @media (max-width: 767.98px) {
-          .section-hero .hero-list-item .icon {
-            -webkit-box-flex: 0;
-            -webkit-flex: 0 0 30px;
-                -ms-flex: 0 0 30px;
-                    flex: 0 0 30px;
-            max-width: 30px;
-            margin-left: 15px; } }
+            margin-right: 15px;
+            -webkit-align-self: center;
+                -ms-flex-item-align: center;
+                    align-self: center; } }
       .section-hero .hero-list-item .value {
         -webkit-align-self: center;
             -ms-flex-item-align: center;
                 align-self: center; }
+        @media (max-width: 575.98px) {
+          .section-hero .hero-list-item .value {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            line-height: 1.25; } }
   .section-hero .form-hero {
     margin-top: 75px;
     margin-bottom: -110px; }
+    @media (max-width: 575.98px) {
+      .section-hero .form-hero {
+        margin-top: 30px;
+        margin-bottom: -315px; } }
 
 .section-services {
   padding-top: 60px;
@@ -6045,12 +6058,16 @@ body.offcanvas-open {
           padding: 0 0 0 20px; } }
       .calc-type-list .calc-type-item:before {
         content: '';
+        display: block !important;
         position: absolute;
         top: 3px;
         left: 0;
         width: 16px;
         height: 16px;
-        border: 2px solid #05274f; }
+        border: 2px solid #05274f;
+        -webkit-border-radius: 0;
+                border-radius: 0;
+        background-color: transparent; }
         @media (max-width: 767.98px) {
           .calc-type-list .calc-type-item:before {
             top: 2px;
@@ -6337,7 +6354,7 @@ body.offcanvas-open {
   @media (max-width: 767.98px) {
     .contact-box {
       top: 25px;
-      margin: 25px auto 10px 0; } }
+      margin: 25px auto 40px; } }
   .contact-box a {
     color: inherit; }
   .contact-box .contact-title,
@@ -6624,7 +6641,13 @@ body.offcanvas-open {
   @media (max-width: 767.98px) {
     .footer-nav-list .footer-nav-item .footer-nav-link {
       display: block; } }
+  @media (max-width: 991.98px) {
+    .footer-nav-list .footer-nav-item .footer-nav-link:hover {
+      background-color: transparent; } }
 
 .footer-nav-list .footer-nav-item.active .header-nav-link, .footer-nav-list .footer-nav-item.active .footer-nav-link {
   background-color: #fff;
   color: #05274f; }
+  @media (max-width: 991.98px) {
+    .footer-nav-list .footer-nav-item.active .header-nav-link, .footer-nav-list .footer-nav-item.active .footer-nav-link {
+      background-color: transparent; } }

@@ -98,12 +98,21 @@
 			@include media-breakpoint-down(sm) {
 				display: block;
 			}
+
+			&:hover {
+				@include media-breakpoint-down(md) {
+					background-color: transparent;
+				}
+			}
 		}
 
 		&.active {
 			.header-nav-link {
 				background-color: #fff;
 				color: $main-color;
+				@include media-breakpoint-down(md) {
+					background-color: transparent;
+				}
 			}
 		}
 	}

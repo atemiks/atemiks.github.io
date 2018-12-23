@@ -7,6 +7,9 @@
 
 	+ section {
 		padding-top: 110px;
+		@include media-breakpoint-down(xs) {
+			padding-top: 315px;
+		}
 	}
 
 	.breadcrumb {
@@ -17,6 +20,10 @@
 		margin: 0 0 60px;
 		font-family: $heading-font;
 		line-height: 1.1;
+		@include media-breakpoint-down(xs) {
+			margin: 0 0 30px;
+		}
+
 		span {
 			display: block;
 			text-align: right;
@@ -35,18 +42,12 @@
 		@include media-breakpoint-down(md) {
 			font-size: 18px;
 		}
-		@include media-breakpoint-down(sm) {
-			font-size: 16px;
-		}
 
 		img {
 			display: inline-block;
 			vertical-align: middle;
 			max-width: 45px;
 			height: 40px;
-			@include media-breakpoint-down(sm) {
-				height: 30px;
-			}
 		}
 
 		&-item {
@@ -66,15 +67,16 @@
 				margin-right: 25px;
 				@include media-breakpoint-down(md)  {
 					margin-right: 15px;
-				}
-				@include media-breakpoint-down(sm) {
-					flex: 0 0 30px;
-					max-width: 30px;
-					margin-left: 15px;
+					align-self: center;
 				}
 			}
 			.value {
 				align-self: center;
+				@include media-breakpoint-down(xs) {
+					padding-top: 5px;
+					padding-bottom: 5px;
+					line-height: 1.25;
+				}
 			}
 		}
 	}
@@ -82,6 +84,10 @@
 	.form-hero {
 		margin-top: 75px;
 		margin-bottom: -110px;
+		@include media-breakpoint-down(xs) {
+			margin-top: 30px;
+			margin-bottom: -315px;
+		}
 	}
 }
 
@@ -477,12 +483,15 @@
 
 			&:before {
 				content: '';
+				display: block !important;
 				position: absolute;
 				top: 3px;
 				left: 0;
 				width: 16px;
 				height: 16px;
 				border: 2px solid $main-color;
+				border-radius: 0;
+				background-color: transparent;
 				@include media-breakpoint-down(sm) {
 					top: 2px;
 					width: 14px;
@@ -804,7 +813,7 @@
 	}
 	@include media-breakpoint-down(sm) {
 		top: 25px;
-		margin: 25px auto 10px 0;
+		margin: 25px auto 40px;
 	}
 
 	a {
