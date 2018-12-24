@@ -195,6 +195,69 @@ $( document ).ready(function() {
 
     $('.range-time-value-left').text($('#range-time-slider').attr('min')).append(' месяцев');
     $('.range-time-value-right').text($('#range-time-slider').attr('max')).append(' месяцев');
+
+
+    // forms
+    $("#modalCallback .form-modal").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "/formModalCallback.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+
+            $('#modalCallback').modal('hide');
+            $('#modalThanks').modal('show');
+
+            $("#modalCallback .form-modal").trigger("reset");
+        });
+        return false;
+    });
+
+    $("#form-promo").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "/formPromo.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            
+            $('#modalThanks').modal('show');
+
+            $("#form-promo").trigger("reset");
+        });
+        return false;
+    });
+
+    $("#form-hero").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "/formHero.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            
+            $('#modalThanks').modal('show');
+
+            $("#form-hero").trigger("reset");
+        });
+        return false;
+    });
+
+    $(".form-calc").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "/formCalc.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            
+            $('#modalThanks').modal('show');
+
+            $(".form-calc").trigger("reset");
+        });
+        return false;
+    });
 });
 
 
