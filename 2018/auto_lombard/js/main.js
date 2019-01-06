@@ -58,6 +58,40 @@ $( document ).ready(function() {
 
 
 	// calculator
+
+    /* type */
+
+    function currentPersent() {
+        var calcTypeList = $('.calc-type-list');
+        var currentTypeItem = $(calcTypeList).find('.calc-type-item.active').text();
+
+        switch(currentTypeItem) {
+            case 'под ПТС': 
+                return 1.05;
+                break;
+            case 'под авто':
+                return 1.07;
+                break;
+            default:
+                return 1.05;
+        }
+    }
+
+    currentPersent();
+
+    $('.calc-type-list').on('click', '.calc-type-item', function() {
+        var self = $(this);
+        var parrent = $(self).closest('.calc-type-list');
+
+        $(parrent).find('.calc-type-item').removeClass('active');
+        $(self).addClass('active');
+
+        currentPersent();
+        resultSum = getSum / getTime * currentPersent() ;
+        $('.result-box .result-sum span').text(resultSum.toFixed(0)).divide();
+    });
+
+
     $.fn.setCursorPosition = function (pos) {
         this.each(function (index, elem) {
             if (elem.setSelectionRange) {
@@ -73,7 +107,6 @@ $( document ).ready(function() {
         return this;
     };
 
-    var coeff = 4.5;
     var $rangeSumSlider = $('#range-sum-slider');
     var $rangeSumImport = $('#range-sum-input');
 
@@ -82,11 +115,8 @@ $( document ).ready(function() {
 
     var getSum = $('#range-sum-input').val();
     var getTime = $('#range-time-input').val();
-    // var resultSum = getSum / 100 * coeff;
-    // var resultCalc =  getSum / 100 * (coeff / 30);
-    var resultSum = getSum / getTime;
+    var resultSum = getSum / getTime * currentPersent();
     $('.result-box .result-sum span').text(resultSum.toFixed(0)).divide();
-    // $('.result-box .result span').text(resultCalc.toFixed(0)).divide();
 
     // range sum
     $rangeSumSlider
@@ -99,14 +129,11 @@ $( document ).ready(function() {
             getTime = $('#range-time-input').val();
 
             if(getSum != 0 && getTime != 0 ) {
-                resultSum = getSum / getTime;
-                // resultCalc = getSum / 100 * (coeff / 30);
+                resultSum = getSum / getTime * currentPersent() ;
                 $('.result-box .result-sum span').text(resultSum.toFixed(0)).divide();
-                // $('.result-box .result span').text(resultCalc.toFixed(0)).divide();
             }
             else {
                 $('.result-box .result-sum span').text('0');
-                // $('.result-box .result span').text('0');
             }
         });
 
@@ -116,16 +143,13 @@ $( document ).ready(function() {
         getTime = $('#range-time-input').val();
 
         if(getSum != 0 && getTime != 0 ) {
-            resultSum = getSum / 100 * coeff;
-                resultCalc = getSum / getTime;
+                resultCalc = getSum / getTime * currentPersent() ;
                 $('.result-box .result-sum span').text(resultSum.toFixed(0)).divide();
-                // $('.result-box .result span').text(resultCalc.toFixed(0)).divide();
                 $rangeSumSlider.val(getSum).change();
         }
         else {
             this.value = 0;
             $('.result-box .result-sum span').text('0');
-                // $('.result-box .result span').text('0');
                 $rangeSumSlider.val(this.value).change();
         }
     });
@@ -141,14 +165,11 @@ $( document ).ready(function() {
             getTime = $('#range-time-input').val();
 
             if(getSum != 0 && getTime != 0 ) {
-                resultSum = getSum / getTime;
-                // resultCalc = getSum / 100 * (coeff / 30);
+                resultSum = getSum / getTime * currentPersent() ;
                 $('.result-box .result-sum span').text(resultSum.toFixed(0)).divide();
-                // $('.result-box .result span').text(resultCalc.toFixed(0)).divide();
             }
             else {
                 $('.result-box .result-sum span').text('0');
-                // $('.result-box .result span').text('0');
             }
 
         });
