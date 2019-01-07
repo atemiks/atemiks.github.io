@@ -90,18 +90,18 @@ $( document ).ready(function() {
 	$('.game-active-members-slider').slick({
 		infinite: true,
   		slidesToShow: 11,
-  		slidesToScroll: 6,
-  		responsive: [
-	    {
-	      breakpoint: 1200,
-	      settings: {
-	        slidesToShow: 8,
-	        slidesToScroll: 6,
-	        infinite: true,
-	        dots: false
-	      }
-	    }
-	  ]
+  		slidesToScroll: 6
+  	// 	responsive: [
+	  //   {
+	  //     breakpoint: 1680,
+	  //     settings: {
+	  //       slidesToShow: 8,
+	  //       slidesToScroll: 6,
+	  //       infinite: true,
+	  //       dots: false
+	  //     }
+	  //   }
+	  // ]
 	});
 
 	$('.bid-products-slider').slick({

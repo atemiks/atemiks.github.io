@@ -5,6 +5,11 @@
 	border-radius: $global-radius;
 	background: url('../images/page-profile/profile-main-bg.png') no-repeat center right #1c2127;
     background-size: contain;
+    @media screen and (max-width: 1680px) {
+    	margin: 0 0 20px;
+    	padding: 20px;
+    }
+
 	.profile-main {
 		display: flex;
 	}
@@ -13,6 +18,10 @@
 		align-self: center;
 		max-width: 300px;
 		margin-left: auto;
+		@media screen and (max-width: 1680px) {
+			flex: 1 0 240px;
+			max-width: 240px;
+		}
 	}
 }
 
@@ -25,6 +34,13 @@
 	border-radius: $global-radius;
 	background-position: center;
 	background-size: cover;
+	@media screen and (max-width: 1680px) {
+		flex: 0 0 175px;
+		width: 175px;
+		max-width: 175px;
+		height: 175px;
+		margin-right: 35px;
+	}
 }
 
 .profile-info {
@@ -38,6 +54,9 @@
 	color: #ffffff;
 	font-size: 32px;
 	font-weight: 700;
+	@media screen and (max-width: 1680px) {
+		font-size: 26px;
+	}
 }
 
 .profile-id {
@@ -46,17 +65,28 @@
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
+	@media screen and (max-width: 1680px) {
+		font-size: 13px;
+	}
 }
 
 .profile-lvl {
 	font-size: 17px;
 	font-weight: 500;
 	color: #4c5a69;
+	@media screen and (max-width: 1680px) {
+		font-size: 15px;
+	}
+
 	.profile-lvl-title {
 		margin: 12px 0;
 		font-size: 17px;
 		font-weight: 500;
 		color: #fff;
+		@media screen and (max-width: 1680px) {
+			margin: 8px 0;
+			font-size: 15px;
+		}
 	}
 
 	.profile-lvl-progress {
@@ -107,11 +137,19 @@
 		font-size: 16px;
 		font-weight: 400;
 		color: #ffffff;
+		@media screen and (max-width: 1680px) {
+			font-size: 15px;
+		}
+
 		a {
 			display: block;
 			font-size: 14px;
 			color: #1990ea;
 			text-decoration: underline;
+			@media screen and (max-width: 1680px) {
+				font-size: 13px;
+			}
+
 			&:hover {
 				text-decoration: none;
 			}
@@ -123,6 +161,10 @@
 			height: 42px;
 			margin: 15px 0;
 			background-color: #242b33;
+			@media screen and (max-width: 1680px) {
+				height: 35px;
+				font-size: 13px;
+			}
 		}
 
 		.btn {
@@ -131,6 +173,11 @@
 			border-radius: $global-radius / .95;
 			font-size: 21px;
 			font-weight: 700;
+			@media screen and (max-width: 1680px) {
+				padding-top: 8px;
+				padding-bottom: 8px;
+				font-size: 18px;
+			}
 		}
 	}
 }
@@ -141,6 +188,11 @@
 	padding: 15px 25px;
 	border-radius: $global-radius;
 	background-color: #1c2127;
+	@media screen and (max-width: 1680px) {
+		margin: 0 0 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 .profile-action {
@@ -149,12 +201,18 @@
 		color: #ffffff;
 		font-size: 15px;
 		font-weight: 400;
+		@media screen and (max-width: 1680px) {
+			font-size: 14px;
+		}
 	}
 	&-description {
 		color: #373c46;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 1.2;
+		@media screen and (max-width: 1680px) {
+			font-size: 13px;
+		}
 	}
 
 	.form-profile-action {
@@ -167,6 +225,10 @@
 			margin-right: 15px;
 			border-radius: $global-radius / 2;
 			background-color: #242b33;
+			@media screen and (max-width: 1680px) {
+				height: 28px;
+				font-size: 12px;
+			}
 		}
 
 		.btn {
@@ -177,6 +239,11 @@
 			font-size: 14px;
 			font-weight: 700;
 			text-transform: uppercase;
+			@media screen and (max-width: 1680px) {
+				font-size: 12px;
+				padding-top: 8px;
+				padding-bottom: 8px;
+			}
 		}
 	}
 }
@@ -188,6 +255,10 @@
 	border-radius: $global-radius;
 	background: url('../images/page-profile/profile-stats-bg.png') no-repeat center right #1c2127;
     background-size: contain;
+    @media screen and (max-width: 1680px) {
+    	padding: 20px;
+    }
+
     .profile-stats-col {
     	flex: 1 0 315px;
     	max-width: 315px;
@@ -205,6 +276,9 @@
 		color: #414e5b;
 		font-size: 25px;
 		font-weight: 400;
+		@media screen and (max-width: 1680px) {
+			font-size: 21px;
+		}
 	}
 	&-value {
 		margin: 10px 0;
@@ -213,6 +287,9 @@
 		color: #fff;
 		line-height: 1;
 		white-space: nowrap;
+		@media screen and (max-width: 1680px) {
+			font-size: 88px;
+		}
 	}
 	&-description {
 		margin: 20px 0;
@@ -220,11 +297,19 @@
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 1;
+		@media screen and (max-width: 1680px) {
+			font-size: 15px;
+		}
 	}
 	&-action {
 		margin: 10px 0;
 		padding: 11px 30px;
 		font-size: 28px;
+		@media screen and (max-width: 1680px) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 23px;
+		}
 	}
 
 

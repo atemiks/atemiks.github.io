@@ -9,6 +9,7 @@
 }
 
 $size: 76px;
+$size-desktop: 60px;
 $size-sm: 48px;
 
 .user-pie-chart {
@@ -17,14 +18,28 @@ $size-sm: 48px;
     border-radius: 50%;
     background-color: #2a3039;
     position: relative;
+    @media screen and (max-width: 1680px) {
+        width: $size-desktop;
+        height: $size-desktop;
+    }
+
     .ppc-progress {
         @include circle($size);
         clip: rect(0, $size, $size, #{$size/2});
+        @media screen and (max-width: 1680px) {
+            @include circle($size-desktop);
+            clip: rect(0, $size-desktop, $size-desktop, #{$size-desktop/2});
+        }
+
         .ppc-progress-fill {
             @include circle($size);
             clip: rect(0, #{$size/2}, $size, 0);
             background: #475462;
             transform: rotate(60deg);
+            @media screen and (max-width: 1680px) {
+                @include circle($size-desktop);
+                clip: rect(0, #{$size-desktop/2}, $size-desktop, 0);
+            }
         }
     }
     
@@ -32,9 +47,15 @@ $size-sm: 48px;
         background-color: #475462;
         .ppc-progress {
             clip: rect(0, #{$size/2}, $size, 0);
+            @media screen and (max-width: 1680px) {
+                clip: rect(0, #{$size-desktop/2}, $size-desktop, 0);
+            }
             .ppc-progress-fill {
                 clip: rect(0, $size, $size, #{$size/2});
                 background: #1e2227;
+                @media screen and (max-width: 1680px) {
+                    clip: rect(0, $size-desktop, $size-desktop, #{$size-desktop/2});
+                }
             }
         }
     }
@@ -44,10 +65,18 @@ $size-sm: 48px;
 .ppc-content {
     position: relative;
     padding: 8px;
+    @media screen and (max-width: 1680px) {
+        padding: 6px;
+    }
+
     .ppc-thumbnail {
         width: 60px;
         height: 60px;
         border-radius: 50%;
+        @media screen and (max-width: 1680px) {
+            width: 48px;
+            height: 48px;
+        }
     }
 
     .ppc-level {
@@ -68,6 +97,15 @@ $size-sm: 48px;
         letter-spacing: 1.29px;
         line-height: 1;
         text-align: center;
+        @media screen and (max-width: 1680px) {
+            bottom: -3px;
+            min-width: 45px;
+            padding-top: 0;
+            padding-bottom: 0;
+            border-width: 3px;
+            font-size: 10px;
+            line-height: 14px;
+        }
     }
 }
 

@@ -13,6 +13,10 @@
 	background-color: $primary;
 	font-size: 20px;
 	color: #fff;
+	@media screen and (max-width: 1680px) {
+		height: 63px;
+		width: 63px;
+	}
 }
 
 .navigation-wrapper {
@@ -29,6 +33,10 @@
 	background-color: #242b33;
 	box-shadow: 2px 0 32px rgba(23, 26, 31, 0.35);
 	transition: width 400ms ease;
+	@media screen and (max-width: 1680px) {
+		top: 63px;
+		width: 63px;
+	}
 
 	.navigation-top {
 		flex: 1 1 auto;
@@ -85,6 +93,12 @@
 		transition: background-color 300ms ease, border-radius 300ms ease;
 		font-size: 24px;
 		color: #d4d4d4;
+		@media screen and (max-width: 1680px) {
+			flex: 0 0 46px;
+			height: 46px;
+			margin: 0 20px 0 0;
+		}
+
 		i.icon-crown {
 			font-size: 26px;
 		}
@@ -92,6 +106,10 @@
 			width: 35px;
 			height: 35px;
 			background: url(../images/icons/icon-chip.svg);
+			@media screen and (max-width: 1680px) {
+				width: 26px;
+				height: 26px;
+			}
 		}
 		i.icon-stat {
 			font-size: 40px;
@@ -120,22 +138,33 @@
 		visibility: hidden;
 		top: 50%;
 		left: 90px;
-		// left: -100%;
 		flex: 0 0 160px;
 		width: 160px;
 		transform: translateY(-50%);
 		transition: 300ms left ease, opacity 50ms ease, visibility 50ms ease;
+		@media screen and (max-width: 1680px) {
+			left: 80px;
+			flex: 0 0 125px;
+			width: 125px;
+		}
+
 		.navigation-title {
 			display: block;
 			color: #fff;
 			font-size: 18px;
 			font-weight: 600;
+			@media screen and (max-width: 1680px) {
+				font-size: 14px;
+			}
 		}
 		.navigation-subtitle {
 			display: block;
 			color: #4c5a69;
 			font-size: 14px;
 			font-weight: 400;
+			@media screen and (max-width: 1680px) {
+				font-size: 11px;
+			}
 		}
 	}
 }
@@ -154,6 +183,11 @@
 				width: 10px;
 				border-radius: 5px;
 				background-color: $primary;
+				@media screen and (max-width: 1680px)  {
+					top: 5px;
+					left: -8px;
+					bottom: 5px;
+				}
 			}
 
 			.navigation-thumbnail {
@@ -198,6 +232,10 @@
 
 .navigation-wrapper.visible {
 	width: 280px;
+	@media screen and (max-width: 1680px) {
+		width: 210px;
+	}
+
 	.navigation-card {
 		.navigation-content {
 			opacity: 1;

@@ -309,6 +309,12 @@
 			flex: 0 0 134px;
 			max-width: 134px;
 			height: 134px;
+			@media screen and (max-width: 1680px) {
+				flex: 0 0 104px;
+				max-width: 104px;
+				height: 104px;
+			}
+
 			.inventory-card {
 				&:after {
 					height: 28px;
@@ -420,6 +426,11 @@
 	background-color: #242b33;
 	box-shadow: -2px 0 32px rgba(23, 26, 31, 0.35);
 	transition: right 300ms ease;
+	@media screen and (max-width: 1680px) {
+		right: -760px;
+		width: 740px;
+	}
+
 	&.visible {
 		right: 0;
 	}

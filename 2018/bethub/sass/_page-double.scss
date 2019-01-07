@@ -3,16 +3,25 @@
 	width: 30px;
 	height: 30px;
 	margin: 12px 25px 15px 0 !important;
+	@media screen and (max-width: 1680px) {
+		width: 24px;
+		height: 24px;
+		margin-right: 20px;
+	}
 }
 
 .game-header-info{
 	&-item{
-		label{
+		label {
 			font-family: $base-font;
 			color: #516070;
 			font-size: 12px;
 			display: inline-block;
+			@media screen and (max-width: 1680px) {
+				font-size: 10px;
+			}
 		}
+
 		input{
 			display: inline-block;
 			width: 350px;
@@ -21,6 +30,12 @@
 			padding: 0 12px;
 			line-height: 1.5;
 			font-size: 12px;
+			@media screen and (max-width: 1680px) {
+				width: 280px;
+				height: 21px;
+				padding: 0 9px;
+				font-size: 10px;
+			}
 		}
 	}
 }
@@ -32,19 +47,23 @@
 	border-radius: $global-radius;
 }
 
-.start-betting{
+.start-betting {
 	height: 54px;
 	background-color: #242b33;
 	border-radius: $global-radius;
 	position: relative;
 	z-index: 5;
 	padding-top: 15px;
+	@media screen and (max-width: 1680px) {
+		height: 44px;
+		padding-top: 12px;
+	}
+
 	&_progress{
 		position: absolute;
 		top: 0;
 		left: 0;
 		z-index: 1;
-		width: 25%;
 		height: 100%;
 		background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
 		background-size: 3rem 3rem;
@@ -53,7 +72,8 @@
 		box-shadow: 0px 0px 18px 1px rgba(54,174,69,1);
 		animation: progress-bar 1s linear infinite;
 		padding: 12px 0 0 26px;
-		b{
+
+		b {
 			font-family: $base-font;
 			font-size: 20px;
 			font-weight: 700;
@@ -61,9 +81,13 @@
 			text-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
 			position: absolute;
 			min-width: 250px;
+			@media screen and (max-width: 1680px) {
+				font-size: 16px;
+			}
 		}
 	}
-	p{
+
+	p {
 		font-family: $base-font;
 		font-size: 16px;
 		color: #ffffff;
@@ -71,32 +95,49 @@
 		margin: 0 auto;
 		position: relative;
 		z-index: 2;
-		img{
+		@media screen and (max-width: 1680px) {
+			font-size: 13px;
+		}
+
+		img {
 			display: inline-block;
 			width: 12px;
 			height: 14px;
 			margin-right: 13px;
 			animation: send-time 5s linear forwards infinite;
+			@media screen and (max-width: 1680px) {
+				width: 9px;
+				height: 11px;
+			}
 		}
 	}
 }
 
-.scroll-history{
+.scroll-history {
 	padding: 0 128px;
 	margin-bottom: 20px;
 	font-family: $base-font;
 	display: flex;
+	@media screen and (max-width: 1680px) {
+		padding: 0 85px;
+	}
+
 	&_nums{
 		flex: 3 1 auto;
-		p{
+		p {
 			font-size: 16px;
 			color: #516070;
 			display: inline-block;
 			margin-right: 25px;
+			@media screen and (max-width: 1680px) {
+				margin-right: 20px;
+				font-size: 13px;
+			}
 		}
+
 		ul{
 			display: inline-block;
-			li{
+			li {
 				list-style: none;
 				display: inline-block;
 				width: 39px;
@@ -106,8 +147,18 @@
 				padding-top: 6px;
 				color: #ffffff;
 				border-radius: $global-radius;
+				@media screen and (max-width: 1680px) {
+					width: 30px;
+					height: 30px;
+					border-radius: $global-radius/2;
+					font-size: 14px;
+				}
+
 				&:nth-of-type(n+2){
 					margin-left: 19px;
+					@media screen and (max-width: 1680px) {
+						margin-left: 14px;
+					}
 				}
 			}
 		}
@@ -116,27 +167,40 @@
 		flex: 1 1 auto;
 		margin-top: 5px;
 		margin-left: 15px;
-		p{
+		p {
 			font-size: 16px;
 			color: #516070;
 			display: inline-block;
 			margin-right: 20px;
+			@media screen and (max-width: 1680px) {
+				font-size: 13px;
+			}
 		}
-		ul{
+
+		ul {
 			display: inline-block;
-			li{
+			li {
 				list-style: none;
 				display: inline-block;
 				font-size: 16px;
 				color: #ffffff;
-				span{
+				@media screen and (max-width: 1680px) {
+					font-size: 13px;
+				}
+
+				span {
 					display: inline-block;
 					width: 25px;
 					height: 25px;
 					border-radius: 50%;
 					margin-bottom: -5px;
 					margin-right: 7px;
+					@media screen and (max-width: 1680px) {
+						width: 20px;
+						height: 20px;
+					}
 				}
+
 				&:nth-of-type(n+2){
 					margin-left: 10px;
 				}
@@ -164,16 +228,22 @@
 	z-index: 1;
 	font-family: $base-font;
 	height: 117px;
-	ul{
+	@media screen and (max-width: 1680px) {
+		height: 94px;
+		padding: 15px 10px;
+	}
+
+	ul {
 		width: 100%;
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
-		li{
+		li {
 			list-style: none;
 			width: 78px;
 			height: 78px;
 			flex: 0 0 78px;
+			max-width: 78px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -181,8 +251,18 @@
 			font-size: 30px;
 			color: #ffffff;
 			text-align: center;
+			@media screen and (max-width: 1680px) {
+				flex: 0 0 63px;
+				max-width: 63px;
+				height: 63px;
+				font-size: 24px;
+			}
+
 			&:nth-of-type(n+2){
 				margin-left: 12px;
+				@media screen and (max-width: 1680px) {
+					margin-left: 8px;
+				}
 			}
 		}
 	}
@@ -211,17 +291,25 @@
 .win-arrow-top{
 	position: absolute;
 	z-index: 2;
-	top: -15px;
+	top: 0;
 	left: 50%;
-	margin-left: -17px;
+	width: 35px;
+	transform: translate(-50%, -40%);
+	@media screen and (max-width: 1680px) {
+		width: 30px;
+	}
 }
 
 .win-arrow-bottom{
 	position: absolute;
 	z-index: 2;
-	bottom: -10px;
+	bottom: 0;
 	left: 50%;
-	margin-left: -17px;
+	width: 35px;
+	transform: translate(-50%, 40%);
+	@media screen and (max-width: 1680px) {
+		width: 30px;
+	}
 }
 
 .bet-amount{
@@ -231,6 +319,11 @@
 	border-radius: $global-radius;
 	font-family: $base-font;
 	padding: 27px 26px;
+	@media screen and (max-width: 1680px) {
+		margin-top: 25px;
+		padding: 20px;
+	}
+
 	&_cost{
 		flex: 1 1;
 		input{
@@ -239,13 +332,17 @@
 			font-size: 18px;
 			color: #fff;
 			height: 42px;
+			@media screen and (max-width: 1680px) {
+				max-width: 245px;
+				height: 35px;
+			}
 		}
 	}
-	&_choice{
-		flex: 2 2;
+	&_choice {
+		flex: 0 1 auto;
 		position: relative;
-		margin-left: 20px;
-		button{
+		padding: 0 20px;
+		button {
 			width: 74px;
 			height: 42px;
 			font-size: 17px;
@@ -255,10 +352,20 @@
 			border-radius: $global-radius;
 			cursor: pointer;
 			outline: none;
-			transition: 0.3s;
+			transition: border-color 0.3s ease;
+			@media screen and (max-width: 1680px) {
+				width: 59px;
+				height: 35px;
+				font-size: 14px;
+			}
+
 			&:nth-of-type(n+2){
 				margin-left: 10px;
+				@media screen and (max-width: 1680px) {
+					margin-left: 6px;
+				}
 			}
+
 			&:hover{
 				border: 1px solid #1990ea;
 				color: #1990ea;
@@ -268,6 +375,9 @@
 			width: 97px;
 			border: 1px solid #1990ea;
 			color: #1990ea;
+			@media screen and (max-width: 1680px) {
+				width: 78px;
+			}
 		}
 		.max{
 			box-shadow: 0 0 29px rgba(25, 144, 234, 0.15);
@@ -282,10 +392,13 @@
 			content: '';
 			position: absolute;
 			top: -10px;
-			right: -10px;
+			right: 0;
 			width: 1px;
 			height: 56px;
 			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+			@media screen and (max-width: 1680px) {
+				display: none;
+			}
 		}
 	}
 	&_size{
@@ -297,6 +410,10 @@
 			font-size: 17px;
 			color: #516070;
 			margin-bottom: 0;
+			@media screen and (max-width: 1680px) {
+				font-size: 14px;
+			}
+
 			span{
 				color: #36af46;
 				font-weight: 600;
@@ -305,18 +422,23 @@
 	}
 }
 
-.win-lot{
+.win-lot {
 	margin-top: 30px;
 	font-family: $base-font;
 	display: flex;
 	justify-content: space-between;
-	&_red{
+	&_red {
 		flex: 1 1;
 		max-width: 389px;
 		background-color: #1c2127;
 		border-radius: $global-radius;
 		padding: 26px 26px 17px;
-		.red-title{
+		@media screen and (max-width: 1680px) {
+			max-width: 310px;
+			padding: 20px 20px 10px;
+		}
+
+		.red-title {
 			width: 100%;
 			margin: 0 auto;
 			padding: 13px 0 9px;
@@ -328,11 +450,19 @@
 			border-radius: $global-radius;
 			text-align: center;
 			background-color: #e74141;
-			b{
+			@media screen and (max-width: 1680px) {
+				padding-top: 11px;
+			}
+
+			b {
 				font-size: 22px;
 				font-weight: 700;
 				color: #ffffff;
+				@media screen and (max-width: 1680px) {
+					font-size: 18px;
+				}
 			}
+
 			&:before{
 				content: '';
 				position: absolute;
@@ -353,21 +483,32 @@
 		}
 		.biggest-bet{
 			display: flex;
+			align-items: center;
 			background-color: #242b33;
 			border-radius: $global-radius;
-			padding: 11px 16px 0;
+			padding: 11px 16px;
 			margin: 24px auto 17px;
 			.player{
 				flex: 2 2;
+				display: flex;
+				align-items: center;
 				img{
+					flex: 0 0 34px;
 					max-width: 34px;
-					float: left;
 					margin-right: 15px;
+					@media screen and (max-width: 1680px) {
+						flex: 0 0 28px;
+						max-width: 28px;
+					}
 				}
-				p{
+
+				p {
+					margin: 0;
 					font-size: 15px;
 					color: #ffffff;
-					margin-top: 8px;
+					@media screen and (max-width: 1680px) {
+						font-size: 12px;
+					}
 				}
 			}
 			.player-bet{
@@ -375,7 +516,9 @@
 				text-align: right;
 				font-size: 15px;
 				color: #36af46;
-				margin-top: 8px;
+				@media screen and (max-width: 1680px) {
+					font-size: 12px;
+				}
 			}
 		}
 	}
@@ -387,6 +530,9 @@
 			font-size: 13px;
 			color: #2f3741;
 			margin-bottom: 10px;
+			@media screen and (max-width: 1680px) {
+				font-size: 11px;
+			}
 		}
 		.participants{
 			flex: 1 1;
@@ -414,35 +560,53 @@
 	}
 }
 
-.all-users{
+.all-users {
 	&_line{
 		display: flex;
+		align-items: center;
 		padding: 10px 16px 9px;
 		cursor: pointer;
-		transition: 0.3s;
+		transition: background-color 0.3s ease;
+		@media screen and (max-width: 1680px) {
+			padding: 5px 10px;
+		}
+
 		.user-info{
 			flex: 2 2;
+			display: flex;
+			align-items: center;
 			img{
-				float: left;
+				flex: 0 0 30px;
+				max-width: 30px;
 				margin-right: 13px;
+				@media screen and (max-width: 1680px) {
+					flex: 0 0 25px;
+					max-width: 25px;
+				}
 			}
-			p{
-				margin-top: 5px;
-				margin-bottom: 0;
+			p {
+				margin: 0;
 				font-size: 13px;
 				color: #ffffff;
+				@media screen and (max-width: 1680px) {
+					font-size: 10px;
+				}
 			}
 		}
 		.user-bet{
 			flex: 1 1;
-			margin-top: 3px;
 			text-align: right;
-			b{
+			b {
 				font-size: 13px;
 				color: #36af46;
 				text-transform: uppercase;
+				@media screen and (max-width: 1680px) {
+					font-size: 12px;
+					font-weight: 400;
+				}
 			}
 		}
+
 		&:hover{
 			background-color: #1f242b;
 			p, b{
@@ -459,6 +623,11 @@
 		background-color: #1c2127;
 		border-radius: $global-radius;
 		padding: 26px 26px 17px;
+		@media screen and (max-width: 1680px) {
+			max-width: 310px;
+			padding: 20px 20px 10px;
+		}
+
 		.green-title{
 			width: 100%;
 			margin: 0 auto;
@@ -471,11 +640,19 @@
 			border-radius: $global-radius;
 			text-align: center;
 			background-color: #36af46;
-			b{
+			@media screen and (max-width: 1680px) {
+				padding-top: 11px;
+			}
+
+			b {
 				font-size: 22px;
 				font-weight: 700;
 				color: #ffffff;
+				@media screen and (max-width: 1680px) {
+					font-size: 18px;
+				}
 			}
+
 			&:before{
 				content: '';
 				position: absolute;
@@ -496,21 +673,32 @@
 		}
 		.biggest-bet{
 			display: flex;
+			align-items: center;
 			background-color: #242b33;
 			border-radius: $global-radius;
-			padding: 11px 16px 0;
+			padding: 11px 16px;
 			margin: 24px auto 17px;
-			.player{
+			.player {
 				flex: 2 2;
-				img{
+				display: flex;
+				align-items: center;
+				img {
+					flex: 0 0 34px;
 					max-width: 34px;
-					float: left;
 					margin-right: 15px;
+					@media screen and (max-width: 1680px) {
+						flex: 0 0 28px;
+						max-width: 28px;
+					}
 				}
-				p{
+
+				p {
+					margin: 0;
 					font-size: 15px;
 					color: #ffffff;
-					margin-top: 8px;
+					@media screen and (max-width: 1680px) {
+						font-size: 12px;
+					}
 				}
 			}
 			.player-bet{
@@ -518,7 +706,9 @@
 				text-align: right;
 				font-size: 15px;
 				color: #36af46;
-				margin-top: 8px;
+				@media screen and (max-width: 1680px) {
+					font-size: 12px;
+				}
 			}
 		}
 	}
@@ -526,30 +716,38 @@
 		max-width: 305px;
 		margin: 0 auto;
 		display: flex;
-		p{
+		@media screen and (max-width: 1680px) {
+			padding: 0 10px;
+		}
+
+		p {
 			font-size: 13px;
 			color: #2f3741;
 			margin-bottom: 10px;
+			@media screen and (max-width: 1680px) {
+				font-size: 11px;
+			}
 		}
-		.participants{
+		.participants {
 			flex: 1 1;
-			p{
-				span{
+			p {
+				span {
 					color: #1990ea;
 				}
 			}
 		}
-		.total-amount{
+		.total-amount {
 			flex: 1 1;
 			text-align: right;
-			p{
-				span{
+			p {
+				span {
 					color: #36af46;
 				}
 			}
 		}
 	}
-	hr{
+
+	hr {
 		margin: 0;
 		width: 100%;
 		height: 1px;
@@ -557,14 +755,19 @@
 	}
 }
 
-.win-lot{
+.win-lot {
 	&_black{
 		flex: 1 1;
 		max-width: 389px;
 		background-color: #1c2127;
 		border-radius: $global-radius;
 		padding: 26px 26px 17px;
-		.black-title{
+		@media screen and (max-width: 1680px) {
+			max-width: 310px;
+			padding: 20px 20px 10px;
+		}
+
+		.black-title {
 			width: 100%;
 			margin: 0 auto;
 			padding: 13px 0 9px;
@@ -576,11 +779,19 @@
 			border-radius: $global-radius;
 			text-align: center;
 			background-color: #31363c;
-			b{
+			@media screen and (max-width: 1680px) {
+				padding-top: 11px;
+			}
+
+			b {
 				font-size: 22px;
 				font-weight: 700;
 				color: #ffffff;
+				@media screen and (max-width: 1680px) {
+					font-size: 18px;
+				}
 			}
+
 			&:before{
 				content: '';
 				position: absolute;
@@ -601,21 +812,32 @@
 		}
 		.biggest-bet{
 			display: flex;
+			align-items: center;
 			background-color: #242b33;
 			border-radius: $global-radius;
-			padding: 11px 16px 0;
+			padding: 11px 16px;
 			margin: 24px auto 17px;
-			.player{
+			.player {
 				flex: 2 2;
-				img{
+				display: flex;
+				align-items: center;
+				img {
+					flex: 0 0 34px;
 					max-width: 34px;
-					float: left;
 					margin-right: 15px;
+					@media screen and (max-width: 1680px) {
+						flex: 0 0 28px;
+						max-width: 28px;
+					}
 				}
-				p{
+
+				p {
+					margin: 0;
 					font-size: 15px;
 					color: #ffffff;
-					margin-top: 8px;
+					@media screen and (max-width: 1680px) {
+						font-size: 12px;
+					}
 				}
 			}
 			.player-bet{
@@ -623,7 +845,9 @@
 				text-align: right;
 				font-size: 15px;
 				color: #36af46;
-				margin-top: 8px;
+				@media screen and (max-width: 1680px) {
+					font-size: 12px;
+				}
 			}
 		}
 	}
@@ -635,6 +859,9 @@
 			font-size: 13px;
 			color: #2f3741;
 			margin-bottom: 10px;
+			@media screen and (max-width: 1680px) {
+				font-size: 11px;
+			}
 		}
 		.participants{
 			flex: 1 1;
@@ -681,57 +908,4 @@
     75%, 100%{
        transform: rotate(360deg);
     }
-}
-
-@media (max-width: 1679px) {
-	.scroll-history{
-		padding: 0 60px;
-		&_nums{
-			ul{
-				li{
-					&:nth-of-type(n+2){
-						margin-left: 10px;
-					}
-				}
-			}
-		}
-	}	
-
-	.bet-amount{
-		&_cost{
-			input{
-				width: 85%;
-			}
-		}
-		&_choice{
-			margin-top: 5px;
-			margin-left: -10px;
-			button{
-				width: 64px;
-				height: 32px;
-				&:nth-of-type(n+2){
-					margin-left: 5px;
-				}
-			}
-			&:after{
-				right: 10px;
-			}
-		}
-	}
-
-	.win-lot{
-		&_green, &_black {
-			margin-left: 15px;
-		}
-	}
-}
-
-@media (max-width: 1439px) {
-	.bet-amount{
-		&_choice{
-			button{
-				margin-bottom: 10px;
-			}
-		}
-	}
 }
