@@ -9,10 +9,23 @@
 			height: 45px;
 			margin: 20px 0;
 			border-radius: 10px;
+			@media screen and (max-width: 1680px) {
+				height: 34px;
+			}
 		}
 
 		input {
-			border-width: 2px;
+			@media screen and (max-width: 1680px) {
+				font-size: 13px;
+			}
+		}
+
+		button {
+			@media screen and (max-width: 1680px) {
+				padding-top: 8px;
+				padding-bottom: 8px;
+				font-size: 16px;
+			}
 		}
 	}
 
@@ -23,6 +36,10 @@
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 1;
+		@media screen and (max-width: 1680px) {
+			font-size: 16px;
+		}
+
 		span {
 			font-weight: 600;
 			color: $success;
@@ -35,6 +52,10 @@
 		font-size: 15px;
 		font-weight: 400;
 		line-height: 1;
+		@media screen and (max-width: 1680px) {
+			font-size: 12px;
+		}
+
 		span {
 			color: $success;
 		}
@@ -56,6 +77,10 @@
 .inventory-filter {
 	display: flex;
 	margin: 45px 0 25px;
+	@media screen and (max-width: 1680px) {
+		margin: 35px 0 20px;
+	}
+
 	.left,
 	.right {
 		flex: 1 1 auto;
@@ -80,7 +105,11 @@
 		color: #fff;
 		line-height: 1;
 		text-align: center;
-		
+		@media screen and (max-width: 1680px) {
+			width: 25px;
+			height: 25px;
+			font-size: 24px;
+		}
 	}
 }
 
@@ -108,6 +137,15 @@
 			text-align: center;
 			color: #fff;
 			transition: border-color 300ms ease;
+			@media screen and (max-width: 1680px) {
+				min-width: 60px;
+				height: 25px;
+				padding-left: 10px;
+				padding-right: 10px;
+				font-size: 10px;
+				line-height: 23px;
+			}
+
 			&:hover {
 				border-color: $primary;
 				box-shadow: 0 0 18px rgba(25, 144, 234, 0.15);
@@ -116,6 +154,9 @@
 			.inventory-filter-img {
 				height: 22px;
 				max-width: 100%;
+				@media screen and (max-width: 1680px) {
+					height: 16px;
+				}
 			}
 		}
 	}
@@ -310,9 +351,9 @@
 			max-width: 134px;
 			height: 134px;
 			@media screen and (max-width: 1680px) {
-				flex: 0 0 104px;
-				max-width: 104px;
-				height: 104px;
+				flex: 0 0 106px;
+				max-width: 106px;
+				height: 106px;
 			}
 
 			.inventory-card {
@@ -323,18 +364,39 @@
 
 				.inventory-thumbnail {
 					height: 75px;
+					@media screen and (max-width: 1680px) {
+						height: 38px;
+						margin-top: 15px;
+					}
+
 					.inventory-picture {
 						max-height: 50px;
+						@media screen and (max-width: 1680px) {
+							max-height: 38px;
+						}
 					}
 				}
 
 				.inventory-title,
 				.inventory-price {
 					font-size: 14px;
+					@media screen and (max-width: 1680px) {
+						font-size: 11px;
+					}
+				}
+
+				.inventory-title {
+					overflow: hidden;
+					white-space: nowrap;
 				}
 
 				.inventory-label {
 					font-size: 13px;
+					@media screen and (max-width: 1680px) {
+						top: 5px;
+						right: 8px;
+						font-size: 10px;
+					}
 				}
 			}
 		}
@@ -441,6 +503,11 @@
 		font-size: 15px;
 		font-weight: 400;
 		color: $primary;
+		@media screen and (max-width: 1680px) {
+			height: 34px;
+			font-size: 13px;
+		}
+
 		&::placeholder {
 			color: #2f3741;
 		}
@@ -452,6 +519,9 @@
 		display: flex;
 		flex-direction: column;
 		align-content: flex-start;
+		@media screen and (max-width: 1680px) {
+			padding: 30px 15px 15px;
+		}
 
 		.body {
 			flex: 1 1 auto;
@@ -474,13 +544,25 @@
 		max-width: 310px;
 		padding-bottom: 0;
 		background-color: #1c2127;
+		@media screen and (max-width: 1680px) {
+			flex: 0 0 248px;
+			max-width: 248px;
+		}
+
 		.header {
 			flex: 0 0 228px;
 			height: 228px;
+			@media screen and (max-width: 1680px) {
+				flex: 0 0 185px;
+				height: 185px;
+			}
 		}
 
 		.body {
 			height: calc(100% - 228px);
+			@media screen and (max-width: 1680px) {
+				height: calc(100% - 185px);
+			}
 		}
 
 		.inventory-grid {
@@ -494,6 +576,10 @@
 		.header {
 			flex: 0 0 140px;
 			height: 140px;
+			@media screen and (max-width: 1680px) {
+				flex: 0 0 120px;
+				height: 120px;
+			}
 		}
 
 		.footer {
@@ -506,10 +592,18 @@
 			padding-bottom: 100px;
 			border-radius: 20px;
 			background-color: #1c2127;
+			@media screen and (max-width: 1680px) {
+				height: calc(100% - 120px);
+				padding-bottom: 80px;
+			}
 		}
 
 		.inventory-grid {
 			padding: 0 18px 15px;
+			@media screen and (max-width: 1680px) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 		}
 	}
 
@@ -533,6 +627,9 @@
 		font-weight: 400;
 		line-height: 1;
 		color: $primary;
+		@media screen and (max-width: 1680px) {
+			font-size: 14px;
+		}
 	}
 }
 
