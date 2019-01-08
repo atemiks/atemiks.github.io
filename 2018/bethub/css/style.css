@@ -10391,6 +10391,10 @@ textarea {
   -webkit-transition: right 300ms ease;
   -o-transition: right 300ms ease;
   transition: right 300ms ease; }
+  @media screen and (max-width: 1680px) {
+    .chat-wrapper {
+      height: -webkit-calc(100vh - 63px);
+      height: calc(100vh - 63px); } }
   .chat-wrapper.visible {
     right: 0; }
   .chat-wrapper .chat-header {

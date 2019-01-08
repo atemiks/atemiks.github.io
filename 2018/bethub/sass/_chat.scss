@@ -37,6 +37,10 @@
 	padding-top: 40px;
 	background-color: #242b33;
 	transition: right 300ms ease;
+	@media screen and (max-width: 1680px) {
+		height: calc(100vh - 63px);
+	}
+
 	&.visible {
 		right: 0;
 	}
