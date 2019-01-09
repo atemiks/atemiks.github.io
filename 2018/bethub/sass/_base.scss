@@ -70,6 +70,11 @@ input[type=number]::-webkit-outer-spin-button {
 textarea {
 	padding-top: 18px;
 	padding-bottom: 18px;
+	@media screen and (max-width: 1680px) {
+		height: 42px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
 }
 
 

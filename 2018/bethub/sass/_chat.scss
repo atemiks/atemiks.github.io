@@ -38,7 +38,10 @@
 	background-color: #242b33;
 	transition: right 300ms ease;
 	@media screen and (max-width: 1680px) {
+		right: -270px;
+		width: 270px;
 		height: calc(100vh - 63px);
+		padding-top: 30px;
 	}
 
 	&.visible {
@@ -63,6 +66,10 @@
 		margin-right: 10px;
 		padding: 0 25px 15px 25px;
 		height: calc(100vh - 440px);
+		@media screen and (max-width: 1680px) {
+			padding-left: 20px;
+		}
+
 		&:before,
 		&:after {
 			content: '';
@@ -91,6 +98,10 @@
 		position: relative;
 		flex: 0 0 auto;
 		padding: 12px 25px 0;
+		@media screen and (max-width: 1680px)  {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 	}
 
 	.chat-online {
@@ -126,9 +137,20 @@
 			font-size: 13px;
 			font-weight: 400;
 			line-height: 1;
+			@media screen and (max-width: 1680px) {
+				font-size: 15px;
+			}
+
 			&:after {
 				font-size: 16px;
 				vertical-align: middle;
+			}
+
+			img {
+				width: 30px;
+				@media screen and (max-width: 1680px) {
+					width: 26px;
+				}
 			}
 		}
 	}
@@ -142,6 +164,10 @@
 	.chat-message {
 		display: flex;
 		margin-bottom: 30px;
+		@media screen and (max-width: 1680px) {
+			margin-bottom: 25px;
+		}
+		
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -150,6 +176,10 @@
 			flex: 0 0 48px;
 			max-width: 48px;
 			margin: 0 20px 0 0;
+			@media screen and (max-width: 1680px) {
+				flex: 0 0 40px;
+				max-width: 40px;
+			}
 		}
 
 		.chat-message-content {
@@ -163,6 +193,9 @@
 					font-size: 16px;
 					font-weight: 600;
 					line-height: 1;
+					@media screen and (max-width: 1680px) {
+						font-size: 14px;
+					}
 				}
 				.chat-message-time {
 					margin: 0;
@@ -185,9 +218,14 @@
 				font-size: 15px;
 				font-weight: 400;
 				line-height: 1;
+				@media screen and (max-width: 1680px) {
+					font-size: 14px;
+				}
+
 				a,
 				span {
 					color: #1be254;
+					word-break: break-word;
 				}
 			}
 		}
@@ -272,6 +310,10 @@
 	padding: 15px 20px;
 	border-radius: $global-radius;
 	background-color: #1c2127;
+	@media screen and (max-width: 1680px) {
+		padding: 15px;
+	}
+
 	.close {
 		outline: none;
 		cursor: pointer;
@@ -289,6 +331,11 @@
 		flex: 0 0 48px;
 		max-width: 48px;
 		margin: 0 15px 0 0;
+		@media screen and (max-width: 1680px)  {
+			flex: 0 0 39px;
+			max-width: 39px;
+			margin: 0 10px 0 0;
+		}
 	}
 
 	.chat-hint-text {

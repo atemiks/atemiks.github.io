@@ -11,6 +11,7 @@
 $size: 76px;
 $size-desktop: 60px;
 $size-sm: 48px;
+$size-desktop-sm: 40px;
 
 .user-pie-chart {
     width: $size;
@@ -112,12 +113,26 @@ $size-sm: 48px;
 .user-pie-chart.sm {
     width: $size-sm;
     height: $size-sm;
+    @media screen and (max-width: 1680px)  {
+        width: $size-desktop-sm;
+        height: $size-desktop-sm;
+    }
+
     .ppc-progress {
         @include circle($size-sm);
         clip: rect(0, $size-sm, $size-sm, #{$size-sm/2});
+        @media screen and (max-width: 1680px) {
+            @include circle($size-desktop-sm);
+            clip: rect(0, $size-desktop-sm, $size-desktop-sm, #{$size-desktop-sm/2});
+        }
+
         .ppc-progress-fill {
             @include circle($size-sm);
             clip: rect(0, #{$size-sm/2}, $size-sm, 0);
+            @media screen and (max-width: 1680px)  {
+                @include circle($size-desktop-sm);
+                clip: rect(0, #{$size-desktop-sm/2}, $size-desktop-sm, 0);
+            }
         }
     }
 
@@ -125,8 +140,15 @@ $size-sm: 48px;
         background-color: #475462;
         .ppc-progress {
             clip: rect(0, #{$size-sm/2}, $size-sm, 0);
+            @media screen and (max-width: 1680px)  {
+                clip: rect(0, #{$size-desktop-sm/2}, $size-desktop-sm, 0);
+            }
+
             .ppc-progress-fill {
                 clip: rect(0, $size-sm, $size-sm, #{$size-sm/2});
+                @media screen and (max-width: 1680px)  {
+                    clip: rect(0, $size-desktop-sm, $size-desktop-sm, #{$size-desktop-sm/2});
+                }
             }
         }
     }
@@ -134,9 +156,17 @@ $size-sm: 48px;
 
     .ppc-content {
         padding: 5px;
+        @media screen and (max-width: 1680px) {
+            padding: 3px;
+        }
+
         .ppc-thumbnail {
             width: 39px;
             height: 39px;
+            @media screen and (max-width: 1680px) {
+                width: 34px;
+                height: 34px;
+            }
         }
         .ppc-level {
             min-width: 40px;
@@ -146,6 +176,13 @@ $size-sm: 48px;
             font-size: 8px;
             font-weight: 700;
             letter-spacing: 1.29px;
+            @media screen and (max-width: 1680px) {
+                min-width: 30px;
+                padding-top: 0;
+                padding-bottom: 0;
+                font-size: 7px;
+                line-height: 10px;
+            }
         }
     }
 }

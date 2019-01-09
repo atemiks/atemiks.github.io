@@ -131,6 +131,10 @@
 
 	.chat-toggler {
 		right: 338px;
+		@media screen and (max-width: 1680px)  {
+			right: 268px;
+		}
+
 		&:after {
 			transform: rotate(180deg) translate(50%, 50%);
 		}

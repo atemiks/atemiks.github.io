@@ -75,6 +75,13 @@ $( document ).ready(function() {
 	 	axis:"y"
 	});
 
+	// notification
+	$( ".notification-card" ).on( "click", '.notification-close', function() {
+		var self = $(this);
+		var parent = $(self).closest('.notification-card');
+		$(parent).slideUp();
+	});
+
 
 	// content
 	$( ".hero-banner" ).on( "click", ".close", function() {
