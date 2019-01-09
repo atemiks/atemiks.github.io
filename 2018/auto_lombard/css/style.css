@@ -6304,31 +6304,24 @@ body.offcanvas-open {
     .section-contact {
       min-height: 440px;
       bottom: 15px; } }
-  .section-contact:before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 55px;
-    background-color: rgba(68, 176, 210, 0.4); }
-    @media (max-width: 991.98px) {
-      .section-contact:before {
-        bottom: 15px; } }
   .section-contact #map {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 55px;
+    width: 100%;
+    height: -webkit-calc(100% - 55px);
+    height: calc(100% - 55px);
     background-position: center top;
     -webkit-background-size: cover;
             background-size: cover;
     background-color: #fff; }
     @media (max-width: 991.98px) {
       .section-contact #map {
-        bottom: 15px; } }
+        bottom: 15px;
+        height: -webkit-calc(100% - 15px);
+        height: calc(100% - 15px); } }
   .section-contact:last-child {
     padding-bottom: 0 !important; }
     .section-contact:last-child:before {
@@ -6337,9 +6330,10 @@ body.offcanvas-open {
       bottom: 0 !important; }
 
 .contact-box {
-  position: relative;
+  position: absolute;
   z-index: 1;
   top: -80px;
+  right: 15px;
   max-width: 380px;
   margin: 0 0 -20px auto;
   padding: 40px 45px 40px;
@@ -6355,6 +6349,7 @@ body.offcanvas-open {
       font-size: 18px; } }
   @media (max-width: 767.98px) {
     .contact-box {
+      position: relative;
       top: 25px;
       margin: 25px auto 40px; } }
   .contact-box a {

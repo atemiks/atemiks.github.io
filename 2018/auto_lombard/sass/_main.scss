@@ -753,19 +753,19 @@
 		bottom: 15px;
 	}
 
-	&:before {
-		content: '';
-		position: absolute;
-		z-index: 1;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 55px;
-		background-color: rgba($secondary-color, .4);
-		@include media-breakpoint-down(md)  {
-			bottom: 15px;
-		}
-	}
+	// &:before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	z-index: 1;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 55px;
+	// 	background-color: rgba($secondary-color, .4);
+	// 	@include media-breakpoint-down(md)  {
+	// 		bottom: 15px;
+	// 	}
+	// }
 
 	#map {
 		position: absolute;
@@ -773,11 +773,14 @@
 		left: 0;
 		right: 0;
 		bottom: 55px;
+		width: 100%;
+		height: calc(100% - 55px);
 		background-position: center top;
 		background-size: cover;
 		background-color: #fff;
 		@include media-breakpoint-down(md)  {
 			bottom: 15px;
+			height: calc(100% - 15px);
 		}
 	}
 
@@ -795,9 +798,10 @@
 
 
 .contact-box {
-	position: relative;
+	position: absolute;
 	z-index: 1;
 	top: -80px;
+	right: 15px;
 	max-width: 380px;
 	margin: 0 0 -20px auto;
 	padding: 40px 45px 40px;
@@ -812,6 +816,7 @@
 		font-size: 18px;
 	}
 	@include media-breakpoint-down(sm) {
+		position: relative;
 		top: 25px;
 		margin: 25px auto 40px;
 	}
