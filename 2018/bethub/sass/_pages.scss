@@ -123,11 +123,11 @@
 			max-width: 1140px !important;
 		}
 	}
-	@media screen and (min-width: 1680px) {
-		.container {
-			max-width: 1355px !important;
-		}
-	}
+	// @media screen and (min-width: 1680px) {
+	// 	.container {
+	// 		max-width: 1355px !important;
+	// 	}
+	// }
 
 	.chat-toggler {
 		right: 338px;
@@ -141,6 +141,9 @@
 	}
 	.main-content {
 		margin-right: 200px;
+		@media screen and (max-width: 1680px) {
+			margin-right: 270px;
+		}
 	}
 }
 

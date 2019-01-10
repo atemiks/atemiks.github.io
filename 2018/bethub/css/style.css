@@ -8868,10 +8868,6 @@ textarea {
   .chat-open .container {
     max-width: 1140px !important; } }
 
-@media screen and (min-width: 1680px) {
-  .chat-open .container {
-    max-width: 1355px !important; } }
-
 .chat-open .chat-toggler {
   right: 338px; }
   @media screen and (max-width: 1680px) {
@@ -8884,6 +8880,9 @@ textarea {
 
 .chat-open .main-content {
   margin-right: 200px; }
+  @media screen and (max-width: 1680px) {
+    .chat-open .main-content {
+      margin-right: 270px; } }
 
 .bg0 {
   opacity: 0;
