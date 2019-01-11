@@ -69,11 +69,11 @@ $( document ).ready(function() {
 	});
 
 
-	$(".inventory-wrapper .body").mCustomScrollbar({
-		scrollInertia: 300,
-	 	theme:"dark dark-chat",
-	 	axis:"y"
-	});
+	// $(".inventory-wrapper .body").mCustomScrollbar({
+	// 	scrollInertia: 300,
+	//  	theme:"dark dark-chat",
+	//  	axis:"y"
+	// });
 
 	// notification
 	$( ".notification-card" ).on( "click", '.notification-close', function() {
@@ -287,16 +287,16 @@ $( document ).ready(function() {
 	        $('.blur-wrapper').removeClass('active-blur');
 	    }
 	}); */
-	// var history = document.querySelector('.history-wrapper');
-	// var historyShadow = document.querySelector('.history-shadow');
-	// var fixTr = document.querySelector('.tr-fixed');
-	// history.onscroll = function() {
-	// 	fixTr.style.top = this.scrollTop + 'px';
-	// 	if (this.scrollHeight - this.scrollTop === this.clientHeight) {
-	// 		historyShadow.style.display = 'none';
-	// 	} else {
-	// 		historyShadow.style.display = 'block';
-	// 		historyShadow.style.bottom = '-' + this.scrollTop + 'px';
-	// 	}
-	// }	
+	var history = document.querySelector('.history-wrapper');
+	var historyShadow = document.querySelector('.history-shadow');
+	var fixTr = document.querySelector('.tr-fixed');
+	history.onscroll = function() {
+		fixTr.style.top = this.scrollTop + 'px';
+		if (this.scrollHeight - this.scrollTop === this.clientHeight) {
+			historyShadow.style.display = 'none';
+		} else {
+			historyShadow.style.display = 'block';
+			historyShadow.style.bottom = '-' + this.scrollTop + 'px';
+		}
+	}	
 });

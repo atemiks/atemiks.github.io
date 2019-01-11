@@ -8420,6 +8420,9 @@ textarea {
     color: #475462;
     font-size: 14px;
     font-weight: 400; }
+    @media screen and (max-width: 1680px) {
+      .dropdown-menu .dropdown-item {
+        font-size: 11px; } }
     .dropdown-menu .dropdown-item:hover {
       background-color: transparent;
       color: #1990ea; }
@@ -8699,10 +8702,7 @@ textarea {
             transform: none !important; }
     @media screen and (max-width: 1680px) {
       .header-user .dropdown-menu {
-        min-width: 220px; } }
-    @media screen and (max-width: 1440px) {
-      .header-user .dropdown-menu {
-        min-width: 200px; } }
+        min-width: 205px; } }
     .header-user .dropdown-menu:after {
       content: '';
       position: absolute;
@@ -8717,6 +8717,9 @@ textarea {
       background: linear-gradient(to bottom, #161c21 0%, transparent 100%); }
     .header-user .dropdown-menu .dropdown-item {
       padding: 8px 15px 8px 40px; }
+      @media screen and (max-width: 1680px) {
+        .header-user .dropdown-menu .dropdown-item {
+          padding: 5px 15px 5px 30px; } }
       .header-user .dropdown-menu .dropdown-item:before {
         content: '';
         opacity: 0;
@@ -8741,6 +8744,10 @@ textarea {
         vertical-align: middle;
         width: 45px;
         font-size: 20px; }
+        @media screen and (max-width: 1680px) {
+          .header-user .dropdown-menu .dropdown-item i {
+            width: 35px;
+            font-size: 14px; } }
       .header-user .dropdown-menu .dropdown-item i.icon-power {
         left: -5px;
         font-size: 32px; }
@@ -10580,8 +10587,6 @@ textarea {
       background: -webkit-linear-gradient(top, #242b33 0%, transparent 100%);
       background: -o-linear-gradient(top, #242b33 0%, transparent 100%);
       background: linear-gradient(to bottom, #242b33 0%, transparent 100%); }
-    .chat-wrapper .chat-body .mCSB_inside > .mCSB_container {
-      margin-right: 45px; }
   .chat-wrapper .chat-footer {
     position: relative;
     -webkit-box-flex: 0;
@@ -11626,16 +11631,17 @@ textarea {
       padding-top: 20px;
       -webkit-align-content: flex-start;
           -ms-flex-line-pack: start;
-              align-content: flex-start; }
-      .inventory-wrapper .side-left .body .mCSB_scrollTools,
-      .inventory-wrapper .side-right .body .mCSB_scrollTools {
-        opacity: 0 !important; }
-      .inventory-wrapper .side-left .body .mCSB_inside > .mCSB_container,
-      .inventory-wrapper .side-right .body .mCSB_inside > .mCSB_container {
-        margin-right: 0; }
-      .inventory-wrapper .side-left .body .mCSB_scrollTools .mCSB_dragger,
-      .inventory-wrapper .side-right .body .mCSB_scrollTools .mCSB_dragger {
-        display: none !important; }
+              align-content: flex-start;
+      overflow-x: hidden; }
+      .inventory-wrapper .side-left .body .inventory-grid,
+      .inventory-wrapper .side-right .body .inventory-grid {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100%; }
+        .inventory-wrapper .side-left .body .inventory-grid::-webkit-scrollbar,
+        .inventory-wrapper .side-right .body .inventory-grid::-webkit-scrollbar {
+          width: 0;
+          background-color: transparent; }
   .inventory-wrapper .side-left {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 310px;

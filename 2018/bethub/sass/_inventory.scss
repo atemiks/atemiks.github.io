@@ -527,14 +527,16 @@
 			flex: 1 1 auto;
 			padding-top: 20px;
 			align-content: flex-start;
-			.mCSB_scrollTools {
-				opacity: 0 !important;
-			}
-			.mCSB_inside>.mCSB_container {
-				margin-right: 0;
-			}
-			.mCSB_scrollTools .mCSB_dragger {
-				display: none !important;
+			overflow-x: hidden;
+
+			.inventory-grid {
+				overflow-y: scroll;
+				overflow-x: hidden;
+				height: 100%;
+				&::-webkit-scrollbar {
+					width: 0;
+					background-color: transparent;
+				}
 			}
 		}
 	}

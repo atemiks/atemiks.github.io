@@ -238,10 +238,7 @@
 		margin: 0;
 		transform: none !important;
 		@media screen and (max-width: 1680px) {
-			min-width: 220px;
-		}
-		@media screen and (max-width: 1440px) {
-			min-width: 200px;
+			min-width: 205px;
 		}
 		&:after {
 			content: '';
@@ -256,6 +253,10 @@
 
 		.dropdown-item {
 			padding: 8px 15px 8px 40px;
+			@media screen and (max-width: 1680px) {
+				padding: 5px 15px 5px 30px;
+			}
+
 			&:before {
 				content: '';
 				opacity: 0;
@@ -278,6 +279,10 @@
 				width: 45px;;
 				// margin-right: 25px;
 				font-size: 20px;
+				@media screen and (max-width: 1680px) {
+					width: 35px;
+					font-size: 14px;
+				}
 			}
 			i.icon-power {
 				left: -5px;
