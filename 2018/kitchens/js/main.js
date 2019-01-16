@@ -118,6 +118,12 @@ $( document ).ready(function() {
         }, 300);
     })
 
+    $('#modalCatalog').on('hidden.bs.modal', function (event) {
+        $('.slider-modal-media').slick('unslick');
+    })
+
+
+
     // calculator
     var currentUnitIndex = $( ".calc-unit.active" ).index();
     var maxUnits = $('.calc-unit').length - 1;
