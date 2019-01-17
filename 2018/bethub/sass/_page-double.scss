@@ -99,15 +99,12 @@
 			font-size: 13px;
 		}
 
-		img {
+		i {
 			display: inline-block;
-			width: 12px;
-			height: 14px;
 			margin-right: 13px;
 			animation: send-time 5s linear forwards infinite;
 			@media screen and (max-width: 1680px) {
-				width: 9px;
-				height: 11px;
+				font-size: 12px;
 			}
 		}
 	}

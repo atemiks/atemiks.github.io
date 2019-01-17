@@ -7966,65 +7966,104 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-user:before {
-  content: "\e90e"; }
-
-.icon-layers:before {
-  content: "\e90f"; }
-
-.icon-grid:before {
-  content: "\e910"; }
-
-.icon-settings-lg:before {
-  content: "\e911"; }
-
-.icon-briefcase:before {
-  content: "\e912"; }
-
-.icon-power:before {
-  content: "\e913"; }
-
-.icon-smile:before {
-  content: "\e900"; }
-
-.icon-time:before {
-  content: "\e901"; }
-
-.icon-users:before {
-  content: "\e902"; }
-
-.icon-volume-off:before {
+.icon-diagram:before {
   content: "\e903"; }
 
-.icon-volume-on:before {
+.icon-warning:before {
   content: "\e904"; }
 
-.icon-warning:before {
+.icon-coins:before {
   content: "\e905"; }
 
-.icon-fighting-game:before {
+.icon-dollar:before {
   content: "\e906"; }
 
-.icon-crown:before {
+.icon-watches:before {
   content: "\e907"; }
 
-.icon-chest:before {
+.icon-notification-success:before {
   content: "\e908"; }
 
-.icon-chip:before {
+.icon-notification-info:before {
   content: "\e909"; }
 
-.icon-info:before {
+.icon-notification-mistake:before {
   content: "\e90a"; }
 
-.icon-settings:before {
+.icon-cart:before {
   content: "\e90b"; }
 
-.icon-stat:before {
+.icon-credit-card:before {
   content: "\e90c"; }
 
-.icon-reload:before {
+.icon-inventory:before {
   content: "\e90d"; }
+
+.icon-purse:before {
+  content: "\e90e"; }
+
+.icon-faq:before {
+  content: "\e90f"; }
+
+.icon-search:before {
+  content: "\e910"; }
+
+.icon-smile:before {
+  content: "\e911"; }
+
+.icon-time:before {
+  content: "\e912"; }
+
+.icon-users:before {
+  content: "\e913"; }
+
+.icon-volume-off:before {
+  content: "\e914"; }
+
+.icon-volume-on:before {
+  content: "\e915"; }
+
+.icon-fighting-game:before {
+  content: "\e917"; }
+
+.icon-crown:before {
+  content: "\e918"; }
+
+.icon-chest:before {
+  content: "\e919"; }
+
+.icon-chip:before {
+  content: "\e91a"; }
+
+.icon-info:before {
+  content: "\e91b"; }
+
+.icon-settings:before {
+  content: "\e91c"; }
+
+.icon-stat:before {
+  content: "\e91d"; }
+
+.icon-reload:before {
+  content: "\e91e"; }
+
+.icon-user:before {
+  content: "\e91f"; }
+
+.icon-layers:before {
+  content: "\e920"; }
+
+.icon-grid:before {
+  content: "\e921"; }
+
+.icon-settings-lg:before {
+  content: "\e922"; }
+
+.icon-briefcase:before {
+  content: "\e923"; }
+
+.icon-power:before {
+  content: "\e924"; }
 
 .modal .modal-dialog {
   max-width: 980px; }
@@ -8220,11 +8259,20 @@ a.text-dark:hover, a.text-dark:focus {
             transform: translate(50%, -50%); }
   .notification-card .notification-media {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 55px;
-        -ms-flex: 0 0 55px;
-            flex: 0 0 55px;
-    max-width: 55px;
-    margin-right: 15px; }
+    -webkit-flex: 0 0 45px;
+        -ms-flex: 0 0 45px;
+            flex: 0 0 45px;
+    max-width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.09);
+            box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.09);
+    font-size: 28px;
+    color: #fff;
+    line-height: 45px;
+    text-align: center; }
   .notification-card .notification-title {
     margin: 0 0 5px;
     font-size: 18px;
@@ -8240,6 +8288,9 @@ a.text-dark:hover, a.text-dark:focus {
     background: linear-gradient(to right, #195f7c 0%, #267c5b 100%); }
     .notification-card.success .notification-close {
       background-color: #1f7352; }
+    .notification-card.success .notification-media {
+      font-size: 20px;
+      background-color: #1a6381; }
     .notification-card.success .notification-description {
       color: #43f8a5; }
   .notification-card.warning {
@@ -8250,6 +8301,8 @@ a.text-dark:hover, a.text-dark:focus {
     background: linear-gradient(to right, #7c621f 0%, #7c401f 100%); }
     .notification-card.warning .notification-close {
       background-color: #743816; }
+    .notification-card.warning .notification-media {
+      background-color: #79601f; }
     .notification-card.warning .notification-description {
       color: #fce75b; }
   .notification-card.danger {
@@ -8260,6 +8313,8 @@ a.text-dark:hover, a.text-dark:focus {
     background: linear-gradient(to right, #79373b 0%, #742327 100%); }
     .notification-card.danger .notification-close {
       background-color: #6c1a1e; }
+    .notification-card.danger .notification-media {
+      background-color: #78373a; }
     .notification-card.danger .notification-description {
       color: #ff8080; }
 
@@ -8787,14 +8842,12 @@ textarea {
   -webkit-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease; }
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1170px; } }
-
-@media screen and (min-width: 1681px) {
-  .container {
-    max-width: 1455px !important; } }
+  @media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1170px; } }
+  @media screen and (min-width: 1681px) {
+    .container {
+      max-width: 1455px !important; } }
 
 .main-content {
   margin-left: 0;
@@ -8840,14 +8893,21 @@ textarea {
   -webkit-flex: 2 2;
       -ms-flex: 2 2;
           flex: 2 2; }
-  .headline-title img {
+  .headline-title img,
+  .headline-title i {
     display: inline-block;
     vertical-align: middle;
     max-width: 30px;
     margin-right: 15px; }
     @media screen and (max-width: 1680px) {
-      .headline-title img {
+      .headline-title img,
+      .headline-title i {
         max-width: 25px; } }
+  .headline-title i {
+    font-size: 30px; }
+    @media screen and (max-width: 1680px) {
+      .headline-title i {
+        font-size: 25px; } }
   .headline-title p {
     display: inline-block;
     margin: 0;
@@ -12053,17 +12113,14 @@ textarea {
     @media screen and (max-width: 1680px) {
       .start-betting p {
         font-size: 13px; } }
-    .start-betting p img {
+    .start-betting p i {
       display: inline-block;
-      width: 12px;
-      height: 14px;
       margin-right: 13px;
       -webkit-animation: send-time 5s linear forwards infinite;
               animation: send-time 5s linear forwards infinite; }
       @media screen and (max-width: 1680px) {
-        .start-betting p img {
-          width: 9px;
-          height: 11px; } }
+        .start-betting p i {
+          font-size: 12px; } }
 
 .scroll-history {
   padding: 0 128px;

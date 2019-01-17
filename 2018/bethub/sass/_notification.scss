@@ -48,9 +48,16 @@
 	}
 
 	.notification-media {
-		flex: 0 0 55px;
-		max-width: 55px;
+		flex: 0 0 45px;
+		max-width: 45px;
+		height: 45px;
 		margin-right: 15px;
+		border-radius: 50%;
+		box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.09);
+		font-size: 28px;
+		color: #fff;
+		line-height: 45px;
+		text-align: center;
 	}
 
 	.notification-title {
@@ -72,6 +79,10 @@
 		.notification-close {
 			background-color: #1f7352;
 		}
+		.notification-media {
+			font-size: 20px;
+			background-color: #1a6381;
+		}
 		.notification-description {
 			color: #43f8a5;
 		}
@@ -84,6 +95,9 @@
 		.notification-close {
 			background-color: #743816;
 		}
+		.notification-media {
+			background-color: #79601f;
+		}
 		.notification-description {
 			color: #fce75b;
 		}
@@ -95,6 +109,9 @@
 		background: linear-gradient(to right, rgba(121,55,59,1) 0%,rgba(116,35,39,1) 100%);
 		.notification-close {
 			background-color: #6c1a1e;
+		}
+		.notification-media {
+			background-color: #78373a;
 		}
 		.notification-description {
 			color: #ff8080;
