@@ -6350,6 +6350,8 @@ button {
     letter-spacing: 0.4px;
     text-transform: uppercase;
     text-decoration: none; }
+    .header-logo .header-logo-link .header-logo-img, .footer-logo .header-logo-link .header-logo-img, .footer-logo .footer-logo-link .header-logo-img {
+      max-width: 120px; }
 
 @media (max-width: 991.98px) {
   .header-nav {
