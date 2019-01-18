@@ -151,6 +151,7 @@ img {
 
 
 .section-presentation {
+	overflow: hidden;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -158,6 +159,7 @@ img {
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
+	height: auto !important;
 	min-height: 660px;
 	padding-top: 70px;
 	padding-bottom: 70px;
@@ -196,6 +198,7 @@ img {
 
 
 .section-functions {
+	height: auto !important;
 	padding-top: 55px;
 	padding-bottom: 70px;
 	background-color: #eeeeee;
