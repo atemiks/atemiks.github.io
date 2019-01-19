@@ -1,0 +1,253 @@
+.section-product {
+	margin-top: -55px;
+	padding-bottom: 0;
+}
+
+.product {
+	.slider-product,
+	.slider-product-nav {
+		.product-media {
+			position: relative;
+			display: block;
+			border: 10px solid transparent;
+			padding-bottom: calc(95% - 20px);
+			text-decoration: none;
+			.product-img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				max-width: 100%;
+				max-height: 100%;
+				margin: auto;
+			}
+		}
+	}
+
+	.slider-product {
+		margin-bottom: 20px;
+		border: 1px solid $gray;
+		.product-media {
+			cursor: -webkit-zoom-in;
+			&:after {
+				content: '\f2ed';
+				font-family: 'icomoon';
+				position: absolute;
+				right: 15px;
+				bottom: 10px;
+				font-size: 70px;
+				color: $primary;
+				line-height: 1;
+				@include media-breakpoint-down(lg) {
+					right: 5px;
+					bottom: 5px;
+					font-size: 40px;
+				}
+			}
+		}
+	}
+
+	.slider-product-nav {
+		margin-bottom: 20px;
+		padding-left: 40px;
+		padding-right: 40px;
+		.product-media {
+			cursor: pointer;
+			border-width: 5px;
+			padding-bottom: calc(100% - 10px);
+		}
+
+		.slide-item {
+			margin-left: 5px;
+			margin-right: 5px;
+			border: 1px solid $primary;
+			.product-media {
+				opacity: .3;
+			}
+
+			&.slick-current {
+				.product-media {
+					opacity: 1;
+				}
+			}
+		}
+
+		.slick-arrow {
+			width: 34px;
+			height: 54px;
+			&:before {
+				font-size: 30px;
+			}
+		}
+
+		.slick-prev {
+			left: 0;
+		}
+		.slick-next {
+			right: 0;
+		}
+	}
+
+	.product-title {
+		@extend .h2;
+		margin: -10px 0 25px;
+		padding: 0 0 25px;
+		border-bottom: 4px solid $danger;
+		font-family: $base-font;
+		font-weight: 700;
+		line-height: 1.46;
+		color: $primary;
+		@include media-breakpoint-down(md) {
+			padding: 0 0 15px;
+			border-bottom-width: 2px;
+		}
+	}
+
+	.product-higlight {
+		flex: 0 0 270px;
+		margin-left: auto;
+		margin-right: 0;
+		width: 270px;
+		border: 1px solid #bababa;
+		background-color: #fff;
+		@include media-breakpoint-down(sm) {
+			flex: 0 0 100%;
+			width: 100%;
+			margin-left: 0;
+		}
+
+		&-header {
+			padding: 30px;
+			border-bottom: 1px solid #bababa;
+			background-color: #e8e8e8;
+		}
+		&-body {
+			padding: 20px;
+			background-color: #fff;
+		}
+
+		&-hint {
+			font-size: 12px;
+		}
+	}
+
+	.product-price {
+		@extend .h1;
+		margin: 0;
+		font-size: 36px;
+		font-weight: 700;
+		color: $primary;
+		line-height: 1;
+		span {
+			@extend .h3;
+		}
+	}
+
+	.product-status {
+		margin: 0;
+		font-size: 14px;
+		font-weight: 700;
+		&.success {
+			color: $success;
+		}
+		&.danger {
+			color: $danger;
+		}
+	}
+
+	.product-block {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $gray;
+		font-size: 14px;
+		line-height: 1.3;
+		.block-title {
+			margin: 0 0 5px;
+			font-weight: 700;
+			color: #000;
+		}
+
+		.block-description {
+			line-height: 1.7;
+		}
+
+		.dots-list {
+			> li {
+				margin-bottom: 6px;
+			}
+		}
+
+		.btn-link {
+			margin-top: 5px;
+		}
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	.form-product-add {
+		width: 190px;
+		label {
+			margin: 0;
+			font-size: 12px;
+			color: #5e5e5e;
+			line-height: 1;
+		}
+
+		input {
+			height: 30px;
+		}
+
+		.form-group {
+			margin-top: 25px;
+			margin-bottom: 25px;
+			&:first-child {
+				margin-top: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&-hint {
+				flex: 0 0 auto;
+				margin-left: 10px;
+				font-size: 12px;
+				line-height: 1;
+				color: #656464;
+			}
+		}
+
+		.btn {
+			font-size: 12px;
+			font-weight: 600;
+			i {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 5px;
+				font-size: 180%;
+			}
+		}
+	}
+
+	.form-product-call,
+	.form-product-notification {
+		display: flex;
+		width: 190px;
+		margin: 10px 0 15px;
+
+		.btn {
+			min-width: 54px;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			border-left: none;
+			background-color: $primary;
+			font-size: 20px;
+			line-height: 1;
+			&:hover {
+				background-color: $danger;
+			}
+		}
+	}
+}

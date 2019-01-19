@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="vendor/css/aos.css">
+        <link rel="stylesheet" href="vendor/css/slick.css">
+        <link rel="stylesheet" href="vendor/css/slick-theme.css">
+        <link rel="stylesheet" href="vendor/css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="vendor/css/select2.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <title>АСА Трейд</title>
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+
+            <div class="content">
+               <header class="header">
+                   <div class="container-fluid">
+                       <div class="row">
+                           <div class="container">
+                                <div class="header-top">
+                                   <div class="row">
+                                       <div class="d-flex col">
+                                           <div class="header-address">
+                                                <div class="header-address-icon">
+                                                    <i class="icon-map-marker"></i>
+                                                </div>
+                                                <div class="header-address-text">
+                                                    г. Москва, ул.Уличная, д.1, оф. 123
+                                                    <a href="#section-contact">на карте</a>
+                                                </div>
+                                           </div>
+
+                                           <div class="header-contact phone">
+                                               <div class="header-contact-icon">
+                                                   <i class="icon-phone"></i>
+                                               </div>
+                                               <div class="header-contact-text">
+                                                   <a href="+74956681080" class="header-contact-phone"><span>+7 (495)</span> 668-10-80</a>
+                                                   <a href="#order" class="header-contact-order" data-toggle="modal" data-target="#modalCallback" >закажите звонок</a>
+                                               </div>
+                                           </div>
+
+                                           <div class="header-contact mail">
+                                               <div class="header-contact-icon">
+                                                   <i class="icon-envelope"></i>
+                                               </div>
+                                               <div class="header-contact-text">
+                                                   <a href="mailto:info@asa-treid.com" class="header-contact-email">info@asa-treid.com</a>
+                                               </div>
+                                           </div>
+
+                                           <div class="header-action">
+                                               <button class="btn btn-sm" data-toggle="modal" data-target="#modalOrder" >Оставьте заявку</button>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+
+                                <div class="header-content">
+                                   <div class="row align-items-center">
+                                       <div class="col-auto">
+                                           <div class="header-logo">
+                                               <a href="index.html" class="header-logo-link">
+                                                   <img src="images/logo.png" alt="АСА Трейд" class="header-logo-img">
+                                               </a>
+                                           </div>
+                                       </div>
+
+                                       <div class="col">
+                                           <nav class="header-nav">
+                                               <ul class="header-nav-list">
+                                                   <li class="header-nav-item">
+                                                       <a href="catalog.html" class="header-nav-link">Каталог продукции</a>
+                                                   </li>
+                                                   <li class="header-nav-item">
+                                                       <a href="delivery.html" class="header-nav-link">Доставка</a>
+                                                   </li>
+                                                   <li class="header-nav-item active">
+                                                       <a href="blog.html" class="header-nav-link">Блог</a>
+                                                   </li>
+                                                   <li class="header-nav-item">
+                                                       <a href="about.html" class="header-nav-link">О компании</a>
+                                                   </li>
+                                                   <li class="header-nav-item">
+                                                       <a href="contact.html" class="header-nav-link">Контакты</a>
+                                                   </li>
+                                               </ul>
+                                           </nav>
+                                       </div>
+
+                                       <div class="col-auto d-flex">
+                                           <div class="header-search-wrapper">
+                                               <button class="header-search-toggler">
+                                                   <i class="icon-search"></i>
+                                               </button>
+
+                                               <form class="header-search">
+                                                   <div class="header-search-group">
+                                                       <input type="search" class="header-search-input" required >
+                                                       <button class="header-search-button">
+                                                           <i class="icon-search"></i>
+                                                       </button>
+                                                   </div>
+                                                   <ul class="header-search-results">
+                                                       <li class="header-search-result">
+                                                           <a href="product.html" class="header-search-result-link"><b>Фиксатор арматуры</b> ФС 40 (250 шт) Промышленник фсг40</a>
+                                                       </li>
+                                                       <li class="header-search-result">
+                                                           <a href="product.html" class="header-search-result-link"><b>Фиксатор арматуры</b> ФС 40 (250 шт) Промышленник фсг40</a>
+                                                       </li>
+                                                       <li class="header-search-result">
+                                                           <a href="product.html" class="header-search-result-link"><b>Фиксатор арматуры</b> ФС 40 (250 шт) Промышленник фсг40</a>
+                                                       </li>
+                                                   </ul>
+                                               </form>
+                                           </div>
+
+                                           <a href="bag.html" class="header-bag">
+                                               <div class="header-bag-icon">
+                                                   <label class="header-bag-label">15</label>
+                                                   <i class="icon-shopping-cart"></i>
+                                               </div>
+                                               <div class="header-bag-text">Корзина товаров</div>
+                                           </a>
+
+                                           <button class="offcanvas-toggler">
+                                               <span></span>
+                                               <span></span>
+                                               <span></span>
+                                           </button>
+                                       </div>
+                                   </div>
+                                </div>
+
+                           </div>
+                       </div>
+
+                        <div class="header-tagline" style="background-image: url('images/header/header-tagline-bg.png')" >
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <div class="header-tagline-title">Поставка комплектующих для монолитного строительства</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+               </header>
+
+               <main class="main">
+
+                    <div class="content-inner">
+                        <div class="page-header">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <nav aria-label="breadcrumb">
+                                            <ul class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                                                <li class="breadcrumb-item"><a href="blog.html">Блог</a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">Мелкощитовая опалубка Мекос – высокое качество для идеального результата!</li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                       <h1 class="page-title">Блог</h1>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <section class="section-article">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <article class="article">
+                                            <h2 class="article-title">Мелкощитовая опалубка Мекос – высокое качество для идеального результата!</h2>
+
+                                            <figure class="article-thumbnail">
+                                                <img src="images/page-article/article/article-thumbnail.png" alt="Мелкощитовая опалубка Мекос">
+                                            </figure>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus animi odio sequi ut libero aspernatur sit, fugit blanditiis magni. Reprehenderit nostrum possimus eius nisi, aliquid laboriosam blanditiis quae quas dolorem.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At magnam sed nostrum explicabo totam accusantium nam dolores deserunt neque possimus perspiciatis minima, repellat sequi modi consequuntur reprehenderit ratione necessitatibus temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sed, ex! Atque eveniet exercitationem cupiditate quo quam. Accusantium quod laborum tenetur perspiciatis nulla eius itaque placeat iste totam! Qui, sed.</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus animi odio sequi ut libero aspernatur sit, fugit blanditiis magni. Reprehenderit nostrum possimus eius nisi, aliquid laboriosam blanditiis quae quas dolorem.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At magnam sed nostrum explicabo totam accusantium nam dolores deserunt neque possimus perspiciatis minima, repellat sequi modi consequuntur reprehenderit ratione necessitatibus temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sed, ex! Atque eveniet exercitationem cupiditate quo quam. Accusantium quod laborum tenetur perspiciatis nulla eius itaque placeat iste totam! Qui, sed.</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus animi odio sequi ut libero aspernatur sit, fugit blanditiis magni. Reprehenderit nostrum possimus eius nisi, aliquid laboriosam blanditiis quae quas dolorem.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At magnam sed nostrum explicabo totam accusantium nam dolores deserunt neque possimus perspiciatis minima, repellat sequi modi consequuntur reprehenderit ratione necessitatibus temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sed, ex! Atque eveniet exercitationem cupiditate quo quam. Accusantium quod laborum tenetur perspiciatis nulla eius itaque placeat iste totam! Qui, sed.</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus animi odio sequi ut libero aspernatur sit, fugit blanditiis magni. Reprehenderit nostrum possimus eius nisi, aliquid laboriosam blanditiis quae quas dolorem.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. At magnam sed nostrum explicabo totam accusantium nam dolores deserunt neque possimus perspiciatis minima, repellat sequi modi consequuntur reprehenderit ratione necessitatibus temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sed, ex! Atque eveniet exercitationem cupiditate quo quam. Accusantium quod laborum tenetur perspiciatis nulla eius itaque placeat iste totam! Qui, sed.</p>
+                                        </article>
+                                    </div>
+                                    <div class="article-aside col-12 col-md-4">
+                                        <div class="article-aside-block">
+                                            <div class="block-title">Последние статьи</div>
+
+                                            <ul class="articles-list">
+                                                <li class="aritcle-list-item">
+                                                    <a href="article.html">Мелкощитовая опалубка Мекос – высокое качество для идеального результата!</a>
+                                                </li>
+                                                <li class="aritcle-list-item">
+                                                    <a href="article.html">АСА ТРЕЙД на выставке MosBuild/WorldBuild Moscow 2017</a>
+                                                </li>
+                                                <li class="aritcle-list-item">
+                                                    <a href="article.html">Мелкощитовая опалубка Мекос – высокое качество для идеального результата!</a>
+                                                </li>
+                                                <li class="aritcle-list-item">
+                                                    <a href="article.html">АСА ТРЕЙД на выставке MosBuild/WorldBuild Moscow 2017</a>
+                                                </li>
+                                                <li class="aritcle-list-item">
+                                                    <a href="article.html">АСА ТРЕЙД на выставке MosBuild/WorldBuild Moscow 2017</a>
+                                                </li>
+                                                <li class="aritcle-list-item">
+                                                    <a href="article.html">Мелкощитовая опалубка Мекос – высокое качество для идеального результата!</a>
+                                                </li>
+                                                <li class="aritcle-list-item">
+                                                    <a href="article.html">АСА ТРЕЙД на выставке MosBuild/WorldBuild Moscow 2017</a>
+                                                </li>
+                                                <li class="aritcle-list-item">
+                                                    <a href="article.html">АСА ТРЕЙД на выставке MosBuild/WorldBuild Moscow 2017</a>
+                                                </li>
+                                                <li class="aritcle-list-item">
+                                                    <a href="article.html">Мелкощитовая опалубка Мекос – высокое качество для идеального результата!</a>
+                                                </li>
+                                                <li class="aritcle-list-item">
+                                                    <a href="article.html">АСА ТРЕЙД на выставке MosBuild/WorldBuild Moscow 2017</a>
+                                                </li>
+                                                <li class="aritcle-list-item">
+                                                    <a href="article.html">АСА ТРЕЙД на выставке MosBuild/WorldBuild Moscow 2017</a>
+                                                </li>
+                                            </ul>
+
+                                            <a href="blog.html" class="btn-link">Загрузить ещё</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+
+                   <div class="promo">
+                       <div class="container">
+                           <div class="row">
+                               <div class="col-lg-4 col-xl-5">
+                                   <p class="promo-title">Отправьте заявку <span>и получите скидку 5%</span></p>
+                               </div>
+                               <div class="col-lg-8 col-xl-7">
+                                   <form method="post" class="form-promo">
+                                       <div class="row">
+                                           <div class="col-md-4">
+                                               <div class="form-group">
+                                                   <input type="text" placeholder="Имя" name="formPromoName" required >
+                                               </div>
+                                           </div>
+
+                                           <div class="col-md-4">
+                                               <div class="form-group">
+                                                   <input type="tel" placeholder="Телефон" name="formPromoPhone" required >
+                                               </div>
+                                           </div>
+
+                                           <div class="col-md-4">
+                                               <div class="form-group">
+                                                   <button type="submit" class="btn btn-block" >Отправить</button>
+                                               </div>
+                                           </div>
+                                       </div>
+
+                                       <div class="row">
+                                           <div class="col">
+                                                <div class="custom-control">
+                                                    <input type="checkbox" class="custom-control-input" id="formPromoCheck" checked required>
+                                                    <label class="custom-control-label" for="formCalcCheck">Я согласен(на) на обработку персональных данных</label>
+                                                </div>
+                                           </div>
+                                       </div>
+                                   </form>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <section class="section-contact" id="section-contact" >
+                       <iframe id="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A92788306b8ed8949e298dad9ed0950c7cfddaa6a7d652da5a9a0c71c431d655d&amp;source=constructor" frameborder="0"></iframe>
+
+                       <div class="container">
+                           <div class="row">
+                               <div class="col">
+                                   <div class="contact-block">
+                                       <div class="contact-header">
+                                           <img src="images/logo.png" alt="АСА Трейд" class="contact-logo">
+                                       </div>
+                                       <div class="contact-body">
+                                           <ul class="contact-list">
+                                               <li class="contact-item">
+                                                   <h3 class="contact-title">Приезжайте:</h3>
+                                                   <p class="contact-value">
+                                                       г.&nbsp;Москва, ул.&nbsp;Уличная, д.1 оф.&nbsp;123
+                                                   </p>
+                                               </li>
+
+                                               <li class="contact-item">
+                                                   <h3 class="contact-title">Пишите:</h3>
+                                                   <p class="contact-value">
+                                                       <a href="mailto:info@asa-treid.com">info@asa-treid.com</a>
+                                                   </p>
+                                               </li>
+
+                                               <li class="contact-item">
+                                                   <h3 class="contact-title">Звоните:</h3>
+                                                   <p class="contact-value">
+                                                       <a href="tel:+74956681080">+7 (495) 668-10-80</a>
+                                                   </p>
+                                               </li>
+                                           </ul>
+                                       </div>
+                                       <div class="contact-footer text-center">
+                                           <button class="btn" data-toggle="modal" data-target="#modalCallback" >Закажите звонок</button>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </section>
+                   
+               </main>
+
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-aside col-12 col-lg-3">
+                            <div class="footer-logo">
+                                <a href="index.html" class="footer-logo-link">
+                                    <img src="images/logo-light.png" alt="АСА Трейд" class="footer-logo-img">
+                                </a>
+                            </div>
+
+                            <div class="footer-copyright">
+                                &copy; 2018 Аса Трейд <br>
+                                <a href="#link">Политика конфиденциальности</a>
+                            </div>
+
+                            <div class="footer-info">
+                                ОГРН 1234567891234, ИНН 123456789123, <br> Кпп 123456789, <br> Р/с № 12345678912345678912 в ПАО <br> “Сбербанк”
+                            </div>
+
+                            <div class="footer-address">
+                                г. Москва, ул.Уличная, д.1, оф. 123
+                                <a href="#section-contact">на карте</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <p class="footer-title">МЕНЮ</p>
+
+                            <div class="footer-menu-block">
+                                <ul class="footer-menu">
+                                    <li class="footer-menu-item">
+                                        <a href="#link" class="footer-menu-link">О КОМПАНИИ</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#link" class="footer-menu-link">КАТАЛОГ ПРОДУКЦИИ</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#link" class="footer-menu-link">ДОСТАВКА</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#link" class="footer-menu-link">БЛОГ</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#link" class="footer-menu-link">КОНТАКТЫ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <p class="footer-title">КАТАЛОГ ПРОДУКЦИИ</p>
+
+                            <div class="footer-menu-block">
+                                <ul class="footer-menu">
+                                    <li class="footer-menu-item">
+                                        <a href="#link" class="footer-menu-link">Фиксаторы арматуры</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#link" class="footer-menu-link">Замки для опалубки</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#link" class="footer-menu-link">Средства защиты</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#link" class="footer-menu-link">Укрывной материал</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#link" class="footer-menu-link">Стяжные винты и гайки для опалубки</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#link" class="footer-menu-link">Трубы ПВХ, ПНД, кустодержатели, дуги</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4">
+                            <p class="footer-title">Контакты</p>
+
+                            <ul class="footer-contact-list">
+                                <li class="footer-contact-item">
+                                    <div class="footer-contact-media">
+                                        <i class="icon-phone" ></i>
+                                    </div>
+                                    <div class="footer-contact-value">
+                                        <a href="tel:+74956681080">+7 (495) <b>668-10-80</b></a>
+                                        <ul class="social-list">
+                                            <li class="social-item">
+                                                <a href="#link" class="social-link">
+                                                    <img src="images/icons/icon-viber-light.png" alt="viber">
+                                                </a>
+                                            </li>
+                                            <li class="social-item">
+                                                <a href="#link" class="social-link">
+                                                    <img src="images/icons/icons-whatsapp-light.png" alt="what's up">
+                                                </a>
+                                            </li>
+                                            <li class="social-item">
+                                                <a href="#link" class="social-link">
+                                                    <img src="images/icons/icon-telegram-light.png" alt="telegram">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="footer-contact-item">
+                                    <div class="footer-contact-media">
+                                        <i class="icon-envelope" ></i>
+                                    </div>
+                                    <div class="footer-contact-value">
+                                        <a href="mailto:info@asa-treid.com">info@asa-treid.com</a>
+                                    </div>
+                                </li>
+
+                                <li class="footer-contact-item">
+                                    <div class="footer-contact-media">
+                                        <img src="images/icons/icon-social-light.png" alt="Соц группа">
+                                    </div>
+                                    <div class="footer-contact-value">
+                                        Мы в социальных сетях:
+                                        <ul class="social-list">
+                                            <li class="social-item">
+                                                <a href="#link" class="social-link">
+                                                    <img src="images/icons/icon-vk-light.png" alt="вконтакте">
+                                                </a>
+                                            </li>
+                                            <li class="social-item">
+                                                <a href="#link" class="social-link">
+                                                    <img src="images/icons/icon-instagram-light.png" alt="instagram">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="subscribe-block">
+                                <p class="subscribe-title"><img src="images/icons/icon-subscribe-light.png" alt="Подписка">Подпишитесь на новости:</p>
+                                <form class="form-subscribe">
+                                    <input type="text" class="form-subscribe-input" placeholder="e-mail" required >
+                                    <button type="submit" class="btn form-subscribe-button" >Подписаться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCallbackLabel">Заказать обратный звонок</h5>
+                        <p class="modal-subtitle">Перезвоним через 2 минуты!</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon-close" ></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" class="form-modal">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Ваше имя" name="modalCallbackName" required >
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="tel" placeholder="Номер телефона" name="modalCallbackPhone" required >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="btn" >Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="custom-control">
+                                            <input type="checkbox" class="custom-control-input" id="modalCallbackCheck" checked required >
+                                            <label class="custom-control-label" for="modalCallbackCheck">Я согласен(на) на обработку персональных данных</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCallbackLabel">Оствить заявку</h5>
+                        <p class="modal-subtitle">Оставьте заявку <br> и мы перезвоним Вам через 2 минуты!</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon-close" ></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" class="form-modal">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Ваше имя" name="modalOrderName" required >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="tel" placeholder="Номер телефона" name="modalOrderPhone" required >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="E-mail" placeholder="E-mail" name="modalOrderEmail" required >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <textarea name="modalOrderMessage" placeholder="Текст вашего сообщения" ></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="custom-file-upload">
+                                            <input type="file" id="file" name="myfiles[]" multiple />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="btn" >Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="custom-control">
+                                            <input type="checkbox" class="custom-control-input" id="modalOrderCheck" checked required >
+                                            <label class="custom-control-label" for="modalOrderCheck">Я согласен(на) на обработку персональных данных</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="offcanvas">
+            <div class="offcanvas-header">
+                <button class="close">
+                    <i class="icon-close" ></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="offcanvas-nav">
+                    <ul class="offcanvas-nav-list">
+                        <li class="offcanvas-nav-item active" >
+                            <a href="#link" class="offcanvas-nav-link">О компании</a>
+                        </li>
+                        <li class="offcanvas-nav-item" >
+                            <a href="#link" class="offcanvas-nav-link">Каталог продукции</a>
+                        </li>
+                        <li class="offcanvas-nav-item" >
+                            <a href="#link" class="offcanvas-nav-link">Доставка</a>
+                        </li>
+                        <li class="offcanvas-nav-item" >
+                            <a href="#link" class="offcanvas-nav-link">Блог</a>
+                        </li>
+                        <li class="offcanvas-nav-item" >
+                            <a href="#link" class="offcanvas-nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas-footer">
+                <div class="offcanvas-contact">
+                    <div class="offcanvas-contact-links">
+                        <a href="tel:+74956681080">+7 (495) 668-10-80</a>
+                        <a href="mailto:info@asa-treid.com">info@asa-treid.com</a>
+                    </div>
+
+                    <div class="offcanvas-contact-address">
+                        г. Москва, ул.Уличная, д.1, оф.&nbsp;123
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="vendor/js/jquery-3.3.1.min.js" ></script>
+        <script src="vendor/js/bootstrap.min.js" ></script>
+        <script src="vendor/js/aos.js" ></script>
+        <script src="vendor/js/mask.js" ></script>
+        <script src="vendor/js/slick.min.js" ></script>
+        <script src="vendor/js/jquery.fancybox.min.js" ></script>
+        <script src="vendor/js/custom.file.upload.js" ></script>
+        <script src="vendor/js/select2.min.js" ></script>
+
+        <script src="js/main.js" ></script>
+    </body>
+
+</html>

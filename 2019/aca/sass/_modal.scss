@@ -1,0 +1,85 @@
+.modal {
+	line-height: 1.2;
+	input,
+	textarea {
+		padding-left: 20px;
+		padding-right: 20px;
+		border: 1px solid $primary;
+		font-size: 12px;
+		color: $primary;
+		&::placeholder {
+			color: #949393;
+		}
+	}
+
+	input {
+		height: 34px;
+	}
+
+	.form-group {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.file-upload-button {
+		border-color: $primary;
+	}
+
+	.btn[type='submit'] {
+		margin-top: 30px;
+		margin-bottom: 10px;
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+
+	.modal-dialog {
+		border: 1px solid $gray;
+		@media (min-width: 576px) {
+			max-width: 470px;
+		}
+
+		.modal-content {
+			border: 6px solid $primary;
+			border-radius: 0;
+			.close {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 40px;
+				height: 40px;
+				margin: 0;
+				padding: 0;
+				border: none;
+				border-radius: 0;
+				background-color: transparent;
+				font-size: 24px;
+				font-weight: 700;
+				color: $primary;
+			}
+
+			.modal-header {
+				position: relative;
+				display: block;
+				padding: 25px 40px;
+				border-bottom: none;
+				text-align: center;
+				.modal-title {
+					font-size: 16px;
+					font-weight: 700;
+					text-transform: uppercase;
+					color: $primary;
+				}
+				.modal-subtitle {
+					margin: 0;
+					font-size: 12px;
+					font-weight: 700;
+					color: $danger;
+				}
+			}
+
+			.modal-body {
+				padding: 0 40px 35px;
+			}
+		}
+	}
+}

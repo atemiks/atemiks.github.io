@@ -1,0 +1,99 @@
+.section-about.nomag {
+	padding-bottom: 0;
+	.about-description,
+	.achievements-grid {
+		padding-left: 0;
+		padding-right: 0;
+		
+	}
+}
+
+.documents-block {
+	margin-top: 35px;
+	.documents-header {
+		display: flex;
+	}
+
+	.documents-title {
+		flex: 1 1 auto;
+		margin: 0 0 15px;
+		font-size: 24px;
+		font-weight: 700;
+		color: $primary;
+		text-transform: uppercase;
+	}
+
+	.documents-controls {
+		cursor: default;
+		flex: 0 0 auto;
+		max-width: auto;
+		margin-left: 15px;
+	}
+}
+
+.document-card {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 170px;
+	height: 239px;
+	border: 2px solid #081e4b;
+	text-decoration: none;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	&:after {
+		opacity: 0;
+		visibility: hidden;
+		content: '\f2ed';
+		font-family: 'icomoon';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 30px;
+		color: $primary;
+		text-decoration: none;
+		transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease;
+	}
+
+	&:hover {
+		text-decoration: none;
+		&:after {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.slider-documents {
+	.slide-item {
+		width: 170px;
+		margin-right: 42px;
+	}
+}
+
+.slide-control {
+	outline: none;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	width: 26px;
+	height: 42px;
+	margin: 0 0 0 6px;
+	padding: 0;
+	border: none;
+	background-color: #c6c6c6;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	line-height: 42px;
+	&:hover {
+		background-color: $primary;
+	}
+}

@@ -1,0 +1,202 @@
+.section-catalog {
+	margin-top: -55px;
+	.catalog-aside {
+		.catalog-nav-toggler {
+			display: none;
+			margin-bottom: 30px;
+			@include media-breakpoint-down(md) {
+				display: block;
+			}
+
+			i {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 5px;
+				font-size: 180%;
+			}
+		}
+
+		&-inner {
+			@include media-breakpoint-up(lg) {
+				display: block !important;
+			}
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+		}
+	}
+
+	.catalog-title {
+		@extend .h3;
+		margin: -10px 0 15px;
+		font-weight: 700;
+		line-height: 1.3;
+	}
+
+	.catalog-actions {
+		margin-top: 15px;
+		margin-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-top: 1px solid $gray;
+		border-bottom: 1px solid $gray;
+		@include media-breakpoint-down(lg) {
+			padding: 10px 0;
+		}
+	}
+
+	.form-catalog-search {
+		display: flex;
+		input {
+			height: 45px;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-size: 16px;
+			font-style: italic;
+			color: #4d4d4d;
+			&::placeholder {
+				color: #4d4d4d;
+			}
+		}
+
+		.btn {
+			flex: 0 0 auto;
+			min-width: auto;
+			padding: 0 20px;
+			border-left: none;
+			font-size: 14px;
+			font-weight: 600;
+		}
+	}
+
+	.form-catalog-sort,
+	.form-catalog-count,
+	.catalog-view {
+		display: flex;
+		align-items: center;
+		margin: 5px 10px 5px 0;
+		label {
+			display: inline-block;
+			margin: 0 10px 0 0;
+			font-size: 14px;
+			color: #000;
+			line-height: 1;
+		}
+	}
+
+	.form-catalog-sort {
+		@media screen and (max-width: 375px) {
+			display: block;
+		}
+	}
+
+	.catalog-view {
+		margin-right: 0;
+		&-title {
+			margin: 0 10px 0 0;
+			font-size: 14px;
+			color: #000;
+		}
+
+		&-buttons {
+			overflow: hidden;
+			display: flex;
+			border: 1px solid #bababa;
+			border-radius: 3px;
+			line-height: 1;
+		}
+
+		&-button {
+			outline: none;
+			cursor: pointer;
+			display: block;
+			height: 28px;
+			border: none;
+			margin: 0;
+			padding: 5px 10px;
+			border-right: 1px solid #bababa;
+			background-color: #fff;
+			font-size: 12px;
+			color: #6b6b6b;
+			line-height: 1;
+			i {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 5px;
+				font-size: 160%;
+			}
+
+			&:last-child {
+				border-right: none;
+			}
+
+			&.active {
+				background-color: #dddddd;
+				box-shadow: inset 2px 2px 8px rgba(73, 83, 82, 0.35);
+			}
+		}
+	}
+}
+
+.catalog-nav-list {
+	@extend .reset-list;
+	width: 270px;
+	margin-bottom: 30px;
+	border: 1px solid $gray;
+	@include media-breakpoint-down(lg) {
+		width: 240px;
+	}
+	@include media-breakpoint-down(md) {
+		width: 100%;
+	}
+
+	.catalog-nav-item {
+		.catalog-nav-link {
+			display: flex;
+			align-items: center;
+			min-height: 63px;
+			padding: 10px 15px;
+			border-bottom: 1px solid $gray;
+			font-size: 14px;
+			font-weight: 700;
+			color: #000;
+			text-transform: uppercase;
+			text-decoration: none;
+			line-height: 1.42;
+			@include media-breakpoint-down(lg) {
+				min-height: 55px;
+				font-size: 12px;
+			}
+
+			&:hover {
+				background-color: $danger;
+				color: #fff;
+			}
+		}
+
+		&.active {
+			.catalog-nav-link {
+				background-color: $danger;
+				color: #fff;
+			}
+		}
+
+		&:last-child {
+			.catalog-nav-link {
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+.catalog-grid {
+	margin-bottom: -10px;
+	.catalog-item {
+		margin-bottom: 30px;
+	}
+}
+
+.catalog-list {
+	margin-top: -20px;
+	margin-bottom: 30px;
+}

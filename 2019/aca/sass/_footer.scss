@@ -1,0 +1,154 @@
+.footer {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	background-color: $primary;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #fff;
+	&-aside {
+		@include media-breakpoint-down(md) {
+			order: 1;
+		}
+	}
+
+	&-logo {
+		width: 121px;
+		height: 43px;
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+	}
+
+	&-title {
+		margin: 0 0 10px;
+		font-size: 18px;
+		font-weight: 700;
+		color: inherit;
+		text-transform: uppercase;
+	}
+
+	&-menu {
+		@extend .reset-list;
+		font-size: 14px;
+		font-weight: 400;
+		@include media-breakpoint-down(xs) {
+			margin-bottom: 25px;
+		}
+
+		&-item {
+			padding-top: 4px !important;
+			padding-bottom: 4px !important;
+			.footer-menu-link {
+				color: $info;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	&-contact-list {
+		@extend .reset-list;
+		margin-top: -10px;
+		font-size: 14px;
+		font-weight: 400;
+		@include media-breakpoint-down(md) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		a {
+			color: inherit;
+		}
+		b {
+			font-size: 20px;
+			font-weight: 700;
+		}
+
+		.footer-contact-item {
+			display: flex;
+			align-items: flex-start;
+			@include media-breakpoint-down(md) {
+				flex: 0 0 33.3333%;
+				max-width: 33.3333%;
+				margin-bottom: 15px;
+			}
+			@include media-breakpoint-down(sm) {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+			@include media-breakpoint-down(xs) {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+
+			.footer-contact-media {
+				flex: 0 0 35px;
+				max-width: 35px;
+				font-size: 26px;
+			}
+			.footer-contact-value {
+				padding-top: 5px;
+			}
+		}
+	}
+
+	&-copyright,
+	&-info,
+	&-address {
+		font-size: 14px;
+		a {
+			display: block;
+			color: $info;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	&-copyright {
+		margin: 25px 0;
+	}
+
+	&-info {
+		font-size: 12px;
+		line-height: 1.7;
+	}
+
+	&-address {
+		margin: 20px 0;
+	}
+}
+
+.subscribe-block {
+	.subscribe-title {
+		margin: 5px 0 15px;
+		font-size: 16px;
+		font-weight: 700;
+		img {
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}
+
+	.form-subscribe {
+		display: flex;
+		max-width: 420px;
+		&-input {
+			flex: 1 1 auto;
+			height: 42px;
+			background-color: transparent;
+			font-size: 14px;
+			font-weight: 400;
+			color: #fff;
+			&::placeholder {
+				color: #fff;
+			}
+		}
+		&-button {
+			flex: 0 0 auto;
+		}
+	}
+}
