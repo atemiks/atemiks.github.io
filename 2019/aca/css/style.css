@@ -7306,8 +7306,22 @@ button {
           font-size: 12px;
           font-weight: 700;
           color: #e42b1a; }
+        .modal .modal-dialog .modal-content .modal-header .modal-product {
+          margin: 5px 0 10px;
+          font-size: 14px; }
       .modal .modal-dialog .modal-content .modal-body {
         padding: 0 40px 35px; }
+
+@media (min-width: 576px) {
+  .modal.lg .modal-dialog {
+    max-width: 670px; } }
+
+.modal.lg .modal-dialog .btn[type='submit'] {
+  position: relative;
+  top: -2px;
+  margin-top: 0;
+  padding-top: 8px;
+  padding-bottom: 8px; }
 
 .select2-container--default .select2-selection--single {
   border: 1px solid #bababa !important;

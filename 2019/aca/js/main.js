@@ -174,4 +174,21 @@ $( document ).ready(function() {
         $(self).addClass('active');
     });
 
+
+    // page product
+    $( ".product-block .btn-link" ).on( "click", function() {
+        var self = $(this);
+        if( $(self).hasClass('more-specifications') ) {
+            $('#description-tab').tab('show');
+        } else if ( $(self).hasClass('more-description') ) {
+            $('#specifications-tab').tab('show');
+        }
+    });
+
+
+    // page basket
+    $('.basket-grid .basket-trash').on('click','.basket-action',function() {
+        $(this).closest('.basket-item').remove();
+    });
+
 });
