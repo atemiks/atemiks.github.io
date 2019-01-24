@@ -5,15 +5,35 @@ $(document).ready(function() {
     }, 100);
 
     // gallery slider
-    $('.slider-gallery').slick({
-    	slidesToShow: 1,
-    	centerMode: true,
-    	variableWidth: true,
-    	initialSlide: 1,
-    	infinite: false,
-		arrows: true,
-		dots: false
+    $('.owl-carousel').owlCarousel({
+	    loop:true,
+	    center:true,
+	    margin:15,
+	    dots: false,
+	    nav:true,
+	    autoWidth:false,
+	    navText: ["<i class='slide-left'></i>", "<i class='slide-right'></i>"],
+	    responsive:{
+	        0: {
+	            items: 3,
+	            stagePadding: 40
+	        },
+	        575:{
+	            items:3,
+	            stagePadding: 60
+	        },
+	        768:{
+	            items:3,
+	            stagePadding: 80,
+	        },
+	        1200:{
+	            items:3,
+	            stagePadding: 150
+	        }
+	    }
 	});
+	$(".owl-carousel").trigger("to.owl.carousel", [1, 1, true]);
+
 
 
 });

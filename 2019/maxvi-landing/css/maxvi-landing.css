@@ -278,28 +278,108 @@ body.landing-page {
 	padding-bottom: 140px;
 }
 
-.landing-section-gallery .gallery-card {
-	padding-bottom: 70%;
-	background-position: center;
-	-webkit-background-size: contain;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
 .landing-section-gallery .slider-gallery {
+	width: calc(100% + 30px);
 	margin-left: -15px;
 	margin-right: -15px;
 }
 
-.landing-section-gallery .slider-gallery .slide-item {
-	width: 950px;
-	opacity: 0.3;
-	transition: 300ms ease opacity;
+.landing-section-gallery .slider-gallery {
+    list-style: none;
+    transition: all ease-in .5s;
+    position: relative
 }
 
-.landing-section-gallery .slider-gallery .slide-item.slick-current {
-	opacity: 1;
+.landing-section-gallery .slider-gallery .slide {
+    max-height: 300px;
+    display: table;
+    text-align: center
 }
+
+.landing-section-gallery .owl-carousel .owl-item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.landing-section-gallery .owl-carousel .owl-item:not(.active) {
+    opacity: .3 !important
+}
+
+.landing-section-gallery .owl-carousel .owl-item.active {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    opacity: 1
+}
+
+.landing-section-gallery .owl-carousel .owl-item img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.landing-section-gallery .slide-left,
+.landing-section-gallery .slide-right {
+    width: 2.625vw;
+    height: 8.75vw;
+    display: block;
+    border-radius: 50%
+}
+
+.landing-section-gallery .owl-nav .owl-next,
+.landing-section-gallery .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block !important;
+    border: 0 solid #000
+}
+
+.landing-section-gallery .slide-left {
+    background: url(../images/maxvi-landing/icons/slide-left.png) center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain
+}
+
+.landing-section-gallery .slide-right {
+    background: url(../images/maxvi-landing/icons/slide-right.png) center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain
+}
+
+.landing-section-gallery .owl-nav .owl-prev {
+    left: 15px
+}
+
+.landing-section-gallery .owl-nav .owl-next {
+    right: 15px
+}
+
+.landing-section-gallery .owl-nav button {
+    outline: 0 !important;
+    opacity: .8
+}
+
+.landing-section-gallery .owl-nav button:hover {
+    opacity: 1
+}
+
+.landing-section-gallery .owl-nav button.disabled {
+    opacity: .1;
+    cursor: not-allowed !important
+}
+
+
+
 
 
 .landing-section-specifications {
@@ -351,47 +431,6 @@ body.landing-page {
     letter-spacing: 2.16px;
 }
 
-/* slick slider custom */ 
-.slick-slider * {
-	outline: none;
-}
-
-.landing-section .slick-arrow {
-	z-index: 9;
-	width: 136px;
-	height: 100%;
-	transition: opacity 300ms ease;
-}
-.landing-section .slick-arrow.slick-disabled {
-	opacity: 0;
-}
-
-.landing-section .slick-arrow:before {
-	content: '';
-	display: block;
-	width: 40px;
-	height: 140px;
-	margin-left: auto;
-	margin-right: auto;
-	background-position: center;
-	background-repeat: no-repeat;
-	-webkit-background-size: contain;
-	background-size: contain;
-}
-
-.landing-section .slick-prev {
-	left: 0px;
-}
-.landing-section .slick-prev:before {
-	background-image: url('../images/maxvi-landing/icons/slide-left.png') !important;
-}
-
-.landing-section .slick-next {
-	right: 0px;
-}
-.landing-section .slick-next:before {
-	background-image: url('../images/maxvi-landing/icons/slide-right.png') !important;
-}
 
 
 @media screen and (max-width: 991px) {
@@ -502,11 +541,6 @@ body.landing-page {
 
 	.landing-section-promo .promo-figure {
 		margin-bottom: 15px;
-	}
-
-
-	.landing-section .slick-arrow:before {
-		width: 30px;
 	}
 }
 
@@ -624,14 +658,6 @@ body.landing-page {
 	.landing-section-promo .promo-price {
 		font-size: 24px;
 	}
-
-
-	.landing-section .slick-arrow {
-		width: 55px;
-	}
-	.landing-section .slick-arrow:before {
-		width: 25px;
-	}
 }
 
 @media screen and (max-width: 425px) {
@@ -647,9 +673,5 @@ body.landing-page {
 
 	.landing-section-presentation .presentation-figure img {
 		width: 170px;
-	}
-
-	.landing-section .slick-arrow:before {
-		width: 15px;
 	}
 }
