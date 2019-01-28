@@ -1,0 +1,123 @@
+.article-card {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	margin-bottom: 16px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-decoration: none;
+	&:after {
+		content: '';
+		opacity: .6;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to right, rgba(25,4,32,1) 0%,rgba(100,33,84,1) 100%);
+	}
+
+	.article-inner {
+		position: absolute;
+		z-index: 1;
+	    left: 25px;
+	    right: 25px;
+	    bottom: 35px;
+		margin: 0;
+		@media (max-width: 1199px) {
+			left: 15px;
+			right: 15px;
+			bottom: 20px;
+		}
+		@media (max-width: 767px) {
+			position: relative;
+			top: auto;
+			left: auto;
+			right: auto;
+			bottom: auto;
+			padding: 150px 35px 35px;
+		}
+		@media (max-width: 350px) {
+			padding: 95px 15px 20px;
+		}
+	}
+
+	.article-title {
+		@extend .h6;
+		margin: 0;
+		font-weight: 600;
+		line-height: 1.3;
+		color: inherit;
+		@media (max-width: 1199px) {
+			font-size: 18px;
+		}
+		@media (max-width: 991px) {
+			font-size: 16px;
+		}
+		@media (max-width: 767px) {
+			margin: 0 0 15px;
+		}
+	}
+
+	.article-description {
+		display: none;
+		margin: 0;
+		color: inherit;
+		line-height: 1.46;
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+
+	&.xs {
+		@media (min-width: 768px) {
+			height: 200px;
+		}
+
+		.article-title {
+			@media (min-width: 768px) {
+				font-size: 16px;
+			}
+		}
+	}
+
+	&.sm {
+		@media (min-width: 768px) {
+			height: 195px;
+		}
+	}
+
+	&.lg {
+		@media (min-width: 768px) {
+			height: 627px;
+		}
+		@media (min-width: 1200px) {
+			height: 411px;
+		}
+
+		.article-inner {
+		    @media (min-width: 1200px) {
+				left: 35px;
+			    right: 35px;
+			    bottom: 40px;
+		    }
+		    @media (min-width: 768px) and (max-width: 1199px) {
+		    	left: 20px;
+		    	right: 20px;
+		    	bottom: 25px;
+		    }
+		}
+
+		.article-title {
+			@media (min-width: 768px) {
+				margin: 0 0 20px;
+			}
+		}
+
+		.article-description {
+			display: block;
+		}
+	}
+}

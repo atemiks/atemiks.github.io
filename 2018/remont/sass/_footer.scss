@@ -59,7 +59,9 @@
 
 .footer-logo {
 	@extend .header-logo;
+	margin-top: 55px;
 	@media (max-width: 991px) {
+		margin-top: 25px;
 		text-align: center;
 	}
 
@@ -108,9 +110,15 @@
 
 .footer-services {
 	@extend .header-services;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	@media (max-width: 991px) {
 		width: 100%;
 		border: none;
+	}
+	@media (max-width: 767px) {
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 }
 .footer-services-list {
@@ -147,13 +155,19 @@
 .footer-contact {
 	@extend .header-contact ;
 	@media (max-width: 991px) {
-		max-width: 260px;
+		max-width: 270px;
 		margin-left: auto;
 		margin-right: auto;
+		text-align: center;
 	}
 
 	.footer-contact-phone {
 		@extend .header-contact-phone;
+		margin-bottom: 5px;
+	}
+
+	.footer-contact-hint {
+		margin: 10px 0 5px;
 	}
 }
 
