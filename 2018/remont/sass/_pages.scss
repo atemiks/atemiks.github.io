@@ -28,6 +28,16 @@
 		@extend .h3;
 		@extend .text-gradient;
 	}
+
+	mark:last-child {
+		margin-bottom: 25px;
+	}
+
+	.mark-lead {
+		@extend .h3;
+		margin: 0;
+		background: $dark-warning;
+	}
 }
 
 .page-header {

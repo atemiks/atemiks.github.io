@@ -71,6 +71,14 @@
 		}
 	}
 
+	.icon-arrow {
+		display: none;
+		margin-top: 15px;
+		@media (max-width: 767px) {
+			display: block;
+		} 
+	}
+
 	&.xs {
 		@media (min-width: 768px) {
 			height: 200px;
@@ -86,6 +94,10 @@
 	&.sm {
 		@media (min-width: 768px) {
 			height: 195px;
+		}
+
+		.icon-arrow {
+			display: block;
 		}
 	}
 
@@ -117,6 +129,10 @@
 		}
 
 		.article-description {
+			display: block;
+		}
+
+		.icon-arrow {
 			display: block;
 		}
 	}

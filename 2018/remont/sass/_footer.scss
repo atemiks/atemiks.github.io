@@ -1,6 +1,7 @@
 .footer-box {
 	@extend .header-box;
 	display: block !important;
+	border-top: 2px solid $light-gray;
 	@media (max-width: 991px) {
 		padding-bottom: 40px;
 	}

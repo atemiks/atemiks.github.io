@@ -866,9 +866,7 @@
 			}
 
 			.mark-lead {
-				@extend .h3;
 				margin: 0;
-				background: $dark-warning;
 			}
 		}
 	}
@@ -1038,7 +1036,12 @@
 }
 
 
-
+.section-blog {
+	padding-bottom: 75px;
+	.articles-grid {
+		margin-bottom: 25px;
+	}
+}
 
 
 
