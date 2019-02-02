@@ -18,6 +18,10 @@
 	background: linear-gradient(to right, rgba(21,3,28,1) 0%,rgba(108,41,90,1) 100%);
 }
 
+.gradient-vertical {
+	background-image: linear-gradient(to top, #6f3975 0%, #aa759c 99%, #aa759c 100%);
+}
+
 .text-gradient {
 	background-image: -moz-linear-gradient(left, #6f3975 0%, #aa759c 99%, #aa759c 100%);
 	background-image: -webkit-linear-gradient(left, #6f3975 0%, #aa759c 99%, #aa759c 100%);
