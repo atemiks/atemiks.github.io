@@ -7,13 +7,10 @@
 
 html,
 body {
-	background-color: #fff;
-	font-family: 'Roboto', sans-serif;
-}
-
-body {
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -1095,7 +1092,7 @@ img {
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
-	
+
 	.landing .section-camera .container {
 		padding-left: 15px;
 		padding-right: 15px;
