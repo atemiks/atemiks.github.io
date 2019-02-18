@@ -267,13 +267,9 @@ img {
 	text-align: center;
 }
 
-.landing .display-promo .display-promo-prespective {
-	/*perspective: 1000px;*/
-}
 
 .landing .display-promo .display-promo-img {
-	margin: 50px 0 0;
-	/*transform: rotateX(50deg);*/
+	margin: 30px 0 0;
 }
 
 
@@ -1051,6 +1047,10 @@ img {
 
 	.landing .section-display {
 		padding-top: 70px;
+	}
+
+	.landing .display-promo .display-promo-img {
+		margin-top: 10px;
 	}
 
 	.landing .display-technology {
