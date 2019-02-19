@@ -1,6 +1,26 @@
 $( document ).ready(function() {
+	// animation
+    setTimeout(function(){
+    	AOS.init();
+    }, 100);
+
+	// animate first img on ready
+	$(front).addClass('animate');
+	$(back).addClass('animate');
 
 	// gallery slider
+	$('.slider-gallery-wrapper').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: false,
+		draggable: false,
+		swipe: false,
+		swipeToSlide: false,
+		touchMove: false,
+		infinite: false
+	});
+
     $('.slider-gallery').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -8,19 +28,9 @@ $( document ).ready(function() {
 		dots: false
 	});
 
-
-    // gallery tabs
-	$('.nav-link').on('click', function(e) {
+	// colors tabs
+	$('a.color-card').on('click', function(e) {
 		e.preventDefault();
-
-		var target = $(this).attr('rel');
-		$("#"+target).show().siblings('.tab-pane').hide();
-
-		$('.nav-link.active').removeClass('active');
-		$(this).addClass('active');
-
-		// update slider after change active tab
-		$('.slider-gallery').slick('setPosition');
 	});
 });
 
@@ -70,9 +80,10 @@ let images = [
 
 let element = document.querySelector('.display-promo-img');
 
-let Visible = function (target) {
+let Visible = (target) => {
     let blockHeight = $(element).height();
     let frame = blockHeight/9;
+	let startAnim = 2.8; // скорость старта анимации
 
     let targetPosition = {
         top: window.pageYOffset + target.getBoundingClientRect().top,
@@ -88,28 +99,28 @@ let Visible = function (target) {
         bottom: window.pageYOffset + document.documentElement.clientHeight
       };
       
-    if (targetPosition.top <= windowPosition.bottom - blockHeight /3.5) {
+    if (targetPosition.top <= windowPosition.bottom - blockHeight /startAnim) {
         element.src = images[1];
     }
-    if (targetPosition.top + frame <= windowPosition.bottom - blockHeight /3.5) {
+    if (targetPosition.top + frame <= windowPosition.bottom - blockHeight /startAnim) {
         element.src = images[2];
     }
-    if (targetPosition.top + frame*2 <= windowPosition.bottom - blockHeight /3.5) {
+    if (targetPosition.top + frame*2 <= windowPosition.bottom - blockHeight /startAnim) {
         element.src = images[3];
     }
-    if (targetPosition.top + frame*3 <= windowPosition.bottom - blockHeight /3.5) {
+    if (targetPosition.top + frame*3 <= windowPosition.bottom - blockHeight /startAnim) {
         element.src = images[4];
     }
-    if (targetPosition.top + frame*4 <= windowPosition.bottom - blockHeight /3.5) {
+    if (targetPosition.top + frame*4 <= windowPosition.bottom - blockHeight /startAnim) {
         element.src = images[5];
     }
-    if (targetPosition.top + frame*5 <= windowPosition.bottom - blockHeight /3.5) {
+    if (targetPosition.top + frame*5 <= windowPosition.bottom - blockHeight /startAnim) {
         element.src = images[6];
     }
-    if (targetPosition.top + frame*6 <= windowPosition.bottom - blockHeight /3.5) {
+    if (targetPosition.top + frame*6 <= windowPosition.bottom - blockHeight /startAnim) {
         element.src = images[7];
     }
-    if (targetPosition.top + frame*7 <= windowPosition.bottom - blockHeight /3.5) {
+    if (targetPosition.top + frame*7 <= windowPosition.bottom - blockHeight /startAnim) {
         element.src = images[8];
     }
 };

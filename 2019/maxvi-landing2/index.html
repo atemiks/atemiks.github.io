@@ -12,15 +12,16 @@
         <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
         <link rel="stylesheet" href="vendor/slick/slick.css">
         <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+        <link rel="stylesheet" href="vendor/aos/aos.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body class="landing" >
+    <body>
         <header class="landing-header">
         	header
         </header>
 
-        <main class="landing-main">
+        <main class="landing-wrapper">
         	<section class="section-hero" style="background-image: url(images/section-hero/section-hero-bg.jpg)" >
         		<div class="container">
         			<div class="row">
@@ -61,7 +62,7 @@
         		<div class="container">
         			<div class="row">
         				<div class="col">
-        					<div class="display-promo" style="background-image: url('images/section-display/section-display-bg.png')" >
+        					<div class="display-promo" style="background-image: url('images/section-display/section-display-bg.jpg')" >
         						<div class="display-promo-prespective">
         							<img src="images/section-display/1.png" class="display-promo-img" alt="Широкоформатный дисплей 18:9">
         						</div>
@@ -287,72 +288,73 @@
 
         			<div class="row">
         				<div class="col">
-        					<ul class="nav-tabs colors-list">
-        						<li class="color-item">
-        							<a href="#color" class="nav-link active color-card black" rel="black">
-        								<div class="color-thumbnail"></div>
-        								<div class="color-title">Black</div>
-        							</a>
-        						</li>
+                            <ul class="colors-list">
+                                <li class="color-item">
+                                    <a href="#color" class="color-card black" onclick="$('.slider-gallery-wrapper').slick('slickGoTo', '0');">
+                                        <div class="color-thumbnail"></div>
+                                        <div class="color-title">Black</div>
+                                    </a>
+                                </li>
 
-        						<li class="color-item">
-        							<a href="#color" class="nav-link color-card gold" rel="gold" >
-        								<div class="color-thumbnail"></div>
-        								<div class="color-title">Gold</div>
-        							</a>
-        						</li>
+                                <li class="color-item">
+                                    <a href="#color" class="color-card gold" onclick="$('.slider-gallery-wrapper').slick('slickGoTo', '1');">
+                                        <div class="color-thumbnail"></div>
+                                        <div class="color-title">Gold</div>
+                                    </a>
+                                </li>
 
-        						<li class="color-item">
-        							<a href="#color" class="nav-link color-card blue" rel="blue" >
-        								<div class="color-thumbnail"></div>
-        								<div class="color-title">Blue</div>
-        							</a>
-        						</li>
-        					</ul>
+                                <li class="color-item">
+                                    <a href="#color" class="color-card blue" onclick="$('.slider-gallery-wrapper').slick('slickGoTo', '2');">
+                                        <div class="color-thumbnail"></div>
+                                        <div class="color-title">Blue</div>
+                                    </a>
+                                </li>
+                            </ul>
 
-        					<div class="tab-content">
-        						<div id="black" class="tab-pane" >
-        							<div class="slider-gallery">
-		        						<div class="slide-item">
-		        							<img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
-		        						</div>
-		        						<div class="slide-item">
-		        							<img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
-		        						</div>
-		        						<div class="slide-item">
-		        							<img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
-		        						</div>
-		        					</div>
-        						</div>
+                            <div class="slider-gallery-wrapper">
+                                <div class="slide-item">
+                                    <div class="slider-gallery">
+                                        <div class="slide-item">
+                                            <img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
+                                        </div>
+                                    </div>
+                                </div>
 
-        						<div id="gold" class="tab-pane hidden" >
-        							<div class="slider-gallery">
-		        						<div class="slide-item">
-		        							<img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
-		        						</div>
-		        						<div class="slide-item">
-		        							<img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
-		        						</div>
-		        						<div class="slide-item">
-		        							<img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
-		        						</div>
-		        					</div>
-        						</div>
+                                <div class="slide-item">
+                                    <div class="slider-gallery">
+                                        <div class="slide-item">
+                                            <img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
+                                        </div>
+                                    </div>
+                                </div>
 
-        						<div id="blue" class="tab-pane hidden" >
-        							<div class="slider-gallery">
-		        						<div class="slide-item">
-		        							<img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
-		        						</div>
-		        						<div class="slide-item">
-		        							<img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
-		        						</div>
-		        						<div class="slide-item">
-		        							<img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
-		        						</div>
-		        					</div>
-        						</div>
-        					</div>
+                                <div class="slide-item">
+                                    <div class="slider-gallery">
+                                        <div class="slide-item">
+                                            <img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
+                                        </div>
+                                        <div class="slide-item">
+                                            <img src="images/section-gallery/gallery-item-1.png" alt="MAXVI VEGA">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
         				</div>
         			</div>
         		</div>
@@ -448,12 +450,12 @@
         		<div class="container">
         			<div class="row">
         				<div class="col">
-        					<div class="promo-thumbnail">
+        					<div class="promo-thumbnail" data-aos="fade-up" data-aos-duration="1400" >
         						<img src="images/section-promo/promo-img.png" alt="MAXVI VEGA" class="promo-img">
         					</div>
 
-        					<div class="promo-title"><b>MAXVI VEGA</b> <br> MS531</div>
-        					<div class="promo-price"><b>4 999</b> ₽</div>
+        					<div class="promo-title" ><b>MAXVI VEGA</b> <br> MS531</div>
+        					<div class="promo-price" ><b>4 999</b> ₽</div>
         				</div>
         			</div>
         		</div>
@@ -467,6 +469,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="vendor/fancybox/jquery.fancybox.min.js" ></script>
 		<script src="vendor/slick/slick.min.js" ></script>
+        <script src="vendor/aos/aos.js" ></script>
         <script src="js/main.js" ></script>
     </body>
 
