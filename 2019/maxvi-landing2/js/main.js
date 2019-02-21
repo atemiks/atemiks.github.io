@@ -97,7 +97,7 @@ let images = [
 let element = document.querySelector('.display-promo-img');
 
 let Visible = (target) => {
-    let blockHeight = $(element).height();
+    let blockHeight = $(element).height() * .75;
     let frame = blockHeight/30;
     let startAnim = 0; // speed animation
     if ( $(window).width() < 767 ) {
@@ -105,8 +105,6 @@ let Visible = (target) => {
     } else {
     	startAnim = 2.4; // speed animation for desktop
     }
-
-    console.log(startAnim);
 
     let targetPosition = {
         top: window.pageYOffset + target.getBoundingClientRect().top,
