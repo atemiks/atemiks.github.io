@@ -288,7 +288,8 @@ body {
 
 
 .landing-wrapper .display-promo .display-promo-img {
-	margin: 30px 0 0;
+	max-width: 1450px;
+	margin: -5px 0 0;
 }
 
 
@@ -506,6 +507,10 @@ body {
 	color: #fff;
 }
 
+.landing-wrapper .section-configuration .configuration-media img {
+	max-width: 1020px;
+}
+
 .landing-wrapper .configuration-list {
 	margin: 65px 0 0;
 	padding: 0;
@@ -529,6 +534,10 @@ body {
 	flex: 0 0 85px;
 	max-width: 85px;
 	margin-right: 15px;
+}
+
+.landing-wrapper .configuration-card .configuration-media img {
+	max-width: 100%;
 }
 
 .landing-wrapper .configuration-card .configuration-content {
@@ -816,6 +825,7 @@ body {
 
 	.landing-wrapper .display-promo .display-promo-img {
 		max-width: 90vw;
+		margin-top: 20px;
 	}
 }
 
@@ -1131,6 +1141,11 @@ body {
 	.landing-wrapper .section-camera .container {
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+
+
+	.landing-wrapper .section-configuration .configuration-media img {
+		max-width: 100%;
 	}
 
 

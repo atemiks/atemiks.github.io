@@ -75,15 +75,38 @@ let images = [
 	'images/section-display/6.png',
 	'images/section-display/7.png',
 	'images/section-display/8.png',
-	'images/section-display/9.png'
+	'images/section-display/9.png',
+	'images/section-display/10.png',
+	'images/section-display/11.png',
+	'images/section-display/12.png',
+	'images/section-display/13.png',
+	'images/section-display/14.png',
+	'images/section-display/15.png',
+	'images/section-display/16.png',
+	'images/section-display/17.png',
+	'images/section-display/18.png',
+	'images/section-display/19.png',
+	'images/section-display/20.png',
+	'images/section-display/21.png',
+	'images/section-display/22.png',
+	'images/section-display/23.png',
+	'images/section-display/24.png',
+	'images/section-display/25.png'
 ];
 
 let element = document.querySelector('.display-promo-img');
 
 let Visible = (target) => {
     let blockHeight = $(element).height();
-    let frame = blockHeight/9;
-	let startAnim = 2.8; // скорость старта анимации
+    let frame = blockHeight/30;
+    let startAnim = 0; // speed animation
+    if ( $(window).width() < 767 ) {
+    	startAnim = 1.2; // speed animation for mobile
+    } else {
+    	startAnim = 2.4; // speed animation for desktop
+    }
+
+    console.log(startAnim);
 
     let targetPosition = {
         top: window.pageYOffset + target.getBoundingClientRect().top,
@@ -97,32 +120,13 @@ let Visible = (target) => {
         left: window.pageXOffset,
         right: window.pageXOffset + document.documentElement.clientWidth,
         bottom: window.pageYOffset + document.documentElement.clientHeight
-      };
-      
-    if (targetPosition.top <= windowPosition.bottom - blockHeight /startAnim) {
-        element.src = images[1];
-    }
-    if (targetPosition.top + frame <= windowPosition.bottom - blockHeight /startAnim) {
-        element.src = images[2];
-    }
-    if (targetPosition.top + frame*2 <= windowPosition.bottom - blockHeight /startAnim) {
-        element.src = images[3];
-    }
-    if (targetPosition.top + frame*3 <= windowPosition.bottom - blockHeight /startAnim) {
-        element.src = images[4];
-    }
-    if (targetPosition.top + frame*4 <= windowPosition.bottom - blockHeight /startAnim) {
-        element.src = images[5];
-    }
-    if (targetPosition.top + frame*5 <= windowPosition.bottom - blockHeight /startAnim) {
-        element.src = images[6];
-    }
-    if (targetPosition.top + frame*6 <= windowPosition.bottom - blockHeight /startAnim) {
-        element.src = images[7];
-    }
-    if (targetPosition.top + frame*7 <= windowPosition.bottom - blockHeight /startAnim) {
-        element.src = images[8];
-    }
+	  };
+	  
+	for (let i = 0; i < images.length; i++) {
+		if (targetPosition.top + frame*i <= windowPosition.bottom - blockHeight /startAnim) {
+			element.src = images[i];
+		}
+	}
 };
 
 Visible(element);
