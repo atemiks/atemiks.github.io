@@ -99,6 +99,9 @@ figure {
 		margin-left: auto;
 		margin-right: auto;
 		@media (min-width: 768px) {
+			clear: none;
+			float: left;
+			margin-left: 0;
 			margin-right: 28px;
 		}
 	}
@@ -108,7 +111,10 @@ figure {
 		margin-left: auto;
 		margin-right: auto;
 		@media (min-width: 768px) {
+			clear: none;
+			float: right;
 			margin-left: 28px;
+			margin-right: 0;
 		}
 	}
 }
