@@ -1,0 +1,243 @@
+.header {
+	.container {
+		@media (min-width: 1200px) {
+			max-width: 1020px;
+		}
+	}
+}
+
+.header-statusbar {
+	position: relative;
+	z-index: 1;
+	min-height: 76px;
+	margin-bottom: -20px;
+	padding-top: 15px;
+	background: url('../img/header/header-statusbar.png') repeat-x center bottom;
+	.container {
+		@media (min-width: 1200px) {
+			max-width: 1090px;
+		}
+	}
+
+	.social-list {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.header-main {
+	min-height: 615px;
+	background-color: #25060e;
+	color: #fff;
+	text-align: center;
+	@media (min-width: 768px) {
+		text-align: left;
+	}
+
+	.header-content,
+	.header-aside {
+		position: relative;
+		z-index: 1;
+	}
+
+	.header-content {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		@media (min-width: 768px) {
+			padding-top: 60px;
+		}
+	}
+
+	.header-aside {
+		align-self: flex-end;
+	}
+}
+
+.header-logo {
+	@media (min-width: 768px) {
+		margin-bottom: 70px;
+	}
+
+	.header-logo-img {
+		max-width: 140px;
+		@media (min-width: 768px) {
+			max-width: 258px;
+		}
+	}
+}
+
+.header-login,
+.header-address {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.header-address {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.header-contact-list {
+	@extend .reset-list;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	@media (min-width: 768px)  {
+		margin-top: 48px;
+		margin-bottom: 48px;
+	}
+
+	.header-contact {
+		font-size: 24px;
+		font-weight: 400;
+		color: #fff;
+		text-decoration: none;
+		b {
+			font-size: 30px;
+			font-weight: 700;
+		}
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+
+.header-nav-wrapper {
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 28px;
+		width: 100%;
+		background: url('../img/nav-border.png') repeat-x center bottom;
+		transform: translateY(-100%);
+	}
+
+	.header-nav-inner {
+		display: none;
+		@media (min-width: 768px) {
+			display: block !important;
+		}
+	}
+}
+
+
+.header-nav {
+	background-color: #a86818;
+	background: linear-gradient(to right, rgba(167,103,23,1) 0%,rgba(241,200,65,1) 20%,rgba(241,200,65,1) 30%,rgba(189,127,26,1) 45%,rgba(120,66,10,1) 70%,rgba(66,40,17,1) 100%);
+}
+
+.header-nav-list {
+	@extend .reset-list;
+	@media (min-width: 768px) {
+		display: flex;
+	}
+
+	.header-nav-item {
+		flex: 1;
+		.header-nav-link {
+			display: block;
+			padding: 15px 10px;
+			font-size: 16px;
+			font-weight: 700;
+			color: #000000;
+			text-decoration: none;
+			white-space: nowrap;
+			@media (min-width: 768px) {
+				text-align: center;
+			}
+			@media (min-width: 992px) {
+				padding: 16px 15px;
+				font-size: 20px;
+			}
+
+			&:hover {
+				background-color: #123a0c;
+				color: #fff;
+			}
+		}
+
+		&.active {
+			.header-nav-link {
+				background-color: #123a0c;
+				color: #fff;
+			}
+		}
+	}
+}
+
+
+.mega-menu-wrapper {
+	position: relative;
+	padding: 30px 0;
+	background-color: #11560d;
+	@media (min-width: 768px) {
+		padding: 30px 0 45px;
+	}
+}
+.mega-menu {
+	@extend .reset-list;
+	.mega-menu-item {
+		display: inline-block;
+		margin-right: 14px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		@media (min-width: 768px) {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		.mega-menu-link {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 2;
+			color: #fff;
+			text-decoration: underline;
+			&:hover {
+				color: #b7f848;
+			}
+		}
+		&.active {
+			.mega-menu-link {
+				color: #b7f848;
+			}
+		}
+	}
+}
+
+
+.header-nav-toggler {
+	outline: none !important;
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	border: none;
+	background-color: #a86818;
+	background: linear-gradient(to right, rgba(167,103,23,1) 0%,rgba(241,200,65,1) 20%,rgba(241,200,65,1) 30%,rgba(189,127,26,1) 45%,rgba(120,66,10,1) 70%,rgba(66,40,17,1) 100%);
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: left;
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+
+.header-nav-toggler .toggler-icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 28px;
+	margin-right: 10px;
+}
+
+.header-nav-toggler .toggler-icon span {
+	display: block;
+	height: 2px;
+	margin: 8px 0;
+	background-color: #000;
+}
