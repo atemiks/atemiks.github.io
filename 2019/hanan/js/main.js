@@ -2,7 +2,7 @@ $( document ).ready(function() {
 	// animation
     setTimeout(function(){
       AOS.init();
-    }, 100);
+    }, 100)
 
     // header toggler
 	$('.header-nav-toggler').on('click', function() {
@@ -10,7 +10,7 @@ $( document ).ready(function() {
 	})
 
 	// slider
-	$('.slider-gallery').slick({
+	$('.slider-gallery-photo').slick({
 		variableWidth: true,
 		arrows: true,
 		dots: false,
@@ -24,7 +24,40 @@ $( document ).ready(function() {
 				}
 		    }
 	  	]
-	});
+	})
+
+	$('.slider-gallery-video').slick({
+		variableWidth: true,
+		arrows: true,
+		dots: false,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					variableWidth: true,
+					arrows: false,
+					dots: true
+				}
+		    },
+		    {
+				breakpoint: 426,
+				settings: {
+					variableWidth: false,
+					slidesToShow: 1,
+					arrows: false,
+					dots: true
+				}
+		    }
+	  	]
+	})
+
+	// gallery
+	$('[data-fancybox="gallery"]').fancybox({
+		infobar: false,
+		buttons: [
+			'close'
+		]
+	})
 
 	// height news title
 	$( ".news-card .news-title" ).each(function() {
@@ -57,7 +90,7 @@ jQuery(document).ready(function($){
 	});
 	
 	//detect mouse movement
-	$('.cd-background-wrapper').each(function(){
+	$('.header-main').each(function(){
 		$(this).on('mousemove', function(event){
 			var wrapperOffsetTop = $(this).offset().top;
 			if( $('html').hasClass('preserve-3d') ) {
