@@ -25,7 +25,7 @@ function R(min,max) { return min+Math.random() * (max-min) };
 
 /* https://mattboldt.com/typed.js/ */
 var typed = new Typed('#text', {
-    strings: ['Желаю счастья, радости, добра, любви крепкой на века!'],
+    strings: ['Тебе желаю позитива! Не знать печали, горя, зла. Чтобы твоя жизнь была красивой и добра.'],
     startDelay: 3000,
     typeSpeed: 50,
     backSpeed: 0,
