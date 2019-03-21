@@ -10,6 +10,18 @@ $( document ).ready(function() {
 	})
 
 	// slider
+	$('.slider-header-media').slick({
+		autoplay: true,
+  		autoplaySpeed: 3000,
+  		pauseOnHover: false,
+  		pauseOnDotsHover: false,
+  		fade: true,
+  		cssEase: 'linear',
+		arrows: false,
+		dots: false
+	})
+
+
 	$('.slider-gallery-photo').slick({
 		variableWidth: true,
 		arrows: true,
