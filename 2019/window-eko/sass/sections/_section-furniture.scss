@@ -1,0 +1,18 @@
+.section-furniture {
+	.furniture-media {
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		@include media-breakpoint-down(md) {
+			margin-bottom: 30px;
+		}
+		
+		img {
+			border-radius: $radius;
+		}
+	}
+}
+
+.furniture-features {
+	margin-top: 40px;
+}

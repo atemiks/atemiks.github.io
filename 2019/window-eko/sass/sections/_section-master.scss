@@ -1,0 +1,47 @@
+.section-master {
+	position: relative;
+	z-index: 2;
+	min-height: 430px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-top: 0;
+	padding-bottom: 0;
+	@include media-breakpoint-down(md) {
+		min-height: auto;
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		bottom: -30px;
+		width: 90vw;
+		max-width: 1500px;
+		height: 144px;
+		background: url('../../images/page-home/section-master/master-leaves.png') no-repeat top right;
+		background-size: contain;
+		transform: translateX(-50%);
+		@include media-breakpoint-down(sm) {
+			height: 90px;
+		}
+	}
+
+	.figure-master {
+		position: absolute;
+		right: 40px;
+		bottom: 0;
+		img {
+			max-width: none;
+		}
+	}
+
+	.form-master {
+		margin-bottom: 90px;
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,87 @@
+.offcanvas {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	z-index: 100;
+	overflow-y: auto;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #fff;
+	transform: translateX(-100%);
+	-webkit-overflow-scrolling: touch;
+	transition: transform 300ms ease, opacity 300ms ease, visibility 300ms;
+
+	.close {
+		cursor: pointer;
+		outline: none;
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		width: 30px;
+		height: 30px;
+		margin: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		font-size: 20px;
+		text-align: center;
+		line-height: 30px;
+	}
+
+	.offcanvas-header {
+		min-height: 80px;
+	}
+
+
+
+	.nav {
+		display: block;
+		.nav-item {
+			display: block;
+			border-bottom: 1px solid rgba($secondary, .15);
+			.nav-link {
+				display: block;
+				padding: 12px 0;
+			}
+		}
+	}
+
+
+	.offcanvas-footer {
+		text-align: center;
+	}
+
+
+	&.visible {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+	}
+}
+
+.offcanvas-toggler {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	span {
+		display: block;
+		width: 32px;
+		height: 2px;
+		margin: 8px 0;
+		background-color: $text-color;
+	}
+}
+
+.offcanvas-open {
+	overflow: hidden;
+}

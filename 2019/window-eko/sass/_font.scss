@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot');
+  src:  url('../fonts/icomoon/icomoon.eot#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff') format('woff'),
+    url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+  content: "\e900";
+}
+.icon-add:before {
+  content: "\e901";
+}
+.icon-close:before {
+  content: "\e902";
+}
+.icon-closed-trash-can:before {
+  content: "\e903";
+}
+.icon-cogwheels:before {
+  content: "\e904";
+}
+.icon-ecology:before {
+  content: "\e905";
+}
+.icon-hammer:before {
+  content: "\e906";
+}
+.icon-hand-hammer:before {
+  content: "\e907";
+}
+.icon-medal:before {
+  content: "\e908";
+}
+.icon-pantone:before {
+  content: "\e909";
+}
+.icon-location:before {
+  content: "\e90a";
+}
+.icon-share:before {
+  content: "\e90b";
+}
+.icon-stopwatch:before {
+  content: "\e90c";
+}
+.icon-sunglasses:before {
+  content: "\e90d";
+}
+.icon-thermometer:before {
+  content: "\e90e";
+}
+.icon-trowel:before {
+  content: "\e90f";
+}
+.icon-truck:before {
+  content: "\e910";
+}
+.icon-water:before {
+  content: "\e911";
+}
+.icon-window-circle:before {
+  content: "\e912";
+}
+.icon-window:before {
+  content: "\e913";
+}

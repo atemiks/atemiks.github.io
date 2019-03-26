@@ -1,0 +1,39 @@
+.step-card {
+	position: relative;
+	padding: 50px 35px;
+	border-radius: $radius;
+	background-color: transparent;
+	transition: background 300ms ease;
+	text-align: center;
+	@include media-breakpoint-down(sm) {
+		background-color: #fff;
+	}
+
+	.step-media {
+		position: relative;
+		margin-bottom: 15px;
+	}
+
+	.step-count {
+		font-size: 60px;
+		font-weight: 900;
+		color: $success;
+		letter-spacing: 1.5px;
+		line-height: 1;
+	}
+
+	.step-icon {
+		position: absolute;
+		top: -10px;
+		left: 50%;
+		transform: translateX(-75%);
+		font-size: 54px;
+	}
+
+	&:hover {
+		background-color: #fff;
+		.step-count {
+			color: $warning;
+		}
+	}
+}

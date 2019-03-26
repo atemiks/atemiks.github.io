@@ -1,0 +1,18 @@
+.progress {
+	position: relative;
+	height: 4px;
+	margin: 10px 0;
+	border-radius: 2px;
+	background-color: #d1d1d1;
+	&-bar {
+		position: relative;
+		height: inherit;
+		border-radius: 2px;
+		background-color: $success;
+		.progress-value {
+			position: absolute;
+			right: 0;
+			bottom: 100%;
+		}
+	}
+}

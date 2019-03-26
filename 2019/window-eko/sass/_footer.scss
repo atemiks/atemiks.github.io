@@ -1,0 +1,30 @@
+.footer {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	background-color: $text-color;
+	color: #fff;
+
+	.nav {
+		.nav-link {
+			color: #fff;
+			&:hover {
+				color: $success;
+			}
+		}
+	}
+
+
+	.col-action {
+		text-align: right;
+		@include media-breakpoint-down(sm) {
+			text-align: left;
+		}
+	}
+
+	.action {
+		font-weight: 600;
+		color: $success;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}

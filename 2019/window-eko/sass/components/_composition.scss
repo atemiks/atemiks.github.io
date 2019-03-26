@@ -1,0 +1,7 @@
+.composition {
+	@extend .reset-list;
+	&-item {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}

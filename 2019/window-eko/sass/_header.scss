@@ -1,0 +1,20 @@
+.header {
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	@include media-breakpoint-down(sm) {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+.header .action {
+	font-weight: 600;
+	color: $success;
+	text-decoration: none;
+	text-transform: uppercase;
+}

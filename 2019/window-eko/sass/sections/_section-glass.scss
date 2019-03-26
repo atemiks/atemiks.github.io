@@ -1,0 +1,60 @@
+.section-glass {
+	position: relative;
+	z-index: 1;
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: -40px;
+		left: 50%;
+		width: 90vw;
+		max-width: 1500px;
+		height: 240px;
+		background: url('../../images/page-home/section-glass/glass-leaves.png') no-repeat top right ;
+		background-size: contain;
+		transform: translateX(-50%);
+		@include media-breakpoint-down(sm) {
+			height: 110px;
+		}
+	}
+
+	.glass-media {
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		@include media-breakpoint-down(md) {
+			margin-bottom: 30px;
+		}
+		
+		img {
+			border-radius: $radius;
+		}
+	}
+}
+
+.glass-advantage-grid {
+	margin: 40px -30px 0;
+	@include media-breakpoint-down(sm) {
+		margin: 30px -15px 0;
+	}
+	
+	.glass-advantage-item {
+		position: relative;
+		padding-left: 30px;
+		padding-right: 30px;
+		@include media-breakpoint-down(sm) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			height: 82px;
+			width: 1px;
+			background-color: $secondary;
+			transform: translateY(-50%);
+		}
+	}
+}

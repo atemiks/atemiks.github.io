@@ -1,0 +1,17 @@
+.furniture-feature-card {
+	max-width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+	.furniture-media {
+		position: relative;
+		padding-bottom: 90%;
+		border-radius: $radius;
+		background-color: $gray;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.furniture-title {
+		margin: 10px 0;
+	}
+}

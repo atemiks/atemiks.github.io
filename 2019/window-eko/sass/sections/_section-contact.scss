@@ -1,0 +1,47 @@
+.section-contact {
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		bottom: -30px;
+		width: 90vw;
+		max-width: 1500px;
+		height: 285px;
+		background: url('../../images/page-home/section-contact/contact-leaves.png') no-repeat 30% 0%;
+		background-size: contain;
+		transform: translateX(-50%);
+		@include media-breakpoint-down(md) {
+			bottom: 220px;
+			height: 155px;
+			background-position: 90% -85px;
+		}
+	}
+
+	.map-wrapper {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		right: 0;
+		bottom: 0;
+		width: 50%;
+		@include media-breakpoint-down(md) {
+			position: relative;
+			left: 0;
+			height: 300px;
+			width: 100%;
+			margin-top: 30px;
+			margin-bottom: -60px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			height: 220px;
+		}
+
+		iframe {
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

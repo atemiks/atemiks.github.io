@@ -1,0 +1,58 @@
+.contact {
+	@extend .reset-list;
+	&-item {
+		margin-bottom: 5px;
+	}
+
+	&-title {
+		margin: 20px 0 10px;
+	}
+
+	&-link,
+	&-hint {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&-hint {
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
+	}
+
+	&-link {
+		font-size: 18px;
+		font-weight: 900;
+		text-decoration: none;
+		color: $text-color;
+		letter-spacing: 0.45px;
+		@include media-breakpoint-down(sm) {
+			font-size: 12px;
+		}
+
+		&:hover {
+			color: $text-color;
+		}
+	}
+}
+
+
+.contact-list {
+	@extend .reset-list;
+	a {
+		color: $text-color;
+		text-decoration: none;
+		&:hover {
+			color: $success;
+		}
+	}
+	a[href^="tel:"] {
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 0.45px;
+	}
+
+	.contact-item {
+		margin-bottom: 5px;
+	}
+}

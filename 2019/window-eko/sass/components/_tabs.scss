@@ -1,0 +1,28 @@
+.nav-tabs {
+	justify-content: center;
+	margin-top: -15px;
+	margin-bottom: 35px;
+	border: none;
+	.nav-item {
+		margin: 0;
+		.nav-link {
+			padding: 5px 20px;
+			border: none;
+			border-radius: 0;
+			font-weight: 600;
+			color: #7c7b7f;
+			text-decoration: none;
+			text-transform: uppercase;
+
+			&:hover,
+			&.active {
+				background-color: transparent;
+				color: $success;
+			}
+		}
+	}
+}
+
+.tab-content {
+	margin-bottom: 0;
+}

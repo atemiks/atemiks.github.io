@@ -1,0 +1,98 @@
+.section-steps {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	&:after {
+		content: '';
+		position: absolute;
+		top: -60px;
+		left: 50%;
+		width: 90vw;
+		max-width: 1500px;
+		height: 152px;
+		background: url('../../images/page-home/section-steps/steps-leaves.png') no-repeat top left ;
+		background-size: contain;
+		transform: translateX(-50%);
+		@include media-breakpoint-down(sm) {
+			height: 90px;
+		}
+	}
+
+	.steps-wrapper {
+		overflow: hidden;
+	}
+}
+
+
+.steps-grid {
+	position: relative;
+	z-index: 1;
+	margin-top: -15px;
+	margin-bottom: 30px;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 0;
+	}
+
+	.step-item {
+		position: relative;
+		z-index: 1;
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 30px;
+		}
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: 9;
+			top: 70px;
+			width: 27%;
+			border-top: 1px solid $gray;
+		}
+
+		&:before {
+			right: 100%;
+			transform: translateX(50%);
+		}
+
+		&:after {
+			left: 100%;
+			transform: translateX(-50%);
+		}
+
+		&:nth-child(6n+1) {
+			&:before {
+				display: none;
+			}
+		}
+
+		.step-card {
+			height: 210px;
+		}
+	}
+
+	> .row {
+		position: relative;
+		@include media-breakpoint-down(sm) {
+			width: calc(100% + 30px);
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 70px;
+			left: calc(100% + 30px);
+			height: 211px;
+			width: 50px;
+			border: 1px solid $gray;
+			border-left: none;
+		    border-top-right-radius: 30px;
+		    border-bottom-right-radius: 30px;
+		}
+
+		&:last-child:after {
+			display: none;
+		}
+	}
+}

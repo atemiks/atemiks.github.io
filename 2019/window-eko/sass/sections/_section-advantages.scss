@@ -1,0 +1,24 @@
+.advantage {
+	@extend .reset-list;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	&-item {
+		position: relative;
+		padding-top: 28px;
+		padding-bottom: 28px;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 90%;
+			border-bottom: 1px solid $gray;
+		}
+
+		&:last-child {
+			&:after {
+				border-bottom: none;
+			}
+		}
+	}
+}

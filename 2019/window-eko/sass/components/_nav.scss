@@ -1,0 +1,28 @@
+.nav {
+	@extend .reset-list;
+	@include media-breakpoint-down(sm) {
+		display: block;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	&-item {
+		display: inline-block;
+		@include media-breakpoint-down(sm) {
+			display: block;
+		}
+	}
+
+	&-link {
+		display: inline-block;
+		color: $text-color;
+		text-decoration: none;
+		@include media-breakpoint-down(sm) {
+			display: block;
+		}
+
+		&:hover {
+			color: $success;
+		}
+	}
+}

@@ -1,0 +1,156 @@
+.section-hero {
+	position: relative;
+	min-height: 700px;
+	padding-top: 140px;
+	padding-bottom: 0;
+	background-color: #ececec;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	@include media-breakpoint-down(sm) {
+		min-height: auto;
+		padding-top: 80px;
+		padding-bottom: 40px;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		bottom: -20px;
+		width: 90vw;
+		max-width: 1500px;
+		background: url('../../images/page-home/section-hero/hero-leaves.png') no-repeat center bottom ;
+		background-size: contain;
+		transform: translateX(-50%);
+	}
+
+	.hero-media {
+		position: relative;
+		@include media-breakpoint-down(sm) {
+			max-width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.hero-media-title {
+			position: absolute;
+			top: 55px;
+			right: 0;
+			max-width: 100px;
+			line-height: 1.5;
+			@include media-breakpoint-down(md) {
+				top: 0;
+			}
+
+			&:after {
+				content: '\e90b';
+				font-family: 'icomoon';
+				display: block;
+				margin-left: 30px;
+				transform: rotate(175deg);
+				transform-origin: center left;	
+				font-size: 30px;
+				line-height: 1;
+			}
+
+			b {
+				font-weight: 900;
+			}
+		}
+	}
+}
+
+.hero-content {
+	position: relative;
+	z-index: 9;
+	min-height: 500px;
+	padding-bottom: 240px;
+	@include media-breakpoint-down(sm) {
+		min-height: auto;
+		padding-bottom: 0;
+	}
+}
+
+.hero-title {
+	margin: 90px 0 20px;
+	@include media-breakpoint-down(md) {
+		margin: 20px 0;
+	}
+}
+
+.hero-description {
+	margin: 15px 0;
+}
+
+.hero-price {
+	position: absolute;
+	right: 35px;
+	bottom: 180px;
+	@include media-breakpoint-down(md) {
+		left: 0;
+		right: auto;
+	}
+	@include media-breakpoint-down(sm) {
+		position: relative;
+		bottom: 0;
+	}
+
+	b {
+		font-size: 36px;
+		font-weight: 900;
+	}
+}
+
+.hero-action {
+	margin: 15px 0;
+}
+
+.slider-hero {
+	z-index: 9;
+	&.slick-dotted {
+		margin-bottom: 0;
+	}
+
+	.slick-dots {
+		bottom: 185px;
+		width: auto;
+		margin-left: 80px;
+		@include media-breakpoint-down(md) {
+			bottom: 135px;
+		}
+		@include media-breakpoint-down(sm) {
+			position: relative;
+			bottom: 0;
+			margin-left: 0;
+		}
+	}
+}
+
+.slider-hero-status {
+	position: absolute;
+	bottom: 190px;
+	@include media-breakpoint-down(md) {
+		bottom: 140px;
+	}
+	@include media-breakpoint-down(sm) {
+		position: relative;
+		bottom: 25px;
+	}
+
+	&:before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 42px;
+		height: 1px;
+		background-color: $text-color;
+	}
+
+	span {
+		display: inline-block;
+		margin: 0 15px;
+		font-weight: 700;
+	}
+}
