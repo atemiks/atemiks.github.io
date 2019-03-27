@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+    // header menu
+    $('.menu-toggler').on('click', function(e) {
+        e.preventDefault();
+
+        var self = $(this);
+        var parrent = self.closest('.menu-wrapper');
+        parrent.toggleClass('active');
+    })
+
+    // close header menu when click outside
+    $(document).click(function(event) {
+        if (!$(event.target).closest(".menu-wrapper").length) {
+            $("body").find(".menu-wrapper").removeClass("active");
+        }
+    });
+
+
+
     // popover
     $('.popover-toggle, .popover-close').on('click', function(e) {
         e.preventDefault();

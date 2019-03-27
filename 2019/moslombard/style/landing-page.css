@@ -1,3 +1,96 @@
+.header-box.absolute {
+	position: relative;
+	z-index: 99;
+	padding-top: 0;
+	padding-bottom: 0;
+	box-shadow: none;
+}
+
+.header-box.absolute .header-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.header-box.absolute + main section:first-child {
+	padding-top: 130px;
+}
+
+
+
+.menu-wrapper {
+	position: relative;
+}
+
+.menu-toggler {
+	outline: none;
+	cursor: pointer;
+	width: 43px;
+	margin: 25px 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.menu-toggler span {
+	display: block;
+	height: 6px;
+	margin: 6px 0;
+	border-radius: 3px;
+	background-color: #fff;
+}
+
+.menu {
+	position: absolute;
+    top: 30px;
+    right: 55px;
+	width: 270px;
+	padding: 22px 0;
+	background-color: #f9f5f6;
+	transform: scale(0);
+	transform-origin: bottom;
+	transition: transform 300ms ease;
+	text-align: left;
+}
+
+.menu .menu-title {
+	margin: 0 40px 20px;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.43px;
+	text-transform: uppercase;
+}
+
+.menu-list {
+	cursor: default;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu-list .menu-link {
+	display: block;
+	padding: 7px 40px;
+	border: none;	
+	font-size: 14px;
+	font-weight: 400;
+	color: #675776;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.43px;
+}
+
+.menu-list .menu-link:hover,
+.menu-list .menu-item.active .menu-link {
+	background-color: #745f81;
+	color: #fff;
+}
+
+.menu-wrapper.active .menu {
+	transform: scale(1);
+}
+
+
 .section-banner {
 	position: relative;
 	min-height: 700px;
@@ -661,6 +754,11 @@ figcaption {
 }
 
 @media (max-width: 768px) {
+	.header-box.absolute + main section:first-child {
+		padding-top: 40px;
+	}
+
+
 	.section-banner .banner-title {
 		margin: 30px 0 15px;
 		font-size: 30px;
