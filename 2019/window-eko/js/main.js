@@ -46,7 +46,17 @@ $( document ).ready(function() {
         fade: true,
         cssEase: 'linear',
         arrows: false,
-        dots: true
+        dots: true,
+        responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            adaptiveHeight: true,
+            arrows: false,
+            dots: true
+          }
+        }
+      ]
     });
 
 
