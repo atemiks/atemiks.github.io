@@ -28,7 +28,7 @@
 
 	&:before {
 		z-index: -1;
-		background: url('../images/page-home/section-hero/hero-leaves-left.png') no-repeat 14% 90%;
+		background: url('../images/page-home/section-hero/hero-leaves-left.png') no-repeat 8% 90%;
 		transform: translateX(-50%);
 		@include media-breakpoint-down(md) {
 			background-size: 50%;
@@ -38,6 +38,7 @@
 
 	&:after {
 		z-index: 9;
+		left: calc(50% - 15px);
 		max-width: 700px;
 		width: 50vw;
 		background: url('../images/page-home/section-hero/hero-leaves-right.png') no-repeat 95% 75%;
@@ -70,7 +71,7 @@
 
 		.hero-media-title {
 			position: absolute;
-			top: 55px;
+			top: 50px;
 			right: -14.6%;
 			max-width: 105px;
 			line-height: 1.5;
@@ -99,6 +100,7 @@
 			}
 
 			b {
+				font-size: 16px;
 				font-weight: 900;
 			}
 

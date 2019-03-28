@@ -6146,7 +6146,7 @@ button {
             background-size: contain; }
   .section-hero:before {
     z-index: -1;
-    background: url("../images/page-home/section-hero/hero-leaves-left.png") no-repeat 14% 90%;
+    background: url("../images/page-home/section-hero/hero-leaves-left.png") no-repeat 8% 90%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
@@ -6156,6 +6156,8 @@ button {
                 background-size: 50%; } }
   .section-hero:after {
     z-index: 9;
+    left: -webkit-calc(50% - 15px);
+    left: calc(50% - 15px);
     max-width: 700px;
     width: 50vw;
     background: url("../images/page-home/section-hero/hero-leaves-right.png") no-repeat 95% 75%; }
@@ -6183,7 +6185,7 @@ button {
       display: inline-block; }
     .section-hero .hero-media .hero-media-title {
       position: absolute;
-      top: 55px;
+      top: 50px;
       right: -14.6%;
       max-width: 105px;
       line-height: 1.5;
@@ -6212,6 +6214,7 @@ button {
         font-size: 30px;
         line-height: 1; }
       .section-hero .hero-media .hero-media-title b {
+        font-size: 16px;
         font-weight: 900; }
       .section-hero .hero-media .hero-media-title .lead {
         font-size: 18px; }
