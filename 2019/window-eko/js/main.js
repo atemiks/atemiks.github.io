@@ -60,4 +60,75 @@ $( document ).ready(function() {
     });
 
 
+    // forms
+    $("#modalCallback form").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "/formModalCallback.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+            $('#modalCallback').modal('hide')
+            $("#modalCallback form").trigger("reset");
+        });
+        return false;
+    });
+
+    $("#modalCalc form").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "/formModalCalc.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+            $('#modalCalc').modal('hide')
+            $("#modalCalc form").trigger("reset");
+        });
+        return false;
+    });
+
+    $("#modalRequest form").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "/formModalRequest.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+            $('#modalRequest').modal('hide')
+            $("#modalRequest form").trigger("reset");
+        });
+        return false;
+    });
+
+    $("#modalMaster form").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "/formModalMaster.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+            $('#modalMaster').modal('hide')
+            $("#modalMaster form").trigger("reset");
+        });
+        return false;
+    });
+
+    $(".form-master").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "/formMaster.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+            $(".form-master").trigger("reset");
+        });
+        return false;
+    });
+
+
 });
