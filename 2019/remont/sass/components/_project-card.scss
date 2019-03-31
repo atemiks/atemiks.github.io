@@ -1,0 +1,154 @@
+.project-card {
+	margin-bottom: 30px;
+	@media (max-width: 991px) {
+		margin-bottom: 0;
+	}
+	
+	.project-title {
+		margin: 10px 0;
+		font-size: 36px;
+		font-weight: 900;
+		letter-spacing: 0.9px;
+		@media (max-width: 1024px) {
+			font-size: 28px;
+		}
+	}
+
+	.project-subtitle {
+		margin: 0;
+		font-size: 14px;
+		letter-spacing: 0.35px;
+	}
+
+	.project-details {
+		margin-top: 30px;
+	}
+
+	.project-details b {
+		display: block;
+		font-size: 20px;
+		font-weight: 700;
+		font-variant: small-caps;
+		letter-spacing: 0.5px;
+		@media (max-width: 991px) {
+			font-size: 16px;
+		}
+	}
+
+	.project-details-title {
+		margin: 0 0 15px;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 0.4px;
+		@media (max-width: 991px) {
+			margin: 0 0 5px;
+			font-size: 14px;
+		}
+	}
+
+
+	.project-details-grid {
+		margin-bottom: 15px;
+		.project-detail-item {
+			margin-bottom: 8px;
+			@media (max-width: 991px) {
+				margin-bottom: 12px;
+			}
+		}
+	}
+
+	
+	.project-higlights {
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 9;
+		left: 15px;
+		right: 15px;
+		bottom: 0;
+		transform: translateY(-20px);
+		transition: transform 300ms ease, opacity 300ms ease, visibility 300ms ease;
+		@media (max-width: 1024px) {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+
+		@media (max-width: 767px) {
+			position: relative;
+			left: 0;
+			right: 0;
+		}
+	}
+}
+
+
+.project-higlights {
+	padding: 5.5% 8.5% 5.5%;
+	background: rgba(#312f35, .55);
+	color: #fff;
+	@media (max-width: 991px) {
+		padding: 4% 5%;
+	}
+
+	i {
+		display: inline-block;
+		margin-right: 15px;
+		font-size: 20px;
+	}
+
+	.project-higlight-title {
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 0.4px;
+	}
+
+	
+	.project-higlight-grid {
+		.project-higlight-item {
+			margin-top: 10px;
+		}
+	}
+}
+
+
+.project-media {
+	padding-bottom: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@media (max-width: 767px) {
+		padding-bottom: 66.666%;
+	}
+}
+
+.project-content {
+	padding-left: 7%;
+	@media (max-width: 1024px) {
+		padding-left: 15px;
+	}
+}
+
+
+
+.project-aside {
+	&:hover {
+		.project-higlights {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+	}
+}
+
+
+.project-card.sm {
+	.project-media {
+		padding-bottom: 60%;
+	}
+
+	.project-title {
+		font-size: 26px;
+		letter-spacing: 0.65px;
+	}
+}

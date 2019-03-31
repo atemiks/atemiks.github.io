@@ -1,0 +1,229 @@
+.equipment-banner {
+	position: relative;
+	min-height: 600px;
+	text-align: center;
+	@media (max-width: 1024px) {
+		min-height: 400px;
+	}
+
+	
+	.equipment-banner-img {
+		position: relative;
+		@media (max-width: 1024px) {
+			width: calc(100% - 250px * 2);
+		}
+		@media (max-width: 991px) {
+			width: 400px !important;
+		}
+	}
+
+	.equipment-block {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 14px;
+		line-height: 1.7142857143;
+		letter-spacing: 0.35px;
+		text-align: left;
+
+		@media (min-width: 576px) {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+		@media (min-width: 992px) {
+			position: absolute;
+			flex: 1;
+			width: 100%;
+			max-width: 270px;
+			margin: 0;
+			padding: 0;
+		}
+
+		&:nth-child(1) {
+			@media (min-width: 992px) {
+				right: calc(100% - 270px);
+				text-align: right;
+			}
+		}
+
+		&:nth-child(2) {
+			@media (min-width: 992px) {
+				left: calc(100% - 270px);
+			}
+		}
+
+		&:nth-child(3) {
+			@media (min-width: 992px) {
+				left: calc(100% - 270px);
+			}
+		}
+
+		&:nth-child(4) {
+			@media (min-width: 992px) {
+				left: calc(100% - 270px);
+			}
+		}
+	}
+
+
+	.equipment-title {
+		margin: 0 0 8px;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.35;
+		font-variant: small-caps;
+		letter-spacing: 0.5px;
+	}
+
+	.tooltips {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+		@media (min-width: 992px) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
+
+.ritmo-banner {
+	.equipment-banner-img {
+		left: -2.5%;
+	}
+
+	.equipment-block {
+		&:nth-child(1) {
+			@media (min-width: 992px) {
+				top: 18.5%;
+			}
+			@media (min-width: 1025px) {
+				top: 22.5%;
+				right: 76%;
+			}
+		}
+
+		&:nth-child(2) {
+			@media (min-width: 992px) {
+				top: 1%;
+			}
+			@media (min-width: 1025px) {
+				top: 0%;
+				left: 77%;
+			}
+		}
+
+		&:nth-child(3) {
+			@media (min-width: 992px) {
+    			bottom: 13%;
+			}
+			@media (min-width: 1025px) {
+				left: 77%;
+				bottom: 13%;
+			}
+		}
+	}
+}
+
+.styazhka-ritmo-banner {
+	min-height: 550px;
+	.equipment-block {
+		&:nth-child(1) {
+			@media (min-width: 992px) {
+				top: 10.5%;
+			}
+			@media (min-width: 1025px) {
+				top: 15.5%;
+				right: 76%;
+			}
+		}
+
+		&:nth-child(2) {
+			@media (min-width: 992px) {
+				top: -2.5%;
+			}
+			@media (min-width: 1025px) {
+				top: 0%;
+				left: 77%;
+			}
+		}
+	}
+}
+
+.aspro-banner {
+	.equipment-block {
+		&:nth-child(1) {
+			@media (min-width: 992px) {
+				top: 8.5%;
+			}
+			@media (min-width: 1025px) {
+			    top: 8.5%;
+				right: 76%;
+			}
+		}
+
+		&:nth-child(2) {
+			@media (min-width: 992px) {
+				top: 29%;
+			}
+			@media (min-width: 1025px) {
+			    top: 28%;
+    			left: 76%;
+			}
+		}
+	}
+}
+
+.shpaklevka-aspro-banner {
+	min-height: 440px;
+	@media (min-width: 1025px) {
+		min-height: 620px;
+	}
+
+	.equipment-block {
+		&:nth-child(1) {
+			@media (min-width: 992px) {
+				top: 12%;
+			}
+			@media (min-width: 1025px) {
+			    top: 15.5%;
+				right: 76%;
+			}
+		}
+
+		&:nth-child(2) {
+			@media (min-width: 992px) {
+				top: 14%;
+				left: 72.5%;
+			}
+			@media (min-width: 1025px) {
+			    top: 14.5%;
+    			left: 76%;
+			}
+		}
+
+		&:nth-child(3) {
+			@media (min-width: 992px) {
+				top: 26.5%;
+			}
+			@media (min-width: 1025px) {
+			    top: 28%;
+    			left: 76%;
+			}
+		}
+
+		&:nth-child(4) {
+			@media (min-width: 992px) {
+				top: 76%;
+			}
+			@media (min-width: 1025px) {
+			    top: 77%;
+    			left: 76%;
+			}
+		}
+	}
+}

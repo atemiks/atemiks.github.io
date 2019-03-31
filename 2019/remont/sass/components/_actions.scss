@@ -1,0 +1,37 @@
+.actions {
+	a {
+		display: inline-block;
+		margin: 20px;
+		vertical-align: middle;
+		@media (max-width: 767px) {
+			margin: 20px 0;
+		}
+	}
+
+	a[href^="tel:"] {
+		font-size: 36px;
+		font-weight: 900;
+		color: $default;
+		letter-spacing: 0.9px;
+		text-decoration: none;
+		@media (max-width: 991px) {
+			font-size: 28px;
+		}
+		@media (max-width: 767px) {
+			font-size: 22px;
+		}
+		
+		&:hover {
+			color: $secondary;
+		}
+	}
+
+	i {
+		display: inline-block;
+		margin-right: 10px;
+		@media (max-width: 767px) {
+			margin-right: 5px;
+			font-size: 100%;
+		}
+	}
+}

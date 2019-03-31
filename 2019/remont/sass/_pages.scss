@@ -1,0 +1,126 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	@media (min-width: 1280px) {
+		max-width: 1200px;
+	}
+}
+
+body.open {
+	overflow: hidden;
+}
+
+
+main {
+	padding-top: 60px;
+}
+
+.page-landing {
+	main {
+		padding-top: 0;
+		background-color: #fff;
+	}
+}
+
+
+section {
+	position: relative;
+	min-height: 400px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	@media (max-width: 991px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.container {
+		position: relative;
+	}
+
+	.section-hint {
+		position: absolute;
+		top: 20px;
+		left: -110px;
+	    -webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	    transform: rotate(180deg);
+	    -webkit-writing-mode: tb-rl;
+	    -ms-writing-mode: tb-rl;
+	    writing-mode: tb-rl;
+        white-space: nowrap;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        @media (max-width: 1440px) {
+			left: -55px;
+        }
+        @media (max-width: 1280px) {
+        	left: -30px;
+        }
+        @media (max-width: 991px) {
+        	display: none;        
+        }
+
+	    &:before {
+	    	content: '';
+	    	position: absolute;
+	    	left: 50%;
+	    	bottom: calc(100% + 20px);
+	    	width: 2px;
+	    	height: 60px;
+	    	background-color: #000;
+	    }
+	}
+}
+
+.section-header {
+	margin-bottom: 30px;
+	.section-title {
+		margin: 0;
+		font-size: 45px;
+		font-weight: 900;
+		color: #312f35;
+		letter-spacing: 1.13px;
+		line-height: 1.15;
+		@media (max-width: 1024px) {
+			font-size: 38px;
+		}
+		@media (max-width: 767px) {
+			font-size: 24px;
+		}
+		
+		span {
+			font-weight: 400;
+		}
+	}
+
+	.section-subtitle {
+		max-width: 85%;
+		margin: 15px 0 0;
+		letter-spacing: 0.35px;
+	}
+}
+
+.display-header {
+	margin-bottom: 30px;
+	.display-title {
+		margin: 0 0 15px;
+		font-size: 45px;
+		font-weight: 900;
+		letter-spacing: 1.13px;
+	}
+}
+
+.gray {
+	background:  #e0e0e1 url('../images/pattern.png') no-repeat center center;
+	background-size: cover;
+}

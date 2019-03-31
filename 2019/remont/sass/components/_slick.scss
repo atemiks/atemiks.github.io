@@ -1,0 +1,99 @@
+.slick-slider {
+	outline: none;
+	* {
+		outline: none;
+	}
+}
+
+.slick-arrow {
+	z-index: 1;
+	min-width: auto;
+	height: 30px;
+	padding: 0;
+	box-shadow: none;
+	font-size: 30px;
+	line-height: 1;
+	&:before {
+		position: absolute;
+		top: 50%;
+		opacity: 1;
+		transform: translateY(-50%);
+		font-family: 'icomoon';
+		font-size: inherit;
+		color: #89878a;
+	}
+
+	&:hover {
+		box-shadow: none;
+	}
+}
+
+.slick-prev {
+	&:before {
+		content: "\e905";
+	}
+}
+
+.slick-next {
+	&:before {
+		content: "\e909";
+		color: $secondary;
+		font-size: 140%;
+	}
+}
+
+
+.slick-dots {
+	li {
+		width: 10px;
+		height: 10px;
+		button {
+			opacity: .15;
+			width: inherit;
+			height: inherit;
+			min-width: auto !important;
+			border-radius: 50%;
+			background-color: $default;
+			box-shadow: none !important;
+			&:before {
+				display: none;
+			}
+		}
+
+		&.slick-active {
+			button {
+				opacity: .5;
+			}
+		}
+	}
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 60px;
+}
+
+
+.slick-controls {
+	cursor: default;
+	margin-left: -15px;
+	margin-right: -15px;
+	.slick-arrow {
+		position: static;
+		display: inline-block;
+		margin: 0 15px;
+		vertical-align: middle;
+		transform: translate(0);
+		&:before {
+			left: 0;
+		}
+	}
+
+	.slick-prev {
+		width: 30px;
+		font-size: 30px;
+	}
+	.slick-next {
+		width: 43px;
+		font-size: 30px;
+	}
+}

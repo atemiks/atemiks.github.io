@@ -1,0 +1,169 @@
+.section-steps {
+	padding-bottom: 110px;
+	@media (max-width: 991px) {
+		padding-bottom: 60px;
+	}
+}
+
+.steps-grid {
+	position: relative;
+	display: block;
+	counter-reset: step;
+	margin-bottom: 30px;
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.step-card {
+		position: relative;
+		z-index: 1;
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			border-radius: 50%;
+		}
+
+		&:before {
+			top: 42px;
+			opacity: 0;
+			width: 32px;
+			height: 32px;
+			background: $secondary;
+			transition: opacity 300ms ease;
+		}
+
+		&:after {
+			top: 50px;
+			width: 18px;
+			height: 18px;
+			background-image: linear-gradient(-86deg, #f8d947 0%, #ff6c24 100%);
+		}
+
+		.step-count:before {
+			counter-increment: step;
+		    content: "0" counter(step);
+		    font-size: 36px;
+		    font-weight: 700;
+		    font-variant: small-caps;
+		    letter-spacing: 0.9px;
+		    line-height: 1;
+		}
+
+		&:hover:before {
+			opacity: .3;
+		}
+	}
+
+	.step-item {
+		position: relative;
+		float: left;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 1px;
+			height: 100%;
+			background-color: $secondary;
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+
+		&:nth-child(2n+1) {
+			float: left;
+			padding-right: 70px;
+			text-align: right;
+			@media (max-width: 991px) {
+				padding-right: 15px;
+			}
+			@media (max-width: 767px) {
+				text-align: left;
+			}
+
+			&:before {
+				right: 0;
+			}
+
+			.step-card {
+				&:before {
+					right: -85px;
+					@media (max-width: 991px) {
+						right: -30px;
+					}
+					@media (max-width: 767px) {
+						display: none;
+					}
+				}
+				&:after {
+					right: -78px;
+					@media (max-width: 991px) {
+						right: -23px;
+					}
+					@media (max-width: 767px) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&:nth-child(2n+2) {
+			float: right;
+			padding-left: 70px;
+			@media (max-width: 991px) {
+				padding-left: 15px;
+			}
+
+			&:before {
+				left: -1px;
+			}
+
+			.step-card {
+				margin-top: 25px;
+				&:before {
+					left: -87px;
+					@media (max-width: 991px) {
+						left: -32px;
+					}
+					@media (max-width: 767px) {
+						display: none;
+					}
+				}
+				&:after {
+					left: -80px;
+					@media (max-width: 991px) {
+						left: -25px;
+					}
+					@media (max-width: 767px) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&:first-child {
+			&:before {
+				top: 50px;
+			}
+		}
+		&:last-child {
+			&:before {
+				height: 50px;
+
+			}
+		}
+
+		&:nth-child(2) {
+			margin-top: 85px;
+			@media (max-width: 991px) {
+				margin-top: 65px;
+			}
+			@media (max-width: 767px) {
+				margin-top: 0;
+			}
+		}
+	}
+}

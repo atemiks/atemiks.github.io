@@ -1,0 +1,153 @@
+input,
+textarea {
+	outline: none;
+	display: block;
+	width: 100%;
+	height: 58px;
+	border: none;
+	border-bottom: 2px solid #ff6c24;
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.7px;
+	color: #312f35;
+	&::placeholder {
+		color: #312f35;
+	}
+
+	@media (max-width: 991px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+	cursor: pointer;
+	position: relative;
+	margin: 0;
+	padding: 0 0 0 25px;
+	font-size: 14px;
+	color: #6d6b70;
+	line-height: 24px;
+	letter-spacing: 0.7px;
+}
+
+input[type="checkbox"] + label:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #6d6b70;
+}
+
+input[type="checkbox"] + label:after {
+	content: '\f17b';
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: visibility 300ms ease, opacity 300ms ease;
+	font-family: 'icomoon';
+	font-size: 18px;
+	color: #6d6b70;
+}
+
+input[type="checkbox"]:checked + label:after {
+	opacity: 1;
+	visibility: visible;
+}
+
+textarea {
+	resize: none;
+	height: 160px;
+}
+
+button,
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	min-width: 240px;
+	border: none;
+	border-radius: 0;
+	padding: 19px 10px 24px;
+	box-shadow: 2px 14px 29px rgba(248, 130, 72, 0.6);
+	background-image: linear-gradient(85deg, #ff6c24 0%, #f8d947 100%);
+	font-size: 14px;
+	letter-spacing: 0.7px;
+	color: #fefdff;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1;
+	&:hover {
+		box-shadow: 2px 14px 29px rgba(248, 130, 72, 0.55);
+		background-image: linear-gradient(85deg, #ff6c24 0%, #f8d947 100%);
+		color: #fefdff;
+	}
+
+
+	&-block {
+		display: block;
+		min-width: 100%;
+		width: 100%;
+	}
+
+	&-lg {
+		min-width: 280px;
+		@media (max-width: 767px) {
+			min-width: 100%;
+			max-width: 320px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	&-link {
+		position: relative;
+		font-size: 16px;
+		font-weight: 600;
+		color: $default;
+		text-decoration: none;
+		line-height: 1;
+	    letter-spacing: 0.4px;
+	    @media (max-width: 576px) {
+	    	font-size: 14px;
+	    }
+
+		&:after {
+			content: '\e909';
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 0 0 25px;
+			font-family: 'icomoon';
+			font-size: 24px;
+			color: $secondary;
+			@media (max-width: 576px) {
+				margin: 0 0 0 10px;
+			}
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+}
+
+.btn {
+	&:active {
+		background-image: linear-gradient(85deg, #ff6c24 0%, #f8d947 100%) !important;
+	}
+}
+
+
+.form-group {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}

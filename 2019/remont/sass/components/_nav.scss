@@ -1,0 +1,31 @@
+.nav-list {
+	@extend .reset-list;
+	.nav-item {
+		display: inline-block;
+		@media (max-width: 767px) {
+			display: block;
+		}
+
+		.nav-link {
+			padding: 10px 10px;
+			font-size: 14px;
+			color: #312f35;
+			letter-spacing: 0.7px;
+			text-decoration: none;
+			@media (max-width: 767px) {
+				padding-left: 0;
+			}
+			
+			&:hover {
+				color: $secondary;
+			}
+		}
+
+		&.active {
+			.nav-link {
+				color: $secondary;
+				font-weight: 600;
+			}
+		}
+	}
+}

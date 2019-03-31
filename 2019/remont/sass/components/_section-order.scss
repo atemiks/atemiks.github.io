@@ -1,0 +1,73 @@
+.section-order {
+	margin-top: 200px;
+	padding-top: 0;
+
+	.form-promo {
+		margin-top: -140px;
+		margin-bottom: 70px;
+	}
+}
+
+.page-landing .section-order {
+	margin-top: 0;
+}
+
+main + .section-order  {
+	margin-bottom: -35px;
+}
+
+.form-promo {
+	position: relative;
+	padding: 35px 6% 50px;
+	background-color: #fff;
+	box-shadow: 1px 8px 25px 4px rgba(134, 134, 133, 0.25);
+	@media (max-width: 991px) {
+		padding: 20px;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 70px;
+		width: calc(100vw - 30px);
+		max-width: 1350px;
+		height: 446px;
+		background: url('../../images/roulette.png') no-repeat right bottom ;
+		background-size: contain;
+		transform: translateX(-50%);
+		@media (max-width: 1024px) {
+			height: 340px;
+		}
+
+		@media (max-width: 768px) {
+			background-position: 110% 100%;
+		}
+		@media (max-width: 576px) {
+			display: none;
+		}
+	}
+
+	.row {
+		position: relative;
+		z-index: 1;
+	}
+
+	.promo-title {
+		margin: 0 0 25px;
+		font-size: 38px;
+		font-weight: 900;
+		letter-spacing: 0.95px;
+		@media (max-width: 1024px) {
+			font-size: 30px;
+		}
+		@media (max-width: 991px) {
+			margin-bottom: 10px;
+			font-size: 24px;
+		}
+
+		span {
+			font-weight: 400;
+		}
+	}
+}

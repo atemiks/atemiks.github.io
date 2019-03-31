@@ -1,0 +1,87 @@
+.post {
+	line-height: 1.75;
+	h2 {
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	h5 {
+		font-size: 18px;
+	}
+
+	h6 {
+		font-size: 16px;
+	}
+	
+
+	&-header {
+		position: relative;
+		margin: 20px 0 25px;
+	}
+
+	&-headline {
+		position: absolute;
+		z-index: 1;
+		left: 40px;
+		bottom: 40px;
+		max-width: 80%;
+		color: #fff;
+		@media (max-width: 767px) {
+			position: relative;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			max-width: 100%;
+			min-height: 150px;
+			margin: -25% 15px 0;
+			padding: 15px 15px 15px;
+			background-color: #fff;
+			color: $default;
+		}
+	}
+
+	&-thumbnail {
+		position: relative;
+		padding-bottom: 41.666%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		@media (max-width: 767px) {
+			padding-bottom: 66.666%;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(#000, .55);
+		}
+	}
+
+	&-title {
+		margin: 10px 0 0;
+		font-size: 36px;
+		font-weight: 700;
+		@media (max-width: 576px) {
+			font-size: 18px;
+		}
+	}
+
+	&-actions {
+		margin: 25px 0 45px;
+		@media (max-width: 576px) {
+			margin: 25px 0;
+		}
+	}
+}

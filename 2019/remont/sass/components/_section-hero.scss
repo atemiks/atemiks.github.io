@@ -1,0 +1,195 @@
+.section-hero {
+	overflow: hidden;
+	min-height: 600px;
+	padding-top: 160px;
+	padding-bottom: 15px;
+	background-color: #f8f8f8;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@media (max-width: 991px) {
+		min-height: 400px;
+		padding-top: 120px;
+	}
+	@media (max-width: 767px) {
+		padding-top: 75px;
+	}
+
+
+	.hero-title {
+		margin: 50px 0 25px;
+		font-size: 43px;
+		font-weight: 400;
+		letter-spacing: 2.15px;
+		line-height: 1;
+		@media (max-width: 1024px) {
+			font-size: 34px;
+		}
+		@media (max-width: 767px) {
+			margin: 25px 0;
+			font-size: 26px;
+		}
+		
+		b {
+			font-size: 140%;
+			font-weight: 900;
+			letter-spacing: 3px;
+		}
+	}
+
+
+	.hero-description {
+		max-width: 375px;
+		margin: 20px 0 25px;
+		font-size: 14px;
+		letter-spacing: 0.7px;
+		line-height: 1.71;
+	}
+
+
+	.hero-advantages-list {
+		margin-top: 140px;
+		@media (max-width: 991px) {
+			margin-top: 40px;
+		}
+		@media (max-width: 767px) {
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+		
+		.advantage-card {
+			text-align: center;
+			.advantage-value {
+				text-align: left;
+			}
+		}
+	}
+
+
+	.hero-media {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@media (max-width: 767px) {
+			position: relative;
+			max-width: 320px;
+			height: 380px;
+			margin: auto;
+		}
+
+		.header-media-img {
+			@media (max-width: 767px) {
+				max-width: auto;
+				max-height: 380px;
+			}
+		}
+		
+		.tooltips {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			.tooltip {
+				position: absolute;
+			}
+		}
+
+		&.pokraska {
+			.tooltip {
+				&:nth-child(1) {
+					top: 0;
+					left: 40%;
+				}
+
+				&:nth-child(2) {
+					top: 45%;
+					left: 75%;
+				}
+
+				&:nth-child(3) {
+					top: 53%;
+					left: 30%;
+				}
+			}
+		}
+
+		&.shtukaturka {
+			.tooltip {
+				&:nth-child(1) {
+					top: 8%;
+					left: 15%;
+				}
+
+				&:nth-child(2) {
+					top: 24%;
+					left: 78%;
+				}
+
+				&:nth-child(3) {
+					top: 50%;
+					left: 30%;
+				}
+			}
+		}
+
+		&.shpaklevka {
+			.tooltip {
+				&:nth-child(1) {
+					top: 2%;
+					left: 32%;
+				}
+
+				&:nth-child(2) {
+					top: 38%;
+					left: 80%;
+				}
+
+				&:nth-child(3) {
+					top: 55%;
+					left: 17%;
+				}
+			}
+		}
+
+		&.styazhka {
+			.tooltip {
+				&:nth-child(1) {
+					top: 20%;
+					left: 65%;
+				}
+
+				&:nth-child(2) {
+					top: 80%;
+					left: 15%;
+				}
+
+				&:nth-child(3) {
+					top: 90%;
+					left: 50%;
+				}
+			}
+		}
+	}
+
+
+	&.pokraska {
+		background-position: 74% 100%;
+		background-size: auto 100%;
+		@media (max-width: 767px) {
+			background-size: auto 410px;
+		}
+	}
+
+	&.styazhka {
+		@media (max-width: 991px) {
+		    background-position: 70% 100%;
+		}
+		@media (max-width: 767px) {
+			background-position: 80% 100%;
+			background-size: auto 560px;
+		}
+	}
+}

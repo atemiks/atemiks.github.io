@@ -1,0 +1,38 @@
+.contact {
+	text-align: right;
+	a {
+		color: #312f35;
+		text-decoration: none;
+		line-height: 1;
+		white-space: nowrap;
+		&:hover {
+			color: $secondary;
+		}
+
+		@media (max-width: 991px) {
+			line-height: 1.5;
+		}
+	}
+
+	a[href^="tel:"] {
+		font-size: 24px;
+		font-weight: 900;
+		letter-spacing: 1.2px;
+
+		@media (max-width: 991px) {
+			line-height: 1.5;
+		}
+		@media (max-width: 767px) {
+			font-size: 12px;
+		}
+	}
+
+	&-action {
+		display: block;
+		font-size: 14px;
+		letter-spacing: 0.7px;
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+}

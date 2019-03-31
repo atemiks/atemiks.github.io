@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900');
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot');
+  src:  url('../fonts/icomoon/icomoon.eot#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff') format('woff'),
+    url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calculator:before {
+  content: "\e900";
+}
+.icon-calendar:before {
+  content: "\e901";
+}
+.icon-closed-trash-can:before {
+  content: "\e902";
+}
+.icon-guarantee:before {
+  content: "\e903";
+}
+.icon-hand:before {
+  content: "\e904";
+}
+.icon-arrow-left:before {
+  content: "\e905";
+}
+.icon-paint-bucket:before {
+  content: "\e906";
+}
+.icon-plus:before {
+  content: "\e907";
+}
+.icon-purse:before {
+  content: "\e908";
+}
+.icon-arrow-right:before {
+  content: "\e909";
+}
+.icon-selection:before {
+  content: "\e90a";
+}
+.icon-smartphone:before {
+  content: "\e90b";
+}
+.icon-time-management:before {
+  content: "\e90c";
+}
+.icon-truck:before {
+  content: "\e90d";
+}
+.icon-worker:before {
+  content: "\e90e";
+}
+.icon-close:before {
+  content: "\f191";
+}
+.icon-check:before {
+  content: "\f17b";
+}

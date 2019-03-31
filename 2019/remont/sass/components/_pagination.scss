@@ -1,0 +1,40 @@
+.pagination {
+	align-items: center;
+	margin: 30px -10px;
+	border: none;
+	border-radius: 0;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.45px;
+	b {
+		font-size: 20px;
+	}
+
+	.page-item {
+		padding: 0 10px;
+		line-height: 1;
+		&.prev {
+			font-size: 30px;
+			.page-link {
+				color: rgba($default, .57);
+			}
+		}
+
+		&.next {
+			font-size: 45px;
+			.page-link {
+				color: $secondary;
+			}
+		}
+	}
+
+	.page-link {
+		padding: 0;
+		border: none !important;
+		border-radius: inherit !important; 
+		text-decoration: none;
+		&:hover {
+			background-color: transparent;
+		}
+	}
+}

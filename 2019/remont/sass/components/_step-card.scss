@@ -1,0 +1,28 @@
+.step-card {
+	position: relative;
+	padding: 25px 45px;
+	background-color: transparent;
+	box-shadow: none;
+	transition: background 300ms ease, box-shadow 300ms ease;
+	@media (max-width: 991px) {
+		padding: 15px 20px;
+	}
+
+	.step-title {
+		margin: 10px 0;
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+	}
+
+	.step-description {
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.35px;
+	}
+
+	&:hover {
+		background-color: #fff;
+		box-shadow: 2px 14px 25px 4px rgba(203, 203, 203, 0.46);
+	}
+}

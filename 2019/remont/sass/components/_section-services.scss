@@ -1,0 +1,13 @@
+.services-grid {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	@media (max-width: 991px) {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	.service-item {
+		display: flex;
+		margin-bottom: 30px;
+	}
+}
