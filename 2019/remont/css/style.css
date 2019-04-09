@@ -316,6 +316,8 @@ img {
       .contact a {
         line-height: 1.5; } }
   .contact a[href^="tel:"] {
+    margin-left: -3px;
+    margin-right: -3px;
     font-size: 24px;
     font-weight: 900;
     letter-spacing: 1.2px; }
@@ -1727,7 +1729,7 @@ section {
     letter-spacing: 1.13px; }
 
 .gray {
-  background: #e0e0e1 url("../images/pattern.png") no-repeat center center;
+  background: #e0e0e1 url("../images/pattern.jpg") no-repeat center center;
   -webkit-background-size: cover;
           background-size: cover; }
 
@@ -1792,7 +1794,7 @@ section {
     font-size: 43px;
     font-weight: 400;
     letter-spacing: 2.15px;
-    line-height: 1; }
+    line-height: 1.1; }
     @media (max-width: 1024px) {
       .section-hero .hero-title {
         font-size: 34px; } }
