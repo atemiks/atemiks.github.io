@@ -63,11 +63,8 @@ section {
         @media (max-width: 1440px) {
 			left: -55px;
         }
-        @media (max-width: 1280px) {
-        	left: -30px;
-        }
-        @media (max-width: 991px) {
-        	display: none;        
+        @media (max-width: 1366px) {
+        	display: none;
         }
 
 	    &:before {

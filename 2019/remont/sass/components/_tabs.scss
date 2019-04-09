@@ -1,6 +1,6 @@
 .nav-tabs {
 	margin-bottom: 45px;
-	border-bottom: none;
+	border: none;
 	@media (max-width: 767px) {
 		overflow-x: auto;
 		overflow-y: hidden;
@@ -16,11 +16,20 @@
 
 	.nav-item {
 		margin: 0;
+		border-top: 1px solid #e8e8e8;
+		border-bottom: 1px solid #e8e8e8;
+		&:first-child {
+			border-left: 1px solid #e8e8e8;
+		}
+		&:last-child {
+			border-right: 1px solid #e8e8e8;
+		}
+
 		.nav-link {
 			position: relative;
 			z-index: 1;
 			padding: 11px 32px;
-			border: 1px solid #e8e8e8;
+			border: none !important;
 			border-radius: 0;
 			background-color: #f5f5f5;
 			font-size: 16px;
@@ -59,6 +68,8 @@
 			}
 
 			&.active {
+				position: relative;
+				z-index: 9;
 				background-color: #fff;
 				color: #312f35;
 				&:before,

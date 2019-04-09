@@ -51,24 +51,11 @@ $(document).ready(function() {
     })
 
 
-    // counter for project slider
-	var $status = $('.slider-project-media-counts');
-    var $slickElement = $('.slider-project-media');
-
-
-    $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-        var i = (currentSlide ? currentSlide : 0) + 1;
-        $status.html('<span>' + i + '</span> /' + slick.slideCount);
-    });
-
-
-
-    // slider project media
-	$('.slider-project-media').slick({
-		infinite: false,
-		focusOnSelect: true,
-		arrows: false,
+    $('.slider-project-media.single').slick({
+        slidesToShow: 1,
+        infinite: false,
+        focusOnSelect: true,
+        arrows: false,
         responsive: [
         {
             breakpoint: 767,
@@ -78,14 +65,67 @@ $(document).ready(function() {
             }
         }
         ]
-	});
+    });
 
-	$('.slider-project-media-controls .slick-prev').click(function() {
-        $('.slider-project-media').slick('slickPrev');
+
+    $('.slider-project-media.multiple').each(function(key, item) {
+
+        var sliderIdName = 'slider' + key;
+        var sliderNavIdName = 'sliderNav' + key;
+
+        this.id = sliderIdName;
+        $('.slider-project-thumbnails')[key].id = sliderNavIdName;
+
+        var sliderId = '#' + sliderIdName;
+        var sliderNavId = '#' + sliderNavIdName;
+
+        $(sliderId).slick({
+            slidesToShow: 1,
+            infinite: false,
+            focusOnSelect: true,
+            arrows: false,
+            asNavFor: sliderNavId,
+            responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    dots: true
+                }
+            }
+            ]
+        });
+
+        $(sliderNavId).slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: sliderId,
+            dots: false,
+            arrows: false,
+            focusOnSelect: true
+        });
+
+    });
+
+    // tabs controller 
+    $('.slider-project-media-controls .slick-prev').click(function() {
+        var tabs = $('#portfolioTabs');
+        var activeLink = tabs.find('.nav-link.active');
+        var activeItem = activeLink.closest('.nav-item');
+
+        var prevItem = activeItem.prev();
+        var prevLink = prevItem.find('.nav-link');
+        prevLink.tab('show');
     })
 
     $('.slider-project-media-controls .slick-next').click(function() {
-        $('.slider-project-media').slick('slickNext');
+        var tabs = $('#portfolioTabs');
+        var activeLink = tabs.find('.nav-link.active');
+        var activeItem = activeLink.closest('.nav-item');
+
+        var nextItem = activeItem.next();
+        var nextLink = nextItem.find('.nav-link');
+        nextLink.tab('show');
     })
 
     // slider news
@@ -116,5 +156,6 @@ $(document).ready(function() {
 
 	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   		$('.slider-project-media').slick('refresh');
+        $('.slider-project-thumbnails').slick('refresh');
 	})
 })

@@ -23,7 +23,9 @@
 		color: #89878a;
 	}
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		box-shadow: none;
 	}
 }

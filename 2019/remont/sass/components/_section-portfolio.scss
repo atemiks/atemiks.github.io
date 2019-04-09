@@ -11,6 +11,7 @@
 		overflow: visible;
 		margin: 0 -20vw;
 	}
+
 	.slide-item {
 		cursor: pointer;
 		position: relative;
@@ -20,6 +21,29 @@
 			cursor: default;
 			opacity: 1;
 		}
+	}
+}
+
+
+.slider-project-thumbnails {
+	position: absolute;
+	top: 0;
+	left: 8.5%;
+	right: 8.5%;
+	transform: translateY(-50%);
+	@media (max-width: 991px) {
+		display: none;
+	}
+
+	.slick-list,
+	.slick-track {
+		margin: 0;
+	    transform: translate3d(0, 0, 0) !important;
+	}
+
+	.slide-item {
+		cursor: pointer;
+		margin: 0 15px 0 0;
 	}
 }
 

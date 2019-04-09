@@ -9,7 +9,8 @@
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
-		background-color: #f88248;
+		background: linear-gradient(-87deg, #f8d947 0%, #ff6c24 100%);
+		transition: background 300ms ease;
 		&:before {
 			content: '';
 			opacity: .3;
@@ -32,6 +33,10 @@
 			font-size: 14px;
 			color: #fff;
 			line-height: 1;
+		}
+
+		&:hover {
+			background: linear-gradient(-87deg, #ff6c24 0%, #ff6c24 100%);
 		}
 	}
 

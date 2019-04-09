@@ -76,18 +76,24 @@ button,
 	min-width: 240px;
 	border: none;
 	border-radius: 0;
-	padding: 19px 10px 24px;
+	padding: 21px 10px 22px;
 	box-shadow: 2px 14px 29px rgba(248, 130, 72, 0.6);
-	background-image: linear-gradient(85deg, #ff6c24 0%, #f8d947 100%);
+	background: linear-gradient(85deg, #ff6c24 0%, #f8d947 100%);
+	transition: none;
 	font-size: 14px;
 	letter-spacing: 0.7px;
 	color: #fefdff;
 	text-align: center;
 	text-decoration: none;
 	line-height: 1;
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		box-shadow: 2px 14px 29px rgba(248, 130, 72, 0.55);
-		background-image: linear-gradient(85deg, #ff6c24 0%, #f8d947 100%);
+	}
+
+	&:hover {
+		background: $secondary;
 		color: #fefdff;
 	}
 
@@ -125,6 +131,7 @@ button,
 			display: inline-block;
 			vertical-align: middle;
 			margin: 0 0 0 25px;
+			transition: margin 300ms ease;
 			font-family: 'icomoon';
 			font-size: 24px;
 			color: $secondary;
@@ -134,15 +141,15 @@ button,
 		}
 
 		&:hover {
+			color: $default;
 			text-decoration: none;
+			&:after {
+				margin: 0 0 0 30px;
+				@media (max-width: 576px) {
+					margin: 0 0 0 15px;
+				}
+			}
 		}
-	}
-
-}
-
-.btn {
-	&:active {
-		background-image: linear-gradient(85deg, #ff6c24 0%, #f8d947 100%) !important;
 	}
 }
 
