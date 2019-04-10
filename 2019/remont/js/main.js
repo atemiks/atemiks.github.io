@@ -33,6 +33,16 @@ $(document).ready(function() {
 
 
     // header
+    var headerMenuItem = $('.header-nav .nav-link');
+    var footerMenuItem = $('.footer-nav .nav-link');
+
+    headerMenuItem.each(function() {
+        $(this).width($(this).width() + 5);
+    });
+    footerMenuItem.each(function() {
+        $(this).width($(this).width() + 5);
+    });
+
     $('.offcanvas-toggler, .offcanvas .close').on('click', function(e) {
         e.preventDefault();
 

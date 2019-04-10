@@ -2001,18 +2001,8 @@ main + .section-order {
 .slider-project-media.slick-dotted.slick-slider {
   margin-bottom: 40px; }
 
-.slider-project-media .slick-list {
-  overflow: visible;
-  margin: 0 -20vw; }
-
 .slider-project-media .slide-item {
-  cursor: pointer;
-  position: relative;
-  margin: 0 20vw;
-  opacity: 0.3; }
-  .slider-project-media .slide-item.slick-current {
-    cursor: default;
-    opacity: 1; }
+  position: relative; }
 
 .slider-project-thumbnails {
   position: absolute;
@@ -2311,7 +2301,7 @@ main + .section-order {
 
 .project-media,
 .project-thumbnail {
-  padding-bottom: 80%;
+  padding-bottom: 85%;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
