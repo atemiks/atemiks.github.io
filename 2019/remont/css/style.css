@@ -1900,9 +1900,14 @@ section {
       top: 90%;
       left: 50%; }
   .section-hero.pokraska {
-    background-position: 74% 100%;
-    -webkit-background-size: auto 100%;
-            background-size: auto 100%; }
+    background-position: center top;
+    -webkit-background-size: cover;
+            background-size: cover; }
+    @media (max-width: 1600px) {
+      .section-hero.pokraska {
+        background-position: 74% 100%;
+        -webkit-background-size: auto 100%;
+                background-size: auto 100%; } }
     @media (max-width: 767px) {
       .section-hero.pokraska {
         -webkit-background-size: auto 410px;
