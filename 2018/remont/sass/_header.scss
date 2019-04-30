@@ -7,28 +7,58 @@
 
 	.header-inner {
 		display: flex;
-		.header-aside {
+		.header-left {
+			flex: 0 0 295px;
+			max-width: 295px;
+			display: flex;
+			align-items: center;
+			padding-right: 20px;
 			border-right: 2px solid $light-gray;
-		}
-		.header-content {
-			padding: 0;
-			.header-upper {
-				position: relative;
-				display: flex;
-				&:after {
-					content: '';
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					width: 100vw;
-					border-bottom: 2px solid $light-gray;
-				}
+			@media (max-width: 1280px) {
+				flex: 0 0 185px;
+				max-width: 185px;
 			}
+		}
 
-			.header-bottom {
-				display: flex;
+		.header-center {
+			flex: 1;
+		}
+
+		.header-right {
+			flex: 0 0 295px;
+			max-width: 295px;
+			display: flex;
+			align-items: center;
+			border-left: 2px solid $light-gray;
+			@media (max-width: 1280px) {
+				flex: 0 0 260px;
+				max-width: 260px;
+			}
+			@media (max-width: 1199px) {
+				flex: 0 0 200px;
+				max-width: 200px;
 			}
 		}
+
+		// .header-content {
+		// 	padding: 0;
+		// 	.header-upper {
+		// 		position: relative;
+		// 		display: flex;
+		// 		&:after {
+		// 			content: '';
+		// 			position: absolute;
+		// 			bottom: 0;
+		// 			left: 0;
+		// 			width: 100vw;
+		// 			border-bottom: 2px solid $light-gray;
+		// 		}
+		// 	}
+
+		// 	.header-bottom {
+		// 		display: flex;
+		// 	}
+		// }
 	}
 }
 
@@ -44,8 +74,8 @@
 
 .header-nav {
 	flex: 1;
-	padding: 20px 18px 10px;
-	border-right: 2px solid $light-gray;
+	padding: 20px 18px;
+	border-bottom: 2px solid $light-gray;
 	@media (max-width: 1199px) {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -55,7 +85,7 @@
 	@extend .reset-list;
 	cursor: default;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	li {
 		display: inline-block;
 		position: relative;
@@ -97,7 +127,6 @@
 .header-services {
 	flex: 1;
 	padding: 15px 18px;
-	border-right: 2px solid $light-gray;
 	@media (max-width: 1199px) {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -149,7 +178,7 @@
 .header-contact {
 	flex: 0 0 auto;
 	padding: 5px 40px;
-	@media (max-width: 1199px) {
+	@media (max-width: 1280px) {
 		padding-left: 20px;
 		padding-right: 20px;
 	}

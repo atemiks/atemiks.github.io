@@ -133,11 +133,23 @@ $( document ).ready(function() {
      });
 
     $('.work-thumbnail-slider').slick({
+         infinite: false,
          slidesToShow: 1,
          slidesToScroll: 1,
          dots: false,
          arrows: true
      });
+
+    // $('.work-thumbnail-slider').on('beforeChange', function(nextSlide) {
+      
+    //     // var activeSlide = $('.works-slider .slide-item.slick-current');
+    //     // var nextActiveSlide = $(activeSlide).next();
+        
+    //     // $('.works-slider .slide-item').removeClass('slick-current');
+    //     // $(nextActiveSlide).addClass('slick-current');
+    //     // $('.works-hero-slider').slick('slickGoTo', $(nextActiveSlide).attr('data-slick-index') );
+    // });
+
 
 
     var lengthWorksSlider = $('.works-slider .slide-item').length;

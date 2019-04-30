@@ -31,71 +31,62 @@
                     <div class="container">
                         <div class="row">
                             <div class="header-inner">
-                                <div class="header-aside col-xs-3 col-sm-2 col-lg-3">
+                                <div class="header-left">
                                     <div class="header-logo">
                                         <a href="index.html"><img src="img/logo.png" alt="Ремонт сервис" class="header-logo-img"></a>
                                     </div>
                                 </div>
-                                <div class="header-content col-xs-9 col-sm-10 col-lg-9">
-                                    <div class="header-upper">
-                                        <nav class="header-nav">
-                                            <ul class="header-nav-list">
-                                                <li><a href="#section-portfolio">Наши работы</a></li>
-                                                <li><a href="#section-calc">Стоимость работ</a></li>
-                                                <li><a href="#section-testimonials">Отзывы</a></li>
-                                                <li><a href="#link">Интернет-магазин</a></li>
-                                                <li><a href="#link">Блог</a></li>
-                                                <li><a href="#link">Контакты</a></li>
-                                            </ul>
-                                        </nav>
+                                <div class="header-center">
+                                    <nav class="header-nav">
+                                        <ul class="header-nav-list">
+                                            <li><a href="#section-portfolio">Наши работы</a></li>
+                                            <li><a href="#section-calc">Стоимость работ</a></li>
+                                            <li><a href="#order" data-toggle="modal" data-target="#modalMaster" >Бесплтаный замер</a></li>
+                                            <li><a href="#section-testimonials">Отзывы</a></li>
+                                            <li><a href="#link">Блог</a></li>
+                                        </ul>
+                                    </nav>
 
-                                        <ul class="header-social social-list">
-                                            <li><a href="#link"><i class="icon-vk" ></i></a></li>
-                                            <li><a href="#link"><i class="icon-twitter" ></i></a></li>
-                                            <li><a href="#link"><i class="icon-facebook" ></i></a></li>
+                                    <div class="header-services">
+                                        <ul class="header-services-list">
+                                            <li class="header-service-item" >
+                                                <div class="header-service-card">
+                                                    <div class="header-service-thumbnail">
+                                                        <i class="icon-clock" ></i>
+                                                    </div>
+                                                    <div class="header-service-value">ПН-ПТ  10:00-20:00 <br> СБ-ВС  11:00-19:00</div>
+                                                </div>
+                                            </li>
+                                            <li class="header-service-item" >
+                                                <div class="header-service-card">
+                                                    <div class="header-service-thumbnail">
+                                                        <i class="icon-calc" ></i>
+                                                    </div>
+                                                    <div class="header-service-value">
+                                                        <a href="#section-calc">Калькулятор <br> стоимости работ</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="header-service-item" >
+                                                <div class="header-service-card">
+                                                    <div class="header-service-thumbnail">
+                                                        <i class="icon-pencil" ></i>
+                                                    </div>
+                                                    <div class="header-service-value">
+                                                        <a href="#order" data-toggle="modal" data-target="#modalMaster" >Бесплатный <br> замер</a>
+                                                    </div>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
-                                    <div class="header-bottom">
-                                        <div class="header-services">
-                                            <ul class="header-services-list">
-                                                <li class="header-service-item" >
-                                                    <div class="header-service-card">
-                                                        <div class="header-service-thumbnail">
-                                                            <i class="icon-clock" ></i>
-                                                        </div>
-                                                        <div class="header-service-value">ПН-ПТ  10:00-20:00 <br> СБ-ВС  11:00-19:00</div>
-                                                    </div>
-                                                </li>
-                                                <li class="header-service-item" >
-                                                    <div class="header-service-card">
-                                                        <div class="header-service-thumbnail">
-                                                            <i class="icon-calc" ></i>
-                                                        </div>
-                                                        <div class="header-service-value">
-                                                            <a href="#section-calc">Калькулятор <br> стоимости работ</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="header-service-item" >
-                                                    <div class="header-service-card">
-                                                        <div class="header-service-thumbnail">
-                                                            <i class="icon-pencil" ></i>
-                                                        </div>
-                                                        <div class="header-service-value">
-                                                            <a href="#order" data-toggle="modal" data-target="#modalMaster" >Бесплатный <br> замер</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                </div>
 
-                                        <div class="header-contact">
-                                            <a class="header-contact-phone" href="tel:+79123456789">+7 (912) 345 67 89</a>
-                                            <button class="header-contact-order btn btn-sm btn-block" data-toggle="modal" data-target="#modalCallback" >заказать звонок</button>
-                                        </div>
+                                <div class="header-right">
+                                    <div class="header-contact">
+                                        <a class="header-contact-phone" href="tel:+79123456789">+7 (912) 345 67 89</a>
+                                        <button class="header-contact-order btn btn-sm btn-block" data-toggle="modal" data-target="#modalCallback" >заказать звонок</button>
                                     </div>
-                                
-                            </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -144,8 +135,7 @@
                                                 <div class="col-md-12">
                                                     <h1 class="hero-title">
                                                         <mark>Делаем действительно</mark>
-                                                        <mark class="mark-lead"> хороший ремонт</mark>
-                                                        <mark>в Брянске!</mark>
+                                                        <mark class="mark-lead"> хороший ремонт <span>в Брянске!</span></mark>
                                                     </h1>
 
                                                     <p class="hero-lead">
@@ -275,6 +265,7 @@
                             <div class="row">
                                 <div class="section-header col-md-12">
                                     <h2 class="section-title">Нам нет смысла расписывать, какие мы крутые. <br> Наши работы говорят сами за себя!</h2>
+                                    <div class="work-thumbnail-slider-counts"></div>
                                 </div>
                             </div>
                             <div class="row">
@@ -289,6 +280,8 @@
                                                         <a data-fancybox="work-gallery" href="img/page-home/portfolio/work-hero/work-hero-thumbnail-1.png" class="slide-item" style="background-image: url('img/page-home/portfolio/work-hero/work-hero-thumbnail-1.png')" ></a>
                                                         <a data-fancybox="work-gallery" href="img/page-home/portfolio/work-hero/work-hero-thumbnail-1.png" class="slide-item" style="background-image: url('img/page-home/portfolio/work-hero/work-hero-thumbnail-1.png')" ></a>
                                                     </div>
+
+                                                    
                                                 </div>
                                                 <div class="work-body">
                                                     <div class="work-info">
@@ -319,8 +312,8 @@
                                                     <div class="work-thumbnail-slider">
                                                         <a data-fancybox="work-gallery-2" href="img/page-home/portfolio/work-hero/work-hero-thumbnail-1.png" class="slide-item" style="background-image: url('img/page-home/portfolio/work-hero/work-hero-thumbnail-1.png')" ></a>
                                                         <a data-fancybox="work-gallery-2" href="img/page-home/portfolio/work-hero/work-hero-thumbnail-1.png" class="slide-item" style="background-image: url('img/page-home/portfolio/work-hero/work-hero-thumbnail-1.png')" ></a>
-                                                        <a data-fancybox="work-gallery-2" href="img/page-home/portfolio/work-hero/work-hero-thumbnail-1.png" class="slide-item" style="background-image: url('img/page-home/portfolio/work-hero/work-hero-thumbnail-1.png')" ></a>
                                                     </div>
+
                                                 </div>
                                                 <div class="work-body">
                                                     <div class="work-info">
@@ -1352,70 +1345,72 @@
                     <div class="container">
                         <div class="row">
                             <div class="footer-inner">
-                                <div class="footer-aside col-xs-12 col-md-2 col-lg-3">
+                                <div class="footer-left">
                                     <div class="footer-logo">
                                         <a href="index.html"><img src="img/logo.png" alt="Ремонт сервис" class="footer-logo-img"></a>
                                     </div>
                                 </div>
-                                <div class="footer-content col-xs-12 col-md-10 col-lg-9">
-                                    <div class="footer-upper">
-                                        <nav class="footer-nav">
-                                            <ul class="footer-nav-list">
-                                                <li><a href="#section-portfolio">Наши работы</a></li>
-                                                <li><a href="#section-calc">Стоимость работ</a></li>
-                                                <li><a href="#section-testimonials">Отзывы</a></li>
-                                                <li><a href="#link">Интернет-магазин</a></li>
-                                                <li><a href="#link">Блог</a></li>
-                                                <li><a href="#link">Контакты</a></li>
-                                            </ul>
-                                        </nav>
+                                <div class="footer-center">
+                                    <nav class="footer-nav">
+                                        <ul class="footer-nav-list">
+                                            <li><a href="#section-portfolio">Наши работы</a></li>
+                                            <li><a href="#section-calc">Стоимость работ</a></li>
+                                            <li><a href="#section-testimonials">Отзывы</a></li>
+                                            <li><a href="#order" data-toggle="modal" data-target="#modalMaster">Бесплтаный замер</a></li>
+                                            <li><a href="#link">Отзывы</a></li>
+                                            <li><a href="#link">Блог</a></li>
+                                        </ul>
+                                    </nav>
 
-                                        <ul class="footer-social social-list">
-                                            <li><a href="#link"><i class="icon-vk" ></i></a></li>
-                                            <li><a href="#link"><i class="icon-twitter" ></i></a></li>
-                                            <li><a href="#link"><i class="icon-facebook" ></i></a></li>
+                                    <div class="footer-services">
+                                        <ul class="footer-services-list">
+                                            <li class="footer-service-item" >
+                                                <div class="footer-service-card">
+                                                    <div class="footer-service-thumbnail">
+                                                        <i class="icon-clock" ></i>
+                                                    </div>
+                                                    <div class="footer-service-value">ПН-ПТ  10:00-20:00 <br> СБ-ВС  11:00-19:00</div>
+                                                </div>
+                                            </li>
+                                            <li class="footer-service-item" >
+                                                <div class="footer-service-card">
+                                                    <div class="footer-service-thumbnail">
+                                                        <i class="icon-calc" ></i>
+                                                    </div>
+                                                    <div class="footer-service-value">
+                                                        <a href="#section-calc">Калькулятор <br> стоимости работ</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="footer-service-item" >
+                                                <div class="footer-service-card">
+                                                    <div class="footer-service-thumbnail">
+                                                        <i class="icon-pencil" ></i>
+                                                    </div>
+                                                    <div class="footer-service-value">
+                                                        <a href="#order" data-toggle="modal" data-target="#modalMaster" >Бесплатный <br> замер</a>
+                                                    </div>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
-                                    <div class="footer-bottom">
-                                        <div class="footer-services">
-                                            <ul class="footer-services-list">
-                                                <li class="footer-service-item" >
-                                                    <div class="footer-service-card">
-                                                        <div class="footer-service-thumbnail">
-                                                            <i class="icon-clock" ></i>
-                                                        </div>
-                                                        <div class="footer-service-value">ПН-ПТ  10:00-20:00 <br> СБ-ВС  11:00-19:00</div>
-                                                    </div>
-                                                </li>
-                                                <li class="footer-service-item" >
-                                                    <div class="footer-service-card">
-                                                        <div class="footer-service-thumbnail">
-                                                            <i class="icon-calc" ></i>
-                                                        </div>
-                                                        <div class="footer-service-value">
-                                                            <a href="#section-calc">Калькулятор <br> стоимости работ</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="footer-service-item" >
-                                                    <div class="footer-service-card">
-                                                        <div class="footer-service-thumbnail">
-                                                            <i class="icon-pencil" ></i>
-                                                        </div>
-                                                        <div class="footer-service-value">
-                                                            <a href="#order" data-toggle="modal" data-target="#modalMaster" >Бесплатный <br> замер</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
 
-                                        <div class="footer-contact">
-                                            <a class="footer-contact-phone" href="tel:+79123456789">+7 (912) 345 67 89</a>
-                                            <button class="footer-contact-order btn btn-sm btn-block" data-toggle="modal" data-target="#modalCallback" >заказать звонок</button>
-                                        </div>
+                                </div>
+
+                                <div class="footer-right">
+                                    <div class="footer-contact">
+                                        <a class="footer-contact-phone" href="tel:+79123456789">+7 (912) 345 67 89</a>
+                                        <button class="footer-contact-order btn btn-sm btn-block" data-toggle="modal" data-target="#modalCallback" >заказать звонок</button>
+                                        <div class="footer-contact-hint" >Перезвоним через 2 минуты!</div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="https://www.hostcms.ru" target="_blank">HostCMS</a>
                             </div>
                         </div>
                     </div>

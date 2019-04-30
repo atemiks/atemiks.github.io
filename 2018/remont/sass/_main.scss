@@ -26,11 +26,9 @@
 .hero-title {
 	margin: 25px 0;
 	mark:nth-child(2) {
-		margin-left: 17%;
-		margin-right: 17%;
+		margin-left: 15%;
 		@media (max-width: 991px) {
 			margin-left: 5px;
-			margin-right: 5%;
 		}
 		@media (max-width: 767px) {
 			margin-left: 0;
@@ -75,21 +73,6 @@
 	}
 }
 
-
-.hero-slider .slide-item:first-child .hero-lead {
-	position: absolute;
-	left: calc(50% - 70px);
-	margin-top: -110px;
-	@media (max-width: 991px) {
-		left: calc(50% - 40px);
-		margin-top: -90px;
-	}
-	@media (max-width: 767px) {
-		position: relative;
-		left: 0;
-		margin-top: 0;
-	}
-}
 
 .hero-slider .slide-item:nth-child(2) .hero-title mark:first-child {
 	margin-left: 4.66%;
@@ -282,7 +265,7 @@
 	.portfolio-aside {
 		.portfolio-scroll {
 			overflow: hidden;
-			height: 600px;
+			height: 680px;
 			@media (max-width: 1024px) {
 				height: auto;
 			}
