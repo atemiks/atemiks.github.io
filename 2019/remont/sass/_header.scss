@@ -37,6 +37,18 @@
 			text-decoration: none;
 		}
 	}
+
+	&-img {
+		@media (max-width: 576px) {
+			width: 120px;
+		}
+		@media (max-width: 375px) {
+			width: 95px;
+		}
+		@media (max-width: 350px) {
+			width: 60px;
+		}
+	}
 }
 
 .header-nav {

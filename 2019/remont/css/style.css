@@ -1614,6 +1614,18 @@ button,
     color: #ff7e3f;
     text-decoration: none; }
 
+@media (max-width: 576px) {
+  .header-logo-img {
+    width: 120px; } }
+
+@media (max-width: 375px) {
+  .header-logo-img {
+    width: 95px; } }
+
+@media (max-width: 350px) {
+  .header-logo-img {
+    width: 60px; } }
+
 @media (max-width: 991px) {
   .header-nav {
     display: none; } }
