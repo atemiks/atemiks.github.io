@@ -65,6 +65,7 @@
 
 
 .x900-design {
+	overflow: hidden;
     background: #272425 no-repeat center bottom;
     background-size: cover;
     color: #fff;
@@ -72,6 +73,12 @@
 
 .x900-design .content-wrapper {
     min-height: 495px;
+}
+
+.x900-design .content-wrapper:after {
+	content: '';
+	min-height: inherit;
+	font-size: 0;
 }
 
 .x900-design .x900-title {
@@ -87,6 +94,7 @@
 
 
 .x900-display {
+	overflow: hidden;
 	background-color: #eaeaea;
 }
 
@@ -96,6 +104,7 @@
 
 
 .x900-flashlight {
+	overflow: hidden;
 	position: relative;
 	background-color: #040405;
 	color: #fff;
@@ -129,6 +138,7 @@
 
 
 .x900-camera {
+	overflow: hidden;
 	background-color: #eaeaea;
 }
 
