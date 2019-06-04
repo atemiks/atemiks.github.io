@@ -1,0 +1,110 @@
+@media (max-width: 1280px) {
+	.x900-flashlight .x900-title {
+		margin-left: 5%;
+	}
+}
+
+@media (max-width: 1199px) {
+	.x900-features-grid, 
+	.x900-equipment-grid {
+		flex-wrap: wrap;
+	}
+
+	.x900-features-grid .x900-feature-item {
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+	}
+
+	.x900-equipment-grid .x900-equipment-item {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+}
+
+
+@media (max-width: 1024px) {
+	.x900-flashlight .content-wrapper {
+		min-height: 495px;
+	}
+}
+
+@media (max-width: 768px) {
+	.x900-title,
+	.x900-design .x900-title {
+		margin: 20px 0;
+	}
+
+	.x900-landing .content-wrapper,
+	.x900-camera .content-wrapper {
+		min-height: 315px;
+	}
+
+
+	.x900-flashlight .content-wrapper {
+		min-height: 375px;
+	}
+
+
+	.x900-equipment-card {
+		font-size: 18px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.x900-title {
+		font-size: 28px;
+	}
+
+	.x900-flashlight .x900-title,
+	.x900-camera .x900-title {
+		margin: 20px 0;
+	}
+
+
+	.x900-landing .content-inner {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+
+	.x900-landing .media {
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.x900-design .media {
+		position: relative;
+		bottom: 0;
+
+	}
+
+
+	.x900-flashlight {
+		padding-top: 160px;
+	}
+
+	.x900-flashlight .content-wrapper {
+		min-height: 235px;
+	}
+
+	.x900-flashlight .figure-flashlight {
+		bottom: auto;
+		height: 200px;
+	}
+
+
+	.x900-features-grid .x900-feature-item,
+	.x900-equipment-grid .x900-equipment-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 375px) {
+	.x900-features-grid .x900-feature-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}

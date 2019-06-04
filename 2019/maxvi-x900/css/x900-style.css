@@ -1,0 +1,243 @@
+.x900-landing {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.25;
+}
+
+.x900-landing img {
+	max-width: 100%;
+}
+
+
+.x900-landing .d-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.x900-landing .d-flex.row:before,
+.x900-landing .d-flex.row:after {
+	display: none;
+}
+
+
+.x900-landing .align-items-start {
+	align-items: start;
+}
+
+.x900-landing .align-items-center {
+	align-items: center;
+}
+
+.x900-landing .align-self-center {
+	align-self: center;
+}
+
+.x900-landing .align-self-end {
+	align-self: flex-end;
+}
+
+
+.x900-landing .content-wrapper {
+	position: relative;
+	z-index: 99;
+	min-height: 435px;
+}
+
+.x900-landing .content-inner {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.x900-landing .media {
+	text-align: center;
+}
+
+
+.x900-title {
+	margin: 55px 0;
+	font-size: 36px;
+	font-weight: 900;
+	color: #3e3e3e;
+	text-transform: uppercase;
+}
+
+
+
+.x900-design {
+    background: #272425 no-repeat center bottom;
+    background-size: cover;
+    color: #fff;
+}
+
+.x900-design .content-wrapper {
+    min-height: 495px;
+}
+
+.x900-design .x900-title {
+	margin-bottom: 80px;
+	color: inherit;
+}
+
+.x900-design .media {
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+}
+
+
+.x900-display {
+	background-color: #eaeaea;
+}
+
+.x900-display .content-wrapper {
+    min-height: 565px;
+}
+
+
+.x900-flashlight {
+	position: relative;
+	background-color: #040405;
+	color: #fff;
+}
+
+.x900-flashlight .content-wrapper {
+	min-height: 545px;
+}
+
+.x900-flashlight .figure-flashlight {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.x900-flashlight .figure-flashlight img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.x900-flashlight .x900-title  {
+	margin: -20px 0 40px 25%;
+	color: inherit;
+	text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+
+
+.x900-camera {
+	background-color: #eaeaea;
+}
+
+.x900-camera .content-wrapper {
+	min-height: 515px;
+}
+
+.x900-camera .x900-title {
+	margin: -30px 0 40px;
+}
+
+
+.x900-features,
+.x900-equipment {
+	background-color: #fff;
+}
+
+.x900-features .x900-title,
+.x900-equipment .x900-title {
+	text-align: center;
+}
+
+
+.x900-features {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+
+.x900-features-grid,
+.x900-equipment-grid {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+	margin-bottom: -40px;
+}
+
+.x900-features-grid:before,
+.x900-features-grid:after,
+.x900-equipment-grid:before,
+.x900-equipment-grid:after {
+	display: none;
+}
+
+.x900-features-grid .x900-feature-item,
+.x900-equipment-grid .x900-equipment-item {
+	margin-bottom: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.x900-features-grid .x900-feature-item {
+	flex: 0 0 20%;
+	max-width: 20%;
+}
+
+.x900-equipment-grid .x900-equipment-item  {
+    flex: 1;
+    max-width: none;
+}
+
+
+.x900-feature-card {
+	font-size: 16px;
+	line-height: 1.56;
+	text-align: center;
+}
+
+.x900-feature-media {
+	width: 110px;
+	height: 110px;
+	margin: 0 auto 15px;
+}
+
+.x900-feature-title {
+	font-size: 18px;
+	font-weight: 900;
+}
+
+
+.x900-equipment-card {
+	display: block;
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+}
+
+.x900-equipment-card:hover {
+	color: #000000;
+}
+
+.x900-equipment-media {
+	position: relative;
+	width: 64px;
+	height: 64px;
+	margin: 0 auto 15px;
+	border: 1px solid #cccccc;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+
+.x900-equipment-media img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 60%;
+	max-height: 60%;
+	margin: auto;
+}
