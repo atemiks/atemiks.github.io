@@ -1,0 +1,124 @@
+@media (max-width: 1199px) {
+	.x10-features-grid, 
+	.x10-equipment-grid {
+		flex-wrap: wrap;
+	}
+
+	.x10-features-grid .x10-feature-item {
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+	}
+
+	.x10-equipment-grid .x10-equipment-item {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+}
+
+@media (max-width: 991px) {
+	.x10-landing .content-wrapper {
+		min-height: 415px;
+	}
+
+	.x10-silver .x10-silver-phone-front {
+		transform: translate(-50%, -460px);
+	}
+
+	.x10-silver .x10-silver-phone-front.aos-animate {
+		transform: translate(-50%, -310px);
+	}
+
+	.x10-silver .x10-silver-phone-back.aos-animate {
+	    transform: translateY(20px);
+	}
+}
+
+
+@media (max-width: 767px) {
+	.x10-landing .content-inner {
+		padding-bottom: 35px;
+	}
+
+
+	.x10-title {
+		margin: 15px 0;
+		font-size: 30px;
+		line-height: 1.35;
+	}
+
+
+	.x10-gold .content-wrapper,
+	.x10-display .content-wrapper,
+	.x10-battery .content-wrapper,
+	.x10-flashlight .content-wrapper {
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+
+
+	.x10-silver .media,
+	.x10-gold .media,
+	.x10-rose .media,
+	.x10-display .media,
+	.x10-battery .media,
+	.x10-flashlight .media {
+		position: relative;
+		max-width: 320px;
+		height: 320px;
+		margin: auto;
+	}
+
+
+	.x10-silver .x10-silver-phone-front {
+		transform: translate(-80%, -30px);
+	}
+
+	.x10-silver .x10-silver-phone-front.aos-animate {
+		transform: translate(-80%, -180px);
+	}
+
+
+	.x10-silver .x10-silver-phone-back {
+	    transform: translate(12%, 60px);
+	}
+
+	.x10-silver .x10-silver-phone-back.aos-animate {
+	    transform: translate(12%, -60px);
+	}
+
+
+	.x10-rose .media img {
+		top: 0;
+	}
+
+	
+	.x10-features-grid {
+		margin-top: 15px;
+	}
+
+	.x10-features-grid .x10-feature-item,
+	.x10-equipment-grid .x10-equipment-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.x10-equipment-card {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 375px) {
+	.x10-landing {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	.x10-title {
+		font-size: 24px;
+	}
+
+	.x10-features-grid .x10-feature-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}

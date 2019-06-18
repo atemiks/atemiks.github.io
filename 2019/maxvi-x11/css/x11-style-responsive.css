@@ -1,0 +1,128 @@
+@media (max-width: 1199px) {
+	.x11-features-grid, 
+	.x11-equipment-grid {
+		flex-wrap: wrap;
+	}
+
+	.x11-features-grid .x11-feature-item {
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+	}
+
+	.x11-equipment-grid .x11-equipment-item {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+}
+
+@media (max-width: 991px) {
+	.x11-landing .content-wrapper {
+		min-height: 415px;
+	}
+
+
+	.x11-silver .x11-silver-phone-front {
+		transform: translateY(-75%);
+	}
+
+	.x11-silver .x11-silver-phone-front.aos-animate {
+		transform: translateY(-65%);
+	}
+
+	.x11-silver .x11-silver-phone-back {
+	    transform: translateY(-47%);
+	}
+
+	.x11-silver .x11-silver-phone-back.aos-animate {
+		transform: translateY(-57%);
+	}
+
+
+	.x11-rose .media img {
+		max-width: 110%;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.x11-landing .content-inner {
+		padding-bottom: 35px;
+	}
+
+
+	.x11-title {
+		margin: 15px 0;
+		font-size: 30px;
+		line-height: 1.35;
+	}
+
+
+	.x11-gold .content-wrapper,
+	.x11-display .content-wrapper {
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+
+
+	.x11-silver .media,
+	.x11-gold .media,
+	.x11-rose .media,
+	.x11-display .media,
+	.x11-flashlight .media {
+		position: relative;
+		max-width: 320px;
+		height: 320px;
+		margin: auto;
+	}
+
+	
+	.x11-silver .x11-silver-phone-front {
+		left: -25%;
+		transform: translateY(-35%);
+	}
+
+	.x11-silver .x11-silver-phone-front.aos-animate {
+		transform: translateY(-45%);
+	}
+	
+	.x11-silver .x11-silver-phone-back {
+		left: 10%;
+		transform: translateY(-25%);
+	}
+
+	.x11-silver .x11-silver-phone-back.aos-animate {
+		transform: translateY(-35%);
+	}
+
+
+	
+	.x11-features-grid {
+		margin-top: 15px;
+	}
+
+	.x11-features-grid .x11-feature-item,
+	.x11-equipment-grid .x11-equipment-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.x11-equipment-card {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 375px) {
+	.x11-landing {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	.x11-title {
+		font-size: 24px;
+	}
+
+	.x11-features-grid .x11-feature-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}

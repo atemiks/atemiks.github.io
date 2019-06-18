@@ -1,0 +1,312 @@
+.x10-landing {
+	max-width: 2160px;
+	margin: auto;
+	background-color: #f5f5f5;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: #000000;
+	line-height: 1.25;
+}
+
+.x10-landing section {
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.x10-landing img {
+	max-width: 100%;
+}
+
+
+.x10-landing .d-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.x10-landing .d-flex.row:before,
+.x10-landing .d-flex.row:after {
+	display: none;
+}
+
+
+.x10-landing .align-items-start {
+	align-items: start;
+}
+
+.x10-landing .align-items-center {
+	align-items: center;
+}
+
+.x10-landing .align-self-center {
+	align-self: center;
+}
+
+.x10-landing .align-self-end {
+	align-self: flex-end;
+}
+
+
+.x10-landing .content-wrapper {
+	position: relative;
+	z-index: 99;
+	min-height: 535px;
+}
+
+.x10-landing .content-inner {
+	padding-top: 35px;
+	padding-bottom: 120px;
+}
+
+.x10-landing .media {
+	overflow: visible;
+	text-align: center;
+}
+
+
+.x10-title {
+	margin: 30px 0 50px;
+	font-size: 36px;
+	font-weight: 900;
+	color: #292929;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+
+
+.x10-silver {
+	overflow: hidden;
+}
+
+.x10-silver .media {
+	height: 100%;
+}
+
+.x10-silver .x10-silver-phone-front {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 110%;
+	transform: translate(-50%, -660px);
+}
+
+.x10-silver .x10-silver-phone-front.aos-animate {
+	transform: translate(-50%, -510px);
+}
+
+.x10-silver .x10-silver-phone-back {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	max-width: 110%;
+    transform: translateY(80px);
+}
+
+.x10-silver .x10-silver-phone-back.aos-animate {
+	transform: translateY(-30px);
+}
+
+
+
+.x10-gold {
+	overflow: hidden;
+} 
+
+.x10-gold .media {
+	height: 100%;
+}
+
+.x10-gold .media img {
+	position: absolute;
+	top: 38px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+.x10-rose .media {
+	height: 100%;
+}
+
+.x10-rose .media img {
+	position: absolute;
+	top: -65px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+.x10-display {
+	overflow: hidden;
+	position: relative;
+	z-index: 99;
+	background-color: #f5f5f5;
+}
+
+.x10-display .media {
+	height: 100%;
+}
+
+.x10-display .media img {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+.x10-battery {
+	overflow: hidden;
+	color: #fff;
+}
+
+.x10-battery .x10-title {
+	color: inherit;
+}
+
+.x10-battery .media {
+	height: 100%;
+}
+
+.x10-battery .media img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+.x10-flashlight {
+	overflow: hidden;
+	background-color: #efefef;
+}
+
+.x10-flashlight .media {
+	height: 100%;
+}
+
+.x10-flashlight .x10-flashlight-phone-back {
+	position: absolute;
+	top: 40px;
+	right: 50%;
+	max-width: 120%;
+	transform: translateX(40%);
+}
+
+
+.x10-features,
+.x10-equipment {
+	background-color: #fff;
+}
+
+.x10-features .x10-title,
+.x10-equipment .x10-title {
+	text-align: center;
+}
+
+
+.x10-features {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+
+.x10-features-grid,
+.x10-equipment-grid {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+	margin-bottom: -40px;
+}
+
+.x10-features-grid {
+	margin-top: 40px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.x10-features-grid:before,
+.x10-features-grid:after,
+.x10-equipment-grid:before,
+.x10-equipment-grid:after {
+	display: none;
+}
+
+.x10-features-grid .x10-feature-item,
+.x10-equipment-grid .x10-equipment-item {
+	margin-bottom: 40px;
+}
+
+.x10-features-grid .x10-feature-item {
+	flex: 0 0 16.666667%;
+	max-width: 16.666667%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.x10-equipment-grid .x10-equipment-item  {
+    flex: 1;
+    max-width: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.x10-feature-card {
+	font-size: 16px;
+	line-height: 1.56;
+	text-align: center;
+	color: #434343;
+}
+
+.x10-feature-media {
+	width: 110px;
+	height: 110px;
+	margin: 0 auto;
+}
+
+.x10-feature-title {
+	font-size: 16px;
+	font-weight: 900;
+	color: inherit;
+}
+
+
+.x10-equipment-card {
+	display: block;
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+}
+
+.x10-equipment-card:hover {
+	color: #000000;
+}
+
+.x10-equipment-media {
+	position: relative;
+	width: 64px;
+	height: 64px;
+	margin: 0 auto 15px;
+	border: 1px solid #cccccc;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+
+.x10-equipment-media img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 60%;
+	max-height: 60%;
+	margin: auto;
+}
