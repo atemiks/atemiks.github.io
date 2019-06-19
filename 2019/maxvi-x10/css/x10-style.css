@@ -11,7 +11,7 @@
 }
 
 .x10-landing section {
-	background-position: top center;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -26,9 +26,14 @@
 	flex-wrap: wrap;
 }
 
-.x10-landing .d-flex.row:before,
-.x10-landing .d-flex.row:after {
+.x10-landing .d-flex.row:before {
 	display: none;
+}
+
+.x10-landing .d-flex.row:after {
+	content: '';
+	min-height: inherit;
+	font-size: 0;
 }
 
 
@@ -162,9 +167,21 @@
 
 
 .x10-battery {
+	position: relative;
 	overflow: hidden;
 	color: #fff;
 }
+
+.x10-battery:after  {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+}
+
 
 .x10-battery .x10-title {
 	color: inherit;
