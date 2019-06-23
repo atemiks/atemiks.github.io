@@ -26,14 +26,9 @@
 	flex-wrap: wrap;
 }
 
-.x11-landing .d-flex.row:before {
-	display: none;
-}
-
+.x11-landing .d-flex.row:before,
 .x11-landing .d-flex.row:after {
-	content: '';
-	min-height: inherit;
-	font-size: 0;
+	display: none;
 }
 
 
