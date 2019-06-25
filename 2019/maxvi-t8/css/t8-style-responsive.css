@@ -65,26 +65,24 @@
 	}
 
 
-	.t8-design,
-	.t8-speakers {
+	.t8-design{
 		padding-bottom: 320px;
 	}
 
-	.t8-design .t8-design-bg,
-	.t8-speakers .t8-speakers-bg {
+	.t8-design .t8-design-bg {
 		top: auto;
 		height: 320px;
 		bottom: 0;
-	}
-
-
-	.t8-design .t8-design-bg {
 		background-position: center top !important;
 	}
 
+	
+	.t8-speakers .content-wrapper {
+		min-height: 280px;
+	}
 
 	.t8-speakers .t8-speakers-bg {
-		background-position: center right !important;
+		display: none;
 	}
 
 
