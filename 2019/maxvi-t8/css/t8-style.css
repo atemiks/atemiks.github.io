@@ -104,9 +104,35 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-repeat: no-repeat;
-	background-position: top center !important;
+	background: url('../images/section-t8-design/t8-design-bg1.jpg') no-repeat top center;
 	background-size: cover;
+}
+
+.t8-design .t8-design-bg:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('../images/section-t8-design/t8-design-bg2.png') no-repeat top center;
+	background-size: cover;
+}
+
+.t8-design .t8-design-bg .t8-design-phone {
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('../images/section-t8-design/t8-design.png') no-repeat top center;
+	background-size: cover;
+	transform: translateY(-40px);
+}
+
+.t8-design .t8-design-bg .t8-design-phone.aos-init {
+	transform: translateY(0);
 }
 
 
