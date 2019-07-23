@@ -1,0 +1,43 @@
+.review-card {
+	position: relative;
+	z-index: 1;
+	padding: 10px 25px 20px 15px;
+	border-left: 4px solid $danger;
+	background-color: #fff;
+	box-shadow: 4px 13px 15px 1px rgba(187, 186, 186, 0.39);
+	@media (min-width: 768px) {
+		padding: 25px 65px 40px 60px;
+		border-width: 12px;
+	}
+
+	&:before {
+		content: '\e90c';
+		position: absolute;
+		z-index: -1;
+		top: 20px;
+		right: 10%;
+		font-family: 'icomoon';
+		font-size: 40px;
+		line-height: 1;
+		color: rgba(#ecebf2, .8);
+		@media (min-width: 768px) {
+			font-size: 88px;
+		}
+	}
+}
+
+.review-name {
+	font-size: 16px;
+	font-weight: 700;
+	@media (min-width: 768px) {
+		float: left;
+		margin: 0 80px 0 0;
+		font-size: 20px;
+	}
+}
+
+.review-date {
+	clear: both;
+	font-size: 16px;
+	color: rgba($default, .5);
+}

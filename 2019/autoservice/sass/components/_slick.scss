@@ -1,0 +1,42 @@
+.slick-slider {
+	outline: none;
+	* {
+		outline: none;
+	}
+}
+
+.slick-arrow {
+	z-index: 9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	background: $danger;
+	@media (min-width: 992px) {
+		width: 83px;
+		height: 67px;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: $danger;
+	}
+
+	&:before {
+		font-family: 'icomoon';
+	}
+}
+
+.slick-prev {
+	&:before {
+		content: '\e903';
+	}
+}
+
+.slick-next {
+	&:before {
+		content: '\e904';
+	}
+}

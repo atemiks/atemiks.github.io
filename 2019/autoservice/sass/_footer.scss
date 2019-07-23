@@ -1,0 +1,35 @@
+.footer {
+	background-color: #4f4c60;
+	color: rgba(#fbfafd, .8);
+
+	&-content {
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+
+	&-copyright {
+		padding: 18px 0;
+		background-color: $danger;
+		color: rgba(#fbfafd, .5);
+	}
+
+	.logo {
+		font-size: 24px;
+		letter-spacing: 0.6px;
+	}
+
+	.nav-link {
+		color: rgba(#fbfafd, .8);
+		&:hover {
+			color: rgba(#fbfafd, .8);
+		}
+	}
+
+	.contact {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		@media (min-width: 576px) {
+			margin-top: 0;
+		}
+	}
+}

@@ -1,0 +1,64 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+
+section {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	@media (min-width: 768px) {
+		padding-top: 50px;
+		padding-bottom: 70px;
+	}
+	@media (min-width: 992px) {
+		padding-top: 90px;
+		padding-bottom: 110px;
+	}
+}
+
+
+.container {
+	max-width: 100%;
+	@media (min-width: 768px) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	@media (min-width: 992px) {
+	    max-width: 960px;
+	}
+	@media (min-width: 1280px) {
+		max-width: 1235px;
+	}
+}
+
+.container-fluid {
+	@media (min-width: 992px) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+.bg0 {
+	display: none;
+	cursor: pointer;
+	opacity: .5;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #4f4c60;
+}
+
+body.overlay .bg0 {
+	display: block;
+}

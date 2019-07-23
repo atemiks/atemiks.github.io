@@ -1,0 +1,55 @@
+// @import "bootstap/bootstrap";
+
+@import "font";
+@import "vars";
+@import "mixin";
+
+@import "base";
+
+
+
+@import "components/_breadcrumb";
+@import "components/_forms";
+@import "components/_nav";
+@import "components/_pagination";
+@import "components/_slick";
+@import "components/_modal";
+@import "components/_forms";
+@import "components/_logo";
+@import "components/_search";
+@import "components/_contact";
+@import "components/_offcanvas";
+@import "components/_rating";
+@import "components/_alert";
+
+/* sections */
+@import "components/sections/_section-display";
+@import "components/sections/_section-about";
+@import "components/sections/_section-catalog";
+@import "components/sections/_section-data";
+@import "components/sections/_section-video";
+@import "components/sections/_section-reviews";
+@import "components/sections/_section-services";
+@import "components/sections/_section-results";
+
+/* station */
+@import "components/_station/_station-display.scss";
+@import "components/_station/_station-gallery.scss";
+@import "components/_station/_station-services.scss";
+@import "components/_station/_station-contact.scss";
+
+/* cards */
+@import "components/cards/_card-catalog";
+@import "components/cards/_card-video";
+@import "components/cards/_card-gallery";
+@import "components/cards/_card-review";
+@import "components/cards/_card-station";
+
+@import "header";
+@import "pages";
+@import "main";
+
+
+@import "footer";
+
+

@@ -1,0 +1,153 @@
+html,
+body {
+	background-color: #fff;
+	font-family: 'Play', sans-serif;
+	font-size: 16px;
+	color: $default;
+	line-height: 1.5;
+	@media (min-width: 992px)  {
+		font-size: 18px;
+	}
+}
+
+body {
+	padding-top: 55px;
+	@media (min-width: 768px) {
+		padding-top: 70px;
+	}
+	@media (min-width: 992px) {
+		padding-top: 95px;
+	}
+}
+
+
+h1,
+.h1 {
+	margin: 0 0 0.364em;
+	font-size: 34px;
+	font-weight: 700;
+	@media (min-width: 768px) {
+		font-size: 40px;
+	}
+	@media (min-width: 992px) {
+		font-size: 55px;
+	}
+}
+
+h2,
+.h2 {
+	margin: 0 0 0.313em;
+	font-size: 30px;
+	font-weight: 700;
+	@media (min-width: 768px) {
+		font-size: 36px;
+	}
+	@media (min-width: 992px) {
+		font-size: 48px;
+	}
+}
+
+h3,
+.h3 {
+	margin: 0 0 0.375em;
+	font-size: 26px;
+	font-weight: 700;
+	@media (min-width: 768px) {
+		font-size: 34px;
+	}
+	@media (min-width: 992px) {
+		font-size: 40px;
+	}
+}
+
+h4,
+.h4 {
+	margin: 0 0 0.5em;
+	font-size: 24px;
+	font-weight: 700;
+	@media (min-width: 768px) {
+		font-size: 30px;
+	}
+}
+
+h5,
+.h5 {
+	font-size: 20px;
+	@media (min-width: 768px) {
+		font-size: 24px;
+	}
+}
+
+h6,
+.h6 {
+}
+
+p {
+	margin: 0;
+	&:not(:last-of-type) {
+		margin-bottom: 1em;
+	}
+}
+
+a {
+	color: $default;
+	text-decoration: none;
+	transition: color 300ms ease;
+	&:hover {
+		color: $danger;
+		text-decoration: none;
+	}
+}
+
+
+img {
+	max-width: 100%;
+}
+
+
+ul {
+	margin: 0.833em 0 0.833em 1.333em;
+	padding: 0;
+	list-style: none;
+	li {
+		position: relative;
+		margin: 0.778em 0;
+		padding: 0 0 0 32px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0.556em;
+			left: 0;
+			width: 0.611em;
+			height: 0.722em;
+			background-color: $danger;
+		}
+	}
+}
+
+
+.lead {
+	font-size: 1.25em;
+	line-height: 1.26;
+	&:not(:last-of-type) {
+		margin-bottom: .5em;
+	}
+
+	@media (min-width: 992px) {
+		font-size: 1.444em;
+	}
+}
+
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clear {
+	float: none;
+	clear: both;
+}

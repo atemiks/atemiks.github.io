@@ -1,0 +1,22 @@
+.rating {
+	&-label {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 8px;
+	}
+
+	&-list {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 21px;
+		color: $danger;
+		.inactive {
+			color: #c9c9ca;
+		}
+
+		&.sm {
+			font-size: 16px;
+		}
+	}
+}
+

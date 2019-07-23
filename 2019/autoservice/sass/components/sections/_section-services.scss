@@ -1,0 +1,41 @@
+.section-services {
+	@media (min-width: 768px) {
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
+}
+
+.services-group:not(:last-child) {
+	margin-bottom: 30px;
+	@media (min-width: 768px)  {
+		margin-bottom: 50px;
+	}
+}
+
+.services-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	@media (min-width: 768px) {
+		column-count: 2;
+		column-gap: 30px;
+	}
+	@media (min-width: 992px) {
+		column-count: 3;
+	}
+
+	.service-item {
+		margin: 0;
+		padding: 0;
+		&:before {
+			display: none;
+		}
+
+		.service {
+			display: inline-block;
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+	}
+}
+

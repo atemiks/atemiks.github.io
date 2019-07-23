@@ -1,0 +1,72 @@
+.video-card {
+	position: relative;
+	display: block;
+	margin-bottom: 30px;
+	padding-bottom: 62%;
+	background-color: $default;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-decoration: none;
+	&:before {
+		content: '';
+		position: absolute;
+		opacity: 0.6;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: linear-gradient(-137deg, #515067 0%, #eb3f57 100%);
+		transition: opacity 300ms ease;
+	}
+
+	.play-button {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 54px;
+		height: 54px;
+		border-radius: 50%;
+		background-color: #fff;
+		transform: translate(-50%, -50%);
+		font-size: 16px;
+		color: $danger;
+		line-height: 1;
+		@media (min-width: 992px) {
+			width: 74px;
+			height: 74px;
+			font-size: 20px;
+		}
+
+		&:before {
+			content: '';
+			opacity: 0.13;
+			position: absolute;
+			top: -5px;
+			left: -5px;
+			right: -5px;
+			bottom: -5px;
+			border: 2px solid #ffffff;
+			border-radius: 50%;
+		}
+	}
+
+	&.sm {
+		padding-bottom: 60.4%;
+	}
+
+	&:hover {
+		text-decoration: none;
+		&:before {
+			opacity: 0.8;
+		}
+
+		.play-button {
+			background-color: $danger;
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.section-data {
+	overflow: hidden;
+	padding-bottom: 0;
+	background-color: #ecebf2;
+	.section-content {
+		padding-bottom: 50px;
+		@media (min-width: 768px) {
+			padding-bottom: 70px;
+		}
+		@media (min-width: 992px) {
+			padding-bottom: 100px;
+		}
+
+		.btn {
+			margin-top: 15px;
+			@media (min-width: 768px) {
+				margin-top: 30px;
+			}
+			@media (min-width: 992px) {
+				margin-top: 40px;
+			}
+		}
+	}
+
+	.media {
+		position: relative;
+		height: 100%;
+		img {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			max-width: none;
+			max-height: 100%;
+		}
+	}
+}

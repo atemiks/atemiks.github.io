@@ -1,0 +1,15 @@
+.nav-list {
+	@extend .reset-list;
+	.nav-item {
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-link {
+		padding: 5px 0;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

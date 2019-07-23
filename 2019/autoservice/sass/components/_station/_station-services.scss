@@ -1,0 +1,28 @@
+.station-services {
+	background-color: #4f4c60;
+	color: #fcfcfe;
+}
+
+.station-services-grid {
+	.service-item {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		@media (min-width: 576px) {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.station-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+	padding: 8px 10px;
+	background-color: rgba(#fff, .2);
+	font-weight: 700;
+	text-align: center;
+}
