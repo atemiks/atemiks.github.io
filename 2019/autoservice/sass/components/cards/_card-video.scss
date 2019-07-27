@@ -32,13 +32,13 @@
 		border-radius: 50%;
 		background-color: #fff;
 		transform: translate(-50%, -50%);
-		font-size: 16px;
+		font-size: 20px;
 		color: $danger;
 		line-height: 1;
 		@media (min-width: 992px) {
 			width: 74px;
 			height: 74px;
-			font-size: 20px;
+			font-size: 26px;
 		}
 
 		&:before {
@@ -52,6 +52,11 @@
 			border: 2px solid #ffffff;
 			border-radius: 50%;
 		}
+
+		i {
+			display: inline-block;
+			margin-left: .25em;
+		}
 	}
 
 	&.sm {
@@ -60,10 +65,6 @@
 
 	&:hover {
 		text-decoration: none;
-		&:before {
-			opacity: 0.8;
-		}
-
 		.play-button {
 			background-color: $danger;
 			color: #fff;

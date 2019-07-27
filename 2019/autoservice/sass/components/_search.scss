@@ -31,15 +31,17 @@
 		font-weight: 400;
 		letter-spacing: 0;
 		&::placeholder {
-			color: #515067;
+			color: rgba($default, .5);
 		}
 	}
 
 	button {
 		padding: 0 20px;
 		background-color: $danger;
+		font-weight: 700;
 		color: #fbfafd;
 		white-space: nowrap;
+		transition: background-color 300ms ease;
 		@media (min-width: 992px) {
 			padding: 0 35px;
 		}
@@ -47,10 +49,14 @@
 		i {
 			display: inline-block;
 			vertical-align: middle;
-			margin: 0 0 0 6px;
+			margin: 0 0 0 2px;
 			@media (min-width: 992px) {
-				margin: 0 0 0 10px;
+				margin: 0 0 0 6px;
 			}
+		}
+
+		&:hover {
+			background-color: $dark-danger;
 		}
 	}
 }

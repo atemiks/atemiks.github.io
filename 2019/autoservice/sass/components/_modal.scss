@@ -66,35 +66,10 @@
 
 
 #modalAddService {
-	input[type="checkbox"] + label {
-		min-height: 20px;
-		padding: 0 0 0 30px;
-		font-size: 14px;
-		line-height: 1.25;
-		@media (min-width: 768px) {
-			min-height: 35px;
-			padding: 0 0 0 50px;
-		}
-	}
-
-	input[type="checkbox"] + label:before  {
-		width: 20px;
-		height: 20px;
-		border: none;
-		background-color: #ecebf2;
-		font-size: 11px;
-		color: $default;
-		@media (min-width: 768px) {
-			width: 35px;
-			height: 35px;
-		}
-	}
-
-
-	input[type="file"] {
-		@media (min-width: 768px) {
-			margin-top: 8px;
-			margin-bottom: 30px;
-		}
-	}
+	// input[type="file"] {
+	// 	@media (min-width: 768px) {
+	// 		margin-top: 8px;
+	// 		margin-bottom: 30px;
+	// 	}
+	// }
 }

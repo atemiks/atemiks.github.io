@@ -549,7 +549,12 @@
                                     </div>
 
                                     <div class="col-12 col-lg-auto">
-                                        <a href="#add" class="btn" data-toggle="modal" data-target="#modalAddService" >Добавить автосервис</a>
+                                        <div class="footer-add">
+                                            <a href="#add" class="btn" data-text="Добавить автосервис" data-toggle="modal" data-target="#modalAddService" >
+                                                <span class="btn-overlay"></span>
+                                                <span class="btn-text">Добавить автосервис</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -591,51 +596,53 @@
 
                 <div class="offcanvas-menu row">
                     <div class="offcanvas-menu-item col-6 col-md-4">
-                        <a class="offcanvas-menu-link">Ходовая</a>
+                        <a href="search.html" class="offcanvas-menu-link">Ходовая</a>
                     </div>
 
                     <div class="offcanvas-menu-item col-6 col-md-4">
-                        <a class="offcanvas-menu-link">Двигатель</a>
+                        <a href="search.html" class="offcanvas-menu-link">Двигатель</a>
                     </div>
 
                     <div class="offcanvas-menu-item col-6 col-md-4">
-                        <a class="offcanvas-menu-link">Трансмиссия</a>
+                        <a href="search.html" class="offcanvas-menu-link">Трансмиссия</a>
                     </div>
 
                     <div class="offcanvas-menu-item col-6 col-md-4">
-                        <a class="offcanvas-menu-link">Топливная система</a>
+                        <a href="search.html" class="offcanvas-menu-link">Топливная система</a>
                     </div>
 
                     <div class="offcanvas-menu-item col-6 col-md-4">
-                        <a class="offcanvas-menu-link">Пневмосистемы</a>
+                        <a href="search.html" class="offcanvas-menu-link">Пневмосистемы</a>
                     </div>
 
                     <div class="offcanvas-menu-item col-6 col-md-4">
-                        <a class="offcanvas-menu-link">Электрика, диагностика</a>
+                        <a href="search.html" class="offcanvas-menu-link">Электрика, диагностика</a>
                     </div>
 
                     <div class="offcanvas-menu-item col-6 col-md-4">
-                        <a class="offcanvas-menu-link">Рефрижераторы</a>
+                        <a href="search.html" class="offcanvas-menu-link">Рефрижераторы</a>
                     </div>
 
                     <div class="offcanvas-menu-item col-6 col-md-4">
-                        <a class="offcanvas-menu-link">Шиномонтаж</a>
+                        <a href="search.html" class="offcanvas-menu-link">Шиномонтаж</a>
                     </div>
 
                     <div class="offcanvas-menu-item col-6 col-md-4">
-                        <a class="offcanvas-menu-link">Радиаторы, аргон интеркуллеры</a>
+                        <a href="search.html" class="offcanvas-menu-link">Радиаторы, аргон интеркуллеры</a>
                     </div>
 
                     <div class="offcanvas-menu-item col-6 col-md-4">
-                        <a class="offcanvas-menu-link">Автономки</a>
+                        <a href="search.html" class="offcanvas-menu-link">Автономки</a>
                     </div>
 
                     <div class="offcanvas-menu-item col-6 col-md-4">
-                        <a class="offcanvas-menu-link">Авторазборки</a>
+                        <a href="search.html" class="offcanvas-menu-link">Авторазборки</a>
                     </div>
                 </div>
 
-                <div class="offcanvas-title">Поиск магазинов автозапчастей</div>
+                <div class="offcanvas-title">
+                    <a href="search.html">Поиск магазинов автозапчастей</a>
+                </div>
             </div>
         </div>
 
@@ -725,28 +732,28 @@
                                         <div class="col-md-9">
                                             <div class="row">
                                                 <div class="form-group col-md-6">
-                                                    <div class="custom-checkbox">
+                                                    <div class="custom-checkbox lg">
                                                         <input type="checkbox" name="modalAddService" id="modalAddService01" >
                                                         <label for="modalAddService01">Двигатель</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group col-md-6">
-                                                    <div class="custom-checkbox">
+                                                    <div class="custom-checkbox lg">
                                                         <input type="checkbox" name="modalAddService" id="modalAddService02" >
                                                         <label for="modalAddService02">Подвеска</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group col-md-6">
-                                                    <div class="custom-checkbox">
+                                                    <div class="custom-checkbox lg">
                                                         <input type="checkbox" name="modalAddService" id="modalAddService03" >
                                                         <label for="modalAddService03">Замена жидкостей</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group col-md-6">
-                                                    <div class="custom-checkbox">
+                                                    <div class="custom-checkbox lg">
                                                         <input type="checkbox" name="modalAddService" id="modalAddService04" >
                                                         <label for="modalAddService04">Выхлопная система</label>
                                                     </div>
@@ -756,15 +763,34 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <input name="modalAddServiceFiles" type="file" multiple>
+                                        <div class="custom-file">
+                                            <input type="file" name="file" id="modalAddServiceFiles" class="inputfile" data-multiple-caption="Выбрано файлов: {count}" multiple />
+                                            <label for="modalAddServiceFiles">
+                                                <i class="icon-camera" ></i>
+                                                <span>Загрузить фотографии</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="custom-checkbox privacy">
+                                            <input type="checkbox" name="modalAddService" id="modalAddService01" checked="" required="">
+                                            <label for="modalAddService01">Я согласен(-на) с политикой обработки персональных данных</label>
+                                        </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="form-group col-auto">
-                                            <button type="submit" class="btn btn-auto" >Добавить</button>
+                                            <button type="submit" class="btn btn-auto" data-text="Добавить" >
+                                                <span class="btn-overlay"></span>
+                                                <span class="btn-text">Добавить</span>
+                                            </button>
                                         </div>
                                         <div class="form-group col-auto">
-                                            <button type="submit" class="btn btn-secondary btn-auto" data-dismiss="modal" aria-label="Close" >Отмена</button>
+                                            <button type="submit" class="btn btn-secondary btn-auto" data-text="Отмена" data-dismiss="modal" aria-label="Close" >
+                                                <span class="btn-overlay"></span>
+                                                <span class="btn-text">Отмена</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -774,6 +800,7 @@
                 </div>
             </div>
         </div>
+        
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 

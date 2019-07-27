@@ -13,6 +13,13 @@
 		color: rgba(#fbfafd, .5);
 	}
 
+	&-add {
+		@media (min-width: 992px) {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
 	.logo {
 		font-size: 24px;
 		letter-spacing: 0.6px;
@@ -21,7 +28,7 @@
 	.nav-link {
 		color: rgba(#fbfafd, .8);
 		&:hover {
-			color: rgba(#fbfafd, .8);
+			color: rgba(#fbfafd, 1);
 		}
 	}
 

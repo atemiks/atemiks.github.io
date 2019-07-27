@@ -1,8 +1,9 @@
 .station-card {
 	padding: 15px;
-	border-left: 5px solid $danger;
+	border-left: 5px solid transparent;
 	background-color: #fff;
 	box-shadow: 4px 13px 15px 1px rgba(187, 186, 186, 0.39);
+	transition: border-color 300ms ease;
 	font-size: 16px;
 	@media (min-width: 1280px) {
 		padding: 25px 25px 20px;
@@ -43,7 +44,6 @@
 		margin: 0 0 5px;
 		font-size: 16px;
 		font-weight: 700;
-		color: $danger;
 		@media (min-width: 992px) {
 			margin: 0 0 10px;
 			font-size: 18px;
@@ -84,6 +84,13 @@
 				display: inline-block;
 				width: 20px;
 			}
+		}
+	}
+
+	&:hover {
+		border-left-color: $danger;
+		.station-title {
+			color: $danger;
 		}
 	}
 }

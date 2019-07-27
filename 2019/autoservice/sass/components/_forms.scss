@@ -23,11 +23,11 @@ textarea {
 	font-weight: 400;
 }
 
-input[type="checkbox"] {
+.custom-checkbox input[type="checkbox"] {
 	display: none;
 }
 
-input[type="checkbox"] + label {
+.custom-checkbox input[type="checkbox"] + label {
 	cursor: pointer;
 	position: relative;
 	display: -ms-flex;
@@ -38,10 +38,10 @@ input[type="checkbox"] + label {
 	margin: 0;
 	padding: 0 0 0 30px;
 	font-size: 15px;
-	color: rgba($default, .5);
+	color: $default;
 }
 
-input[type="checkbox"] + label:before {
+.custom-checkbox input[type="checkbox"] + label:before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -58,30 +58,113 @@ input[type="checkbox"] + label:before {
 	color: #cac9cf;
 }
 
-input[type="checkbox"] + label sup {
+.custom-checkbox input[type="checkbox"] + label sup {
 	top: 0;
 	font-size: 13px;
     color: #e51a56;
 }
 
-input[type="checkbox"]:checked + label:before {
+.custom-checkbox input[type="checkbox"]:checked + label:before {
 	content: '\e910';
 }
+
+
+.custom-checkbox.lg input[type="checkbox"] + label {
+	min-height: 20px;
+	padding: 0 0 0 30px;
+	font-size: 14px;
+	line-height: 1.25;
+	@media (min-width: 768px) {
+		min-height: 35px;
+		padding: 0 0 0 50px;
+	}
+}
+
+.custom-checkbox.lg input[type="checkbox"] + label:before  {
+	width: 20px;
+	height: 20px;
+	border: none;
+	background-color: #ecebf2;
+	font-size: 11px;
+	color: $default;
+	@media (min-width: 768px) {
+		width: 35px;
+		height: 35px;
+	}
+}
+
+.custom-checkbox.privacy input[type="checkbox"] + label  {
+	color: rgba($default, .5);
+}
+
 
 input[type="file"] {
 	font-size: 16px;
 }
 
 
-textarea {
-	resize: none;
-	height: 90px;
-	padding: 10px 15px;
+.custom-file {
+	height: auto;
+}
+
+.inputfile {
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	width: 0.1px;
+	height: 0.1px;
+}
+
+.inputfile + label {
+	cursor: pointer;
+    display: inline-block;
+    margin: 0;
+}
+
+.inputfile + label * {
+	pointer-events: none;
+}
+
+.inputfile + label i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 9px;
+	font-size: 125%;
+}
+
+.inputfile + label span {
+	display: inline-block;
+	border-bottom: 1px solid $default;
 }
 
 
-.btn {
+.inputfile:focus + label span,
+.inputfile + label:hover span {
+    border-bottom-color: transparent;
+}
+
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+
+textarea {
+	resize: none;
+	height: 86px;
+	padding: 10px 15px;
+}
+
+button {
 	cursor: pointer;
+}
+
+.btn {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
 	display: inline-block;
 	margin: 0;
 	padding: 12px 15px;
@@ -93,28 +176,14 @@ textarea {
 	text-decoration: none;
 	letter-spacing: 0.45px;
 	line-height: 1;
+
+	opacity: 1;
+	visibility: visible; 
+	transform: translateY(0) scale(1); 
+	transition: transform 0.9s ease 0.5s, opacity 0.9s ease 0.5s; 
 	@media (min-width: 768px) {
 		min-width: 250px;
-		padding: 17px 40px;
-	}
-
-	&:hover {
-		color: #fbfafd;
-		text-decoration: none;
-	}
-
-	&.btn-secondary {
-		border-color: #4f4c60;
-		background-color: #4f4c60;
-	}
-
-	&.btn-outline {
-		background-color: transparent;
-		color: $danger;
-		&:hover {
-			color: $danger;
-			text-decoration: none;
-		}
+		padding: 17px 30px;
 	}
 	
 	&.btn-auto {
@@ -125,6 +194,77 @@ textarea {
 		min-width: auto;
 		padding: 13px 20px;
 		font-size: 16px;
+	}
+
+	&:before,
+	.btn-text {
+	    z-index: 1;
+	    display: inline-block;
+	    transition: opacity .25s ease,transform .25s ease;
+	}
+
+	&:before {
+	    content: attr(data-text);
+	    opacity: 0;
+	    position: absolute;
+	    transform: translate3d(50%,0,0);
+	}
+
+	.btn-overlay {
+	    opacity: 0;
+		position: absolute;
+	    top: 0;
+	    right: 0;
+	    height: 100%;
+	    width: 140%;
+	    background-color: $dark-danger;
+	    transform: translate3d(100%,0,0) skew(0deg);
+	    transition: transform .5s ease,opacity .3s ease;
+	}
+
+	&:hover {
+		color: #fbfafd;
+		text-decoration: none;
+		&:before {
+    		opacity: 1;
+		    transform: translateZ(0);
+		}
+
+		.btn-overlay {
+    		opacity: 1;
+		    transform: translate3d(10%,0,0) skew(-20deg);
+		}
+
+		.btn-text {
+    		opacity: 0;
+		    transform: translate3d(-50%,0,0);
+		}
+	}
+
+	&.btn-secondary {
+		border-color: #4f4c60;
+		background-color: #4f4c60;
+		.btn-overlay {
+			background-color: darken(#4f4c60, 10%);
+
+			&:hover {
+				color: #fbfafd;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&.btn-outline {
+		background-color: transparent;
+		color: $danger;
+		.btn-overlay {
+			background-color: $danger;
+		}
+
+		&:hover {
+			color: #fbfafd;
+			text-decoration: none;
+		}
 	}
 }
 
