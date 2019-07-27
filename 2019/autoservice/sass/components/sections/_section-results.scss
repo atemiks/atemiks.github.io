@@ -9,21 +9,28 @@
 		z-index: 9;
 	}
 
-	#result-map {
-		width: calc(100% + 30px);
+	.result-map-wrapper {
 		height: 200px;
-		margin: 0 -15px -15px;
-		background-color: #f2f2f2;
+		margin: 0 0 -15px;
+		@media (min-width: 768px) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: 0;
+			height: auto;
+			background-color: #f2f2f2;
+		}
+	}
+
+	#result-map {
+		height: inherit;
 		@media (min-width: 768px) {
 			position: sticky !important;
 			top: 70px;
 			height: calc(100vh - 70px);
-			width: calc(100vw - 15px);
-			margin: 0;
-			transform: translateX(calc(-58.333333% - 15px));
-		}
-		@media (min-width: 1200px) {
-			transform: translateX(calc(-50% - 15px));
+			width: 100%;
 		}
 	}
 }

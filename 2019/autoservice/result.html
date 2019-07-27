@@ -81,8 +81,12 @@
                     </section>
 
                     <section class="section-results">
+                        <div class="result-map-wrapper">
+                            <div id="result-map"></div>
+                        </div>
+
                         <div class="container">
-                            <div class="row flex-column-reverse flex-md-row">
+                            <div class="row">
                                 <div class="results-content col-md-7 col-xl-6">
                                     <ul class="results-list">
                                         <li class="result-item">
@@ -332,13 +336,255 @@
                                                 </div>
                                             </div>
                                         </li>
-                                    </ul>
-                                </div>
 
-                                <div class="results-aside col-md-5 col-xl-6">
-                                    <div id="result-map">
-                                        google map here
-                                    </div>
+                                        <li class="result-item">
+                                            <div class="station-card">
+                                                <div class="row no-gutters">
+                                                    <a href="station.html" class="station-media" style="background-image: url('uploads/page-results/section-results/result-item-1.jpg')" ></a>
+
+                                                    <div class="station-content col">
+                                                        <a href="station.html" class="station-title">Длинное название автосервиса</a>
+
+                                                        <div class="station-rating rating">
+                                                            <div class="rating-label">Рейтинг</div>
+                                                            <div class="rating-list sm">
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star inactive"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="station-address">
+                                                            <i class="icon-pin"></i>
+                                                            г. Брянск, ул. Пионерская, д.4
+                                                        </div>
+
+                                                        <div class="station-review">...Вывод последнего отзыва, вывод последнего отзыва вывод последнего отзыва...</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row no-gutters align-items-center">
+                                                    <div class="col-auto">
+                                                        <ul class="station-info">
+                                                            <li>
+                                                                <a href="tel:+79999999999">
+                                                                    <i class="icon-call" ></i>
+                                                                    +7 (999) 999-99-99
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <i class="icon-clock" ></i>
+                                                                с 9:00 до 21:00
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12-auto col-xl-auto ml-xl-auto">
+                                                        <div class="d-md-none">
+                                                            <a href="station.html" data-text="Подробнее" class="btn btn-sm" >
+                                                                <span class="btn-overlay"></span>
+                                                                <span class="btn-text" >Подробнее</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="d-none d-md-block">
+                                                            <a href="station.html" data-text="Перейти в карточку автосервиса" class="btn btn-sm" >
+                                                                <span class="btn-overlay"></span>
+                                                                <span class="btn-text">Перейти в карточку автосервиса</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="result-item">
+                                            <div class="station-card">
+                                                <div class="row no-gutters">
+                                                    <a href="station.html" class="station-media" style="background-image: url('uploads/page-results/section-results/result-item-1.jpg')" ></a>
+
+                                                    <div class="station-content col">
+                                                        <a href="station.html" class="station-title">Длинное название автосервиса</a>
+
+                                                        <div class="station-rating rating">
+                                                            <div class="rating-label">Рейтинг</div>
+                                                            <div class="rating-list sm">
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star inactive"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="station-address">
+                                                            <i class="icon-pin"></i>
+                                                            г. Брянск, ул. Пионерская, д.4
+                                                        </div>
+
+                                                        <div class="station-review">...Вывод последнего отзыва, вывод последнего отзыва вывод последнего отзыва...</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row no-gutters align-items-center">
+                                                    <div class="col-auto">
+                                                        <ul class="station-info">
+                                                            <li>
+                                                                <a href="tel:+79999999999">
+                                                                    <i class="icon-call" ></i>
+                                                                    +7 (999) 999-99-99
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <i class="icon-clock" ></i>
+                                                                с 9:00 до 21:00
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12-auto col-xl-auto ml-xl-auto">
+                                                        <div class="d-md-none">
+                                                            <a href="station.html" data-text="Подробнее" class="btn btn-sm" >
+                                                                <span class="btn-overlay"></span>
+                                                                <span class="btn-text" >Подробнее</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="d-none d-md-block">
+                                                            <a href="station.html" data-text="Перейти в карточку автосервиса" class="btn btn-sm" >
+                                                                <span class="btn-overlay"></span>
+                                                                <span class="btn-text">Перейти в карточку автосервиса</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="result-item">
+                                            <div class="station-card">
+                                                <div class="row no-gutters">
+                                                    <a href="station.html" class="station-media" style="background-image: url('uploads/page-results/section-results/result-item-1.jpg')" ></a>
+
+                                                    <div class="station-content col">
+                                                        <a href="station.html" class="station-title">Длинное название автосервиса</a>
+
+                                                        <div class="station-rating rating">
+                                                            <div class="rating-label">Рейтинг</div>
+                                                            <div class="rating-list sm">
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star inactive"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="station-address">
+                                                            <i class="icon-pin"></i>
+                                                            г. Брянск, ул. Пионерская, д.4
+                                                        </div>
+
+                                                        <div class="station-review">...Вывод последнего отзыва, вывод последнего отзыва вывод последнего отзыва...</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row no-gutters align-items-center">
+                                                    <div class="col-auto">
+                                                        <ul class="station-info">
+                                                            <li>
+                                                                <a href="tel:+79999999999">
+                                                                    <i class="icon-call" ></i>
+                                                                    +7 (999) 999-99-99
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <i class="icon-clock" ></i>
+                                                                с 9:00 до 21:00
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12-auto col-xl-auto ml-xl-auto">
+                                                        <div class="d-md-none">
+                                                            <a href="station.html" data-text="Подробнее" class="btn btn-sm" >
+                                                                <span class="btn-overlay"></span>
+                                                                <span class="btn-text" >Подробнее</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="d-none d-md-block">
+                                                            <a href="station.html" data-text="Перейти в карточку автосервиса" class="btn btn-sm" >
+                                                                <span class="btn-overlay"></span>
+                                                                <span class="btn-text">Перейти в карточку автосервиса</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="result-item">
+                                            <div class="station-card">
+                                                <div class="row no-gutters">
+                                                    <a href="station.html" class="station-media" style="background-image: url('uploads/page-results/section-results/result-item-1.jpg')" ></a>
+
+                                                    <div class="station-content col">
+                                                        <a href="station.html" class="station-title">Длинное название автосервиса</a>
+
+                                                        <div class="station-rating rating">
+                                                            <div class="rating-label">Рейтинг</div>
+                                                            <div class="rating-list sm">
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star"></i>
+                                                                <i class="icon-star inactive"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="station-address">
+                                                            <i class="icon-pin"></i>
+                                                            г. Брянск, ул. Пионерская, д.4
+                                                        </div>
+
+                                                        <div class="station-review">...Вывод последнего отзыва, вывод последнего отзыва вывод последнего отзыва...</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row no-gutters align-items-center">
+                                                    <div class="col-auto">
+                                                        <ul class="station-info">
+                                                            <li>
+                                                                <a href="tel:+79999999999">
+                                                                    <i class="icon-call" ></i>
+                                                                    +7 (999) 999-99-99
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <i class="icon-clock" ></i>
+                                                                с 9:00 до 21:00
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12-auto col-xl-auto ml-xl-auto">
+                                                        <div class="d-md-none">
+                                                            <a href="station.html" data-text="Подробнее" class="btn btn-sm" >
+                                                                <span class="btn-overlay"></span>
+                                                                <span class="btn-text" >Подробнее</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="d-none d-md-block">
+                                                            <a href="station.html" data-text="Перейти в карточку автосервиса" class="btn btn-sm" >
+                                                                <span class="btn-overlay"></span>
+                                                                <span class="btn-text">Перейти в карточку автосервиса</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
