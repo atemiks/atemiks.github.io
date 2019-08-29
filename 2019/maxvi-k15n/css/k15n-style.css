@@ -99,14 +99,10 @@
 	background-color: #ededed;
 }
 
-.k15n-design .content-media {
+.k15n-design .content-media,
+.k15n-design .content-inner {
 	flex: 0 0 33.3333%;
 	max-width: 33.3333%;
-}
-
-.k15n-design .content-inner {
-	flex: 0 0 66.6666%;
-	max-width: 66.6666%;
 }
 
 .k15n-design .media {
@@ -136,7 +132,6 @@
 	padding-top: 70px;
 	padding-bottom: 0;
 	background-color: #fcc396;
-	background-position: center top !important;  
 	color: #fff;
 }
 

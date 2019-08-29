@@ -1,3 +1,12 @@
+@media (max-width: 1199px) {
+	/* section  design */
+	.k15n-design .content-inner {
+		flex: 0 0 66.6666%;
+		max-width: 66.6666%;
+	}
+	/* section  design end*/
+}
+
 @media (max-width: 1024px) {
 	.k15n-title {
 		margin: 0 0 15px;
@@ -7,9 +16,19 @@
 	/* section  design */
 	.k15n-design .content-media,
 	.k15n-design .content-inner {
-		padding-left: 60px;
-		padding-right: 60px;
+		padding-left: 30px;
+		padding-right: 30px;
 		text-align: center;
+	}
+
+	.k15n-design .content-media {
+		flex: 0 0 120px;
+		max-width: 120px;
+	}
+
+
+	.k15n-design .media {
+		height: 620px;
 	}
 	/* section  design end */
 
@@ -22,6 +41,10 @@
 
 	.k15n-camera .k15n-title {
 		margin-top: 30px;
+	}
+
+	#parallax-camera .parallax-layer.back {
+		background-position: center bottom;
 	}
 	/* section  camera end */
 
@@ -58,9 +81,20 @@
 
 
 @media (max-width: 991px) {
+	/* section  design */
+	.k15n-design .media {
+		height: 400px;
+	}
+
+	.k15n-design .k15n-title {
+		margin-top: 70px;
+	}
+	/* section  design end */
+
+
 	/* section  camera */
 	.k15n-camera .media {
-		height: 665px;
+		height: 530px;
 		margin: 0;
 	}
 	/* section  camera end */
