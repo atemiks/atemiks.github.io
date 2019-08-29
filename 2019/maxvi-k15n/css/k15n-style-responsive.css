@@ -1,0 +1,295 @@
+@media (max-width: 1024px) {
+	.k15n-title {
+		margin: 0 0 15px;
+	}
+
+	
+	/* section  design */
+	.k15n-design .content-media,
+	.k15n-design .content-inner {
+		padding-left: 60px;
+		padding-right: 60px;
+		text-align: center;
+	}
+	/* section  design end */
+
+	
+	/* section  camera */
+	.k15n-camera .media {
+		height: 765px;
+		margin: 0;
+	}
+
+	.k15n-camera .k15n-title {
+		margin-top: 30px;
+	}
+	/* section  camera end */
+
+
+	/* section  display */
+	.k15n-display .content-media {
+		flex: 0 0 350px;
+		max-width: 350px;
+	}
+
+	.k15n-display .media {
+		height: 695px;
+	}
+
+
+	.k15n-display .k15n-title {
+		margin-top: 90px;
+	}
+
+
+	.k15n-display-phone {
+	    width: 343px;
+    	height: 778px;
+	}
+
+	.k15n-display-slider {
+	    top: 85px;
+	    left: 55px;
+	    width: 235px;
+	    height: 289px;
+	}
+	/* section  display end */
+}
+
+
+@media (max-width: 991px) {
+	/* section  camera */
+	.k15n-camera .media {
+		height: 665px;
+		margin: 0;
+	}
+	/* section  camera end */
+
+
+	/* section  display */
+	.k15n-display {
+		padding-top: 60px;
+		padding-bottom: 100px;
+	}
+
+	.k15n-display .content-media {
+		position: absolute;
+		right: 0;
+		width: 350px;
+	}
+
+	.k15n-display .content-inner {
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    padding-right: 300px;
+	}
+
+	.k15n-display .content-inner:not(:last-child) {
+		margin-bottom: 80px;
+	}
+
+	.k15n-display .k15n-title {
+		margin-top: 90px;
+	}
+	/* section  display end */
+
+
+	/* section  battery */
+	.k15n-battery {
+		height: 635px;
+	}
+	/* section  battery end */
+
+	
+	/* section  features */
+	.k15n-features-grid .k15n-feature-item {
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+	/* section  features end */
+}
+
+@media (max-width: 767px) {
+	.k15n-landing .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.k15n-landing .content-inner {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+
+	.k15n-title {
+		font-size: 30px !important;
+		line-height: 1.35;
+	}
+
+
+	/* section  design */
+	.k15n-design {
+		padding-top: 40px;
+		padding-bottom: 500px;
+	}
+
+	.k15n-design .content-wrapper {
+		position: relative;
+	}
+
+	.k15n-design .content-media, 
+	.k15n-design .content-inner {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.k15n-design .content-media {
+		position: absolute;
+		left: 50%;
+		top: 100%;
+		flex: 0 0 190px;
+		max-width: 190px;
+		width: 190px;
+		height: 460px;
+	}
+
+	.k15n-design .content-media.left {
+		transform: translateX(-110%);
+	}
+	.k15n-design .content-media.right {
+	    transform: translateX(10%);
+	}
+
+	.k15n-design .content-inner {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+
+	.k15n-design .k15n-title {
+		margin-top: 0;
+	}
+
+	.k15n-design .media {
+		height: inherit;
+	}
+
+
+	/* section  camera */
+	.k15n-camera {
+		padding-top: 40px;
+		padding-bottom: 525px;
+	}
+
+	.k15n-camera .content-wrapper {
+		position: relative;
+	}
+
+	.k15n-camera .content-media {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		width: 310px;
+		transform: translateX(-50%);
+	}
+
+	.k15n-camera .k15n-title, 
+	.k15n-camera .k15n-description {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+
+	.k15n-camera .k15n-title {
+		margin-top: 0;
+	}
+
+
+	#parallax-camera .parallax-layer.back {
+		opacity: 0;
+	}
+
+	#parallax-camera .parallax-layer.front {
+		background-position: -36vw top;
+	}
+	/* section  camera end */
+
+
+	/* section  display */
+	.k15n-display {
+		padding-top: 40px;
+		padding-bottom: 525px;
+	}
+
+	.k15n-display .content-wrapper {
+		position: relative;
+	}
+	
+	
+	.k15n-display .content-media {
+		left: 50%;
+		right: auto;
+		top: 100%;
+		transform: translateX(-50%);
+	}
+
+	.k15n-display .content-inner {
+		padding: 0;
+	}
+
+	.k15n-display .content-inner:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+
+	.k15n-display .k15n-title {
+		margin-top: 0;
+	}
+	/* section  display end */
+
+
+	/* section  features */
+	.k15n-features-grid .k15n-feature-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	/* section  features end */
+
+	
+	/* section  battery */
+	.k15n-battery {
+		height: auto;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	/* section  battery end */
+}
+
+@media (max-width: 375px) {
+	.k15n-title {
+		font-size: 24px !important;
+	}
+
+	/* section  features */
+	.k15n-features-grid .k15n-feature-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	/* section  features end */
+
+	
+	/* section  battery */
+	.k15n-battery .content-inner {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	/* section  battery end */
+}
+
+
+@media (min-width: 1200px) {
+	.k15n-landing  .flex-lg-nowrap {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+	}
+}
