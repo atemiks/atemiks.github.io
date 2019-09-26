@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+	.section-contact {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.section-contact:before {
+		transform: translateX(-34%) translateY(0);
+	}
+}
+
+@media (min-width: 992px) {
+	.section-contact {
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+
+	.section-contact:before {
+		transform: translateX(-23.5%) translateY(0);
+	}
+}

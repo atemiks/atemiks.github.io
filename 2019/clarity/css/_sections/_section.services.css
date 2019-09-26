@@ -1,0 +1,24 @@
+.section-services {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	background-color: #1d1d1d;
+	color: #fcfafa;
+}
+
+.section-services .section-title {
+	color: #fcfafa;
+}
+
+
+.services-grid {
+	margin-bottom: -20px;
+}
+
+.services-grid .service-item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 30px;
+}

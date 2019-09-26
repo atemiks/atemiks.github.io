@@ -1,0 +1,36 @@
+.section-contact {
+	overflow: hidden;
+	position: relative;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	background-color: #1d1d1d;
+	background-repeat: no-repeat;
+	background-position: top right;
+	font-size: 16px;
+	color: #fcfafa;
+}
+
+.section-contact:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 1117px;
+	height: 531px;
+	background: url('../../images/section-contact/section-contact-bg.png') no-repeat 0 0;
+	background-size: contain;
+	transform: translateX(-40%) translateY(-100px);
+}
+
+.section-contact .contact-grid {
+	margin-bottom: -20px;
+}
+
+.section-contact .contact-grid .contact-item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 30px;
+}
