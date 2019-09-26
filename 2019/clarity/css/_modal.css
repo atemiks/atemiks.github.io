@@ -1,0 +1,52 @@
+.modal-content {
+	padding: 30px 20px;
+	border: none;
+	border-radius: 0;
+}
+
+.modal-header {
+	display: block;
+	margin: 0;
+	padding: 0 50px 0 0;
+	border: none;
+}
+
+.modal .close {
+	position: absolute;
+	z-index: 9;
+	top: 25px;
+	right: 25px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	font-size: 21px;
+	line-height: 1;
+}
+
+
+.modal-body {
+	margin: 0;
+	padding: 0;
+}
+
+
+.modal-title {
+	margin: 0 0 15px;
+	font-family: "Oswald";
+	font-size: 32px;
+	font-weight: 900;
+	color: #191919;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+

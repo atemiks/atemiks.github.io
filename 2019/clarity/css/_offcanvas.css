@@ -1,4 +1,4 @@
-.offcanas-toggle{
+.offcanvas-toggle{
 	cursor: pointer;
 	width: 32px;
 	margin: 0;
@@ -8,9 +8,81 @@
 	background-color: transparent;
 }
 
-.offcanas-toggle span {
+.offcanvas-toggle span {
 	display: block;
 	height: 2px;
 	margin: 8px 0;
 	background-color: #191919;
+}
+
+
+#offcanvas {
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 280px;
+	height: 100vh;
+	padding: 8px 15px;
+	background-color: #fff;
+	transform: translateX(-100%);
+	transition: transform 300ms ease;
+	-webkit-overflow-scrolling: touch;
+}
+
+#offcanvas.open {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+}
+
+#offcanvas .offcanvas-close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.offcanvas-menu {
+	 margin: 0;
+	 padding: 0;
+	 list-style: none;
+}
+
+.offcanvas-menu-item:not(:last-child) {
+	border-bottom: 1px solid rgba(231,231,231,.23);
+}
+
+.offcanvas-menu-link {
+	display: block;
+	padding: 8px 0;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 900;
+    color: #191919;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+}
+
+.offcanvas-menu-link:hover {
+	color: #f26680;
+    text-decoration: none;
 }
