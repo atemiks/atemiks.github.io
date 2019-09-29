@@ -1,0 +1,282 @@
+@media (max-width: 1199px) {
+	/* section design */
+	.k18-design .k18-design-image img {
+		max-width: 95.75vw;
+	}
+	/* section design end */
+
+	
+	/* section body */
+	.k18-body .k18-body-image img {
+		max-width: 75vw;
+	}
+	/* section body end */
+
+	
+	/* section flashlight */
+	.k18-flashlight .k18-flashlight-image {
+		float: right;
+	}
+
+	.k18-flashlight .k18-flashlight-image img {
+		max-width: none;
+	}
+	/* section flashlight end */
+}
+
+
+@media (max-width: 991px) {	
+	.k18-title {
+		font-size: 40px;
+	}
+
+	.k18-description {
+		max-width: 300px;
+	}
+
+	
+	/* section design */
+	.k18-design .content-wrapper {
+		height: 580px;
+	}
+	/* section design end */
+
+	
+	/* section body */
+	.k18-body .content-wrapper {
+		height: 580px;
+	}
+	
+	.k18-body .k18-body-image {
+		margin: 30px 0 0 -80px;
+	}
+
+	.k18-body .k18-body-typography-container {
+		padding-top: 80px;
+	}
+	/* section body end */
+
+
+	/* section display */
+	.k18-display .content-wrapper {
+	    height: 580px;
+	}
+
+	.k18-display .k18-display-typography-container {
+		padding-top: 80px;
+	}
+	/* section display end */
+
+	
+	/* section flashlight */
+	.k18-flashlight .content-wrapper {
+		height: 580px;
+	}
+
+	.k18-flashlight .k18-flashlight-image img {
+		max-width: 55vw;
+	}
+
+	.k18-flashlight .k18-flashlight-typography-container {
+		padding-top: 80px;
+	}
+	/* section flashlight end */
+
+
+	/* section ui */
+	.k18-ui .content-wrapper {
+		height: 580px;
+	}
+
+	.k18-ui .k18-ui-typography-container {
+		padding-top: 80px;
+	}
+	/* section ui end */
+
+
+	/* section features */
+	.k18-features {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.k18-features-grid .k18-feature-item {
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+	/* section features end */
+}
+
+@media (max-width: 767px) {
+	.k18-landing .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.k18-title {
+		font-size: 30px !important;
+		line-height: 1.35;
+	}
+
+	
+	/* section design */
+	.k18-design .content-wrapper {
+		height: auto;
+	}
+
+
+	.k18-design .k18-design-image {
+		float: none;
+		margin: 25px -15px;
+		text-align: center;
+	}
+
+	.k18-design .k18-design-image img {
+		max-width: 100%;
+	}
+
+
+	.k18-design .k18-design-typography-container {
+		padding-top: 40px;
+	}
+	/* section design end */
+
+	
+	/* section body */
+	.k18-body .content-wrapper {
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		height: auto;
+	}
+
+
+	.k18-body .k18-body-image {
+		float: none;
+		height: 280px;
+		margin: 25px -15px;
+		text-align: center;
+	}
+
+
+	.k18-body .k18-body-typography-container {
+		padding-top: 40px;
+	}
+	/* section body end */
+
+	
+	/* section display */
+	.k18-display .content-wrapper {
+		height: auto;
+	}
+
+
+	.k18-display .k18-display-image {
+		display: block;
+		height: 280px;
+		margin: 25px -15px;
+		text-align: center;
+	}
+
+	.k18-display .k18-display-image img {
+		max-height: 500px;
+	}
+
+
+	.k18-display .k18-display-typography-container {
+		padding-top: 40px;
+	}
+	/* section display end */
+
+	
+	/* section flashlight */
+	.k18-flashlight .content-wrapper {
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		height: auto;
+	}
+
+
+	.k18-flashlight .k18-flashlight-image {
+		float: none;
+		height: 280px;
+		margin: 25px -15px;
+		text-align: center;
+	}
+
+	.k18-flashlight .k18-flashlight-image img {
+		max-width: 75vw;
+		max-height: 360px;
+	}
+
+
+	.k18-flashlight .k18-flashlight-typography-container {
+		padding-top: 40px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	/* section flashlight end */
+
+	
+	/* section ui */
+	.k18-ui .content-wrapper {
+		height: auto;
+	}
+
+
+	.k18-ui .k18-ui-image {
+		height: 280px;
+		margin: 25px -15px;
+		text-align: center;
+	}
+
+	.k18-ui .k18-ui-image img {
+		max-height: 540px;
+	}
+
+
+	.k18-ui .k18-ui-typography-container {
+		padding-top: 40px;
+	}
+	/* section ui end */
+
+
+	/* section features */
+	.k18-features {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	
+	.k18-features-grid .k18-feature-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	/* section features end */
+
+}
+
+@media (max-width: 575px) {
+	.k18-title {
+		font-size: 24px !important;
+	}
+
+	/* section features */
+	.k18-features-grid .k18-feature-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	/* section features end */
+}
+
+
+@media (min-width: 1200px) {
+	.k18-landing  .flex-lg-nowrap {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+	}
+}
