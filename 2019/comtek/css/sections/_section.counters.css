@@ -1,0 +1,106 @@
+.section-counters {
+	overflow: hidden;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+.section-counters .section-header {
+	margin-bottom: 30px;
+}
+
+
+.section-counters .counters-grid {
+	margin-bottom: 30px;
+}
+
+.section-counters .counters-grid .counter-item {
+	margin-bottom: 30px;
+}
+
+
+.section-counters .advantages-grid {
+	position: relative;
+	margin-bottom: -30px;
+}
+
+.section-counters .advantages-grid .advantage-item {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.section-counters .advantages-grid .advantage-item::after {
+	content: '';
+	position: absolute;
+	top: 60px;
+	left: 100%;
+	width: 80px;
+	height: 5px;
+	border-radius: 3px;
+	background-color: #f2a112;
+	transform: translateX(-50%);
+}
+
+.section-counters .advantages-grid .advantage-item:nth-child(2n+2)::after,
+.section-counters .advantages-grid .advantage-item:last-child::after {
+	display: none;
+}
+
+
+@media (min-width: 576px) {
+	.section-counters {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+@media (min-width: 768px) {
+	.section-counters {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.section-counters .counters-grid {
+		margin-bottom: 65px;
+	}
+
+
+	.section-counters .advantages-grid .advantage-item:nth-child(2n+2)::after {
+		display: block;
+	}
+
+	.section-counters .advantages-grid .advantage-item:nth-child(3n+3)::after,
+	.section-counters .advantages-grid .advantage-item:last-child::after {
+		display: none;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.section-counters .section-header {
+		margin-bottom: 70px;
+	}
+
+	.section-counters .advantages-grid::before,
+	.section-counters .advantages-grid::after {
+		content: '';
+		position: absolute;
+		top: 60px;
+		width: 50vw;
+		height: 5px;
+		border-radius: 3px;
+		background-color: #f2a112;
+	}
+
+	.section-counters .advantages-grid::before {
+		right: calc(100% - 40px);
+	}
+
+	.section-counters .advantages-grid::after {
+		left: calc(100% - 40px);
+	}
+
+	.section-counters .advantages-grid .advantage-item:nth-child(3n+3)::after {
+		display: block;
+	}
+}

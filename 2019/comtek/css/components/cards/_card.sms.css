@@ -1,0 +1,85 @@
+.sms-card {
+	padding: 10px 0;
+	text-align: center;
+}
+
+.sms-card .sms-media {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+    max-width: 120px;
+    height: 130px;
+	margin: 0 auto 15px;
+}
+
+.sms-card .sms-title {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 700;
+	color: #163344;
+	text-transform: uppercase;
+	line-height: 1.5;
+	
+}
+
+.sms-card .sms-title span {
+	color: #f2a112;
+	font-weight: 900;
+}
+
+
+@media (min-width: 576px) {
+	.sms-card {
+		padding: 20px 0;
+	}
+
+
+	.sms-card .sms-media {
+		max-width: 140px;
+    	height: 150px;
+	}
+
+
+	.sms-card .sms-title {
+		font-size: 18px;
+		line-height: 1.25;
+		letter-spacing: 0.6px;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.sms-card {
+		padding: 20px 0 40px;
+	}
+
+	.sms-card .sms-media {
+		max-width: 230px;
+		height: 200px;
+	}
+
+	.sms-card .sms-title {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.sms-card {
+		padding: 20px 0 75px;
+	}
+
+
+	.sms-card .sms-media {
+		margin: 0 auto 40px;
+	}
+
+
+	.sms-card .sms-title {
+		font-size: 24px;
+	}
+}

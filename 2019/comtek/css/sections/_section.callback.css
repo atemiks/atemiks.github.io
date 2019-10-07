@@ -1,0 +1,94 @@
+.section-callback {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #f2a112;
+}
+
+
+.section-callback .section-header {
+	margin-bottom: 15px;
+}
+
+.section-callback .section-title {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+
+.section-callback .callback-media {
+	position: absolute;
+	max-width: 100%;
+}
+
+.section-callback .callback-media img {
+	float: right;
+    max-width: 320px;
+    margin: -60px -20px 0 0;
+}
+
+
+.section-callback .form-callback {
+	position: relative;
+	z-index: 1;
+	margin-bottom: -15px;
+}
+
+.section-callback .form-callback .btn {
+	height: 50px;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 50px;
+}
+
+
+
+@media (min-width: 576px) {
+	.section-callback {
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+
+	.section-callback .section-title {
+		font-size: 20px;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.section-callback + section {
+		padding-top: 100px;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.section-callback .callback-media img {
+		margin: -60px 30px 0 0;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.section-callback .section-header {
+		margin-bottom: 35px;
+	}
+
+	.section-callback .section-title {
+		font-size: 24px;
+    	white-space: nowrap;
+	}
+
+
+	.section-callback .callback-media img {
+		max-width: none;
+		margin: -100px 30px 0 0;
+	}
+
+
+	.section-callback .form-callback  {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,114 @@
+.section-hero {
+	padding-top: 100px;
+	padding-bottom: 40px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+
+.section-hero .hero-label {
+	margin: 0 0 10px;
+	font-size: 16px;
+}
+
+.section-hero .hero-title {
+	margin: 0 0 25px;
+	font-size: 30px;
+	font-weight: 800;
+	color: #f7a91b;
+	line-height: 1.2;
+	letter-spacing: 0.6px;
+}
+
+
+.section-hero .hero-advantages {
+	max-width: 90%;
+	line-height: 1.33;
+}
+
+.section-hero .hero-advantages .hero-advantage-item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+
+.section-hero .hero-advantage br {
+	display: none;
+}
+
+.section-hero .hero-advantage-media {
+	flex: 0 0 60px;
+	max-width: 60px;
+	margin: 10px 20px 10px 0;
+}
+
+
+@media (min-width: 576px) {
+	.section-hero {
+		padding-top: 130px;
+		padding-bottom: 60px;
+		font-size: 18px;
+	}
+
+
+	.section-hero .hero-label {
+		margin: 0 0 20px;
+		font-size: 21px;
+	}
+
+
+	.section-hero .hero-title {
+		font-size: 48px;
+	}
+
+
+	.section-hero .hero-advantage {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.section-hero {
+		padding-top: 160px;
+		padding-bottom: 95px;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.section-hero {
+		font-size: 21px;
+	}
+
+	.section-hero .hero-title {
+		margin: 0 0 45px;
+		font-size: 60px;
+	}
+
+	.section-hero .hero-advantage-media {
+		flex: 0 0 80px;
+		max-width: 80px;
+		margin-right: 20px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.section-hero {
+		padding-top: 180px;
+	}
+
+
+	.section-hero .hero-advantage br {
+		display: block;
+	}
+}

@@ -1,0 +1,127 @@
+.header {
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 0;
+	line-height: 1;
+}
+
+.header-logo .logo {
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-logo:hover .logo {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.header-contact {
+	margin-top: -5px;
+	margin-bottom: -5px;
+	text-align: right;
+	line-height: 1.5;
+}
+
+.header-contact a {
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-contact a:first-child {
+	letter-spacing: .5px;
+}
+
+.header-contact a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.header-actions {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.header-actions a {
+	margin: 0 5px;
+}
+
+
+@media (min-width: 576px) {
+	.header {
+		padding: 35px 0;
+	}
+
+	.header-logo .logo {
+		font-size: 30px;
+	}
+
+
+	.header-contact a {
+		font-size: 16px;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.header-logo .logo {
+		font-size: 34px;
+	}
+
+	.header-contact a {
+		font-size: 18px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.header-logo .logo {
+		font-size: 46px;
+	}
+
+
+	.header-contact {
+		margin-top: 0;
+		margin-bottom: 0;
+		line-height: 1.16;
+	}
+
+	.header-contact a {
+		font-size: 24px;
+	}
+
+
+	.header-actions {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.header-actions a {
+		margin: 0 10px;
+	}
+}
+
+
+@media (min-width: 1366px) {
+	.header-contact {
+		margin: 0 5px;
+	}
+
+	.header-actions {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

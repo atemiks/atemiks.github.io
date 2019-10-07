@@ -1,0 +1,38 @@
+.gallery-grid {
+	position: relative;
+	margin-bottom: -20px;
+}
+
+.gallery-grid::before {
+	content: '';
+	position: absolute;
+	top: -40px;
+	left: 40px;
+	right: 15px;
+	bottom: -40px;
+	background: url('../../images/page-home/section-gallery/gallery-bg.png') no-repeat 0 0;
+}
+
+.gallery-grid .gallery-item {
+	margin-bottom: 20px;
+}
+
+
+@media (min-width: 576px) {
+	.gallery-grid::before {
+		top: -40px;
+		left: 100px;
+		right: -5px;
+		bottom: -40px;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.gallery-grid::before {
+		top: -110px;
+		left: 100px;
+		right: -5px;
+		bottom: -110px;
+	}
+}

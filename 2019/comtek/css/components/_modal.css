@@ -1,0 +1,103 @@
+.modal-content {
+	padding: 45px 20px 20px;
+	border: none;
+	border-radius: 0;
+	background-color: #f2a112;
+}
+
+.modal-header {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.modal .close {
+	opacity: 1;
+	position: absolute;
+	z-index: 9;
+	top: -3px;
+	right: -3px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	margin: 0;
+	padding: 0;
+	font-size: 21px;
+	color: #245770;
+	text-shadow: none;
+	line-height: 1;
+}
+
+
+.modal-body {
+	margin: 0 0 -45px;
+	padding: 0;
+}
+
+
+.modal-title {
+	margin: 0 -10px 20px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #163344;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1.3px;
+	line-height: 1.2;
+}
+
+.modal-title .text-lead {
+	font-size: 120px;
+	font-weight: 700;
+	color: #245770;
+	text-transform: uppercase;
+	line-height: 1.15;
+}
+
+
+.modal form {
+	margin-bottom: -20px;
+}
+
+.modal .form-group {
+	margin-bottom: 20px;
+}
+
+.modal .btn {
+	height: 50px;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-size: 20px;
+	line-height: 50px;
+}
+
+.modal .btn.btn-primary:hover {
+	background-color: #153344;
+	color: #547b8f;
+	text-shadow: none;
+}
+
+
+@media (min-width: 375px) {
+	.modal-dialog {
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.modal-content {
+		padding: 45px 20px 20px;
+	}
+
+	.modal-title {
+		margin: 0 0 20px;
+	}
+}

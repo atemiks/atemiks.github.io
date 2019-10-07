@@ -1,0 +1,17 @@
+.link {
+	font-size: 16px;
+	color: #b3570f;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: #b3570f;
+	text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+	.link {
+		font-size: 18px;
+	}
+}

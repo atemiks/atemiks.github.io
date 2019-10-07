@@ -1,0 +1,31 @@
+.section-news {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.section-news .section-header {
+	margin-bottom: 30px;
+}
+
+
+.section-news .news-grid {
+	margin-bottom: -30px;
+}
+
+.section-news .news-grid .news-item {
+	margin-bottom: 30px;
+}
+
+
+@media (min-width: 576px) {
+	.section-news {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-news .section-header {
+		margin-bottom: 70px;
+	}
+}

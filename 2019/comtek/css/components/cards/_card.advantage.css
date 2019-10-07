@@ -1,0 +1,40 @@
+.advantage-card {
+	font-size: 16px;
+	font-weight: 600;
+	color: #163344;
+	text-align: center;
+	line-height: 1.25;
+}
+
+.advantage-card .advantage-media {
+	height: 100px;
+	margin: 0 0 20px;
+}
+
+.advantage-card .advantage-media img {
+	height: inherit;
+}
+
+.advantage-card .advantage-title {
+	margin: 0 0 15px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #f2a112;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+}
+
+
+@media (min-width: 1200px) {
+	.advantage-card {
+		font-size: 18px;
+	}
+
+	.advantage-card .advantage-media {
+		height: 121px;
+	}
+
+	.advantage-card .advantage-title {
+		font-size: 24px;
+	}
+}

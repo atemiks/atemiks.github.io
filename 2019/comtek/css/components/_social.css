@@ -1,0 +1,38 @@
+.social-group {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.social-link {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	margin: 4px;
+	background-color: #547b8f;
+	font-size: 24px;
+	color: #163344;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.social-link:hover {
+	background-color: #fff;
+	text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+	.social-link {
+		width: 36px;
+		height: 36px;
+	}
+}
