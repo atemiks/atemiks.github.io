@@ -29,21 +29,26 @@
 	margin-bottom: 30px;
 }
 
+.section-counters .advantages-grid .advantage-item::before,
 .section-counters .advantages-grid .advantage-item::after {
 	content: '';
 	position: absolute;
 	top: 60px;
-	left: 100%;
 	width: 80px;
 	height: 5px;
 	border-radius: 3px;
 	background-color: #f2a112;
-	transform: translateX(-50%);
+	
 }
 
-.section-counters .advantages-grid .advantage-item:nth-child(2n+2)::after,
-.section-counters .advantages-grid .advantage-item:last-child::after {
-	display: none;
+.section-counters .advantages-grid .advantage-item::before {
+	right: 100%;
+	transform: translateX(50%);
+}
+
+.section-counters .advantages-grid .advantage-item::after {
+	left: 100%;
+	transform: translateX(-50%);
 }
 
 
@@ -51,6 +56,15 @@
 	.section-counters {
 		padding-top: 60px;
 		padding-bottom: 60px;
+	}
+
+	.section-counters .advantages-grid .advantage-item:nth-child(2n+2)::after,
+	.section-counters .advantages-grid .advantage-item:last-child::after {
+		display: none;
+	}
+
+	.section-counters .advantages-grid .advantage-item::before {
+		display: none;
 	}
 }
 
