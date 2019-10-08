@@ -25,7 +25,7 @@ $(document).ready(function() {
 	$(window).resize(function(){
 		width = $(document).width();
 	});
-	
+
 	if (width > 991){
 		tl.to('.c25-colors-image', 1, {x:0})
 		tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
@@ -43,6 +43,10 @@ $(document).ready(function() {
 		tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
 		tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
 		tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate5', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate6', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate6', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate7', .1, {x:0, display:'block'}, "=0");
 	} else if (width <= 991 && width > 768) {
 		tl.to('.c25-colors-image', 1, {x:20})
 		tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
@@ -61,6 +65,10 @@ $(document).ready(function() {
 		tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
 		tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
 		tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate5', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate6', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate6', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate7', .1, {x:0, display:'block'}, "=0");
 	} else if (width <= 768 && width > 576) {
 		tl.to('.c25-colors-image', 1, {x:60})
 		tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
@@ -78,6 +86,10 @@ $(document).ready(function() {
 		tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
 		tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
 		tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate5', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate6', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate6', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate7', .1, {x:0, display:'block'}, "=0");
 	} else if (width <= 576) {
 		tl.to('.c25-colors-image', 1, {x:20})
 		tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
@@ -95,12 +107,16 @@ $(document).ready(function() {
 		tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
 		tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
 		tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate5', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate6', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate6', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate7', .1, {x:0, display:'block'}, "=0");
 	}
 
 	const scene = new ScrollMagic.Scene({
 		triggerElement: ".c25-colors",
-							triggerHook: "onLeave",
-							duration: "100%"
+		triggerHook: "onLeave",
+		duration: '400%'
 	})
 		.setPin(".c25-colors")
 		.setTween(tl)
