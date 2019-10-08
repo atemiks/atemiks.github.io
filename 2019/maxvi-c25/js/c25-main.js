@@ -25,89 +25,88 @@ $(document).ready(function() {
 	$(window).resize(function(){
 		width = $(document).width();
 	});
-		if (width > 991){
-			tl.to('.c25-colors-image', 1, {x:0})
-			tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
-			tl.to('#secondPhoneColor', 1, {x:100}, "=-1");
-			tl.to('#thirdPhoneColor', 1, {x:200}, "=-1");
-			tl.to('#fourthPhoneColor', 1, {x:300}, "=-1");
-			tl.to('#fifthPhoneColor', 1, {x:400}, "=-1");
-			tl.to('#firstPhoneColor', .1, {display:'none'}, "=0");
-			tl.to('#firstPhoneColorRotate1', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate1', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate2', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate2', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate3', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate3', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
-		} else if (width <= 991 && width > 768) {
-			tl.to('.c25-colors-image', 1, {x:20})
-			tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
-			tl.to('#secondPhoneColor', 1, {x:60}, "=-1");
-			tl.to('#thirdPhoneColor', 1, {x:120}, "=-1");
-			tl.to('#fourthPhoneColor', 1, {x:180}, "=-1");
-			tl.to('#fifthPhoneColor', 1, {x:240}, "=-1");
-			tl.to('#firstPhoneColor', .1, {display:'none'}, "=-1");
-			tl.to('#firstPhoneColor', .1, {display:'none'}, "=0");
-			tl.to('#firstPhoneColorRotate1', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate1', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate2', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate2', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate3', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate3', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
-		} else if (width <= 768 && width > 576) {
-			tl.to('.c25-colors-image', 1, {x:60})
-			tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
-			tl.to('#secondPhoneColor', 1, {x:60}, "=-1");
-			tl.to('#thirdPhoneColor', 1, {x:120}, "=-1");
-			tl.to('#fourthPhoneColor', 1, {x:180}, "=-1");
-			tl.to('#fifthPhoneColor', 1, {x:240}, "=-1");
-			tl.to('#firstPhoneColor', .1, {display:'none'}, "=0");
-			tl.to('#firstPhoneColorRotate1', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate1', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate2', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate2', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate3', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate3', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
-		} else if (width <= 576) {
-			tl.to('.c25-colors-image', 1, {x:20})
-			tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
-			tl.to('#secondPhoneColor', 1, {x:30}, "=-1");
-			tl.to('#thirdPhoneColor', 1, {x:60}, "=-1");
-			tl.to('#fourthPhoneColor', 1, {x:90}, "=-1");
-			tl.to('#fifthPhoneColor', 1, {x:120}, "=-1");
-			tl.to('#firstPhoneColor', .1, {display:'none'}, "=0");
-			tl.to('#firstPhoneColorRotate1', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate1', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate2', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate2', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate3', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate3', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
-			tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
-			tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
-		}
-
-		const scene = new ScrollMagic.Scene({
-			triggerElement: ".c25-colors",
-								triggerHook: "onLeave",
-								duration: "100%"
-		})
-			.setPin(".c25-colors")
-			.setTween(tl)
-				.addTo(controller);
 	
-		function updatePercentage() {
-			//percent.innerHTML = (tl.progress() *100 ).toFixed();
-			tl.progress();
-			// console.log(tl.progress());
-		}
+	if (width > 991){
+		tl.to('.c25-colors-image', 1, {x:0})
+		tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
+		tl.to('#secondPhoneColor', 1, {x:100}, "=-1");
+		tl.to('#thirdPhoneColor', 1, {x:200}, "=-1");
+		tl.to('#fourthPhoneColor', 1, {x:300}, "=-1");
+		tl.to('#fifthPhoneColor', 1, {x:400}, "=-1");
+		tl.to('#firstPhoneColor', .1, {display:'none'}, "=0");
+		tl.to('#firstPhoneColorRotate1', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate1', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate2', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate2', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate3', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate3', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
+	} else if (width <= 991 && width > 768) {
+		tl.to('.c25-colors-image', 1, {x:20})
+		tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
+		tl.to('#secondPhoneColor', 1, {x:60}, "=-1");
+		tl.to('#thirdPhoneColor', 1, {x:120}, "=-1");
+		tl.to('#fourthPhoneColor', 1, {x:180}, "=-1");
+		tl.to('#fifthPhoneColor', 1, {x:240}, "=-1");
+		tl.to('#firstPhoneColor', .1, {display:'none'}, "=-1");
+		tl.to('#firstPhoneColor', .1, {display:'none'}, "=0");
+		tl.to('#firstPhoneColorRotate1', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate1', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate2', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate2', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate3', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate3', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
+	} else if (width <= 768 && width > 576) {
+		tl.to('.c25-colors-image', 1, {x:60})
+		tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
+		tl.to('#secondPhoneColor', 1, {x:60}, "=-1");
+		tl.to('#thirdPhoneColor', 1, {x:120}, "=-1");
+		tl.to('#fourthPhoneColor', 1, {x:180}, "=-1");
+		tl.to('#fifthPhoneColor', 1, {x:240}, "=-1");
+		tl.to('#firstPhoneColor', .1, {display:'none'}, "=0");
+		tl.to('#firstPhoneColorRotate1', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate1', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate2', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate2', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate3', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate3', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
+	} else if (width <= 576) {
+		tl.to('.c25-colors-image', 1, {x:20})
+		tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
+		tl.to('#secondPhoneColor', 1, {x:30}, "=-1");
+		tl.to('#thirdPhoneColor', 1, {x:60}, "=-1");
+		tl.to('#fourthPhoneColor', 1, {x:90}, "=-1");
+		tl.to('#fifthPhoneColor', 1, {x:120}, "=-1");
+		tl.to('#firstPhoneColor', .1, {display:'none'}, "=0");
+		tl.to('#firstPhoneColorRotate1', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate1', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate2', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate2', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate3', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate3', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate4', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate4', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate5', .1, {x:0, display:'block'}, "=0");
+	}
+
+	const scene = new ScrollMagic.Scene({
+		triggerElement: ".c25-colors",
+							triggerHook: "onLeave",
+							duration: "100%"
+	})
+		.setPin(".c25-colors")
+		.setTween(tl)
+			.addTo(controller);
+
+	function updatePercentage() {
+		tl.progress();
+	}
 });
