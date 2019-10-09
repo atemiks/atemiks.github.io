@@ -47,6 +47,22 @@ $(document).ready(function() {
 		tl.to('#firstPhoneColorRotate6', .1, {x:0, display:'block'}, "=0");
 		tl.to('#firstPhoneColorRotate6', .1, {display:'none'}, "=.1");
 		tl.to('#firstPhoneColorRotate7', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate7', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate8', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate8', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate9', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate9', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate10', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate10', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate11', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate11', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate12', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate12', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate13', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate13', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate14', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate14', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate15', .1, {x:0, display:'block'}, "=0");
 	} else if (width <= 991 && width > 768) {
 		tl.to('.c25-colors-image', 1, {x:20})
 		tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
@@ -69,6 +85,22 @@ $(document).ready(function() {
 		tl.to('#firstPhoneColorRotate6', .1, {x:0, display:'block'}, "=0");
 		tl.to('#firstPhoneColorRotate6', .1, {display:'none'}, "=.1");
 		tl.to('#firstPhoneColorRotate7', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate7', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate8', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate8', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate9', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate9', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate10', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate10', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate11', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate11', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate12', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate12', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate13', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate13', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate14', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate14', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate15', .1, {x:0, display:'block'}, "=0");
 	} else if (width <= 768 && width > 576) {
 		tl.to('.c25-colors-image', 1, {x:60})
 		tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
@@ -90,6 +122,22 @@ $(document).ready(function() {
 		tl.to('#firstPhoneColorRotate6', .1, {x:0, display:'block'}, "=0");
 		tl.to('#firstPhoneColorRotate6', .1, {display:'none'}, "=.1");
 		tl.to('#firstPhoneColorRotate7', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate7', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate8', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate8', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate9', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate9', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate10', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate10', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate11', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate11', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate12', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate12', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate13', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate13', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate14', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate14', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate15', .1, {x:0, display:'block'}, "=0");
 	} else if (width <= 576) {
 		tl.to('.c25-colors-image', 1, {x:20})
 		tl.to('#firstPhoneColor', 1, {x:0}, "=-1");
@@ -111,6 +159,22 @@ $(document).ready(function() {
 		tl.to('#firstPhoneColorRotate6', .1, {x:0, display:'block'}, "=0");
 		tl.to('#firstPhoneColorRotate6', .1, {display:'none'}, "=.1");
 		tl.to('#firstPhoneColorRotate7', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate7', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate8', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate8', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate9', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate9', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate10', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate10', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate11', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate11', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate12', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate12', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate13', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate13', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate14', .1, {x:0, display:'block'}, "=0");
+		tl.to('#firstPhoneColorRotate14', .1, {display:'none'}, "=.1");
+		tl.to('#firstPhoneColorRotate15', .1, {x:0, display:'block'}, "=0");
 	}
 
 	const scene = new ScrollMagic.Scene({
@@ -120,7 +184,8 @@ $(document).ready(function() {
 	})
 		.setPin(".c25-colors")
 		.setTween(tl)
-			.addTo(controller);
+		.addTo(controller);
+
 
 	function updatePercentage() {
 		tl.progress();
