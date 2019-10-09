@@ -180,7 +180,7 @@ $(document).ready(function() {
 	const scene = new ScrollMagic.Scene({
 		triggerElement: ".c25-colors",
 		triggerHook: "onLeave",
-		duration: '400%'
+		duration: '150%'
 	})
 		.setPin(".c25-colors")
 		.setTween(tl)
