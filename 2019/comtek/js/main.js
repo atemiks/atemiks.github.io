@@ -53,6 +53,7 @@ $(document).ready(function() {
     $("input[type='tel']").mask("+7 (999) 999-99-99");
 
 
+    // Map
     function initContactMap() {
         var myLatLng = {lat: 55.699869, lng: 37.504058};
 
@@ -76,4 +77,33 @@ $(document).ready(function() {
     if( $('#contact-map').length ) {
         initContactMap();
     }
+
+
+    // Forms
+    $("#formCallback").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "/formCallback.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('#modalThanks').modal('show');
+			$("#formCallback").trigger("reset");
+		});
+		return false;
+	});
+
+	$("#modalFormCallback").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "/modalFormCallback.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('#modalCallback').modal('hide');
+			$('#modalThanks').modal('show');
+			$("#modalFormCallback").trigger("reset");
+		});
+		return false;
+	});
 })

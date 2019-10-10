@@ -114,19 +114,6 @@
 }
 
 
-.offcanvas-actions {
-	margin: 0 -5px 15px;
-	padding: 5px 10px;
-	border-radius: 3px;
-	background-color: #fff;
-}
-
-.offcanvas-action {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-
 @media (min-width: 576px) {
 	#offcanvas {
 		width: 400px;
@@ -146,10 +133,6 @@
 	.offcanvas-title {
 		margin: 0 0 10px;
 		font-size: 18px;
-	}
-
-	.offcanvas-actions {
-		margin: -15px -20px 15px;
 	}
 }
 

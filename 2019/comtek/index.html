@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>КомТек</title>
 </head>
@@ -17,36 +17,31 @@
             <header class="header">
                 <div class="container">
                     <div class="row align-items-center align-items-sm-start">
-                        <div class="col-auto">
+                        <div class="col-auto order-0">
                             <div class="header-logo">
                                 <a href="index.html" class="logo">КомТек</a>
                             </div>
                         </div>
 
-                        <div class="col-auto ml-auto">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="header-contact">
-                                        <a href="tel:+79191940086">+7 919 194 00 86</a> <br>
-                                        <a href="tel:+79859250684">+7 985 925 06 84</a>
-                                    </div>
-                                </div>
-
-                                <div class="col-auto d-none d-sm-block">
-                                    <div class="header-actions">
-                                        <a href="javascript:void(0);" class="btn btn-primary"  data-toggle="modal" data-target="#modalCallback" >Заказать звонок</a>
-                                        <a href="#link" class="btn btn-warning d-none d-lg-block">Личный кабинет</a>
-                                    </div>
-                                </div>
-
-                                <div class="col-auto">
-                                    <a href="javascript:void(0);" class="offcanvas-toggle">
-                                        <i class="icon-menu" ></i>
-                                    </a>
-                                </div>
+                        <div class="col-auto ml-auto order-1">
+                            <div class="header-contact">
+                                <a href="tel:+79191940086">+7 919 194 00 86</a> <br>
+                                <a href="tel:+79859250684">+7 985 925 06 84</a>
                             </div>
                         </div>
 
+                        <div class="col-12 col-md-auto order-3 order-md-2">
+                            <div class="header-actions">
+                                <a href="javascript:void(0);" class="btn btn-warning"  data-toggle="modal" data-target="#modalCallback" >Заказать звонок</a>
+                                <a href="#link" class="btn btn-warning">Личный кабинет</a>
+                            </div>
+                        </div>
+
+                        <div class="col-auto order-2 order-md-3">
+                            <a href="javascript:void(0);" class="offcanvas-toggle">
+                                <i class="icon-menu" ></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -303,7 +298,6 @@
                     </div>
                 </section>
 
-
                 <section class="section-callback">
                     <div class="container">
                         <div class="row">
@@ -312,17 +306,17 @@
                                     <h2 class="section-title">Свяжитесь с нами и получите специальное предложение</h2>
                                 </div>
 
-                                <form action="" class="form-callback">
+                                <form class="form-callback" id="formCallback" >
                                     <div class="row">
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group">
-                                                <input type="text" placeholder="Ваше имя" required="" >
+                                                <input type="text" name="callbackName" placeholder="Ваше имя" required="" >
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group">
-                                                <input type="tel" placeholder="Телефон" required="" >
+                                                <input type="tel" name="callbackPhone" placeholder="Телефон" required="" >
                                             </div>
                                         </div>
 
@@ -597,18 +591,6 @@
             <i class="icon-close" ></i>
         </button>
 
-        <div class="offcanvas-actions d-lg-none">
-            <div class="form-row">
-                <div class="col-12 d-sm-none">
-                    <a href="javascript:void(0);" class="offcanvas-action btn btn-primary btn-block" data-toggle="modal" data-target="#modalCallback" >Заказать звонок</a>
-                </div>
-
-                <div class="col-sm-12">
-                    <a href="#link" class="offcanvas-action btn btn-primary btn-block" >Личный кабинет</a>
-                </div>
-            </div>
-        </div>
-
         <div class="offcanvas-body">
             <div class="offcanvas-title">Поддержка <br> и настройка серверов</div>
             <ul class="offcanvas-menu reset-list">
@@ -689,13 +671,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="form-modal form-callback" id="formModalCallback" >
+                    <form class="form-modal form-callback" id="modalFormCallback" >
                         <div class="form-group">
-                            <input type="text" name="formModalCallbackName" placeholder="Ваше имя" >
+                            <input type="text" name="modalCallbackName" placeholder="Ваше имя" required >
                         </div>
 
                         <div class="form-group">
-                            <input type="text" name="formModalCallbackPhone" placeholder="Ваш телефон*" required >
+                            <input type="tel" name="modalCallbackPhone" placeholder="Ваш телефон*" required >
                         </div>
 
                         <div class="form-group">
