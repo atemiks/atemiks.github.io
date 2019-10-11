@@ -55,10 +55,10 @@ $(document).ready(function() {
 
     // Map
     function initContactMap() {
-        var myLatLng = {lat: 55.699869, lng: 37.504058};
+        var myLatLng = {lat: 55.861585, lng: 37.469361};
 
         var map = new google.maps.Map(document.getElementById('contact-map'), {
-            center: {lat: 55.699869, lng: 37.504058},
+            center: {lat: 55.861585, lng: 37.460674},
             zoom: 15,
             disableDefaultUI: true,
             
