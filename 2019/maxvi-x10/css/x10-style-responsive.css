@@ -31,6 +31,16 @@
 	.x10-silver .x10-silver-phone-back.aos-animate {
 	    transform: translateY(20px);
 	}
+
+	
+
+	.x10-aqua .media img {
+		max-width: 130%;
+	}
+
+	.x10-aqua .x10-description {
+		max-width: 85%;
+	}
 }
 
 
@@ -63,6 +73,7 @@
 	.x10-silver .media,
 	.x10-gold .media,
 	.x10-rose .media,
+	.x10-aqua .media,
 	.x10-display .media,
 	.x10-battery .media,
 	.x10-flashlight .media {
@@ -95,6 +106,16 @@
 		top: 0;
 	}
 
+
+	.x10-aqua .media img {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		float: none;
+		max-width: 160%;
+	    transform: translateX(-50%);
+	}
+
 	
 	.x10-features-grid {
 		margin-top: 15px;
@@ -120,6 +141,7 @@
 	.x10-title {
 		font-size: 24px;
 	}
+
 
 	.x10-features-grid .x10-feature-item {
 		flex: 0 0 100%;

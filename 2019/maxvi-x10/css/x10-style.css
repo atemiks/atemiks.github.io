@@ -141,10 +141,34 @@
 }
 
 
-.x10-display {
+.x10-aqua {
 	overflow: hidden;
 	position: relative;
 	z-index: 99;
+	color: #fff;
+}
+
+.x10-aqua .media {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.x10-aqua .media img {
+	max-width: none;
+	float: right;
+}
+
+.x10-aqua .x10-title {
+	color: #fff;
+}
+
+.x10-aqua .x10-description {
+	max-width: 65%;
+}
+
+
+.x10-display {
+	overflow: hidden;
 	background-color: #f5f5f5;
 }
 
