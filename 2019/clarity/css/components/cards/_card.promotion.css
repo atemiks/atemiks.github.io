@@ -1,0 +1,95 @@
+.promotion-card {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	padding: 20px 20px 25px;
+	background-color: rgba(41, 41, 41, .07);
+	font-size: 16px;
+	color: rgba(39, 38, 38, .75);
+	line-height: 1.5;
+	letter-spacing: 0.4px;
+}
+
+.promotion-card .promotion-header {
+	margin-bottom: 15px;
+}
+
+.promotion-card .promotion-body {
+	flex: 1 1 auto;
+}
+
+
+.promotion-card .promotion-title {
+	margin: 0 0 10px;
+	font-family: 'Oswald';
+	font-size: 18px;
+	font-weight: 900;
+	color: #272626;
+	text-transform: uppercase;
+	letter-spacing: 0.9px;
+}
+
+.promotion-card .promotion-icons {
+	margin: 0;
+	font-size: 20px;
+	color: #f79faf;
+	line-height: 30px;
+}
+
+.promotion-card .promotion-icons i,
+.promotion-card .promotion-icons img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.promotion-card .promotion-price {
+	margin: 15px 0;
+	font-size: 20px;
+	font-weight: 800;
+	color: #272626;
+}
+
+.promotion-card .promotion-price b {
+	font-weight: 900;
+}
+
+.promotion-card .promotion-price .icon-rouble {
+	display: inline-block;
+	margin-left: -5px;
+	font-weight: inherit;
+}
+
+
+@media (min-width: 576px) {
+	.promotion-card .promotion-icons {
+		margin: 0 0 10px;
+	}
+
+	.promotion-card .promotion-price {
+		font-size: 24px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.promotion-card {
+		padding: 50px 40px 45px;
+	}
+
+	.promotion-card .promotion-price {
+		font-size: 28px;
+	}
+
+	.promotion-card .promotion-footer {
+		padding-top: 25px;
+	}
+}

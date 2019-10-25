@@ -1,0 +1,35 @@
+.header-logo {
+	margin: 14px 0;
+	line-height: 1;
+}
+
+.header-logo .logo {
+	font-size: 14px;
+	font-weight: 900;
+	color: inherit;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 4.8px;
+}
+
+.header-logo .logo:hover {
+	color: #f26680;
+	text-decoration: none;
+}
+
+
+@media (min-width: 576px) {
+	.header-logo {
+		margin: 12px 0;
+	}
+
+	.header-logo .logo {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header-logo {
+		margin: 0;
+	}
+}

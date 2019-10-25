@@ -1,0 +1,55 @@
+.counter-card {
+	width: 100%;
+	padding: 20px 20px 25px;
+	background-color: rgba(41, 41, 41, .07);
+	font-size: 16px;
+	color: rgba(39, 38, 38, .75);
+	line-height: 1.5;
+	letter-spacing: 0.4px;
+}
+
+.counter-card .counter-title {
+	margin: 0 0 10px;
+	font-family: "Oswald";
+	font-size: 30px;
+	font-weight: 900;
+	color: #824ca5;
+}
+
+
+.section-purple .counter-card{
+	background-color: rgba(233, 233, 233, .1);
+	color: rgba(254, 253, 253, .65);
+}
+
+.section-purple .counter-card .counter-title {
+	color: #fffeff;
+}
+
+
+@media (min-width: 576px) {
+	.counter-card {
+		min-height: 225px;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.counter-card {
+		min-height: 205px;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.counter-card {
+		min-height: 225px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.counter-card {
+		padding: 45px 40px 55px;
+	}
+}

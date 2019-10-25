@@ -1,0 +1,47 @@
+.section-feedback {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: rgba(39, 38, 38, .75);
+}
+
+.section-feedback .form-privacy {
+	color: inherit;
+}
+
+.section-feedback .form-privacy a:hover {
+	color: #272626;
+}
+
+
+
+.section-feedback.section-dark {
+	background-color: #1d1d1d;
+	color: rgba(252,250,250,.3);
+}
+
+.section-feedback.section-dark  input,
+.section-feedback.section-dark  textarea {
+	background-color: #1d1d1d;
+	color: #fff;
+}
+
+.section-feedback.section-dark input::placeholder,
+.section-feedback.section-dark textarea::placeholder,
+.section-feedback.section-dark .custom-file {
+	background-color: #1d1d1d;
+	color: rgba(249,245,245,.3);
+}
+
+.section-feedback.section-dark .section-title {
+	color: #fff;
+}
+
+
+.section-feedback.section-dark .form-privacy a:hover {
+	color: #fff;
+}
+
+
+.section-feedback.section-dark .form-explain-toggle {
+	color: #fff;
+}

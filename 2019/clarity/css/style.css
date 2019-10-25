@@ -1,63 +1,65 @@
-@import url('./_fonts.css');
-@import url('./_base.css');
-@import url('./_pages.css');
-@import url('./_forms.css');
-@import url('./_lang.css');
-@import url('./_social.css');
-@import url('./_modal.css');
-@import url('./_offcanvas.css');
+@import 'components/_fonts.css';
+@import 'components/_base.css';
+@import 'components/_pages.css';
+@import 'components/_buttons.css';
+@import 'components/_forms.css';
+@import 'components/_custom-forms.css';
+@import 'components/_lists.css';
+@import 'components/_breadcrumb.css';
+@import 'components/_pagination.css';
+@import 'components/_lang.css';
+@import 'components/_social.css';
+@import 'components/_modal.css';
+@import 'components/_offcanvas.css';
+@import 'components/_slick.css';
 
 /* header */
-@import url('./_header/_header.css');
-@import url('./_header/_header.logo.css');
-@import url('./_header/_header.nav.css');
-@import url('./_header/_header.contact.css');
-
-/* sections */
-@import url('./_sections/_section.hero.css');
-@import url('./_sections/_section.about.css');
-@import url('./_sections/_section.case.css');
-@import url('./_sections/_section.services.css');
-@import url('./_sections/_section.news.css');
-@import url('./_sections/_section.contact.css');
+@import 'layout/header/_header.css';
+@import 'layout/header/_header.logo.css';
+@import 'layout/header/_header.nav.css';
+@import 'layout/header/_header.contact.css';
 
 
 /* cards */
-@import url('./_cards/_card.service.css');
-@import url('./_cards/_card.news.css');
-@import url('./_cards/_card.contact.css');
+@import 'components/cards/_card.portfolio.css';
+@import 'components/cards/_card.portfolio.slide.css';
+@import 'components/cards/_card.contact.css';
+@import 'components/cards/_card.service.css';
+@import 'components/cards/_card.news.css';
+@import 'components/cards/_card.block.css';
+@import 'components/cards/_card.counter.css';
+
+/* service cards */
+@import 'components/cards/_card.promotion.css';
+@import 'components/cards/_card.portrait.css';
+
+
+/* sections */
+@import 'sections/_section.hero.css';
+@import 'sections/_section.about.css';
+@import 'sections/_section.portfolio.css';
+@import 'sections/_section.case.css';
+@import 'sections/_section.services.css';
+@import 'sections/_section.news.css';
+@import 'sections/_section.contact.css';
+@import 'sections/_section.feedback.css';
+
+/* service sections */
+@import 'sections/_section.approach.css';
+@import 'sections/_section.promotion.css';
+@import 'sections/_section.cooperation.css';
+@import 'sections/_section.research.css';
+@import 'sections/_section.prototype.css';
+
+
+/* pages */
+@import 'pages/_page.article.css';
+@import 'pages/_page.case.css';
+@import 'pages/_page.service.css';
+@import 'pages/_page.service.promotion.css';
+@import 'pages/_page.service.sell.css';
+@import 'pages/_page.service.site.css';
 
 
 /* footer */
-@import url('./_footer/_footer.css');
-
-
-
-/*
-responsive
-*/
-@import url('./_responsive/_responsive.pages.css');
-@import url('./_responsive/_responsive.forms.css');
-@import url('./_responsive/_responsive.social.css');
-@import url('./_responsive/_responsive.modal.css');
-
-
-/* responsive header */
-@import url('./_responsive/_header/_responsive.header.css');
-@import url('./_responsive/_header/_responsive.header.logo.css');
-@import url('./_responsive/_header/_responsive.header.nav.css');
-@import url('./_responsive/_header/_responsive.header.contact.css');
-
-
-/* responsive sections */
-@import url('./_responsive/_sections/_responsive.section.hero.css');
-@import url('./_responsive/_sections/_responsive.section.case.css');
-@import url('./_responsive/_sections/_responsive.section.services.css');
-@import url('./_responsive/_sections/_responsive.section.news.css');
-@import url('./_responsive/_sections/_responsive.section.contact.css');
-
-
-/* responsive cards */
-@import url('./_responsive/_cards/_responsive.card.service.css');
-@import url('./_responsive/_cards/_responsive.card.news.css');
-@import url('./_responsive/_cards/_responsive.card.contact.css');
+@import 'layout/footer/_footer.css';

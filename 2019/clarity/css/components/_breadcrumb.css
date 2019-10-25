@@ -1,0 +1,67 @@
+.breadcrumb {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 15px 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background: none;
+}
+
+
+.breadcrumb-link {
+	position: relative;
+	font-size: 14px;
+	color: #191919;
+	letter-spacing: 0.4px;
+	text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+	text-decoration: none;
+}
+
+
+.breadcrumb-link.prev::before {
+	content: '\e906';
+	font-family: 'icomoon';
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px 0 0;
+	font-size: 150%;
+	line-height: 7px;
+}
+
+
+@media (min-width: 576px) {
+	.breadcrumb-link {
+		font-size: 16px;
+	}
+
+	.breadcrumb-link.prev::before {
+		margin: 0 20px 0 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.breadcrumb {
+		margin: 30px -10px;
+	}
+}
+
+@media (min-width: 992px) {
+	.breadcrumb {
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+}
+
+@media (min-width: 1366px) {
+	.breadcrumb {
+		margin-left: -55px;
+		margin-right: -55px;
+	}
+}

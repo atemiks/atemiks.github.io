@@ -1,0 +1,33 @@
+.promotion-grid {
+	margin-bottom: -20px;
+}
+
+.promotion-grid .promotion-item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+
+@media (min-width: 576px) {
+	.promotion-grid {
+		margin-bottom: -30px;
+	}
+	
+	.promotion-grid .promotion-item {
+		margin-bottom: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+	.promotion-grid {
+		margin-bottom: -70px;
+	}
+
+	.promotion-grid .promotion-item {
+		margin-bottom: 70px;
+	}
+}

@@ -1,0 +1,107 @@
+.contact-card {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	width: 240px;
+	height: 260px;
+	padding: 25px;
+	background: rgba(255,255,255,.04);
+}
+
+.contact-card.contact-address {
+	height: auto;
+	background-color: transparent;
+}
+
+.contact-card a {
+	color: #fdfdfd;
+	letter-spacing: 0.45px;
+	text-decoration: none;
+}
+
+.contact-card a[href^="tel:"] {
+	font-size: 18px;
+}
+
+.contact-card a[href^="mailto:"] {
+	display: inline-block;
+	border-bottom: 1px solid #fff;
+}
+
+.contact-card a:hover {
+	text-decoration: none;
+}
+
+
+.contact-card .contact-title {
+	margin: 0 0 15px;
+	font-family: 'Oswald';
+	font-size: 18px;
+	font-weight: 900;
+	color: #fcfafa;
+	letter-spacing: 0.9px;
+	text-transform: uppercase;
+}
+
+
+.contact-card .contact-list {
+	flex: 1;
+}
+
+
+.contact-socials {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-left: -7px;
+	margin-right: -7px;
+}
+
+.contact-social {
+	display: inline-block;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	width: 55px;
+	height: 50px;
+	margin: 0 7px;
+	background-color: #f26680;
+	font-size: 20px;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.contact-social:hover {
+    color: #212529;
+	text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+	.contact-card .btn {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.contact-card {
+		width: 270px;
+		height: 300px;
+		padding: 50px 38px;
+	}
+}

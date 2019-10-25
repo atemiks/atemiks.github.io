@@ -1,0 +1,67 @@
+.section-contact {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	background-color: #1d1d1d;
+	background-repeat: no-repeat;
+	background-position: top right;
+	font-size: 16px;
+	color: #fcfafa;
+}
+
+.section-contact::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 50%;
+	width: 1117px;
+	height: 531px;
+	background: url('../../images/section-contact/section-contact-bg.png') no-repeat 0 0;
+	background-size: contain;
+	transform: translateX(-40%) translateY(-100px);
+}
+
+
+.section-contact .section-title {
+	color: #fcfafa;
+}
+
+
+.section-contact .contact-grid {
+	margin-bottom: -20px;
+}
+
+.section-contact .contact-grid .contact-item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 30px;
+}
+
+
+@media (min-width: 768px) {
+	.section-contact {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.section-contact::after {
+		transform: translateX(-34%) translateY(0);
+	}
+}
+
+@media (min-width: 992px) {
+	.section-contact {
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+
+	.section-contact::after {
+		transform: translateX(-23.5%) translateY(0);
+	}
+}

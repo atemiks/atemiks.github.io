@@ -1,0 +1,38 @@
+.section-news {
+	position: relative;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.news-grid {
+	margin-top: 45px;
+	margin-bottom: -10px;
+}
+
+.news-grid .news-item {
+	margin-bottom: 30px;
+}
+
+
+@media (min-width: 768px) {
+	.section-news {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.news-grid {
+		margin-top: 65px;
+		margin-bottom: -65px;
+	}
+
+	.news-grid .news-item {
+		margin-bottom: 85px;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-news {
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+}

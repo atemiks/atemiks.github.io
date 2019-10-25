@@ -6,50 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="stylesheet" href="css/style.min.css">
 
     <title>Clarity</title>
 </head>
-<body class="page-home" >
+<body>
     <div class="wrapper">
         <div class="content">
-            <header class="header">
+            <header class="header-box">
                 <div class="container">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-auto d-lg-none">
+                            <button class="offcanvas-toggle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+
+                        <div class="col-auto">
                             <div class="header-logo">
                                 <a href="index.html" class="logo">
-                                    clarity
+                                    Clarity
                                 </a>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col d-none d-lg-flex justify-content-center justify-content-xl-end">
                             <nav class="header-nav">
                                 <ul class="header-menu">
                                     <li class="header-menu-item">
-                                        <a href="" class="header-menu-link">О нас</a>
+                                        <a href="#section-about" class="header-menu-link link-anchor">О нас</a>
                                     </li>
                                     <li class="header-menu-item">
-                                        <a href="" class="header-menu-link">Услуги</a>
+                                        <a href="#section-services" class="header-menu-link link-anchor">Услуги</a>
                                     </li>
                                     <li class="header-menu-item">
-                                        <a href="" class="header-menu-link">Кейсы</a>
+                                        <a href="#section-case" class="header-menu-link link-anchor">Кейсы</a>
                                     </li>
                                     <li class="header-menu-item">
-                                        <a href="" class="header-menu-link">Блог</a>
+                                        <a href="#section-news" class="header-menu-link link-anchor">Блог</a>
                                     </li>
                                     <li class="header-menu-item">
-                                        <a href="" class="header-menu-link">Контакты</a>
+                                        <a href="#section-contact" class="header-menu-link link-anchor">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
 
-                        <div class="col">
+                        <div class="col-auto ml-auto">
                             <div class="header-contact">
-                                <a href="tel:+74951234567" class="contact-phone" >+7 (495) 123 45 67</a>
-                                <button class="contact-action">Оставить заявку</button>
+                                <a href="tel:+79192944416" class="contact-phone" >+7 (919) 294 44 16</a> <br>
+                                <button class="contact-action" data-toggle="modal" data-target="#modalCallback" >Оставить заявку</button>
                             </div>
                         </div>
                     </div>
@@ -57,33 +68,345 @@
             </header>
 
             <main class="main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <article class="article">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br>
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <div class="content-inner">
+                    <div class="container">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#link" class="breadcrumb-link prev">Все статьи</a>
+                            </li>
+                        </ul>
 
-                                <h2>Длинный подзаголовок статьи</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br>
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <article class="article">
+                            <h1>Длинное название статьи</h1>
+                            
+                            <time>01 августа, 2019</time>
 
-                                <h2>Длинный подзаголовок статьи</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br>
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                            </article>
+                            <img src="uploads/page-article/article-image.png" alt="">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+                            <h2>Длинный подзаголовок статьи</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+                            <h2>Длинный подзаголовок статьи</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        </article>
+
+                        <div class="article-pagination">
+                            <div class="article-page-item">
+                                <a href="#link" class="article-page-link next" >Следующая статья</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <section class="section-news section-gray section-striped">
+                    <div class="container">
+                        <div class="section-header">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="section-title">Читайте также...</div>
+                                </div>
+
+                                <div class="col-auto">
+                                    <a href="#link" class="btn">Читать все статьи</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news-grid row">
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <div class="news-card">
+                                    <div class="news-header">
+                                        <figure class="news-image">
+                                            <a href="#link" class="news-image-link">
+                                                <img src="uploads/page-article/section-news/news-item-1.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="news-body">
+                                        <time datetime="2019-08-01" class="news-time">01 августа, 2019</time>
+                                        <a href="#link" class="news-title">Длинное название статьи</a>
+                                        <div class="news-description">Краткое описание статьи в несколько строк. Краткое описание. Краткое описание, краткое описание статьи в 3 строки...</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <div class="news-card">
+                                    <div class="news-header">
+                                        <figure class="news-image">
+                                            <a href="#link" class="news-image-link">
+                                                <img src="uploads/page-article/section-news/news-item-1.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="news-body">
+                                        <time datetime="2019-08-01" class="news-time">01 августа, 2019</time>
+                                        <a href="#link" class="news-title">Длинное название статьи</a>
+                                        <div class="news-description">Краткое описание статьи в несколько строк. Краткое описание. Краткое описание, краткое описание статьи в 3 строки...</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <div class="news-card">
+                                    <div class="news-header">
+                                        <figure class="news-image">
+                                            <a href="#link" class="news-image-link">
+                                                <img src="uploads/page-article/section-news/news-item-1.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="news-body">
+                                        <time datetime="2019-08-01" class="news-time">01 августа, 2019</time>
+                                        <a href="#link" class="news-title">Длинное название статьи</a>
+                                        <div class="news-description">Краткое описание статьи в несколько строк. Краткое описание. Краткое описание, краткое описание статьи в 3 строки...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-feedback section-dark section-striped">
+                    <div class="section-typography section-typography-lg">
+                        <div class="section-typography-inner">
+                            Обсудим?
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="section-header">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="section-title">Обсудим ваш проект?</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form action="" class="form-feedback form-explain">
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <div class="form-text">Отправьте свой телефон и электронный адрес, и мы с вами свяжемся <br> в течение следующего дня.</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-11 col-lg-10">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input type="tel" placeholder="Ваш телефон*" required >
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="email" placeholder="Ваш e-mail*" required >
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group d-none">
+                                                <input type="text" placeholder="Сайт" >
+                                            </div>
+                                            <div class="form-group d-none">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="feedbackFile">
+                                                    <label class="custom-file-label" for="feedbackFile">Прикрепить файл</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group d-none">
+                                                <textarea name="" placeholder="Комментарий" ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="javascript:void(0);" class="form-explain-toggle btn-link" >Рассказать больше  о себе</a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row align-items-center">
+                                        <div class="form-group col-auto">
+                                            <button type="submit" class="btn" >Отправить</button>
+                                        </div>
+
+                                        <div class="form-group col-auto">
+                                            <div class="form-privacy">
+                                                Нажимая на кнопку «отправить», вы даёте своё согласие на <a href="#link" target="_blank" >обработку персональных данных.</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
             </main>
         </div>
 
         <footer class="footer">
-            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="footer-logo">
+                            <a href="index.html" class="logo">
+                                clarity
+                            </a>
+                        </div>
+
+                        <div class="footer-copyright">
+                            &copy; CLARITY. Все права защищены 2019
+                        </div>
+                    </div>
+
+                    <div class="col-sm-auto">
+                        <div class="text-nowrap">
+                            <ul class="footer-menu">
+                                <li class="footer-menu-item">
+                                    <a href="index.html" class="footer-menu-link link-anchor">Главная</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#section-services" class="footer-menu-link link-anchor">Услуги</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#section-news" class="footer-menu-link link-anchor">Блог</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#section-about" class="footer-menu-link link-anchor">О нас</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#section-case" class="footer-menu-link link-anchor">Кейсы</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#section-contact" class="footer-menu-link link-anchor">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 
+
+    <div class="social">
+        <div class="social-controls">
+            <a href="#link" class="social-control" target="_blank" >
+                <i class="icon-facebook" ></i>
+            </a>
+            <a href="#link" class="social-control" target="_blank" >
+                <i class="icon-vk" ></i>
+            </a>
+            <a href="#link" class="social-control" target="_blank" >
+                <i class="icon-instagram" ></i>
+            </a>
+        </div>
+
+        <div class="social-hint">Следите за нами!</div>
+    </div>
+
+
+    <div id="offcanvas">
+        <div class="offcanvas-header">
+            <button class="offcanvas-close">
+                <i class="icon-cancel" ></i>
+            </button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="offcanvas-menu">
+                <li class="offcanvas-menu-item">
+                    <a href="#section-about" class="offcanvas-menu-link link-anchor">О нас</a>
+                </li>
+                <li class="offcanvas-menu-item">
+                    <a href="#section-services" class="offcanvas-menu-link link-anchor">Услуги</a>
+                </li>
+                <li class="offcanvas-menu-item">
+                    <a href="#section-case" class="offcanvas-menu-link link-anchor">Кейсы</a>
+                </li>
+                <li class="offcanvas-menu-item">
+                    <a href="#section-news" class="offcanvas-menu-link link-anchor">Блог</a>
+                </li>
+                <li class="offcanvas-menu-item">
+                    <a href="#section-contact" class="offcanvas-menu-link link-anchor">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="modalCallbackLabel">Обратный звонок</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="icon-cancel" ></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-modal form-callback" id="formModalCallback" >
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-title">Отправьте свой телефон, и мы с вами свяжемся в ближайшее время.</div>
+
+                                <div class="form-group">
+                                    <input type="text" name="formModalCallbackName" placeholder="Ваше имя" >
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" name="formModalCallbackPhone" placeholder="Ваш телефон*" required >
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-none d-md-flex align-items-end">
+                                <figure class="form-figure">
+                                    <img src="images/modal/modal-callback.png" alt="обратный звонок">
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <button type="submit" class="btn" >Отправить</button>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-privacy">
+                                    Нажимая на кнопку «отправить», вы даёте своё согласие на
+                                    <a href="#link" target="_blank" >обработку персональных данных.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="bg0"></div>
+
   
     <script src="vendor/jquery-3.4.1.min.js" ></script>
+    <script src="vendor/bootstrap/bootstrap.min.js" ></script>
+    <script src="vendor/slick/slick.min.js" ></script>
+    <script src="vendor/mask.js" ></script>
+    <script src="js/main.js" ></script>
 </body>
 </html>

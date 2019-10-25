@@ -1,0 +1,33 @@
+.custom-file,
+.custom-file .custom-file-input,
+.custom-file .custom-file-label {
+	height: 55px;
+	background-color: transparent;
+}
+
+.custom-file {
+	outline: none;
+}
+
+.custom-file .custom-file-label {
+	margin: 0;
+	padding: 0 20px;
+	border: 1px solid #626262;
+	border-radius: 0;
+	font-size: 16px;
+	color: inherit;
+	letter-spacing: 0.8px;
+	line-height: 53px;
+}
+
+.custom-file .custom-file-label::after {
+	content: '\e901';
+	font-family: 'icomoon';
+	height: 53px;
+	padding: 0 20px;
+	border: none;
+	border-radius: 0;
+	background: none;
+	font-size: 14px;
+	line-height: 55px;
+}

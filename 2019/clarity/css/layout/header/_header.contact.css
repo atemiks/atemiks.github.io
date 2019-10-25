@@ -1,0 +1,56 @@
+.header-contact {
+	margin: 9px 0;
+	line-height: 1;
+	text-align: right;
+}
+
+.header-contact .contact-phone {
+	font-size: 13px;
+	font-weight: 900;
+	color: inherit;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+}
+
+.header-contact .contact-phone:hover {
+	color: #f26680;
+	text-decoration: none;
+}
+
+
+.header-contact .contact-action {
+	cursor: pointer;
+	margin: 12px 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	font-size: 10px;
+	font-weight: 900;
+	color: #f26680;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.6px;
+}
+
+.header-contact .contact-action:hover {
+	color: #1c1c1c;
+	text-decoration: none;
+}
+
+
+@media (min-width: 576px) {
+	.header-contact {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	.header-contact .contact-phone {
+		font-size: 24px;
+	}
+
+	.header-contact .contact-action {
+		font-size: 12px;
+	}
+}

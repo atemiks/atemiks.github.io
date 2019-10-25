@@ -1,0 +1,45 @@
+.page-service-sell .section-approach .approach-image-figure {
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.page-service-sell .section-sell-optimization .sell-optimization-figure {
+	margin-top: 75px;
+	margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+	.page-service-sell .section-approach .approach-image-figure {
+		margin-top: -110px;
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.page-service-sell .section-approach .approach-image-figure {
+		float: right;
+		margin-top: 280px;
+		margin-bottom: 0;
+	}
+
+	.page-service-sell .section-approach .approach-image-figure img {
+		max-width: 58vw;
+	}
+}
+
+@media (min-width: 1200px) {
+	.page-service-sell .section-approach .approach-image-figure {
+		margin-top: 140px;
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 1366px) {
+	.page-service-sell .section-approach .approach-image-figure {
+		margin: 25px -35px 10px 0;
+	}
+
+	.page-service-sell .section-approach .approach-image-figure img {
+		max-width: none;
+	}
+}

@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="stylesheet" href="css/style.min.css">
 
     <title>Clarity</title>
 </head>
-<body class="page-home" >
+<body class="page-fullview" >
     <div class="wrapper">
         <div class="content">
             <header class="header-box">
@@ -36,19 +39,19 @@
                             <nav class="header-nav">
                                 <ul class="header-menu">
                                     <li class="header-menu-item">
-                                        <a href="" class="header-menu-link">О нас</a>
+                                        <a href="#section-about" class="header-menu-link link-anchor">О нас</a>
                                     </li>
                                     <li class="header-menu-item">
-                                        <a href="" class="header-menu-link">Услуги</a>
+                                        <a href="#section-services" class="header-menu-link link-anchor">Услуги</a>
                                     </li>
                                     <li class="header-menu-item">
-                                        <a href="" class="header-menu-link">Кейсы</a>
+                                        <a href="#section-case" class="header-menu-link link-anchor">Кейсы</a>
                                     </li>
                                     <li class="header-menu-item">
-                                        <a href="" class="header-menu-link">Блог</a>
+                                        <a href="#section-news" class="header-menu-link link-anchor">Блог</a>
                                     </li>
                                     <li class="header-menu-item">
-                                        <a href="" class="header-menu-link">Контакты</a>
+                                        <a href="#section-contact" class="header-menu-link link-anchor">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -56,7 +59,7 @@
 
                         <div class="col-auto ml-auto">
                             <div class="header-contact">
-                                <a href="tel:+74951234567" class="contact-phone" >+7 (495) 123 45 67</a> <br>
+                                <a href="tel:+79192944416" class="contact-phone" >+7 (919) 294 44 16</a> <br>
                                 <button class="contact-action" data-toggle="modal" data-target="#modalCallback" >Оставить заявку</button>
                             </div>
                         </div>
@@ -96,21 +99,21 @@
                     <i class="icon-mouse"></i>
                 </section>
 
-                <section class="section-services">
+                <section class="section-services section-dark section-striped" id="section-services" >
                     <div class="container">
                         <div class="section-header">
                             <div class="row">
                                 <div class="col">
-                                    <div class="section-title">что мы делаем?</div>
+                                    <div class="section-title">Что мы делаем?</div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="services-grid row">
                             <div class="service-item col-sm-6 col-lg-4">
-                                <a href="#link" class="service-card">
+                                <div class="service-card">
                                     <div class="service-title">Действительно продающие сайты</div>
-                                    <div class="service-price">от 120 000   </div>
+                                    <div class="service-price">от 120 000 <i class="icon-rouble" ></i></div>
                                     <div class="service-description">
                                         Анализируем рынок <br>
                                         Составляем профиль покупателя  <br>
@@ -120,15 +123,15 @@
                                         Тестируем каждую деталь перед запуском
                                     </div>
                                     <div class="service-action">
-                                        <div class="btn" >узнать больше</div>
+                                        <a href="javascript:void(0);" class="btn" data-toggle="modal" data-target="#modalCallback" >Узнать больше</a>
                                     </div>
-                                </a>
+                                </div>
                             </div> 
 
                             <div class="service-item col-sm-6 col-lg-4">
-                                <a href="#link" class="service-card">
+                                <div class="service-card">
                                     <div class="service-title">Комплексное продвижение проекта</div>
-                                    <div class="service-price">от 60 000   </div>
+                                    <div class="service-price">от 60 000 <i class="icon-rouble" ></i></div>
                                     <div class="service-description">
                                         Составляем профиль покупателя <br>
                                         Выбираем источники продвижения <br>
@@ -137,15 +140,15 @@
                                         Оптимизируем бюджет
                                     </div>
                                     <div class="service-action">
-                                        <div class="btn" >узнать больше</div>
+                                        <a href="javascript:void(0);" class="btn" data-toggle="modal" data-target="#modalCallback" >Узнать больше</a>
                                     </div>
-                                </a>
+                                </div>
                             </div>
 
                             <div class="service-item col-sm-6 col-lg-4">
-                                <a href="#link" class="service-card">
+                                <div class="service-card">
                                     <div class="service-title">Полноценный отдел продаж</div>
-                                    <div class="service-price">от 60 000   </div>
+                                    <div class="service-price">от 60 000 <i class="icon-rouble" ></i></div>
                                     <div class="service-description">Составляем скрипты разговора 
                                         на основе профиля клиента и вашего продукта <br>
                                         Обрабатываем все входящие обращения в компанию <br>
@@ -154,15 +157,15 @@
                                         по каждому обращению
                                     </div>
                                     <div class="service-action">
-                                        <div class="btn" >узнать больше</div>
+                                        <a href="javascript:void(0);" class="btn" data-toggle="modal" data-target="#modalCallback" >Узнать больше</a>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="section-case section-striped case-purple">
+                <section class="section-case section-striped case-purple" id="section-case" >
                     <div class="container">
                         <div class="row">
                             <div class="case-typography-container col-sm-9 col-md-7">
@@ -183,7 +186,7 @@
 
                                 <div class="case-actions">
                                     <a href="#link" class="case-cta btn">Как мы это сделали</a>
-                                    <a href="#link" class="btn-link btn-light">Все кейсы</a>
+                                    <a href="#link" class="case-link">Все кейсы</a>
                                 </div>
                             </div>
 
@@ -217,7 +220,7 @@
 
                                 <div class="case-actions">
                                     <a href="#link" class="case-cta btn">Как мы это сделали</a>
-                                    <a href="#link" class="btn-link btn-light">Все кейсы</a>
+                                    <a href="#link" class="case-link">Все кейсы</a>
                                 </div>
                             </div>
 
@@ -251,7 +254,7 @@
 
                                 <div class="case-actions">
                                     <a href="#link" class="case-cta btn">Как мы это сделали</a>
-                                    <a href="#link" class="btn-link btn-light">Все кейсы</a>
+                                    <a href="#link" class="case-link">Все кейсы</a>
                                 </div>
                             </div>
 
@@ -285,7 +288,7 @@
 
                                 <div class="case-actions">
                                     <a href="#link" class="case-cta btn">Как мы это сделали</a>
-                                    <a href="#link" class="btn-link btn-light">Все кейсы</a>
+                                    <a href="#link" class="case-link">Все кейсы</a>
                                 </div>
                             </div>
 
@@ -298,7 +301,16 @@
                     </div>
                 </section>
 
-                <section class="section-about">
+                <section class="section-about" id="section-about" >
+                    <div class="section-typography">
+                        <div class="section-typography-inner">
+                            Развитие <br>
+                            Результат <br>
+                            Четкость <br>
+                            Clarity
+                        </div>
+                    </div>
+
                     <div class="container">
                         <div class="section-header">
                             <div class="row">
@@ -320,7 +332,7 @@
                     </div>
                 </section>
 
-                <section class="section-news section-striped">
+                <section class="section-news section-gray section-striped" id="section-news" >
                     <div class="container">
                         <div class="section-header">
                             <div class="row align-items-center">
@@ -389,7 +401,7 @@
                     </div>
                 </section>
 
-                <section class="section-contact">
+                <section class="section-contact section-striped" id="section-contact" >
                     <div class="container">
                         <div class="section-header">
                             <div class="row">
@@ -404,7 +416,7 @@
                                 <div class="contact-card">
                                     <div class="contact-title">Звоните</div>
                                     <div class="contact-list">
-                                        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                                        <a href="tel:+79192944416">+7 (919) 294-44-16</a>
                                     </div>
                                     <a href="javascript:void(0);" class="btn btn-block" data-toggle="modal" data-target="#modalCallback" >обратный звонок</a>
                                 </div>
@@ -466,22 +478,22 @@
                         <div class="text-nowrap">
                             <ul class="footer-menu">
                                 <li class="footer-menu-item">
-                                    <a href="#link" class="footer-menu-link">Главная</a>
+                                    <a href="index.html" class="footer-menu-link link-anchor">Главная</a>
                                 </li>
                                 <li class="footer-menu-item">
-                                    <a href="#link" class="footer-menu-link">Услуги</a>
+                                    <a href="#section-services" class="footer-menu-link link-anchor">Услуги</a>
                                 </li>
                                 <li class="footer-menu-item">
-                                    <a href="#link" class="footer-menu-link">Блог</a>
+                                    <a href="#section-news" class="footer-menu-link link-anchor">Блог</a>
                                 </li>
                                 <li class="footer-menu-item">
-                                    <a href="#link" class="footer-menu-link">О нас</a>
+                                    <a href="#section-about" class="footer-menu-link link-anchor">О нас</a>
                                 </li>
                                 <li class="footer-menu-item">
-                                    <a href="#link" class="footer-menu-link">Кейсы</a>
+                                    <a href="#section-case" class="footer-menu-link link-anchor">Кейсы</a>
                                 </li>
                                 <li class="footer-menu-item">
-                                    <a href="#link" class="footer-menu-link">Контакты</a>
+                                    <a href="#section-contact" class="footer-menu-link link-anchor">Контакты</a>
                                 </li>
                             </ul>
                         </div>
@@ -519,19 +531,19 @@
         <div class="offcanvas-body">
             <ul class="offcanvas-menu">
                 <li class="offcanvas-menu-item">
-                    <a href="#link" class="offcanvas-menu-link">О нас</a>
+                    <a href="#section-about" class="offcanvas-menu-link link-anchor">О нас</a>
                 </li>
                 <li class="offcanvas-menu-item">
-                    <a href="#link" class="offcanvas-menu-link">Услуги</a>
+                    <a href="#section-services" class="offcanvas-menu-link link-anchor">Услуги</a>
                 </li>
                 <li class="offcanvas-menu-item">
-                    <a href="#link" class="offcanvas-menu-link">Кейсы</a>
+                    <a href="#section-case" class="offcanvas-menu-link link-anchor">Кейсы</a>
                 </li>
                 <li class="offcanvas-menu-item">
-                    <a href="#link" class="offcanvas-menu-link">Блог</a>
+                    <a href="#section-news" class="offcanvas-menu-link link-anchor">Блог</a>
                 </li>
                 <li class="offcanvas-menu-item">
-                    <a href="#link" class="offcanvas-menu-link">Контакты</a>
+                    <a href="#section-contact" class="offcanvas-menu-link link-anchor">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -551,17 +563,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="form-modal form-callback">
+                    <form class="form-modal form-callback" id="formModalCallback" >
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-title">Отправьте свой телефон, и мы с вами свяжемся в ближайшее время.</div>
 
                                 <div class="form-group">
-                                    <input type="text" placeholder="Ваше имя" >
+                                    <input type="text" name="formModalCallbackName" placeholder="Ваше имя" >
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" placeholder="Ваш телефон*" required >
+                                    <input type="text" name="formModalCallbackPhone" placeholder="Ваш телефон*" required >
                                 </div>
                             </div>
 
@@ -596,6 +608,8 @@
   
     <script src="vendor/jquery-3.4.1.min.js" ></script>
     <script src="vendor/bootstrap/bootstrap.min.js" ></script>
+    <script src="vendor/slick/slick.min.js" ></script>
+    <script src="vendor/mask.js" ></script>
     <script src="js/main.js" ></script>
 </body>
 </html>

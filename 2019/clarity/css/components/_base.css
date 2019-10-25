@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(39, 38, 38, .75);
+	letter-spacing: 0.45px;
+	line-height: 1.66;
+}
+
+
+h1 {
+	margin: 0;
+	font-family: "Oswald";
+	font-size: 45px;
+	font-weight: 900;
+	color: #272626;
+	text-transform: uppercase;
+}
+
+h2 {
+	margin: 0;
+	font-family: "Oswald";
+	font-size: 20px;
+	color: #272626;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+
+a {
+	transition: color 300ms ease;
+}
+
+figure {
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+@media (min-width: 768px) {
+	figure {
+		margin-top: 75px;
+		margin-bottom: 130px;
+	}
+}

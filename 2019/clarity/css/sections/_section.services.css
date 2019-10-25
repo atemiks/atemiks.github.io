@@ -1,0 +1,42 @@
+.section-services {
+	overflow: hidden;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.services-grid {
+	margin-left: -35px;
+	margin-right: -35px;
+	margin-bottom: -20px;
+}
+
+.services-grid .service-item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 30px;
+}
+
+
+@media (min-width: 768px) {
+	.section-services {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+} 
+
+@media (min-width: 992px) {
+	.section-services {
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.services-grid {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}

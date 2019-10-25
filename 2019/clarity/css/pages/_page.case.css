@@ -1,0 +1,154 @@
+.page-case {
+	font-size: 18px;
+}
+
+
+.page-case .header-box,
+.page-case .header-contact .contact-action,
+.page-case .breadcrumb-link {
+	color: #fcfafa;
+}
+
+.page-case .offcanvas-toggle span {
+	background-color: #fcfafa;
+}
+
+
+.page-case section:not(.section-hero):not(.section-case) {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+
+/* case lang */
+.page-case .lang {
+	color: rgba(253, 253, 253, .65);
+}
+
+.page-case .lang-control {
+	color: rgba(253, 253, 253, .35);
+}
+
+.page-case .lang-control:hover {
+	color: #fcfafa;
+}
+/* case lang end */
+
+
+/* case social */
+.page-case .social-control {
+	background-color: #fcfafa;
+}
+/* case social end */
+
+
+/* case cards */
+.page-case .block-card {
+	font-size: 18px;
+}
+
+.page-case .block-card .block-title {
+	margin: 0 0 25px;
+	font-size: 20px;
+}
+
+
+.case-progress-card {
+	position: relative;
+	font-size: 16px;
+}
+
+.case-progress-card .case-progress-media {
+	margin: 0 0 30px;
+	font-size: 50px;
+	line-height: 1;
+}
+
+.case-progress-card .case-progress-step {
+	opacity: .04;
+	position: absolute;
+	top: 0;
+	left: 25px;
+	transform: translateY(-30%);
+	font-family: 'Oswald';
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.case-progress-card .case-progress-title {
+	margin: 0 0 10px;
+	font-family: 'Oswald';
+	font-size: 24px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.section-purple .case-progress-card .case-progress-media,
+.section-purple .case-progress-card .case-progress-title {
+	color: #fcf9f9;
+} 
+/* case cards end */
+
+
+.case-progress-grid {
+	margin-bottom: -60px;
+}
+
+.case-progress-grid .case-progress-item {
+	margin-bottom: 60px;
+}
+
+
+
+/* section case hero */
+.page-case .section-hero.section-case .case-typography-container {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* section case hero end */
+
+
+@media (min-width: 576px) {
+	.page-case section:not(.section-hero):not(.section-case) {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.page-case section:not(.section-hero):not(.section-case) {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
+	.page-case .section-header {
+	    margin-bottom: 70px;
+	}
+
+
+	/* section case hero */
+	.page-case .section-hero.section-case .case-title {
+		font-size: 40px;
+		line-height: 1.375;
+	}
+	
+	.page-case .section-hero.section-case .case-results {
+		margin-bottom: -20px;
+	}
+
+	.page-case .section-hero.section-case .case-result-title {
+		margin: 0 0 10px;
+		font-size: 30px;
+	}
+	/* section case hero end */
+}
+
+
+@media (min-width: 1200px) {
+	.page-case .section-hero {
+		padding-top: 130px;
+	}
+}

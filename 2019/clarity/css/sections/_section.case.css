@@ -1,0 +1,252 @@
+.section-case {
+	overflow: hidden;
+	color: rgba(252, 250, 250, .65);
+}
+
+.section-case .case-typography-container {
+	padding-top: 35px;
+	padding-bottom: 60px;
+}
+
+.section-case .case-image-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.section-case .case-image-figure {
+	margin: 0;
+}
+
+.section-case .case-image-figure img {
+	max-width: 600px;
+}
+
+
+.section-case .case-title {
+	margin: 20px 0;
+	font-family: 'Oswald';
+	font-size: 32px;
+	font-weight: 900;
+	color: #fdfdfd;
+	line-height: 1.33;
+	text-transform: uppercase;
+	letter-spacing: -.6px;
+}
+
+.section-case .case-subtitle {
+	position: absolute;
+	margin: -25px 0 0 95px;
+	font-family: 'Oswald';
+	font-size: 60px;
+	font-weight: 900;
+	color: rgba(252, 250, 250, .05);
+	line-height: 1;
+	text-transform: uppercase;
+	white-space: nowrap;
+    letter-spacing: 1px;
+}
+
+.section-case .case-label {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.4px;
+}
+
+
+.section-case .case-results {
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.section-case .case-result {
+	flex: 0 0 170px;
+	max-width: 170px;
+	margin-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.section-case .case-result-title {
+	margin: 0 0 5px;
+	font-family: 'Oswald';
+	font-size: 28px;
+	font-weight: 700;
+	color: #fff;
+}
+
+
+.section-case .case-actions {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-align-items: center;
+	align-items: center;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.section-case .case-actions a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.section-case .case-link {
+	display: inline-block;
+	padding: 8px 0;
+	border: none;
+	border-bottom: 1px solid;
+	border-radius: 0;
+	background-color: transparent;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	color: #f9f5f5;
+	text-decoration: none;
+}
+
+.section-case .case-link:hover {
+	border-bottom-color: transparent;
+	color: #f9f5f5;
+	text-decoration: none;
+}
+
+
+.section-case.case-danger {
+	background-color: #ff3855;
+}
+
+.section-case.case-danger .case-cta {
+	background-color: #fff;
+	color: #ff3855;
+}
+
+
+.section-case.case-warning {
+	background-color: #f78c35;
+}
+
+.section-case.case-warning .case-cta {
+	background-color: #fff;
+	color: #f78c35;
+}
+
+
+.section-case.case-primary {
+	background-image: linear-gradient(37deg, #63add7 0%, #427dbf 100%);
+}
+
+.section-case.case-primary .case-cta {
+	background-color: #fff;
+	color: #63add7;
+}
+
+
+.section-case.case-purple {
+	background-color: #824ca5;
+}
+
+.section-case.case-purple .case-cta {
+	background-color: #fff;
+	color: #824ca5;
+}
+
+
+
+@media (min-width: 576px) {
+	.section-case .case-results {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.section-case .case-result {
+		flex: 0 0 190px;
+		max-width: 190px;
+		margin-bottom: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+
+	.section-case-sm .case-image-figure {
+		height: 320px;
+	}
+
+	.section-case-sm .case-image-figure img {
+		max-height: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.section-case .case-typography-container {
+		padding-top: 65px;
+		padding-bottom: 90px;
+	}
+
+	.section-case .case-image-figure img {
+		max-width: none;
+	}
+
+
+	.section-case-sm .case-image-figure {
+		height: 480px;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-case .case-typography-container {
+		padding-top: 115px;
+		padding-bottom: 140px;
+	}
+
+	.section-case .case-title {
+		margin: 28px 0;
+		font-size: 36px;
+	}
+
+	.section-case .case-subtitle {
+		margin: -35px 0 0 95px;
+		font-size: 88px;
+	}
+
+
+	.section-case .case-results {
+		font-size: 16px;
+	}
+
+	.section-case .case-result {
+		flex: 0 0 210px;
+		max-width: 210px;
+	}
+
+
+	.section-case .case-actions {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.section-case .case-actions a {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+
+	.section-case-sm .case-image-figure {
+		height: 550px;
+	}
+}

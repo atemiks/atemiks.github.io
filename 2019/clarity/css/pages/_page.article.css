@@ -1,0 +1,93 @@
+.article {
+	font-size: 16px;
+	color:  rgba(39,38,38,.75);
+	line-height: 1.6666;
+	letter-spacing: 0.45px;
+	line-height: 1.7;
+}
+
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+	font-family: 'Oswald';
+	font-weight: 900;
+	color: #272626;
+	text-transform: uppercase;
+}
+
+.article h1 {
+	margin: 20px 0;
+	letter-spacing: 0;
+}
+
+.article h2 {
+	margin: 28px 0 5px;
+	font-family: 'Oswald';
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 1.8;
+}
+
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+	margin: 30px 0 10px;
+	font-size: 18px;
+}
+
+.article img {
+	display: block;
+	width: 100%;
+	margin: 20px 0;
+}
+
+
+.article-pagination {
+	margin: 50px 0 60px;
+}
+
+.article-pagination .article-page-link {
+	position: relative;
+	font-size: 16px;
+	color: #191919;
+	letter-spacing: 0.4px;
+	text-decoration: none;
+}
+
+.article-pagination .article-page-link::hover {
+	text-decoration: none;
+}
+
+
+.article-pagination .article-page-link.next::after {
+	content: '\e909';
+	font-family: 'icomoon';
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 30px;
+	font-size: 150%;
+	line-height: 7px;
+}
+
+
+@media (min-width: 768px) {
+	.article {
+		font-size: 18px;
+	}
+
+	.article h1 {
+		margin: 40px 0;
+	}
+
+	.article h2 {
+		margin: 48px 0 10px;
+	}
+
+	.article img {
+		margin: 55px 0;
+	}
+}

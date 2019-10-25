@@ -1,0 +1,43 @@
+.slick-dots {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.slick-dots li,
+.slick-dots li button,
+.slick-dots li button::before {
+	width: 8px;
+	height: 8px;
+}
+
+.slick-dots li {
+	margin: 0 12px;
+}
+
+.slick-dots li button {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	transition: border 300ms ease;
+}
+
+.slick-dots li button::before {
+	display: none;
+}
+
+.slick-dots li button:hover {
+	border-width: 2px;
+}
+
+
+.slick-dots li.slick-active button {
+	border-width: 2px;
+	background-color: #e8e8e8;
+}
