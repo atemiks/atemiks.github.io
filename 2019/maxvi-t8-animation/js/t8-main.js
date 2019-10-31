@@ -118,7 +118,7 @@ $(document).ready(function() {
 			tl.to('.t8-phone-back-block', 1, {x: -20, y: -30, scale: .7}, "=-1");
 			tl.to('.t8-phone-back', 1, {filter: "blur(8px)"}, "=-.8");
 			// tl.to('.t8-phone-back-blur', 1, {opacity: 1}, "=-1");
-			tl.to('.t8-phone-buttons-block', 1, {x: -90, y: 55}, "=-1.2");
+			tl.to('.t8-phone-buttons-block', 1, {x: -75, y: 75}, "=-1.2");
 			tl.to('.t8-phone-buttons', 1, {filter: "blur(8px)", scale: .9}, "=-.8");
 			// tl.to('.t8-phone-buttons-blur', 1, {opacity: 1}, "=-1");
 			tl.to('.t8-phone-middle-text', 1, {x: 10}, "=-1");

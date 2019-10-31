@@ -1,21 +1,28 @@
 @media (max-width: 1199px) {
 	.t8-features-grid, 
 	.t8-equipment-grid {
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 	}
 
 	.t8-features-grid .t8-feature-item {
-		flex: 0 0 33.333%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 33.333%;
+		        flex: 0 0 33.333%;
 		max-width: 33.333%;
 	}
 
 	.t8-equipment-grid .t8-equipment-item {
-		flex: 0 0 20%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 20%;
+		        flex: 0 0 20%;
 		max-width: 20%;
 	}
 
 	.t8-glass .t8-phone-animation-block {
-		transform: translateX(-50px);
+		-webkit-transform: translateX(-50px);
+		    -ms-transform: translateX(-50px);
+		        transform: translateX(-50px);
 		width: 150px;
 	}
 
@@ -154,11 +161,15 @@
 		max-width: 320px;
 		height: 320px;
 		margin: auto;
-		transform: translateY(60px);
+		-webkit-transform: translateY(60px);
+		    -ms-transform: translateY(60px);
+		        transform: translateY(60px);
 	}
 
 	.t8-keyboard .media .aos-animate {
-		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		    -ms-transform: translateY(0);
+		        transform: translateY(0);
 	}
 
 	
@@ -168,7 +179,9 @@
 
 	.t8-features-grid .t8-feature-item,
 	.t8-equipment-grid .t8-equipment-item {
-		flex: 0 0 50%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 50%;
+		        flex: 0 0 50%;
 		max-width: 50%;
 	}
 
@@ -178,7 +191,9 @@
 
 	.t8-glass .t8-phone-animation-block {
 		left: calc(50% - 20px);
-		transform: translateX(-50%px);
+		-webkit-transform: translateX(-50%px);
+		    -ms-transform: translateX(-50%px);
+		        transform: translateX(-50%px);
 	}
 
 	.t8-glass .t8-phone-animation-block {
@@ -212,7 +227,7 @@
 	}
 
 	.t8-glass {
-		padding-bottom: 130px;
+		padding-bottom: 150px;
 	}
 
 	.t8-glass .t8-phone-screen-text-overflow {
@@ -226,9 +241,12 @@
 	}
 
 	.t8-glass .t8-phone-middle-text {
-		text-align-last: right;
+		-moz-text-align-last: right;
+		     text-align-last: right;
 		padding-right: 11px;
-		transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		    -ms-transform: translateX(100%);
+		        transform: translateX(100%);
 	}
 }
 
@@ -243,7 +261,9 @@
 	}
 
 	.t8-features-grid .t8-feature-item {
-		flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 100%;
+		        flex: 0 0 100%;
 		max-width: 100%;
 	}
 }

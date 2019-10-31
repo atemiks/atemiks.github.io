@@ -22,8 +22,11 @@
 
 
 .t8-landing .d-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .t8-landing .d-flex.row:before,
@@ -33,19 +36,26 @@
 
 
 .t8-landing .align-items-start {
-	align-items: start;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: start;
 }
 
 .t8-landing .align-items-center {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .t8-landing .align-self-center {
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 }
 
 .t8-landing .align-self-end {
-	align-self: flex-end;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
 }
 
 
@@ -128,17 +138,23 @@
 	bottom: 0;
 	background: url('../images/section-t8-design/t8-design.png') no-repeat top center;
 	background-size: cover;
-	transform: translateY(-40px);
+	-webkit-transform: translateY(-40px);
+	    -ms-transform: translateY(-40px);
+	        transform: translateY(-40px);
 }
 
 .t8-design .t8-design-bg .t8-design-phone.aos-init {
-	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	        transform: translateY(0);
 }
 
 
 .t8-speakers {
 	position: relative;
 	background-color: #0096c3;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#60abc6), color-stop(50%, #029cca), to(#008ab9));
+	background-image: -o-linear-gradient(bottom, #60abc6 0%, #029cca 50%, #008ab9 100%);
 	background-image: linear-gradient(to top, #60abc6 0%, #029cca 50%, #008ab9 100%);
 	color: #fff;
 }
@@ -244,8 +260,11 @@
 	font-size: 23px;
 	text-transform: uppercase;
 	font-weight: 700;
-	text-align-last: left;
-	transform: translateX(-100%);
+	-moz-text-align-last: left;
+	     text-align-last: left;
+	-webkit-transform: translateX(-100%);
+	    -ms-transform: translateX(-100%);
+	        transform: translateX(-100%);
 }
 
 .t8-glass .t8-phone-back-block, .t8-phone-screen-block, .t8-glass .t8-phone-buttons-block {
@@ -305,7 +324,9 @@
 	font-weight: 700;
 	text-align: right;
 	padding-right: 10px;
-	transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	    -ms-transform: translateX(100%);
+	        transform: translateX(100%);
 }
 
 .t8-glass .t8-phone-screen-text-overflow {
@@ -327,6 +348,8 @@
 
 .t8-keyboard {
 	overflow: hidden;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(254,254,254,1)),to(rgba(246,243,241,1)));
+	background: -o-linear-gradient(top, rgba(254,254,254,1) 0%,rgba(246,243,241,1) 100%);
 	background: linear-gradient(to bottom, rgba(254,254,254,1) 0%,rgba(246,243,241,1) 100%);
 }
 
@@ -382,19 +405,27 @@
 
 .t8-features:before {
 	height: 290px;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(214,214,214,1)),to(rgba(255,255,255,0)));
+	background: -o-linear-gradient(top, rgba(214,214,214,1) 0%,rgba(255,255,255,0) 100%);
 	background: linear-gradient(to bottom, rgba(214,214,214,1) 0%,rgba(255,255,255,0) 100%);
 }
 
 .t8-features:after {
 	height: 28px;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(214,214,214,1)),to(rgba(185,185,185,1)));
+	background: -o-linear-gradient(top, rgba(214,214,214,1) 0%,rgba(185,185,185,1) 100%);
 	background: linear-gradient(to bottom, rgba(214,214,214,1) 0%,rgba(185,185,185,1) 100%);
 }
 
 
 .t8-features-grid,
 .t8-equipment-grid {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-top: 15px;
 	margin-bottom: -40px;
 }
@@ -418,14 +449,18 @@
 }
 
 .t8-features-grid .t8-feature-item {
-	flex: 0 0 16.666667%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 16.666667%;
+	        flex: 0 0 16.666667%;
 	max-width: 16.666667%;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
 .t8-equipment-grid .t8-equipment-item  {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     max-width: none;
     padding-left: 15px;
     padding-right: 15px;
