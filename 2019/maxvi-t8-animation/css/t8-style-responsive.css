@@ -18,51 +18,6 @@
 		        flex: 0 0 20%;
 		max-width: 20%;
 	}
-
-	.t8-glass .t8-phone-animation-block {
-		-webkit-transform: translateX(-50px);
-		    -ms-transform: translateX(-50px);
-		        transform: translateX(-50px);
-		width: 150px;
-	}
-
-	.t8-glass .t8-phone-back-block {
-		width: 150px;
-	}
-
-	.t8-glass .t8-phone-screen-block {
-		top: 10px;
-    left: 10px;
-		width: 131px;
-		height: 176px;
-	}
-
-	.t8-glass .t8-phone-screen-block img {
-		height: 176px;
-	}
-
-	.t8-glass .t8-phone-buttons-block {
-		bottom: -41px;
-	}
-
-	.t8-glass .t8-phone-screen-text, .t8-glass .t8-phone-middle-text {
-		font-size: 16px;
-	}
-
-	.t8-glass .t8-phone-buttons-block {
-		left: 10px;
-		width: 130px;
-		height: 145px;
-		bottom: 145px;
-	}
-
-	.t8-glass {
-		padding-bottom: 0;
-	}
-
-	.t8-glass .t8-phone-animation-block {
-		margin-top: 80px;
-	}
 }
 
 @media (max-width: 991px) {
@@ -98,10 +53,6 @@
 
 
 @media (max-width: 767px) {
-	.t8-glass .t8-phone-animation-block {
-		margin-top: 100px;
-	}
-
 	.t8-landing .content-wrapper {
 		min-height: auto;
 	}
@@ -187,66 +138,6 @@
 
 	.t8-equipment-card {
 		font-size: 16px;
-	}
-
-	.t8-glass .t8-phone-animation-block {
-		left: calc(50% - 20px);
-		-webkit-transform: translateX(-50%px);
-		    -ms-transform: translateX(-50%px);
-		        transform: translateX(-50%px);
-	}
-
-	.t8-glass .t8-phone-animation-block {
-		width: 100px;
-	}
-
-	.t8-glass .t8-phone-back-block {
-		width: 100px;
-	}
-
-	.t8-glass .t8-phone-screen-block {
-		width: 86px;
-		top: 7px;
-		left: 7px;
-		height: 116px;
-	}
-
-	.t8-glass .t8-phone-screen-block img {
-		height: 116px;
-	}
-
-	.t8-glass .t8-phone-buttons-block {
-		left: 7px;
-    width: 86px;
-    height: 96px;
-    bottom: 18px;
-	}
-
-	.t8-glass .t8-phone-animation-block {
-		height: 240px;
-	}
-
-	.t8-glass {
-		padding-bottom: 150px;
-	}
-
-	.t8-glass .t8-phone-screen-text-overflow {
-		width: 160%;
-    left: -160%;
-	}
-
-	.t8-glass .t8-phone-middle-text-overflow {
-		left: -160%;
-    width: 152px;
-	}
-
-	.t8-glass .t8-phone-middle-text {
-		-moz-text-align-last: right;
-		     text-align-last: right;
-		padding-right: 11px;
-		-webkit-transform: translateX(100%);
-		    -ms-transform: translateX(100%);
-		        transform: translateX(100%);
 	}
 }
 
