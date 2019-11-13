@@ -16,7 +16,7 @@
 }
 
 .t8-glass .t8-phone-animation-block {
-	margin-top: 200px;
+	margin-top: 100px;
 	position: relative;
 	width: 208px;
 	height: 478px;
@@ -68,6 +68,13 @@
 	width: 100%;
 }
 
+.t8-glass .t8-phone-back-block img:last-child {
+	width: 250px;
+	max-width: 200%;
+	left: -23px;
+	top: -21px;
+}
+
 .t8-glass .t8-phone-buttons-block img {
 	position: absolute;
 	left: 0;
@@ -92,7 +99,7 @@
 	top: 0;
 }
 
-.t8-glass .t8-phone-screen-2, .t8-glass .t8-phone-screen-3, .t8-glass .t8-phone-screen-4 {
+.t8-glass .t8-phone-screen-2, .t8-glass .t8-phone-screen-3, .t8-glass .t8-phone-screen-4, .t8-glass .t8-phone-screen-5, .t8-glass .t8-phone-screen-6, .t8-glass .t8-phone-screen-7, .t8-glass .t8-phone-screen-8, .t8-glass .t8-phone-screen-9 {
 	display: none;
 }
 
@@ -206,6 +213,13 @@
 	.t8-glass .t8-phone-animation-block {
 		margin-top: 80px;
 	}
+
+	.t8-glass .t8-phone-back-block img:last-child {
+    width: 179px;
+    max-width: 200%;
+    left: -14px;
+    top: -15px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -272,4 +286,11 @@
 		    -ms-transform: translateX(100%);
 		        transform: translateX(100%);
 	}
+
+	.t8-glass .t8-phone-back-block img:last-child {
+    width: 119px;
+    max-width: 200%;
+    left: -9px;
+    top: -12px;
+}
 }
