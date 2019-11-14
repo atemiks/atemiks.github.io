@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-	background-image: linear-gradient(90deg, transparent 49.8%, rgba(231,231,231,.23) 49.8%, rgba(231,231,231,.23) 50%, transparent 50%, transparent 99.80%, rgba(231,231,231,.23) 99.80%, rgba(231,231,231,.23) 100%);
+	background-image: linear-gradient(90deg, transparent 49.8%, rgba(149,149,149, .23) 49.8%, rgba(149,149,149, .23) 50%, transparent 50%, transparent 99.80%, rgba(149,149,149, .23) 99.80%, rgba(149,149,149, .23) 100%);
     background-size: 265px 265px;
 	background-position: center;
 }
@@ -11,6 +11,11 @@
 
 .content {
 	flex: 1 0 auto;
+}
+
+.content-inner {
+	padding-top: 85px;
+	padding-bottom: 65px;
 }
 
 
@@ -27,7 +32,6 @@
 }
 
 
-
 .display-title {
 	font-family: "Oswald";
 	font-weight: 900;
@@ -36,7 +40,7 @@
 }
 
 h1.display-title {
-	margin: 0 0 55px;
+	margin: 0 0 30px;
 	font-size: 50px;
 }
 
@@ -154,7 +158,7 @@ h1.display-title {
 	left: 0;
 	right: 0;
 	bottom: 0;
-    background-image: linear-gradient(90deg, transparent 49.8%, rgba(231,231,231,.23) 49.8%, rgba(231,231,231,.23) 50%, transparent 50%, transparent 99.80%, rgba(231,231,231,.23) 99.80%, rgba(231,231,231,.23) 100%);
+    background-image: linear-gradient(90deg, transparent 49.8%, rgba(149,149,149, .23) 49.8%, rgba(149,149,149, .23) 50%, transparent 50%, transparent 99.80%, rgba(149,149,149, .23) 99.80%, rgba(149,149,149, .23) 100%);
     background-size: 265px 265px;
 	background-position: center;
 }
@@ -215,8 +219,19 @@ body.open #bg0 {
 @media (min-width: 576px) {
 	.wrapper,
 	.section-striped::before {
-		background-image: linear-gradient(90deg, transparent 49.8%, rgba(231,231,231,.23) 49.8%, rgba(231,231,231,.23) 50%, transparent 50%, transparent 99.80%, rgba(231,231,231,.23) 99.80%, rgba(231,231,231,.23) 100%);
+		background-image: linear-gradient(90deg, transparent 49.8%, rgba(149,149,149, .23) 49.8%, rgba(149,149,149, .23) 50%, transparent 50%, transparent 99.80%, rgba(149,149,149, .23) 99.80%, rgba(149,149,149, .23) 100%);
     	background-size: 440px 440px;
+	}
+
+	.content-inner {
+		padding-top: 100px;
+		padding-bottom: 65px;
+	}
+
+
+	h1.display-title {
+		margin: 0 0 25px;
+		font-size: 50px;
 	}
 
 	
@@ -276,7 +291,7 @@ body.open #bg0 {
 	}
 
 	.content-inner {
-		padding-top: 35px;
+		padding-top: 100px;
 		padding-bottom: 65px;
 	}
 
@@ -289,6 +304,11 @@ body.open #bg0 {
 	.main .container {
 		padding-left: 40px;
 		padding-right: 40px;
+	}
+
+
+	h1.display-title {
+		margin: 0 0 55px;
 	}
 
 	
@@ -329,8 +349,13 @@ body.open #bg0 {
 @media (min-width: 992px) {
 	.wrapper,
 	.section-striped::before {
-		background-image: linear-gradient(90deg, transparent 49.90%, rgba(231,231,231,.23) 49.90%, rgba(231,231,231,.23) 50%, transparent 50%, transparent 99.90%, rgba(231,231,231,.23) 99.90%, rgba(231,231,231,.23) 100%);
+		background-image: linear-gradient(90deg, transparent 49.90%, rgba(149,149,149, .23) 49.90%, rgba(149,149,149, .23) 50%, transparent 50%, transparent 99.90%, rgba(149,149,149, .23) 99.90%, rgba(149,149,149, .23) 100%);
 		background-size: 770px 770px;
+	}
+
+	.content-inner {
+		padding-top: 120px;
+		padding-bottom: 65px;
 	}
 
 
@@ -344,7 +369,7 @@ body.open #bg0 {
 		padding-right: 70px;
 	}
 
-	
+
 	.section-step {
 		margin-left: -463px;
 	}
@@ -378,8 +403,13 @@ body.open #bg0 {
 @media (min-width: 1200px) {
 	.wrapper,
 	.section-striped::before {
-		background-image: linear-gradient(90deg, transparent 49.90%, rgba(231,231,231,.23) 49.90%, rgba(231,231,231,.23) 50%, transparent 50%, transparent 99.90%, rgba(231,231,231,.23) 99.90%, rgba(231,231,231,.23) 100%);
+		background-image: linear-gradient(90deg, transparent 49.90%, rgba(149,149,149, .23) 49.90%, rgba(149,149,149, .23) 50%, transparent 50%, transparent 99.90%, rgba(149,149,149, .23) 99.90%, rgba(149,149,149, .23) 100%);
 		background-size: 962px 962px;
+	}
+
+	.content-inner {
+		padding-top: 140px;
+		padding-bottom: 65px;
 	}
 	
 	

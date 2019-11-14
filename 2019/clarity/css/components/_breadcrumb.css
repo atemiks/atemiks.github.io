@@ -48,20 +48,34 @@
 
 @media (min-width: 768px) {
 	.breadcrumb {
-		margin: 30px -10px;
+		margin: 30px -30px;
+	}
+
+	.breadcrumb-link.prev::before {
+		margin: 0 5px 0 0;
+		font-size: 130%;
 	}
 }
 
 @media (min-width: 992px) {
 	.breadcrumb {
-		margin-left: -30px;
-		margin-right: -30px;
+		margin-left: -35px;
+		margin-right: -35px;
+	}
+
+	.breadcrumb-link.prev::before {
+		margin: 0 10px 0 0;
 	}
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1200px) {
 	.breadcrumb {
-		margin-left: -55px;
-		margin-right: -55px;
+		margin-left: -42px;
+		margin-right: -42px;
+	}
+
+	.breadcrumb-link.prev::before {
+		margin: 0 20px 0 0;
+		font-size: 150%;
 	}
 }

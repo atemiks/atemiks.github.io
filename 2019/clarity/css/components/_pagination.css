@@ -8,7 +8,7 @@
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: center;
-	margin: 65px 0;
+	margin: 20px 0;
 	padding: 0;
 	border: none;
 	border-radius: 0;
@@ -49,4 +49,17 @@
 	border-radius: 0;
 	background-color: transparent;
 	color: #191919;
+}
+
+
+@media (min-width: 768px) {
+	.pagination {
+		margin: 45px 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.pagination {
+		margin: 65px 0;
+	}
 }

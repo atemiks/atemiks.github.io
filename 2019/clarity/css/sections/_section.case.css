@@ -31,7 +31,7 @@
 	margin: 20px 0;
 	font-family: 'Oswald';
 	font-size: 32px;
-	font-weight: 900;
+	font-weight: 500;
 	color: #fdfdfd;
 	line-height: 1.33;
 	text-transform: uppercase;
@@ -79,8 +79,21 @@
 	margin: 0 0 5px;
 	font-family: 'Oswald';
 	font-size: 28px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #fff;
+}
+
+
+.section-case .block-grid {
+	margin-top: 30px;
+}
+
+.section-case .block-card {
+	color: inherit;
+}
+
+.section-case .block-title {
+	color: #fcfafa;
 }
 
 
@@ -206,6 +219,11 @@
 	.section-case-sm .case-image-figure {
 		height: 480px;
 	}
+
+
+	.section-case .block-grid {
+		margin-top: 50px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -232,6 +250,11 @@
 	.section-case .case-result {
 		flex: 0 0 210px;
 		max-width: 210px;
+	}
+
+
+	.section-case .block-grid {
+		margin-top: 70px;
 	}
 
 

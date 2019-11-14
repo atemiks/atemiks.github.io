@@ -1,4 +1,9 @@
 .header-box {
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	right: 0;
 	padding: 15px 0;
 	color: #191919;
 }
@@ -11,14 +16,6 @@
 .header-box [class*="col-"] {
 	padding-left: 5px;
 	padding-right: 5px;
-}
-
-.page-fullview .header-box {
-	position: absolute;
-	z-index: 99;
-	top: 0;
-	left: 0;
-	right: 0;
 }
 
 

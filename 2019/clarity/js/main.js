@@ -92,8 +92,9 @@ $(document).ready(function() {
 
 	// Portfolio
 	$('.portfolio-card').each(function() {
+		console.log('wroks');
 		var card = $(this),
-			cardTitle = $(card).find('.case-title');
+			cardTitle = $(card).find('.portfolio-title');
 
 		if (cardTitle.text().length > 14) {
 			cardTitle.addClass('title-sm');

@@ -36,6 +36,18 @@
 
 @font-face {
   font-family: 'Oswald';
+  src: url('../../fonts/Oswald/Oswald-Medium/Oswald-Medium.eot');
+  src: url('../../fonts/Oswald/Oswald-Medium/Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Oswald/Oswald-Medium/Oswald-Medium.ttf') format('truetype'),
+    url('../../fonts/Oswald/Oswald-Medium/Oswald-Medium.woff') format('woff'),
+    url('../../fonts/Oswald/Oswald-Medium/Oswald-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oswald';
   src: url('../../fonts/Oswald/Oswald-Heavy/Oswald-Heavy.eot');
   src: url('../../fonts/Oswald/Oswald-Heavy/Oswald-Heavy.eot?#iefix') format('embedded-opentype'),
     url('../../fonts/Oswald/Oswald-Heavy/Oswald-Heavy.ttf') format('truetype'),

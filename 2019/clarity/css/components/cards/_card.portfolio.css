@@ -6,7 +6,7 @@
 	padding: 20px 20px 25px;
 	background-color: #191919;
 	font-size: 14px;
-	color: rgba(254,253,253,.35);
+	color: rgba(252,250,250,.65);
 	text-decoration: none;
 }
 
@@ -35,13 +35,16 @@
 	margin: 0;
 	font-family: 'Oswald';
 	font-size: 22px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #fcfafa;
 	text-transform: uppercase;
 }
 
-.portfolio-card  .portfolio-title.title-sm {
-	font-size: 30px;
+.portfolio-card .portfolio-title.title-sm {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	font-size: 20px;
+	line-height: 1.2;
 }
 
 .portfolio-card  .portfolio-label {
@@ -65,18 +68,18 @@
 	margin-right: -10px;
 }
 
-.portfolio-card  .portfolio-result {
+.portfolio-card .portfolio-result {
 	flex: 0 0 50%;
 	max-width: 50%;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
-.portfolio-card  .portfolio-result-title {
+.portfolio-card .portfolio-result-title {
 	margin: 0;
 	font-family: 'Oswald';
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #fffeff;
 }
 
@@ -98,7 +101,7 @@
 }
 
 .portfolio-card:hover {
-	color: rgba(254,253,253,.35);
+	color: rgba(252,250,250,.65);
 	text-decoration: none;
 }
 
@@ -113,6 +116,8 @@
 	}
 
 	.portfolio-card  .portfolio-title.title-sm {
+		margin-top: 10px;
+		margin-bottom: 10px;
 		font-size: 30px;
 	}
 }
