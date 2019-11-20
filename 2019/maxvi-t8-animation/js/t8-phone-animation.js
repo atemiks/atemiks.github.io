@@ -38,13 +38,14 @@ $(document).ready( function() {
 			tl.to('.t8-phone-screen-arrow-right-overvlow img', .5, {x:0}, '=-.5');
 			tl.to('.t8-phone-screen-arrow-right-overvlow span', .5, {x:0}, '=-.5');
 			tl.to('.t8-phone-screen-arrow-left-overvlow img', .5, {x:0}, '=-.5');
-			tl.to('.t8-phone-middle-block', 1, {x: 200}, "=.1");
-			tl.to('.t8-phone-back-block', 1, {x: -50, scale: .7}, "=-1");
-			tl.to('.t8-phone-back-blur', 1, {opacity: 1}, "=-1");
-			tl.to('.t8-phone-back', 1, {opacity: 0}, "=-.5");
-			tl.to('.t8-phone-buttons-block', 1, {x: -290, y: 100}, "=-1.2");
-			tl.to('.t8-phone-buttons', 1, {filter: "blur(8px)", scale: .9}, "=-.8");
-			tl.to('.t8-phone-middle-text', 1, {x: 10}, "=-1");
+			tl.to('.t8-phone-middle-block', 3, {x: 200}, "=.1");
+			tl.to('.t8-phone-back-block', 3, {x: -50, scale: .7}, "=-3");
+			tl.to('.t8-phone-back-blur', 3, {opacity: 1}, "=-3");
+			tl.to('.t8-phone-back', 3, {opacity: 0}, "=-2.5");
+			tl.to('.t8-phone-buttons-block', 3, {x: -290, y: 100}, "=-3.2");
+			tl.to('.t8-phone-buttons', 3, {filter: "blur(8px)", scale: .9}, "=-2.8");
+			tl.to('.t8-phone-middle-text', 3, {x: 10}, "=-3");
+			tl.to('.t8-phone-middle-text', 15, {x: 10}, "=0");
 
 			const scene = new ScrollMagic.Scene({
 				triggerElement: ".t8-glass",
@@ -77,13 +78,14 @@ $(document).ready( function() {
 			tl.to('.t8-phone-screen-arrow-right-overvlow img', .5, {x:0}, '=-.5');
 			tl.to('.t8-phone-screen-arrow-right-overvlow span', .5, {x:0}, '=-.5');
 			tl.to('.t8-phone-screen-arrow-left-overvlow img', .5, {x:0}, '=-.5');
-			tl.to('.t8-phone-middle-block', 1, {x: 150}, "=.1");
-			tl.to('.t8-phone-back-block', 1, {x: -50, scale: .7}, "=-1");
-			tl.to('.t8-phone-back-blur', 1, {opacity: 1}, "=-1");
-			tl.to('.t8-phone-back', 1, {opacity: 0}, "=-.5");
-			tl.to('.t8-phone-buttons-block', 1, {x: -220, y: 30}, "=-1.2");
-			tl.to('.t8-phone-buttons', 1, {filter: "blur(8px)", scale: .9}, "=-.8");
-			tl.to('.t8-phone-middle-text', 1, {x: 10}, "=-1");
+			tl.to('.t8-phone-middle-block', 3, {x: 150}, "=.1");
+			tl.to('.t8-phone-back-block', 3, {x: -50, scale: .7}, "=-3");
+			tl.to('.t8-phone-back-blur', 3, {opacity: 1}, "=-3");
+			tl.to('.t8-phone-back', 3, {opacity: 0}, "=-2.5");
+			tl.to('.t8-phone-buttons-block', 1, {x: -220, y: 30}, "=-3.2");
+			tl.to('.t8-phone-buttons', 3, {filter: "blur(8px)", scale: .9}, "=-2.8");
+			tl.to('.t8-phone-middle-text', 3, {x: 10}, "=-3");
+			tl.to('.t8-phone-middle-text', 15, {x: 10}, "=0");
 
 			const scene = new ScrollMagic.Scene({
 				triggerElement: ".t8-glass",
@@ -117,13 +119,14 @@ $(document).ready( function() {
 			tl.to('.t8-phone-screen-arrow-right-overvlow img', .5, {x:0}, '=-.5');
 			tl.to('.t8-phone-screen-arrow-right-overvlow span', .5, {x:0}, '=-.5');
 			tl.to('.t8-phone-screen-arrow-left-overvlow img', .5, {x:0}, '=-.5');
-			tl.to('.t8-phone-middle-block', 1, {x: 150}, "=.1");
-			tl.to('.t8-phone-back-block', 1, {x: -50, scale: .7}, "=-1");
-			tl.to('.t8-phone-back-blur', 1, {opacity: 1}, "=-1");
-			tl.to('.t8-phone-back', 1, {opacity: 0}, "=-.5");
-			tl.to('.t8-phone-buttons-block', 1, {x: -220, y: 60}, "=-1.2");
-			tl.to('.t8-phone-buttons', 1, {filter: "blur(8px)", scale: .9}, "=-.8");
-			tl.to('.t8-phone-middle-text', 1, {x: 10}, "=-1");
+			tl.to('.t8-phone-middle-block', 3, {x: 150}, "=.1");
+			tl.to('.t8-phone-back-block', 3, {x: -50, scale: .7}, "=-3");
+			tl.to('.t8-phone-back-blur', 3, {opacity: 1}, "=-3");
+			tl.to('.t8-phone-back', 3, {opacity: 0}, "=-2.5");
+			tl.to('.t8-phone-buttons-block', 1, {x: -220, y: 60}, "=-3.2");
+			tl.to('.t8-phone-buttons', 3, {filter: "blur(8px)", scale: .9}, "=-2.8");
+			tl.to('.t8-phone-middle-text', 3, {x: 10}, "=-3");
+			tl.to('.t8-phone-middle-text', 15, {x: 10}, "=0");
 
 			const scene = new ScrollMagic.Scene({
 				triggerElement: ".t8-glass",
@@ -156,13 +159,14 @@ $(document).ready( function() {
 			tl.to('.t8-phone-screen-arrow-right-overvlow img', .5, {x:0}, '=-.5');
 			tl.to('.t8-phone-screen-arrow-right-overvlow span', .5, {x:0}, '=-.5');
 			tl.to('.t8-phone-screen-arrow-left-overvlow img', .5, {x:0}, '=-.5');
-			tl.to('.t8-phone-middle-block', 1, {x: 150}, "=.1");
-			tl.to('.t8-phone-back-block', 1, {x: -50, scale: .7}, "=-1");
-			tl.to('.t8-phone-back-blur', 1, {opacity: 1}, "=-1");
-			tl.to('.t8-phone-back', 1, {opacity: 0}, "=-.5");
-			tl.to('.t8-phone-buttons-block', 1, {x: -220, y: 60}, "=-1.2");
-			tl.to('.t8-phone-buttons', 1, {filter: "blur(8px)", scale: .9}, "=-.8");
-			tl.to('.t8-phone-middle-text', 1, {x: 10}, "=-1");
+			tl.to('.t8-phone-middle-block', 3, {x: 150}, "=.1");
+			tl.to('.t8-phone-back-block', 3, {x: -50, scale: .7}, "=-3");
+			tl.to('.t8-phone-back-blur', 3, {opacity: 1}, "=-3");
+			tl.to('.t8-phone-back', 3, {opacity: 0}, "=-2.5");
+			tl.to('.t8-phone-buttons-block', 3, {x: -220, y: 60}, "=-3.2");
+			tl.to('.t8-phone-buttons', 3, {filter: "blur(8px)", scale: .9}, "=-2.8");
+			tl.to('.t8-phone-middle-text', 3, {x: 10}, "=-3");
+			tl.to('.t8-phone-middle-text', 15, {x: 10}, "=0");
 
 			const scene = new ScrollMagic.Scene({
 				triggerElement: ".t8-glass",
@@ -200,13 +204,14 @@ $(document).ready( function() {
 			tl.to('.t8-phone-screen-arrow-left-overvlow img', .5, {x:0}, '=-.5');
 			tl.to('.t8-glass .t8-phone-screen-arrow-right-overvlow', .5, {y:'-70px'}, '=-.5');
 			tl.to('.t8-phone-screen-arrow-left-overvlow', .5, {y:'-68px'}, '=-.5');
-			tl.to('.t8-phone-middle-block', 1, {x: 90}, "=.1");
-			tl.to('.t8-phone-back-block', 1, {x: -20, y: -30, scale: .7}, "=-1");
-			tl.to('.t8-phone-back-blur', 1, {opacity: 1}, "=-1");
-			tl.to('.t8-phone-back', 1, {opacity: 0}, "=-.5");
-			tl.to('.t8-phone-buttons-block', 1, {x: -75, y: 75}, "=-1.2");
-			tl.to('.t8-phone-buttons', 1, {filter: "blur(8px)", scale: .9}, "=-.8");
-			tl.to('.t8-phone-middle-text', 1, {x: 10}, "=-1");
+			tl.to('.t8-phone-middle-block', 3, {x: 90}, "=.1");
+			tl.to('.t8-phone-back-block', 3, {x: -20, y: -30, scale: .7}, "=-3");
+			tl.to('.t8-phone-back-blur', 3, {opacity: 1}, "=-3");
+			tl.to('.t8-phone-back', 3, {opacity: 0}, "=-2.5");
+			tl.to('.t8-phone-buttons-block', 3, {x: -75, y: 75}, "=-3.2");
+			tl.to('.t8-phone-buttons', 3, {filter: "blur(8px)", scale: .9}, "=-2.8");
+			tl.to('.t8-phone-middle-text', 3, {x: 10}, "=-3");
+			tl.to('.t8-phone-middle-text', 15, {x: 10}, "=0");
 
 			const scene = new ScrollMagic.Scene({
 				triggerElement: ".t8-glass",
