@@ -100,10 +100,7 @@
 .b8-display {
 	overflow: visible !important;
 	position: relative;
-	background: linear-gradient(to right,
-      #79328e 0%,
-      #79328e 50%,
-      #fece00 50%);
+	background: #79328e;
 }
 
 .b8-display::before {
@@ -114,8 +111,8 @@
 	width: 1200px;
 	height: 100%;
 	background-color: #fece00;
-	-webkit-clip-path: polygon(47% 0%, 100% 0%, 100% 100%, 3.5% 100%);
-	clip-path: polygon(47% 0%, 100% 0%, 100% 100%, 3.5% 100%);
+	-webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 2% 100%);
+	clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 2% 100%);
 	transform: translateX(-50%);
 }
 
@@ -144,10 +141,7 @@
 .b8-design {
 	overflow: visible !important;
 	position: relative;
-	background: linear-gradient(to right,
-      #79328e 0%,
-      #79328e 80%,
-      #fece00 20%);
+	background: #79328e;
 }
 
 .b8-design::before {
@@ -158,8 +152,8 @@
 	width: 1200px;
 	height: 100%;
 	background-color: #fece00;
-	-webkit-clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 80% 100%);
-	clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 80% 100%);
+	-webkit-clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 84% 100%);
+	clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 84% 100%);
 	transform: translateX(-50%);
 }
 
@@ -199,10 +193,7 @@
 .b8-speakers {
 	overflow: visible !important;
 	position: relative;
-	background: linear-gradient(to right,
-      #79328e 0%,
-      #79328e 80%,
-      #fece00 20%);
+	background: #79328e;
 }
 
 .b8-speakers::before {
@@ -214,8 +205,8 @@
 	width: 1200px;
 	height: 100%;
 	background-color: #fece00;
-	-webkit-clip-path: polygon(80% 0%, 100% 0%, 100% 100%, 0% 100%);
-	clip-path: polygon(80% 0%, 100% 0%, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(84% 0%, 100% 0%, 100% 100%, -6% 100%);
+	clip-path: polygon(84% 0%, 100% 0%, 100% 100%, -6% 100%);
 	transform: translateX(-50%);
 }
 

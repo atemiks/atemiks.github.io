@@ -422,4 +422,75 @@
 		-ms-flex-wrap: nowrap;
 		flex-wrap: nowrap;
 	}
+
+	.b8-display {
+		background: linear-gradient(to right,
+	      #79328e 0%,
+	      #79328e 50%,
+	      #fece00 50%);
+	}
+
+	.b8-design {
+		background: linear-gradient(to right,
+	      #79328e 0%,
+	      #79328e 90%,
+	      #fece00 10%);
+	}
+
+
+	.b8-speakers {
+		background: linear-gradient(to right,
+	      #79328e 0%,
+	      #79328e 90%,
+	      #fece00 10%);
+	}
+}
+
+@media (min-width: 1366px) {
+	.b8-display {
+		background: linear-gradient(to right,
+	      #79328e 0%,
+	      #79328e 50%,
+	      #fece00 50%);
+	}
+
+	.b8-design {
+		background: linear-gradient(to right,
+	      #79328e 0%,
+	      #79328e 80%,
+	      #fece00 20%);
+	}
+
+
+	.b8-speakers {
+		background: linear-gradient(to right,
+	      #79328e 0%,
+	      #79328e 80%,
+	      #fece00 20%);
+	}
+}
+
+
+@media (min-width: 1920px) {
+	.b8-display {
+		background: linear-gradient(to right,
+	      #79328e 0%,
+	      #79328e 50%,
+	      #fece00 50%);
+	}
+
+	.b8-design {
+		background: linear-gradient(to right,
+	      #79328e 0%,
+	      #79328e 70%,
+	      #fece00 30%);
+	}
+
+
+	.b8-speakers {
+		background: linear-gradient(to right,
+	      #79328e 0%,
+	      #79328e 70%,
+	      #fece00 30%);
+	}
 }
