@@ -166,7 +166,7 @@
 .b8-design .b8-media-figure .b8-media {
 	height: 1155px;
 	max-width: none;
-	transform: translateX(-48%);
+	transform: translateX(-48%) rotate(-39deg);
 }
 
 
@@ -205,8 +205,8 @@
 	width: 1200px;
 	height: 100%;
 	background-color: #fece00;
-	-webkit-clip-path: polygon(84% 0%, 100% 0%, 100% 100%, -6% 100%);
-	clip-path: polygon(84% 0%, 100% 0%, 100% 100%, -6% 100%);
+	-webkit-clip-path: polygon(84% 0%, 100% 0%, 100% 100%, 0 100%);
+	clip-path: polygon(84% 0%, 100% 0%, 100% 100%, 0 100%);
 	transform: translateX(-50%);
 }
 
