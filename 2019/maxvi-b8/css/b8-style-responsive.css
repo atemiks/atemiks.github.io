@@ -41,8 +41,8 @@
     
 	/* section  design */
     .b8-design::before {
-    	-webkit-clip-path: polygon(3.5% 0%, 100% 0%, 100% 100%, 92% 100%);
-    	clip-path: polygon(3.5% 0%, 100% 0%, 100% 100%, 92% 100%);
+    	-webkit-clip-path: polygon(3.5% 0%, 100% 0%, 100% 100%, 100% 100%);
+    	clip-path: polygon(3.5% 0%, 100% 0%, 100% 100%, 100% 100%);
     }
 
 
@@ -68,8 +68,8 @@
 	
 	/* section speakers */
 	.b8-speakers::before {
-	    -webkit-clip-path: polygon(92% 0%, 100% 0%, 100% 100%, -30% 100%);
-	    clip-path: polygon(92% 0%, 100% 0%, 100% 100%, -30% 100%);
+	    -webkit-clip-path: polygon(90% 0%, 100% 0%, 100% 100%, -30% 100%);
+	    clip-path: polygon(90% 0%, 100% 0%, 100% 100%, -30% 100%);
 	}
 
 	.b8-speakers .b8-typography-container {
@@ -89,12 +89,17 @@
 
 
 	/* section emergency */
+	.b8-emergency .b8-media-container {
+		padding-bottom: 60px;
+	}
+
 	.b8-emergency .b8-typography-container {
-		padding-top: 170px;
+		padding-top: 60px;
 	}
 
 	.b8-emergency .b8-media-figure {
-		height: 535px;
+		height: 415px;
+		margin: 0;
 	}
 	/* section emergency end */
 
@@ -288,8 +293,8 @@
 
 	.b8-emergency .b8-media-figure {
 		opacity: 1 !important;
-		height: 320px;
 		width: 320px;
+		height: 440px;
 		margin: 0 auto;
 	}
 	/* section  emergency end */
@@ -483,8 +488,8 @@
 
 	/* section emergency end */
 	.b8-emergency .b8-media-figure {
-		width: 270px;
-		height: 270px;
+		width: 260px;
+		height: 350px;
 	}
 	/* section emergency end */
 }
