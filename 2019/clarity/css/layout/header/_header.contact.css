@@ -1,5 +1,5 @@
 .header-contact {
-	margin: 9px 0;
+	margin: 2px 0;
 	line-height: 1;
 	text-align: right;
 }
@@ -21,7 +21,8 @@
 
 .header-contact .contact-action {
 	cursor: pointer;
-	margin: 12px 0;
+	position: relative;
+	margin: 12px 0 0;
 	padding: 0;
 	border: none;
 	border-radius: 0;
@@ -34,9 +35,52 @@
 	letter-spacing: 0.6px;
 }
 
+.header-contact .contact-action::before,
+.header-contact .contact-action::after {
+	content: '';
+    opacity: 1;
+    display: block;
+    position: absolute;
+}
+
+.header-contact .contact-action::before {
+	color: currentColor;
+    left: 1px;
+    bottom: -8px;
+    height: 2px;
+    width: 0;
+    -webkit-transition: width 0s ease, border-bottom 0.5s ease;
+    transition: width 0s ease, border-bottom 0.5s ease;
+}
+
+.header-contact .contact-action::after {
+	right: 0;
+    bottom: -8px;
+    height: 2px;
+    width: 0;
+    border-bottom: 2px solid currentColor;
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+}
+
+
 .header-contact .contact-action:hover {
-	color: #1c1c1c;
+	color: #f26680;
 	text-decoration: none;
+}
+
+.header-contact .contact-action:hover::before {
+	width: calc(100% - 1px);
+    border-bottom: 2px solid currentColor;
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+}
+
+.header-contact .contact-action:hover::after {
+	width: 100%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: all 0s ease;
+    transition: all 0s ease;
 }
 
 

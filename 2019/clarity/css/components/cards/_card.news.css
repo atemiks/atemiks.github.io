@@ -1,5 +1,6 @@
 .news-card {
 	position: relative;
+    transition: transform .3s;
 	font-size: 14px;
 	color: rgba(39,38,38,.65);
 	letter-spacing: 0.4px;
@@ -56,6 +57,11 @@
 	font-size: 14px;
 	color: rgba(25,25,25,.65);
 	letter-spacing: 0.4px;
+}
+
+
+.news-card:hover {
+    transform: translateY(-8px);
 }
 
 

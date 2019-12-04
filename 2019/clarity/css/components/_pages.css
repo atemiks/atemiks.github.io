@@ -100,10 +100,10 @@ h1.display-title {
 
 
 .section-link {
+	position: relative;
 	display: inline-block;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	border-bottom: 1px solid;
 	font-size: 14px;
 	font-weight: 700;
 	color: #191919;
@@ -112,10 +112,52 @@ h1.display-title {
 	text-transform: uppercase;
 }
 
+.section-link::before,
+.section-link::after {
+	content: '';
+    display: block;
+    position: absolute;
+}
+
+.section-link::before {
+	color: currentColor;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    -webkit-transition: width 0s ease, border-bottom 0.5s ease;
+    transition: width 0s ease, border-bottom 0.5s ease;
+}
+
+.section-link::after {
+	left: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    border-bottom: 2px solid currentColor;
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+}
+
+
 .section-link:hover {
+	color: #191919;
 	text-decoration: none;
 }
 
+.section-link:hover::before {
+	width: 0;
+    border-bottom: 2px solid currentColor;
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+}
+
+.section-link:hover::after {
+	width: 0;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: all 0s ease;
+    transition: all 0s ease;
+}
 
 
 .section-dark {

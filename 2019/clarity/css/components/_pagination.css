@@ -25,10 +25,10 @@
 }
 
 .page-link {
+	position: relative;
 	margin: 0;
 	padding: 5px 10px;
 	border: none;
-	border-bottom: 1px solid transparent;
 	border-radius: 0;
 	background-color: transparent;
 	color: #191919;
@@ -44,11 +44,52 @@
 	box-shadow: none;
 }
 
+
 .page-item.active .page-link {
-	border-bottom: 1px solid;
 	border-radius: 0;
 	background-color: transparent;
 	color: #191919;
+}
+
+.page-item.active .page-link::before,
+.page-item.active .page-link::after {
+	content: '';
+    display: block;
+    position: absolute;
+}
+
+.page-item.active .page-link::before {
+	color: currentColor;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    -webkit-transition: width 0s ease, border-bottom 0.5s ease;
+    transition: width 0s ease, border-bottom 0.5s ease;
+}
+
+.page-item.active .page-link::after {
+	left: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    border-bottom: 2px solid currentColor;
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+}
+
+.page-item.active .page-link:hover::before {
+	width: 0;
+    border-bottom: 2px solid currentColor;
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+}
+
+.page-item.active .page-link:hover::after {
+	width: 0;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: all 0s ease;
+    transition: all 0s ease;
 }
 
 

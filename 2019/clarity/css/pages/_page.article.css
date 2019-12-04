@@ -59,19 +59,24 @@
 	text-decoration: none;
 }
 
-.article-pagination .article-page-link::hover {
-	text-decoration: none;
-}
-
-
 .article-pagination .article-page-link.next::after {
 	content: '\e909';
 	font-family: 'icomoon';
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 0 0 30px;
+	transition: 220ms;
 	font-size: 150%;
 	line-height: 7px;
+}
+
+.article-pagination .article-page-link:hover {
+	color: #191919;
+	text-decoration: none;
+}
+
+.article-pagination .article-page-link:hover::after {
+	transform: translateX(10px);
 }
 
 

@@ -31,8 +31,17 @@
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 10px 0 0;
+	transition: 220ms;
 	font-size: 150%;
 	line-height: 7px;
+}
+
+.breadcrumb-link.prev:hover {
+	color: #191919;
+}
+
+.breadcrumb-link.prev:hover::before {
+	transform: translateX(-10px);
 }
 
 
