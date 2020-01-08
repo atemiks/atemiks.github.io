@@ -1,0 +1,117 @@
+.card-promo {
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    background-color: #F4F4F4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #151D28;
+    text-align: center;
+}
+
+.card-promo::before,
+.card-promo::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 211px;
+    background: url('../../../images/pattern-plus.png');
+}
+
+.card-promo::before {
+    top: -23px;
+    right: 54px;
+    height: 23px;
+}
+
+.card-promo::after {
+    left: 67px;
+    bottom: -29px;
+    height: 29px;
+    background-position: bottom left;
+}
+
+
+.card-promo-inner {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    background-color: #fff;
+}
+
+.card-promo-title {
+    margin: 0;
+    background-image: url('../../../uploads/page-home/section-promo/promo-text-pattern.jpg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #FFC725;
+}
+
+.card-promo-description {
+    margin: 0 0 25px;
+}
+
+
+@media (min-width: 576px) {
+    .card-promo {
+        padding: 40px;
+    }
+
+    .card-promo-inner {
+        padding: 30px 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-promo {
+        padding: 60px 30px 60px;
+    }
+
+    .card-promo-inner {
+        padding: 30px 30px 35px;
+    }
+
+    .card-promo-title {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-promo {
+        padding: 140px 30px 115px;
+    }
+
+    .card-promo::before {
+        top: -73px;
+        right: 54px;
+        height: 73px;
+    }
+    
+    .card-promo::after {
+        left: 67px;
+        bottom: -79px;
+        height: 79px;
+    }
+
+
+    .card-promo-inner {
+        padding: 50px 30px 60px;
+    }
+
+
+    .card-promo-title {
+        font-size: 80px;
+    }
+}

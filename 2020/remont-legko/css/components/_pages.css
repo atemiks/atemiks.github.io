@@ -1,0 +1,147 @@
+.container {
+	max-width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.main {
+	overflow: hidden;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	border-bottom: 2px solid rgba(216, 213, 213, 0.6);
+}
+
+
+.display-title {
+	margin: 0 0 25px;
+}
+
+
+.section-header {
+	margin-bottom: 20px;
+}
+
+.section-title {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 0;
+	color: #151D28;
+	line-height: 1;
+}
+
+.section-title::before {
+	content: '';
+	z-index: -1;
+}
+
+.section-link {
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #151D28;
+}
+
+.section-link svg {
+	margin-left: 25px;
+}
+
+.section-link:hover {
+	color: #151D28;
+	text-decoration: none;
+}
+
+.section-description {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+.section-divider {
+    position: relative;
+    height: 2px;
+    background: rgba(216, 213, 213, 0.6);
+}
+
+.section-divider .divider {
+    position: relative;
+    width: 130px;
+    height: 2px;
+    background: #FFC725;
+}
+
+
+#bg0 {
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, .4);
+	transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.open #bg0 {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+@media (min-width: 576px) {
+	.container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.main {
+		padding-top: 100px;
+		padding-bottom: 60px;
+	}
+
+	.display-title {
+		margin: 0 0 35px;
+	}
+
+	.section-header {
+		margin-bottom: 35px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.main {
+		padding-top: 120px;
+		padding-bottom: 80px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.main {
+		padding-top: 180px;
+		padding-bottom: 135px;
+	}
+
+	.display-title {
+		margin: 0 0 130px;
+	}	
+}
+
+@media (min-width: 1366px) {
+    .container {
+		max-width: 1210px;
+		padding-left: 15px;
+		padding-right: 15px;
+    }
+}

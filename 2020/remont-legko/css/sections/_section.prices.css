@@ -1,0 +1,83 @@
+.section-prices {
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-prices .section-title::before {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    width: 160px;
+    height: 100px;
+    background: url('../../images/pattern-plus.png') right;
+    transform: translateY(-50%);
+}
+
+
+.table-price {
+    margin: 0;
+}
+
+.table-price td {
+    vertical-align: middle;
+}
+
+.price-nano {
+    height: 100%;
+}
+
+.price-nano > .nano-content {
+    position: relative;
+    padding-right: 0;
+}
+
+@media (min-width: 576px) {
+    .section-prices {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-prices {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .price-nano {
+        height: 530px;
+    }
+
+    .price-nano > .nano-content {
+        position: absolute;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-prices {
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+
+    .section-prices .section-header {
+        margin-bottom: 65px;
+    }
+
+    .section-prices .section-title::before {
+        right: -90px;
+        width: 189px;
+        height: 128px;
+    }
+
+
+    .price-tab-content {
+        margin-top: -10px;
+    }    
+
+
+    .price-nano > .nano-content {
+        padding-right: 50px;
+    } 
+}

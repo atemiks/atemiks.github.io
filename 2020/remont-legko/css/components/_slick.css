@@ -1,0 +1,32 @@
+.slick-slider * {
+	outline: none;
+}
+
+.slick-arrow {
+	z-index: 1;
+}
+
+.slick-arrow::before {
+	content: '';
+	opacity: 1;
+	display: block;
+	width: 32px;
+	height: 9px;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.slick-prev, 
+.slick-next {
+	width: 40px;
+	height: 30px;
+}
+
+.slick-prev::before {
+	background-image: url('../../images/icons/icon-arrow-left.svg');
+}
+
+.slick-next::before {
+	background-image: url('../../images/icons/icon-arrow-right.svg');
+}

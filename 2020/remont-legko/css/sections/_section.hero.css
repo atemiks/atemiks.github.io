@@ -1,0 +1,148 @@
+.section-hero {
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+.hero-typography-container {
+    position: relative;
+    z-index: 1;
+    padding-top: 110px;
+    padding-bottom: 80px;
+}
+
+.hero-media-container {
+    position: relative;
+}
+
+
+.hero-title {
+    margin: 0 0 22px;
+    font-size: 57px;
+    line-height: .93;
+}
+
+.hero-description {
+    width: 80%;
+    max-width: 380px;
+    margin: 0 0 25px;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+}
+
+
+.hero-social {
+    position: absolute;
+    bottom: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    white-space: nowrap;
+}
+
+.hero-social-link {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #151D28;
+}
+
+.hero-social-link:hover {
+    color: #FFC725;
+    text-decoration: none;
+}
+
+
+.hero-slider {
+    position: relative;
+    width: calc(58.333333vw - 30px);
+}
+
+.hero-slider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -93px;
+    width: 216px;
+    height: 401px;
+    background: url('../../images/pattern-plus.png');
+    transform: translateY(-50%);
+}
+
+.hero-slider .slide-item {
+    position: relative;
+    height: 520px;
+}
+
+.hero-slider .hero-img {
+    height: 100%;
+    max-width: none;
+}
+
+
+.hero-slider-navigation {
+    display: none;
+}
+
+
+@media (min-width: 576px) {
+    .section-hero {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-hero {
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
+
+
+    .hero-slider .slide-item {
+        height: 720px;
+    }
+
+
+    .hero-slider-navigation {
+        position: absolute;
+        z-index: 9;
+        left: 15px;
+        bottom: 0;
+        display: -ms-flex;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        padding: 30px 25px 20px;
+        background: #ffffff;
+    }
+    
+    .hero-slider-navigation .slick-arrow {
+        position: relative;
+        transform: translate(0);
+    }
+    
+    .hero-slider-navigation .slick-prev {
+        left: 0;
+    }
+    
+    .hero-slider-navigation .slick-next {
+        right: 0;
+    }
+    
+    .hero-slider-navigation .hero-slider-fraction {
+        width: 45px;
+        text-align: center;
+    }    
+}
+
+@media (min-width: 1200px) {
+    .section-hero {
+        padding-top: 0;
+        padding-bottom: 125px;
+    }
+}

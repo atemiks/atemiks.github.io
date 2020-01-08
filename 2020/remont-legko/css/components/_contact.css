@@ -1,0 +1,54 @@
+.contact-list {
+    margin-top: -17px;
+    margin-bottom: -17px;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #151D28;
+}
+
+.contact-list .contact-item {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.contact-list a {
+    color: #151D28;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    color: #FFC725;
+    text-decoration: none;
+}
+
+.contact-label {
+    margin: 0 15px 0 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #151D28;
+}
+
+
+.contact-social {
+    display: -ms-inline-flex;
+    display: inline-flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+.contact-social,
+.contact-social:hover {
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+    .contact-label {
+        margin: 0 25px 0 0;
+        font-size: 20px;
+    }
+}

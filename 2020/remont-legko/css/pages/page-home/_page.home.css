@@ -1,0 +1,42 @@
+.page-home {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+
+.page-home .section-divider .divider {
+    width: 12.5%;
+}
+
+.page-home .section-divider:nth-of-type(1) .divider {
+    left: 0;
+}
+
+.page-home .section-divider:nth-of-type(2) .divider {
+    left: 12.5%;
+}
+
+.page-home .section-divider:nth-of-type(3) .divider {
+    left: 25%;
+}
+
+.page-home .section-divider:nth-of-type(4) .divider {
+    left: 37.5%;
+}
+
+.page-home .section-divider:nth-of-type(5) .divider {
+    left: 50%;
+}
+
+.page-home .section-divider:nth-of-type(6) .divider {
+    left: 62.5%;
+}
+
+.page-home .section-divider:nth-of-type(7) .divider {
+    left: 75%;
+}
+
+.page-home .section-divider:nth-of-type(8) .divider {
+    left: 87.5%;
+}

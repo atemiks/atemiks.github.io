@@ -1,0 +1,70 @@
+.section-plans {
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-plans .section-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 211px;
+    height: 90px;
+    background: url('../../images/pattern-plus.png');
+    transform: translateY(-50%);
+}
+
+.plans-grid {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.plans-grid .plan-item {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 576px) {
+    .section-plans {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-plans {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-plans {
+        padding-top: 105px;
+        padding-bottom: 125px;
+    }
+
+    .section-plans .section-header {
+        margin-bottom: 85px;
+    }
+
+    .section-plans .section-title::before {
+        left: -93px;
+        width: 211px;
+        height: 123px;
+    }
+
+
+    .plans-grid {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .plans-grid .plan-item {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

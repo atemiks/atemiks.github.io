@@ -1,0 +1,37 @@
+.project-hero {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.project-hero-figure {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.project-hero-figure::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -18px;
+	right: -5px;
+	width: 160px;
+	height: 80px;
+    background: url('../../../images/pattern-plus.png');
+}
+
+.project-hero-img {
+    width: 100%;
+	max-width: 1628px;
+}
+
+
+@media (min-width: 1200px) {
+    .project-hero-figure::before {
+        top: -74px;
+        right: 20.5%;
+        width: 478px;
+        height: 401px;
+    }
+}

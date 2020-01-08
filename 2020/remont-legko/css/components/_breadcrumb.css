@@ -1,0 +1,38 @@
+.breadcrumb {
+	overflow-y: auto;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	margin: 10px -15px;
+	padding: 0 15px;
+	background: none;
+	font-size: 15px;
+	line-height: 1.2;
+	color: #151D28;
+	white-space: nowrap;
+	scrollbar-width: none;
+}
+
+.breadcrumb::-webkit-scrollbar {
+    display: none;
+}
+
+.breadcrumb-link {
+	color: #151D28;
+	text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+	color: #FFC725;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	.breadcrumb {
+		overflow: visible;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin: 20px 0;
+		padding: 0;
+		white-space: normal;
+	}
+}

@@ -1,0 +1,112 @@
+.section-about {
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-about .section-header {
+    position: relative;
+    margin-bottom: 35px;
+    padding-right: 105px;
+}
+
+.section-about .section-description {
+    max-width: 535px;
+}
+
+.section-about .section-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+}
+
+
+.about-typography-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.about-media-figure {
+    position: relative;
+    max-width: 400px;
+    margin: 0;
+}
+
+.about-media-figure::before {
+    content: '';
+    position: absolute;
+    right: -53px;
+    bottom: -30px;
+    width: 211px;
+    height: 194px;
+    background: url('../../images/pattern-plus.png') top right;
+}
+
+.about-media-figure .about-media {
+    position: relative;
+    z-index: 1;
+}
+
+
+.about-grid {
+    margin-bottom: -70px;
+}
+
+.about-grid .about-item {
+    margin-bottom: 40px;
+}
+
+
+@media (min-width: 576px) {
+    .section-about {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .about-media-figure {
+        margin: -45px 0 0 -15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-about {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .about-media-figure {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-about {
+        padding-top: 120px;
+        padding-bottom: 110px;
+    }
+
+    .section-about .section-header {
+        padding-right: 125px;
+    }
+
+    .section-about .section-label {
+        width: 135px;
+    }
+
+
+    .about-media-figure {
+        margin: 0;
+    }
+
+    .about-media-figure::before {
+        right: -53px;
+        bottom: -40px;
+    }
+
+
+    .about-grid {
+        margin-bottom: -40px;
+    }
+}

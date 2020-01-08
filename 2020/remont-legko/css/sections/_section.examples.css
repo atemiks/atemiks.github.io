@@ -1,0 +1,97 @@
+.section-examples {
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.examples-grid {
+    overflow: hidden;
+    margin-bottom: -40px;
+}
+
+.examples-grid .example-item {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.examples-grid .example-item:nth-child(2n+1) {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+
+@media (min-width: 576px) {
+    .section-examples {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .examples-grid {
+        margin-bottom: -60px;
+    }
+
+    .examples-grid .example-item {
+        margin-top: 0;
+        margin-bottom: 60px;
+    } 
+
+    .examples-grid .example-item:nth-child(2n+1) {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-examples {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .examples-grid {
+        margin-bottom: -60px;
+    }
+
+    .examples-grid .example-item {
+        margin-top: 5px;
+        margin-bottom: 111px;
+    }
+
+    .examples-grid .example-item:nth-child(2n+1) {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-examples {
+        padding-top: 105px;
+        padding-bottom: 120px;
+    }
+
+    .section-examples .section-header {
+        margin-bottom: 35px;
+    }
+
+
+    .examples-grid {
+        margin-bottom: -120px;
+    }
+
+    .examples-grid .example-item {
+        margin-top: 20px;
+        margin-bottom: 120px;
+    }
+
+    .examples-grid .example-item:nth-child(2n+1) {
+        margin-top: 0;
+        margin-bottom: 90px;
+    }
+
+    .example-more {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}

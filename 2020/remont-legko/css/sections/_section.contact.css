@@ -1,0 +1,74 @@
+.section-contact {
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+.section-contact .section-title::before {
+    position: absolute;
+    top: 50%;
+    left: -72px;
+    width: 150px;
+    height: 100px;
+    background: url('../../images/pattern-plus.png');
+    transform: translateY(-50%);
+}
+
+.map-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.map-wrapper::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    left: -30px;
+    width: 411px;
+    height: 160px;
+    background: url('../../images/pattern-plus.png');
+}
+
+
+#contact-map {
+    position: relative;
+    z-index: 1;
+    height: 335px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    background: #eee;
+}
+
+
+@media (min-width: 576px) {
+    .section-contact {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-contact {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-contact {
+        padding-top: 95px;
+        padding-bottom: 0;
+    }
+
+    .section-contact .section-title::before {
+        left: -72px;
+        width: 161px;
+        height: 118px;
+    }
+
+
+    .section-contact  .section-header {
+        margin-bottom: 45px;
+    }
+}

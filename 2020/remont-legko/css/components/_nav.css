@@ -1,0 +1,29 @@
+.nav {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.nav-link {
+    padding: 8px 0;
+    color: #151D28;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #FFC725;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .nav  {
+        display: -ms-flex;
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 0;
+    }
+}

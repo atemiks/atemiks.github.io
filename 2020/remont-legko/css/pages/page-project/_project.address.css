@@ -1,0 +1,19 @@
+.project-address {
+    margin: 0 0 20px;
+}
+
+.project-address-media {
+    flex: 0 0 16px;
+    max-width: 16px;
+    width: 16px;
+    margin: 0 15px 0 0;
+}
+
+
+@media (min-width: 768px) {
+    .project-address {
+        max-width: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

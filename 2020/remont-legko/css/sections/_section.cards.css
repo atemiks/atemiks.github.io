@@ -1,0 +1,77 @@
+.cards-grid {
+    margin-bottom: -40px;
+}
+
+.cards-grid .card-item {
+    margin-bottom: 40px;
+}
+
+.cards-grid .card-item:nth-child(7n+1) .card::before,
+.cards-grid .card-item:nth-child(7n+5) .card::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -18px;
+    right: -28px;
+    width: 211px;
+    height: 160px;
+    background: url('../../images/pattern-plus.png') top right;
+}
+
+
+@media (min-width: 768px) {
+    .cards-grid {
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: -60px;
+    }
+    
+    .cards-grid .card-item {
+        margin-bottom: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cards-grid .card-item:nth-child(7n+1) .card::before,
+    .cards-grid .card-item:nth-child(7n+5) .card::before {
+        top: -27px;
+        right: -33px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards-grid {
+        margin-left: -40px;
+        margin-right: -40px;
+        margin-bottom: -60px;
+    }
+    
+    .cards-grid .card-item {
+        margin-bottom: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .cards-grid .card-item:nth-child(7n+1) .card::before,
+    .cards-grid .card-item:nth-child(7n+5) .card::before {
+        top: -47px;
+        right: -53px;
+        width: 211px;
+        height: 160px;
+    }
+}
+
+
+@media (min-width: 1366px) {
+    .cards-grid {
+        margin-left: -53px;
+        margin-right: -53px;
+        margin-bottom: -60px;
+    }
+    
+    .cards-grid .card-item {
+        margin-bottom: 60px;
+        padding-left: 53px;
+        padding-right: 53px;
+    }
+}

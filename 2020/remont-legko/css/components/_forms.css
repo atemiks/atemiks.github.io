@@ -1,0 +1,59 @@
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-title {
+	margin: 0 0 10px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.9;
+	letter-spacing: 0.01em;
+	color: #151D28;
+}
+
+.form-control {
+	height: 60px;
+	padding: 0;
+	border: none;
+	border-bottom: 1px solid rgba(21, 29, 40, 0.6);
+	border-radius: 0;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+	color: rgba(21, 29, 40, 0.6);
+}
+
+.form-control::placeholder {
+	color: rgba(21, 29, 40, 0.6);
+}
+
+.form-control:focus {
+	border-color: rgba(21, 29, 40, 0.6);
+	box-shadow: none;
+}
+
+.form-text {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.4px;
+}
+
+.form-text br {
+	display: none;
+}
+
+
+.form-footer {
+	margin-top: 45px;
+}
+
+
+@media (min-width: 768px) {
+	
+}
+
+
+@media (min-width: 992px) {
+	.form-text br {
+		display: block;
+	}
+}

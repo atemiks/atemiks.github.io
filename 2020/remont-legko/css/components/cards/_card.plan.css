@@ -1,0 +1,134 @@
+.card-plan {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 25px 30px;
+    border: 2px solid #D5D6D8;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.card-plan-header {
+    margin: 0 0 8px;
+}
+
+.card-plan-body {
+    flex: 1 1 auto;
+}
+
+.card-plan-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.09;
+    letter-spacing: 0.02em;
+    color: #151D28;
+}
+
+.card-plan-time {
+    color: rgba(21, 29, 40, 0.5);
+}
+
+.card-plan-includes {
+    margin: 0;
+    padding: 0;
+}
+
+.card-plan-includes .card-plan-inlude {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 30px;
+}
+
+.card-plan-includes .card-plan-inlude::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    background: url('../../../images/icons/icon-plus.svg') no-repeat 0 0;
+}
+
+
+.card-plan-plan {
+    margin: 35px 0 25px;
+}
+
+
+.card-plan-price {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #151D28;
+}
+
+
+.card-plan.is-selected {
+    position: relative;
+    z-index: 1;
+    background: #F4F4F4;
+}
+
+
+@media (min-width: 576px) {
+    .card-plan {
+        padding: 40px 35px 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-plan {
+        padding: 25px 20px 30px;
+    }
+
+    .card-plan-includes .card-plan-inlude {
+        padding-left: 25px;
+    }
+
+    .card-plan.is-selected {
+        width: calc(100% + 8px);
+        margin: -20px -4px;
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-plan {
+        padding: 65px 45px 68px;
+        font-size: 15px;
+        line-height: 1.86;
+    }
+
+    .card-plan-header {
+        margin: 0 0 28px;
+    }
+
+    .card-plan-title {
+        font-size: 22px;
+    }
+
+    .card-plan-includes .card-plan-inlude {
+        margin-top: 1px;
+        margin-bottom: 1px;
+        padding-left: 30px;
+    }
+
+    .card-plan-price {
+        font-size: 22px;
+    }
+
+
+    .card-plan.is-selected {
+        padding-top: 85px;
+        padding-bottom: 90px;
+    }
+}

@@ -1,0 +1,62 @@
+.project-counters {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.project-counter {
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: #151D28;
+    text-align: center;
+}
+
+.project-counter-title {
+    margin: 0 0 5px;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #151D28;
+    white-space: nowrap;
+}
+
+
+.project-counters-grid {
+    margin-bottom: -40px;
+}
+
+.project-counter-item {
+    margin-bottom: 40px;
+}
+
+
+@media (min-width: 576px) {
+    .project-counters {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .project-counters {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .project-counters {
+        padding-top: 115px;
+        padding-bottom: 115px;
+    }
+
+    .project-counter-item {
+        border-right: 2px solid rgba(216, 213, 213, 0.6);
+    }
+    
+    .project-counter-item:nth-child(4n+4) {
+        border-right: none;
+    }    
+}

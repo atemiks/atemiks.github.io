@@ -1,0 +1,32 @@
+.footer-privacy {
+    margin-top: 20px;
+    margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333333;
+}
+
+.footer-privacy a {
+	color: #333333;
+	text-decoration: none;
+}
+
+.footer-privacy a:hover {
+	color: #FFC725;
+	text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+	.footer-privacy {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.footer-privacy {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}

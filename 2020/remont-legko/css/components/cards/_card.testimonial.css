@@ -1,0 +1,37 @@
+.card-testimonial {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+
+.card-testimonial-title {
+    margin: 0 15px 0 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.card-testimonial-description {
+    margin-bottom: 15px;
+}
+
+.card-testimonial-social {
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+
+@media (min-width: 768px) {
+    .card-testimonial-title {
+        font-size: 15px;
+    }
+}

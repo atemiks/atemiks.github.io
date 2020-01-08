@@ -1,0 +1,44 @@
+.header-contact {
+    position: relative;
+    z-index: 1;
+    padding: 10px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #352C2C;
+}
+
+.header-contact-phone {
+    color: #352C2C;
+    text-decoration: none;
+}
+
+.header-contact-phone:hover {
+    color: #FFC725;
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1200px) {
+    .header-contact {
+        padding: 35px 25px;
+        font-size: 17px;
+    }
+
+    .header-contact::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 414px;
+        height: 100%;
+        background: #fff;
+    }
+}

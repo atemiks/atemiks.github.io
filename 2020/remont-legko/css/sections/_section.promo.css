@@ -1,0 +1,39 @@
+.section-promo {
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+@media (min-width: 576px) {
+    .section-promo {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+} 
+
+@media (min-width: 768px) {
+    .section-promo {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .section-promo .card-promo {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+} 
+
+@media (min-width: 1200px) {
+    .section-promo {
+        padding-top: 115px;
+        padding-bottom: 125px;
+    }
+} 
+
+@media (min-width: 1366px) {
+    .section-promo .card-promo {
+        margin-left: -60px;
+        margin-right: -60px;
+    }
+}
