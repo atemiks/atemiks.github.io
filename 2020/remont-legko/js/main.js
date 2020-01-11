@@ -57,13 +57,6 @@
 		// Layout
 		stickyHeader();
 
-		// Custom scrollbar
-		// function customScrollInit();
-
-		// setTimeout(function () {
-		// 	$(".nano").nanoScroller();
-		// }, 100);
-
 
 		// Tabs
 		$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
@@ -83,23 +76,6 @@
 			});
 		}, 100);
 
-		// Fffcanvas 
-		$('.offcanvas-toggle').on('click', function () {
-			openOffcanvas();
-		})
-
-		$('.offcanvas-close').on('click', function () {
-			closeOffcanvas();
-		})
-
-		$('#offcanvas').on('click', '.offcanvas-menu-link', function () {
-			closeOffcanvas();
-		})
-
-		$(bg0).on('click', function () {
-			closeOffcanvas();
-		})
-
 		// Add smooth scrolling to all links
 		$(".link-anchor").on('click', function (event) {
 			if (this.hash !== "") {
@@ -118,6 +94,32 @@
 
 		// Phone mask
 		$("input[type='tel']").mask("+7 (999) 999-99-99");
+
+
+		// Fancybox
+		$('[data-fancybox]').fancybox({
+			buttons: [
+				"close"
+			]
+		});
+
+
+		// Offcanvas 
+		$('.offcanvas-toggle').on('click', function () {
+			openOffcanvas();
+		})
+
+		$('.offcanvas-close').on('click', function () {
+			closeOffcanvas();
+		})
+
+		$('#offcanvas').on('click', '.offcanvas-menu-link', function () {
+			closeOffcanvas();
+		})
+
+		$(bg0).on('click', function () {
+			closeOffcanvas();
+		})
 
 
 		// Sliders

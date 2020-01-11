@@ -6,7 +6,7 @@
     margin-bottom: 40px;
 }
 
-.cards-grid .card-item:nth-child(7n+1) .card::before,
+.cards-grid .card-item:nth-child(6n+1) .card::before,
 .cards-grid .card-item:nth-child(7n+5) .card::before {
     content: '';
     position: absolute;
@@ -16,6 +16,18 @@
     width: 211px;
     height: 160px;
     background: url('../../images/pattern-plus.png') top right;
+}
+
+.cards-grid .card-item:nth-child(6n+3) .card::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: -28px;
+    top: 75%;
+    width: 211px;
+    height: 160px;
+    background: url('../../images/pattern-plus.png') right;
+    transform: translateY(-100%);
 }
 
 
@@ -32,7 +44,7 @@
         padding-right: 20px;
     }
 
-    .cards-grid .card-item:nth-child(7n+1) .card::before,
+    .cards-grid .card-item:nth-child(6n+1) .card::before,
     .cards-grid .card-item:nth-child(7n+5) .card::before {
         top: -27px;
         right: -33px;
@@ -52,7 +64,7 @@
         padding-right: 40px;
     }
 
-    .cards-grid .card-item:nth-child(7n+1) .card::before,
+    .cards-grid .card-item:nth-child(6n+1) .card::before,
     .cards-grid .card-item:nth-child(7n+5) .card::before {
         top: -47px;
         right: -53px;
@@ -73,5 +85,12 @@
         margin-bottom: 60px;
         padding-left: 53px;
         padding-right: 53px;
+    }
+
+    .cards-grid .card-item:nth-child(6n+3) .card::after {
+        right: -87px;
+        top: 75%;
+        width: 211px;
+        height: 160px;
     }
 }

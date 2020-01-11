@@ -19,31 +19,6 @@
 }
 
 
-.article .article-figure {
-	position: relative;
-	z-index: 1;
-	margin: 25px 0;
-	text-align: center;
-}
-
-.article .article-figure::before {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	top: -45px;
-	right: -5px;
-	width: 160px;
-	height: 80px;
-	background: url('../../../images/pattern-plus.png');
-}
-
-.article .article-figure img {
-	width: 100%;
-	max-width: 1628px;
-}
-
-
-
 .article-navigation {
 	margin-top: 20px;
 	margin-bottom: 0;
@@ -86,21 +61,7 @@
 		margin: 0 0 30px;
 	}
 
-
-	.article .article-figure {
-		position: relative;
-		z-index: 1;
-		margin: 45px 0;
-		text-align: center;
-	}
-
-	.article .article-figure::before {
-		top: -74px;
-		right: 21.68%;
-		width: 478px;
-		height: 401px;
-	}
-
+	
 	.article-navigation {
 		margin-top: 55px;
 	}

@@ -11,11 +11,21 @@
 
 
 .card .card-thumbnail {
+    overflow: hidden;
     position: relative;
+    padding-bottom: 113.5%;
+    background-color: #eee;
 }
 
 .card .card-thumbnail .card-img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: none;
+    height: 100%;
     border-radius: 0;
+    transform: translateX(-50%);
 }
 
 
@@ -43,7 +53,7 @@
 
 
 .card:hover {
-    color: #151D28;
+    color: #ffc725;
     text-decoration: none;
 }
 

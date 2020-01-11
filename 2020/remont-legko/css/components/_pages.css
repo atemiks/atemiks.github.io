@@ -46,12 +46,18 @@
 }
 
 .section-link svg {
-	margin-left: 25px;
+	position: relative;
+	margin-left: 5px;
+	transition: transform 300ms ease;
 }
 
 .section-link:hover {
 	color: #151D28;
 	text-decoration: none;
+}
+
+.section-link:hover svg {
+	transform: translateX(5px);
 }
 
 .section-description {
@@ -113,6 +119,10 @@
 	.section-header {
 		margin-bottom: 35px;
 	}
+
+	.section-link svg {
+		margin-left: 15px;
+	}
 }
 
 @media (min-width: 768px) {
@@ -124,6 +134,11 @@
 	.main {
 		padding-top: 120px;
 		padding-bottom: 80px;
+	}
+
+	
+	.section-link svg {
+		margin-left: 25px;
 	}
 }
 
