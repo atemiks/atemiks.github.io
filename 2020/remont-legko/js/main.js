@@ -61,9 +61,7 @@
 		// Tabs
 		$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 			// init custom scroll bar
-			// $(".nano").nanoScroller();
-			if (windowSizeHelper.isPhone()) {
-				// console.log('phone');
+			if (!windowSizeHelper.isPhone()) {
 				$(".nano").nanoScroller();
 			}
 		})
@@ -173,6 +171,19 @@
 			return false;
 		});
 
+		$("#formModalCalc").submit(function () {
+			$.ajax({
+				type: "POST",
+				url: "/formModalCalc.php",
+				data: $(this).serialize()
+			}).done(function () {
+				$(this).find("input").val("");
+				alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+				$("#formModalCalc").trigger("reset");
+			});
+			return false;
+		});
+
 
 		// Map
 		if ($('#contact-map').length == true) {
@@ -183,7 +194,7 @@
 				zoom: 16,
 
 				// The latitude and longitude to center the map (always required)
-				center: new google.maps.LatLng(53.308009, 34.301909),
+				center: new google.maps.LatLng(53.234660, 34.367173),
 
 				// How you would like to style the map. 
 				// This is where you would paste any style found on Snazzy Maps.
@@ -420,7 +431,7 @@
 
 			// Let's also add a marker while we're at it
 			var marker = new google.maps.Marker({
-				position: new google.maps.LatLng(53.308009, 34.301909),
+				position: new google.maps.LatLng(53.234660, 34.367173),
 				map: map,
 				icon: './images/icons/icon-marker.svg',
 				title: 'Ремонт Легко'
