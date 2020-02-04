@@ -1,32 +1,13 @@
-@media (min-width: 1200px) and (min-aspect-ratio: 16/9) {
+@media (max-width: 1280px) {
+	/* section  speakers */
 	.p18-speakers .p18-speakers-video {
-    	top: 50%;
-    	left: 50%;
-    	transform: translate(-50%, -50%);
-		width: 100%;
-		height: auto;
-	}
-}
-
-@media (min-width: 1200px) and (max-aspect-ratio: 16/9) {
-	.p18-speakers .p18-speakers-video {
-    	left: 50%;
-    	transform: translateX(-50%);
-		width: auto;
 		height: 100%;
+		width: auto;
 	}
+	/* section  speakers end */
 }
 
 @media (max-width: 1199px) {
-	.p18-speakers .p18-speakers-video {
-		top: 50%;
-		left: 50%;
-		height: 100% !important;
-		width: auto !important;
-		transform: translate(-50%, -50%);
-	}
-
-
 	/* section  sim */
 	.p18-sim .content-wrapper {
 		-webkit-flex-direction: column-reverse;
@@ -114,7 +95,7 @@
 	}
 
 	.p18-description {
-		margin: 0 0 20px;
+		margin: 15px 0 0;
 		font-size: 18px;
 		line-height: 1.5;
 	}
@@ -125,6 +106,7 @@
 		min-height: auto;
 		padding-top: 0;
 		padding-bottom: 0;
+		background-image: none !important;
 	}
 
 	.p18-battery .content-wrapper {
@@ -149,7 +131,7 @@
 
 	.p18-display .p18-media-figure {
 		height: 420px;
-		margin: -50px 0 -50px 20px;
+		margin: 0 0 -50px 20px;
 		text-align: center;
 	}
 	/* section display end */
@@ -240,6 +222,18 @@
 }
 
 @media (max-width: 375px) {
+	.p18-title {
+		font-size: 26px !important;
+	}
+
+	.p18-subtitle {
+		font-size: 24px;
+	}
+
+	.p18-description {
+		font-size: 16px;
+	}
+
 	/* section  features */
 	.p18-features-grid .p18-feature-item {
 		flex: 0 0 100%;

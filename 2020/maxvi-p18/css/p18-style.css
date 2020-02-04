@@ -6,7 +6,7 @@
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
-	color: #555555;
+	color: #000;
 	line-height: 1.25;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .p18-description {
-	margin: 0 0 45px;
+	margin: 25px 0 0;
 	font-size: 18px;
 	font-weight: 400;
 	color: #000000;
@@ -116,18 +116,18 @@
 /* section battery */
 .p18-battery {
 	min-height: 700px;
-	padding-top: 55px;
+	padding-top: 25px;
 	padding-bottom: 0;
 	background-color: #000000;
 	background-repeat: no-repeat;
 	background-position: top right;
-	background-size: cover;
+	background-size: contain !important;
 	color: #fff;
 }
 
 
 .p18-battery .p18-media-figure {
-	margin: 10px 50px 0;
+	margin: 40px 50px 0;
 }
 
 
@@ -155,7 +155,7 @@
 }
 
 .p18-display .p18-typography-container {
-	padding-top: 135px;
+	padding-top: 110px;
 	padding-bottom: 60px;
 }
 
@@ -244,8 +244,15 @@
 /* section speakers */
 .p18-speakers {
 	position: relative;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	justify-content: flex-end;
 	min-height: 700px;
-	padding-top: 280px;
+	padding-top: 0;
 	padding-bottom: 0;
 	background: #020f26;
 	color: #fff;
@@ -266,6 +273,11 @@
 
 .p18-speakers .p18-speakers-video {
 	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: auto;
+	transform: translate(-50%, -50%);
 }
 
 .p18-speakers .content-wrapper {
