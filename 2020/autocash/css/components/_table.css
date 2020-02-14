@@ -1,0 +1,35 @@
+.table {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.table td {
+    padding: 7px 4px;
+    border-top: 2px solid rgba(216, 213, 213, 0.6);
+}
+
+.table td:first-child  {
+    padding-left: 0;
+}
+
+.table td:last-child {
+    padding-right: 0;
+}
+
+.table tbody tr:first-child td {
+    border-top: none;
+}
+
+.table b {
+    font-weight: 600;
+}
+
+@media (min-width: 375px) {
+    .table {
+        font-size: 15px;
+    }
+
+    .table td {
+        padding: 7px;
+    }
+}

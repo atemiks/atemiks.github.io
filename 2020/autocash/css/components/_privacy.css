@@ -1,0 +1,28 @@
+.privacy-box {
+	position: relative;
+	padding: 0 0 0 39px;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.privacy-box::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #e1e1e1;
+	background-color: #ffffff;
+}
+
+.privacy-box::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 26px;
+	height: 21px;
+	background: url('../../images/icons/icon-check.svg');
+}

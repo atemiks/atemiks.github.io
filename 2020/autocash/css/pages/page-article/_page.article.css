@@ -1,0 +1,53 @@
+.article-hero {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: #f6f6f6;
+	color: #003300;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.16;
+}
+
+.article-hero .article-media {
+	margin-bottom: 15px;
+}
+
+.article-nav-link {
+	color: #003300;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+	line-height: 35px;
+}
+
+.article-nav-link img {
+	display: inline-block;
+	margin-right: 15px;
+	width: 35px;
+	vertical-align: middle;
+}
+
+
+@media (min-width: 768px) {
+	.article-hero {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		font-size: 24px;
+	}
+
+	.article-hero .article-media {
+		margin-bottom: 0;
+	}
+
+	.article-nav-link {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.article-hero {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}

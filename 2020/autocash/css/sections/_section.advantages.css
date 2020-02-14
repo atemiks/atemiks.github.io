@@ -1,0 +1,32 @@
+.section-advantages {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f6f6f6;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.advantages-grid {
+	margin-bottom: -30px;
+}
+
+.advantages-grid .advantage-item {
+	margin-bottom: 30px;
+}
+
+
+@media (min-width: 768px) {
+	.section-advantages {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.section-advantages {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}

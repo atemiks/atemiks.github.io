@@ -1,0 +1,32 @@
+.card-about {
+	color: #000000;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.card-about-title {
+	position: relative;
+	z-index: 1;
+	min-height: 45px;
+	margin: 0 20px -10px -10px;
+	padding: 6px 15px 6px 10px;
+	background-color: #003300;
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.card-about-description {
+	min-height: 120px;
+	padding: 20px 15px 10px 15px;
+	border-bottom-right-radius: 30px;
+	background-color: #ffcd0d;
+}
+
+
+@media (min-width: 992px) {
+	.card-about-title {
+		margin: 0 20px -10px -20px;
+		padding: 3px 15px 6px 10px;
+	}
+}

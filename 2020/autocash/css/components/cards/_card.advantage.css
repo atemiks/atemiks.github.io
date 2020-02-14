@@ -1,0 +1,75 @@
+.card-advantage {
+	position: relative;
+	min-height: 145px;
+	padding: 15px 15px 10px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom: 7px solid #ffcd0d;
+	background-color: #ffffff;
+}
+
+.card-advantage::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -8px;
+	border-bottom: 1px solid #e6ab0c;
+}
+
+
+.card-advantage-thumbnail {
+	position: relative;
+	top: -30px;
+	height: 60px;
+	padding: 0 15px;
+	text-align: center;
+}
+
+.card-advantage-media {
+	max-width: 110px;
+	max-height: 70px;
+}
+
+
+.card-advantage-title {
+	margin: 0;
+	color: #000000;
+	font-weight: 700;
+	line-height: 1;
+}
+
+
+@media (min-width: 768px) {
+	.card-advantage-thumbnail {
+		height: 90px;
+	}
+
+	.card-advantage-media {
+		max-width: 100px;
+		max-height: 100px;
+	}
+}
+
+@media (min-width: 992px) {
+	.card-advantage {
+		min-height: auto;
+		padding: 15px 15px 20px;
+		border-bottom-width: 15px;
+	}
+
+	.card-advantage::after {
+		bottom: -16px;
+	}
+
+	.card-advantage-thumbnail {
+		top: -35px;
+		height: 110px;
+		text-align: right;
+	}
+
+	.card-advantage-media {
+		max-width: 110px;
+		max-height: 110px;
+	}
+}

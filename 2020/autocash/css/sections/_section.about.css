@@ -1,0 +1,46 @@
+.section-about {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f6f6f6;
+}
+
+.section-about .about-description {
+	margin: -15px 0 0;
+}
+
+.about-grid {
+	margin-top: 15px;
+	margin-bottom: -30px;
+}
+
+.about-grid .about-item {
+	margin-bottom: 30px;
+}
+
+
+
+
+@media (min-width: 576px) {
+	.about-grid .card-about {
+		max-width: 215px;
+		margin: 0 0 0 auto;
+	}
+}
+
+@media (min-width: 768px) {
+	.section-about {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+	.section-about .about-description {
+		margin: -25px 0 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.section-about {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}

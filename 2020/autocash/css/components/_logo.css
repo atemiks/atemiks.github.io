@@ -1,0 +1,28 @@
+.logo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo-title {
+    margin: 5px 0 0;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+    color: #151D28;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+    .logo-title {
+        font-size: 13px;
+    }
+}

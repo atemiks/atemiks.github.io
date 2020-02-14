@@ -1,0 +1,46 @@
+.footer-nav-box {
+	margin-top: 20px;
+}
+
+.footer-nav-box:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.footer-nav-title {
+	display: block;
+	margin: 0 0 10px;
+	color: #000000;
+	font-weight: 500;
+	font-style: normal;
+	letter-spacing: 0.4px;
+}
+
+.footer-nav .nav-link {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.footer-nav .nav-link:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+
+@media (min-width: 1200px) {
+	.footer-nav-box {
+		margin-top: 40px;
+	}
+
+	.footer-nav-title {
+		margin: 0 0 20px; 
+	}
+
+	.footer-nav .nav-link {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 16px;
+	}
+}

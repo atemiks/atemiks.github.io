@@ -1,0 +1,30 @@
+.header-contact {
+	color: #003300;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1;
+	text-shadow: 0 1px 2px rgba(230, 171, 12, 0.3);
+}
+
+.header-contact .contact-link {
+	color: inherit;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.header-contact .contact-link:hover {
+	text-decoration: none;
+}
+
+
+@media (min-width: 576px) {
+	.header-contact {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header-contact {
+		font-size: 30px;
+	}
+}
