@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="vendor/select2/select2.min.css">
     <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="vendor/rangeslider/rangeslider.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Автокэш+</title>
 </head>
@@ -39,10 +39,10 @@
                                         <a href="about.html" class="nav-link">О нас</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="partners.html" class="nav-link">Партнерам</a>
+                                        <a href="partner.html" class="nav-link">Партнерам</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="contact.html" class="nav-link">Контакты</a>
+                                        <a href="#section-contact" class="nav-link link-anchor">Контакты</a>
                                     </li>
                                 </ul>
                             </div>
@@ -85,13 +85,13 @@
                                 <nav>
                                     <ul class="header-nav reset-list">
                                         <li class="nav-item is-active">
-                                            <a href="" class="nav-link">ДЕНЬГИ ПОД ПТС</a>
+                                            <a href="pts.html" class="nav-link">ДЕНЬГИ ПОД ПТС</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="" class="nav-link">ДЕНЬГИ ПОД АВТО</a>
+                                            <a href="pts.html" class="nav-link">ДЕНЬГИ ПОД АВТО</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="" class="nav-link">РЕФИНАНСИРОВАНИЕ</a>
+                                            <a href="lombard.html" class="nav-link">РЕФИНАНСИРОВАНИЕ</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -611,7 +611,7 @@
         </div>
 
         <footer class="footer-box">
-           <section class="section-contact">
+           <section class="section-contact" id="section-contact">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -783,7 +783,7 @@
 
                 <div class="col-lg-7 offset-lg-1">
                     <div class="megamenu-city">
-                        <select class="select2" >
+                        <select class="select2 select2-sm" >
                             <option value="Москва">Москва</option>
                             <option value="Санкт-Петербург">Санкт-Петербург</option>
                             <option value="Абаза">Абаза</option>
@@ -871,22 +871,22 @@
         <div class="offcanvas-body">
             <ul class="offcanvas-menu reset-list">
                 <li class="offcanvas-menu-item">
-                    <a href="#link" class="offcanvas-menu-link">Деньги под ПТС</a>
+                    <a href="pts.html" class="offcanvas-menu-link">Деньги под ПТС</a>
                 </li>
                 <li class="offcanvas-menu-item">
-                    <a href="#link" class="offcanvas-menu-link">Деньги под авто</a>
+                    <a href="pts.html" class="offcanvas-menu-link">Деньги под авто</a>
                 </li>
                 <li class="offcanvas-menu-item">
-                    <a href="#link" class="offcanvas-menu-link">Рефинансирование</a>
+                    <a href="lombard.html" class="offcanvas-menu-link">Рефинансирование</a>
                 </li>
                 <li class="offcanvas-menu-item">
-                    <a href="#link" class="offcanvas-menu-link">О нас</a>
+                    <a href="about.html" class="offcanvas-menu-link">О нас</a>
                 </li>
                 <li class="offcanvas-menu-item">
-                    <a href="#link" class="offcanvas-menu-link">Партнерам</a>
+                    <a href="partner.html" class="offcanvas-menu-link">Партнерам</a>
                 </li>
                 <li class="offcanvas-menu-item">
-                    <a href="#link" class="offcanvas-menu-link">Контакты</a>
+                    <a href="#section-contact" class="offcanvas-menu-link link-anchor">Контакты</a>
                 </li>
             </ul>
 
@@ -942,7 +942,7 @@
 
     <div class="modal fade" id="modalRequest" tabindex="-1" role="dialog" aria-labelledby="modalRequestLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title" id="modalRequestLabel">получите деньги <br> на выгодных условиях</div>
@@ -955,8 +955,11 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="formModalRequestName"
-                                        placeholder="Ваше имя" required>
+                                    <select class="select2" >
+                                        <option value="Займ под ПТС">Займ под ПТС</option>
+                                        <option value="Займ под авто">Займ под авто</option>
+                                        <option value="Рефинансирование">Рефинансирование</option>
+                                    </select>
                                 </div>
                             </div>
 
@@ -1001,23 +1004,43 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-lg-10">
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="formModalRequestPrivacy"
                                             checked required>
                                         <label class="custom-control-label" for="formModalRequestPrivacy">
-                                            Я согласен(-на) с
-                                            <a href="#link" target="_blank">политикой обработки
-                                                персональных данных</a>
+                                            Нажимая на кнопку «начать», я соглашаюсь на обработку персональных данных и согласен с
+                                            <a href="#link" target="_blank">политикой конфиденциальности</a>
                                         </label>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
+                        <div class="row">
+                            <div class="col-12 text-center">
                                 <button type="submit" class="btn btn-success">ОТПРАВИТЬ</button>
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalThanks" tabindex="-1" role="dialog" aria-labelledby="modalThanksLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="modalThanksLabel">Ваша заявка успешно отправлена!</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/icon-close.svg" alt="Закрыть">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Спасибо, что выбрали нашу компанию. Специалист свяжется с Вами в&nbsp;ближайшее время.
                 </div>
             </div>
         </div>

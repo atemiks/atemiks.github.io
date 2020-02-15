@@ -27,9 +27,15 @@
 	top: 50%;
 	width: auto;
 	height: auto;
+	padding-left: .5rem;
+	padding-right: .5rem;
 	background: none;
 	transform: translateY(-50%);
 	color: #000000 !important;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+	padding-left: 1.5rem;
 }
 
 .breadcrumb-link {

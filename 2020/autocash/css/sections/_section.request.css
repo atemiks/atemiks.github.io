@@ -3,11 +3,23 @@
 }
 
 .section-request .section-title {
-	font-size: 28px;
+	font-size: 20px;
 	letter-spacing: 0.7px;
 }
 
 .section-request .nav-tabs {
-	margin-top: 40px;
-	margin-bottom: 55px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+	.section-request .section-title {
+		font-size: 28px;
+	}
+
+	.section-request .nav-tabs {
+		margin-top: 40px;
+		margin-bottom: 55px;
+	}
 }

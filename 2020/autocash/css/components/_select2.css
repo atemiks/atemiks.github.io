@@ -1,27 +1,27 @@
 .select2-container--default {
-	min-width: 300px;
+	min-width: 100%;
 }
 
 .select2-container--default .select2-selection {
-	height: 45px;
+	height: 55px;
 	border: none;
 	border-radius: 0;
 }
 
 .select2-container--default .select2-selection .select2-selection__rendered {
-	padding: 0 20px 0 20px;
+	padding: 0 55px 0 20px;
 	color: #000000;
 	font-size: 16px;
 	font-weight: 300;
 	letter-spacing: 0.04px;
-	line-height: 45px;
+	line-height: 55px;
 }
 
 .select2-container--default .select2-selection .select2-selection__arrow {
 	top: 0;
 	right: 0;
-	width: 45px;
-	height: 45px;
+	width: 55px;
+	height: 55px;
 	background: url('../../images/icons/icon-arrow-down.svg') no-repeat center;
 	background-size: 20px;
 	transition: transform 300ms ease;
@@ -33,6 +33,21 @@
 
 .select2-container--default.select2-container--open .select2-selection__arrow {
 	transform: rotate(-180deg);
+}
+
+
+.select2-sm + .select2-container--default .select2-selection {
+	height: 45px;
+}
+
+.select2-sm + .select2-container--default .select2-selection .select2-selection__rendered {
+	padding: 0 65px 0 20px;
+	line-height: 45px;
+}
+
+.select2-sm + .select2-container--default .select2-selection .select2-selection__arrow {
+	width: 45px;
+	height: 45px;
 }
 
 
@@ -68,4 +83,11 @@
 .select2-results__options .select2-results__option--highlighted[aria-selected] {
 	background: none;
 	color: #000;
+}
+
+
+@media (min-width: 992px) {
+	.select2-container--default {
+		min-width: 300px;
+	}
 }
