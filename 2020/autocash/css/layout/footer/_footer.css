@@ -7,5 +7,12 @@
 
 @media (min-width: 1200px) {
 	.footer-box::before {
-		con
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 50%;
+		bottom: 0;
+		width: 50%;
+		background-color: #f3ba20;
+	}
 }
