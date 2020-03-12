@@ -1,0 +1,26 @@
+.header-headline {
+	color: #fff;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.17;
+}
+
+
+@media (min-width: 992px) {
+	.header-headline .btn {
+		margin: 15px 0 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header-headline {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 1366px) {
+	.header-headline {
+		font-size: 29px;
+	}
+}

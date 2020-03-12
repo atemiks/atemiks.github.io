@@ -1,0 +1,15 @@
+.section-hero {
+	padding-top: 0;
+	padding-bottom: 45%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
+
+
+@media (min-width: 576px) {
+	.section-hero {
+		padding-top: 0;
+		padding-bottom: 37%;
+	}
+}

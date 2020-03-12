@@ -1,0 +1,58 @@
+.section-callback {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: linear-gradient(3deg, #ebfa87 0%, #4b6700 100%);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+}
+
+.section-callback .section-header {
+	margin-bottom: 10px;
+}
+
+.section-callback .section-title {
+	line-height: 1.2;
+}
+
+.section-callback .section-subtitle {
+	line-height: 1.3;
+}
+
+.section-callback .form-callback {
+	max-width: 380px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+@media (min-width: 768px) {
+	.section-callback {
+		text-align: left;
+	}
+
+	.section-callback .form-callback {
+		margin: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-callback {
+		padding-top: 80px;
+		padding-bottom: 60px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.section-callback {
+		padding-top: 100px;
+		padding-bottom: 80px;
+		text-align: left;
+	}
+
+	.section-callback .form-callback {
+		margin: 0;
+	}
+}

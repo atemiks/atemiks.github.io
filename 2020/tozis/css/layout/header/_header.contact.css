@@ -1,0 +1,54 @@
+.header-contact {
+	color: #ffffff;
+	text-align: center;
+}
+
+.header-contact .contact-title {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.header-contact .contact-tel {
+	text-shadow: 0 1px 2px rgba(0, 11, 13, 0.53);
+	color: #ffffff;
+	font-family: "Meta Black Caps";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.header-contact .contact-tel:hover {
+	color: rgba(255,255,255,.85);
+	text-decoration: none;
+}
+
+.header-contact .contact-social {
+	justify-content: center;
+}
+
+
+@media (min-width: 768px) {
+	.header-contact .contact-tel {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header-contact .contact-tel {
+		font-size: 32px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header-contact .contact-tel {
+		font-size: 40px;
+	}
+}
+
+@media (min-width: 1366px) {
+	.header-contact .contact-tel {
+		font-size: 50px;
+	}
+}

@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../../fonts/Roboto/Roboto-Regular/Roboto-Regular.eot');
+  src:  url('../../fonts/Roboto/Roboto-Regular/Roboto-Regular.eot#iefix') format('embedded-opentype'),
+    url('../../fonts/Roboto/Roboto-Regular/Roboto-Regular.ttf') format('truetype'),
+    url('../../fonts/Roboto/Roboto-Regular/Roboto-Regular.woff') format('woff'),
+    url('../../fonts/Roboto/Roboto-Regular/Roboto-Regular.svg#Roboto') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../../fonts/Roboto/Roboto-Light/Roboto-Light.eot');
+  src:  url('../../fonts/Roboto/Roboto-Light/Roboto-Light.eot#iefix') format('embedded-opentype'),
+    url('../../fonts/Roboto/Roboto-Light/Roboto-Light.ttf') format('truetype'),
+    url('../../fonts/Roboto/Roboto-Light/Roboto-Light.woff') format('woff'),
+    url('../../fonts/Roboto/Roboto-Light/Roboto-Light.svg#Roboto') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../../fonts/Roboto/Roboto-Bold/Roboto-Bold.eot');
+  src:  url('../../fonts/Roboto/Roboto-Bold/Roboto-Bold.eot#iefix') format('embedded-opentype'),
+    url('../../fonts/Roboto/Roboto-Bold/Roboto-Bold.ttf') format('truetype'),
+    url('../../fonts/Roboto/Roboto-Bold/Roboto-Bold.woff') format('woff'),
+    url('../../fonts/Roboto/Roboto-Bold/Roboto-Bold.svg#Roboto') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../../fonts/Roboto/Roboto-Black/Roboto-Black.eot');
+  src:  url('../../fonts/Roboto/Roboto-Black/Roboto-Black.eot#iefix') format('embedded-opentype'),
+    url('../../fonts/Roboto/Roboto-Black/Roboto-Black.ttf') format('truetype'),
+    url('../../fonts/Roboto/Roboto-Black/Roboto-Black.woff') format('woff'),
+    url('../../fonts/Roboto/Roboto-Black/Roboto-Black.svg#Roboto') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Meta Black Caps';
+  src:  url('../../fonts/MetaBlack-Caps/MetaBlack-Caps.eot');
+  src:  url('../../fonts/MetaBlack-Caps/MetaBlack-Caps.eot#iefix') format('embedded-opentype'),
+    url('../../fonts/MetaBlack-Caps/MetaBlack-Caps.ttf') format('truetype'),
+    url('../../fonts/MetaBlack-Caps/MetaBlack-Caps.woff') format('woff'),
+    url('../../fonts/MetaBlack-Caps/MetaBlack-Caps.svg#MetaBlack-Caps') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon/icomoon.eot');
+  src:  url('../../fonts/icomoon/icomoon.eot#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('../../fonts/icomoon/icomoon.woff') format('woff'),
+    url('../../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-remove:before {
+  content: "\f00d";
+}
+.icon-times:before {
+  content: "\f00d";
+}
+.icon-map-marker:before {
+  content: "\f041";
+}
+.icon-arrow-left:before {
+  content: "\f060";
+}
+.icon-arrow-right:before {
+  content: "\f061";
+}
+.icon-arrow-up:before {
+  content: "\f062";
+}
+.icon-arrow-down:before {
+  content: "\f063";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-navicon:before {
+  content: "\f0c9";
+}
+.icon-reorder:before {
+  content: "\f0c9";
+}
+.icon-angle-left:before {
+  content: "\f104";
+}
+.icon-angle-right:before {
+  content: "\f105";
+}
+.icon-angle-up:before {
+  content: "\f106";
+}
+.icon-angle-down:before {
+  content: "\f107";
+}
+.icon-mobile:before {
+  content: "\f10b";
+}
+.icon-mobile-phone:before {
+  content: "\f10b";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-skype:before {
+  content: "\f17e";
+}
+.icon-vk:before {
+  content: "\f189";
+}
+.icon-whatsapp:before {
+  content: "\f232";
+}
+.icon-odnoklassniki:before {
+  content: "\f263";
+}
+.icon-user-circle-o:before {
+  content: "\f2be";
+}
+.icon-telegram:before {
+  content: "\f2c6";
+}

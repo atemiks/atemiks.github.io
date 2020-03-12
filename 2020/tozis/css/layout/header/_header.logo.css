@@ -1,0 +1,42 @@
+.header-logo .logo-link {
+	display: block;
+}
+
+.header-logo .logo-img {
+	max-width: 80px;
+}
+
+@media (min-width: 576px) {
+	.header-logo .logo-img {
+		max-width: 120px;
+	}
+}
+
+@media (min-width: 768px) {
+	.header-logo .logo-img {
+		max-width: 140px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header-logo .logo-img {
+		max-width: 180px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header-logo {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.header-logo .logo-img {
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 1366px) {
+	.header-logo .logo-img {
+		max-width: 386px;
+	}
+}

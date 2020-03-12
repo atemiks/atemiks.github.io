@@ -1,0 +1,39 @@
+.cookies-box {
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 35px 15px 20px;
+	background-color: #ebfa87;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.2;
+	letter-spacing: -0.3px;
+}
+
+.cookies-box .close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 42px;
+	height: 42px;
+}
+
+
+@media (min-width: 768px) {
+	.cookies-box {
+		position: static;
+		display: block !important;
+		max-width: 275px;
+		margin: 20px auto;
+		padding: 20px 15px;
+		border-radius: 20px;
+		font-size: 15px;
+	}
+
+	.cookies-box .close {
+		display: none;
+	}
+}

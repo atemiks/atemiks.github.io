@@ -1,0 +1,23 @@
+.contact-social {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	line-height: 1;
+}
+
+.contact-social .contact-link {
+	padding: 0 3px;
+	color: inherit;
+	font-size: 26px;
+	text-decoration: none;
+}
+
+
+@media (min-width: 1200px) {
+	.contact-social {
+		line-height: inherit;
+	}
+}

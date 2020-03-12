@@ -1,0 +1,26 @@
+.modal {
+	color: #000;
+}
+
+.modal .close {
+	width: 32px;
+	height: 23px;
+	padding: 0;
+	margin: 0;
+	color: inherit;
+}
+
+.modal-content {
+	border: none;
+	border-radius: 20px;
+	background-color: #ebfa87;
+}
+
+.modal-header,
+.modal-footer {
+	border: none;
+}
+
+.modal-title {
+	color: inherit;
+}
