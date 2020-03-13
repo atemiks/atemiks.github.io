@@ -1,4 +1,24 @@
 $(document).ready(function() {
+	var body = $('body'),
+		bg0 = $('#bg0');
+
+	// offcanvas
+	function openOffcanvas() {
+		body.addClass('is-open');
+		$('#offcanvas').addClass('is-open');
+	}
+
+	function closeOffcanvas() {
+		body.removeClass('is-open');
+		$('#offcanvas').removeClass('is-open');
+	}
+
+
+	$('.offcanvas-toggle').on('click', openOffcanvas);
+
+	$('#offcanvas .close').on('click', closeOffcanvas);
+
+
 	// collapse catalog
 	$('.catalog-toggle').on('click', function(e) {
 		var target = $(e.currentTarget);
@@ -24,5 +44,11 @@ $(document).ready(function() {
 		var target = $(e.currentTarget);
 		var container = target.closest('.cookies-box');
 		container.css('display', 'none');
+	});
+
+
+	// bg0
+	$('#bg0').on('click', function() {
+		closeOffcanvas();
 	})
 })

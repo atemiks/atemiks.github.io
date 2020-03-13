@@ -13,6 +13,10 @@ body {
 	line-height: 1.66;
 }
 
+body {
+	padding-top: 52px;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -31,6 +35,27 @@ body {
 	max-width: 100%;
 }
 
+
+#bg0 {
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.85);
+	transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+body.is-open #bg0 {
+	opacity: 1;
+	visibility: visible;
+}
+
+
 @media (min-width: 576px) {
 	html,
 	body {
@@ -38,7 +63,17 @@ body {
 	}
 }
 
+@media (min-width: 768px) {
+	body {
+		padding-top: 66px;
+	}
+}
+
 @media (min-width: 992px) {
+	body {
+		padding-top: 0;
+	}
+
 	.container {
 		padding-left: 40px;
 		padding-right: 40px;
