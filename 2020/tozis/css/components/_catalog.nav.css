@@ -1,5 +1,4 @@
-.catalog-toggle {
-	cursor: pointer;
+.catalog-title {
 	display: block;
 	width: 100%;
 	margin: 0 0 20px;
@@ -15,7 +14,11 @@
 	text-align: center;
 }
 
-.catalog-toggle:focus {
+.catalog-title.catalog-toggle {
+	cursor: pointer;
+}
+
+.catalog-title.catalog-toggle:focus {
 	outline: none;
 }
 
@@ -104,7 +107,7 @@
 }
 
 @media (min-width: 768px) {
-	.catalog-toggle {
+	.catalog-title {
 		margin: 0;
 	}
 
@@ -118,7 +121,7 @@
 		text-align: center;
 	}
 
-	.catalog-toggle {
+	.catalog-title {
 		padding: 22px 15px;
 	}
 }

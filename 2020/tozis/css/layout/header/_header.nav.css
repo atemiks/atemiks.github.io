@@ -13,14 +13,14 @@
 
 .header-nav .nav-item {
 	position: relative;
-	margin: 0 0 0 2px;
+	margin: 0 8px;
 }
 
 .header-nav .nav-item:not(:last-child)::after {
 	content: '';
 	position: absolute;
 	top: 50%;
-	right: -2px;
+	right: -9px;
 	height: 34px;
 	border-right: 2px solid #000;
 	transform: translateY(-50%);
@@ -28,7 +28,8 @@
 
 .header-nav .nav-link {
 	display: block;
-	padding: 10px 8px;
+	position: relative;
+	padding: 10px 0;
 	border-radius: 3px;
 	color: #000000;
 	font-size: 16px;
@@ -37,16 +38,39 @@
 	text-decoration: none;
 }
 
+.header-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    border-bottom: 3px solid #6c851c;
+    transition: .25s;
+}
+
 .header-nav .nav-link:hover {
-	background-color: #6c851c;
-	color: #fff;
+	color: #6c851c;
 	text-decoration: none;
+}
+
+.header-nav .nav-link:hover::after {
+    width: 100%;
 }
 
 
 @media (min-width: 992px) {
+	.header-nav .nav-item {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.header-nav .nav-item:not(:last-child)::after {
+		right: -16px;
+	}
+
 	.header-nav .nav-link {
-		padding: 10px 15px;
+		padding: 10px 0;
 		font-size: 18px;
 	}
 }
