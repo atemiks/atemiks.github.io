@@ -75,13 +75,15 @@ body.is-open #bg0 {
 	}
 
 	.container {
-		padding-left: 40px;
-		padding-right: 40px;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
 
 @media (min-width: 1200px) {
 	.container {
-		max-width: 1580px;
+		max-width: 1200px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }

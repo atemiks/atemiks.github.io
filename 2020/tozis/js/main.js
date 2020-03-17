@@ -2,7 +2,7 @@ $(document).ready(function() {
 	var body = $('body'),
 		bg0 = $('#bg0');
 
-	// offcanvas
+	/* OFFCANVAS */
 	function openOffcanvas() {
 		body.addClass('is-open');
 		$('#offcanvas').addClass('is-open');
@@ -18,6 +18,15 @@ $(document).ready(function() {
 
 	$('#offcanvas .close').on('click', closeOffcanvas);
 
+
+	/* HERO SLIDER */
+	$('.hero-slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+
+	/* CATALOG */
 
 	// collapse catalog
 	$('.catalog-toggle').on('click', function(e) {
@@ -39,7 +48,7 @@ $(document).ready(function() {
 	});
 
 
-	// cookies
+	/* COOKIES */ 
 	$('.cookies-box .close').on('click', function(e) {
 		var target = $(e.currentTarget);
 		var container = target.closest('.cookies-box');
@@ -47,7 +56,7 @@ $(document).ready(function() {
 	});
 
 
-	// bg0
+	/* BG0 */
 	$('#bg0').on('click', function() {
 		closeOffcanvas();
 	})

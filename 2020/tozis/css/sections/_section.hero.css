@@ -1,15 +1,33 @@
 .section-hero {
 	padding-top: 0;
-	padding-bottom: 45%;
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: cover;
+	padding-bottom: 0;
+}
+
+.hero-slider {
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero-slider .slide-item img {
+	margin: auto;
+}
+
+.hero-slider .slick-prev {
+	left: 0px;
+}
+
+.hero-slider .slick-next {
+	right: 0px;
 }
 
 
-@media (min-width: 576px) {
-	.section-hero {
-		padding-top: 0;
-		padding-bottom: 37%;
+@media (min-width: 768px) {
+	.hero-slider .slick-prev {
+		left: 25px;
+	}
+
+	.hero-slider .slick-next {
+		right: 25px;
 	}
 }
