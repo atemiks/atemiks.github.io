@@ -161,6 +161,17 @@
 	color: inherit;
 }
 
+
+.c26-emergency .c26-title[data-aos=fade-right],
+.c26-emergency .c26-description[data-aos=fade-right] {
+	transform: translate(-20px);
+}
+
+.c26-emergency .c26-title.aos-animate,
+.c26-emergency .c26-description.aos-animate {
+	transform: translate(0);
+}
+
 .c26-emergency .c26-description {
 	max-width: 345px;
 }
