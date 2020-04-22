@@ -1,0 +1,459 @@
+@media (max-width: 1440px) {
+	.b9-emergency::before {
+		box-shadow: -288px 172px 100px -28.8px #210f0f inset;
+	}
+
+
+	@keyframes b9-alert-background {
+		50% {
+			box-shadow: -340px 172px 100px -28.8px #210f0f inset;
+		}
+	}
+}
+
+@media (max-width: 1280px) {
+	.b9-screen-video {
+		height: 100%;
+		width: auto;
+	}
+}
+
+@media (max-width: 1199px) {
+	/* section design */ 
+	.b9-design .b9-media-container {
+		margin-top: -80px;
+	}
+	/* section design end */ 
+
+	/* section keyboard */ 
+	.b9-keyboard .b9-typography-container-left .b9-title {
+		font-size: 34px;
+	}
+	/* section keyboard end */ 
+
+	/* section flashlight */ 
+	.b9-flashlight .b9-media-figure[data-aos=fade-down] {
+		transform: translateY(100px);
+	}
+
+	.b9-flashlight .b9-media-figure[data-aos^=fade][data-aos^=fade].aos-animate {
+		transform: translateY(0);
+	}
+	/* section flashlight end */ 
+}
+
+@media (max-width: 1024px) {
+	.b9-title {
+		margin: 0 0 20px;
+	}
+}
+
+
+@media (max-width: 991px) {
+	.b9-title,
+	.b9-subtitle {
+		font-size: 44px;
+	}
+
+	.b9-design,
+	.b9-screen,
+	.b9-keyboard,
+	.b9-speakers,
+	.b9-camera,
+	.b9-flashlight,
+	.b9-emergency {
+		height: 540px;
+	}
+
+	/* section design */ 
+	.b9-design {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.b9-design .b9-media-container {
+		margin-top: -60px;
+	}
+
+	.b9-design .b9-media-figure {
+		max-width: 648px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* section design end */ 
+
+	/* section screen */ 
+	.b9-screen {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.b9-screen .b9-media-figure {
+		max-width: 600px;
+	}
+	/* section screen end */ 
+
+	/* section keyboard end */ 
+	.b9-keyboard .content-wrapper {
+		display: block;
+	}
+
+	.b9-keyboard .b9-typography-container-left,
+	.b9-keyboard .b9-typography-container-right {
+		float: left;
+	}
+
+	.b9-keyboard .b9-typography-container-left {
+		margin-top: 40px;
+	}
+
+	.b9-keyboard .b9-description {
+		max-width: 90%;
+		margin-left: auto;
+		text-align: right;
+	}
+
+	.b9-keyboard .b9-media-container {
+		float: right;
+	}
+
+	.b9-keyboard .b9-media-figure {
+		max-width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* section keyboard end */ 
+
+	/* section speakers */ 
+	.b9-speakers .b9-typography-container {
+		padding-bottom: 40px;
+	}
+	
+	.b9-speakers .b9-title {
+		margin-bottom: 20px;
+	}
+
+	.b9-speakers .b9-media-figure {
+		height: 510px;
+	}
+	/* section speakers end */ 
+
+	/* section flashlight */ 
+	.b9-flashlight {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.b9-flashlight .b9-typography-container {
+		-webkit-display: flex;
+		-ms-display: flex;
+		display: flex;
+		-webkit-align-items: flex-end;
+		-ms-align-items: flex-end;
+		align-items: flex-end;
+		margin-bottom: 25px;
+	}
+
+	.b9-flashlight .b9-title {
+		margin: 0;
+		flex: 0 0 50%;
+		width: 50%;
+		max-width: 50%;
+		font-size: 40px;
+	}
+
+	.b9-flashlight .b9-description {
+		margin: 0;
+		flex: 0 0 45%;
+		width: 45%;
+		max-width: 45%;
+	}
+
+
+	.b9-flashlight .b9-media-figure {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.b9-flashlight .b9-media-figure .b9-media {
+		max-width: 100%;
+	}
+	/* section flashlight end */ 
+
+	/* section emergency */ 
+	.b9-emergency .b9-media-figure {
+		height: 510px;
+	}
+	/* section emergency end */ 
+
+	/* section camera */ 
+
+	.b9-camera .b9-media-figure {
+		height: 480px;
+	}
+	/* section camera end */ 
+
+
+	/* section  features */
+	.b9-features-grid .b9-feature-item {
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+	/* section  features end */
+}
+
+@media (max-width: 767px) {
+	.b9-landing .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.b9-landing .content-inner {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+
+	.b9-title,
+	.b9-subtitle {
+		margin: 0 0 15px;
+		font-size: 30px !important;
+		line-height: 1.35;
+	}
+
+	.b9-description {
+		margin: 0 0 20px;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+	.b9-design,
+	.b9-screen,
+	.b9-keyboard,
+	.b9-speakers,
+	.b9-camera,
+	.b9-flashlight,
+	.b9-emergency {
+		height: auto;
+	}
+
+	/* section design */
+	.b9-design {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+
+	.b9-design .b9-media-container {
+		margin-top: -10px;
+	}
+
+	.b9-design .b9-media-figure {
+		max-width: 300px;
+		height: 180px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.b9-design .b9-media-figure .b9-media {
+		position: relative;
+		left: 50%;
+		max-width: 130%;
+		transform: translateX(-50%);
+	}
+	/* section design end */
+
+	/* section screen */
+	.b9-screen {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.b9-screen .b9-media-figure {
+		width: 540px;
+		max-width: 540px;
+	}
+	/* section screen end */
+
+
+	/* section keyboard */
+	.b9-keyboard {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.b9-keyboard .content-wrapper {
+		-webkit-display: flex;
+		-ms-display: flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.b9-keyboard .b9-typography-container-left,
+	.b9-keyboard .b9-typography-container-right,
+	.b9-keyboard .b9-typography-container-left .b9-title,
+	.b9-keyboard .b9-media-container {
+		float: none;
+		text-align: left;
+	}
+
+	.b9-keyboard .b9-typography-container-left {
+		margin: 0;
+	}
+
+	.b9-keyboard .b9-title,
+	.b9-keyboard .b9-description {
+		max-width: 375px;
+		margin-left: 0;
+		margin-right: 0;
+		text-align: left;
+	}
+
+	.b9-keyboard .b9-typography-container-left {
+		order: 0;
+	}
+	.b9-keyboard .b9-typography-container-right {
+		order: 1;
+	}
+	.b9-keyboard .b9-media-container {
+		order: 2;
+	}
+
+	.b9-keyboard .b9-media-figure {
+		max-width: 300px;
+	}
+	/* section keyboard end */
+
+	/* section speakers */
+	.b9-speakers {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.b9-speakers .content-wrapper {
+		-webkit-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.b9-speakers .b9-media-figure {
+		max-width: 300px;
+		height: 320px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* section speakers end */
+
+	/* section camera */
+	.b9-camera {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.b9-camera .content-wrapper {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.b9-camera .b9-media-figure {
+		max-width: 300px;
+		height: 320px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* section camera end */
+
+	/* section flashlight */
+	.b9-flashlight {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.b9-flashlight .b9-typography-container {
+		-webkit-display: block;
+		-ms-display: block;
+		display: block;
+	}
+
+	.b9-flashlight .b9-title,
+	.b9-flashlight .b9-description {
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.b9-flashlight .b9-media-figure {
+		max-width: 300px;
+		height: 180px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.b9-flashlight .b9-media-figure .b9-media {
+		position: relative;
+		left: 50%;
+		max-width: 130%;
+		transform: translateX(-50%);
+	}
+	/* section flashlight end */
+
+	/* section emergency */
+	.b9-emergency {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background: linear-gradient(120deg, rgb(35, 14, 14) 80%,rgba(14,123,166,1) 100%,rgba(16,212,242,1) 100%);
+	}
+
+	.b9-emergency::before {
+		width: 100vw;
+	}
+
+	.b9-emergency .b9-media-figure {
+		max-width: 260px;
+		height: 460px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.b9-emergency .b9-media-figure .b9-media {
+		position: relative;
+		top: 0;
+		bottom: auto;
+	}
+	/* section emergency end */
+
+	/* section features */
+	.b9-features-grid .b9-feature-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	/* section  features end */
+}
+
+@media (max-width: 375px) {
+	.b9-title {
+		font-size: 24px !important;
+	}
+
+	/* section  features */
+	.b9-features-grid .b9-feature-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	/* section  features end */
+}
+
+@media (min-width: 1200px) {
+	.b9-landing  .flex-lg-nowrap {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+	}
+}
