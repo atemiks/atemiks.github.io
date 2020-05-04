@@ -134,6 +134,19 @@ $(document).ready(function () {
         input.val(this.value);
     });
 
+    // clear sum input on focus
+    var currentInputValue = $('#range-sum-input').val();
+    $('#range-sum-input').on("focus", function () {
+        currentInputValue = $(this).val();
+        $(this).val('');
+    });
+
+    $('#range-sum-input').on("blur", function () {
+        if (!this.value.length) {
+            $(this).val(currentInputValue).divide();
+        }
+    });
+
 
     // get data from sliders
     $('.range-sum-value-left').html($('#range-sum-slider').attr('min')).divide().append(' <span class="rouble">руб.</span>');
