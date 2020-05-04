@@ -1,23 +1,23 @@
 .section-about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-about.section-about-gallery {
     position: relative;
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.section-about .section-typography-container {
+.section-about-gallery .section-typography-container {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.section-about .section-media-container {
+.section-about-gallery .section-media-container {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #2D2C45;
-}
-
-.section-about .section-aside-container {
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 
@@ -44,7 +44,7 @@
 }
 
 @media (min-width: 576px) {
-    .section-about .section-aside-container {
+    .section-about {
         padding-top: 40px;
         padding-bottom: 40px;
     }
@@ -55,18 +55,23 @@
 }
 
 @media (min-width: 768px) {
-    .section-about .section-aside-container {
+    .section-about {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section-about-gallery .section-aside-container {
         padding-top: 60px;
         padding-bottom: 60px;
     }
 }
 
 @media (min-width: 992px) {
-    .section-about {
+    .section-about-gallery {
         background: linear-gradient(to right, rgba(255,255,255,1) 58.333333%,rgba(45,44,69,1) 58.333333%,rgba(45,44,69,1) 100%);
     }
 
-    .section-about .section-media-container {
+    .section-about-gallery .section-media-container {
         padding-top: 70px;
         padding-bottom: 70px;
         background-color: transparent;
