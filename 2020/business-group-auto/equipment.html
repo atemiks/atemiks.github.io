@@ -163,7 +163,7 @@
                                     </div>
                                 </div>
 
-                                <div class="custom-control custom-checkbox">
+                                <div class="custom-control custom-checkbox custom-checkbox-outline">
                                     <input type="checkbox" class="custom-control-input" id="formHeroPrivacy" checked
                                         required>
                                     <label class="custom-control-label" for="formHeroPrivacy">Нажимая на кнопку
@@ -201,7 +201,7 @@
                                         <input class="range-field range-sum-input form-control" id="range-sum-input"
                                             type="text" value="500000" min="100000" max="10000000">
                                     </div>
-                                    <div class="range-field-icon d-none">₽</div>
+                                    <div class="range-field-icon d-none"><span class="rouble">руб.</span></div>
                                 </div>
 
                                 <div class="range-slider-box range-sum-slider-wrap">
@@ -250,9 +250,10 @@
                             </div>
 
                             <div
-                                class="row d-flex flex-column flex-sm-row flex-md-column flex-lg-row align-items-sm-center align-items-md-start align-items-lg-center">
+                                class="row d-none d-md-flex flex-column flex-sm-row flex-md-column flex-lg-row align-items-sm-center align-items-md-start align-items-lg-center">
                                 <div class="col-auto">
-                                    <button type="button" class="btn btn-lg">Получить деньги</button>
+                                    <button type="button" class="btn btn-lg" data-toggle="modal"
+                                        data-target="#modalContact">Получить деньги</button>
                                 </div>
 
                                 <div class="col">
@@ -265,7 +266,8 @@
                         <div class="section-details-container col-md-5 col-lg-5 offset-md-1">
                             <div class="calc-result-box">
                                 <div class="calc-headline">Ежемесячный платеж</div>
-                                <div class="calc-value" id="calc-payment-month">127 265 ₽</div>
+                                <div class="calc-value" id="calc-payment-month">127 265 <span class="rouble">руб.</span>
+                                </div>
                             </div>
 
                             <ul class="calc-details-list reset-list">
@@ -285,7 +287,8 @@
                                             <div class="calc-headline">Сумма к выплате</div>
                                         </div>
                                         <div class="col-sm-6 col-md-12 col-lg-6">
-                                            <div class="calc-detail-value" id="calc-total">2 980 900 ₽</div>
+                                            <div class="calc-detail-value" id="calc-total">2 980 900 <span
+                                                    class="rouble">руб.</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -310,6 +313,14 @@
                                     </div>
                                 </div>
                             </ul>
+
+                            <div class="d-md-none">
+                                <button type="button" class="btn btn-lg" data-toggle="modal"
+                                    data-target="#modalContact">Получить деньги</button>
+
+                                <div class="calc-hint">Расчёты носят информационный характер. <br>
+                                    Точные суммы определяются по результатам заявки.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -833,7 +844,7 @@
                                     </div>
 
                                     <div class="col-sm">
-                                        <div class="custom-control custom-checkbox">
+                                        <div class="custom-control custom-checkbox custom-checkbox-outline">
                                             <input type="checkbox" class="custom-control-input"
                                                 id="form-contact-privacy" checked required>
                                             <label class="custom-control-label" for="form-contact-privacy">Я даю
@@ -1216,7 +1227,7 @@
 
                             <div class="col-sm">
                                 <div class="form-group">
-                                    <div class="custom-control custom-checkbox">
+                                    <div class="custom-control custom-checkbox custom-checkbox-outline">
                                         <input type="checkbox" class="custom-control-input"
                                             id="formModalCallbackPrivacy" checked required>
                                         <label class="custom-control-label" for="formModalCallbackPrivacy">Я даю
@@ -1277,7 +1288,7 @@
 
                             <div class="col-sm">
                                 <div class="form-group">
-                                    <div class="custom-control custom-checkbox">
+                                    <div class="custom-control custom-checkbox custom-checkbox-outline">
                                         <input type="checkbox" class="custom-control-input" id="formModalContactPrivacy"
                                             checked required>
                                         <label class="custom-control-label" for="formModalContactPrivacy">Я даю

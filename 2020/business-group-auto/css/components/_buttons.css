@@ -82,6 +82,11 @@
     text-decoration: none;
 }
 
+.btn-link:focus {
+    outline: none;
+    text-decoration: none;
+}
+
 
 .btn-more {
     cursor: pointer;
@@ -109,5 +114,10 @@
 
 .btn-more:hover {
     color: #231D1A;
+    text-decoration: none;
+}
+
+.btn-more:focus {
+    outline: none;
     text-decoration: none;
 }

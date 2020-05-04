@@ -136,8 +136,8 @@ $(document).ready(function () {
 
 
     // get data from sliders
-    $('.range-sum-value-left').html($('#range-sum-slider').attr('min')).divide().append(' ₽');
-    $('.range-sum-value-right').html($('#range-sum-slider').attr('max')).divide().append(' ₽');
+    $('.range-sum-value-left').html($('#range-sum-slider').attr('min')).divide().append(' <span class="rouble">руб.</span>');
+    $('.range-sum-value-right').html($('#range-sum-slider').attr('max')).divide().append(' <span class="rouble">руб.</span>');
 
     $('.range-time-value-left').html($('#range-time-slider').attr('min')).append(' мес.');
     $('.range-time-value-right').html($('#range-time-slider').attr('max')).append(' мес.');
