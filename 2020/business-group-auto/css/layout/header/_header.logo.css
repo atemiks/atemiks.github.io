@@ -1,0 +1,21 @@
+.header-logo-box {
+    max-width: 60px;
+}
+
+@media (min-width: 768px) {
+    .header-logo-box {
+        max-width: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-logo-box {
+        max-width: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-logo-box {
+        max-width: none;
+    }
+}

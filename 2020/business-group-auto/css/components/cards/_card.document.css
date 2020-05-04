@@ -1,0 +1,124 @@
+.card-document {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    padding-bottom: 104%;
+    background-color: #fff;
+    color: #231D1A;
+    text-decoration: none;
+}
+
+.card-document-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card-document-title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 15px;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    word-break: break-word;
+}
+
+.card-document-type {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: rgba(35, 29, 26, 0.5);
+}
+
+.card-document-download {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #F04637;
+}
+
+.card-document:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.card-document:hover .card-document-bg path {
+    fill: #F2453B;
+    stroke: #F2453B;
+}
+
+.card-document:hover .card-document-type {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card-document:hover .card-document-download {
+    color: #fff;
+}
+
+
+@media (min-width: 576px) {
+    .card-document {
+        max-width: 172px;
+        padding-bottom: 179px;
+    }
+
+    .card-document-title {
+        top: 20px;
+        left: 15px;
+        right: 15px;
+        font-size: 15px;
+    }
+
+    .card-document-type {
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .card-document-download {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-document-title {
+        top: 25px;
+        left: 20px;
+        right: 20px;
+        font-size: 15px;
+    }
+
+    .card-document-type {
+        left: 20px;
+        bottom: 17px;
+        font-size: 14px;
+    }
+
+    .card-document-download {
+        right: 20px;
+        bottom: 17px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-document {
+        max-width: 205px;
+        padding-bottom: 210px;
+    }
+
+    .card-document-title {
+        word-break: normal;
+    }
+}

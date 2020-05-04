@@ -1,0 +1,134 @@
+.nav-tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin: 15px -15px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-tabs .nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-tabs .nav-item:first-child {
+    padding-left: 5px;
+}
+
+.nav-tabs .nav-item:last-child {
+    padding-right: 5px;
+}
+
+.nav-tabs .nav-link {
+    padding: 20px 0;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    color: rgba(35, 29, 26, 0.5);
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom-color: #F04637;
+    color: #F04637;
+}
+
+.tab-content {
+    padding-top: 25px;
+}
+
+.tab-figure {
+    position: relative;
+    max-width: 320px;
+    max-height: 420px;
+    margin: 0 auto;
+}
+
+.tab-figure img {
+    max-height: inherit;
+}
+
+@media (min-width: 576px) {
+    .nav-tabs {
+        margin: 20px -30px 0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .nav-tabs .nav-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-tabs {
+        margin: 20px 0 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .nav-tabs .nav-item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tab-content {
+        padding-top: 30px;
+    }
+
+    .tab-figure img {
+        float: right;
+        width: 60vw;
+        max-width: 60vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-tabs {
+        overflow: visible;
+    }
+
+    .tab-content {
+        padding-top: 40px;
+    }
+
+    .tab-figure {
+        max-width: 100%;
+    }
+
+    .tab-figure img {
+        float: none;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-tabs {
+        margin: 30px 0 0;
+    }
+
+    .nav-tabs .nav-item {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+
+    .tab-content {
+        padding-top: 60px;
+    }
+}

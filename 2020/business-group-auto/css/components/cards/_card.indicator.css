@@ -1,0 +1,53 @@
+.card-indicator {
+    max-width: 530px;
+}
+
+.card-indicator-thumbnail {
+    flex: 0 0 80px;
+    max-width: 80px;
+    width: 80px;
+    margin-right: 15px;
+}
+
+.card-indicator-value {
+    margin: 5px 0;
+    color: #F04637;
+}
+
+.card-indicator-description {
+    max-width: 80%;
+}
+
+@media (min-width: 576px) {
+    .card-indicator-thumbnail {
+        flex: 0 0 100px;
+        max-width: 100px;
+        width: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-indicator-value {
+        margin: 15px 0;
+    }
+
+    .card-indicator-description {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-indicator-thumbnail {
+        flex: 0 0 160px;
+        max-width: 160px;
+        width: 160px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-indicator-thumbnail {
+        flex: 0 0 230px;
+        max-width: 230px;
+        width: 230px;
+    }
+}

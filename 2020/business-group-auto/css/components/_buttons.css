@@ -1,0 +1,113 @@
+.btn {
+    cursor: pointer;
+    -webkit-display: inline-flex;
+    -ms-display: inline-flex;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 14px 20px;
+    border: 1px solid #F04637;
+    border-radius: 10px;
+    background-color: #F04637;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.btn i {
+    margin-right: 9px;
+}
+
+.btn:hover {
+    border-color: #E03627;
+    background-color: #E03627;
+    color: #fff;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-sm {
+    padding: 11px 20px;
+    font-size: 14px;
+}
+
+.btn-lg {
+    min-width: 190px;
+    border-radius: 5px;
+}
+
+.btn-fluid {
+    width: 100%;
+}
+
+.btn-outline {
+    background-color: transparent; 
+    border-color: rgba(35, 29, 26, 0.15);
+    color: #231D1A;
+}
+
+.btn-outline:hover {
+    background-color: transparent; 
+    border-color: rgba(35, 29, 26, 0.4);
+    color: #231D1A;
+}
+
+.btn-outline.btn-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-link {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: #F04637;
+    transition: color 300ms ease;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: #D42A1A;
+    text-decoration: none;
+}
+
+
+.btn-more {
+    cursor: pointer;
+    -webkit-display: inline-flex;
+    -ms-display: inline-flex;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(35, 29, 26, 0.5);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-more i {
+    margin: 0 15px;
+    color: #231D1A;
+    font-size: 80%;
+}
+
+.btn-more:hover {
+    color: #231D1A;
+    text-decoration: none;
+}

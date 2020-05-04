@@ -1,0 +1,26 @@
+.footer-box {
+    background-color:  #2D2C45;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footer-main {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+
+@media (min-width: 576px) {
+    .footer-main {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-main {
+        padding-top: 60px;
+        padding-bottom: 35px;
+    }
+}

@@ -1,0 +1,137 @@
+.card-service {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 135px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0px 4px 30px rgba(225, 225, 228, 0.8);
+    background-color: #fff;
+    color: #231D1A;
+    text-decoration: none;
+    transition: background-color 300ms ease;
+}
+
+.card-service::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: rgba(48, 40, 79, 0.4);
+}
+
+.card-service-thumbnail {
+    position: relative;
+    margin: 0 0 15px;
+    padding-bottom: 80px;
+}
+
+.card-service-thumbnail .card-service-media {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 55px;
+    max-height: 50px;
+}
+
+.card-service-thumbnail .card-service-media path {
+    transition: fill 300ms ease;
+}
+
+.card-service-title,
+.card-service-description {
+    word-break: break-word;
+}
+
+.card-service-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.card-service:hover {
+    background-color: #2D2C45;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-service:hover .card-service-media path {
+    fill: #fff;
+}
+
+/* highlight */
+.card-service.highlight {
+    padding: 10px;
+    background: #E34235;
+    color: #fff;
+}
+
+.card-service.highlight::before {
+    display: none;
+}
+/* highlight end */
+
+@media (min-width: 576px) {
+    .card-service {
+        min-height: 180px;
+        padding: 20px 20px 15px;
+    }
+
+    .card-service-thumbnail {
+        padding-bottom: 110px;
+    }
+
+    /* highlight */
+    .card-service.highlight {
+        min-height: 55px;
+        padding: 20px 20px 20px;
+    }
+    /* highlight end */
+
+    /* explain */
+    .card-service-explain  .card-service-thumbnail {
+        margin-bottom: 15px;
+        padding-bottom: 90px;
+    }
+    /* explain end */
+}
+
+@media (min-width: 992px) {
+    .card-service,
+    .card-service.highlight {
+        min-height: 235px;
+        padding: 30px 30px 15px;
+    }
+    
+    .card-service::before {
+        top: 25px;
+        right: 25px;
+        font-size: 16px;
+    }
+
+    .card-service-thumbnail {
+        position: relative;
+        margin: 0 0 25px;
+        padding-bottom: 130px;
+    }
+
+    .card-service-title {
+        font-size: 14px;
+    }
+
+    /* explain */
+    .card-service-explain {
+        padding: 30px 5px 15px 25px;
+    }
+    /* explain end */
+}
+
+@media (min-width: 1200px) {
+    .card-service-title,
+    .card-service-description {
+        word-break: normal;
+    }
+}

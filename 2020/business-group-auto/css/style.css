@@ -1,0 +1,63 @@
+@import './components/_font.css';
+@import './components/_base.css';
+@import './components/_forms.css';
+@import './components/_buttons.css';
+@import './components/_lists.css';
+@import './components/_logo.css';
+@import './components/_nav.css';
+@import './components/_nav-tabs.css';
+@import './components/_breadcrumb.css';
+@import './components/_pagination.css';
+@import './components/_slick.css';
+@import './components/_range.css';
+@import './components/_modal.css';
+@import './components/_offcanvas.css';
+
+/* header */
+@import './layout/header/_header.css';
+@import './layout/header/_header.logo.css';
+@import './layout/header/_header.actions.css';
+@import './layout/header/_header.address.css';
+@import './layout/header/_header.nav.css';
+@import './layout/header/_header.contact.css';
+/* header end */
+
+/* cards */
+@import './components/cards/_card.advantage.css';
+@import './components/cards/_card.detail.css';
+@import './components/cards/_card.document.css';
+@import './components/cards/_card.indicator.css';
+@import './components/cards/_card.news.css';
+@import './components/cards/_card.service.css';
+@import './components/cards/_card.step.css';
+/* cards end */
+
+/* sections */
+@import './sections/_section.hero.css';
+@import './sections/_section.about.css';
+@import './sections/_section.advantages.css';
+@import './sections/_section.details.css';
+@import './sections/_section.indicators.css';
+@import './sections/_section.calc.css';
+@import './sections/_section.contact.css';
+@import './sections/_section.documents.css';
+@import './sections/_section.join.css';
+@import './sections/_section.news.css';
+@import './sections/_section.services.css';
+@import './sections/_section.service.css';
+@import './sections/_section.steps.css';
+/* sections end */
+
+/* pages */
+@import './pages/article/_page.article.css';
+/* pages end */
+
+/* footer */
+@import './layout/footer/_footer.css';
+@import './layout/footer/_footer.logo.css';
+@import './layout/footer/_footer.nav.css';
+@import './layout/footer/_footer.contact.css';
+@import './layout/footer/_footer.address.css';
+@import './layout/footer/_footer.requisites.css';
+@import './layout/footer/_footer.copyright.css';
+/* footer end */

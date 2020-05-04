@@ -1,0 +1,30 @@
+.card-detail-thumbnail {
+    margin-bottom: 10px;
+}
+
+.card-detail-title {
+    margin: 0 0 5px;
+}
+
+@media (min-width: 576px) {
+    .card-detail-thumbnail {
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .card-detail-thumbnail {
+        margin-bottom: 20px;
+    }
+
+    .card-detail-title {
+        margin: 0 0 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-detail-thumbnail {
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,127 @@
+.section-contact {
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #F1F0F5;
+}
+
+.section-contact .section-typography-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-box {
+    position: relative;
+    z-index: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 30px 15px 10px;
+    background-color: #F2453B;
+}
+
+.contact-box::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100%;
+    background-color: #F2453B;
+}
+
+.contact-block {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.contact-block .contact-title {
+    margin: 0 0 5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-block .contact-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-block .contact-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.map-box {
+    position: relative;
+    z-index: 1;
+    flex: 0 0 auto;
+    height: 290px;
+    margin-left: -15px;
+    margin-right: -15px;
+    background-color: #2D2C45;
+}
+
+.map-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100%;
+    background-color: #2D2C45;
+}
+
+.map-box #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 576px) {
+    .section-contact .section-typography-container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .contact-box,
+    .map-box {
+        margin-left: -30px;
+        margin-right: -30px;
+        
+    }
+
+    .contact-box {
+        padding: 40px 30px 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-contact .section-typography-container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .contact-box,
+    .map-box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-box {
+        padding: 60px 40px 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-box {
+        padding: 95px 60px 30px;
+    }
+}

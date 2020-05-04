@@ -1,0 +1,122 @@
+.modal-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 0;
+    background-color: #F1F0F5;
+}
+
+.modal .close {
+    opacity: 1 !important;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    -webkit-display: flex;
+    -ms-display: flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.modal .close:hover {
+    color: #F04637;
+}
+
+.modal .close:focus {
+    outline: none;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.modal-header {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: none;
+}
+
+.modal-label {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #F04637;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.27;
+}
+
+.modal-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.modal-backdrop {
+    background: rgba(45, 44, 69, 1);
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 480px;
+    }
+
+    .modal-dialog.modal-sm {
+        max-width: 370px;
+    }
+
+    .modal-content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        max-width: 570px;
+    }
+
+    .modal-dialog.modal-sm {
+        max-width: 370px;
+    }
+
+    .modal-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}

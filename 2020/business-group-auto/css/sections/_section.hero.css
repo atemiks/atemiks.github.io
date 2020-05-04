@@ -1,0 +1,33 @@
+.section-hero {
+    overflow: hidden;
+}
+
+.section-hero .breadcrumb {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-title {
+    margin: 0 0 0.8em;
+}
+
+.form-hero {
+    max-width: 450px;
+}
+
+@media (min-width: 576px) {
+    .section-hero .container {
+        position: relative;
+    }
+
+    .section-hero .section-typography-container {
+        position: static;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-hero .breadcrumb-navigation {
+        position: absolute;
+        top: 0;
+    }
+}
