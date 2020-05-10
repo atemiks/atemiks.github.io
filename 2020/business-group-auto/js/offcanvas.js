@@ -5,11 +5,13 @@ let offcanvas = $('#offcanvas'),
     bg0 = $('#bg0');
 
 function openOffcanvas() {
+    $('body').css('overflow', 'hidden');
     $(offcanvas).addClass('visible');
     $(bg0).addClass('visible');
 }
 
 function closeOffcanvas() {
+    $('body').css('overflow', 'visible');
     $(offcanvas).removeClass('visible');
     $(bg0).removeClass('visible');
 }
@@ -27,6 +29,10 @@ $(function () {
 
             $(target).toggleClass('active');
             $(dropdown).slideToggle();
-        })
+        });
+
+        $(offcanvas).find('.link-smooth').on('click', function () {
+            closeOffcanvas();
+        });
     })
 })
