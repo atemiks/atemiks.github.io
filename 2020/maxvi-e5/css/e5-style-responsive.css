@@ -510,11 +510,13 @@
 	}
 
 	.e5-display .e5-title {
-		top: 280px;
+		top: 300px;
+		left: 50px;
 	}
 
 	.e5-display .e5-description {
-		top: 360px;
+		top: 380px;
+		left: 50px;
 	}
 
 	.e5-display .e5-media-figure {
@@ -533,11 +535,11 @@
 	}
 
 	.e5-keyboard .e5-title {
-		top: 40px;
+		top: 120px;
 	}
 
 	.e5-keyboard .e5-description {
-		top: 120px;
+		top: 200px;
 	}
 
 	.e5-keyboard .e5-media-figure {
@@ -557,6 +559,27 @@
 		max-width: 50%;
 	}
 	/* section  features end */
+}
+
+@media (max-width: 480px) {
+	.e5-display .e5-title {
+		top: 250px;
+		left: 15px;
+	}
+
+	.e5-display .e5-description {
+		top: 330px;
+		left: 15px;
+		max-width: 200px;
+	}
+
+	.e5-keyboard .e5-title {
+		top: 60px;
+	}
+
+	.e5-keyboard .e5-description {
+		top: 140px;
+	}
 }
 
 @media (max-width: 350px) {
