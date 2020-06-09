@@ -131,6 +131,12 @@
 	margin: 0 auto;
 }
 
+.e5-phone-figure.is-fixed {
+	position: fixed !important;
+	z-index: 99;
+}
+
+
 .e5-phone-figure .e5-phone {
 	width: 252px;
 	height: 470px;
@@ -153,7 +159,63 @@
 	top: 318px;
 	left: 96px;
 }
+
+.e5-dock-figure {
+	position: relative;
+	width: 523px;
+	height: 526px;
+}
+
+.e5-dock-figure .e5-media.layer-1,
+.e5-dock-figure .e5-media.layer-2 {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
 /* default phone end */
+
+/* animation phone */
+.e5-animation-wrapper {
+	position: relative;
+}
+
+.e5-animation-wrapper .js-e5-phone-figure {
+	position: absolute;
+	z-index: 99;
+	top: 95px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.e5-animation-wrapper .js-e5-phone-figure[data-aos=fade-up] {
+	transform: translate(-50%, 100px);
+}
+
+.e5-animation-wrapper .js-e5-phone-figure.aos-animate {
+	transform: translate(-50%, 0);
+}
+
+.e5-animation-wrapper .js-e5-dock-figure {
+	position: absolute;
+	z-index: 100;
+	left: 50%;
+	bottom: 119px;
+	transform: translateX(-50%);
+}
+
+.e5-animation-wrapper .js-e5-dock-figure.e5-dock-back-figure {
+	z-index: 98;
+}
+
+.e5-animation-wrapper .js-e5-dock-figure[data-aos=fade-up] {
+	transform: translate(-50%, 100px);
+}
+
+.e5-animation-wrapper .js-e5-dock-figure.aos-animate {
+	transform: translate(-50%, 0);
+}
+/* animation phone end */
 
 /* section style */
 .e5-style {
@@ -298,6 +360,7 @@
 }
 
 .e5-emergency .e5-media-figure {
+	display: none;
 	position: absolute;
 	top: 95px;
 	left: 50%;
@@ -349,6 +412,7 @@
 }
 
 .e5-fm .e5-media-figure {
+	display: none;
 	position: absolute;
 	top: 95px;
 	left: 50%;
@@ -411,6 +475,7 @@
 }
 
 .e5-call .e5-media-figure {
+	display: none;
 	position: absolute;
 	top: 95px;
 	left: 50%;
@@ -476,12 +541,11 @@
 }
 
 .e5-dock .e5-media-figure {
+	display: none;
 	position: absolute;
 	z-index: -1;
 	top: 55px;
 	left: 50%;
-	width: 523px;
-	height: 526px;
 	transform: translateX(-50%)
 }
 

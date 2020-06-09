@@ -51,7 +51,22 @@
 		top: 280px;
     	left: 85px;
 	}
+
+	.e5-dock-figure {
+		width: 433px;
+		height: 526px;
+	}
 	/* default phone end */
+
+	/* animation phone */
+	.e5-animation-wrapper .js-e5-phone-figure {
+		top: 62px;
+	}
+
+	.e5-animation-wrapper .js-e5-dock-figure {
+		bottom: 0;
+	}
+	/* animation phone end */
 
 	.e5-style,
 	.e5-design,
@@ -181,7 +196,6 @@
 
 	.e5-dock .e5-media-figure {
 		top: 45px;
-		width: 433px;
 	}
 	/* section  dock end */
 
@@ -280,6 +294,14 @@
 	}
 
 
+	/* animation phone */
+	.e5-animation-wrapper .js-e5-phone-figure,
+	.e5-animation-wrapper .js-e5-dock-figure {
+		display: none !important;
+	}
+	/* animation phone end */
+
+
 	.e5-style .content-wrapper.d-flex, 
 	.e5-design .content-wrapper.d-flex, 
 	.e5-emergency .content-wrapper.d-flex, 
@@ -370,6 +392,7 @@
 	}
 
 	.e5-emergency .e5-media-figure {
+		display: block;
 		top: 320px;
 	}
 	/* section emergency end */
@@ -405,6 +428,7 @@
 	}
 
 	.e5-fm .e5-media-figure {
+		display: block;
 		top: 320px;
 	}
 	/* section fm end */
@@ -440,6 +464,7 @@
 	}
 
 	.e5-call .e5-media-figure {
+		display: block;
 		top: 300px
 	}
 	/* section call end */
@@ -467,6 +492,7 @@
 	}
 
 	.e5-dock .e5-media-figure {
+		display: block;
 		top: 365px;
 	}
 	/* section dock end */
