@@ -1,0 +1,599 @@
+@media (max-width: 1024px) {
+	.e5-title {
+		margin: 0 0 20px;
+	}
+}
+
+
+@media (max-width: 991px) {
+	.e5-landing .container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.e5-title {
+		font-size: 34px;
+	}
+
+	/* default phone */
+	.e5-sos-button {
+		width: 72px;
+    	height: 50px;
+	}
+
+	.e5-fm-button,
+	.e5-call-button {
+		width: 51px;
+    	height: 51px;
+	}
+
+	.e5-phone-figure {
+		width: 222px;
+		height: 414px;
+	}
+
+	.e5-phone-figure .e5-phone {
+		width: 222px;
+		height: 414px;
+	}
+
+	.e5-phone-figure .e5-sos-button {
+		top: 148px;
+		left: 74px;
+	}
+
+	.e5-phone-figure .e5-fm-button {
+		top: 219px;
+    	left: 85px;
+	}
+
+	.e5-phone-figure .e5-call-button {
+		top: 280px;
+    	left: 85px;
+	}
+	/* default phone end */
+
+	.e5-style,
+	.e5-design,
+	.e5-emergency,
+	.e5-fm,
+	.e5-call,
+	.e5-dock,
+	.e5-flashlight,
+	.e5-camera,
+	.e5-display,
+	.e5-keyboard {
+		height: 540px;
+	}
+
+	/* section  style */
+	.e5-style .e5-title {
+		top: 350px;
+	}
+
+	.e5-style .e5-media-figure {
+		position: absolute;
+		top: 110px;
+		left: 50%;
+		width: 260px;
+		height: 406px;
+	}
+	/* section  style end */
+
+	/* section  design */
+	.e5-design .e5-title {
+		top: 180px;
+	}
+
+	.e5-design .e5-description {
+		top: 285px;
+	}
+
+	.e5-design .e5-media-figure {
+		top: 80px;
+		width: 314px;
+		height: 370px;
+	}
+
+	.e5-design .e5-media-figure .e5-media.layer-1 {
+		width: 314px;
+		height: 365px;
+	}
+
+	.e5-design .e5-media-figure .e5-media.layer-2 {
+		left: 5px;
+		width: 314px;
+		height: 356px;
+	}
+	/* section  design end */
+
+	/* section  emergency */
+	.e5-emergency .e5-typography-container .e5-sos-button {
+		top: 195px;
+	}
+
+	.e5-emergency .e5-title {
+		top: 265px;
+	}
+
+	.e5-emergency .e5-description {
+		top: 220px;
+	}
+
+	.e5-emergency .e5-media-figure {
+		top: 62px;
+	}
+	/* section  emergency end */
+
+	/* section  fm */
+	.e5-fm .e5-typography-container .e5-fm-button {
+		top: 140px;
+	}
+
+	.e5-fm .e5-title {
+		top: 210px;
+	}
+
+	.e5-fm .e5-description {
+		top: 260px;
+	}
+
+	.e5-fm .e5-media-figure {
+		top: 62px;
+	}
+	/* section  fm end */
+
+	/* section  call */
+	.e5-call .e5-typography-container .e5-call-button {
+		top: 155px;
+	}
+
+	.e5-call .e5-title {
+		top: 228px;
+	}
+
+	.e5-call .e5-description {
+		top: 265px;
+	}
+
+	.e5-call .e5-media-figure {
+		top: 62px;
+	}
+	/* section  call end */
+
+	/* section  dock */
+	.e5-dock::before {
+		top: 430px;
+	}
+
+	.e5-dock .e5-title {
+		right: 35px;
+		font-size: 30px;
+	}
+
+	.e5-dock .e5-description {
+		top: 210px;
+	}
+
+	.e5-dock .e5-description {
+		left: 35px;
+	}
+
+	.e5-dock .e5-media-figure {
+		top: 45px;
+		width: 433px;
+	}
+	/* section  dock end */
+
+	/* section  flashlight */
+	.e5-flashlight .e5-title {
+		top: 155px;
+	}
+
+	.e5-flashlight .e5-description {
+		top: 265px;
+	}
+	/* section  flashlight end */
+
+	/* section  camera */
+	.e5-camera .e5-title {
+		top: 230px;
+	}
+
+	.e5-camera .e5-description {
+		top: 320px;
+	}
+	.e5-camera .e5-media-figure {
+		width: 282px;
+    	height: 572px;
+	}
+	/* section  camera end */
+
+	/* section  display */
+	.e5-display .e5-title {
+		top: 200px;
+	}
+
+	.e5-display .e5-description {
+		top: 290px;
+	}
+	.e5-display .e5-media-figure {
+		top: 30px;
+		height: 540px;
+	}
+
+	.e5-display .e5-media-figure .e5-media {
+		width: 650px;
+		height: 650px;
+	}
+	/* section  display end */
+
+	/* section  keyboard */
+	.e5-keyboard .e5-title {
+		top: 160px;
+	}
+
+	.e5-keyboard .e5-description {
+		top: 250px;
+	}
+
+	.e5-keyboard .e5-media-figure {
+		height: 540px;
+	}
+
+	.e5-keyboard .e5-media-figure .e5-media {
+		width: 740px;
+		height: 753px;
+	}
+	/* section  keyboard end */
+
+	/* section  features */
+	.e5-features-grid .e5-feature-item {
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+	/* section  features end */
+}
+
+@media (max-width: 767px) {
+	.e5-landing .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.e5-landing .content-inner {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+
+	.e5-title {
+		margin: 0 0 15px;
+		font-size: 30px !important;
+		line-height: 1.35;
+	}
+
+	.e5-description {
+		margin: 0 0 20px;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+
+	.e5-style .content-wrapper.d-flex, 
+	.e5-design .content-wrapper.d-flex, 
+	.e5-emergency .content-wrapper.d-flex, 
+	.e5-fm .content-wrapper.d-flex, 
+	.e5-call .content-wrapper.d-flex, 
+	.e5-dock .content-wrapper.d-flex, 
+	.e5-flashlight .content-wrapper.d-flex, 
+	.e5-camera .content-wrapper.d-flex, 
+	.e5-display .content-wrapper.d-flex, 
+	.e5-keyboard .content-wrapper.d-flex {
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	/* section style */
+	.e5-style {
+		height: 620px;
+	}
+
+	.e5-style::before {
+		-moz-transform: scaleX(-1);
+		-o-transform: scaleX(-1);
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+		filter: FlipH;
+		-ms-filter: "FlipH";
+		background-position: 40% 0 !important;
+	}
+
+	.e5-style .e5-title {
+		top: 40px;
+		max-width: 210px
+	}
+
+	.e5-style .e5-media-figure {
+		top: 200px;
+	}
+	/* section style end */
+
+	/* section design */
+	.e5-design {
+		height: 540px;
+	}
+
+	.e5-design .e5-title {
+		top: 40px;
+		-webkit-text-fill-color: #fff;
+	}
+
+	.e5-design .e5-description {
+		top: 120px;
+	}
+
+	.e5-design .e5-media-figure {
+		top: 260px;
+	}
+	/* section design end */
+
+	/* section emergency */
+	.e5-emergency {
+		height: 530px;
+	}
+
+	.e5-emergency .e5-typography-container {
+		order: 0;
+	}
+
+	.e5-emergency .e5-media-container {
+		order: 1;
+	}
+
+	.e5-emergency .e5-typography-container .e5-sos-button {
+		top: 40px;
+		left: 15px;
+		right: auto;
+	}
+
+	.e5-emergency .e5-title {
+		top: 100px;
+		left: 15px;
+		right: auto;
+		text-align: left;
+	}
+
+	.e5-emergency .e5-description {
+		top: 180px;
+	}
+
+	.e5-emergency .e5-media-figure {
+		top: 320px;
+	}
+	/* section emergency end */
+
+	/* section fm */
+	.e5-fm {
+		height: 600px;
+	}
+
+	.e5-fm .e5-typography-container {
+		order: 0;
+	}
+
+	.e5-fm .e5-media-container {
+		order: 1;
+	}
+
+	.e5-fm .e5-typography-container .e5-fm-button {
+		top: 40px;
+		left: 15px;
+		right: auto;
+	}
+
+	.e5-fm .e5-title {
+		top: 105px;
+		left: 15px;
+		right: auto;
+		text-align: left;
+	}
+
+	.e5-fm .e5-description {
+		top: 230px;
+	}
+
+	.e5-fm .e5-media-figure {
+		top: 320px;
+	}
+	/* section fm end */
+
+	/* section call */
+	.e5-call {
+		height: 660px;
+	}
+
+	.e5-call .e5-typography-container {
+		order: 0;
+	}
+
+	.e5-call .e5-media-container {
+		order: 1;
+	}
+
+	.e5-call .e5-typography-container .e5-call-button {
+		top: 40px;
+		left: 15px;
+		right: auto;
+	}
+
+	.e5-call .e5-title {
+		top: 105px;
+		left: 15px;
+		right: auto;
+		text-align: left;
+	}
+
+	.e5-call .e5-description {
+		top: 190px;
+	}
+
+	.e5-call .e5-media-figure {
+		top: 300px
+	}
+	/* section call end */
+
+	/* section dock */
+	.e5-dock {
+		height: 860px;
+	}
+
+	.e5-dock::before {
+		top: 752px;
+	}
+
+	.e5-dock .e5-title {
+		top: 40px;
+		left: 15px;
+		right: auto;
+		max-width: 280px;
+		text-align: left;
+	}
+
+	.e5-dock .e5-description {
+		top: 165px;
+		left: 15px;
+	}
+
+	.e5-dock .e5-media-figure {
+		top: 365px;
+	}
+	/* section dock end */
+
+	/* section flashlight */
+	.e5-flashlight {
+		height: 480px;
+    	background-position: center bottom !important;
+		-webkit-background-size: 160% auto !important;
+		background-size: 160% auto !important;
+	}
+
+	.e5-flashlight .e5-title {
+		top: 40px;
+	}
+
+	.e5-flashlight .e5-description {
+		top: 125px;
+	}
+	/* section flashlight end */
+
+	/* section camera */
+	.e5-camera .e5-title {
+		top: 40px;
+	}
+
+	.e5-camera .e5-description {
+		top: 125px;
+	}
+
+	.e5-camera .e5-media-figure {
+		top: 210px;
+		width: 222px;
+    	height: 450px;
+	}
+	/* section camera end */
+
+	/* section display */
+	.e5-display {
+		height: 460px;
+	}
+
+	.e5-display .e5-title {
+		top: 280px;
+	}
+
+	.e5-display .e5-description {
+		top: 360px;
+	}
+
+	.e5-display .e5-media-figure {
+		height: 420px;
+	}
+
+	.e5-display .e5-media-figure .e5-media {
+		width: 540px;
+		height: 540px;
+	}
+	/* section display end */
+
+	/* section keyboard */
+	.e5-keyboard {
+		height: 460px;
+	}
+
+	.e5-keyboard .e5-title {
+		top: 40px;
+	}
+
+	.e5-keyboard .e5-description {
+		top: 120px;
+	}
+
+	.e5-keyboard .e5-media-figure {
+		top: 80px;
+		height: 420px;
+	}
+
+	.e5-keyboard .e5-media-figure .e5-media {
+		width: 580px;
+		height: 590px;
+	}
+	/* section keyboard */
+
+	/* section features */
+	.e5-features-grid .e5-feature-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	/* section  features end */
+}
+
+@media (max-width: 350px) {
+	.e5-title {
+		font-size: 24px !important;
+	}
+
+	.e5-style .e5-title, 
+	.e5-design .e5-title, 
+	.e5-emergency .e5-title, 
+	.e5-fm .e5-title, 
+	.e5-call .e5-title, 
+	.e5-dock .e5-title, 
+	.e5-flashlight .e5-title, 
+	.e5-camera .e5-title, 
+	.e5-display .e5-title, 
+	.e5-keyboard .e5-title {
+		font-size: 30px !important;
+	}
+
+	/* section fm */
+	.e5-fm .e5-title {
+		font-size: 28px !important;
+	}
+	/* section fm end */
+
+	/* section  features */
+	.e5-features-grid .e5-feature-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	/* section  features end */
+}
+
+@media (min-width: 1200px) {
+	.e5-landing  .flex-lg-nowrap {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+	}
+}
