@@ -352,7 +352,6 @@
 	position: absolute;
 	top: 260px;
 	right: 15px;
-	width: 100%;
 	max-width: 420px;
 	background: linear-gradient(-39deg, #9a9a9a 0%, #ccccd1 47%, #9a9a9a 100%);
 	-webkit-background-clip: text;
@@ -372,6 +371,7 @@
 
 .b10-design .b10-media-figure.phone-figure {
 	position: absolute;
+	z-index: 1;
 	top: 145px;
 	left: 50%;
 	width: 214px;
@@ -381,10 +381,10 @@
 
 .b10-design .b10-media-figure.hand-figure {
 	position: absolute;
-	top: 240px;
+	top: 220px;
 	right: 0;
-	width: 473px;
-	height: 282px;
+	width: 688px;
+	height: 323px;
 }
 /* section design end */
 

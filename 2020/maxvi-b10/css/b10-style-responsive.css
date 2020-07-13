@@ -1,11 +1,15 @@
 @media (max-width: 1199px) {
+	.b10-title {
+		font-size: 40px;
+	}
+
 	/* section style */
 	.b10-style .b10-title {
 		top: 210px;
 	}
 
 	.b10-style .b10-description {
-		top: 295px;
+		top: 255px;
 	}
 
 	.b10-style .b10-media-figure {
@@ -27,12 +31,20 @@
 
 
 	/* section design */
+	.b10-design .b10-title {
+		font-size: 36px;
+	}
+
+	.b10-design .b10-description {
+		top: 370px;
+	}
+
 	.b10-design .b10-media-hand-container {
 		position: relative;
 	}
 
 	.b10-design .b10-media-figure.hand-figure {
-		left: 15px;
+		left: -125px;
 		right: auto;
 	}
 	/* section design end */
@@ -144,6 +156,8 @@
 
 	.b10-design .b10-title {
 		top: 220px;
+		max-width: 350px;
+		font-size: 30px;
 	}
 
 	.b10-design .b10-description {
@@ -155,7 +169,9 @@
 	}
 
 	.b10-design .b10-media-figure.hand-figure {
-		width: 390px;
+		top: 170px;
+		left: -165px;
+		width: 500px;
 		height: 240px;
 	}
 	/* section  design end */
@@ -234,6 +250,7 @@
 	.b10-design .b10-title,
 	.b10-speakers .b10-title {
 		max-width: 260px;
+		font-size: 30px;
 	}
 
 	.b10-style .b10-description,
@@ -405,7 +422,7 @@
 	.b10-design .b10-media-figure.hand-figure {
 		top: 410px;
 		left: 50%;
-		transform: translateX(20%);
+		transform: translateX(-15%);
 	}
 	/* section design end */
 
