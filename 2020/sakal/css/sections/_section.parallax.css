@@ -1,0 +1,21 @@
+.section-parallax {
+    height: 360px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: auto 360px;
+    background-size: auto 360px;
+}
+
+@media (min-width: 768px) {
+    .section-parallax {
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-parallax {
+        height: 700px;
+    }
+}

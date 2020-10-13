@@ -1,0 +1,43 @@
+.section-hero {
+    position: relative;
+    z-index: 1;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.section-hero::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(16, 16, 16, 0.85);
+}
+
+.section-hero .hero-title {
+    margin: 0;
+    font-size: 48px;
+    color: inherit;
+}
+
+@media (min-width: 375px) {
+    .section-hero .hero-title {
+        font-size: 56px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-hero {
+        min-height: 780px;
+    }
+    .section-hero .hero-title {
+        font-size: 120px;
+    }
+}

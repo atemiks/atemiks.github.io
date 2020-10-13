@@ -1,0 +1,29 @@
+.header-slogan-block {
+    font-size: 10px;
+}
+
+.header-slogan-block span {
+    display: block;
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 1;
+}
+
+@media (min-width: 375px) {
+    .header-slogan-block {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-slogan-block {
+        font-size: 16px;
+        line-height: 1.15;
+    }
+    .header-slogan-block span {
+        display: inline-block;
+        margin: 0 25px;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+}

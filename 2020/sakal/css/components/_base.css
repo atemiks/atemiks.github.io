@@ -1,0 +1,206 @@
+html,
+body {
+    height: 100%;
+    background-color: #fff;
+    color: #212529;
+    font-family: 'GalanoGrotesqueAlt';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content-wrapper {
+    flex: 1 0 auto;
+}
+
+.footer-wrapper {
+    flex: 0 0 auto;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-secondary {
+    color: #C9B462 !important;
+}
+
+.section-header {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.section-subtitle {
+    max-width: 310px;
+    margin: 10px auto 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.55;
+}
+
+.section-subtitle .text-lead {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.section-dark {
+    background-color: #1A1A1A !important;
+    color: #fff;
+}
+
+h1,
+.title-h1 {
+    font-size: 36px;
+}
+
+h2,
+.title-h2 {
+    font-size: 36px;
+}
+
+h3,
+.title-h3 {
+    font-size: 36px;
+}
+
+h4,
+.title-h4 {
+    font-size: 20px;
+}
+
+h5,
+.title-h5 {
+    font-size: 32px;
+}
+
+h6,
+.title-h6 {
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 22px;
+}
+
+a {
+    color: #C9B462;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C9B462;
+    text-decoration: underline;
+}
+
+@media (min-width: 375px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 768px) {
+    html,
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .section-subtitle {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html,
+    body {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .container {
+        max-width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container-fluid {
+        width: 95%;
+        max-width: 1660px;
+    }
+
+    .section-header {
+        margin: 0 0 30px;
+    }
+
+    .section-title {
+        font-size: 80px;
+    }
+
+    .section-subtitle {
+        max-width: 660px;
+        margin: 15px auto 0;
+        font-size: 36px;
+    }
+
+    .section-subtitle .text-lead {
+        font-size: 80px;
+    }
+
+    h1,
+    .title-h1 {
+        font-size: 80px;
+    }
+
+    h2,
+    .title-h2 {
+        font-size: 72px;
+    }
+
+    h3,
+    .title-h3 {
+        font-size: 48px;
+    }
+
+    h4,
+    .title-h4 {
+        font-size: 36px;
+    }
+
+    h5,
+    .title-h5 {
+        font-size: 32px;
+    }
+
+    h6,
+    .title-h6 {
+        font-size: 24px;
+    }
+
+    p {
+        margin-bottom: 32px;
+    }
+}

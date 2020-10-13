@@ -1,0 +1,35 @@
+@import 'components/_font.css';
+@import 'components/_base.css';
+@import 'components/_menu.css';
+@import 'components/_buttons.css';
+@import 'components/_contact.css';
+
+/* header */
+
+@import 'layout/header/_header.css';
+@import 'layout/header/_header.slogan.css';
+@import 'layout/header/_header.logo.css';
+@import 'layout/header/_header.nav.css';
+@import 'layout/header/_header.contact.css';
+
+/* sections */
+
+@import 'sections/_section.hero.css';
+@import 'sections/_section.investing.css';
+@import 'sections/_section.goal.css';
+@import 'sections/_section.leadership.css';
+@import 'sections/_section.about.css';
+@import 'sections/_section.contact.css';
+@import 'sections/_section.parallax.css';
+
+/* cards */
+
+@import 'components/cards/_card.partner.css';
+@import 'components/cards/_card.employee.css';
+
+/* footer */
+
+@import 'layout/footer/_footer.css';
+@import 'layout/footer/_footer.logo.css';
+@import 'layout/footer/_footer.hotlinks.css';
+@import 'layout/footer/_footer.copyright.css';

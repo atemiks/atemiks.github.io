@@ -1,0 +1,46 @@
+.section-investing {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 65px 0 60px;
+    background: url('../../images/bgs/bgs-logo-gray.svg') no-repeat center top 20%;
+    -webkit-background-size: calc(min(95%, 561px));
+    background-size: calc(min(95%, 561px));
+}
+
+.section-investing .section-header {
+    margin-bottom: 30px;
+}
+
+.partners-grid {
+    margin: 35px -6.5% 20px;
+}
+
+.partners-grid .partner-item {
+    margin-bottom: 30px;
+}
+
+.partners-grid .partner-item .card-partner {
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .partners-grid {
+        margin: 35px -1.5% 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-investing {
+        padding: 125px 0 115px;
+        background-position: center top 18%;
+        -webkit-background-size: 561px 500px;
+        background-size: 561px 500px;
+    }
+    .partners-grid {
+        margin: 80px -6.5% -10px;
+    }
+    .partners-grid .partner-item {
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,19 @@
+.header-logo-block {
+    width: 189px;
+    height: 29px;
+}
+
+.header-main-wrapper.is-sticky .header-static-logo {
+    display: none;
+}
+
+.header-main-wrapper.is-sticky .header-sticky-logo {
+    display: block !important;
+}
+
+@media (min-width: 1200px) {
+    .header-logo-block {
+        width: 326px;
+        height: 50px;
+    }
+}

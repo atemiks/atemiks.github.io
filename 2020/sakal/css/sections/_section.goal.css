@@ -1,0 +1,29 @@
+.section-goal {
+    position: relative;
+    margin: 0;
+    padding: 65px 0 40px;
+    background: #AEB4B8 url('../../images/bgs/bgs-logo-light.svg') no-repeat center top 35%;
+    -webkit-background-size: calc(min(95%, 561px));
+    background-size: calc(min(95%, 561px));
+}
+
+.section-goal .section-header {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+    .section-goal {
+        padding: 125px 0 115px;
+        background-position: center top 120px;
+        -webkit-background-size: 561px 500px;
+        background-size: 561px 500px;
+    }
+
+    .section-goal .section-header {
+        margin-bottom: 30px;
+    }
+
+    .section-goal .section-title {
+        font-size: 48px;
+    }
+}

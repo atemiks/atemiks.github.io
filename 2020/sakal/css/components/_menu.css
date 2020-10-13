@@ -1,0 +1,95 @@
+.menu-toggle {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #C9B462;
+    font-size: 35px;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+.menu {
+    -webkit-display: flex;
+    -ms-display: flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #C9B462;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.menu a {
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+    color: #C9B462;
+    letter-spacing: 1.2px;
+}
+
+.menu a:hover {
+    color: #C9B462;
+    text-decoration: underline;
+}
+
+.menu .menu-item {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (min-width: 992px) {
+    .menu {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: auto;
+        font-size: 16px;
+        text-align: left;
+    }
+    .menu .menu-item {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .menu a {
+        display: inline-block;
+        width: auto;
+        padding: 0;
+    }
+    .menu .menu-item.current-menu-item>a {
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu .menu-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .menu .menu-item {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

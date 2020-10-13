@@ -1,0 +1,42 @@
+.card-employee p {
+    margin-bottom: 22px;
+}
+
+.card-employee p:last-child {
+    margin-bottom: 0;
+}
+
+.card-employee .card-employee-aside-container {
+    margin-bottom: 30px;
+}
+
+.card-employee .card-employee-name {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-employee .card-employee-post {
+    font-size: 18px;
+}
+
+.card-employee .card-employee-experience {
+    margin-top: 25px;
+}
+
+@media (min-width: 1200px) {
+    .card-employee p {
+        margin-bottom: 30px;
+    }
+    .card-employee .card-employee-aside-container {
+        margin-bottom: 0;
+    }
+    .card-employee .card-employee-name {
+        font-size: 36px;
+    }
+    .card-employee .card-employee-post {
+        font-size: 24px;
+    }
+    .card-employee .card-employee-experience {
+        margin-top: 35px;
+    }
+}

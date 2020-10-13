@@ -1,0 +1,47 @@
+.section-leadership {
+    margin: 0;
+    padding: 65px 0 5px;
+}
+
+.team-list {
+    position: relative;
+    margin: 55px 0;
+    border-top: 1px solid #C9B462;
+}
+
+.team-list .team-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #C9B462;
+}
+
+@media (min-width: 375px) {
+    .section-leadership .section-subtitle {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-leadership {
+        padding: 120px 0 50px;
+    }
+    
+    .section-leadership .section-header {
+        margin-bottom: 25px;
+    }
+
+    .section-leadership .section-title {
+        font-size: 72px;
+    }
+
+    .section-leadership .section-subtitle {
+        margin-top: 25px;
+        font-size: 36px;
+    }
+
+    .team-list {
+        background: url('../../images/bgs/bgs-logo-gray.svg') no-repeat center center;
+        -webkit-background-size: auto 90%;
+        background-size: auto 90%;
+    }
+}

@@ -1,0 +1,22 @@
+.header-contact-block {
+    margin-top: 25px;
+}
+
+@media (min-width: 992px) {
+    .header-contact-block {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-contact-block {
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .header-contact-block {
+        margin-left: 25px;
+    }
+}
