@@ -1,0 +1,199 @@
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.field,
+.wpcf7-form-control-wrap {
+    position: relative;
+    display: block;
+}
+
+.field {
+    margin-bottom: 45px;
+}
+
+.field.last-child {
+    margin-bottom: 10px;
+}
+
+/**
+* Add a transition to the label and input.
+* I'm not even sure that touch-action: manipulation works on
+* inputs, but hey, it's new and cool and could remove the 
+* pesky delay.
+*/
+.field label, 
+.field input:not([type='radio']):not([type='checkbox']),
+.field textarea {
+    transition: all 0.2s;
+    touch-action: manipulation;
+}
+
+.field label {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 18px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.field input:not([type='radio']):not([type='checkbox']),
+.field textarea {
+    cursor: text;
+    width: 100%;
+    height: 45px;
+    border: 0;
+    border-bottom: 2px solid #D5D5D5;
+    border-radius: 0;
+    padding: 0 15px;
+    background: transparent;
+    font-size: 18px;
+    font-family: inherit;
+    -webkit-appearance: none;
+}
+
+.field textarea {
+    resize: none;
+    height: 110px;
+}
+
+.field input:not([type='radio']):not([type='checkbox']):focus,
+.field textarea:focus {
+    outline: 0;
+    border-bottom-color: #C9B462;
+}
+
+/**
+* Translate down and scale the label up to cover the placeholder,
+* when following an input (with placeholder-shown support).
+* Also make sure the label is only on one row, at max 2/3rds of the
+* field—to make sure it scales properly and doesn't wrap.
+*/
+.field input:not([type='radio']):not([type='checkbox']):placeholder-shown + label,
+.field textarea:placeholder-shown + label {
+    cursor: text;
+    max-width: 95%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform-origin: left bottom;
+    /* transform: translate(15px, 15px); */
+    transform: translate(15px, 22px);
+    font-size: 18px;
+    text-overflow: ellipsis;
+}
+
+/**
+* By default, the placeholder should be transparent. Also, it should 
+* inherit the transition.
+*/
+
+.field ::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+}
+
+/**
+* When the element is focused, remove the label transform.
+* Also, do this when the placeholder is _not_ shown, i.e. when 
+* there's something in the input at all.
+*/
+
+.field input:not([type='radio']):not([type='checkbox']):not(:placeholder-shown) + label,
+.field input:not([type='radio']):not([type='checkbox']):focus + label,
+.field textarea:not(:placeholder-shown) + label,
+.field textarea:focus + label {
+    cursor: pointer;
+    transform: translate(0, 0);
+    font-size: 14px;
+}
+
+.field input:not([type='radio']):not([type='checkbox']):not(:placeholder-shown) + label,
+.field textarea:not(:placeholder-shown) + label {
+    color: #D4D4D4;
+}
+
+.field input:not([type='radio']):not([type='checkbox']):focus + label,
+.field textarea:focus + label {
+    color: #C9B462;
+}
+
+.field input:not([type='radio']):not([type='checkbox']):not(:focus):not(:placeholder-shown),
+.field textarea:not(:focus):not(:placeholder-shown) {
+    border-bottom-color: #D4D4D4;
+}
+
+/* error */
+.wpcf7-form-control-wrap .wpcf7-not-valid-tip,
+.wpcf7-response-output {
+    display: block;
+    margin: 5px 0 0;
+    color: #FF5E5E;
+    font-size: 12px;
+}
+
+.wpcf7-response-output {
+    margin: 25px 0 0;
+    font-size: 16px;
+}
+
+.field input:not([type='radio']):not([type='checkbox'])[aria-invalid="true"],
+.field input:not([type='radio']):not([type='checkbox']):not(:focus):not(:placeholder-shown)[aria-invalid="true"],
+.field textarea[aria-invalid="true"],
+.field textarea:not(:focus):not(:placeholder-shown)[aria-invalid="true"] {
+    border-bottom-color: #FF5E5E;
+}
+
+.field input:not([type='radio']):not([type='checkbox'])[aria-invalid="true"] + label,
+.field textarea [aria-invalid="true"] + label {
+    color: #FF5E5E;
+}
+
+/* custom controls */
+.custom-control {
+    min-height: 15px;
+    padding-left: 30px;
+}
+
+.custom-control-label {
+    cursor: pointer;
+    color: #222222;
+    font-size: 16px;
+}
+
+.custom-control-label::before,
+.custom-control-label::after {
+    top: 0.15rem;
+    left: -30px;
+    width: 15px;
+    height: 15px;
+}
+
+.custom-control-label::before {
+    border: 1px solid #C9B462;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: #C9B462;
+    background-color: #C9B462;
+}
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+    border-color: #C9B462;
+}
+
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: none;
+    font-family: 'icomoon';
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    content: '\e90d';
+}

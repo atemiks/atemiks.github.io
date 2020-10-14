@@ -1,0 +1,25 @@
+.section-feedback {
+    position: relative;
+    padding: 65px 0 60px;
+    background: #F9F9F9 url('../../images/bgs/bgs-logo-gray.svg') no-repeat center top 20%;
+    -webkit-background-size: calc(min(95%, 561px));
+    background-size: calc(min(95%, 561px));
+}
+
+.section-feedback .form-feedback {
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+@media (min-width: 1200px) {
+    .section-feedback {
+        padding: 125px 0 110px;
+        background-position: center top 40%;
+        -webkit-background-size: 898px 800px;
+        background-size: 898px 800px;
+    }
+
+    .section-feedback .section-title {
+        font-size: 48px;
+    }
+}

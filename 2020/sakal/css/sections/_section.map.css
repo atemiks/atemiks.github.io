@@ -1,0 +1,58 @@
+.section-map {
+    position: relative;
+    height: 360px;
+}
+
+.section-map #map-block {
+    height: inherit;
+}
+
+/* bubble on google map */
+.gm-style .gm-style-iw-t {
+    margin-bottom: 15px;
+}
+
+.gm-style .gm-style-iw-t::after {
+    display: none;
+}
+
+.gm-style-iw.gm-style-iw-c {
+    min-width: 280px !important;
+    padding: 20px 10px !important;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 15px 50px rgba(142, 142, 142, 0.5);
+    color: #222222;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.gm-style-iw-d {
+    overflow: auto !important;
+    text-align: center;
+}
+
+.gm-ui-hover-effect {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .gm-style-iw.gm-style-iw-c {
+        padding: 20px !important;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-map {
+        height: 750px;
+    }
+
+    .gm-style-iw.gm-style-iw-c {
+        min-width: 430px !important;
+        min-height: 134px;
+        padding: 30px !important;
+        font-size: 24px;
+    }
+}

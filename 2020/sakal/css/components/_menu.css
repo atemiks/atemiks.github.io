@@ -1,5 +1,6 @@
 .menu-toggle {
     cursor: pointer;
+    overflow: hidden;
     width: 35px;
     height: 35px;
     margin: 0;
@@ -8,6 +9,19 @@
     background: transparent;
     color: #C9B462;
     font-size: 35px;
+}
+
+.menu-toggle .icon-close {
+    display: none;
+    font-size: 28px;
+}
+
+.menu-toggle.active .icon-burger {
+    display: none;
+}
+
+.menu-toggle.active .icon-close {
+    display: block;
 }
 
 .menu-toggle:focus {
@@ -47,7 +61,7 @@
 
 .menu a:hover {
     color: #C9B462;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .menu .menu-item {
@@ -82,8 +96,8 @@
 
 @media (min-width: 1200px) {
     .menu .menu-item {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
 
