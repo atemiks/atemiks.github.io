@@ -32,6 +32,29 @@ img {
     max-width: 100%;
 }
 
+.list-includes {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-includes li {
+    position: relative;
+    min-height: 30px;
+    margin: 10px 0;
+    padding: 10px 0 0 55px;
+}
+
+.list-includes li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #C9B462;
+    font-family: 'icomoon';
+    font-size: 35px;
+    content: '\e905';
+}
+
 .text-secondary {
     color: #C9B462 !important;
 }
@@ -61,6 +84,12 @@ img {
     font-size: 36px;
     font-weight: 400;
     line-height: 1;
+}
+
+.section-note {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #fff;
 }
 
 .section-dark {

@@ -1,0 +1,91 @@
+.section-article {
+    position: relative;
+    margin: 0;
+    padding: 65px 0 60px;
+}
+
+.article-content {
+    line-height: 1.6;
+}
+
+.article-content h1,
+.article-content .title-h1 {
+    margin-bottom: 2rem;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.article-content h2,
+.article-content .title-h2 {
+    margin-bottom: 1.5rem;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.article-content h3,
+.article-content .title-h3 {
+    margin-bottom: 1rem;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.article-content h4,
+.article-content .title-h4 {
+    margin-bottom: 0.5rem;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.article-content h5,
+.article-content .title-h5 {
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.article-content h6,
+.article-content .title-h6 {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@media (min-width: 1200px) {
+    .section-article {
+        padding: 75px 0 95px;
+    }
+
+    .article-content h1,
+    .article-content .title-h1 {
+        font-size: 64px;
+    }
+
+    .article-content h2,
+    .article-content .title-h2 {
+        font-size: 56px;
+    }
+
+    .article-content h3,
+    .article-content .title-h3 {
+        font-size: 48px;
+    }
+
+    .article-content h4,
+    .article-content .title-h4 {
+        font-size: 36px;
+    }
+
+    .article-content h5,
+    .article-content .title-h5 {
+        font-size: 30px;
+    }
+
+    .article-content h6,
+    .article-content .title-h6 {
+        font-size: 24px;
+    }
+
+    .article-content p {
+        margin-bottom: 28px;
+    }
+}

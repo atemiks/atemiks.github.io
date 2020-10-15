@@ -1,0 +1,37 @@
+.section-intro {
+    position: relative;
+    z-index: 1;
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.section-intro::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../../images/bgs/bgs-logo-subtract.svg') no-repeat center bottom;
+    -webkit-background-size: 1920px 700px;
+    background-size: 1920px 700px;
+}
+
+.section-intro .intro-title {
+    margin: 0;
+    font-size: 80px;
+    font-weight: 300;
+}
+
+@media (min-width: 1920px) {
+    .section-intro::before {
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
