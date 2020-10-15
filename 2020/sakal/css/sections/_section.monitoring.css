@@ -1,0 +1,35 @@
+.section-monitoring {
+    position: relative;
+    margin: 0;
+    padding: 65px 0 35px;
+    background: #AEB4B8 url('../../images/bgs/bgs-logo-light.svg') no-repeat center;
+    -webkit-background-size: calc(min(95%, 320px));
+    background-size: calc(min(95%, 320px));
+}
+
+.section-monitoring .section-header {
+    margin-bottom: 10px;
+}
+
+.section-monitoring .section-description {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .section-monitoring {
+        min-height: 540px;
+        padding: 120px 0 90px;
+        -webkit-background-size: 449px 400px;
+        background-size: 449px 400px;
+    }
+
+    .section-monitoring .section-header {
+        margin-bottom: 35px;
+    }
+
+    .section-monitoring .section-description  {
+        font-size: 24px;
+    }
+}

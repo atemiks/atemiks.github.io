@@ -4,6 +4,9 @@
 @import 'components/_forms.css';
 @import 'components/_buttons.css';
 @import 'components/_contact.css';
+@import 'components/_steps.css';
+@import 'components/_timeline.css';
+@import 'components/_legend.css';
 
 /* header */
 
@@ -22,6 +25,10 @@
 @import 'sections/_section.leadership.css';
 @import 'sections/_section.stages.css';
 @import 'sections/_section.paradigm.css';
+@import 'sections/_section.idea.css';
+@import 'sections/_section.monitoring.css';
+@import 'sections/_section.research.css';
+@import 'sections/_section.management.css';
 @import 'sections/_section.about.css';
 @import 'sections/_section.contact.css';
 @import 'sections/_section.feedback.css';
@@ -34,6 +41,8 @@
 @import 'components/cards/_card.partner.css';
 @import 'components/cards/_card.employee.css';
 @import 'components/cards/_card.stage.css';
+@import 'components/cards/_card.step.css';
+@import 'components/cards/_card.timeline.css';
 @import 'components/cards/_card.paradigm.css';
 
 /* footer */

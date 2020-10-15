@@ -1,0 +1,60 @@
+.card-step {
+    width: 100%;
+}
+
+.card-step .card-step-thumbnail {
+    flex: 0 0 80px;
+    width: 80px;
+    max-width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    background: #F5F5F5;
+    box-sizing: border-box;
+    box-shadow: 0px 15px 50px rgba(142, 142, 142, 0.5);
+}
+
+.card-step .card-step-media {
+    width: 100%;
+    max-width: 33px;
+    max-height: 28px;
+}
+
+.card-step .card-step-title {
+    margin: 0 0 5px;
+    color: #222222;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .card-step .card-step-thumbnail {
+        flex: 0 0 100px;
+        width: 100px;
+        max-width: 100px;
+        height: 100px;
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-step .card-step-thumbnail {
+        flex: 0 0 170px;
+        width: 170px;
+        max-width: 170px;
+        height: 170px;
+        margin-right: 50px;
+        border-width: 10px;
+    }
+
+    .card-step .card-step-media {
+        max-width: 70px;
+        max-height: 60px;
+    }
+
+    .card-step .card-step-title {
+        margin: 0 0 15px;
+        font-size: 30px;
+    }
+}

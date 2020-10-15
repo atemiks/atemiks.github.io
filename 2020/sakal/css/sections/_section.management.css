@@ -1,0 +1,45 @@
+.section-management {
+    position: relative;
+    margin: 0;
+    padding: 65px 0 0;
+}
+
+.section-management .section-management-explain-wrapper {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.section-management .management-description {
+    padding-left: 30px;
+    border-left: 2px solid #C9B462;
+}
+
+@media (min-width: 1200px) {
+    .section-management {
+        padding: 120px 0 0;
+    }
+
+    .section-management .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-management .section-title {
+        font-size: 48px;
+        letter-spacing: -0.5px;
+    }
+
+    .section-management .legend-block {
+        position: relative;
+        z-index: 1;
+        margin-bottom: -60px;
+    }
+
+    .section-management .section-management-explain-wrapper {
+        padding-top: 130px;
+        padding-bottom: 90px;
+    }
+
+    .section-management .management-description {
+        padding-left: 50px;
+    }
+}

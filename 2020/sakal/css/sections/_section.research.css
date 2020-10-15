@@ -1,0 +1,29 @@
+.section-research {
+    position: relative;
+    margin: 0;
+    padding: 70px 0 40px;
+}
+
+.section-research .section-header {
+    margin-bottom: 45px;
+}
+
+.section-research .section-subtitle {
+    max-width: none;
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+@media (min-width: 1200px) {
+    .section-research {
+        padding: 120px 0 125px;
+    }
+
+    .section-research .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-research .section-subtitle {
+        margin-top: 0;
+    }
+}

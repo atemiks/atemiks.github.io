@@ -1,0 +1,19 @@
+.section-idea {
+    position: relative;
+    margin: 0;
+    padding: 60px 0 40px;
+}
+
+.section-idea .section-description {
+    margin-bottom: 65px;
+}
+
+@media (min-width: 1200px) {
+    .section-idea {
+        padding: 120px 0 90px;
+    }
+
+    .section-idea .section-title {
+        font-size: 48px;
+    }
+}

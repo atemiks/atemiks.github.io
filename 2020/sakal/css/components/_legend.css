@@ -1,0 +1,28 @@
+.legend-block {
+    margin: 0 0 60px;
+}
+
+.legend-block .legend-title {
+    margin: 0 0 15px;
+    color: #4571CE;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.legend-block .legend-grath-media {
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .legend-block {
+        padding: 50px 50px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 50px rgba(142, 142, 142, 0.5);
+        border-radius: 10px;
+    }
+
+    .legend-block .legend-title {
+        margin: 0 0 15px;
+        font-size: 24px;
+    }
+}
