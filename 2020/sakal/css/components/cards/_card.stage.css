@@ -1,13 +1,30 @@
 .card-stage {
-    padding: 60px;
+    padding: 30px 18px 20px;
     border-radius: 10px;
     background: #FFFFFF;
     box-shadow: 0px 15px 50px rgba(142, 142, 142, 0.5);
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .card-stage .card-stage-title {
     margin: 0;
     color: #222222;
-    font-size: 36px;
+    font-size: 24px;
+}
+
+@media (min-width: 768px) {
+    .card-stage {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-stage {
+        padding: 45px 60px 50px;
+        font-size: 18px;
+    }
+
+    .card-stage .card-stage-title {
+        font-size: 36px;
+    }
 }

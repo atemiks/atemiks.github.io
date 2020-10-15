@@ -1,17 +1,42 @@
 .card-paradigm {
     position: relative;
+    font-size: 14px;
 }
 
 .card-paradigm .card-paradigm-thumbnail {
     width: 100px;
     height: 100px;
-    margin: 0 auto 10px;
+    margin: 0 auto 30px;
     border-radius: 50%;
     border: 1px dashed rgba(255, 255, 255, 0.5);
 }
 
 .card-paradigm .card-paradigm-title {
-    margin: 0 0 10px;
+    max-width: 90%;
+    margin: 0 auto 10px;
     color: #C9B462;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .card-paradigm {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-paradigm {
+        font-size: 18px;
+    }
+
+    .card-paradigm .card-paradigm-thumbnail {
+        margin: 0 auto 35px;
+    }
+
+    .card-paradigm .card-paradigm-title {
+        max-width: none;
+        font-size: 24px;
+    }
 }

@@ -1,7 +1,9 @@
 .section-intro {
     position: relative;
     z-index: 1;
-    min-height: 700px;
+    min-height: 200px;
+    height: calc(100vh - 120px);
+    max-height: 600px;
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -18,15 +20,49 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../../images/bgs/bgs-logo-subtract.svg') no-repeat center bottom;
-    -webkit-background-size: 1920px 700px;
-    background-size: 1920px 700px;
+    background: url('../../images/bgs/bgs-logo-subtract-mobile.svg') no-repeat center bottom;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .section-intro .intro-title {
     margin: 0;
-    font-size: 80px;
+    font-size: 48px;
     font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    .section-hero {
+        height: calc(100vh - 105px);
+    }
+
+    .section-intro::before {
+        background: url('../../images/bgs/bgs-logo-subtract.svg') no-repeat right bottom;
+        -webkit-background-size: auto 100%;
+        background-size: auto 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-hero {
+        height: calc(100vh - 120px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-intro {
+        max-height: 700px;
+    }
+
+    .section-intro::before {
+        background-position: center bottom;
+        -webkit-background-size: 1920px 700px;
+        background-size: 1920px 700px;
+    }
+
+    .section-intro .intro-title {
+        font-size: 80px;
+    }
 }
 
 @media (min-width: 1920px) {

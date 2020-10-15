@@ -1,7 +1,11 @@
 .section-paradigm {
     position: relative;
     margin: 0;
-    padding: 120px 0 100px;
+    padding: 65px 0 40px;
+}
+
+.section-paradigm .section-header {
+    margin-bottom: 10px;
 }
 
 .section-paradigm .section-title {
@@ -9,11 +13,35 @@
 }
 
 .section-paradigm .section-description {
-    font-size: 24px;
+    margin-bottom: 50px;
+    font-size: 18px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.paradigm-grid .paradigm-item {
+.section-paradigm .section-description p {
     margin-bottom: 30px;
+}
+
+.paradigm-grid .paradigm-item {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 1200px) {
+    .section-paradigm {
+        padding: 125px 0 95px;
+    }
+
+    .section-paradigm .section-header {
+        margin-bottom: 20px;
+    }
+
+    .section-paradigm .section-description {
+        margin-bottom: 0;
+        font-size: 24px;
+    }
+
+    .section-paradigm .section-description p {
+        margin-bottom: 32px;
+    }
 }

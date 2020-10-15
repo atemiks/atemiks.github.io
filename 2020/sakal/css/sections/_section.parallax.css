@@ -2,14 +2,12 @@
     height: 360px;
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-background-size: auto 360px;
-    background-size: auto 360px;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 @media (min-width: 768px) {
     .section-parallax {
-        -webkit-background-size: cover;
-        background-size: cover;
         background-attachment: fixed;
     }
 }
