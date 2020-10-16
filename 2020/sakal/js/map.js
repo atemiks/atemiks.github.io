@@ -8,7 +8,7 @@
                 zoom: 12,
 
                 // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(25.926074, -80.161253),
+                center: new google.maps.LatLng(25.950074, -80.161253),
 
                 disableDefaultUI: true,
 
@@ -493,7 +493,9 @@
                 title: 'Sakal Ventures'
             });
 
-            infowindow.open(map, marker);
+            setTimeout(function(){
+                infowindow.open(map, marker);
+            }, '1000');
         }
     });
 })();
