@@ -1,0 +1,25 @@
+.section-hero {
+    position: relative;
+    min-height: 950px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.section-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.section-hero .hero-title {
+    margin: 0 0 30px;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 80px;
+}
+
+.section-hero .hero-action {
+    min-width: 200px;
+}

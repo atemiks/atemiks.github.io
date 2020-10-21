@@ -1,0 +1,5 @@
+.applications-grid .application-item:nth-child(2n+2) .card-application {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
