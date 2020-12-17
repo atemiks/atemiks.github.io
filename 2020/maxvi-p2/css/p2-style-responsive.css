@@ -1,0 +1,640 @@
+@media (max-width: 1920px) {
+	.p2-power-bank {
+		-webkit-background-size: 1920px 1124px !important;
+		background-size: 1920px 1124px !important;
+	}
+	
+	.p2-power-bank .p2-charging-indicator {
+		top: 390px;
+    	left: 40%;
+	}
+}
+
+@media (max-width: 1680px) {
+	.p2-power-bank {
+		-webkit-background-size: 1680px 983px !important;
+		background-size: 1680px 983px !important;
+	}
+	
+	.p2-power-bank .p2-charging-indicator {
+		top: 420px;
+    	left: 43.5%;
+	}
+}
+
+@media (max-width: 1440px) {
+	.p2-power-bank {
+		-webkit-background-size: 1440px 842px !important;
+		background-size: 1440px 842px !important;
+	}
+	
+	.p2-power-bank .p2-charging-indicator {
+		top: 470px;
+    	left: 46.5%;
+	}
+}
+
+@media (max-width: 1280px) {
+	.p2-power-bank {
+		-webkit-background-size: 1283px 751px !important;
+		background-size: 1283px 751px !important;
+	}
+
+	.p2-power-bank .p2-charging-indicator {
+		top: 500px;
+		left: 50%;
+	}
+}
+
+@media (max-width: 1199px) {
+	/* section intro */
+	.p2-intro {
+		height: 650px;
+	}
+
+	.p2-intro .p2-media-figure {
+		width: 326px;
+		height: 584px;
+	}
+
+	.p2-intro .p2-title {
+		top: 250px;
+	}
+
+	.p2-intro .p2-description {
+		top: 310px;
+	}
+	/* section intro end*/
+
+
+	/* section power bank */
+	.p2-power-bank {
+		height: 655px;
+	}
+
+	.p2-power-bank .p2-media-figure {
+		width: 500px;
+	}
+
+	.p2-power-bank .p2-phone-media {
+		width: 500px;
+		height: 570px;
+	}
+
+	.p2-power-bank .p2-cable-media {
+		top: 508px;
+		left: 404px;
+	}
+
+	.p2-power-bank .p2-cable-media.aos-animate {
+		top: 442px;
+		left: 355px;
+	}
+
+	.p2-power-bank .p2-charging-indicator {
+		top: 400px;
+	}
+
+	.p2-power-bank .p2-title {
+		top: 260px;
+	}
+
+	.p2-power-bank .p2-description {
+		top: 385px;
+	}
+	/* section power bank end */
+
+
+	/* section flashlight */
+	.p2-flashlight {
+		height: 605px;
+	}
+
+	.p2-flashlight::before {
+		top: -160px;
+	}
+
+	.p2-flashlight .p2-media-figure {
+		top: 80px;
+		width: 497px;
+    	height: 447px;
+	}
+
+	.p2-flashlight .p2-title {
+		top: 175px;
+	}
+
+	.p2-flashlight .p2-description {
+		top: 300px;
+	}
+	/* section flashlight end */
+
+	/* section design */
+	.p2-design {
+		height: 735px;
+	}
+
+	.p2-design .p2-title {
+		top: 270px;
+	}
+
+	.p2-design .p2-description {
+		top: 390px;
+	}
+
+	#p2-design-parallax {
+		left: 50%;
+		width: 50%;
+	}
+	/* section design end */
+
+
+	/* section battery */
+	.p2-battery {
+		height: 650px;
+	}
+
+	.p2-battery .p2-media-figure {
+		width: 520px;
+		height: 555px;
+	}
+
+	.p2-battery .p2-title {
+		top: 295px;
+	}
+
+	.p2-battery .p2-description {
+		top: 415px;
+	}
+	/* section battery end */
+}
+
+@media (max-width: 1024px) {
+	.p2-title {
+		margin: 0 0 20px;
+	}
+}
+
+
+@media (max-width: 991px) {
+	.p2-landing .container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.p2-title {
+		font-size: 34px;
+	}
+
+	/* section intro */
+	.p2-intro {
+		height: 590px;
+	}
+
+	.p2-intro .p2-media-figure {
+		width: 296px;
+		height: 530px;
+	}
+
+	.p2-intro .p2-title {
+		top: 220px;
+	}
+
+	.p2-intro .p2-description {
+		top: 240px;
+	}
+	/* section intro end */
+
+
+	/* section presentation */
+	.p2-presentation .p2-typography-left-container .p2-description {
+		top: 555px;
+	}
+
+	.p2-presentation .p2-typography-right-container .p2-description {
+		top: 155px;
+	}
+	/* section presentation end */
+
+
+	/* section power bank */
+	.p2-power-bank {
+		height: 595px;
+	}
+
+	.p2-power-bank .p2-phone-media {
+		width: 450px;
+		height: 514px;
+	}
+
+	.p2-power-bank .p2-cable-media {
+		top: 442px;
+    	left: 355px;
+		width: 128px;
+		height: 163px;
+	}
+
+	.p2-power-bank .p2-cable-media.aos-animate {
+		top: 403px;
+    	left: 320px;
+	}
+
+	.p2-power-bank .p2-charging-indicator {
+		top: 340px;
+	}
+
+	.p2-power-bank .p2-title {
+		top: 230px;
+	}
+
+	.p2-power-bank .p2-description {
+		top: 325px;
+	}
+	/* section power bank end */
+
+
+	/* section flashlight */
+	.p2-flashlight {
+		height: 505px;
+	}
+
+	.p2-flashlight .p2-media-figure {
+		top: 40px;
+		width: 457px;
+		height: 412px;
+	}
+
+	.p2-flashlight .p2-title {
+		top: 125px;
+	}
+
+	.p2-flashlight .p2-description {
+		top: 220px;
+	}
+	/* section flashlight end */
+
+
+	/* section design */
+	.p2-design {
+		height: 535px;
+	}
+
+	.p2-design .p2-title {
+		top: 170px;
+	}
+
+	.p2-design .p2-description {
+		top: 260px;
+	}
+	/* section design end */
+
+
+	/* section battery */
+	.p2-battery {
+		height: 500px;
+	}
+
+	.p2-battery .p2-media-figure {
+		width: 420px;
+		height: 450px;
+	}
+
+	.p2-battery .p2-title {
+		top: 220px;
+	}
+
+	.p2-battery .p2-description {
+		top: 310px;
+	}
+	/* section battery end */
+
+
+	/* section  features */
+	.p2-features-grid .p2-feature-item {
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+	/* section  features end */
+}
+
+@media (max-width: 767px) {
+	.p2-landing .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.p2-landing .content-inner {
+		margin-bottom: 40px;
+	}
+
+
+	.p2-title {
+		margin: 0 0 15px;
+		font-size: 30px !important;
+		line-height: 1.35;
+	}
+
+	.p2-description {
+		margin: 0 0 20px;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+
+	/* .p2-flashlight,
+	.p2-design {
+		height: 540px;
+	} */
+
+	.p2-intro .content-wrapper.d-flex,
+	.p2-presentation .content-wrapper.d-flex,
+	.p2-power-bank .content-wrapper.d-flex,
+	.p2-flashlight .content-wrapper.d-flex,
+	.p2-design .content-wrapper.d-flex,
+	.p2-battery .content-wrapper.d-flex {
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	
+	.p2-intro .p2-title,
+	.p2-intro .p2-subtitle,
+	.p2-intro .p2-description,
+	.p2-presentation .p2-title,
+	.p2-presentation .p2-subtitle,
+	.p2-presentation .p2-description,
+	.p2-power-bank .p2-title,
+	.p2-power-bank .p2-subtitle,
+	.p2-power-bank .p2-description,
+	.p2-flashlight .p2-title,
+	.p2-flashlight .p2-subtitle,
+	.p2-flashlight .p2-description,
+	.p2-design .p2-title,
+	.p2-design .p2-subtitle,
+	.p2-design .p2-description,
+	.p2-battery .p2-title,
+	.p2-battery .p2-subtitle,
+	.p2-battery .p2-description {
+		width: 315px;
+		left: 0;
+		right: 0;
+		text-align: left;
+	}
+
+
+	/* section  intro */
+	.p2-intro {
+		height: 690px;
+	}
+
+	.p2-intro .p2-title {
+		max-width: 310px;
+		top: 20px;
+	}
+
+	.p2-intro .p2-description {
+		top: 150px;
+	}
+
+	.p2-intro .p2-media-figure {
+		top: 265px;
+	}
+	/* section  intro end */
+
+
+	/* section  presentation */
+	.p2-presentation {
+		height: 765px;
+	}
+
+	.p2-presentation .p2-media-figure {
+		top: 320px;
+		width: 346px;
+    	height: 580px;
+	}
+
+	.p2-presentation .p2-typography-left-container .p2-title,
+	.p2-presentation .p2-typography-left-container .p2-subtitle,
+	.p2-presentation .p2-typography-left-container .p2-description,
+	.p2-presentation .p2-typography-right-container .p2-title,
+	.p2-presentation .p2-typography-right-container .p2-subtitle,
+	.p2-presentation .p2-typography-right-container .p2-description {
+		left: 0;
+		right: 0;
+	}
+
+	.p2-presentation .p2-typography-left-container .p2-title {
+		top: 30px;
+	}
+
+	.p2-presentation .p2-typography-left-container .p2-description {
+		top: 115px;
+	}
+
+	.p2-presentation .p2-typography-right-container .p2-title {
+		top: 230px;
+	}
+
+	.p2-presentation .p2-typography-right-container .p2-description {
+		top: 270px;
+	}
+	/* section  presentation end */
+
+
+	/* section  power bank */
+	.p2-power-bank .p2-title {
+		top: 30px;
+	}
+
+	.p2-power-bank .p2-description {
+		top: 115px;
+	}
+
+	.p2-power-bank .p2-media-figure {
+		top: 190px;
+	}
+
+	.p2-power-bank .p2-cable-media,
+	.p2-power-bank .p2-charging-indicator {
+		display: none;
+	}
+	/* section  power bank end */
+
+
+	/* section flashlight */
+	.p2-flashlight {
+		height: 535px;
+	}
+
+	.p2-flashlight::before {
+		top: -80px;
+	}
+
+	.p2-flashlight .p2-title {
+		top: 40px;
+	}
+
+	.p2-flashlight .p2-description {
+		top: 90px;
+	}
+
+	.p2-flashlight .p2-media-figure {
+		top: 200px;
+	}
+	/* section flashlight end */
+
+
+	/* section design */
+	.p2-design {
+		height: 535px;
+	}
+
+	.p2-design .p2-title {
+		top: 40px;
+	}
+
+	.p2-design .p2-description {
+		top: 120px;
+	}
+
+	#p2-design-parallax {
+		top: 140px;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+	/* section design end */
+
+
+	/* section battery */
+	.p2-battery {
+		height: 535px;
+	}
+
+	.p2-battery .p2-media-figure {
+		width: 340px;
+		height: 365px;
+	}
+
+	.p2-battery .p2-title {
+		top: 40px;
+	}
+
+	.p2-battery .p2-description {
+		top: 120px;
+	}
+	/* section battery end */
+
+
+	/* section features */
+	.p2-features-grid .p2-feature-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	/* section  features end */
+}
+
+@media (max-width: 350px) {
+	.p2-title {
+		font-size: 24px !important;
+	}
+
+	.p2-intro .p2-title,
+	.p2-intro .p2-subtitle,
+	.p2-intro .p2-description,
+	.p2-presentation .p2-title,
+	.p2-presentation .p2-subtitle,
+	.p2-presentation .p2-description,
+	.p2-power-bank .p2-title,
+	.p2-power-bank .p2-subtitle,
+	.p2-power-bank .p2-description,
+	.p2-flashlight .p2-title,
+	.p2-flashlight .p2-subtitle,
+	.p2-flashlight .p2-description,
+	.p2-design .p2-title,
+	.p2-design .p2-subtitle,
+	.p2-design .p2-description,
+	.p2-battery .p2-title,
+	.p2-battery .p2-subtitle,
+	.p2-battery .p2-description {
+		width: 280px;
+	}
+
+
+	/* section intro */
+	.p2-intro {
+		height: 670px;
+	}
+
+	.p2-intro .p2-media-figure {
+		top: 245px;
+	}
+
+	.p2-intro .p2-description {
+		top: 90px;
+	}
+	/* section intro end */
+
+
+	/* section presentation */
+	.p2-presentation .p2-media-figure {
+		top: 350px;
+	}
+
+	.p2-presentation .p2-typography-left-container .p2-description {
+		top: 105px;
+	}
+	/* section presentation end */
+
+
+	/* section power bank */
+	.p2-power-bank .p2-media-figure {
+		top: 170px;
+	}
+
+	.p2-power-bank .p2-description {
+		top: 75px;
+	}
+	/* section power bank end */
+
+
+	/* section flashlight */
+	.p2-flashlight .p2-description {
+		top: 80px;
+	}
+	/* section flashlight end */
+
+
+	/* section design */
+	.p2-design .p2-description {
+		top: 110px;
+	}
+	/* section design end */
+
+
+	/* section battery */
+	.p2-battery .p2-media-figure {
+		width: 320px;
+		height: 345px;
+	}
+
+	.p2-battery .p2-description {
+		top: 110px;
+	}
+	/* section battery end */
+
+	
+	/* section features */
+	.p2-features-grid .p2-feature-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	/* section features end */
+}
+
+@media (min-width: 1200px) {
+	.p2-landing  .flex-lg-nowrap {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+	}
+}
