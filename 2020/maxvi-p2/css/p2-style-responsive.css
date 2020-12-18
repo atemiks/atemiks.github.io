@@ -124,6 +124,14 @@
 		top: 415px;
 	}
 	/* section battery end */
+
+
+	/* section features */
+	.p2-features {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+	/* section features end */
 }
 
 @media (max-width: 1024px) {
@@ -271,6 +279,11 @@
 
 
 	/* section  features */
+	.p2-features {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
 	.p2-features-grid .p2-feature-item {
 		flex: 0 0 33.3333%;
 		max-width: 33.3333%;
@@ -343,12 +356,11 @@
 	}
 
 	.p2-intro .p2-title {
-		max-width: 310px;
 		top: 20px;
 	}
 
 	.p2-intro .p2-description {
-		top: 150px;
+		top: 110px;
 	}
 
 	.p2-intro .p2-media-figure {
