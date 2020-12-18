@@ -1,5 +1,6 @@
 .p2-landing {
 	overflow: hidden;
+	min-width: 320px;
 	max-width: 2160px;
 	margin: auto;
 	background-color: #fefdfd;
@@ -235,31 +236,47 @@
 
 /* section power bank */
 .p2-power-bank {
-	position: relative;
-	z-index: 1;
+	overflow: visible !important;
 	height: 755px;
 	background-color: #1d1618;
-	background-position: center bottom !important;
-	-webkit-background-size: 2160px 1264px !important;
-	background-size: 2160px 1264px !important;
 	color: #fff;
 }
 
 .p2-power-bank::before {
 	position: absolute;
+	z-index: 2;
 	opacity: 0.5;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-size: 100% 750px;
-	background-color: #000324;
+	background: -moz-linear-gradient(top, rgba(0,3,36,1) 50%, rgba(0,3,36,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,3,36,1) 50%,rgba(0,3,36,0) 100%);
+	background: linear-gradient(to bottom, rgba(0,3,36,1) 50%,rgba(0,3,36,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000324', endColorstr='#00000324',GradientType=0 );
 	content: '';
+}
+
+.p2-power-bank-bg {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: -20px;
+	width: 451px;
+	height: 754px;
+	background: url('../images/section-power-bank/p2-power-bank-objects.png') no-repeat 0 0;
+	-webkit-background-size: contain;
+	background-size: contain;
 }
 
 .p2-power-bank .container, 
 .p2-power-bank .content-wrapper {
 	height: inherit;
+}
+
+.p2-power-bank .content-wrapper {
+	position: relative;
+	z-index: 2;
 }
 
 .p2-power-bank .p2-media-figure {
@@ -285,8 +302,8 @@
 	z-index: -1;
 	top: 557px;
 	left: 450px;
-	width: 148px;
-	height: 189px;
+	width: 236px;
+	height: 299px;
 	transform: translate(0);
 	transition: top 800ms ease, left 800ms ease;
 	transition-duration: 800ms !important
@@ -300,19 +317,19 @@
 .p2-power-bank .p2-charging-indicator {
 	opacity: 0;
 	position: absolute;
-	top: 350px;
-    left: 38%;
+	top: 65%;
+    left: 43%;
 	width: 116px;
 	height: 104px;
 	background: url('../images/section-power-bank/p2-charging-indicator.png') no-repeat 0 0;
 	-webkit-background-size: contain;
 	background-size: contain;
-	transform: translate(-450px, 0);
+	transform: translate(0);
 }
 
 .p2-power-bank .p2-charging-indicator.aos-animate {
 	opacity: 1;
-	transform: translate(-450px, 0);
+	transform: translate(0);
 }
 
 
@@ -338,22 +355,20 @@
 /* section flashlight */
 .p2-flashlight {
 	overflow: visible !important;
-	position: relative;
-	z-index: 1;
-	height: 805px;
+	height: 775px;
 	background-color: #1d1a1c;
 	color: #fff;
 }
 
 .p2-flashlight::before {
 	position: absolute;
-	top: -210px;
+	top: -755px;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url('../images/section-flashlight/p2-flashlight-bg.png') no-repeat center top;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background: url('../images/section-flashlight/p2-flashlight-bg.png') no-repeat center bottom;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
 	content: '';
 }
 
@@ -401,7 +416,7 @@
 /* section design */
 .p2-design {
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	height: 935px;
 	background-color: #d6d6d6;
 }
@@ -464,7 +479,7 @@
 	position: relative;
 	z-index: 1;
 	height: 700px;
-	box-shadow: 0 0 73px rgba(0, 0, 0, 0.46);
+	box-shadow: 0 0 73px rgba(79, 231, 4, 1);
 	color: #fff;
 }
 
