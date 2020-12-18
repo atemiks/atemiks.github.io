@@ -1,0 +1,384 @@
+.p3-landing {
+	overflow: hidden;
+	max-width: 2160px;
+	margin: auto;
+	background-color: #fefdfd;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #555555;
+	line-height: 1.25;
+}
+
+.p3-landing section {
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.p3-landing img {
+	max-width: 100%;
+}
+
+
+.p3-landing .container {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.p3-landing .section-dark,
+.p3-landing .section-dark .p3-title,
+.p3-landing .section-dark .p3-subtitle,
+.p3-landing .section-dark .p3-description {
+	color: #fff;
+}
+
+
+.p3-landing .d-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.p3-landing .d-flex.row:before,
+.p3-landing .d-flex.row:after {
+	display: none;
+}
+
+.p3-landing .flex-nowrap {
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+
+.p3-landing .justify-content-center {
+	justify-content: center;
+}
+
+
+.p3-landing .align-items-start {
+	align-items: start;
+}
+
+.p3-landing .align-items-center {
+	align-items: center;
+}
+
+.p3-landing .align-self-center {
+	align-self: center;
+}
+
+.p3-landing .align-self-end {
+	align-self: flex-end;
+}
+
+
+
+.p3-title {
+	margin: 0 0 20px;
+	font-size: 43px;
+	font-weight: 900;
+	color: #000000;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+.p3-title span {
+	font-weight: 300;
+	text-transform: none;
+}
+
+.p3-title .lead {
+	font-size: 180%;
+	font-weight: 900;
+	line-height: 1.2;
+}
+
+.p3-title.p3-title-light {
+	font-weight: 300;
+}
+
+.p3-description {
+	margin: 0 0 45px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.p3-media-figure {
+	opacity: 1 !important;
+	margin: 0;
+}
+
+
+/* section intro */
+.p3-intro {
+	position: relative;
+	z-index: 1;
+	height: 740px;
+	background-color: #040404;
+	color: #fff;
+}
+
+
+.p3-intro .container, 
+.p3-intro .content-wrapper {
+	height: inherit;
+}
+
+.p3-intro .p3-media-figure {
+	position: absolute;
+	top: 90px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 636px;
+	height: 478px;
+}
+
+.p3-intro .p3-media-figure[data-aos=fade-up] {
+	transform: translate(-50%, 30px);
+}
+
+.p3-intro .p3-media-figure.aos-animate {
+	transform: translate(-50%, 0);
+}
+
+.p3-intro .p3-title,
+.p3-intro .p3-subtitle,
+.p3-intro .p3-description {
+	position: absolute;
+	color: inherit;
+}
+
+.p3-intro .p3-title {
+	top: 275px;
+	left: 15px;
+}
+
+.p3-intro .p3-description {
+	top: 495px;
+	left: 15px;
+}
+/* section intro end */
+
+/* section power bank */
+.p3-power-bank {
+	position: relative;
+	z-index: 1;
+	height: 760px;
+	background-color: #fff;
+}
+
+.p3-power-bank .container, 
+.p3-power-bank .content-wrapper {
+	height: inherit;
+}
+
+.p3-power-bank .p3-phone-media-figure {
+	position: absolute;
+	top: 140px;
+	left: 35px;
+	width: 1012px;
+	height: 578px;
+}
+
+.p3-power-bank .p3-cable-media-figure {
+	position: absolute;
+	top: 330px;
+	right: -35px;
+	width: 824px;
+	height: 183px;
+}
+
+
+.p3-power-bank .p3-title,
+.p3-power-bank .p3-subtitle,
+.p3-power-bank .p3-description {
+	position: absolute;
+	text-align: right;
+}
+
+.p3-power-bank .p3-title {
+	top: 210px;
+	right: 15px;
+}
+
+.p3-power-bank .p3-description {
+	top: 520px;
+	right: 15px;
+}
+/* section power bank end */
+
+
+/* section presentation */
+.p3-presentation {
+	overflow: visible !important;
+	position: relative;
+	z-index: 1;
+	height: 1195px;
+	background-color: #fff;
+}
+
+.p3-presentation .container, 
+.p3-presentation .content-wrapper {
+	height: inherit;
+}
+
+.p3-presentation .p3-media-figure {
+	position: absolute;
+	z-index: -1;
+	top: -90px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 953px;
+	height: 1362px;
+}
+
+.p3-presentation .p3-media-figure[data-aos=fade-up] {
+	transform: translate(-50%, 30px);
+}
+
+.p3-presentation .p3-media-figure.aos-animate {
+	transform: translate(-50%, -30px);
+}
+
+.p3-presentation .p3-title,
+.p3-presentation .p3-subtitle,
+.p3-presentation .p3-description {
+	position: absolute;
+	left: 15px;
+	right: 15px;
+}
+
+.p3-presentation .p3-title .lead {
+	font-size: 130%;
+	vertical-align: top;
+}
+
+.p3-presentation .p3-typography-left-container .p3-title,
+.p3-presentation .p3-typography-left-container .p3-subtitle,
+.p3-presentation .p3-typography-left-container .p3-description {
+	max-width: 220px;
+	text-align: right;
+}
+
+.p3-presentation .p3-typography-left-container .p3-title {
+	top: 175px;
+}
+
+.p3-presentation .p3-typography-left-container .p3-description {
+	top: 360px;
+}
+
+.p3-presentation .p3-typography-right-container .p3-title {
+	top: 685px;
+}
+
+.p3-presentation .p3-typography-right-container .p3-description {
+	top: 865px;
+}
+/* section presentation end */
+
+
+/* section battery */
+.p3-battery {
+	position: relative;
+	z-index: 1;
+	height: 1160px;
+	color: #fff;
+}
+
+.p3-battery .container, 
+.p3-battery .content-wrapper {
+	height: inherit;
+}
+
+.p3-battery .p3-title,
+.p3-battery .p3-subtitle,
+.p3-battery .p3-description {
+	position: absolute;
+	color: inherit;
+	text-align: center;
+}
+
+.p3-battery .p3-title {
+	top: 310px;
+	left: 15px;
+	right: 15px;
+	font-size: 70px;
+}
+
+.p3-battery .p3-title span {
+	font-weight: 900;
+}
+
+.p3-battery .p3-title .lead {
+	display: block;
+	margin: 0 0 -30px;
+	font-size: 440%;
+	line-height: 0.95;
+}
+/* section battery end */
+
+
+/* section features */
+.p3-features {
+	padding-top: 130px;
+	padding-bottom: 110px;
+	background-color: #f0edf5;
+}
+
+.p3-features .p3-title {
+	font-size: 35px;
+	text-align: center;
+}
+
+.p3-feature-card {
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+	color: #434343;
+}
+
+.p3-feature-media {
+	width: 110px;
+	height: 110px;
+	margin: 0 auto 15px;
+}
+
+.p3-feature-title {
+	margin: 0 0 10px;
+	font-size: 18px;
+	font-weight: 900;
+	line-height: 1.38;
+	color: inherit;
+}
+
+
+.p3-features-grid {
+	display: -ms-flex;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 45px -10px -30px;
+}
+
+.p3-features-grid:before,
+.p3-features-grid:after {
+	display: none;
+}
+
+.p3-features-grid .p3-feature-item {
+	flex: 0 0 20%;
+	max-width: 20%;
+	margin-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/* section features end */
