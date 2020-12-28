@@ -264,9 +264,63 @@
 	left: -20px;
 	width: 451px;
 	height: 754px;
+	
+}
+
+.p2-power-bank-bg .p2-power-bank-objects {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background: url('../images/section-power-bank/p2-power-bank-objects.png') no-repeat 0 0;
 	-webkit-background-size: contain;
 	background-size: contain;
+}
+
+.p2-power-bank-bg .p2-power-bank-cable {
+	opacity: 1;
+	position: absolute;
+	z-index: -1;
+	top: 83%;
+    right: 77%;
+	width: 484px;
+	height: 321px;
+	background: url('../images/section-power-bank/p2-power-bank-cable.png') no-repeat 0 0;
+	-webkit-background-size: contain;
+	background-size: contain;
+	transform: translate(0);
+	transition: top 800ms ease, right 800ms ease;
+    transition-duration: 800ms !important;
+}
+
+.p2-power-bank-bg .p2-power-bank-cable.aos-animate {
+	top: 79%;
+    right: 66%;
+	transform: translate(0);
+}
+
+
+.p2-power-bank-bg .p2-charging-indicator {
+	opacity: 0;
+	position: absolute;
+	z-index: 2;
+	top: 65%;
+    left: 43%;
+	width: 116px;
+	height: 104px;
+	background: url('../images/section-power-bank/p2-charging-indicator.png') no-repeat 0 0;
+	-webkit-background-size: contain;
+	background-size: contain;
+	transform: translate(0);
+	transition: opacity 300ms ease;
+	transition-delay: 600ms;
+}
+
+.p2-power-bank-bg .p2-power-bank-cable.aos-animate + .p2-charging-indicator {
+	opacity: 1;
+	transform: translate(0);
 }
 
 .p2-power-bank .container, 
@@ -313,24 +367,6 @@
 .p2-power-bank .p2-cable-media.aos-animate {
 	top: 482px;
     left: 382px;
-}
-
-.p2-power-bank .p2-charging-indicator {
-	opacity: 0;
-	position: absolute;
-	top: 65%;
-    left: 43%;
-	width: 116px;
-	height: 104px;
-	background: url('../images/section-power-bank/p2-charging-indicator.png') no-repeat 0 0;
-	-webkit-background-size: contain;
-	background-size: contain;
-	transform: translate(0);
-}
-
-.p2-power-bank .p2-charging-indicator.aos-animate {
-	opacity: 1;
-	transform: translate(0);
 }
 
 
