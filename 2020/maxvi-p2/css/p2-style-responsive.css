@@ -39,17 +39,15 @@
 	}
 
 	.p2-power-bank .p2-cable-media {
-		top: 508px;
-		left: 404px;
+		top: 488px;
+    	left: 384px;
+		width: 900px;
+		height: 376px;
 	}
 
 	.p2-power-bank .p2-cable-media.aos-animate {
-		top: 442px;
-		left: 355px;
-	}
-
-	.p2-power-bank .p2-charging-indicator {
-		/* top: 400px; */
+		top: 438px;
+    	left: 350px;
 	}
 
 	.p2-power-bank .p2-title {
@@ -198,18 +196,14 @@
 
 	.p2-power-bank .p2-cable-media {
 		top: 442px;
-    	left: 355px;
-		width: 128px;
-		height: 163px;
+    	left: 345px;
+		width: 780px;
+		height: 326px;
 	}
 
 	.p2-power-bank .p2-cable-media.aos-animate {
-		top: 403px;
-    	left: 320px;
-	}
-
-	.p2-power-bank .p2-charging-indicator {
-		/* top: 340px; */
+		top: 398px;
+    	left: 316px;
 	}
 
 	.p2-power-bank .p2-title {
@@ -411,6 +405,7 @@
 	/* section  power bank */
 	.p2-power-bank {
 		overflow: hidden !important;
+		height: 785px;
 	}
 
 	.p2-power-bank-bg {
@@ -427,12 +422,14 @@
 
 	.p2-power-bank .p2-media-figure {
 		top: 190px;
+		left: 50%;
+		transform: translateX(-60%);
 	}
 
-	.p2-power-bank .p2-cable-media,
 	.p2-power-bank .p2-charging-indicator {
 		display: none;
-	}
+	} 
+	
 	/* section  power bank end */
 
 

@@ -300,18 +300,19 @@
 	opacity: 1;
 	position: absolute;
 	z-index: -1;
-	top: 557px;
-	left: 450px;
-	width: 236px;
-	height: 299px;
+	top: 540px;
+    left: 425px;
+	width: 1060px;
+	max-width: none;
+	height: 443px;
 	transform: translate(0);
 	transition: top 800ms ease, left 800ms ease;
 	transition-duration: 800ms !important
 }
 
 .p2-power-bank .p2-cable-media.aos-animate {
-	top: 499px;
-    left: 397px;
+	top: 482px;
+    left: 382px;
 }
 
 .p2-power-bank .p2-charging-indicator {
