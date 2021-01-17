@@ -1,0 +1,28 @@
+.header-accounts-actions-list {
+    margin: 0 -5px;
+}
+
+.header-accounts-actions-list > li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.header-account-action {
+    min-width: 42px;
+}
+
+.header-account-action i {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .header-account-action i {
+        margin: 0 5px 0 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-account-action {
+        min-width: 200px;
+    }
+}

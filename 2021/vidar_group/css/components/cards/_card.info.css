@@ -1,0 +1,52 @@
+.card-info {
+    display: block;
+    width: 100%;
+    min-height: 80px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-info .card-info-thumbnail {
+    flex: 0 0 40px;
+    width: 40px;
+    max-width: 40px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.card-info:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-info-success {
+    background-color: #61b778;
+}
+
+.card-info-purple {
+    background-color: #4b2a71;
+}
+
+@media (min-width: 768px) {
+    .card-info {
+        min-height: 98px;
+        padding: 15px 15px 15px 20px;
+        font-size: 17px;
+        line-height: 1.15;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-info {
+        padding: 15px 15px 15px 30px;
+    }
+
+    .card-info .card-info-thumbnail {
+        margin-right: 30px;
+        text-align: center;
+    }
+}

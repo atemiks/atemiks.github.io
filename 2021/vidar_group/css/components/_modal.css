@@ -1,0 +1,24 @@
+.modal-content {
+    border: none;
+    border-radius: 0;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-header .close {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    margin: 0;
+    color: #000;
+}
+
+.modal-title {
+    color: #4b2a71;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}

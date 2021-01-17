@@ -1,0 +1,93 @@
+.contact-block {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.contact-block .contact-link {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: #7b7b7b;
+    line-height: 1;
+    text-align: left;
+    text-decoration: none;
+}
+
+.contact-block .contact-link .contact-thumbnail {
+    flex: 0 0 50px;
+    width: 50px;
+    max-width: 50px;
+    margin-right: 5px;
+}
+
+.contact-block .contact-link .contact-media {
+    fill: #4d2c71;
+    transition: fill 300ms ease;
+}
+
+.contact-block .contact-link .contact-content {
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.contact-block .contact-link:hover,
+.contact-block .contact-link:hover .contact-content {
+    text-decoration: none;
+}
+
+.contact-block .contact-link:hover .contact-media {
+    fill: #61b778;
+}
+
+.contact-block .contact-link:hover .contact-content {
+    color: #4d2c71;
+    font-weight: 700;
+}
+
+.contact-block .contact-link[href^="tel:"] {
+    color: #4b2a71;
+    font-size: 20px;
+}
+
+.contact-block .contact-link[href^="tel:"] .contact-content {
+    text-decoration: none;
+}
+
+.contact-block .contact-link[href^="tel:"]:hover .contact-content {
+    font-weight: inherit;
+}
+
+.contact-block .contact-hint {
+    display: block;
+}
+
+@media (min-width: 576px) {
+    .contact-block .contact-link .contact-thumbnail {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
+        margin-right: 10px;
+    }
+
+    .contact-block .contact-link[href^="tel:"] {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-block {
+        font-size: 17px;
+    }
+
+    .contact-block .contact-link .contact-thumbnail {
+        margin-right: 5px;
+    }
+
+    .contact-block .contact-link[href^="tel:"] {
+        font-size: 33px;
+    }
+}

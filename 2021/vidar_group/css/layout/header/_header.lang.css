@@ -1,0 +1,23 @@
+.header-lang-link {
+    display: inline-block;
+    padding: 9px 5px;
+    background-color: #d8e4fc;
+    color: #4d59a1;
+    font-size: 15px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.header-lang-link img {
+    vertical-align: middle;
+}
+
+@media (min-width: 1200px) {
+    .header-lang-block {
+        width: 200px;
+    }
+
+    .header-lang-link {
+        padding: 5px 3px;
+    }
+}

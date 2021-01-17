@@ -1,0 +1,42 @@
+/* root */
+@import 'layout/_fonts.css';
+@import 'layout/_typography.css';
+@import 'layout/_page.css';
+
+/* components */
+@import 'components/_search.css';
+@import 'components/_contact.css';
+@import 'components/_forms.css';
+@import 'components/_buttons.css';
+@import 'components/_breadcrumb.css';
+@import 'components/_swiper.css';
+@import 'components/_modal.css';
+
+/* cards */
+@import 'components/cards/_card.hero.css';
+@import 'components/cards/_card.info.css';
+@import 'components/cards/_card.service.css';
+@import 'components/cards/_card.partner.css';
+
+/* header */
+@import 'layout/header/_header.css';
+@import 'layout/header/_header.logo.css';
+@import 'layout/header/_header.search.css';
+@import 'layout/header/_header.account.css';
+@import 'layout/header/_header.offcanvas.css';
+@import 'layout/header/_header.contact.css';
+@import 'layout/header/_header.nav.css';
+@import 'layout/header/_header.lang.css';
+
+/* sections */
+@import 'sections/_section.hero.css';
+@import 'sections/_section.info.css';
+@import 'sections/_section.services.css';
+@import 'sections/_section.partners.css';
+@import 'sections/_section.about.css';
+
+/* footer */
+@import 'layout/footer/_footer.css';
+@import 'layout/footer/_footer.nav.css';
+@import 'layout/footer/_footer.contact.css';
+@import 'layout/footer/_footer.copyright.css';

@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/swiper/swiper.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Vidar Group</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content-wrapper">
+                <header class="header-wrapper">
+                    <div class="container d-flex flex-column">
+                        <div class="header-statusbar-wrapper order-1 order-md-0">
+                            <div class="form-row">
+                                <div class="header-search-container col-12 col-md-auto ml-md-auto">
+                                    <div class="header-search-block search-block">
+                                        <form action="" class="form-search">
+                                            <input type="search" class="search-input" placeholder="Поиск" required >
+
+                                            <button type="submit" class="search-button d-flex align-items-center justify-content-center" >
+                                                <i class="icon-search" ></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="header-lang-container col-auto d-none d-md-block">
+                                    <div class="header-lang-block d-flex justify-content-end">
+                                        <div class="header-lang-link">
+                                            <img src="images/icons/png/icon-ru.png" alt="Русский">
+                                            RU
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-main-wrapper order-0 order-md-1">
+                            <div class="row align-items-center">
+                                <div class="header-logo-container col-auto">
+                                    <a href="index.html" class="header-logo-block">
+                                        <img src="images/logo-xs.svg" alt="Vidar Group" class="header-logo-img d-sm-none">
+                                        <img src="images/logo-xl.png" alt="Vidar Group" class="header-logo-img d-none d-sm-block">
+                                    </a>
+                                </div>
+
+                                <div class="header-contact-container col-auto mx-auto">
+                                    <div class="header-contact-block contact-block">
+                                        <a href="tel:88008008080" class="contact-link d-flex align-items-center">
+                                            <div class="contact-content">8 (800) 800 80 80</div>
+                                        </a>
+
+                                        <span class="contact-hint text-muted d-none d-sm-block">Звонок по России бесплатный</span>
+                                    </div>
+                                </div>
+
+                                <div class="header-account-container col-auto">
+                                    <ul class="header-accounts-actions-list list-unstyled d-flex flex-wrap">
+                                        <li>
+                                            <a href="#link" class="header-account-action btn">
+                                                <i class="icon-user-circle-solid" ></i>
+                                                <span class="d-none d-md-inline" >Вход в личный кабинет</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="d-none d-lg-block" >
+                                            <a href="#link" class="header-account-action btn">Задать вопрос</a>
+                                        </li>
+
+                                        <li class="d-none d-lg-block" >
+                                            <button class="header-account-action btn btn-success">Подписаться</button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="header-offcanvas-container col-auto d-lg-none">
+                                    <button class="header-offcanvas-toggle d-flex align-items-center justify-content-center" >
+                                        <i class="icon-bars" ></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-nav-wrapper order-2">
+                            <nav class="header-nav-block" >
+                                <ul class="header-nav-list list-unstyled d-flex flex-column flex-lg-row">
+                                    <li class="header-nav-item has-children">
+                                        <a href="index.html" class="header-nav-link">Услуги и решения</a>
+                                        <button class="header-nav-item-toggle" >
+                                            <i class="icon-angle-right-solid" ></i>
+                                        </button>
+
+                                        <div class="megamenu-wrapper">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-lg-4">
+                                                    <div class="megamenu-block">
+                                                        <div class="megamenu-title">Аутсорсинг обслуживания ИТ-инфораструктуры</div>
+
+                                                        <ul class="megamenu-list list-unstyled">
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Базовые пакеты услуг ИТ-аутсорсинга</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Аутсорсинг службы Service Desk</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Аутсорсинг поддержки рабочих мест</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Аутсорсинг сопровождения систем ИТ-инфраструктуры</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Ауторсинг печати</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Аутсорсинг сопровождения филиальных офисов</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Аутстаффинг и оперативная подмена ИТ-персонала</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="megamenu-block">
+                                                        <div class="megamenu-title">Аутсорсинг сопровождения бизнес-приложений</div>
+
+                                                        <ul class="megamenu-list list-unstyled">
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Аутсорсинг сопровождения бизнес-приложений</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-lg-4">
+                                                    <div class="megamenu-block">
+                                                        <div class="megamenu-title">Облачные вычисления</div>
+
+                                                        <ul class="megamenu-list list-unstyled">
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">1C в аренду</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Корпоративная почта Microsoft Exchange</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Виртуальное рабочее место (DaaS)</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">SPLA — лицензированное ПО Microsoft в аренду</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Виртуальный выделенный сервер</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Аутсорсинг инфраструктуры. Аренда вычислительных мощностей</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Виртуальный диск</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Миграция сервисов в облачную инфраструктуру</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Размещение оборудования в ЦОД</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="megamenu-block">
+                                                        <div class="megamenu-title">Сервисная поддержка</div>
+
+                                                        <ul class="megamenu-list list-unstyled">
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Сервисная поддержка</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Услуги по ремонту оборудования и консультации специалистов</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-lg-4">
+                                                    <div class="megamenu-block">
+                                                        <div class="megamenu-title">ИТ-аудит и консалтинг</div>
+
+                                                        <ul class="megamenu-list list-unstyled">
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Технологический аудит</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Инвентаризация ИТ-инфраструктуры</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">ИТ-аудит подразделений и процессов</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Проектирование ИТ-процессов и разработка стратегии сорсинга</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Внедрение системы автоматизации ИТ-процессов</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="megamenu-block">
+                                                        <div class="megamenu-title">Системная интеграция</div>
+
+                                                        <ul class="megamenu-list list-unstyled">
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Поставка оборудования и программного обеспечения</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Виртуализация</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Миграция корпоративных сервисов в облачную инфраструктуру</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Проектирование, монтаж, пусконаладка</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Внедрение информационных систем</a>
+                                                            </li>
+                                                            <li class="megamenu-item">
+                                                                <a href="#link" class="megamenu-link">Переезд корпоративных ИТ-систем</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header-nav-item">
+                                        <a href="index.html" class="header-nav-link">Специальные предложения</a>
+                                    </li>
+
+                                    <li class="header-nav-item active">
+                                        <a href="about.html" class="header-nav-link">О компании</a>
+                                    </li>
+
+                                    <li class="header-nav-item">
+                                        <a href="index.html" class="header-nav-link">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="header-nav-overflow"></div>
+                        </div>
+                    </div>
+                </header>
+
+                <main class="main-wrapper">
+                    <div class="breadcrumb-container">
+                        <div class="container">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb d-flex flex-nowrap flex-lg-wrap">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">Главная страница</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="#link">О компании</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Карьера</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <section class="section-about">
+                        <div class="container">
+                            <div class="section-header">
+                                <h1 class="section-title">Преимущества работы в Vidar Group</h1>
+                            </div>
+
+                            <div class="section-content">
+                                <div class="row">
+                                    <div class="col-xl-10 offset-xl-1">
+                                        <ul class="list-check list-unstyled">
+                                            <li>Более 400 успешно реализованных проектов для крупного и среднего бизнеса в различных отраслях.</li>
+                                            <li>Уже обслуживаем более 300 тысяч единиц клиентского оборудования стоимостью более $500 млн.</li>
+                                            <li>В штате 400 сертифицированных инженера высшего класса.</li>
+                                            <li>500 городов России охватывает наша партнерская сеть.</li>
+                                            <li>Являемся сертифицированным партнером: Cisco, HP, Sun, IBM, Microsoft, Sony, Radvision, APC, Oracle и др.</li>
+                                            <li>Предлагаем весь комплекс профессиональных ИТ-услуг и качественный сервис, подтвержденный сертификатом ISO 20 000.</li>
+                                            <li>Вы получаете доступ к многолетнему опыту и экспертизе наших высококлассных специалистов, отточенным процессам и проверенным инструментам.</li>
+                                            <li>Гарантии и ответственность: штрафные санкции закрепляются в договоре (SLA).</li>
+                                            <li>Оперативность: 90% сбоев устраняем в течении 1 часа.</li>
+                                            <li>Снижаем Ваши затраты на ИТ-обслуживание в среднем на 30%, Вы платите только за реально потребляемые услуги и ресурсы.</li>
+                                            <li>Высокая прозрачность услуг позволяют легко планировать и контролировать затраты на ИТ.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+
+            <footer class="footer-wrapper">
+                <div class="footer-contact-wrapper">
+                    <div class="container">
+                        <div class="contacts-grid row align-items-center">
+                            <div class="contact-item col-lg-3">
+                                <div class="contact-block">
+                                    <a href="tel:88008008080" class="contact-link d-flex align-items-center">
+                                        <div class="contact-content">8 (800) 800 80 80</div>
+                                    </a>
+
+                                    <span class="contact-hint text-muted">Звонок по России бесплатный</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item col-6 col-sm-4 col-lg-3">
+                                <div class="contact-block">
+                                    <button class="contact-link d-flex align-items-center" data-toggle="modal" data-target="#modalFeedback" >
+                                        <div class="contact-thumbnail">
+                                            <svg class="contact-media" width="40" height="25" >
+                                                <use xlink:href="images/sprite.svg#icon-email" ></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="contact-content">Написать письмо</div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="contact-item col-6 col-sm-4 col-lg-3">
+                                <div class="contact-block">
+                                    <button class="contact-link d-flex align-items-center" data-toggle="modal" data-target="#modalCallback" >
+                                        <div class="contact-thumbnail">
+                                            <svg class="contact-media" width="47" height="41" >
+                                                <use xlink:href="images/sprite.svg#icon-phone" ></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="contact-content">Заказать звонок</div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="contact-item col-6 col-sm-4 col-lg-3">
+                                <div class="contact-block">
+                                    <a  href="#link" class="contact-link d-flex align-items-center">
+                                        <div class="contact-thumbnail">
+                                            <svg class="contact-media" width="49" height="41" >
+                                                <use xlink:href="images/sprite.svg#icon-chat" ></use>
+                                            </svg>
+                                        </div>
+                                        <div class="contact-content">Задать вопрос</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-main-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-copyright-container col-lg-3 order-1 order-lg-0">
+                                <a href="#link" class="btn btn-success btn-fluid">Специальные предложения</a>
+                                
+                                <div class="footer-copyright-block">&copy;&nbsp;2021 &laquo;Vidar Group&raquo;</div>
+                            </div>
+
+                            <div class="footer-navigation-container col-lg-9 order-0 order-lg-1">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="footer-nav-block">
+                                            <div class="footer-nav-title">Услуги и решения</div>
+
+                                            <ul class="footer-nav-list list-unstyled">
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Аутсорсинг обслуживания ИТ-инфораструктуры</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Аутсорсинг сопровождения бизнес-приложений</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Облачные вычисления</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Сервисная поддержка</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">ИТ-аудит и консалтинг</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Системная интеграция</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Специальные предложения</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="footer-nav-block">
+                                            <div class="footer-nav-title">О компании</div>
+                                            
+                                            <ul class="footer-nav-list list-unstyled">
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">О компании</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Презентации</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Лицензии и сертификаты</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Достижения «Vidar Group»</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Федеральное присутствие</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Наши клиенты</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Отзывы</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Наши партнеры</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Карьера</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="footer-nav-block">
+                                            <div class="footer-nav-title">Контакты</div>
+                                            
+                                            <ul class="footer-nav-list list-unstyled">
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Москва</a>
+                                                </li>
+                                                <li class="footer-nav-item">
+                                                    <a href="#link" class="footer-nav-link">Екатеринбург</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalFeedback" tabindex="-1" aria-labelledby="modalFeedbackLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Написать письмо</div>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon-close" ></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="" class="form-modal">
+                            <div class="form-group">
+                                <label for="formModalFeedbackName">ФИО</label>
+                                <input type="text" class="form-control" id="formModalFeedbackName" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formModalFeedbackEmail">E-mail</label>
+                                <input type="email" class="form-control" id="formModalFeedbackEmail" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formModalFeedbackPhone">Телефон</label>
+                                <input type="phone" class="form-control" id="formModalFeedbackPhone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formModalFeedbackMessage">Сообщение</label>
+                                <textarea class="form-control" id="formModalFeedbackMessage" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-success" >Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalCallback" tabindex="-1" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Заказать звонок</div>
+                        
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon-close" ></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="" class="form-modal">
+                            <div class="form-group">
+                                <label for="formModalCallbackName">ФИО</label>
+                                <input type="text" class="form-control" id="formModalCallbackName" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formModalCallbackPhone">Телефон</label>
+                                <input type="phone" class="form-control" id="formModalCallbackPhone" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-success" >Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="vendor/jquery/v3/jquery-3.3.1.min.js"></script>
+        <script src="vendor/bootstrap/bootstrap.min.js"></script>
+        <script src="vendor/swiper/swiper.min.js"></script>
+
+        <script src="js/offcanvas.js"></script>
+        <script src="js/sliders.js"></script>
+    </body>
+</html>

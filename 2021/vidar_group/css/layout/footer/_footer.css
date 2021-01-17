@@ -1,0 +1,16 @@
+.footer-wrapper {
+    margin: 0;
+    padding: 0;
+    background-color: #dcdcdc;
+    line-height: 1.25;
+}
+
+.footer-main-wrapper {
+    padding: 20px 0;
+}
+
+@media (min-width: 1200px) {
+    .footer-main-wrapper {
+        padding: 35px 0;
+    }
+}

@@ -1,0 +1,34 @@
+.section-partners {
+    margin: 0;
+    padding: 15px 0;
+    background-color: #f3f3f3;
+}
+
+.swiper-partners {
+    margin: 10px 50px;
+}
+
+.swiper-partners .swiper-wrapper {
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .swiper-partners .swiper-slide {
+        width: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .swiper-partners {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .swiper-partners .swiper-partners-button-prev {
+        left: calc(-8.33333% - 15px);
+    }
+
+    .swiper-partners .swiper-partners-button-next {
+        right: calc(-8.33333% - 15px);
+    }
+}

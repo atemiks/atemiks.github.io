@@ -1,0 +1,46 @@
+.swiper-cover {
+    position: relative;
+}
+
+.swiper-cover > .swiper-container {
+    position: static;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    cursor: pointer;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background: #d5d0cc;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 18px;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-prev::before {
+    font-family: 'icomoon';
+    content: "\e901";
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-next::before {
+    font-family: 'icomoon';
+    content: "\e902";
+}
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+    outline: none;
+}

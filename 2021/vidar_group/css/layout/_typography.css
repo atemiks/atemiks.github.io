@@ -1,0 +1,72 @@
+html,
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+.title-h1 {
+    color: #4d2c71;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+h2,
+.title-h2 {
+    color: #4d2c71;
+    font-size: 33px;
+    font-weight: 700;
+}
+
+h3,
+.title-h3 {
+    color: #4d2c71;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+h4,
+.title-h4 {
+    color: #4d2c71;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+h5,
+.title-h5 {
+    color: #4d2c71;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+h6,
+.title-h6 {
+    color: #4d2c71;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+}
+
+.list-check > li {
+    position: relative;
+    min-height: 17px;
+    padding: 0 0 0 30px;
+}
+
+.list-check > li::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 21px;
+    height: 17px;
+    background: url('../../images/icons/png/icon-check.png') no-repeat 0 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+    content: '';
+}
+
+.text-muted {
+    color: #6f6f6f;
+}

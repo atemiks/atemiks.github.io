@@ -1,0 +1,58 @@
+.card-service {
+    width: 100%;
+    padding: 20px 15px 25px;
+    background-color: #ededed;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.25;
+    text-decoration: none;
+}
+
+.card-service .card-service-thumbnail {
+    height: 75px;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.card-service .card-service-title {
+    margin: 0 0 5px;
+    color: #4b2a71;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.card-service .card-service-description {
+    line-height: 1.35;
+}
+
+.card-service:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .card-service {
+        padding: 15px 20px;
+    }
+
+    .card-service .card-service-thumbnail {
+        margin: 0 0 17px;
+    }
+
+    .card-service .card-service-title {
+        margin: 0 -15px 20px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-service {
+        padding: 15px 20px;
+        font-size: 10px;
+        line-height: 1.15;
+    }
+
+    .card-service .card-service-description {
+        line-height: 1.25;
+    }
+}

@@ -1,0 +1,34 @@
+.btn {
+    -webkit-display: flex;
+    -ms-display: flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 8px 5px;
+    border: none;
+    border-radius: 0;
+    background-color: #f1f1f1;
+    color: #7b7b7b;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.btn i {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.btn-success {
+    background-color: #61b778;
+    color: #fff;
+}
+
+.btn-fluid {
+    width: 100%;
+}

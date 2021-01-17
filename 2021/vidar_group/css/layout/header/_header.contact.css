@@ -1,0 +1,31 @@
+.header-contact-block {
+    font-size: 14px;
+}
+
+.header-contact-block .contact-link[href^="tel:"] {
+    font-size: 14px;
+}
+
+@media (min-width: 375px) {
+    .header-contact-block .contact-link[href^="tel:"] {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    .header-contact-block .contact-link[href^="tel:"] {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-contact-block .contact-link[href^="tel:"] {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-contact-block .contact-link[href^="tel:"] {
+        font-size: 33px;
+    }
+}
