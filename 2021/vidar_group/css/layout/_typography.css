@@ -6,28 +6,28 @@ body {
 h1,
 .title-h1 {
     color: #4d2c71;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 700;
 }
 
 h2,
 .title-h2 {
     color: #4d2c71;
-    font-size: 33px;
+    font-size: 28px;
     font-weight: 700;
 }
 
 h3,
 .title-h3 {
     color: #4d2c71;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 700;
 }
 
 h4,
 .title-h4 {
     color: #4d2c71;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -69,4 +69,38 @@ img {
 
 .text-muted {
     color: #6f6f6f;
+}
+
+@media (min-width: 768px) {
+    h1,
+    .title-h1 {
+        font-size: 34px;
+    }
+
+    h2,
+    .title-h2 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1,
+    .title-h1 {
+        font-size: 38px;
+    }
+
+    h2,
+    .title-h2 {
+        font-size: 33px;
+    }
+
+    h3,
+    .title-h3 {
+        font-size: 25px;
+    }
+
+    h4,
+    .title-h4 {
+        font-size: 21px;
+    }
 }

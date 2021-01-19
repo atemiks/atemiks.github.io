@@ -47,7 +47,7 @@
                                 <div class="header-logo-container col-auto">
                                     <a href="index.html" class="header-logo-block">
                                         <img src="images/logo-xs.svg" alt="Vidar Group" class="header-logo-img d-sm-none">
-                                        <img src="images/logo-xl.png" alt="Vidar Group" class="header-logo-img d-none d-sm-block">
+                                        <img src="images/logo-xl.svg" alt="Vidar Group" class="header-logo-img d-none d-sm-block">
                                     </a>
                                 </div>
 
@@ -71,11 +71,11 @@
                                         </li>
 
                                         <li class="d-none d-lg-block" >
-                                            <a href="#link" class="header-account-action btn">Задать вопрос</a>
+                                            <a href="#link" class="header-account-action btn" data-toggle="modal" data-target="#modalFeedback" >Задать вопрос</a>
                                         </li>
 
                                         <li class="d-none d-lg-block" >
-                                            <button class="header-account-action btn btn-success">Подписаться</button>
+                                            <button class="header-account-action btn btn-success" data-toggle="modal" data-target="#modalSubscribe" >Подписаться</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -262,15 +262,20 @@
                 <main class="main-wrapper">
                     <section class="section-hero">
                         <div class="container">
-                            <div class="swiper-hero swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="card-hero">
-                                            <a href="#link" class="card-hero-link">
-                                                <img src="uploads/hero-banners/hero-slide-1.jpg" class="card-hero-media" alt="Профессиональное и доступное ит-обслуживание">
-                                            </a>
+                            <div class="swiper-cover">
+                                <div class="swiper-hero swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card-hero">
+                                                <a href="#link" class="card-hero-link">
+                                                    <img src="uploads/hero-banners/hero-slide-1.jpg" class="card-hero-media" alt="Профессиональное и доступное ит-обслуживание">
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
+
+                                    <button type="button" class="swiper-hero-button-prev swiper-button-prev"></button>
+                                    <button type="button" class="swiper-hero-button-next swiper-button-next"></button>
                                 </div>
                             </div>
                         </div>
@@ -742,6 +747,42 @@
                             </div>
 
                             <button type="submit" class="btn btn-success" >Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalSubscribe" tabindex="-1" aria-labelledby="modalSubscribeLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Подписаться на рассылку</div>
+                        
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon-close" ></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="" class="form-modal">
+                            <div class="form-group">
+                                <label for="formModalSubscribeEmail">E-mail</label>
+                                <input type="email" class="form-control" id="formModalSubscribeEmail" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-success" >Подписаться</button>
+                        </form>
+
+                        <div class="mb-5"></div>
+
+                        <form action="" class="form-modal">
+                            <div class="form-group">
+                                <label for="formModalUnubscribeEmail">Если Вы уже подписаны на нашу рассылку и хотите изменить ее настройки (например, отписаться), введите e-mail, на который вы получаете наши письма.</label>
+                                <input type="email" class="form-control" id="formModalUnubscribeEmail" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-success" >Выслать код подтверждения</button>
                         </form>
                     </div>
                 </div>

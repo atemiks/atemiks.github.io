@@ -9,7 +9,7 @@
     -ms-justify-content: center;
     justify-content: center;
     margin: 0;
-    padding: 8px 5px;
+    padding: 8px 15px;
     border: none;
     border-radius: 0;
     background-color: #f1f1f1;
@@ -24,8 +24,17 @@
     margin-right: 5px;
 }
 
+.btn:hover {
+    background-color: #e4e4e4;
+}
+
 .btn-success {
     background-color: #61b778;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #218838;
     color: #fff;
 }
 

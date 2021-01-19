@@ -6,6 +6,15 @@
                 slidesPerView: 1,
                 loop: true,
                 loopAdditionalSlides: 1,
+
+                navigation: {
+                    nextEl: jContainer.find('.swiper-hero-button-next'),
+                    prevEl: jContainer.find('.swiper-hero-button-prev'),
+                },
+
+                autoplay: {
+                    delay: 5000,
+                },
             });
         });
 

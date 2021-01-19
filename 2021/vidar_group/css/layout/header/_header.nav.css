@@ -229,6 +229,7 @@
     .header-nav-list .header-nav-item.has-children:hover .megamenu-wrapper {
         opacity: 1;
         visibility: visible;
+        transform: translateY(0);
     }
 
 
@@ -245,6 +246,8 @@
         display: block;
         opacity: 0;
         visibility: hidden;
+        transform: translateY(40px);
+        transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease;
         position: absolute;
         z-index: 99;
         top: 100%;

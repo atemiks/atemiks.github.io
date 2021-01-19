@@ -18,8 +18,10 @@
     border-radius: 5px;
     background: #d5d0cc;
     transform: translateY(-50%);
+    transition: background-color 300ms ease;
     color: #fff;
     font-size: 18px;
+    line-height: 1;
 }
 
 .swiper-button-prev {
@@ -43,4 +45,9 @@
 .swiper-button-prev:focus,
 .swiper-button-next:focus {
     outline: none;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: #ccc7c3;
 }
