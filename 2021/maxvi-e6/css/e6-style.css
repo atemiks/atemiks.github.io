@@ -225,6 +225,7 @@
 
 /* section notifications */
 .e6-notification-block {
+	overflow: hidden;
 	-webkit-display: flex;
 	-ms-display: flex;
 	display: flex;
@@ -318,6 +319,7 @@
 
 /* section emergency */
 .e6-emergency {
+	overflow: hidden;
 	height: 780px;
 	background-color: #3409b7;
 	color: #fff;
@@ -387,6 +389,7 @@
 
 /* section camera */
 .e6-camera {
+	overflow: hidden;
 	height: 780px;
 	background-color: #f0f0f0;
 	background-position: center bottom !important;
@@ -451,6 +454,7 @@
 
 /* section flashlight */
 .e6-flashlight {
+	overflow: hidden;
 	height: 840px;
 	background-color: #d9d9d9;
 }
