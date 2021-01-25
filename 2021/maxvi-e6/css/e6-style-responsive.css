@@ -14,12 +14,27 @@
 	}
 	/* section style end */
 
+
+	/* section notifications */
+	.e6-notifications .e6-title {
+		top: 160px;
+	}
+	/* section notifications end */
+
+
 	/* section camera */
 	.e6-camera .e6-media-figure {
 		width: 955px;
 		height: 269px;
 	}
 	/* section camera end */
+
+
+	/* section flashlight */
+	.e6-flashlight .e6-media-figure::after {
+		width: 80px;
+	}
+	/* section flashlight end */
 }
 
 @media (max-width: 991px) {
@@ -87,7 +102,7 @@
 	}
 
 	.e6-style .e6-description {
-		top: 280px;
+		top: 260px;
 	}
 
 	.e6-style .e6-media-figure {
@@ -95,6 +110,7 @@
 		height: 475px;
 	}
 	/* section  style end */
+
 
 	/* section  notifications end */
 	.e6-notification-block {
@@ -117,7 +133,11 @@
 	}
 
 	.e6-notifications .e6-title {
-		top: 218px;
+		top: 135px;
+	}
+
+	.e6-notifications .e6-description {
+		top: 260px;
 	}
 
 	.e6-notifications .e6-notification-calls-block {
@@ -167,11 +187,12 @@
 	}
 
 	.e6-camera .e6-media-figure {
-		top: 215px;
+		top: 255px;
 		width: 735px;
 		height: 208px;
 	}
 	/* section  camera end */
+
 
 	/* section  flashlight */
 	.e6-flashlight {
@@ -198,17 +219,18 @@
 	}
 	/* section  flashlight end */
 
+
 	/* section  materials */
 	.e6-materials {
 		height: 700px;
 	}
 
 	.e6-materials .e6-title {
-		top: 255px;
+		top: 175px;
 	}
 
 	.e6-materials .e6-description {
-		top: 385px;
+		top: 305px;
 	}
 
 	.e6-materials .e6-media-figure {
@@ -272,8 +294,8 @@
 	}
 
 	.e6-landing .container {
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	.e6-landing .content-inner {
@@ -292,6 +314,12 @@
 		margin: 0 0 20px;
 		font-size: 18px;
 		line-height: 1.5;
+	}
+
+
+	.e6-phone-figure {
+		width: 265px;
+		height: 504px;
 	}
 
 
@@ -331,7 +359,7 @@
 
 	/* section style */
 	.e6-style {
-		height: 740px;
+		height: 780px;
 	}
 
 	.e6-style .e6-title {
@@ -340,16 +368,32 @@
 	}
 
 	.e6-style .e6-description {
-		top: 140px;
+		top: 130px;
 	}
 
 	.e6-style .e6-media-figure {
-		top: 235px;
+		top: 265px;
 	}
 	/* section style end */
 
 
 	/* section notifications */
+	.e6-notification-block {
+		font-size: 16px;
+	}
+
+	.e6-notification-block .e6-notification-thumbnail {
+		flex: 0 0 40px;
+		width: 40px;
+		max-width: 40px;
+		margin-right: 10px;
+	}
+
+	.e6-notification-block .e6-notification-media {
+		max-width: 40px;
+	}
+
+
 	.e6-notifications {
 		height: 830px;
 	}
@@ -358,20 +402,24 @@
 		top: 40px;
 	}
 
+	.e6-notifications .e6-description {
+		top: 170px;
+	}
+
 	.e6-notifications .e6-notification-calls-block {
-		top: 180px;
+		top: 270px;
 	}
 
 	.e6-notifications .e6-notification-email-block {
-		top: 235px;
+		top: 320px;
 	}
 
 	.e6-notifications .e6-notification-battery-block {
-		top: 290px;
+		top: 365px;
 	}
 
 	.e6-notifications .e6-media-figure {
-		top: 375px;
+		top: 430px;
 	}
 	/* section notifications end */
 
@@ -390,14 +438,14 @@
 	}
 
 	.e6-emergency .e6-media-figure {
-		top: 280px;
+		top: 300px;
 	}
 	/* section emergency end */
 
 
 	/* section camera */
 	.e6-camera {
-		height: 600px;
+		height: 660px;
 	}
 
 	.e6-camera .e6-title, 
@@ -413,12 +461,16 @@
 	.e6-camera .e6-description {
 		top: 135px;
 	}
+
+	.e6-camera .e6-media-figure {
+		top: 295px;
+	}
 	/* section camera end */
 
 
 	/* section flashlight */
 	.e6-flashlight {
-		height: 600px;
+		height: 640px;
 	}
 
 	.e6-flashlight .e6-title {
@@ -430,7 +482,7 @@
 	}
 
 	.e6-flashlight .e6-media-figure {
-		top: 275px;
+		top: 325px;
 	}
 	/* section flashlight end */
 
@@ -441,7 +493,7 @@
 	}
 
 	.e6-materials .e6-description {
-		top: 255px;
+		top: 215px;
 	}
 
 	.e6-materials .e6-media-figure {
@@ -454,7 +506,7 @@
 
 	/* section design */
 	.e6-design {
-		height: 650px;
+		height: 600px;
 	}
 
 	.e6-design .e6-title {
@@ -466,7 +518,29 @@
 	}
 
 	.e6-design .e6-media-figure {
-		top: 450px;
+		top: 420px;
+		width: 350px;
+    	height: 350px;
+	}
+
+	.e6-design .e6-media-centered-block {
+		width: 84px;
+    	height: 288px;
+	}
+
+	.e6-design .e6-media-red-block {
+		width: 155px;
+		height: 124px;
+	}
+
+	.e6-design .e6-media-gray-block {
+		width: 138px;
+		height: 105px;
+	}
+
+	.e6-design .e6-media-blue-block {
+		width: 146px;
+		height: 135px;
 	}
 	/* section design end */
 
