@@ -1,0 +1,290 @@
+@media (max-width: 1199px) {
+	.c9i-title {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 991px) {
+	.c9i-landing {
+		-webkit-background-size: 130% auto;
+    	background-size: 130% auto;
+	}
+
+	.c9i-landing .container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.c9i-title {
+		font-size: 30px;
+	}
+
+
+	/* section design */
+	.c9i-design {
+		height: 600px;
+	}
+
+	.c9i-design .c9i-description {
+		top: 340px;
+	}
+
+	.c9i-design .c9i-media-figure {
+		width: 544px;
+		height: 560px;
+	}
+
+	.c9i-design #c9i-design-parallax .layer-1 img {
+		width: 285px;
+		height: 478px;
+	}
+
+	.c9i-design #c9i-design-parallax .layer-2 {
+		margin-left: 20px;
+	}
+
+	.c9i-design #c9i-design-parallax .layer-2 img {
+		width: 448px;
+		height: 578px;
+	}
+	/* section design end */
+
+	/* section presentation */
+	.c9i-presentation {
+		height: 1200px;
+	}
+
+	.c9i-presentation .c9i-camera-title {
+		top: 55px;
+	}
+
+	.c9i-presentation .c9i-camera-description {
+		top: 150px;
+	}
+
+	.c9i-presentation .c9i-caseback-title {
+		top: 700px;
+	}
+
+	.c9i-presentation .c9i-caseback-description {
+		top: 795px;
+	}
+
+	.c9i-presentation .c9i-media-figure {
+		top: 240px;
+		width: 638px;
+		height: 255px;
+	}
+
+	.c9i-presentation .c9i-media-figure .c9i-media-horizontal-shadow {
+		width: 804px;
+		height: 170px;
+	}
+	/* section presentation end */
+
+
+	/* section memory card */
+	.c9i-memory-card {
+		height: 600px;
+	}
+
+	.c9i-memory-card .c9i-title {
+		top: 85px;
+	}
+
+	.c9i-memory-card .c9i-description {
+		top: 220px;
+	}
+
+	.c9i-memory-card .c9i-media-figure {
+		width: 308px;
+		height: 575px;
+	}
+	/* section memory card end */
+
+
+	/* section  features */
+	.c9i-features-grid .c9i-feature-item {
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+	/* section  features end */
+}
+
+@media (max-width: 767px) {
+	.c9i-landing {
+		-webkit-background-size: 200% auto;
+    	background-size: 200% auto;
+	}
+
+	.c9i-landing .container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.c9i-landing .content-inner {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+
+	.c9i-title {
+		margin: 0 0 15px;
+		font-size: 30px !important;
+		line-height: 1.35;
+	}
+
+	.c9i-description {
+		margin: 0 0 20px;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+
+	.c9i-design .content-wrapper.d-flex {
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+
+	.c9i-design .c9i-title,
+	.c9i-presentation .c9i-camera-title, 
+	.c9i-presentation .c9i-caseback-title,
+	.c9i-memory-card .c9i-title {
+		max-width: 260px;
+    	font-size: 30px;
+	}
+
+	.c9i-design .c9i-description, 
+	.c9i-presentation .c9i-camera-description, 
+	.c9i-presentation .c9i-caseback-description,
+	.c9i-memory-card .c9i-description {
+		max-width: 315px;
+	}
+
+
+	/* section design */
+	.c9i-design {
+		height: 830px;
+	}
+
+	.c9i-design .c9i-title {
+		top: 40px;
+	}
+
+	.c9i-design .c9i-description {
+		top: 215px;
+	}
+
+	.c9i-design .c9i-media-figure {
+		top: 330px;
+		width: 380px;
+		height: 470px;
+	}
+
+	.c9i-design #c9i-design-parallax .layer-1 img {
+		width: 228px;
+    	height: 380px;
+	}
+
+	.c9i-design #c9i-design-parallax .layer-2 {
+		margin-left: 0;
+	}
+
+	.c9i-design #c9i-design-parallax .layer-2 img {
+		width: 358px;
+		height: 464px;
+	}
+	/* section design end */
+
+
+	/* section presentation */
+	.c9i-presentation .c9i-camera-title, 
+	.c9i-presentation .c9i-camera-subtitle, 
+	.c9i-presentation .c9i-camera-description {
+		text-align: left;
+	}
+
+	.c9i-presentation .c9i-camera-title {
+		top: 40px;
+	}
+
+	.c9i-presentation .c9i-camera-description {
+		top: 135px;
+	}
+
+	.c9i-presentation .c9i-caseback-title {
+		top: 435px;
+	}
+
+	.c9i-presentation .c9i-caseback-description {
+		top: 610px;
+	}
+	/* section presentation end */
+
+
+	/* section memory card */
+	.c9i-memory-card {
+		height: 750px;
+	}
+
+	.c9i-memory-card .c9i-title {
+		top: 40px;
+	}
+	
+	.c9i-memory-card .c9i-description {
+		top: 180px;
+	}
+
+	.c9i-memory-card .c9i-media-figure {
+		top: 275px;
+	}
+	/* section memory card end */
+
+
+	/* section features */
+	.c9i-features-grid .c9i-feature-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	/* section  features end */
+}
+
+
+@media (max-width: 375px) {
+	.c9i-title {
+		font-size: 24px !important;
+	}
+
+	.c9i-design .c9i-title,
+	.c9i-presentation .c9i-camera-title, 
+	.c9i-presentation .c9i-caseback-title,
+	.c9i-memory-card .c9i-title  {
+		font-size: 30px !important;
+	}
+
+	/* section  features */
+	.c9i-features-grid .c9i-feature-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	/* section  features end */
+}
+
+@media (min-width: 768px) {
+	.c9i-landing .d-sm-block {
+		display: block !important;
+	}
+
+	.c9i-landing .d-sm-none {
+		display: none !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.c9i-landing  .flex-lg-nowrap {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+	}
+}
