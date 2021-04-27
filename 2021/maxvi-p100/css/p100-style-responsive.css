@@ -1,0 +1,374 @@
+@media (max-width: 1199px) {
+	.p100-title {
+		font-size: 40px;
+	}
+
+
+	/* section presentation */
+	.p100-presentation .container {
+		max-width: 992px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.p100-presentation .p100-presentation-title-camera::after {
+		top: 175%;
+    	left: 60%;
+		width: 70%;
+	}
+
+	.p100-presentation .p100-presentation-title-camera.aos-animate[data-aos]::after {
+		width: 70%;
+	}
+
+
+	.p100-presentation .p100-presentation-title-sos {
+		max-width: 65%;
+	}
+
+	.p100-presentation .p100-presentation-title-sos.aos-animate[data-aos]::after {
+		width: 105%;
+	}
+
+
+	.p100-presentation .p100-presentation-title-fm::after {
+		top: -30%;
+		right: 95%;
+		width: 50%;
+	}
+
+	.p100-presentation .p100-presentation-title-fm.aos-animate[data-aos]::after {
+		width: 50%;
+	}
+	/* section presentation end */
+
+
+	/* section flashlight */
+	.p100-flashlight .p100-title {
+		top: 395px;
+	}
+
+	.p100-flashlight .p100-title::after,
+	.p100-flashlight .p100-title.aos-animate[data-aos]::after {
+		width: 32.5%;
+	}
+	/* section flashlight end */
+
+
+	/* section battery */
+	.p100-battery .p100-title {
+		top: 130px;
+	}
+
+	.p100-battery .p100-description {
+		top: 250px;
+	}
+	/* section battery end */
+}
+
+@media (max-width: 991px) {
+	.p100-landing .container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.p100-title {
+		font-size: 30px;
+	}
+
+
+	/* section intro */
+	.p100-intro {
+		height: 550px;
+	}
+
+	.p100-intro .p100-title {
+		top: 120px;
+		font-size: 40px;
+	}
+
+	.p100-intro .p100-title .text-lead {
+		font-size: 240%;
+	}
+
+	.p100-intro .p100-media-figure {
+		width: 295px;
+		height: 520px;
+	}
+	/* section intro end */
+
+
+	/* section presentation */
+	.p100-presentation {
+		height: 600px;
+	}
+
+	.p100-presentation .container {
+		max-width: 768px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.p100-presentation .p100-presentation-title-camera {
+		top: 70px;
+	}
+
+	.p100-presentation .p100-presentation-title-sos {
+		top: 350px;
+	}
+
+	.p100-presentation .p100-presentation-title-fm {
+		top: 420px;
+	}
+
+	.p100-presentation .p100-media-figure {
+		width: 302px;
+		height: 514px;
+	}
+	/* section presentation end */
+
+
+	/* section flashlight */
+	.p100-flashlight {
+		height: 580px;
+	}
+
+	.p100-flashlight .p100-title {
+		top: 295px;
+	}
+
+	.p100-flashlight .p100-title::after,
+	.p100-flashlight .p100-title.aos-animate[data-aos]::after {
+		width: 35%;
+	}
+
+	.p100-flashlight .p100-media-figure {
+		top: 50px;
+		width: 364px;
+    	height: 492px;
+	}
+	/* section flashlight end */
+
+
+	/* section battery */
+	.p100-battery {
+		height: 580px;
+	}
+
+	.p100-battery .p100-title {
+		top: 80px;
+	}
+
+	.p100-battery .p100-description {
+		top: 175px;
+	}
+
+	.p100-battery .p100-media-figure {
+		top: 25px;
+		width: 162px;
+		height: 458px;
+	}
+	/* section battery end */
+
+
+	/* section  features */
+	.p100-features-grid .p100-feature-item {
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+	/* section  features end */
+}
+
+@media (max-width: 767px) {
+	.p100-landing .container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.p100-landing .content-inner {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+
+	.p100-title {
+		margin: 0 0 15px;
+		font-size: 30px !important;
+		line-height: 1.35;
+	}
+
+	.p100-description {
+		margin: 0 0 20px;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+
+	.p100-title[data-aos],
+	.p100-subtitle[data-aos],
+	.p100-description[data-aos] {
+		transform: translate(0, 100px);
+	}
+
+	.p100-title[data-aos].aos-animate,
+	.p100-subtitle[data-aos].aos-animate,
+	.p100-description[data-aos].aos-animate {
+		transform: translate(0);
+	}
+
+	.p100-media-figure[data-aos] {
+		transform: translate(-50%, 100px) !important;
+	}
+
+	.p100-media-figure[data-aos].aos-animate {
+		transform: translate(-50%, 0) !important;
+	}
+
+
+	.p100-intro .content-wrapper.d-flex,
+	.p100-presentation .content-wrapper.d-flex,
+	.p100-flashlight .content-wrapper.d-flex,
+	.p100-battery .content-wrapper.d-flex {
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+
+	/* section intro */
+	.p100-intro {
+		height: 730px;
+	}
+
+	.p100-intro .p100-title {
+		top: 40px;
+	}
+
+	.p100-intro .p100-title .text-lead {
+		display: block;
+		margin: 5px 0 0;
+		font-size: 160%;
+	}
+
+	.p100-intro .p100-intro-logo {
+		width: 112px;
+		height: 19px;
+	}
+
+	.p100-intro .p100-media-figure {
+		top: 230px;
+	}
+	/* section intro end */
+
+
+	/* section presentation */
+	.p100-presentation {
+		height: 1000px;
+	}
+
+	.p100-presentation .p100-title::after {
+		display: none;
+	}
+
+
+	.p100-presentation .p100-presentation-title-camera,
+	.p100-presentation .p100-presentation-title-sos  {
+		text-align: left;
+	}
+
+	.p100-presentation .p100-presentation-title-camera {
+		top: 40px;
+	}
+
+	.p100-presentation .p100-presentation-title-sos {
+		top: 180px;
+	}
+
+	.p100-presentation .p100-presentation-title-fm {
+		top: 280px;
+	}
+
+
+	.p100-presentation .p100-media-figure {
+		top: 460px;
+	}
+
+	.p100-presentation .p100-media-figure[data-aos] {
+		transform: translate(-50%, 100px);
+	}
+
+	.p100-presentation .p100-media-figure[data-aos].aos-animate {
+		transform: translate(-50%, 0);
+	}
+	/* section presentation */
+
+
+	/* section flashlight */
+	.p100-flashlight {
+		height: 750px;
+	}
+
+	.p100-flashlight .p100-title {
+		top: 40px;
+	}
+
+	.p100-flashlight .p100-media-figure {
+		top: 240px;
+	}
+	/* section flashlight end */
+
+
+	/* section battery */
+	.p100-battery {
+		height: 695px;
+	}
+
+	.p100-battery .p100-title {
+		top: 40px;
+	}
+
+	.p100-battery .p100-description {
+		top: 130px;
+	}
+
+	.p100-battery .p100-media-figure {
+		top: 200px;
+	}
+	/* section battery end */
+
+
+	/* section features */
+	.p100-features-grid .p100-feature-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	/* section  features end */
+}
+
+
+@media (max-width: 375px) {
+	.p100-title {
+		font-size: 24px !important;
+	}
+
+	.p100-intro .p100-title,
+	.p100-presentation .p100-title,
+	.p100-flashlight .p100-title,
+	.p100-battery .p100-title {
+		font-size: 30px !important;
+	}
+
+	/* section  features */
+	.p100-features-grid .p100-feature-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	/* section  features end */
+}
+
+@media (min-width: 1200px) {
+	.p100-landing  .flex-lg-nowrap {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+	}
+}
