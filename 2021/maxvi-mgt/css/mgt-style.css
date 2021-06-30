@@ -639,13 +639,57 @@
 }
 
 .mgt-modification-card .mgt-modification-thumbnail {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-end;
 	height: 385px;
-	margin: 0 0 20px;
+	margin: 0 0 25px;
 }
+
+.mgt-modification-card .mgt-modification-figure {
+	position: relative;
+}
+
+.mgt-modification-card .mgt-modification-figure .mgt-modification-layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 1;
+	visibility: visible;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+.mgt-modification-card .mgt-modification-8-5-figure {
+	width: 261px;
+	height: 304px;
+}
+
+.mgt-modification-card .mgt-modification-8-5-figure .mgt-modification-layer.layer-1.aos-animate {
+	transform: translate(-80px, 30px);
+}
+
+.mgt-modification-card .mgt-modification-8-5-figure .mgt-modification-layer.layer-2.aos-animate {
+	transform: translate(-40px, 15px);
+}
+
+
+.mgt-modification-card .mgt-modification-10-5-figure {
+	width: 298px;
+	height: 384px;
+}
+
+.mgt-modification-card .mgt-modification-10-5-figure .mgt-modification-layer.layer-1.aos-animate {
+	transform: translate(-70px, 36px);
+}
+
+.mgt-modification-card .mgt-modification-10-5-figure .mgt-modification-layer.layer-2.aos-animate {
+	transform: translate(-36px, 18px);
+}
+
 
 .mgt-modification-card .mgt-modification-title {
 	margin: 0 0 10px;

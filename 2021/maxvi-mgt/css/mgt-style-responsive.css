@@ -311,13 +311,7 @@
 	/* section protection end */
 
 
-
-	.mgt-modification-card .mgt-modification-thumbnail .mgt-modification-media {
-		max-width: 100%;
-		max-height: 100%;
-	}
-
-
+	/* section modification */
 	.mgt-modification-card .mgt-modification-title {
 		font-size: 38px;
 	}
@@ -329,6 +323,7 @@
 	.mgt-modification-card .mgt-modification-specification-value.text-lead {
 		font-size: 30px;
 	}
+	/* section modification  end */
 
 
 	/* section  features */
@@ -736,13 +731,46 @@
 
 
 	.mgt-modification-card .mgt-modification-thumbnail {
-		height: 180px;
-	}
-
-	.mgt-modification-card .mgt-modification-thumbnail .mgt-modification-media {
-		width: auto;
 		height: auto;
 	}
+
+	.mgt-modification-card .mgt-modification-8-5-figure {
+		width: 218px;
+		height: 235px;
+	}
+
+	.mgt-modification-card .mgt-modification-8-5-figure .mgt-modification-layer {
+		width: 136px;
+		height: 212px;
+	}
+
+	.mgt-modification-card .mgt-modification-8-5-figure .mgt-modification-layer.layer-1.aos-animate {
+		transform: translate(-56px, 21px);
+	}
+
+	.mgt-modification-card .mgt-modification-8-5-figure .mgt-modification-layer.layer-2.aos-animate {
+		transform: translate(-28px, 10px);
+	}
+
+
+	.mgt-modification-card .mgt-modification-10-5-figure {
+		width: 208px;
+		height: 272px;
+	}
+
+	.mgt-modification-card .mgt-modification-10-5-figure .mgt-modification-layer {
+		width: 158px;
+		height: 246px;
+	}
+
+	.mgt-modification-card .mgt-modification-10-5-figure .mgt-modification-layer.layer-1.aos-animate {
+		transform: translate(-49px, 25px);
+	}
+
+	.mgt-modification-card .mgt-modification-10-5-figure .mgt-modification-layer.layer-2.aos-animate {
+		transform: translate(-25px, 12px);
+	}
+
 
 	.mgt-modification-card .mgt-modification-title {
 		font-size: 30px;
