@@ -135,9 +135,9 @@
 /* section intro */
 .mgt-intro {
 	overflow: hidden;
-	height: 735px;
+	height: max(735px, 100vh);
 	background-color: #f6fafb;
-	background-position: -10px 0;
+	background-position: center -10px bottom -70px;
 }
 
 .mgt-intro .container,
@@ -232,12 +232,6 @@
 	margin-right: auto;
 	object-fit: cover;
 	object-position: center;
-}
-
-#mgt-drawing-parallax .mgt-drawing-layer.layer-3 > img {
-	display: block;
-	margin-left: auto;
-	margin-right: 0;
 }
 
 .mgt-drawing .mgt-title,

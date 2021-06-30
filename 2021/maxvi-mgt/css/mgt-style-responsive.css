@@ -1,3 +1,14 @@
+@media (max-width: 1440px) {
+	/* section intro */
+	.mgt-intro {
+		overflow: hidden;
+		height: max(735px, 100vh);
+		background-color: #f6fafb;
+		background-position: -10px 0;
+	}
+	/* section intro end */
+}
+
 @media (max-width: 1199px) {
 	/* section presentation */
 	.mgt-presentation {
