@@ -1,0 +1,523 @@
+.k20-landing {
+	overflow: hidden;
+	max-width: 2160px;
+	margin: auto;
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #010101;
+	line-height: 1.25;
+}
+
+.k20-landing section {
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.k20-landing img {
+	max-width: 100%;
+}
+
+
+.k20-landing .container {
+	position: relative;
+	width: 100%;
+	max-width: 1220px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.k20-landing .section-dark,
+.k20-landing .section-dark .k20-title,
+.k20-landing .section-dark .k20-subtitle,
+.k20-landing .section-dark .k20-description {
+	color: #fff;
+}
+
+
+.k20-landing .d-flex {
+	-webkit-display: flex;
+	-ms-display: flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.k20-landing .d-flex.row:before,
+.k20-landing .d-flex.row:after {
+	display: none;
+}
+
+.k20-landing .flex-nowrap {
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+
+.k20-landing .justify-content-center {
+	justify-content: center;
+}
+
+
+.k20-landing .align-items-start {
+	align-items: start;
+}
+
+.k20-landing .align-items-center {
+	align-items: center;
+}
+
+.k20-landing .align-self-center {
+	align-self: center;
+}
+
+.k20-landing .align-self-end {
+	align-self: flex-end;
+}
+
+
+
+.k20-title {
+	margin: 0 0 20px;
+	font-size: 43px;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.k20-title span {
+	font-weight: 300;
+}
+
+.k20-title .text-lead {
+	font-size: 180%;
+	font-weight: 900;
+	line-height: 1.2;
+}
+
+.k20-description {
+	margin: 0 0 45px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.k20-description > p {
+	margin-bottom: 20px;
+}
+
+.k20-media-figure {
+	opacity: 1 !important;
+	margin: 0;
+}
+
+.k20-media-figure .k20-media {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+
+/* section design */
+.k20-design {
+	height: 740px;
+}
+
+.k20-design .k20-title,
+.k20-design .k20-subtitle,
+.k20-design .k20-description {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: inherit;
+}
+
+.k20-design .k20-title {
+	top: 260px;
+}
+
+.k20-design .k20-description {
+	top: 380px;
+}
+
+
+#k20-design-parallax {
+	position: absolute;
+	top: 35px;
+	width: 666px;
+	height: 704px;
+}
+
+#k20-design-parallax .k20-design-parallax-layer {
+	position: absolute;
+}
+
+#k20-design-parallax .k20-design-parallax-media {
+	display: block;
+	max-width: none;
+}
+
+#k20-design-parallax .k20-design-parallax-layer.layer-1 {
+	margin: 0 0 0 60px;
+}
+
+#k20-design-parallax .k20-design-parallax-layer.layer-1 .k20-design-parallax-media {
+	width: 350px;
+	height: 631px;
+}
+
+#k20-design-parallax .k20-design-parallax-layer.layer-2 {
+	margin: 10px 0 0 240px;
+}
+
+#k20-design-parallax .k20-design-parallax-layer.layer-2 .k20-design-parallax-media {
+	width: 482px;
+	height: 695px;
+}
+/* section design end */
+
+
+/* section camera */
+.k20-camera {
+	position: relative;
+	overflow: hidden;
+	height: 735px;
+	background-color: #004f52;
+	color: #fff;
+}
+
+.k20-camera .k20-camera-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	filter: blur(10px);
+}
+
+.k20-camera .k20-title,
+.k20-camera .k20-subtitle,
+.k20-camera .k20-description {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: inherit;
+}
+
+.k20-camera .k20-title {
+	top: 290px;
+	text-shadow: 2px 4px 0 rgba(36, 34, 29, 0.75);
+}
+
+.k20-camera .k20-description {
+	top: 410px;
+	text-shadow: 2px 4px 0 rgba(36, 34, 29, 0.75);
+}
+
+#k20-camera-parallax {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 1142px;
+	height: 817px;
+}
+
+#k20-camera-parallax .k20-camera-parallax-layer {
+	position: absolute;
+}
+
+#k20-camera-parallax .k20-camera-parallax-media {
+	display: block;
+	max-width: none;
+}
+
+#k20-camera-parallax .k20-camera-parallax-layer.layer-1 {
+	margin: 0 0 0 770px;
+}
+
+#k20-camera-parallax .k20-camera-parallax-layer.layer-1 .k20-camera-parallax-media {
+	width: 371px;
+	height: 705px;
+}
+
+#k20-camera-parallax .k20-camera-parallax-layer.layer-2 {
+	margin: 20px 0 0 10px;
+}
+
+#k20-camera-parallax .k20-camera-parallax-layer.layer-2 .k20-camera-parallax-media {
+	width: 836px;
+	height: 786px;
+}
+/* section camera end */
+
+
+/* section screen */
+.k20-screen {
+	height: 735px;
+}
+
+.k20-screen .k20-title,
+.k20-screen .k20-subtitle,
+.k20-screen .k20-description {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: inherit;
+}
+
+.k20-screen .k20-title {
+	top: 235px;
+}
+
+.k20-screen .k20-description {
+	top: 400px;
+}
+
+.k20-screen .k20-media-figure {
+	position: absolute;
+	top: 130px;
+	left: 15px;
+	width: 876px;
+	height: 601px;
+}
+
+.k20-screen .k20-media-figure .k20-media {
+	position: absolute;
+}
+
+.k20-screen .k20-media-figure .k20-media.layer-1 {
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 876px;
+	height: 601px;
+}
+
+.k20-screen .k20-media-figure .k20-media.layer-2 {
+	top: 64px;
+	left: 114px;
+	width: 624px;
+	height: 351px;
+}
+/* section screen end */
+
+
+/* section battery */
+.k20-battery {
+	position: relative;
+	overflow: hidden;
+	height: 735px;
+	background-color: #4e4e5b;
+	color: #fff;
+}
+
+.k20-battery .k20-battery-video {
+	position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+.k20-battery .k20-typography-left-container {
+	text-align: right;
+}
+
+
+.k20-battery .k20-title,
+.k20-battery .k20-subtitle,
+.k20-battery .k20-description,
+.k20-battery .k20-battery-list,
+.k20-battery .k20-battery-size {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: inherit;
+}
+
+.k20-battery .k20-title {
+	top: 280px;
+}
+
+.k20-battery .k20-description {
+	top: 420px;
+}
+
+.k20-battery .k20-battery-list {
+	top: 420px;
+	max-width: 130px;
+	margin: 0 0 0 auto;
+	text-align: inherit;
+	list-style: none;
+}
+
+.k20-battery .k20-battery-list > li:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.k20-battery .k20-battery-size {
+	top: 270px;
+	font-size: 120px;
+	font-weight: 900;
+	text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.75);
+	white-space: nowrap;
+}
+
+.k20-battery .k20-battery-size span {
+	font-size: 32px;
+}
+
+#k20-battery-parallax {
+	position: absolute;
+	top: 15px;
+	width: 308px;
+	height: 706px;
+}
+
+#k20-battery-parallax .k20-battery-parallax-media {
+	display: block;
+	max-width: none;
+}
+
+#k20-battery-parallax .k20-battery-parallax-layer.layer-1 .k20-battery-parallax-media {
+	width: 308px;
+	height: 706px;
+}
+/* section battery end */
+
+/* section flashlight */
+.k20-flashlight {
+	position: relative;
+	overflow: hidden;
+	height: 740px;
+	background-color: #30362b;
+	color: #fff;
+}
+
+.k20-flashlight .k20-flashlight-video {
+	position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.k20-flashlight .k20-title,
+.k20-flashlight .k20-subtitle,
+.k20-flashlight .k20-description {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: inherit;
+}
+
+.k20-flashlight .k20-title {
+	top: 235px;
+}
+
+.k20-flashlight .k20-description {
+	top: 370px;
+}
+
+#k20-flashlight-parallax {
+	position: absolute;
+	top: 390px;
+	right: 15px;
+	width: 664px;
+	height: 313px;
+}
+
+#k20-flashlight-parallax .k20-flashlight-parallax-media {
+	display: block;
+	max-width: none;
+}
+
+#k20-flashlight-parallax .k20-flashlight-parallax-layer.layer-1 .k20-flashlight-parallax-media {
+	width: 664px;
+	height: 313px;
+}
+/* section flashlight end */
+
+
+/* section features */
+.k20-features {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.k20-features .k20-title {
+	font-size: 35px;
+	text-align: center;
+}
+
+.k20-feature-card {
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+	color: #434343;
+}
+
+.k20-feature-media {
+	width: 110px;
+	height: 110px;
+	margin: 0 auto 15px;
+}
+
+.k20-feature-title {
+	margin: 0 0 10px;
+	font-size: 18px;
+	font-weight: 900;
+	line-height: 1.38;
+	color: inherit;
+}
+
+
+.k20-features-grid {
+	display: -ms-flex;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 45px -10px -30px;
+}
+
+.k20-features-grid:before,
+.k20-features-grid:after {
+	display: none;
+}
+
+.k20-features-grid .k20-feature-item {
+	flex: 0 0 20%;
+	max-width: 20%;
+	margin-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/* section features end */
+
+.text-nowrap {
+	white-space: nowrap;
+}
